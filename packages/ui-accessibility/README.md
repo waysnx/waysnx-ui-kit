@@ -1,0 +1,18 @@
+# @waysnx/ui-accessibility
+
+## Purpose
+Describe the responsibility and scope of this library.
+
+## Installation
+```bash
+npm install @waysnx/ui-accessibility
+```
+
+## Components
+The authoritative component list should be verified through WDG-generated metadata.
+
+## Documentation
+See Storybook and `docs/generated/`.
+
+## Release Status
+To be verified during public-release validation.
