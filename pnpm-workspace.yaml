@@ -1,3 +1,5 @@
 packages:
   - "packages/*"
+  - "storybook"
+  - "playwright"
   - "examples/waysnx-admin-demo"

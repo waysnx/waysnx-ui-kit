@@ -1,0 +1,67 @@
+.wx-datetimepicker-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.wx-datetimepicker-label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.wx-datetimepicker-input-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.wx-datetimepicker-react-wrapper {
+  display: block;
+  width: 100%;
+}
+
+.wx-datetimepicker-input {
+  width: 100%;
+  padding: 10px 36px 10px 10px;
+  border: 1px solid var(--wx-color-border, #ccc);
+  border-radius: 6px;
+  outline: none;
+  height: var(--wx-input-height, 40px);
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.wx-datetimepicker-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: var(--wx-color-text-muted, #6b7280);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.wx-datetimepicker-input:focus {
+  border-color: var(--wx-color-primary, #f19924);
+}
+
+.wx-datetimepicker-input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.wx-datetimepicker-input-error {
+  border-color: var(--wx-color-error, #dc2626);
+}
+
+.wx-datetimepicker-hint {
+  font-size: 12px;
+  color: var(--wx-color-text-muted, #6b7280);
+}
+
+.wx-datetimepicker-error-text {
+  font-size: 12px;
+  color: var(--wx-color-error, #dc2626);
+}

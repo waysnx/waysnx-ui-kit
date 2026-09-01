@@ -1,0 +1,138 @@
+/**
+ * @file styles/index.css
+ * Navigation component styles and design tokens
+ * Uses shared --wx-* tokens from ui-core, with navigation-specific extensions.
+ */
+
+:root {
+  /* Navigation-specific dimensions */
+  --wx-nav-sidebar-width: 256px;
+  --wx-nav-sidebar-width-collapsed: 64px;
+  --wx-nav-drawer-width: 320px;
+  --wx-nav-navbar-height: 64px;
+  --wx-nav-item-height: 40px;
+  --wx-nav-item-height-compact: 32px;
+  --wx-nav-item-height-spacious: 48px;
+
+  /* Navigation-specific transition */
+  --wx-nav-transition: 200ms;
+
+  /* Navigation-specific z-index scale */
+  --wx-nav-z-dropdown: 1000;
+  --wx-nav-z-sticky: 1020;
+  --wx-nav-z-fixed: 1030;
+  --wx-nav-z-modal-backdrop: 1040;
+  --wx-nav-z-modal: 1050;
+  --wx-nav-z-popover: 1060;
+  --wx-nav-z-tooltip: 1070;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  /* Dark overrides are now handled by consumers overriding --wx-* tokens */
+}
+
+/* High contrast mode */
+@media (prefers-contrast: more) {
+  :root {
+    /* High contrast handled by --wx-* token overrides */
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --wx-nav-transition: 0ms;
+  }
+}
+
+/* Base styles */
+.nav-component {
+  font-family: var(--wx-font-family, inherit);
+  font-size: var(--wx-font-size-sm, 14px);
+  color: var(--wx-color-text, #1e293b);
+  background-color: var(--wx-color-surface, #ffffff);
+  box-sizing: border-box;
+}
+
+.nav-component *,
+.nav-component *::before,
+.nav-component *::after {
+  box-sizing: inherit;
+}
+
+/* Focus styles */
+.nav-component *:focus-visible {
+  outline: 2px solid var(--wx-color-primary, #f19924);
+  outline-offset: 2px;
+}
+
+/* Disabled styles */
+.nav-component [disabled],
+.nav-component [aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  :root {
+    --wx-nav-sidebar-width: 100%;
+    --wx-nav-drawer-width: 100%;
+    --wx-nav-navbar-height: 56px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  :root {
+    --wx-nav-sidebar-width: 224px;
+  }
+}
+
+@media (min-width: 1025px) {
+  :root {
+    --wx-nav-sidebar-width: 256px;
+  }
+}
+
+/* Density variants */
+.nav-component--compact {
+  --wx-nav-item-height: var(--wx-nav-item-height-compact);
+  --wx-spacing-md: var(--wx-spacing-sm, 8px);
+}
+
+.nav-component--spacious {
+  --wx-nav-item-height: var(--wx-nav-item-height-spacious);
+  --wx-spacing-md: var(--wx-spacing-lg, 24px);
+}
+
+/* Utility classes */
+.nav-hidden {
+  display: none !important;
+}
+
+.nav-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.nav-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Print styles */
+@media print {
+  .nav-no-print {
+    display: none !important;
+  }
+}

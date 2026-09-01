@@ -1,0 +1,458 @@
+/**
+ * StepNavigation Component Styles
+ */
+
+.wx-step-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-family: inherit;
+}
+
+/* ===== Progress Bar ===== */
+
+.wx-step-navigation__progress {
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-border, #e0e0e0);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.wx-step-navigation__progress-bar {
+  height: 100%;
+  background-color: var(--color-primary, #0066cc);
+  transition: width 0.3s ease-in-out;
+}
+
+/* ===== Steps Container ===== */
+
+.wx-step-navigation__indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.wx-step-navigation__steps {
+  display: flex;
+  gap: 0;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.wx-step-navigation__steps--vertical {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+/* ===== Step Item ===== */
+
+.wx-step-navigation__step {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  flex: 1;
+  position: relative;
+  text-align: left;
+  color: var(--color-text, #333333);
+}
+
+.wx-step-navigation__step:hover:not(:disabled) {
+  background-color: var(--color-background-hover, #f5f5f5);
+}
+
+.wx-step-navigation__step:focus-visible {
+  outline: 2px solid var(--color-focus, #0066cc);
+  outline-offset: 2px;
+}
+
+.wx-step-navigation__step:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.wx-step-navigation__step--active {
+  color: var(--color-primary, #0066cc);
+}
+
+.wx-step-navigation__step--completed {
+  color: var(--color-success, #22c55e);
+}
+
+/* ===== Step Number ===== */
+
+.wx-step-navigation__step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border: 2px solid var(--color-border, #e0e0e0);
+  border-radius: 50%;
+  background-color: var(--color-background, #ffffff);
+  font-weight: 600;
+  font-size: var(--wx-font-size-sm, 14px);
+  transition: all 0.2s ease-in-out;
+}
+
+.wx-step-navigation__step--active .wx-step-navigation__step-number {
+  border-color: var(--color-primary, #0066cc);
+  background-color: var(--color-primary, #0066cc);
+  color: var(--color-text-inverse, #ffffff);
+}
+
+.wx-step-navigation__step--completed .wx-step-navigation__step-number {
+  border-color: var(--color-success, #22c55e);
+  background-color: var(--color-success, #22c55e);
+  color: var(--color-text-inverse, #ffffff);
+}
+
+.wx-step-navigation__checkmark {
+  font-size: var(--wx-font-size-xl, 20px);
+  font-weight: bold;
+}
+
+/* ===== Step Content ===== */
+
+.wx-step-navigation__step-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+.wx-step-navigation__step-label {
+  font-weight: 500;
+  font-size: var(--wx-font-size-sm, 14px);
+  color: inherit;
+}
+
+.wx-step-navigation__step-description {
+  font-size: var(--wx-font-size-xs, 12px);
+  color: var(--color-text-muted, #666666);
+  line-height: 1.4;
+}
+
+/* ===== Connector ===== */
+
+.wx-step-navigation__connector {
+  height: 2px;
+  flex: 1;
+  background-color: var(--color-border, #e0e0e0);
+  margin: 0 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.wx-step-navigation__connector--completed {
+  background-color: var(--color-success, #22c55e);
+}
+
+/* Vertical layout connector */
+.wx-step-navigation__steps--vertical .wx-step-navigation__connector {
+  width: 2px;
+  height: 24px;
+  margin: 0 20px;
+}
+
+/* ===== Dots Variant ===== */
+
+.wx-step-navigation__dots {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.wx-step-navigation__dot {
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--color-border, #e0e0e0);
+  border-radius: 50%;
+  background-color: var(--color-background, #ffffff);
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.wx-step-navigation__dot:hover:not(:disabled) {
+  transform: scale(1.2);
+  border-color: var(--color-primary, #0066cc);
+}
+
+.wx-step-navigation__dot:focus-visible {
+  outline: 2px solid var(--color-focus, #0066cc);
+  outline-offset: 2px;
+}
+
+.wx-step-navigation__dot:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.wx-step-navigation__dot--active {
+  background-color: var(--color-primary, #0066cc);
+  border-color: var(--color-primary, #0066cc);
+}
+
+.wx-step-navigation__dot--completed {
+  background-color: var(--color-success, #22c55e);
+  border-color: var(--color-success, #22c55e);
+}
+
+/* ===== Current Step Info ===== */
+
+.wx-step-navigation__current {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  background-color: var(--color-background-elevated, #f9f9f9);
+  border: 1px solid var(--color-border, #e0e0e0);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.wx-step-navigation__current-step {
+  font-size: var(--wx-font-size-xs, 12px);
+  color: var(--color-text-muted, #666666);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.wx-step-navigation__current-title {
+  font-size: var(--wx-font-size-lg, 18px);
+  font-weight: 600;
+  color: var(--color-text, #333333);
+}
+
+.wx-step-navigation__current-description {
+  font-size: var(--wx-font-size-sm, 14px);
+  color: var(--color-text-muted, #666666);
+  line-height: 1.5;
+}
+
+/* ===== Navigation Buttons ===== */
+
+.wx-step-navigation__buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border, #e0e0e0);
+}
+
+.wx-step-navigation__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 24px;
+  border: 1px solid var(--color-border, #e0e0e0);
+  border-radius: 4px;
+  background-color: var(--color-background, #ffffff);
+  cursor: pointer;
+  font-size: var(--wx-font-size-sm, 14px);
+  font-weight: 500;
+  color: var(--color-text, #333333);
+  transition: all 0.2s ease-in-out;
+  min-width: 100px;
+  white-space: nowrap;
+}
+
+.wx-step-navigation__button:hover:not(:disabled) {
+  background-color: var(--color-background-hover, #f5f5f5);
+  border-color: var(--color-border-hover, #b0b0b0);
+}
+
+.wx-step-navigation__button:active:not(:disabled) {
+  background-color: var(--color-background-active, #e8e8e8);
+  border-color: var(--color-border, #808080);
+}
+
+.wx-step-navigation__button:focus-visible {
+  outline: 2px solid var(--color-focus, #0066cc);
+  outline-offset: 2px;
+}
+
+.wx-step-navigation__button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.wx-step-navigation__button--next,
+.wx-step-navigation__button--finish {
+  background-color: var(--color-primary, #0066cc);
+  color: var(--color-text-inverse, #ffffff);
+  border-color: var(--color-primary, #0066cc);
+}
+
+.wx-step-navigation__button--next:hover:not(:disabled),
+.wx-step-navigation__button--finish:hover:not(:disabled) {
+  background-color: #0052a3;
+  border-color: #0052a3;
+}
+
+/* ===== Spinner ===== */
+
+.wx-step-navigation__spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: var(--color-text-inverse, #ffffff);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===== Variant Specific Styles ===== */
+
+.wx-step-navigation--horizontal .wx-step-navigation__step {
+  flex-direction: column;
+  text-align: center;
+  padding: 8px 4px;
+}
+
+.wx-step-navigation--horizontal .wx-step-navigation__step-number {
+  margin-bottom: 4px;
+}
+
+.wx-step-navigation--vertical .wx-step-navigation__step {
+  flex-direction: row;
+  text-align: left;
+  width: 100%;
+  padding: 12px;
+}
+
+.wx-step-navigation--vertical .wx-step-navigation__step-number {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  font-size: var(--wx-font-size-xs, 12px);
+}
+
+/* Dots variant doesn't show step content until selected */
+.wx-step-navigation--dots .wx-step-navigation__steps {
+  display: none;
+}
+
+.wx-step-navigation--dots .wx-step-navigation__buttons {
+  flex-direction: column;
+}
+
+.wx-step-navigation--dots .wx-step-navigation__button {
+  width: 100%;
+  justify-content: center;
+}
+
+/* ===== Accessibility ===== */
+
+@media (prefers-reduced-motion: reduce) {
+  .wx-step-navigation__progress-bar,
+  .wx-step-navigation__step,
+  .wx-step-navigation__button,
+  .wx-step-navigation__dot,
+  .wx-step-navigation__connector,
+  .wx-step-navigation__spinner {
+    transition: none;
+    animation: none;
+  }
+
+  @keyframes spin {
+    to {
+      transform: none;
+    }
+  }
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 768px) {
+  .wx-step-navigation__step {
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .wx-step-navigation__step-number {
+    width: 36px;
+    height: 36px;
+    font-size: var(--wx-font-size-xs, 12px);
+  }
+
+  .wx-step-navigation__step-content {
+    display: none;
+  }
+
+  .wx-step-navigation__step--active .wx-step-navigation__step-content,
+  .wx-step-navigation__step--completed .wx-step-navigation__step-content {
+    display: flex;
+  }
+
+  .wx-step-navigation__buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .wx-step-navigation__button {
+    width: 100%;
+  }
+
+  .wx-step-navigation__connector {
+    display: none;
+  }
+
+  .wx-step-navigation--vertical .wx-step-navigation__connector {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .wx-step-navigation {
+    gap: 16px;
+  }
+
+  .wx-step-navigation__current {
+    padding: 12px;
+  }
+
+  .wx-step-navigation__current-title {
+    font-size: var(--wx-font-size-md, 16px);
+  }
+
+  .wx-step-navigation__button {
+    padding: 8px 16px;
+    font-size: var(--wx-font-size-xs, 12px);
+    min-width: 80px;
+  }
+}
+
+/* ===== High Contrast Mode ===== */
+
+@media (prefers-contrast: more) {
+  .wx-step-navigation__step-number,
+  .wx-step-navigation__dot {
+    border-width: 3px;
+  }
+
+  .wx-step-navigation__button {
+    border-width: 2px;
+  }
+}

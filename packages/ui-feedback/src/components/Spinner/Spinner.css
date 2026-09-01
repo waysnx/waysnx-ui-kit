@@ -1,0 +1,12 @@
+.wx-spinner {
+  border: 3px solid var(--wx-color-border, #e5e7eb);
+  border-top-color: var(--wx-color-primary, #f19924);
+  border-radius: 50%;
+  animation: wx-spin 1s linear infinite;
+}
+
+@keyframes wx-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

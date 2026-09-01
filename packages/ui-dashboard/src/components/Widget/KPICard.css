@@ -1,0 +1,283 @@
+/**
+ * KPICard.css
+ * Styles for StatCard, MetricCard, and ProgressCard components.
+ * Uses shared --wx-* design tokens from ui-core.
+ */
+
+/* ============================================================
+   STAT CARD
+   ============================================================ */
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--wx-color-surface, #ffffff);
+  border: 1px solid var(--wx-color-border, #e2e8f0);
+  border-left: 4px solid var(--wx-color-border, #e2e8f0);
+  border-radius: var(--wx-radius-lg, 14px);
+  padding: var(--wx-spacing-lg, 20px);
+  box-shadow: var(--wx-shadow-sm, 0 1px 3px rgba(0, 0, 0, 0.02));
+  transition: box-shadow 200ms ease, transform 200ms ease;
+  cursor: default;
+  position: relative;
+  min-height: 130px;
+}
+
+.stat-card:hover {
+  box-shadow: var(--wx-shadow-md, 0 6px 16px rgba(0, 0, 0, 0.06));
+  transform: translateY(-2px);
+}
+
+.stat-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.stat-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--wx-radius-md, 10px);
+  font-size: var(--wx-font-size-md, 16px);
+  flex-shrink: 0;
+}
+
+.stat-card-label {
+  font-size: var(--wx-font-size-sm, 14px);
+  font-weight: 500;
+  color: var(--wx-color-text-muted, #475569);
+}
+
+.stat-card-body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0;
+}
+
+.stat-card-value {
+  width: 100%;
+  font-size: calc(28px * var(--wx-accessibility-font-scale, 1));
+  font-weight: 700;
+  color: var(--wx-color-text, #0f172a);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--wx-spacing-sm, 8px);
+}
+
+.stat-card-trend {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: calc(12.5px * var(--wx-accessibility-font-scale, 1));
+}
+
+.stat-card-trend-icon {
+  font-size: var(--wx-font-size-sm, 14px);
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+}
+
+.stat-card-change {
+  font-weight: 600;
+  font-size: calc(12.5px * var(--wx-accessibility-font-scale, 1));
+}
+
+.stat-card-target {
+  display: inline;
+  font-size: calc(12.5px * var(--wx-accessibility-font-scale, 1));
+  color: var(--wx-color-text-light, #94a3b8);
+  font-weight: 400;
+}
+
+/* StatCard variants */
+.stat-card.minimal {
+  border-left: none;
+  box-shadow: none;
+  border: none;
+  background-color: var(--wx-color-surface-alt, #f8fafc);
+}
+
+.stat-card.detailed {
+  padding: var(--wx-spacing-xl, 24px);
+}
+
+/* ============================================================
+   METRIC CARD
+   ============================================================ */
+
+.metric-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--wx-color-surface, #ffffff);
+  border: 1px solid var(--wx-color-border, #e2e8f0);
+  border-radius: var(--wx-radius-lg, 14px);
+  padding: var(--wx-spacing-lg, 20px);
+  box-shadow: var(--wx-shadow-sm, 0 1px 3px rgba(0, 0, 0, 0.02));
+  transition: box-shadow 200ms ease;
+}
+
+.metric-card:hover {
+  box-shadow: var(--wx-shadow-md, 0 6px 16px rgba(0, 0, 0, 0.06));
+}
+
+.metric-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--wx-spacing-sm, 8px);
+  margin-bottom: var(--wx-spacing-sm, 8px);
+}
+
+.metric-card-icon {
+  font-size: var(--wx-font-size-xl, 20px);
+  color: var(--wx-color-text-muted, #64748b);
+}
+
+.metric-card-label {
+  font-size: var(--wx-font-size-sm, 14px);
+  font-weight: 600;
+  color: var(--wx-color-text, #1e293b);
+  margin: 0;
+}
+
+.metric-card-values {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: var(--wx-spacing-sm, 8px);
+}
+
+.metric-card-actual {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.metric-value {
+  font-size: var(--wx-font-size-2xl, 24px);
+  font-weight: 700;
+  color: var(--wx-color-text, #1e293b);
+}
+
+.metric-unit {
+  font-size: var(--wx-font-size-sm, 14px);
+  color: var(--wx-color-text-muted, #64748b);
+}
+
+.metric-card-target {
+  font-size: var(--wx-font-size-sm, 14px);
+  color: var(--wx-color-text-muted, #64748b);
+}
+
+.metric-card-progress {
+  position: relative;
+  height: 6px;
+  background-color: var(--wx-color-surface-hover, #f1f5f9);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.metric-card-progress-bar {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 300ms ease;
+}
+
+.metric-card-progress-text {
+  position: absolute;
+  right: 0;
+  top: -18px;
+  font-size: var(--wx-font-size-xs, 12px);
+  font-weight: 500;
+  color: var(--wx-color-text-muted, #64748b);
+}
+
+/* ============================================================
+   PROGRESS CARD
+   ============================================================ */
+
+.progress-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--wx-color-surface, #ffffff);
+  border: 1px solid var(--wx-color-border, #e2e8f0);
+  border-radius: var(--wx-radius-lg, 14px);
+  padding: var(--wx-spacing-lg, 20px);
+  box-shadow: var(--wx-shadow-sm, 0 1px 3px rgba(0, 0, 0, 0.02));
+}
+
+.progress-card-circular {
+  align-items: center;
+  text-align: center;
+}
+
+.progress-card-linear {
+  align-items: stretch;
+}
+
+.progress-card-svg {
+  display: block;
+  transform: rotate(-90deg);
+}
+
+.progress-card-text {
+  font-size: var(--wx-font-size-sm, 14px);
+  font-weight: 700;
+  fill: var(--wx-color-text, #1e293b);
+}
+
+.progress-card-label {
+  font-size: var(--wx-font-size-sm, 14px);
+  font-weight: 500;
+  color: var(--wx-color-text-muted, #64748b);
+  margin-top: var(--wx-spacing-sm, 8px);
+}
+
+.progress-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--wx-spacing-sm, 8px);
+}
+
+.progress-card-percentage {
+  font-size: var(--wx-font-size-sm, 14px);
+  font-weight: 600;
+  color: var(--wx-color-text, #1e293b);
+}
+
+.progress-card-bar {
+  height: 8px;
+  background-color: var(--wx-color-surface-hover, #f1f5f9);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-card-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 300ms ease;
+}
+
+/* ============================================================
+   REDUCED MOTION
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .stat-card,
+  .stat-card:hover,
+  .metric-card,
+  .metric-card-progress-bar,
+  .progress-card-fill {
+    transition: none;
+  }
+
+  .stat-card:hover {
+    transform: none;
+  }
+}

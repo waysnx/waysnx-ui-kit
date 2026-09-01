@@ -1,0 +1,2 @@
+.wx-panel{background:var(--wx-color-surface,#fff);border:1px solid var(--wx-color-border,#e5e7eb);padding:1rem;font-size:var(--wx-font-size-sm,14px);color:var(--wx-color-text,#1e293b)}
+.wx-panel-title{font-size:var(--wx-font-size-md,16px);font-weight:600;margin:0 0 0.75rem;color:var(--wx-color-text,#1e293b)}

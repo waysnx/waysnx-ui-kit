@@ -1,1 +1,25 @@
-{"name":"@waysnx/ui-library-18","version":"0.0.0","license":"Apache-2.0"}
+{
+  "name": "@waysnx/ui-kit",
+  "version": "0.3.22",
+  "description": "Complete WaysNX UI Kit - All packages in one convenient install",
+  "license": "Apache-2.0",
+  "keywords": ["react", "ui", "components", "form-builder", "layout", "feedback", "waysnx"],
+  "author": "WaysNX Technologies",
+  "files": ["index.js", "index.d.ts", "README.md"],
+  "dependencies": {
+    "@waysnx/ui-core": "workspace:*",
+    "@waysnx/ui-form-builder": "workspace:*",
+    "@waysnx/ui-layout": "workspace:*",
+    "@waysnx/ui-feedback": "workspace:*",
+    "@waysnx/ui-grid-builder": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18",
+    "react-datepicker": "^8.0.0",
+    "@tanstack/react-table": "^8.0.0"
+  },
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "repository": { "type": "git", "url": "https://github.com/waysnx/waysnx-ui-kit", "directory": "packages/ui-kit-meta" }
+}

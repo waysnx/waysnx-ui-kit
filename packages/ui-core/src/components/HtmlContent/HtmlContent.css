@@ -1,0 +1,115 @@
+.wx-html-content {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--wx-color-text, #333);
+}
+
+.wx-html-content h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 16px 0 12px;
+}
+
+.wx-html-content h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 14px 0 10px;
+}
+
+.wx-html-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 12px 0 8px;
+}
+
+.wx-html-content p {
+  margin: 8px 0;
+}
+
+.wx-html-content ul,
+.wx-html-content ol {
+  margin: 8px 0;
+  padding-left: 24px;
+}
+
+.wx-html-content li {
+  margin: 4px 0;
+}
+
+.wx-html-content a {
+  color: var(--wx-color-primary);
+  text-decoration: underline;
+}
+
+.wx-html-content a:hover {
+  text-decoration: none;
+}
+
+.wx-html-content strong,
+.wx-html-content b {
+  font-weight: 600;
+}
+
+.wx-html-content em,
+.wx-html-content i {
+  font-style: italic;
+}
+
+.wx-html-content code {
+  background-color: var(--wx-color-surface-hover, #f3f4f6);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 13px;
+}
+
+.wx-html-content pre {
+  background-color: var(--wx-color-surface-hover, #f3f4f6);
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 12px 0;
+}
+
+.wx-html-content pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+.wx-html-content blockquote {
+  border-left: 4px solid var(--wx-color-primary);
+  padding-left: 16px;
+  margin: 12px 0;
+  color: var(--wx-color-text-muted, #6b7280);
+}
+
+.wx-html-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 12px 0;
+}
+
+.wx-html-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+}
+
+.wx-html-content table th,
+.wx-html-content table td {
+  border: 1px solid var(--wx-color-border, #e5e7eb);
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.wx-html-content table th {
+  background-color: var(--wx-color-surface-alt, #f9fafb);
+  font-weight: 600;
+}
+
+.wx-html-content hr {
+  border: none;
+  border-top: 1px solid var(--wx-color-border, #e5e7eb);
+  margin: 16px 0;
+}

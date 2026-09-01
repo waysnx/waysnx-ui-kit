@@ -1,0 +1,1 @@
+export interface WithLabelProps{label?:string;withLabel?:boolean;}

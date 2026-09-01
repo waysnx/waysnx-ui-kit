@@ -1,0 +1,54 @@
+.wx-currency-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.wx-currency-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--wx-color-text, #111827);
+  display: block;
+}
+
+.wx-currency-input {
+  padding: 10px;
+  border: 1px solid var(--wx-color-border, #ccc);
+  border-radius: 6px;
+  height: var(--wx-input-height, 40px);
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: inherit;
+  width: 100%;
+  transition: border-color 0.2s;
+}
+
+.wx-currency-input:focus {
+  outline: none;
+  border-color: var(--wx-color-primary, #f19924);
+}
+
+.wx-currency-input-error {
+  border-color: var(--wx-color-error, #ef4444);
+}
+
+.wx-currency-input-error:focus {
+  border-color: var(--wx-color-error, #ef4444);
+}
+
+.wx-currency-input:disabled {
+  background-color: var(--wx-color-surface-hover, #f5f5f5);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.wx-currency-hint {
+  font-size: 12px;
+  color: var(--wx-color-text-muted, #6b7280);
+}
+
+.wx-currency-error {
+  font-size: 12px;
+  color: var(--wx-color-error, #ef4444);
+  margin-top: 2px;
+}

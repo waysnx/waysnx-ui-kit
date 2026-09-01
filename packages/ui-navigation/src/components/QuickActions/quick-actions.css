@@ -1,0 +1,391 @@
+/**
+ * QuickActions Component Styles
+ */
+
+.wx-quick-actions {
+  display: flex;
+  gap: 4px;
+  position: relative;
+  font-family: inherit;
+}
+
+/* ===== Orientation Variants ===== */
+
+.wx-quick-actions--horizontal {
+  flex-direction: row;
+  align-items: center;
+}
+
+.wx-quick-actions--vertical {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* ===== Display Variants ===== */
+
+.wx-quick-actions--bar {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  background-color: var(--color-background, #ffffff);
+  border: 1px solid var(--color-border, #e0e0e0);
+  border-radius: 4px;
+}
+
+.wx-quick-actions--grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 8px;
+  padding: 12px;
+}
+
+.wx-quick-actions--compact {
+  gap: 2px;
+}
+
+/* ===== Visible Actions Container ===== */
+
+.wx-quick-actions__visible {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* ===== Button Styles ===== */
+
+.wx-quick-actions__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--color-text, #333333);
+  font-size: var(--wx-font-size-sm, 14px);
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  white-space: nowrap;
+}
+
+.wx-quick-actions__button:hover:not(:disabled) {
+  background-color: var(--color-background-hover, #f5f5f5);
+  border-color: var(--color-border-hover, #d0d0d0);
+}
+
+.wx-quick-actions__button:active:not(:disabled) {
+  background-color: var(--color-background-active, #e8e8e8);
+  border-color: var(--color-border, #b0b0b0);
+}
+
+.wx-quick-actions__button:focus-visible {
+  outline: 2px solid var(--color-focus, #0066cc);
+  outline-offset: 2px;
+}
+
+.wx-quick-actions__button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.wx-quick-actions__button--loading {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.wx-quick-actions__button--disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ===== Icon Styles ===== */
+
+.wx-quick-actions__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: var(--wx-font-size-md, 16px);
+}
+
+/* ===== Label Styles ===== */
+
+.wx-quick-actions__label {
+  display: inline;
+  font-size: inherit;
+  font-weight: 500;
+}
+
+/* ===== Shortcut Display ===== */
+
+.wx-quick-actions__shortcut {
+  display: none;
+  font-size: var(--wx-font-size-xs, 12px);
+  color: var(--color-text-muted, #666666);
+  font-weight: 400;
+  background-color: var(--color-background-elevated, #f9f9f9);
+  padding: 2px 4px;
+  border-radius: 2px;
+  margin-left: 4px;
+  border: 1px solid var(--color-border, #e0e0e0);
+}
+
+.wx-quick-actions__button:hover .wx-quick-actions__shortcut {
+  display: inline;
+}
+
+/* ===== Spinner/Loading State ===== */
+
+.wx-quick-actions__spinner {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--color-border, #e0e0e0);
+  border-top-color: var(--color-primary, #0066cc);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===== More Button ===== */
+
+.wx-quick-actions__more {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.wx-quick-actions__more-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--color-text, #333333);
+  font-size: var(--wx-font-size-md, 16px);
+  transition: all 0.2s ease-in-out;
+  min-width: 32px;
+}
+
+.wx-quick-actions__more-button:hover {
+  background-color: var(--color-background-hover, #f5f5f5);
+  border-color: var(--color-border-hover, #d0d0d0);
+}
+
+.wx-quick-actions__more-button:focus-visible {
+  outline: 2px solid var(--color-focus, #0066cc);
+  outline-offset: 2px;
+}
+
+.wx-quick-actions__more-button[aria-expanded="true"] {
+  background-color: var(--color-background-active, #e8e8e8);
+  border-color: var(--color-border, #b0b0b0);
+}
+
+.wx-quick-actions__more-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== More Menu ===== */
+
+.wx-quick-actions__more-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 200px;
+  margin-top: 4px;
+  border: 1px solid var(--color-border, #e0e0e0);
+  border-radius: 4px;
+  background-color: var(--color-background, #ffffff);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  animation: slideUp 0.15s ease-out;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 4px;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.wx-quick-actions__more-menu .wx-quick-actions__button {
+  width: 100%;
+  justify-content: flex-start;
+  padding: 8px 12px;
+}
+
+.wx-quick-actions__more-menu .wx-quick-actions__button:hover {
+  background-color: var(--color-background-hover, #f5f5f5);
+}
+
+/* ===== Group Styles ===== */
+
+.wx-quick-actions__group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.wx-quick-actions__group-label {
+  font-size: var(--wx-font-size-xs, 12px);
+  font-weight: 600;
+  color: var(--color-text-muted, #666666);
+  padding: 4px 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.wx-quick-actions__group-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.wx-quick-actions--horizontal .wx-quick-actions__group {
+  flex-direction: row;
+}
+
+.wx-quick-actions--horizontal .wx-quick-actions__group-items {
+  flex-direction: row;
+}
+
+/* ===== Size Variants ===== */
+
+.wx-quick-actions--sm .wx-quick-actions__button {
+  padding: 4px 6px;
+  font-size: var(--wx-font-size-xs, 12px);
+}
+
+.wx-quick-actions--sm .wx-quick-actions__icon {
+  font-size: var(--wx-font-size-xs, 12px);
+}
+
+.wx-quick-actions--lg .wx-quick-actions__button {
+  padding: 8px 14px;
+  font-size: var(--wx-font-size-md, 16px);
+}
+
+.wx-quick-actions--lg .wx-quick-actions__icon {
+  font-size: var(--wx-font-size-xl, 20px);
+}
+
+.wx-quick-actions--grid.wx-quick-actions--sm {
+  grid-template-columns: repeat(auto-fit, minmax(48px, 1fr));
+}
+
+.wx-quick-actions--grid.wx-quick-actions--lg {
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+
+/* ===== Grid Variant Button Adjustments ===== */
+
+.wx-quick-actions--grid .wx-quick-actions__button {
+  flex-direction: column;
+  padding: 12px 8px;
+  border: 1px solid var(--color-border, #e0e0e0);
+  border-radius: 6px;
+  background-color: var(--color-background, #ffffff);
+  text-align: center;
+  min-height: 80px;
+  justify-content: center;
+}
+
+.wx-quick-actions--grid .wx-quick-actions__button:hover:not(:disabled) {
+  background-color: var(--color-background-hover, #f5f5f5);
+  border-color: var(--color-primary, #0066cc);
+}
+
+.wx-quick-actions--grid .wx-quick-actions__icon {
+  font-size: var(--wx-font-size-2xl, 24px);
+  margin-bottom: 4px;
+}
+
+.wx-quick-actions--grid .wx-quick-actions__label {
+  font-size: var(--wx-font-size-xs, 12px);
+  line-height: 1.2;
+}
+
+.wx-quick-actions--grid .wx-quick-actions__shortcut {
+  display: none;
+}
+
+/* ===== Accessibility ===== */
+
+@media (prefers-reduced-motion: reduce) {
+  .wx-quick-actions__button,
+  .wx-quick-actions__more-button,
+  .wx-quick-actions__more-menu,
+  .wx-quick-actions__spinner {
+    transition: none;
+    animation: none;
+  }
+
+  @keyframes spin {
+    to {
+      transform: none;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .wx-quick-actions__shortcut {
+    display: none !important;
+  }
+
+  .wx-quick-actions--bar {
+    padding: 2px;
+    gap: 2px;
+  }
+
+  .wx-quick-actions--grid {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  }
+}
+
+/* ===== High Contrast Mode ===== */
+
+@media (prefers-contrast: more) {
+  .wx-quick-actions__button,
+  .wx-quick-actions__more-button {
+    border: 1px solid var(--color-border, #e0e0e0);
+  }
+
+  .wx-quick-actions__button:hover:not(:disabled),
+  .wx-quick-actions__more-button:hover {
+    border-color: var(--color-text, #333333);
+  }
+}

@@ -1,0 +1,52 @@
+/* ─── ZoomControls ───────────────────────────────────────────────────────── */
+
+.wx-vis-zoom-controls {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  z-index: var(--wx-vis-z-toolbar);
+}
+
+.wx-vis-zoom-controls__btn {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--wx-vis-toolbar-border);
+  background: var(--wx-vis-toolbar-bg);
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--wx-color-text-muted, #64748b);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0;
+  transition: background var(--wx-vis-transition-fast), color var(--wx-vis-transition-fast);
+}
+
+.wx-vis-zoom-controls__btn:hover {
+  background: var(--wx-color-surface-hover, #f1f5f9);
+  color: var(--wx-color-text, #1e293b);
+}
+
+.wx-vis-zoom-controls__btn:focus-visible {
+  outline: 2px solid var(--wx-color-primary, #f19924);
+  outline-offset: 1px;
+}
+
+.wx-vis-zoom-controls__separator {
+  height: 1px;
+  background: var(--wx-vis-toolbar-border);
+  margin: 2px 0;
+}
+
+.wx-vis-zoom-controls__label {
+  font-size: 10px;
+  text-align: center;
+  color: var(--wx-color-text-muted, #64748b);
+  padding: 2px 0;
+}

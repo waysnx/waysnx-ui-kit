@@ -1,0 +1,227 @@
+/**
+ * WaysNX UI Accessibility Library Styles
+ * Global styles and CSS variables for accessibility settings
+ */
+
+/* Root Variables for Accessibility Settings */
+:root {
+  /* Accessibility-specific CSS variables */
+  --wx-accessibility-text-size: normal;
+  --wx-accessibility-text-spacing: normal;
+  --wx-accessibility-font: default;
+  --wx-accessibility-contrast: normal;
+  --wx-accessibility-color-filters: none;
+  --wx-accessibility-focus-mode: standard;
+  --wx-accessibility-reading-guide: false;
+  --wx-accessibility-highlight-links: false;
+  --wx-accessibility-reduced-motion: false;
+  --wx-accessibility-screen-reader: false;
+  --wx-accessibility-keyboard-shortcuts: true;
+  --wx-accessibility-font-scale: 1;
+}
+
+/* Text Size Scaling */
+:root[data-accessibility-text-size='large'] {
+  --wx-font-size-xs: 14.4px;
+  --wx-font-size-sm: 16.8px;
+  --wx-font-size-md: 18px;
+  --wx-font-size-lg: 21.6px;
+  --wx-font-size-xl: 24px;
+  --wx-font-size-2xl: 28.8px;
+  --wx-font-size-3xl: 38.4px;
+}
+
+:root[data-accessibility-text-size='x-large'] {
+  --wx-font-size-xs: 18px;
+  --wx-font-size-sm: 21px;
+  --wx-font-size-md: 22.5px;
+  --wx-font-size-lg: 27px;
+  --wx-font-size-xl: 30px;
+  --wx-font-size-2xl: 36px;
+  --wx-font-size-3xl: 48px;
+}
+
+:root[data-accessibility-text-size='xx-large'] {
+  --wx-font-size-xs: 24px;
+  --wx-font-size-sm: 28px;
+  --wx-font-size-md: 30px;
+  --wx-font-size-lg: 36px;
+  --wx-font-size-xl: 40px;
+  --wx-font-size-2xl: 48px;
+  --wx-font-size-3xl: 64px;
+}
+
+/* Text Spacing */
+:root[data-accessibility-text-spacing='loose'] {
+  --wx-accessibility-letter-spacing: 0.05em;
+  --wx-accessibility-line-height: 1.8;
+  --wx-accessibility-word-spacing: 0.1em;
+}
+
+:root[data-accessibility-text-spacing='extra-loose'] {
+  --wx-accessibility-letter-spacing: 0.1em;
+  --wx-accessibility-line-height: 2;
+  --wx-accessibility-word-spacing: 0.2em;
+}
+
+/* Dyslexia-Friendly Font */
+.wx-dyslexia-friendly-font,
+.wx-dyslexia-friendly-font body,
+.wx-dyslexia-friendly-font * {
+  font-family: 'OpenDyslexic', 'Trebuchet MS', sans-serif !important;
+  font-weight: 400;
+}
+
+/* High Contrast Mode */
+:root[data-accessibility-contrast='high'] {
+  --wx-color-text: #000000;
+  --wx-color-surface: #ffffff;
+  --wx-color-border: #000000;
+  --wx-shadow-focus: 0 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+:root[data-accessibility-contrast='yellow-black'] {
+  --wx-color-text: #ffff00;
+  --wx-color-surface: #000000;
+  --wx-color-border: #ffff00;
+  --wx-shadow-focus: 0 0 0 3px rgba(255, 255, 0, 0.3);
+}
+
+/* Focus Mode Styles */
+:root[data-accessibility-focus-mode='high-visibility'] *:focus-visible {
+  outline: 4px solid var(--wx-color-primary, #f19924) !important;
+  outline-offset: 3px !important;
+}
+
+:root[data-accessibility-focus-mode='box-outline'] *:focus-visible {
+  border: 3px solid var(--wx-color-primary, #f19924) !important;
+  box-shadow: 0 0 0 3px rgba(241, 153, 36, 0.3) !important;
+}
+
+/* Reduced Motion Support */
+.wx-reduced-motion,
+.wx-reduced-motion * {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+}
+
+
+
+/* Highlight Links */
+:root[data-accessibility-highlight-links='true'] a {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+:root[data-accessibility-highlight-links='true'] a:hover {
+  text-decoration-thickness: 3px;
+}
+
+/* Color Filters for Color Blind Users */
+/* grayscale is a pure CSS function — works fine on :root */
+:root[data-accessibility-color-filters='grayscale'] {
+  filter: grayscale(100%);
+}
+
+/* deuteranopia, protanopia, tritanopia are applied via JS using data URI SVG filters
+   on document.body.style.filter — url(#id) references cannot be applied to :root
+   because the SVG would always be a descendant of the filtered element */
+
+/* High Contrast Links */
+:root[data-accessibility-contrast='high'] a {
+  color: #0000ff;
+  text-decoration: underline;
+}
+
+:root[data-accessibility-contrast='yellow-black'] a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Screen Reader Optimizations */
+.wx-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Skip Links */
+.wx-skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--wx-color-primary, #f19924);
+  color: var(--wx-color-primary-contrast, #ffffff);
+  padding: 8px 12px;
+  text-decoration: none;
+  z-index: 10000;
+  border-radius: 0 0 4px 0;
+}
+
+.wx-skip-link:focus-visible {
+  top: 0;
+}
+
+/* Component Text Scaling — attribute is set on <html>, apply to body */
+:root[data-accessibility-text-size='large'] body {
+  line-height: 1.6;
+}
+
+:root[data-accessibility-text-size='x-large'] body {
+  line-height: 1.7;
+}
+
+:root[data-accessibility-text-size='xx-large'] body {
+  line-height: 1.8;
+}
+
+/* Text Spacing Application — consumes the --wx-accessibility-* variables
+   set by the :root[data-accessibility-text-spacing] rules above.
+   The data attribute is set on <html> (documentElement). Override the
+   variables to customize spacing values.
+
+   letter-spacing and word-spacing do NOT inherit into form/interactive
+   controls (button, input, select, textarea) — browsers reset them to
+   normal — so we apply those to all elements via a universal selector.
+   line-height stays on body (block-level) to avoid breaking the layout
+   of flex/grid containers and control heights. */
+:root[data-accessibility-text-spacing='loose'] *,
+:root[data-accessibility-text-spacing='extra-loose'] * {
+  letter-spacing: var(--wx-accessibility-letter-spacing, normal);
+  word-spacing: var(--wx-accessibility-word-spacing, normal);
+}
+
+:root[data-accessibility-text-spacing='loose'] body,
+:root[data-accessibility-text-spacing='extra-loose'] body {
+  line-height: var(--wx-accessibility-line-height, normal);
+}
+
+/* Font Application — the provider toggles the .wx-dyslexia-friendly-font
+   class on <html> (see .wx-dyslexia-friendly-font rule above). */
+
+/* Disable animations for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .wx-floating-button,
+  .wx-accessibility-center {
+    display: none;
+  }
+}

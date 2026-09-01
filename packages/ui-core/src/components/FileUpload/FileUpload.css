@@ -1,0 +1,344 @@
+.wx-fileupload-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--wx-font-family, inherit);
+}
+
+.wx-fileupload-label {
+  font-size: var(--wx-font-size-sm, 14px);
+  font-weight: 500;
+  color: var(--wx-color-text, #333);
+  margin-bottom: 4px;
+}
+
+.wx-fileupload-dropzone {
+  border: 2px dashed var(--wx-color-border, #d1d5db);
+  border-radius: var(--wx-radius-md, 8px);
+  padding: 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: var(--wx-color-surface-alt, #fafafa);
+}
+
+.wx-fileupload-dropzone:hover {
+  border-color: var(--wx-color-primary);
+  background-color: var(--wx-color-primary-light, #fff5eb);
+}
+
+.wx-fileupload-dropzone-dragging {
+  border-color: var(--wx-color-primary);
+  background-color: var(--wx-color-primary-light, #fff5eb);
+  transform: scale(1.01);
+}
+
+.wx-fileupload-dropzone-error {
+  border-color: var(--wx-color-error, #ef4444);
+  background-color: var(--wx-color-error-light, #fef2f2);
+}
+
+.wx-fileupload-dropzone-disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  background-color: var(--wx-color-surface-hover, #f5f5f5);
+}
+
+.wx-fileupload-dropzone-disabled:hover {
+  border-color: var(--wx-color-border, #d1d5db);
+  background-color: var(--wx-color-surface-hover, #f5f5f5);
+  transform: none;
+}
+
+.wx-fileupload-input {
+  display: none;
+}
+
+.wx-fileupload-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 12px;
+  color: var(--wx-color-text-light, #9ca3af);
+}
+
+.wx-fileupload-dropzone:hover .wx-fileupload-icon {
+  color: var(--wx-color-primary);
+}
+
+.wx-fileupload-dropzone-dragging .wx-fileupload-icon {
+  color: var(--wx-color-primary);
+}
+
+.wx-fileupload-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.wx-fileupload-text-primary {
+  font-size: var(--wx-font-size-sm, 14px);
+  font-weight: 500;
+  color: var(--wx-color-text, #333);
+}
+
+.wx-fileupload-text-secondary {
+  font-size: var(--wx-font-size-xs, 12px);
+  color: var(--wx-color-text-muted, #6b7280);
+}
+
+.wx-fileupload-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.wx-fileupload-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: var(--wx-color-surface-alt, #f9fafb);
+  border: 1px solid var(--wx-color-border, #e5e7eb);
+  border-radius: var(--wx-radius-md, 6px);
+  transition: background-color 0.2s ease;
+}
+
+.wx-fileupload-item:hover {
+  background-color: var(--wx-color-surface-hover, #f3f4f6);
+}
+
+.wx-fileupload-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+
+.wx-fileupload-item-name {
+  font-size: var(--wx-font-size-sm, 14px);
+  font-weight: 500;
+  color: var(--wx-color-text, #333);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wx-fileupload-item-size {
+  font-size: var(--wx-font-size-xs, 12px);
+  color: var(--wx-color-text-muted, #6b7280);
+}
+
+.wx-fileupload-item-remove {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  color: var(--wx-color-text-muted, #6b7280);
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: var(--wx-radius-sm, 4px);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.wx-fileupload-item-remove:hover {
+  background-color: var(--wx-color-error-light, #fee2e2);
+  color: var(--wx-color-error, #ef4444);
+}
+
+.wx-fileupload-hint {
+  font-size: var(--wx-font-size-xs, 12px);
+  color: var(--wx-color-text-muted, #6b7280);
+  margin-top: 4px;
+}
+
+.wx-fileupload-error-text {
+  font-size: var(--wx-font-size-xs, 12px);
+  color: var(--wx-color-error, #ef4444);
+  margin-top: 4px;
+}
+
+/* Preview Styles */
+.wx-fileupload-preview {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--wx-radius-sm, 4px);
+  overflow: hidden;
+  margin-right: 12px;
+  flex-shrink: 0;
+  background-color: var(--wx-color-surface-hover, #f3f4f6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wx-fileupload-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wx-fileupload-item {
+  display: flex;
+  align-items: center;
+}
+
+/* Upload Status Styles */
+.wx-fileupload-item-status {
+  font-size: 11px;
+  color: var(--wx-color-text-muted, #6b7280);
+  font-style: italic;
+}
+
+.wx-fileupload-item-status-success {
+  color: var(--wx-color-success, #10b981);
+  font-weight: 500;
+}
+
+/* Manual Upload Button */
+.wx-fileupload-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.wx-fileupload-upload-btn {
+  padding: 8px 16px;
+  background-color: var(--wx-color-primary);
+  color: var(--wx-color-primary-contrast, white);
+  border: none;
+  border-radius: var(--wx-radius-md, 6px);
+  font-size: var(--wx-font-size-sm, 14px);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.wx-fileupload-upload-btn:hover {
+  background-color: var(--wx-color-primary-hover);
+}
+
+.wx-fileupload-upload-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Uploaded Files Section */
+.wx-fileupload-uploaded-section {
+  margin-bottom: 12px;
+  padding: 12px;
+  background-color: var(--wx-color-success-light, #f0fdf4);
+  border: 1px solid var(--wx-color-success, #bbf7d0);
+  border-radius: var(--wx-radius-md, 6px);
+}
+
+.wx-fileupload-uploaded-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--wx-color-success, #166534);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.wx-fileupload-uploaded-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.wx-fileupload-uploaded-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  background-color: var(--wx-color-surface, white);
+  border-radius: var(--wx-radius-sm, 4px);
+}
+
+.wx-fileupload-uploaded-preview {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--wx-radius-sm, 4px);
+  overflow: hidden;
+  flex-shrink: 0;
+  background-color: var(--wx-color-surface-hover, #f3f4f6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wx-fileupload-uploaded-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wx-fileupload-uploaded-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.wx-fileupload-uploaded-link {
+  font-size: var(--wx-font-size-sm, 14px);
+  color: var(--wx-color-primary);
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+
+.wx-fileupload-uploaded-link:hover {
+  text-decoration: underline;
+}
+
+/* File Meta Information */
+.wx-fileupload-item-meta {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.wx-fileupload-item-date {
+  font-size: 11px;
+  color: var(--wx-color-text-light, #9ca3af);
+}
+
+/* Upload Status Enhancements */
+.wx-fileupload-item-status-uploading {
+  color: var(--wx-color-info, #3b82f6);
+  font-weight: 500;
+}
+
+.wx-fileupload-item-status-error {
+  color: var(--wx-color-error, #ef4444);
+  font-weight: 500;
+}
+
+.wx-fileupload-progress-text {
+  font-weight: 600;
+}
+
+/* Progress Bar */
+.wx-fileupload-progress-bar {
+  width: 100%;
+  height: 4px;
+  background-color: var(--wx-color-border, #e5e7eb);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.wx-fileupload-progress-fill {
+  height: 100%;
+  background-color: var(--wx-color-primary);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}

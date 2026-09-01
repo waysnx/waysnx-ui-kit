@@ -1,0 +1,243 @@
+/**
+ * @waysnx/ui-data — Component Styles
+ */
+
+/* Global box-sizing */
+[class^="wx-adv-"],
+[class*=" wx-adv-"],
+[class^="wx-adv-"] *,
+[class*=" wx-adv-"] * {
+  box-sizing: border-box;
+}
+
+/* ─── Shared Card ─────────────────────────────────────────────────────── */
+
+.wx-adv-card {
+  background: var(--wx-adv-card-bg);
+  border: 1px solid var(--wx-adv-card-border);
+  border-radius: var(--wx-adv-card-radius);
+  box-shadow: var(--wx-adv-card-shadow);
+  overflow: hidden;
+}
+
+/* ─── Toolbar ─────────────────────────────────────────────────────────── */
+
+.wx-adv-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 12px;
+  background: var(--wx-adv-editor-toolbar-bg);
+  border-bottom: 1px solid var(--wx-adv-editor-border);
+  min-height: 44px;
+}
+
+.wx-adv-toolbar__btn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: none;
+  border-radius: var(--wx-radius-sm, 4px);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--wx-color-text-muted, #6b7280);
+  transition: all var(--wx-adv-transition);
+}
+
+.wx-adv-toolbar__btn:hover {
+  background: var(--wx-color-surface-hover, #f1f5f9);
+  color: var(--wx-color-text, #1a1a1a);
+}
+
+.wx-adv-toolbar__btn--active {
+  background: var(--wx-color-primary-light, #eff6ff);
+  color: var(--wx-color-primary, #2563eb);
+}
+
+.wx-adv-toolbar__separator {
+  width: 1px;
+  height: 20px;
+  background: var(--wx-adv-editor-border);
+  margin: 0 4px;
+}
+
+/* ─── Markdown Editor ─────────────────────────────────────────────────── */
+
+.wx-adv-markdown-editor {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--wx-adv-editor-border);
+  border-radius: var(--wx-adv-editor-radius);
+  overflow: hidden;
+}
+
+.wx-adv-markdown-editor__body {
+  display: flex;
+  flex: 1;
+}
+
+.wx-adv-markdown-editor__input {
+  flex: 1;
+  border: none;
+  padding: 16px;
+  font-family: var(--wx-adv-editor-font);
+  font-size: 14px;
+  line-height: 1.6;
+  resize: none;
+  outline: none;
+  background: var(--wx-adv-editor-bg);
+  color: var(--wx-color-text, #1a1a1a);
+  min-height: 200px;
+}
+
+.wx-adv-markdown-editor__input::placeholder {
+  color: var(--wx-color-text-muted, #6b7280);
+}
+
+.wx-adv-markdown-editor__preview {
+  flex: 1;
+  padding: 16px;
+  border-left: 1px solid var(--wx-adv-editor-border);
+  overflow-y: auto;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--wx-color-text, #1a1a1a);
+  background: var(--wx-adv-card-bg);
+}
+
+.wx-adv-markdown-editor__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 12px;
+  border-top: 1px solid var(--wx-adv-editor-border);
+  font-size: 11px;
+  color: var(--wx-color-text-muted, #6b7280);
+  background: var(--wx-adv-editor-toolbar-bg);
+}
+
+/* ─── JSON Editor ─────────────────────────────────────────────────────── */
+
+.wx-adv-json-editor {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--wx-adv-editor-border);
+  border-radius: var(--wx-adv-editor-radius);
+  overflow: hidden;
+}
+
+.wx-adv-json-editor__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: var(--wx-adv-editor-toolbar-bg);
+  border-bottom: 1px solid var(--wx-adv-editor-border);
+  font-size: 13px;
+}
+
+.wx-adv-json-editor__content {
+  position: relative;
+  overflow: auto;
+  min-height: 200px;
+  max-height: 500px;
+}
+
+.wx-adv-json-editor__textarea {
+  width: 100%;
+  min-height: 200px;
+  border: none;
+  padding: 16px;
+  padding-left: 56px;
+  font-family: var(--wx-adv-editor-font);
+  font-size: 13px;
+  line-height: 1.7;
+  resize: vertical;
+  outline: none;
+  background: var(--wx-adv-editor-bg);
+  color: var(--wx-color-text, #1a1a1a);
+}
+
+.wx-adv-json-editor__line-numbers {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 44px;
+  padding: 16px 8px;
+  background: var(--wx-adv-editor-line-number-bg);
+  border-right: 1px solid var(--wx-adv-editor-border);
+  font-family: var(--wx-adv-editor-font);
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--wx-adv-editor-line-number-color);
+  text-align: right;
+  user-select: none;
+  pointer-events: none;
+}
+
+.wx-adv-json-editor__status {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 12px;
+  font-size: 11px;
+  color: var(--wx-color-text-muted, #6b7280);
+  background: var(--wx-adv-editor-toolbar-bg);
+  border-top: 1px solid var(--wx-adv-editor-border);
+}
+
+/* ─── Code Viewer / Editor ────────────────────────────────────────────── */
+
+.wx-adv-code-viewer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--wx-adv-editor-border);
+  border-radius: var(--wx-adv-editor-radius);
+  overflow: hidden;
+  background: var(--wx-adv-editor-bg);
+  font-family: var(--wx-adv-editor-font);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.wx-adv-code-viewer__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: var(--wx-adv-editor-toolbar-bg);
+  border-bottom: 1px solid var(--wx-adv-editor-border);
+  font-size: 12px;
+  color: var(--wx-color-text-muted, #6b7280);
+}
+
+.wx-adv-code-viewer__body {
+  display: flex;
+  overflow: auto;
+  max-height: 500px;
+}
+
+.wx-adv-code-viewer__lines {
+  padding: 12px 8px;
+  background: var(--wx-adv-editor-line-number-bg);
+  border-right: 1px solid var(--wx-adv-editor-border);
+  text-align: right;
+  user-select: none;
+  color: var(--wx-adv-editor-line-number-color);
+  min-width: 44px;
+}
+
+.wx-adv-code-viewer__code {
+  flex: 1;
+  padding: 12px 16px;
+  white-space: pre;
+  overflow-x: auto;
+  color: var(--wx-color-text, #1a1a1a);
+}
+
+.wx-adv-code-viewer__line--highlighted {
+  background: var(--wx-adv-editor-highlight-bg);
+  display: block;
+}

@@ -1,0 +1,46 @@
+.wx-tooltip-wrapper {
+  position: relative;
+  display: inline-flex;
+}
+
+.wx-tooltip {
+  position: absolute;
+  background: var(--wx-color-text, #333);
+  color: var(--wx-color-primary-contrast, white);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  z-index: 1200;
+  pointer-events: none;
+  animation: wx-tooltip-in 0.15s ease;
+}
+
+@keyframes wx-tooltip-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.wx-tooltip-top {
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wx-tooltip-bottom {
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wx-tooltip-left {
+  right: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.wx-tooltip-right {
+  left: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%);
+}

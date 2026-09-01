@@ -1,0 +1,244 @@
+/**
+ * Dashboard Filter Bar & Search styles
+ */
+
+/* Filter Bar */
+.dashboard-filter-bar {
+  display: flex;
+  align-items: center;
+  padding: var(--wx-spacing-sm, 8px) var(--wx-spacing-md, 16px);
+  background-color: var(--wx-color-surface, #ffffff);
+  border: 1px solid var(--wx-color-border, #e2e8f0);
+  border-radius: var(--wx-radius-md, 8px);
+  gap: var(--wx-spacing-md, 16px);
+}
+
+.dashboard-filter-bar-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: var(--wx-shadow-sm, 0 1px 2px rgba(0,0,0,0.05));
+}
+
+.dashboard-filter-bar-content {
+  display: flex;
+  align-items: center;
+  gap: var(--wx-spacing-md, 16px);
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.dashboard-filter-item {
+  display: flex;
+  align-items: center;
+  gap: var(--wx-spacing-sm, 8px);
+}
+
+.dashboard-filter-label {
+  font-size: var(--wx-font-size-sm, 14px);
+  font-weight: 500;
+  color: var(--wx-color-text, #1e293b);
+  white-space: nowrap;
+}
+
+.dashboard-filter-input {
+  height: var(--wx-input-height, 40px);
+  padding: 0 var(--wx-spacing-sm, 8px);
+  border: 1px solid var(--wx-color-border, #e2e8f0);
+  border-radius: var(--wx-radius-sm, 4px);
+  background-color: var(--wx-color-surface, #ffffff);
+  color: var(--wx-color-text, #1e293b);
+  font-size: var(--wx-font-size-sm, 14px);
+  font-family: inherit;
+  outline: none;
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+  min-width: 120px;
+}
+
+.dashboard-filter-input:focus {
+  border-color: var(--wx-color-primary, #f19924);
+  box-shadow: var(--wx-shadow-focus, 0 0 0 3px rgba(241, 153, 36, 0.1));
+}
+
+.dashboard-filter-input:hover {
+  border-color: var(--wx-color-text-light, #94a3b8);
+}
+
+.dashboard-filter-daterange {
+  display: flex;
+  align-items: center;
+  gap: var(--wx-spacing-sm, 8px);
+}
+
+.dashboard-filter-daterange span {
+  font-size: var(--wx-font-size-xs, 12px);
+  color: var(--wx-color-text-muted, #64748b);
+}
+
+.dashboard-filter-clear-all {
+  height: var(--wx-input-height, 40px);
+  padding: 0 var(--wx-spacing-md, 16px);
+  border: 1px solid var(--wx-color-border, #e2e8f0);
+  border-radius: var(--wx-radius-sm, 4px);
+  background-color: var(--wx-color-surface, #ffffff);
+  color: var(--wx-color-text-muted, #64748b);
+  font-size: var(--wx-font-size-sm, 14px);
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 200ms ease;
+  white-space: nowrap;
+}
+
+.dashboard-filter-clear-all:hover {
+  background-color: var(--wx-color-error-light, #fef2f2);
+  border-color: var(--wx-color-error, #ef4444);
+  color: var(--wx-color-error, #ef4444);
+}
+
+.dashboard-filter-clear-all:focus-visible {
+  outline: 2px solid var(--wx-color-primary, #f19924);
+  outline-offset: 2px;
+}
+
+/* Filter Chip */
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--wx-spacing-xs, 4px);
+  padding: 4px 10px;
+  background-color: var(--wx-color-primary-light, #fff5e6);
+  border: 1px solid var(--wx-color-primary, #f19924);
+  border-radius: var(--wx-radius-lg, 12px);
+  font-size: var(--wx-font-size-xs, 12px);
+  color: var(--wx-color-primary, #f19924);
+  font-weight: 500;
+}
+
+.filter-chip-label {
+  white-space: nowrap;
+}
+
+.filter-chip-remove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--wx-color-primary, #f19924);
+  font-size: var(--wx-font-size-xs, 12px);
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 150ms ease;
+}
+
+.filter-chip-remove:hover {
+  background-color: rgba(241, 153, 36, 0.2);
+}
+
+/* Dashboard Search */
+.dashboard-search {
+  position: relative;
+  width: 100%;
+}
+
+.dashboard-search-form {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.dashboard-search-input {
+  flex: 1;
+  height: var(--wx-input-height, 40px);
+  padding: 0 var(--wx-spacing-md, 16px);
+  border: 1px solid var(--wx-color-border, #e2e8f0);
+  border-right: none;
+  border-radius: var(--wx-radius-sm, 4px) 0 0 var(--wx-radius-sm, 4px);
+  background-color: var(--wx-color-surface, #ffffff);
+  color: var(--wx-color-text, #1e293b);
+  font-size: var(--wx-font-size-sm, 14px);
+  font-family: inherit;
+  outline: none;
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+}
+
+.dashboard-search-input::placeholder {
+  color: var(--wx-color-text-light, #94a3b8);
+}
+
+.dashboard-search-input:focus {
+  border-color: var(--wx-color-primary, #f19924);
+  box-shadow: var(--wx-shadow-focus, 0 0 0 3px rgba(241, 153, 36, 0.1));
+  z-index: 1;
+}
+
+.dashboard-search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--wx-input-height, 40px);
+  width: var(--wx-input-height, 40px);
+  padding: 0;
+  border: 1px solid var(--wx-color-border, #e2e8f0);
+  border-radius: 0 var(--wx-radius-sm, 4px) var(--wx-radius-sm, 4px) 0;
+  background-color: var(--wx-color-surface-alt, #f8fafc);
+  color: var(--wx-color-text-muted, #64748b);
+  font-size: var(--wx-font-size-md, 16px);
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.dashboard-search-button:hover {
+  background-color: var(--wx-color-primary, #f19924);
+  border-color: var(--wx-color-primary, #f19924);
+  color: white;
+}
+
+.dashboard-search-button:focus-visible {
+  outline: 2px solid var(--wx-color-primary, #f19924);
+  outline-offset: 2px;
+}
+
+/* Search Suggestions */
+.dashboard-search-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 4px;
+  background-color: var(--wx-color-surface, #ffffff);
+  border: 1px solid var(--wx-color-border, #e2e8f0);
+  border-radius: var(--wx-radius-md, 8px);
+  box-shadow: var(--wx-shadow-md, 0 4px 6px -1px rgba(0,0,0,0.07));
+  z-index: 50;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.dashboard-search-suggestion {
+  padding: var(--wx-spacing-sm, 8px) var(--wx-spacing-md, 16px);
+  font-size: var(--wx-font-size-sm, 14px);
+  color: var(--wx-color-text, #1e293b);
+  cursor: pointer;
+  transition: background-color 150ms ease;
+}
+
+.dashboard-search-suggestion:hover,
+.dashboard-search-suggestion.selected {
+  background-color: var(--wx-color-surface-hover, #f1f5f9);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .dashboard-filter-input,
+  .dashboard-filter-clear-all,
+  .dashboard-search-input,
+  .dashboard-search-button,
+  .dashboard-search-suggestion,
+  .filter-chip-remove {
+    transition: none;
+  }
+}

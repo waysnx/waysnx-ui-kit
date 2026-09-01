@@ -1,0 +1,9 @@
+.wx-accordion{border:1px solid var(--wx-color-border,#e5e7eb);border-radius:0.375rem;overflow:hidden}
+.wx-accordion-item{border-bottom:1px solid var(--wx-color-border,#e5e7eb)}
+.wx-accordion-item:last-child{border-bottom:none}
+.wx-accordion-trigger{width:100%;padding:1rem;background:var(--wx-color-surface,#fff);border:none;display:flex;justify-content:space-between;align-items:center;cursor:pointer;text-align:left;font-size:var(--wx-font-size-md, 16px)}
+.wx-accordion-trigger:hover{background:var(--wx-color-surface-alt,#f9fafb)}
+.wx-accordion-title{font-weight:500}
+.wx-accordion-icon{transition:transform 0.2s;font-size:var(--wx-font-size-xs, 12px)}
+.wx-accordion-icon-open{transform:rotate(180deg)}
+.wx-accordion-content{padding:1rem;border-top:1px solid var(--wx-color-border,#e5e7eb)}

@@ -1,0 +1,25 @@
+/**
+ * @waysnx/ui-maps — Design Tokens
+ * All tokens use --wx-adv-* prefix
+ */
+
+:root {
+  /* Map */
+  --wx-adv-map-height: 400px;
+  --wx-adv-map-radius: var(--wx-radius-lg, 12px);
+  --wx-adv-map-border: var(--wx-color-border, rgba(0, 0, 0, 0.1));
+  --wx-adv-map-control-bg: var(--wx-color-surface, #ffffff);
+
+  /* General */
+  --wx-adv-card-bg: var(--wx-color-surface, #ffffff);
+  --wx-adv-card-border: var(--wx-color-border, rgba(0, 0, 0, 0.1));
+  --wx-adv-card-radius: var(--wx-radius-lg, 12px);
+  --wx-adv-card-shadow: var(--wx-shadow-sm, 0 1px 2px rgba(0, 0, 0, 0.05));
+  --wx-adv-transition: 200ms ease;
+}
+
+[data-theme="dark"] {
+  --wx-adv-card-bg: #1f2937;
+  --wx-adv-card-border: #374151;
+  --wx-adv-map-control-bg: #1f2937;
+}

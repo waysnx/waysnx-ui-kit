@@ -1,0 +1,171 @@
+/* ─── Node ───────────────────────────────────────────────────────────────── */
+
+.wx-vis-node {
+  position: absolute;
+  width: var(--wx-vis-node-width);
+  height: var(--wx-vis-node-height);
+  background: var(--wx-vis-node-bg);
+  border: 1px solid var(--wx-vis-node-border);
+  border-radius: var(--wx-vis-node-border-radius);
+  box-shadow: var(--wx-vis-node-shadow);
+  padding: var(--wx-vis-node-padding);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition:
+    box-shadow var(--wx-vis-transition-fast),
+    border-color var(--wx-vis-transition-fast),
+    transform var(--wx-vis-transition-fast);
+  z-index: var(--wx-vis-z-node);
+  box-sizing: border-box;
+  outline: none;
+}
+
+.wx-vis-node:hover {
+  box-shadow: var(--wx-vis-node-shadow-hover);
+  z-index: var(--wx-vis-z-node-selected);
+}
+
+.wx-vis-node:focus-visible {
+  outline: 2px solid var(--wx-color-primary, #f19924);
+  outline-offset: 2px;
+}
+
+/* Dark mode */
+.wx-vis-canvas--dark .wx-vis-node {
+  background: var(--wx-vis-node-bg-dark);
+  border-color: var(--wx-vis-node-border-dark);
+}
+
+/* Selected */
+.wx-vis-node--selected {
+  border-color: var(--wx-vis-node-selected-border);
+  box-shadow: var(--wx-vis-node-shadow-selected);
+  z-index: var(--wx-vis-z-node-selected);
+}
+
+/* Highlighted (search result) */
+.wx-vis-node--highlighted {
+  background: var(--wx-vis-node-highlighted-bg);
+}
+
+.wx-vis-canvas--dark .wx-vis-node--highlighted {
+  background: var(--wx-vis-node-highlighted-bg-dark);
+}
+
+/* Dragging */
+.wx-vis-node--dragging {
+  opacity: var(--wx-vis-node-dragging-opacity);
+  cursor: grabbing;
+}
+
+/* Drag over target */
+.wx-vis-node--dragover {
+  border-color: var(--wx-vis-node-dragover-border);
+  border-style: dashed;
+}
+
+/* Disabled */
+.wx-vis-node--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* ─── Node Content ───────────────────────────────────────────────────────── */
+
+.wx-vis-node__avatar {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--wx-color-surface-alt, #f8fafc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--wx-color-text-muted, #64748b);
+  position: relative;
+}
+
+.wx-vis-node__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wx-vis-node__status {
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--wx-vis-node-bg);
+}
+
+.wx-vis-node__status--online  { background: var(--wx-vis-status-online); }
+.wx-vis-node__status--offline { background: var(--wx-vis-status-offline); }
+.wx-vis-node__status--away    { background: var(--wx-vis-status-away); }
+.wx-vis-node__status--busy    { background: var(--wx-vis-status-busy); }
+
+.wx-vis-node__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.wx-vis-node__label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--wx-color-text, #1e293b);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.wx-vis-node__subtitle {
+  font-size: 11px;
+  color: var(--wx-color-text-muted, #64748b);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 2px;
+}
+
+.wx-vis-node__badge {
+  font-size: 10px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: var(--wx-color-primary-light, #fff5e6);
+  color: var(--wx-color-primary, #f19924);
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+/* Expand/Collapse toggle button */
+.wx-vis-node__toggle {
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--wx-vis-node-border);
+  background: var(--wx-vis-node-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: var(--wx-vis-z-overlay);
+  font-size: 10px;
+  color: var(--wx-color-text-muted, #64748b);
+  transition: background var(--wx-vis-transition-fast);
+}
+
+.wx-vis-node__toggle:hover {
+  background: var(--wx-color-primary-light, #fff5e6);
+  color: var(--wx-color-primary, #f19924);
+}

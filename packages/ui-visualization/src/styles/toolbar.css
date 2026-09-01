@@ -1,0 +1,69 @@
+/* ─── Toolbar ────────────────────────────────────────────────────────────── */
+
+.wx-vis-toolbar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  background: var(--wx-vis-toolbar-bg);
+  border: 1px solid var(--wx-vis-toolbar-border);
+  border-radius: var(--wx-vis-toolbar-radius);
+  box-shadow: var(--wx-vis-toolbar-shadow);
+  z-index: var(--wx-vis-z-toolbar);
+}
+
+.wx-vis-toolbar--top-left    { top: 12px; left: 12px; }
+.wx-vis-toolbar--top-right   { top: 12px; right: 12px; }
+.wx-vis-toolbar--bottom-left { bottom: 12px; left: 12px; }
+.wx-vis-toolbar--bottom-right { bottom: 12px; right: 12px; }
+
+.wx-vis-canvas--dark .wx-vis-toolbar {
+  background: var(--wx-vis-toolbar-bg-dark);
+  border-color: var(--wx-vis-toolbar-border-dark);
+}
+
+.wx-vis-toolbar__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--wx-color-text-muted, #64748b);
+  transition: background var(--wx-vis-transition-fast), color var(--wx-vis-transition-fast);
+  padding: 0;
+}
+
+.wx-vis-toolbar__btn:hover {
+  background: var(--wx-color-surface-hover, #f1f5f9);
+  color: var(--wx-color-text, #1e293b);
+}
+
+.wx-vis-toolbar__btn:focus-visible {
+  outline: 2px solid var(--wx-color-primary, #f19924);
+  outline-offset: 1px;
+}
+
+.wx-vis-toolbar__btn:active {
+  background: var(--wx-color-primary-light, #fff5e6);
+  color: var(--wx-color-primary, #f19924);
+}
+
+.wx-vis-toolbar__separator {
+  width: 1px;
+  height: 18px;
+  background: var(--wx-vis-toolbar-border);
+  margin: 0 2px;
+}
+
+.wx-vis-toolbar__zoom-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--wx-color-text-muted, #64748b);
+  min-width: 36px;
+  text-align: center;
+}

@@ -1,0 +1,7 @@
+.wx-collapsible{border:1px solid var(--wx-color-border,#e5e7eb);border-radius:0.375rem;overflow:hidden}
+.wx-collapsible-trigger{width:100%;padding:1rem;background:var(--wx-color-surface,#fff);border:none;display:flex;justify-content:space-between;align-items:center;cursor:pointer;text-align:left;font-size:var(--wx-font-size-md, 16px)}
+.wx-collapsible-trigger:hover{background:var(--wx-color-surface-alt,#f9fafb)}
+.wx-collapsible-title{font-weight:500}
+.wx-collapsible-icon{transition:transform 0.2s;font-size:var(--wx-font-size-xs, 12px)}
+.wx-collapsible-icon-open{transform:rotate(180deg)}
+.wx-collapsible-content{padding:1rem;border-top:1px solid var(--wx-color-border,#e5e7eb)}

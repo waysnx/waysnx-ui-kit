@@ -1,0 +1,8 @@
+.wx-tabs{display:flex;flex-direction:column}
+.wx-tab-list{display:flex;border-bottom:2px solid var(--wx-color-border,#e5e7eb);gap:0.5rem}
+.wx-tab{padding:0.75rem 1rem;background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;font-size:var(--wx-font-size-sm, 14px);font-weight:500;color:var(--wx-color-text-muted,#6b7280);transition:all 0.2s;margin-bottom:-2px}
+.wx-tab:hover{color:var(--wx-color-text,#374151)}
+.wx-tab-active{color:var(--wx-color-primary,#f19924);border-bottom-color:var(--wx-color-primary,#f19924)}
+.wx-tab-panels{padding:1rem 0}
+.wx-tab-panel{animation:fadeIn 0.2s}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}

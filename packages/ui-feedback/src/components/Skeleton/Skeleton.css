@@ -1,0 +1,37 @@
+.wx-skeleton {
+  background: linear-gradient(90deg, var(--wx-color-border, #e0e0e0) 25%, var(--wx-color-surface-hover, #f0f0f0) 50%, var(--wx-color-border, #e0e0e0) 75%);
+  background-size: 200% 100%;
+  animation: wx-skeleton-shimmer 1.5s infinite;
+  border-radius: 4px;
+}
+
+.wx-skeleton-text {
+  height: 1em;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.wx-skeleton-text:last-child {
+  width: 60%;
+}
+
+.wx-skeleton-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.wx-skeleton-rect {
+  width: 100%;
+  height: 120px;
+}
+
+.wx-skeleton-group {
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes wx-skeleton-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

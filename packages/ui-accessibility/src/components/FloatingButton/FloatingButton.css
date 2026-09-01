@@ -1,0 +1,124 @@
+.wx-floating-button {
+  position: fixed;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--wx-color-primary, #f19924);
+  color: var(--wx-color-primary-contrast, #ffffff);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--wx-shadow-lg, 0 10px 15px -3px rgba(0, 0, 0, 0.08));
+  z-index: 999;
+  transition: all 0.2s ease-in-out;
+  padding: 0;
+  font-size: 24px;
+
+  /* Keyboard focus support */
+  outline: none;
+}
+
+/* Position variants */
+.wx-floating-button--bottom-right {
+  bottom: 24px;
+  right: 24px;
+}
+
+.wx-floating-button--bottom-left {
+  bottom: 24px;
+  left: 24px;
+}
+
+.wx-floating-button--top-right {
+  top: 24px;
+  right: 24px;
+}
+
+.wx-floating-button--top-left {
+  top: 24px;
+  left: 24px;
+}
+
+/* Hover state */
+.wx-floating-button:hover {
+  transform: scale(1.1);
+  box-shadow: var(--wx-shadow-xl, 0 20px 25px -5px rgba(0, 0, 0, 0.08));
+  background-color: var(--wx-color-primary-hover, #e08916);
+}
+
+/* Active/Pressed state */
+.wx-floating-button[aria-pressed='true'] {
+  transform: scale(0.95);
+}
+
+/* Focus state */
+.wx-floating-button:focus-visible {
+  outline: 3px solid var(--wx-shadow-focus, 0 0 0 3px rgba(241, 153, 36, 0.1));
+  outline-offset: 2px;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .wx-floating-button {
+    transition: none;
+  }
+
+  .wx-floating-button:hover {
+    transform: none;
+  }
+
+  .wx-floating-button[aria-pressed='true'] {
+    transform: none;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .wx-floating-button {
+    width: 48px;
+    height: 48px;
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .wx-floating-button--bottom-left {
+    bottom: 16px;
+    left: 16px;
+  }
+
+  .wx-floating-button--top-right {
+    top: 16px;
+    right: 16px;
+  }
+
+  .wx-floating-button--top-left {
+    top: 16px;
+    left: 16px;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: more) {
+  .wx-floating-button {
+    border: 2px solid currentColor;
+  }
+}
+
+/* Reduced motion class from provider */
+.wx-reduced-motion .wx-floating-button {
+  transition: none;
+}
+
+.wx-reduced-motion .wx-floating-button:hover {
+  transform: none;
+}
+
+/* SVG icon styles */
+.wx-floating-button svg {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  fill: currentColor;
+}

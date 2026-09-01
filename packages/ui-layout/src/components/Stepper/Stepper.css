@@ -1,0 +1,126 @@
+.stepper {
+  display: flex;
+}
+
+.stepper-horizontal {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.stepper-vertical {
+  flex-direction: column;
+}
+
+.stepper-step {
+  display: flex;
+  flex: 1;
+}
+
+.stepper-horizontal .stepper-step {
+  flex-direction: column;
+  align-items: center;
+}
+
+.stepper-vertical .stepper-step {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.stepper-step-indicator {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.stepper-horizontal .stepper-step-indicator {
+  flex-direction: column;
+  width: 100%;
+}
+
+.stepper-vertical .stepper-step-indicator {
+  flex-direction: column;
+  margin-right: 1rem;
+}
+
+.stepper-step-circle {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size:var(--wx-font-size-sm, 14px);
+  background: var(--wx-color-border, #e0e0e0);
+  color: var(--wx-color-text-muted, #666);
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+.stepper-step-completed .stepper-step-circle {
+  background: var(--wx-color-primary, #f19924);
+  color: var(--wx-color-primary-contrast, white);
+}
+
+.stepper-step-current .stepper-step-circle {
+  background: var(--wx-color-primary, #f19924);
+  color: var(--wx-color-primary-contrast, white);
+  box-shadow: var(--wx-shadow-focus, 0 0 0 4px rgba(241, 153, 36, 0.2));
+}
+
+.stepper-step-line {
+  background: var(--wx-color-border, #e0e0e0);
+  transition: background 0.3s;
+}
+
+.stepper-horizontal .stepper-step-line {
+  height: 2px;
+  flex: 1;
+  margin-left: 0.5rem;
+}
+
+.stepper-vertical .stepper-step-line {
+  width: 2px;
+  flex: 1;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.9375rem;
+}
+
+.stepper-step-completed .stepper-step-line {
+  background: var(--wx-color-primary, #f19924);
+}
+
+.stepper-step-content {
+  margin-top: 0.5rem;
+}
+
+.stepper-vertical .stepper-step-content {
+  margin-top: 0;
+  padding-bottom: 1.5rem;
+}
+
+.stepper-step-label {
+  font-weight: 500;
+  color: var(--wx-color-text, #333);
+  text-align: center;
+}
+
+.stepper-vertical .stepper-step-label {
+  text-align: left;
+}
+
+.stepper-step-upcoming .stepper-step-label {
+  color: var(--wx-color-text-light, #999);
+}
+
+.stepper-step-description {
+  font-size:var(--wx-font-size-sm, 14px);
+  color: var(--wx-color-text-muted, #666);
+  margin-top: 0.25rem;
+  text-align: center;
+}
+
+.stepper-vertical .stepper-step-description {
+  text-align: left;
+}

@@ -1,19 +1,526 @@
-# WaysNX UI Kit
+<p align="center">
+  <img
+    src="assets/branding/waysnx-ui-kit-logo.png"
+    alt="WaysNX UI Kit"
+    width="180"
+  />
+</p>
 
-## Enterprise React UI Platform
+<h1 align="center">WaysNX UI Kit</h1>
 
-WaysNX UI Kit is a modular React UI platform from WaysNX Technologies, designed for enterprise applications with reusable components, design tokens, accessibility, security, integration capabilities, testing standards, and structured component documentation.
+<p align="center">
+  Modular React UI libraries for building consistent, accessible, and scalable applications.
+</p>
 
-## Repository Contents
+<p align="center">
+  <a href="https://uikit.waysnx.tech">Documentation</a> ·
+  <a href="https://www.npmjs.com/org/waysnx">NPM</a> ·
+  <a href="https://github.com/waysnx">WaysNX on GitHub</a>
+</p>
 
-- `packages/` — 18 UI libraries
-- `examples/waysnx-admin-demo/` — reference enterprise application
-- `storybook/` — interactive component development and documentation
-- `playwright/` — browser and integration validation
-- `docs/` — human and generated documentation
-- `schemas/` — machine-readable metadata contracts
-- `specification/` — UI Kit specifications
-- `decisions/` — architecture decisions
-- `.github/` — repository automation and contribution templates
+---
 
-See [`START_HERE.md`](START_HERE.md) to begin.
+## Overview
+
+WaysNX UI Kit is a modular React UI ecosystem built for modern enterprise applications.
+
+It provides focused libraries for core UI, forms, layout, feedback, navigation, accessibility, security, communication, visualization, dashboards, data, files, media, maps, documentation, and advanced application capabilities.
+
+The project is designed around reusable APIs, shared design tokens, accessibility, framework-neutral integrations, testability, and predictable package boundaries.
+
+### Current scope
+
+- **18 focused libraries**
+- **242 documented components**
+- **1 aggregate package:** `@waysnx/ui-kit`
+- React 19 + TypeScript
+- Vite, Storybook and Playwright
+- Shared CSS variables and design tokens
+- Accessibility and security validation
+- Generated documentation through WDG
+
+> `@waysnx/ui-kit` is an aggregate package and is not counted as an additional focused library.
+
+### Public Release
+
+**Version:** `1.0.0`  
+**Target:** September 1, 2026
+
+All WaysNX UI Kit packages are planned to be published as `1.0.0` for the initial public release.
+
+---
+
+## Libraries
+
+| Package | Components | Purpose |
+|---|---:|---|
+| `@waysnx/ui-accessibility` | 5 | Accessibility-focused UI capabilities and helpers |
+| `@waysnx/ui-communication` | 15 | Messaging, collaboration and communication UI |
+| `@waysnx/ui-core` | 24 | Core controls, tokens and foundational UI |
+| `@waysnx/ui-dashboard` | 13 | Dashboard structures and reusable dashboard UI |
+| `@waysnx/ui-data` | 6 | Data-oriented UI and integration capabilities |
+| `@waysnx/ui-diagnostics` | 0 | Client-side runtime diagnostics and UI error observability (functional library) |
+| `@waysnx/ui-docs` | 12 | Documentation-oriented UI components |
+| `@waysnx/ui-feedback` | 12 | Alerts, dialogs, toasts and feedback states |
+| `@waysnx/ui-files` | 2 | File upload, preview and file-management UI |
+| `@waysnx/ui-form-builder` | 0 | Schema/metadata-driven form functionality |
+| `@waysnx/ui-grid-builder` | 6 | Reusable grid and data-listing functionality |
+| `@waysnx/ui-i18n` | 0 | Internationalization, localization and RTL functionality |
+| `@waysnx/ui-layout` | 22 | Layout primitives and application page structures |
+| `@waysnx/ui-maps` | 9 | Maps, geolocation and spatial UI |
+| `@waysnx/ui-media` | 12 | Media playback and rich-media UI |
+| `@waysnx/ui-navigation` | 20 | Menus, navigation and application-shell UI |
+| `@waysnx/ui-security` | 74 | Security-oriented UI and authorization capabilities |
+| `@waysnx/ui-visualization` | 10 | Hierarchies, trees and structured visualization UI |
+
+---
+
+## Aggregate Package
+
+For applications that want the primary WaysNX UI Kit libraries through one dependency:
+
+```bash
+pnpm add @waysnx/ui-kit
+```
+
+The aggregate package currently includes:
+
+- `@waysnx/ui-core`
+- `@waysnx/ui-form-builder`
+- `@waysnx/ui-layout`
+- `@waysnx/ui-feedback`
+- `@waysnx/ui-grid-builder`
+
+The aggregate package is a convenience entry point and is **not counted as an additional focused library**.
+
+Applications can also install focused packages independently.
+
+---
+
+## Installation
+
+Install the published package you need.
+
+### Aggregate package
+
+```bash
+pnpm add @waysnx/ui-kit
+```
+
+or:
+
+```bash
+npm install @waysnx/ui-kit
+```
+
+### Individual libraries
+
+For example:
+
+```bash
+pnpm add @waysnx/ui-core
+```
+
+```bash
+pnpm add @waysnx/ui-feedback
+```
+
+```bash
+pnpm add @waysnx/ui-layout
+```
+
+```bash
+pnpm add @waysnx/ui-form-builder
+```
+
+Choose individual libraries when you only need specific WaysNX UI capabilities.
+
+---
+
+## Basic Usage
+
+```tsx
+import { Button } from "@waysnx/ui-core";
+
+export function Example() {
+  return (
+    <Button variant="primary">
+      Save
+    </Button>
+  );
+}
+```
+
+Use the documentation for library-specific APIs, props, types, examples, accessibility information, and integration details.
+
+---
+
+## Functional Libraries
+
+Not every library is a traditional component catalog.
+
+`@waysnx/ui-form-builder`, `@waysnx/ui-i18n` and `@waysnx/ui-diagnostics` are functional libraries. Their generated metadata can legitimately contain zero standalone components while still providing important application functionality.
+
+WDG represents these packages at the library level rather than treating them as broken or empty component catalogs.
+
+This behavior is generic and is not implemented as a library-specific exception.
+
+---
+
+## Documentation
+
+The primary documentation site is:
+
+**https://uikit.waysnx.tech**
+
+It includes generated:
+
+- Library documentation
+- Component documentation
+- API information
+- Props and types
+- Examples
+- Design-token information
+- Relationships
+- Search metadata
+
+Example:
+
+**https://uikit.waysnx.tech/components/ui-feedback/Drawer**
+
+Generated documentation is produced through the WaysNX Documentation Generator (WDG).
+
+---
+
+## Storybook
+
+Storybook provides the interactive component-development and validation environment.
+
+It is used for:
+
+- Component examples
+- Variants and states
+- Interactive controls
+- Theme validation
+- Accessibility inspection
+- Responsive behavior
+
+See [`storybook/README.md`](storybook/README.md).
+
+---
+
+## Playwright
+
+Playwright provides browser-level validation for critical UI behavior.
+
+Release validation targets:
+
+- Chromium
+- Firefox
+- WebKit
+- Keyboard interaction
+- Responsive behavior
+- Forms and dialogs
+- Navigation
+- Accessibility-sensitive interactions
+
+See [`playwright/README.md`](playwright/README.md).
+
+---
+
+## Reference Application
+
+The repository includes a reference application:
+
+```text
+examples/
+└── waysnx-admin-demo/
+```
+
+It contains reference screens for:
+
+- Dashboard
+- Complete Form
+- Grid Listing
+
+The demo also demonstrates shared application-shell behavior including:
+
+- Header
+- Sidebar
+- User menu
+- Language selection
+- Theme switching
+- Accessibility controls
+- Notifications
+
+See:
+
+- [`examples/README.md`](examples/README.md)
+- [`examples/waysnx-admin-demo/README.md`](examples/waysnx-admin-demo/README.md)
+
+---
+
+## Design System
+
+WaysNX UI Kit uses shared design tokens and CSS variables to provide consistent:
+
+- Colors
+- Typography
+- Spacing
+- Radius
+- Borders
+- Shadows
+- Interaction states
+- Themes
+
+Applications should prefer the public UI Kit tokens and components rather than creating parallel implementations of the same design patterns.
+
+---
+
+## Accessibility
+
+Accessibility is a core engineering requirement.
+
+Validation covers areas such as:
+
+- Keyboard navigation
+- Focus management
+- ARIA semantics
+- Screen-reader behavior
+- Color contrast
+- Reduced motion
+- Responsive behavior
+- RTL where applicable
+
+The public-release process treats critical accessibility findings as release blockers.
+
+---
+
+## Security
+
+Security-sensitive UI capabilities are primarily provided through `@waysnx/ui-security`.
+
+Security validation includes areas such as:
+
+- Sensitive input handling
+- Secure uploads
+- URL handling
+- Unsafe content handling
+- Permission and role boundaries
+- Session-related UI
+- Verification and trusted-device flows
+
+Security issues that qualify as P0 release blockers must be resolved before public release.
+
+---
+
+## WDG and Generated Documentation
+
+WaysNX UI Kit uses the WaysNX Documentation Generator (WDG) to generate structured documentation and machine-readable metadata.
+
+Generated outputs can include:
+
+- Library metadata
+- Component metadata
+- API information
+- Search indexes
+- Relationships
+- Schemas
+- Markdown documentation
+- AI-oriented documentation
+
+Generated JSON is treated as the machine-readable documentation source of truth.
+
+WDG must:
+
+- Produce schema-valid output
+- Derive metadata from source evidence
+- Avoid inventing unsupported information
+- Generate deterministic output
+- Allow representative source-to-output validation
+
+Extraction problems should be fixed in WDG rather than manually patching generated JSON.
+
+---
+
+## Repository Structure
+
+```text
+waysnx-ui-kit/
+├── .github/
+├── assets/
+│   └── branding/
+│       ├── waysnx-ui-kit-logo.png
+│       ├── waysnx-ui-kit-logo@2x.png
+│       └── waysnx-ui-kit-mark.png
+├── docs/
+├── examples/
+│   ├── README.md
+│   └── waysnx-admin-demo/
+│       └── README.md
+├── packages/
+├── storybook/
+│   └── README.md
+├── playwright/
+│   └── README.md
+├── templates/
+├── tests/
+├── tools/
+├── wdg/
+├── README.md
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
+├── SECURITY.md
+└── LICENSE
+```
+
+Each top-level directory has a defined purpose. Documentation is intentionally kept at the appropriate repository and project levels rather than adding a README to every source folder.
+
+---
+
+## Development
+
+The commands in this section are for developers working on the `waysnx-ui-kit` repository.
+
+### Install repository dependencies
+
+```bash
+pnpm install
+```
+
+### Build the workspace
+
+```bash
+pnpm build
+```
+
+### Run the development environment
+
+```bash
+pnpm dev
+```
+
+### Run tests
+
+```bash
+pnpm test
+```
+
+> The currently operational validation layers are Storybook and Playwright (see below). A package-level unit-test layer is not yet configured, so `pnpm test` is a placeholder until a unit-test runner is added.
+
+### Run Playwright
+
+```bash
+pnpm test:e2e
+```
+
+### Run Storybook
+
+```bash
+pnpm storybook
+```
+
+### Run the reference application
+
+```bash
+pnpm demo
+```
+
+This starts the WaysNX Admin Demo at `http://localhost:5173`.
+
+> Build the workspace packages first (`pnpm build`) before running the demo, as the application depends on the compiled library output.
+
+> The repository package scripts are the authoritative command set. If scripts change during release stabilization, use the current scripts defined by the repository.
+
+---
+
+## Quality and Release Validation
+
+The public-release validation covers:
+
+- Library builds
+- Type declarations
+- CSS output
+- Public exports
+- Package metadata
+- Peer dependencies
+- Clean package installation
+- Generated JSON schema
+- Representative source-to-metadata validation
+- Storybook production build
+- Playwright critical flows
+- Chromium, Firefox and WebKit
+- SSR/hydration smoke tests
+- Accessibility
+- Security
+- Documentation consistency
+
+The release process follows:
+
+**Freeze → Validate → Standardize → Fix → Document → Package → Release**
+
+Non-blocking improvements should move to the post-release backlog rather than expanding the release scope.
+
+---
+
+## Contributing
+
+Contributions are welcome.
+
+Before submitting a change:
+
+1. Review the repository documentation.
+2. Check whether the capability already exists.
+3. Keep changes focused.
+4. Preserve public API consistency.
+5. Add or update the narrowest appropriate tests.
+6. Consider accessibility and keyboard behavior.
+7. Validate package/build impact when exports or dependencies change.
+8. Update documentation when public behavior changes.
+
+See:
+
+- [`CONTRIBUTING.md`](CONTRIBUTING.md)
+- [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md)
+- [`SECURITY.md`](SECURITY.md)
+
+---
+
+## License
+
+WaysNX UI Kit is released under the **Apache License 2.0**.
+
+See [`LICENSE`](LICENSE).
+
+---
+
+## WaysNX Ecosystem
+
+WaysNX UI Kit is part of the broader WaysNX engineering ecosystem.
+
+Related projects include:
+
+- WaysNX Business Framework (WBF)
+- Development Quality Platform (DQP)
+- WaysNX Studio
+- PrjNx
+- QA Catalyst
+- API Form Builder
+- HRMinder
+- AI StrideFlow
+
+The UI Kit focuses on reusable UI capabilities and is not intended to replace an application or backend framework.
+
+---
+
+## Links
+
+- **Documentation:** https://uikit.waysnx.tech
+- **NPM Organization:** https://www.npmjs.com/org/waysnx
+- **GitHub:** https://github.com/waysnx
+- **WaysNX:** https://waysnx.tech
+
+---
+
+**WaysNX Technologies Private Limited**  
+**Initial public release: `1.0.0` · Target: September 1, 2026**

@@ -1,0 +1,117 @@
+﻿/**
+ * @file styles/index.css
+ * Global styles for security components
+ * Uses WaysNX design tokens (--wx-*) for consistency across the UI kit
+ */
+
+/* Security-specific CSS Variables */
+:root {
+  /* Security-specific tokens that extend the core design system */
+  --wx-sec-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --wx-sec-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --wx-sec-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+  /* Spacing */
+  --wx-sec-spacing-xs: 4px;
+  --wx-sec-spacing-sm: 8px;
+  --wx-sec-spacing-md: 16px;
+  --wx-sec-spacing-lg: 24px;
+  --wx-sec-spacing-xl: 32px;
+  --wx-sec-spacing-2xl: 48px;
+
+  /* Border radius */
+  --wx-sec-radius-sm: 4px;
+  --wx-sec-radius-md: 8px;
+  --wx-sec-radius-lg: 12px;
+  --wx-sec-radius-xl: 16px;
+  --wx-sec-radius-full: 9999px;
+
+  /* Font sizes */
+  --wx-sec-text-xs: 12px;
+  --wx-sec-text-sm: 14px;
+  --wx-sec-text-base: 16px;
+  --wx-sec-text-lg: 18px;
+  --wx-sec-text-xl: 20px;
+
+  /* Transitions */
+  --wx-sec-transition-fast: 150ms ease-in-out;
+  --wx-sec-transition-base: 300ms ease-in-out;
+  --wx-sec-transition-slow: 500ms ease-in-out;
+
+  /* Z-index */
+  --wx-sec-z-dropdown: 100;
+  --wx-sec-z-sticky: 200;
+  --wx-sec-z-fixed: 300;
+  --wx-sec-z-modal: 1000;
+  --wx-sec-z-popover: 1100;
+  --wx-sec-z-tooltip: 1200;
+}
+
+/* Dark theme overrides for security-specific tokens */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --wx-sec-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --wx-sec-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+    --wx-sec-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Base styles */
+.wx-security {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--wx-color-text);
+  background-color: var(--wx-color-surface);
+}
+
+/* Remove default margins */
+.wx-security p {
+  margin: 0;
+}
+
+.wx-security button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+.wx-security input,
+.wx-security textarea,
+.wx-security select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Focus visible for accessibility */
+.wx-security *:focus-visible {
+  outline: 2px solid var(--wx-color-primary);
+  outline-offset: 2px;
+}
+
+/* Utility classes */
+.wx-security-hidden {
+  display: none;
+}
+
+.wx-security-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

@@ -1,0 +1,37 @@
+.wx-progress {
+  width: 100%;
+}
+
+.wx-progress-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-size: 0.875rem;
+}
+
+.wx-progress-label {
+  color: var(--wx-color-text, #333);
+  font-weight: 500;
+}
+
+.wx-progress-value {
+  color: var(--wx-color-text-muted, #666);
+}
+
+.wx-progress-track {
+  width: 100%;
+  background: var(--wx-color-border, #e0e0e0);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.wx-progress-sm { height: 4px; }
+.wx-progress-md { height: 8px; }
+.wx-progress-lg { height: 12px; }
+
+.wx-progress-fill {
+  height: 100%;
+  background: var(--wx-color-primary, #f19924);
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}

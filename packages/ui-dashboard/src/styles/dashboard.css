@@ -1,0 +1,105 @@
+/**
+ * Dashboard component styles
+ */
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: var(--wx-color-surface, #ffffff);
+  color: var(--wx-color-text, #1e293b);
+  transition: background-color 200ms ease-in-out;
+}
+
+.dashboard-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  gap: var(--wx-spacing-md, 16px);
+  padding: var(--wx-spacing-md, 16px);
+}
+
+.dashboard-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.dashboard-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Accessibility */
+.dashboard-skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--wx-color-info, #3b82f6);
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  z-index: var(--wx-dash-z-notification, 800);
+  border-radius: var(--wx-radius-sm, 4px);
+}
+
+.dashboard-skip-link:focus {
+  top: 0;
+}
+
+/* Scrollbar styling */
+.dashboard-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dashboard-content::-webkit-scrollbar-track {
+  background: var(--wx-color-surface-alt, #f8fafc);
+}
+
+.dashboard-content::-webkit-scrollbar-thumb {
+  background: var(--wx-color-border, #e2e8f0);
+  border-radius: 4px;
+}
+
+.dashboard-content::-webkit-scrollbar-thumb:hover {
+  background: var(--wx-color-text-light, #94a3b8);
+}
+
+/* Fullscreen mode */
+.dashboard.dashboard-fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: var(--wx-dash-z-fullscreen, 1000);
+  max-width: none;
+}
+
+/* Loading state */
+.dashboard-loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Print styles */
+@media print {
+  .dashboard {
+    background: white;
+    color: black;
+  }
+
+  .dashboard-toolbar,
+  .dashboard-sidebar,
+  .dashboard-footer {
+    display: none;
+  }
+
+  .dashboard-content {
+    overflow: visible;
+  }
+}

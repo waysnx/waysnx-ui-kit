@@ -1,0 +1,62 @@
+.wx-form-array {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.wx-form-array-label {
+  font-size: var(--wx-font-size-md, 16px);
+  font-weight: 600;
+  color: var(--wx-color-text, #333);
+}
+
+.wx-form-array-fieldset {
+  border: 1px solid var(--wx-color-border, #e5e7eb);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0;
+  position: relative;
+  background-color: var(--wx-color-surface-alt, #fafafa);
+}
+
+.wx-form-array-legend {
+  font-size: var(--wx-font-size-sm, 14px);
+  font-weight: 500;
+  color: var(--wx-color-text-muted, #666);
+  padding: 0 8px;
+}
+
+.wx-form-array-fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.wx-form-array-field-label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: var(--wx-font-size-sm, 14px);
+  font-weight: 500;
+  color: var(--wx-color-text, #374151);
+}
+
+.wx-form-array-required {
+  color: var(--wx-color-error, #ef4444);
+  margin-left: 2px;
+}
+
+.wx-form-array-remove {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.wx-form-array-add {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.wx-form-array-count {
+  font-size: var(--wx-font-size-xs, 12px);
+  color: var(--wx-color-text-muted, #666);
+}

@@ -1,18 +1,39 @@
-# @waysnx/ui-forms
+# @waysnx/ui-i18n
 
-## Purpose
-Describe the responsibility and scope of this library.
+Internationalization (i18n) provider for WaysNX UI Kit — shared translation context across all packages.
 
 ## Installation
+
 ```bash
-npm install @waysnx/ui-forms
+npm install @waysnx/ui-i18n
 ```
 
-## Components
-The authoritative component list should be verified through WDG-generated metadata.
+Requires `react` (>=18) as a peer dependency.
+
+## Overview
+
+`@waysnx/ui-i18n` is a functional library rather than a component catalog. It provides the shared translation context that WaysNX UI Kit packages use for localized text, exposing a provider, a hook, a higher-order component, and default and locale message packs.
+
+## Exports
+
+- `TranslationProvider` — supplies translation context to the tree
+- `useTranslation` — hook to access translations
+- `withTranslation` — higher-order component wrapper
+- `defaultMessages` and locale packs: `esMessages`, `frMessages`, `arMessages`
+- Message/config types: `TranslationProviderProps`, `AllMessages`, `TranslationMessages`, `TranslationConfig`, and per-package message types
+
+See the documentation site for the complete, authoritative API reference.
+
+## Usage
+
+```tsx
+import { TranslationProvider } from "@waysnx/ui-i18n";
+
+export function App({ children }: { children: React.ReactNode }) {
+  return <TranslationProvider>{children}</TranslationProvider>;
+}
+```
 
 ## Documentation
-See Storybook and `docs/generated/`.
 
-## Release Status
-To be verified during public-release validation.
+Full API reference: https://uikit.waysnx.tech

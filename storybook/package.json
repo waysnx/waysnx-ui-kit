@@ -1,0 +1,51 @@
+{
+  "name": "storybook",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "@tanstack/react-table": "^8.21.3",
+    "@waysnx/ui-accessibility": "workspace:*",
+    "@waysnx/ui-communication": "workspace:*",
+    "@waysnx/ui-core": "workspace:*",
+    "@waysnx/ui-dashboard": "workspace:*",
+    "@waysnx/ui-data": "workspace:*",
+    "@waysnx/ui-diagnostics": "workspace:*",
+    "@waysnx/ui-docs": "workspace:*",
+    "@waysnx/ui-feedback": "workspace:*",
+    "@waysnx/ui-files": "workspace:*",
+    "@waysnx/ui-form-builder": "workspace:*",
+    "@waysnx/ui-grid-builder": "workspace:*",
+    "@waysnx/ui-i18n": "workspace:*",
+    "@waysnx/ui-layout": "workspace:*",
+    "@waysnx/ui-maps": "workspace:*",
+    "@waysnx/ui-media": "workspace:*",
+    "@waysnx/ui-navigation": "workspace:*",
+    "@waysnx/ui-security": "workspace:*",
+    "@waysnx/ui-visualization": "workspace:*",
+    "react": "^19.2.0",
+    "react-datepicker": "^8.10.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^8.6.18",
+    "@storybook/addon-essentials": "^8.6.18",
+    "@storybook/addon-interactions": "^8.6.18",
+    "@storybook/addon-links": "^8.6.18",
+    "@storybook/react": "^8.6.18",
+    "@storybook/react-vite": "^8.6.18",
+    "@storybook/test": "^8.6.18",
+    "storybook": "^8.6.18",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "typescript": "~5.9.3",
+    "vite": "5.4.21"
+  }
+}

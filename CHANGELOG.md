@@ -16,7 +16,7 @@ WaysNX UI Kit is publicly released as a modular React UI ecosystem.
 
 This release includes:
 
-- **17 focused UI libraries**
+- **18 focused UI libraries**
 - **242 documented components**
 - **1 aggregate package:** `@waysnx/ui-kit`
 - React 19 and TypeScript support
@@ -45,6 +45,7 @@ The public release includes the following focused packages:
 - `@waysnx/ui-core`
 - `@waysnx/ui-dashboard`
 - `@waysnx/ui-data`
+- `@waysnx/ui-diagnostics`
 - `@waysnx/ui-docs`
 - `@waysnx/ui-feedback`
 - `@waysnx/ui-files`
@@ -70,6 +71,7 @@ The initial release includes functional libraries that do not represent their fu
 
 - `@waysnx/ui-form-builder`
 - `@waysnx/ui-i18n`
+- `@waysnx/ui-diagnostics`
 
 These libraries may contain zero standalone components in generated WDG metadata while providing substantial application functionality.
 

@@ -1,0 +1,24 @@
+/* ─── Edges / Connectors ─────────────────────────────────────────────────── */
+
+.wx-vis-edge {
+  fill: none;
+  stroke: var(--wx-vis-edge-color);
+  stroke-width: var(--wx-vis-edge-stroke-width);
+  transition: stroke var(--wx-vis-transition-fast), stroke-width var(--wx-vis-transition-fast);
+  pointer-events: stroke;
+  cursor: pointer;
+}
+
+.wx-vis-edge:hover {
+  stroke: var(--wx-color-primary, #f19924);
+  stroke-width: var(--wx-vis-edge-stroke-width-hover);
+}
+
+.wx-vis-edge--selected {
+  stroke: var(--wx-vis-edge-color-selected);
+  stroke-width: var(--wx-vis-edge-stroke-width-hover);
+}
+
+.wx-vis-canvas--dark .wx-vis-edge {
+  stroke: var(--wx-vis-edge-color-dark);
+}

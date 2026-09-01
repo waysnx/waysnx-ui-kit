@@ -1,0 +1,316 @@
+/**
+ * @file components/TreeMenu/tree-menu.css
+ * Styles for TreeMenu component
+ */
+
+/* Tree Menu Container */
+.nav-tree-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--nav-tree-menu-bg, var(--wx-color-surface, #ffffff));
+  color: var(--nav-tree-menu-text, var(--wx-color-text, #1e293b));
+  border: 1px solid var(--nav-tree-menu-border, var(--wx-color-border, #e2e8f0));
+  border-radius: var(--nav-tree-menu-radius, var(--wx-radius-md, 8px));
+  font-family: var(--nav-tree-menu-font, inherit);
+  overflow: auto;
+  max-height: 600px;
+}
+
+/* Tree list */
+.nav-tree-menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Density variations */
+.nav-tree-menu--compact {
+  --nav-tree-menu-item-height: 1.75rem;
+  --nav-tree-menu-item-padding: 0.25rem 0.5rem;
+  --nav-tree-menu-font-size: var(--wx-font-size-sm, 14px);
+  --nav-tree-menu-icon-size: 1rem;
+}
+
+.nav-tree-menu--normal {
+  --nav-tree-menu-item-height: 2rem;
+  --nav-tree-menu-item-padding: 0.35rem 0.75rem;
+  --nav-tree-menu-font-size: var(--wx-font-size-sm, 14px);
+  --nav-tree-menu-icon-size: 1.125rem;
+}
+
+.nav-tree-menu--spacious {
+  --nav-tree-menu-item-height: 2.5rem;
+  --nav-tree-menu-item-padding: 0.5rem 1rem;
+  --nav-tree-menu-font-size: var(--wx-font-size-md, 16px);
+  --nav-tree-menu-icon-size: 1.25rem;
+}
+
+/* Variant styles */
+.nav-tree-menu--default {
+  border-color: var(--nav-tree-menu-border, var(--wx-color-border, #e2e8f0));
+}
+
+.nav-tree-menu--minimal {
+  border: none;
+}
+
+.nav-tree-menu--elevated {
+  box-shadow: var(--nav-tree-menu-shadow, var(--wx-shadow-md, 0 4px 6px -1px rgba(0,0,0,0.07)));
+  border: 1px solid var(--nav-tree-menu-border, var(--wx-color-border, #e2e8f0));
+}
+
+/* Tree item */
+.nav-tree-menu__item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+/* Item row */
+.nav-tree-menu__row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  height: var(--nav-tree-menu-item-height, 2rem);
+  padding: var(--nav-tree-menu-item-padding, 0.35rem 0.75rem);
+  transition: background-color 150ms ease-in-out;
+  border-radius: var(--wx-radius-sm, 4px);
+  margin: 0 0.25rem;
+}
+
+.nav-tree-menu__row--selected {
+  background-color: var(--nav-tree-menu-item-selected-bg, var(--wx-color-primary-light, #fff5e6));
+}
+
+.nav-tree-menu__row--focused {
+  outline: 2px solid var(--nav-tree-menu-item-focus-outline, var(--wx-color-primary, #f19924));
+  outline-offset: -2px;
+}
+
+/* Expand/collapse button */
+.nav-tree-menu__expand-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  min-width: 1.25rem;
+  flex-shrink: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: var(--nav-tree-menu-expand-btn-text, var(--wx-color-text-muted, #64748b));
+  cursor: pointer;
+  font-size: var(--wx-font-size-xs, 12px);
+  transition: all 150ms ease-in-out;
+  border-radius: var(--wx-radius-sm, 4px);
+  outline: none;
+}
+
+.nav-tree-menu__expand-btn:hover {
+  background-color: var(--nav-tree-menu-expand-btn-hover-bg, rgba(0, 0, 0, 0.05));
+  color: var(--nav-tree-menu-expand-btn-hover-text, var(--wx-color-text, #1e293b));
+}
+
+.nav-tree-menu__expand-btn:focus-visible {
+  outline: 2px solid var(--nav-tree-menu-expand-btn-focus-outline, var(--wx-color-primary, #f19924));
+  outline-offset: 1px;
+}
+
+.nav-tree-menu__expand-btn--expanded {
+  transform: rotate(90deg);
+}
+
+/* Expand placeholder (for leaf nodes) */
+.nav-tree-menu__expand-placeholder {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  min-width: 1.25rem;
+  flex-shrink: 0;
+}
+
+/* Checkbox */
+.nav-tree-menu__checkbox {
+  width: 1.125rem;
+  height: 1.125rem;
+  min-width: 1.125rem;
+  flex-shrink: 0;
+  cursor: pointer;
+  accent-color: var(--nav-tree-menu-checkbox-color, var(--wx-color-primary, #f19924));
+}
+
+.nav-tree-menu__checkbox:focus-visible {
+  outline: 2px solid var(--nav-tree-menu-checkbox-focus-outline, var(--wx-color-primary, #f19924));
+  outline-offset: 2px;
+}
+
+/* Item button */
+.nav-tree-menu__item-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+  padding: 0;
+  font-size: var(--nav-tree-menu-font-size, var(--wx-font-size-sm, 14px));
+  color: var(--nav-tree-menu-item-text, var(--wx-color-text, #1e293b));
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: left;
+  font-family: inherit;
+  font-weight: 400;
+  outline: none;
+  transition: color 150ms ease-in-out;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.nav-tree-menu__item-btn:hover:not([disabled]) {
+  color: var(--nav-tree-menu-item-hover-text, var(--wx-color-primary, #f19924));
+}
+
+.nav-tree-menu__item-btn--focused {
+  color: var(--nav-tree-menu-item-focused-text, var(--wx-color-primary, #f19924));
+  font-weight: 500;
+}
+
+.nav-tree-menu__item-btn[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  color: var(--nav-tree-menu-item-disabled-text, var(--wx-color-text-muted, #64748b));
+}
+
+.nav-tree-menu__item-btn:focus-visible {
+  outline: 2px solid var(--nav-tree-menu-item-focus-outline, var(--wx-color-primary, #f19924));
+  outline-offset: -2px;
+}
+
+/* Item icon */
+.nav-tree-menu__item-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--nav-tree-menu-icon-size, 1.125rem);
+  height: var(--nav-tree-menu-icon-size, 1.125rem);
+  flex-shrink: 0;
+  font-size: 1em;
+  color: currentColor;
+}
+
+/* Item label */
+.nav-tree-menu__item-label {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Item badge */
+.nav-tree-menu__item-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.25rem;
+  height: 1.25rem;
+  padding: 0 0.3rem;
+  font-size: var(--wx-font-size-xs, 12px);
+  font-weight: 600;
+  border-radius: var(--radius-full, 9999px);
+  background-color: var(--nav-tree-menu-item-badge-bg, var(--wx-color-primary, #f19924));
+  color: var(--nav-tree-menu-item-badge-text, white);
+  flex-shrink: 0;
+  margin-left: 0.25rem;
+}
+
+/* Branch vs leaf styling */
+.nav-tree-menu__item--branch .nav-tree-menu__item-label {
+  font-weight: 500;
+}
+
+.nav-tree-menu__item--leaf .nav-tree-menu__item-label {
+  font-weight: 400;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .nav-tree-menu {
+    background-color: var(--nav-tree-menu-bg-dark, var(--wx-color-surface, #ffffff));
+    color: var(--nav-tree-menu-text-dark, var(--wx-color-text, #1e293b));
+    border-color: var(--nav-tree-menu-border-dark, var(--wx-color-border, #e2e8f0));
+  }
+
+  .nav-tree-menu__row--selected {
+    background-color: var(--nav-tree-menu-item-selected-bg-dark, var(--wx-color-primary, #f19924));
+  }
+
+  .nav-tree-menu__expand-btn:hover {
+    background-color: var(--nav-tree-menu-expand-btn-hover-bg-dark, rgba(255, 255, 255, 0.1));
+  }
+
+  .nav-tree-menu__item-btn:hover:not([disabled]) {
+    color: var(--nav-tree-menu-item-hover-text-dark, var(--wx-color-primary-light, #fff5e6));
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: more) {
+  .nav-tree-menu {
+    border-width: 2px;
+  }
+
+  .nav-tree-menu__row--focused {
+    outline-width: 3px;
+  }
+
+  .nav-tree-menu__item-btn--focused {
+    text-decoration: underline;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .nav-tree-menu__row,
+  .nav-tree-menu__expand-btn,
+  .nav-tree-menu__item-btn {
+    transition: none;
+  }
+
+  .nav-tree-menu__expand-btn--expanded {
+    transform: none;
+  }
+}
+
+/* Scrollbar styling */
+.nav-tree-menu::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.nav-tree-menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.nav-tree-menu::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+}
+
+.nav-tree-menu::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+@media (prefers-color-scheme: dark) {
+  .nav-tree-menu::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .nav-tree-menu::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+}

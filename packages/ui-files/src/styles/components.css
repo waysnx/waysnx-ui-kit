@@ -1,0 +1,83 @@
+/**
+ * @waysnx/ui-files — Component Styles
+ */
+
+/* Global box-sizing */
+[class^="wx-adv-"],
+[class*=" wx-adv-"],
+[class^="wx-adv-"] *,
+[class*=" wx-adv-"] * {
+  box-sizing: border-box;
+}
+
+/* ─── Shared Card ─────────────────────────────────────────────────────── */
+
+.wx-adv-card {
+  background: var(--wx-adv-card-bg);
+  border: 1px solid var(--wx-adv-card-border);
+  border-radius: var(--wx-adv-card-radius);
+  box-shadow: var(--wx-adv-card-shadow);
+  overflow: hidden;
+}
+
+/* ─── Toolbar ─────────────────────────────────────────────────────────── */
+
+.wx-adv-toolbar__btn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: none;
+  border-radius: var(--wx-radius-sm, 4px);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--wx-color-text-muted, #6b7280);
+  transition: all var(--wx-adv-transition);
+}
+
+.wx-adv-toolbar__btn:hover {
+  background: var(--wx-color-surface-hover, #f1f5f9);
+  color: var(--wx-color-text, #1a1a1a);
+}
+
+.wx-adv-toolbar__btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ─── PDF Viewer ──────────────────────────────────────────────────────── */
+
+.wx-adv-pdf-viewer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--wx-adv-viewer-border);
+  border-radius: var(--wx-adv-viewer-radius);
+  overflow: hidden;
+  background: var(--wx-adv-viewer-bg);
+}
+
+.wx-adv-pdf-viewer__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  background: var(--wx-adv-viewer-toolbar-bg);
+  border-bottom: 1px solid var(--wx-adv-viewer-border);
+  font-size: 13px;
+}
+
+.wx-adv-pdf-viewer__page-info {
+  color: var(--wx-color-text-muted, #6b7280);
+}
+
+.wx-adv-pdf-viewer__content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  min-height: 300px;
+  color: var(--wx-color-text-muted, #6b7280);
+}

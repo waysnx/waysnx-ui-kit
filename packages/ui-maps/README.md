@@ -1,18 +1,47 @@
-# @waysnx/ui-library-17
+# @waysnx/ui-maps
 
-## Purpose
-Describe the responsibility and scope of this library.
+Maps and location components from WaysNX — address search, map views, route planning, and geolocation.
 
 ## Installation
+
 ```bash
-npm install @waysnx/ui-library-17
+npm install @waysnx/ui-maps
 ```
 
-## Components
-The authoritative component list should be verified through WDG-generated metadata.
+Requires `react` and `react-dom` (>=18) as peer dependencies.
+
+If your bundler does not import package CSS automatically, include the stylesheet:
+
+```ts
+import "@waysnx/ui-maps/dist/index.css";
+```
+
+## Overview
+
+`@waysnx/ui-maps` provides maps and location UI — map views and markers, address search and selection, geolocation, distance calculation, route planning, and geofence editing. A `MapsProvider` and a location hook support shared maps configuration and state.
+
+## Representative exports
+
+- Map display: `MapView`, `MapMarker`, `GeofenceEditor`
+- Location & address: `AddressSelector`, `AddressAutocomplete`, `LocationPicker`, `CurrentLocationButton`, `DistanceCalculator`, `RoutePlanner`
+- Provider & hooks: `MapsProvider`, `useMapsContext`, `useCurrentLocation`
+
+See the documentation site for the complete, authoritative export and prop reference.
+
+## Usage
+
+```tsx
+import { MapsProvider, MapView } from "@waysnx/ui-maps";
+
+export function Example() {
+  return (
+    <MapsProvider>
+      <MapView />
+    </MapsProvider>
+  );
+}
+```
 
 ## Documentation
-See Storybook and `docs/generated/`.
 
-## Release Status
-To be verified during public-release validation.
+Full component and API reference: https://uikit.waysnx.tech

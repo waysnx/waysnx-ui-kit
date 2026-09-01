@@ -1,0 +1,30 @@
+.wx-link-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.wx-link {
+  color: var(--wx-color-primary);
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.wx-link:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.wx-link-disabled {
+  color: var(--wx-color-text-light, #9ca3af);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.wx-link-prepend,
+.wx-link-append {
+  font-size: 14px;
+  color: var(--wx-color-text-muted, #6b7280);
+}

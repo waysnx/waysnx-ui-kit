@@ -1,0 +1,40 @@
+.wx-reading-guide {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--wx-reading-guide-height, 2px);
+  /* A thin accent line, visible on light and dark backgrounds via a solid
+     color plus a subtle 1px outline. Uses normal blend (the old yellow +
+     screen blend washed out on light themes). Override the CSS variables
+     below to theme it. */
+  background: var(--wx-reading-guide-color, rgba(37, 99, 235, 0.85));
+  box-shadow: 0 0 0 1px var(--wx-reading-guide-outline, rgba(255, 255, 255, 0.5));
+  pointer-events: none;
+  z-index: 900;
+  transition: top 0.05s ease-out;
+  mix-blend-mode: normal;
+}
+
+/* High Contrast Mode — slightly thicker, fully opaque line */
+@media (prefers-contrast: more) {
+  .wx-reading-guide {
+    height: 3px;
+    background: var(--wx-reading-guide-color, #1d4ed8);
+    box-shadow: 0 0 0 1px var(--wx-reading-guide-outline, #fff);
+  }
+}
+
+/* Reduced motion - make it appear instantly */
+@media (prefers-reduced-motion: reduce) {
+  .wx-reading-guide {
+    transition: none;
+  }
+}
+
+/* Print hide */
+@media print {
+  .wx-reading-guide {
+    display: none;
+  }
+}

@@ -1,0 +1,56 @@
+.wx-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: var(--wx-font-family, inherit);
+}
+
+.wx-input-wrapper label {
+  font-size: var(--wx-font-size-sm, 14px);
+  font-weight: 500;
+  color: var(--wx-color-text, #111827);
+}
+
+.wx-required {
+  color: var(--wx-color-error, #ef4444);
+  margin-left: 2px;
+}
+
+.wx-input-container{position:relative;display:flex;align-items:center}
+
+.wx-input {
+  padding: 10px;
+  border: 1px solid var(--wx-color-border, #ccc);
+  border-radius: var(--wx-radius-md, 6px);
+  height: var(--wx-input-height, 40px);
+  box-sizing: border-box;
+  font-size: var(--wx-font-size-md, 14px);
+  font-family: var(--wx-font-family, inherit);
+  flex:1;
+  width: 100%;
+  transition: border-color 0.2s;
+  box-shadow: var(--wx-shadow-sm, none);
+}
+
+.wx-input:focus {
+  outline: none;
+  border-color: var(--wx-color-primary, #f19924);
+  box-shadow: var(--wx-shadow-focus, 0 0 0 3px rgba(241, 153, 36, 0.1));
+}
+
+.wx-input-icon{position:absolute;right:10px;background:none;border:none;cursor:pointer;font-size:18px;padding:4px}
+
+.wx-input-error {
+  border-color: var(--wx-color-error, #ef4444);
+}
+
+.wx-input-hint {
+  font-size: var(--wx-font-size-xs, 12px);
+  color: var(--wx-color-text-muted, #6b7280);
+}
+
+.wx-input-error-text {
+  font-size: var(--wx-font-size-xs, 12px);
+  color: var(--wx-color-error, #ef4444);
+  margin-top: 2px;
+}

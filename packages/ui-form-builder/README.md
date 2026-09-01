@@ -1,18 +1,52 @@
 # @waysnx/ui-form-builder
 
-## Purpose
-Describe the responsibility and scope of this library.
+Schema-driven form builder from WaysNX — renders forms from JSON Schema using `@waysnx/ui-core` components.
 
 ## Installation
+
 ```bash
 npm install @waysnx/ui-form-builder
 ```
 
-## Components
-The authoritative component list should be verified through WDG-generated metadata.
+Requires `react` and `react-dom` (>=18) and `@waysnx/ui-core` as peer dependencies. `@waysnx/ui-form-builder` renders its fields using `@waysnx/ui-core` controls, so install both.
+
+## Overview
+
+`@waysnx/ui-form-builder` is a functional library rather than a component catalog. It takes a JSON Schema (and optional layout) and renders a working form from it, handling field resolution, layout, conditional logic, and submission. This lets applications describe forms as data instead of hand-wiring individual inputs.
+
+## Exports
+
+- `DynamicForm` — the primary component that renders a form from a schema and/or layout
+- `FormArray` — repeatable field-group rendering
+- `resolveField` — resolves a schema field to its rendered control
+- `schemaToFormFields` — converts a JSON Schema into form field definitions
+- Conditional-logic helpers: `evaluateCondition`, `evaluateConditions`, `shouldShowField`, `shouldDisableField`, `shouldRequireField`
+- Types: `JSONSchema`, `JSONSchemaProperty`, `FormFieldConfig`, `ControlCondition`, `FormLayout`, `DynamicFormProps`, `FormArrayProps`, and related layout types
+
+See the documentation site for the complete, authoritative API reference.
+
+## Usage
+
+```tsx
+import { DynamicForm } from "@waysnx/ui-form-builder";
+
+const schema = {
+  type: "object",
+  properties: {
+    firstName: { type: "string", title: "First name" },
+  },
+};
+
+export function Example() {
+  return (
+    <DynamicForm
+      schema={schema}
+      onSubmit={(data) => console.log(data)}
+    />
+  );
+}
+```
 
 ## Documentation
-See Storybook and `docs/generated/`.
 
-## Release Status
-To be verified during public-release validation.
+Full API and schema reference: https://uikit.waysnx.tech

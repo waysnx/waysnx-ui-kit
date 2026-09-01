@@ -1,0 +1,64 @@
+/* ─── Canvas ─────────────────────────────────────────────────────────────── */
+
+.wx-vis-canvas {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--wx-vis-canvas-bg);
+  cursor: grab;
+  outline: none;
+  user-select: none;
+}
+
+.wx-vis-canvas:focus-visible {
+  box-shadow: inset 0 0 0 2px var(--wx-color-primary, #f19924);
+}
+
+.wx-vis-canvas--dark {
+  background-color: var(--wx-vis-canvas-bg-dark);
+}
+
+.wx-vis-canvas--panning {
+  cursor: grabbing;
+}
+
+/* Dot grid background */
+.wx-vis-canvas--grid::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    circle,
+    var(--wx-vis-canvas-dot-color) 1px,
+    transparent 1px
+  );
+  background-size: 24px 24px;
+  pointer-events: none;
+}
+
+.wx-vis-canvas--dark.wx-vis-canvas--grid::before {
+  background-image: radial-gradient(
+    circle,
+    var(--wx-vis-canvas-dot-color-dark) 1px,
+    transparent 1px
+  );
+}
+
+/* The transform layer that moves/zooms all nodes */
+.wx-vis-canvas__transform {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+  will-change: transform;
+}
+
+/* SVG layer for edges */
+.wx-vis-canvas__svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  overflow: visible;
+}

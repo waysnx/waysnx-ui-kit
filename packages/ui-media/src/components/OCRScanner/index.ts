@@ -1,0 +1,1 @@
+export { OCRScanner } from './OCRScanner';

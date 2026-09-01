@@ -1,0 +1,36 @@
+.wx-speech-textarea-container {
+  position: relative;
+}
+
+.wx-speech-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 40px;
+}
+
+.wx-speech-textarea-mic {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--wx-color-text-muted, #6b7280);
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wx-speech-textarea-mic:hover {
+  color: var(--wx-color-primary, #f19924);
+}
+
+.wx-speech-textarea-mic--active {
+  color: var(--wx-color-error, #ef4444);
+}
+
+.wx-speech-textarea-mic--active:hover {
+  color: var(--wx-color-error-hover, #dc2626);
+}

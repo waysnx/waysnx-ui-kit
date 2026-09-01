@@ -196,7 +196,7 @@ A new library should only be introduced when there is a clear architectural and 
 
 The current public structure consists of:
 
-* **17 focused libraries**
+* **18 focused libraries**
 * **1 aggregate package**
 
 The aggregate package does not represent an additional focused library.

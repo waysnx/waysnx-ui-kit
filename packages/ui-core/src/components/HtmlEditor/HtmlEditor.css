@@ -1,0 +1,133 @@
+.wx-htmleditor-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.wx-htmleditor-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--wx-color-text, #333);
+  margin-bottom: 4px;
+}
+
+.wx-htmleditor-container {
+  border: 1px solid var(--wx-color-border, #d1d5db);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--wx-color-surface, #fff);
+  transition: all 0.2s ease;
+}
+
+.wx-htmleditor-container-focused {
+  border-color: var(--wx-color-primary);
+  box-shadow: var(--wx-shadow-focus, 0 0 0 3px rgba(241, 153, 36, 0.1));
+}
+
+.wx-htmleditor-container-error {
+  border-color: var(--wx-color-error, #ef4444);
+}
+
+.wx-htmleditor-container-disabled {
+  background-color: var(--wx-color-surface-hover, #f5f5f5);
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.wx-htmleditor-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+  background-color: var(--wx-color-surface-alt, #f9fafb);
+  border-bottom: 1px solid var(--wx-color-border, #e5e7eb);
+  flex-wrap: wrap;
+}
+
+.wx-htmleditor-toolbar-btn {
+  padding: 6px 10px;
+  border: 1px solid var(--wx-color-border, #e5e7eb);
+  background-color: var(--wx-color-surface, #fff);
+  border-radius: 4px;
+  font-size: 13px;
+  color: var(--wx-color-text, #333);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wx-htmleditor-toolbar-btn:hover:not(:disabled) {
+  background-color: var(--wx-color-surface-hover, #f3f4f6);
+  border-color: var(--wx-color-primary);
+}
+
+.wx-htmleditor-toolbar-btn:active:not(:disabled) {
+  background-color: var(--wx-color-border, #e5e7eb);
+}
+
+.wx-htmleditor-toolbar-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.wx-htmleditor-content {
+  padding: 12px;
+  outline: none;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--wx-color-text, #333);
+  overflow-y: auto;
+}
+
+.wx-htmleditor-content:empty:before {
+  content: attr(data-placeholder);
+  color: var(--wx-color-text-light, #9ca3af);
+  pointer-events: none;
+}
+
+.wx-htmleditor-content h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 12px 0;
+}
+
+.wx-htmleditor-content h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.wx-htmleditor-content ul,
+.wx-htmleditor-content ol {
+  margin: 8px 0;
+  padding-left: 24px;
+}
+
+.wx-htmleditor-content li {
+  margin: 4px 0;
+}
+
+.wx-htmleditor-content a {
+  color: var(--wx-color-primary);
+  text-decoration: underline;
+}
+
+.wx-htmleditor-content p {
+  margin: 8px 0;
+}
+
+.wx-htmleditor-hint {
+  font-size: 12px;
+  color: var(--wx-color-text-muted, #6b7280);
+  margin-top: 4px;
+}
+
+.wx-htmleditor-error-text {
+  font-size: 12px;
+  color: var(--wx-color-error, #ef4444);
+  margin-top: 4px;
+}

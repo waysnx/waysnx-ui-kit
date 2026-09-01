@@ -1,0 +1,370 @@
+/* ============================================================
+   Wizard – base styles (shared across all themes/layouts)
+   ============================================================ */
+
+.wx-wizard {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: var(--wx-font-family, inherit);
+}
+
+.wx-wizard-steps {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  padding: 1rem;
+  background: var(--wx-color-surface-alt, #f9f9f9);
+  border-radius: var(--wx-radius-md, 8px);
+}
+
+.wx-wizard-step-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+
+.wx-wizard-step-circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size:var(--wx-font-size-md, 16px);
+  background: var(--wx-color-border, #e0e0e0);
+  color: var(--wx-color-text-muted, #666);
+  transition: all 0.3s;
+  z-index: 1;
+  margin-bottom: 0.5rem;
+}
+
+.wx-wizard-step-active .wx-wizard-step-circle {
+  background: var(--wx-color-primary, #f19924);
+  color: var(--wx-color-primary-contrast, white);
+  box-shadow: var(--wx-shadow-focus, 0 0 0 4px rgba(241, 153, 36, 0.2));
+  transform: scale(1.1);
+}
+
+.wx-wizard-step-completed .wx-wizard-step-circle {
+  background: var(--wx-color-success, #4caf50);
+  color: var(--wx-color-primary-contrast, white);
+}
+
+.wx-wizard-step-info {
+  text-align: center;
+  width: 100%;
+}
+
+.wx-wizard-step-title {
+  font-weight: 500;
+  color: var(--wx-color-text, #333);
+  font-size:var(--wx-font-size-sm, 14px);
+  margin-bottom: 0.25rem;
+}
+
+.wx-wizard-step-upcoming .wx-wizard-step-title {
+  color: var(--wx-color-text-light, #999);
+}
+
+.wx-wizard-step-description {
+  font-size:var(--wx-font-size-xs, 12px);
+  color: var(--wx-color-text-muted, #666);
+}
+
+.wx-wizard-step-upcoming .wx-wizard-step-description {
+  color: var(--wx-color-text-light, #aaa);
+}
+
+.wx-wizard-step-line {
+  position: absolute;
+  top: 1.25rem;
+  left: 50%;
+  right: -50%;
+  height: 2px;
+  background: var(--wx-color-border, #e0e0e0);
+  transition: background 0.3s;
+  z-index: 0;
+}
+
+.wx-wizard-step-completed .wx-wizard-step-line {
+  background: var(--wx-color-success, #4caf50);
+}
+
+.wx-wizard-content {
+  min-height: 300px;
+}
+
+.wx-wizard-step-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.wx-wizard-step-body {
+  flex: 1;
+}
+
+.wx-wizard-step-actions {
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--wx-color-border, #e0e0e0);
+}
+
+.wx-wizard-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: var(--wx-radius-sm, 4px);
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.wx-wizard-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.wx-wizard-button-primary {
+  background: var(--wx-color-primary, #f19924);
+  color: var(--wx-color-primary-contrast, white);
+}
+
+.wx-wizard-button-primary:hover:not(:disabled) {
+  background: var(--wx-color-primary-hover, #d88420);
+}
+
+.wx-wizard-button-secondary {
+  background: var(--wx-color-surface, white);
+  color: var(--wx-color-text, #333);
+  border: 1px solid var(--wx-color-border, #ddd);
+}
+
+.wx-wizard-button-secondary:hover:not(:disabled) {
+  background: var(--wx-color-surface-hover, #f5f5f5);
+}
+
+/* ============================================================
+   Success state (feature: successMessage)
+   ============================================================ */
+
+.wx-wizard-success {
+  padding: 2rem;
+  border-radius: var(--wx-radius-md, 8px);
+  background: var(--wx-color-success-bg, #e8f5e9);
+  color: var(--wx-color-success-text, #2e7d32);
+  font-size:var(--wx-font-size-md, 16px);
+  font-weight: 500;
+  text-align: center;
+  border: 1px solid var(--wx-color-success, #4caf50);
+}
+
+/* ============================================================
+   Error message (feature: errorMessage)
+   ============================================================ */
+
+.wx-wizard-error {
+  padding: 0.75rem 1rem;
+  border-radius: var(--wx-radius-sm, 4px);
+  background: var(--wx-color-error-bg, #fdecea);
+  color: var(--wx-color-error-text, #c62828);
+  font-size:var(--wx-font-size-sm, 14px);
+  border: 1px solid var(--wx-color-error, #ef5350);
+}
+
+/* ============================================================
+   Theme: default  (no overrides needed – base styles apply)
+   ============================================================ */
+
+/* ============================================================
+   Theme: minimal
+   ============================================================ */
+
+.wx-wizard--minimal .wx-wizard-steps {
+  background: transparent;
+  padding: 0.5rem 0;
+  border-radius: 0;
+}
+
+.wx-wizard--minimal .wx-wizard-step-circle {
+  background: transparent;
+  border: 1px solid var(--wx-color-border, #ccc);
+  color: var(--wx-color-text-muted, #666);
+  box-shadow: none;
+  transform: none;
+  font-weight: 400;
+}
+
+.wx-wizard--minimal .wx-wizard-step-active .wx-wizard-step-circle {
+  background: transparent;
+  border-color: var(--wx-color-primary, #f19924);
+  color: var(--wx-color-primary, #f19924);
+  box-shadow: none;
+  transform: none;
+}
+
+.wx-wizard--minimal .wx-wizard-step-completed .wx-wizard-step-circle {
+  background: transparent;
+  border-color: var(--wx-color-success, #4caf50);
+  color: var(--wx-color-success, #4caf50);
+}
+
+.wx-wizard--minimal .wx-wizard-step-line {
+  background: var(--wx-color-border, #e0e0e0);
+}
+
+.wx-wizard--minimal .wx-wizard-step-completed .wx-wizard-step-line {
+  background: var(--wx-color-border, #e0e0e0);
+}
+
+.wx-wizard--minimal .wx-wizard-step-actions {
+  border-top: none;
+  padding-top: 0.5rem;
+}
+
+.wx-wizard--minimal .wx-wizard-button {
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+}
+
+.wx-wizard--minimal .wx-wizard-button-primary {
+  background: transparent;
+  color: var(--wx-color-primary, #f19924);
+  border: 1px solid var(--wx-color-primary, #f19924);
+}
+
+.wx-wizard--minimal .wx-wizard-button-primary:hover:not(:disabled) {
+  background: var(--wx-color-primary, #f19924);
+  color: var(--wx-color-primary-contrast, white);
+}
+
+/* ============================================================
+   Theme: modern
+   ============================================================ */
+
+.wx-wizard--modern .wx-wizard-steps {
+  background: var(--wx-color-surface, white);
+  border-radius: var(--wx-radius-lg, 12px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.25rem 1.5rem;
+}
+
+.wx-wizard--modern .wx-wizard-step-circle {
+  border-radius: 999px;
+  width: 2.75rem;
+  height: 2.75rem;
+  background: var(--wx-color-border, #e0e0e0);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wx-wizard--modern .wx-wizard-step-active .wx-wizard-step-circle {
+  background: linear-gradient(135deg, var(--wx-color-primary, #f19924) 0%, var(--wx-color-primary-hover, #d88420) 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(241, 153, 36, 0.45);
+  transform: scale(1.15);
+}
+
+.wx-wizard--modern .wx-wizard-step-completed .wx-wizard-step-circle {
+  background: linear-gradient(135deg, var(--wx-color-success, #4caf50) 0%, #388e3c 100%);
+  color: white;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.35);
+}
+
+.wx-wizard--modern .wx-wizard-step-line {
+  height: 3px;
+  border-radius: 2px;
+}
+
+.wx-wizard--modern .wx-wizard-content {
+  border-radius: var(--wx-radius-lg, 12px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  background: var(--wx-color-surface, white);
+  padding: 1.5rem;
+}
+
+.wx-wizard--modern .wx-wizard-button {
+  border-radius: var(--wx-radius-md, 999px);
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.wx-wizard--modern .wx-wizard-button-primary {
+  background: linear-gradient(135deg, var(--wx-color-primary, #f19924) 0%, var(--wx-color-primary-hover, #d88420) 100%);
+  box-shadow: 0 2px 8px rgba(241, 153, 36, 0.35);
+}
+
+.wx-wizard--modern .wx-wizard-button-primary:hover:not(:disabled) {
+  box-shadow: 0 4px 14px rgba(241, 153, 36, 0.5);
+  transform: translateY(-1px);
+}
+
+.wx-wizard--modern .wx-wizard-button-secondary {
+  border-radius: var(--wx-radius-md, 999px);
+  border-color: var(--wx-color-border, #ddd);
+}
+
+/* ============================================================
+   Layout: horizontal  (default – no overrides needed)
+   ============================================================ */
+
+/* ============================================================
+   Layout: vertical
+   ============================================================ */
+
+.wx-wizard--vertical {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.wx-wizard--vertical .wx-wizard-steps {
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  width: 220px;
+  gap: 0;
+  padding: 1rem 0.75rem;
+}
+
+.wx-wizard--vertical .wx-wizard-step-indicator {
+  flex-direction: row;
+  align-items: flex-start;
+  flex: unset;
+  width: 100%;
+  padding: 0.5rem 0;
+  gap: 0.75rem;
+}
+
+.wx-wizard--vertical .wx-wizard-step-circle {
+  flex-shrink: 0;
+  margin-bottom: 0;
+}
+
+.wx-wizard--vertical .wx-wizard-step-info {
+  text-align: left;
+}
+
+/* Vertical connector line runs downward between steps */
+.wx-wizard--vertical .wx-wizard-step-line {
+  position: absolute;
+  top: 2.75rem;
+  left: 1.25rem;
+  right: auto;
+  width: 2px;
+  height: calc(100% - 0.5rem);
+  background: var(--wx-color-border, #e0e0e0);
+}
+
+.wx-wizard--vertical .wx-wizard-step-completed .wx-wizard-step-line {
+  background: var(--wx-color-success, #4caf50);
+}
+
+.wx-wizard--vertical .wx-wizard-content {
+  flex: 1;
+  min-height: 300px;
+}

@@ -33,7 +33,7 @@ The UI Kit is a **UI library ecosystem**, not an application or backend framewor
 
 The public UI Kit consists of:
 
-- **17 focused libraries**
+- **18 focused libraries**
 - **242 documented components**
 - **1 aggregate package:** `@waysnx/ui-kit`
 
@@ -66,7 +66,6 @@ Examples include:
 | Responsibility | Package |
 |---|---|
 | Foundational UI | `@waysnx/ui-core` |
-| Forms | `@waysnx/ui-forms` |
 | Schema-driven forms | `@waysnx/ui-form-builder` |
 | Layout | `@waysnx/ui-layout` |
 | Feedback | `@waysnx/ui-feedback` |
@@ -78,6 +77,7 @@ Examples include:
 | Dashboard | `@waysnx/ui-dashboard` |
 | Grid/data listing | `@waysnx/ui-grid-builder` |
 | Internationalization | `@waysnx/ui-i18n` |
+| Diagnostics | `@waysnx/ui-diagnostics` |
 
 The complete library inventory is maintained by WDG-generated metadata and documented at:
 

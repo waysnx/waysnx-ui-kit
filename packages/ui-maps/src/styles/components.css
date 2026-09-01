@@ -1,0 +1,370 @@
+/**
+ * @waysnx/ui-maps — Component Styles
+ */
+
+/* Global box-sizing */
+[class^="wx-adv-"],
+[class*=" wx-adv-"],
+[class^="wx-adv-"] *,
+[class*=" wx-adv-"] * {
+  box-sizing: border-box;
+}
+
+/* ─── Shared Card ─────────────────────────────────────────────────────── */
+
+.wx-adv-card {
+  background: var(--wx-adv-card-bg);
+  border: 1px solid var(--wx-adv-card-border);
+  border-radius: var(--wx-adv-card-radius);
+  box-shadow: var(--wx-adv-card-shadow);
+  overflow: hidden;
+}
+
+/* ─── Address Selector ────────────────────────────────────────────────── */
+
+.wx-adv-address-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.wx-adv-address-selector__input {
+  position: relative;
+}
+
+.wx-adv-address-selector__input input {
+  width: 100%;
+  padding: 10px 12px 10px 36px;
+  border: 1px solid var(--wx-adv-card-border);
+  border-radius: var(--wx-radius-md, 8px);
+  font-size: var(--wx-font-size-sm, 14px);
+  background: var(--wx-adv-card-bg);
+  color: var(--wx-color-text, #1a1a1a);
+  outline: none;
+  transition: border-color var(--wx-adv-transition);
+}
+
+.wx-adv-address-selector__input input:focus {
+  border-color: var(--wx-color-primary, #2563eb);
+}
+
+.wx-adv-address-selector__icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--wx-color-text-muted, #6b7280);
+  font-size: 14px;
+}
+
+.wx-adv-address-selector__suggestions {
+  border: 1px solid var(--wx-adv-card-border);
+  border-radius: var(--wx-radius-md, 8px);
+  background: var(--wx-adv-card-bg);
+  box-shadow: var(--wx-shadow-md);
+  overflow: hidden;
+}
+
+.wx-adv-address-selector__suggestion-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: background var(--wx-adv-transition);
+  font-size: 13px;
+  color: var(--wx-color-text, #1a1a1a);
+}
+
+.wx-adv-address-selector__suggestion-item:hover {
+  background: var(--wx-color-surface-hover, #f1f5f9);
+}
+
+.wx-adv-address-selector__suggestion-icon {
+  color: var(--wx-color-text-muted, #6b7280);
+  flex-shrink: 0;
+}
+
+.wx-adv-address-selector__selected {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: var(--wx-color-surface-alt, #f8fafc);
+  border: 1px solid var(--wx-adv-card-border);
+  border-radius: var(--wx-radius-md, 8px);
+}
+
+.wx-adv-address-selector__selected-check {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--wx-color-success, #22c55e);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  flex-shrink: 0;
+}
+
+.wx-adv-address-selector__current-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 0;
+  border: none;
+  background: none;
+  color: var(--wx-color-primary, #2563eb);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.wx-adv-address-selector__current-location:hover {
+  text-decoration: underline;
+}
+
+/* ─── Map View ────────────────────────────────────────────────────────── */
+
+.wx-adv-map {
+  position: relative;
+  border-radius: var(--wx-adv-map-radius);
+  border: 1px solid var(--wx-adv-map-border);
+  overflow: hidden;
+  background: var(--wx-color-surface-alt, #e5e7eb);
+}
+
+.wx-adv-map__container {
+  width: 100%;
+  height: var(--wx-adv-map-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--wx-color-text-muted, #6b7280);
+  font-size: 14px;
+}
+
+.wx-adv-map__controls {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  gap: 4px;
+}
+
+.wx-adv-map__control-btn {
+  padding: 6px 12px;
+  border: 1px solid var(--wx-adv-map-border);
+  background: var(--wx-adv-map-control-bg);
+  border-radius: var(--wx-radius-sm, 4px);
+  font-size: 12px;
+  cursor: pointer;
+  color: var(--wx-color-text, #1a1a1a);
+  transition: all var(--wx-adv-transition);
+}
+
+.wx-adv-map__control-btn:hover,
+.wx-adv-map__control-btn--active {
+  background: var(--wx-color-primary, #2563eb);
+  color: #fff;
+  border-color: var(--wx-color-primary, #2563eb);
+}
+
+.wx-adv-map__info {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  display: flex;
+  gap: 16px;
+  padding: 10px 16px;
+  background: var(--wx-adv-map-control-bg);
+  border-radius: var(--wx-radius-md, 8px);
+  box-shadow: var(--wx-shadow-md);
+  font-size: 13px;
+}
+
+.wx-adv-map__info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wx-adv-map__info-value {
+  font-weight: 600;
+  color: var(--wx-color-text, #1a1a1a);
+}
+
+.wx-adv-map__info-label {
+  font-size: 11px;
+  color: var(--wx-color-text-muted, #6b7280);
+}
+
+/* ─── Distance Calculator ─────────────────────────────────────────────── */
+
+.wx-adv-distance {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  background: var(--wx-adv-card-bg);
+  border: 1px solid var(--wx-adv-card-border);
+  border-radius: var(--wx-adv-card-radius);
+}
+
+.wx-adv-distance__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.wx-adv-distance__field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.wx-adv-distance__field-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--wx-color-text-muted, #6b7280);
+  width: 32px;
+  flex-shrink: 0;
+}
+
+.wx-adv-distance__field input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid var(--wx-adv-card-border);
+  border-radius: var(--wx-radius-md, 8px);
+  font-size: 13px;
+  background: var(--wx-adv-card-bg);
+  color: var(--wx-color-text, #1a1a1a);
+  outline: none;
+}
+
+.wx-adv-distance__field input:focus {
+  border-color: var(--wx-color-primary, #2563eb);
+}
+
+.wx-adv-distance__result {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+.wx-adv-distance__result-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wx-adv-distance__result-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--wx-color-text, #1a1a1a);
+}
+
+.wx-adv-distance__result-label {
+  font-size: 11px;
+  color: var(--wx-color-text-muted, #6b7280);
+}
+
+.wx-adv-distance__modes {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+
+.wx-adv-distance__mode-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--wx-adv-card-border);
+  background: var(--wx-adv-card-bg);
+  border-radius: var(--wx-radius-md, 8px);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: all var(--wx-adv-transition);
+}
+
+.wx-adv-distance__mode-btn:hover,
+.wx-adv-distance__mode-btn--active {
+  background: var(--wx-color-primary, #2563eb);
+  color: #fff;
+  border-color: var(--wx-color-primary, #2563eb);
+}
+
+/* ─── Route Planner ───────────────────────────────────────────────────── */
+
+.wx-adv-route-planner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  background: var(--wx-adv-card-bg);
+  border: 1px solid var(--wx-adv-card-border);
+  border-radius: var(--wx-adv-card-radius);
+}
+
+.wx-adv-route-planner__stops {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.wx-adv-route-planner__stop {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--wx-color-text, #1a1a1a);
+}
+
+.wx-adv-route-planner__stop-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--wx-color-primary, #2563eb);
+  flex-shrink: 0;
+}
+
+.wx-adv-route-planner__stop-dot--start {
+  background: var(--wx-color-primary, #2563eb);
+}
+
+.wx-adv-route-planner__stop-line {
+  width: 2px;
+  height: 16px;
+  background: var(--wx-color-primary, #2563eb);
+  margin-left: 5px;
+  opacity: 0.4;
+}
+
+.wx-adv-route-planner__summary {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background: var(--wx-color-surface-alt, #f8fafc);
+  border-radius: var(--wx-radius-md, 8px);
+  font-size: 13px;
+}
+
+.wx-adv-route-planner__btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: var(--wx-color-primary, #2563eb);
+  color: #fff;
+  border-radius: var(--wx-radius-md, 8px);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity var(--wx-adv-transition);
+}
+
+.wx-adv-route-planner__btn:hover { opacity: 0.9; }

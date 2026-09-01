@@ -1,0 +1,29 @@
+.wx-iframe-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.wx-iframe-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--wx-color-text, #1e293b);
+}
+
+.wx-iframe-container {
+  border: 1px solid var(--wx-color-border, #e2e8f0);
+  border-radius: var(--wx-radius-md, 8px);
+  overflow: hidden;
+  background: var(--wx-color-surface, #fff);
+}
+
+.wx-iframe {
+  display: block;
+  width: 100%;
+  border: none;
+}
+
+.wx-iframe-hint {
+  font-size: 12px;
+  color: var(--wx-color-text-muted, #64748b);
+}

@@ -1,0 +1,47 @@
+/**
+ * Dashboard CSS Variables - Package-specific tokens only.
+ * Uses shared --wx-* tokens from ui-core for colors, spacing, typography, etc.
+ */
+
+:root {
+  /* Dashboard-specific spacing */
+  --wx-dash-spacing-2xl: 48px;
+
+  /* Dashboard-specific z-index scale */
+  --wx-dash-z-base: 0;
+  --wx-dash-z-dropdown: 100;
+  --wx-dash-z-sticky: 200;
+  --wx-dash-z-fixed: 300;
+  --wx-dash-z-modal-overlay: 500;
+  --wx-dash-z-modal: 600;
+  --wx-dash-z-tooltip: 700;
+  --wx-dash-z-popover: 750;
+  --wx-dash-z-notification: 800;
+  --wx-dash-z-fullscreen: 1000;
+
+  /* Dashboard-specific status color not in core */
+  --wx-dash-status-pending: #9c27b0;
+  --wx-dash-status-pending-light: #f3e5f5;
+
+  /* Dashboard-specific status light variants (mapped from core where possible) */
+  --wx-dash-status-success-light: var(--wx-color-success-light, #f0fdf4);
+  --wx-dash-status-error-light: var(--wx-color-error-light, #fef2f2);
+  --wx-dash-status-warning-light: #fff3e0;
+  --wx-dash-status-info-light: #e3f2fd;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    /* Transitions handled inline or by consumer */
+  }
+}
+
+/* Base styles */
+.dashboard {
+  font-family: var(--wx-font-family, inherit);
+  color: var(--wx-color-text, #1e293b);
+  background-color: var(--wx-color-surface, #ffffff);
+  font-size: var(--wx-font-size-sm, 14px);
+  line-height: 1.5;
+}

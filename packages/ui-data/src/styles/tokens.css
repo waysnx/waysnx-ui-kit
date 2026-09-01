@@ -1,0 +1,33 @@
+/**
+ * @waysnx/ui-data — Design Tokens
+ * All tokens use --wx-adv-* prefix
+ */
+
+:root {
+  /* Editors */
+  --wx-adv-editor-bg: var(--wx-color-surface, #ffffff);
+  --wx-adv-editor-border: var(--wx-color-border, rgba(0, 0, 0, 0.1));
+  --wx-adv-editor-radius: var(--wx-radius-lg, 12px);
+  --wx-adv-editor-toolbar-bg: var(--wx-color-surface-alt, #f8fafc);
+  --wx-adv-editor-line-number-color: var(--wx-color-text-muted, #6b7280);
+  --wx-adv-editor-line-number-bg: var(--wx-color-surface-alt, #f8fafc);
+  --wx-adv-editor-highlight-bg: rgba(59, 130, 246, 0.1);
+  --wx-adv-editor-font: 'Fira Code', 'JetBrains Mono', 'Consolas', monospace;
+
+  /* General */
+  --wx-adv-card-bg: var(--wx-color-surface, #ffffff);
+  --wx-adv-card-border: var(--wx-color-border, rgba(0, 0, 0, 0.1));
+  --wx-adv-card-radius: var(--wx-radius-lg, 12px);
+  --wx-adv-card-shadow: var(--wx-shadow-sm, 0 1px 2px rgba(0, 0, 0, 0.05));
+  --wx-adv-transition: 200ms ease;
+}
+
+[data-theme="dark"] {
+  --wx-adv-editor-bg: #1f2937;
+  --wx-adv-editor-border: #374151;
+  --wx-adv-editor-toolbar-bg: #111827;
+  --wx-adv-editor-line-number-bg: #111827;
+  --wx-adv-editor-highlight-bg: rgba(59, 130, 246, 0.2);
+  --wx-adv-card-bg: #1f2937;
+  --wx-adv-card-border: #374151;
+}

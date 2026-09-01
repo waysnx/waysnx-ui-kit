@@ -1,0 +1,70 @@
+.wx-checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--wx-font-family, inherit);
+}
+
+.wx-checkbox-group-label {
+  font-weight: 500;
+  font-size: var(--wx-font-size-sm, 14px);
+  margin-bottom: 4px;
+  color: var(--wx-color-text, #333);
+}
+
+.wx-checkbox-wrapper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.wx-checkbox-wrapper:hover {
+  opacity: 0.8;
+}
+
+.wx-checkbox {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.wx-checkbox-label {
+  font-size: var(--wx-font-size-sm, 14px);
+  color: var(--wx-color-text, #333);
+}
+
+.wx-checkbox-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.wx-checkbox-disabled .wx-checkbox {
+  cursor: not-allowed;
+}
+
+.wx-checkbox-loading {
+  padding: 8px;
+  color: var(--wx-color-text-muted, #666);
+  font-size: var(--wx-font-size-sm, 14px);
+}
+
+.wx-checkbox-no-options {
+  padding: 8px;
+  color: var(--wx-color-text-light, #999);
+  font-size: var(--wx-font-size-sm, 14px);
+}
+
+.wx-checkbox-group-error {
+  border: 1px solid var(--wx-color-error, #ef4444);
+  border-radius: var(--wx-radius-sm, 4px);
+  padding: 8px;
+}
+
+.wx-checkbox-error-text {
+  font-size: var(--wx-font-size-xs, 12px);
+  color: var(--wx-color-error, #ef4444);
+  margin-top: 4px;
+  grid-column: 1 / -1;
+}

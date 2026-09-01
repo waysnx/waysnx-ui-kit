@@ -1,0 +1,255 @@
+/**
+ * Layout component styles
+ */
+
+.widget-grid {
+  display: grid;
+  gap: var(--wx-spacing-md, 16px);
+  width: 100%;
+  height: 100%;
+}
+
+.widget-grid-auto-fit {
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--dashboard-grid-min-width, 300px), 1fr)
+  );
+}
+
+.widget-grid-responsive {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+@media (max-width: 576px) {
+  .widget-grid-responsive {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .widget-grid-responsive {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .widget-grid-responsive {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .widget-grid-responsive {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.widget-row {
+  display: flex;
+  flex-direction: row;
+  gap: var(--wx-spacing-md, 16px);
+  width: 100%;
+}
+
+.widget-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--wx-spacing-md, 16px);
+  flex: 1;
+}
+
+.widget-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive utilities */
+.widget-full-width {
+  grid-column: 1 / -1;
+}
+
+.widget-half-width {
+  grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+  .widget-half-width {
+    grid-column: span 1;
+  }
+}
+
+/* Grid sizing */
+.widget-xs {
+  grid-column: span 1;
+  min-height: 200px;
+}
+
+.widget-sm {
+  grid-column: span 2;
+  min-height: 300px;
+}
+
+.widget-md {
+  grid-column: span 3;
+  min-height: 400px;
+}
+
+.widget-lg {
+  grid-column: span 4;
+  min-height: 500px;
+}
+
+@media (max-width: 1024px) {
+  .widget-sm {
+    grid-column: span 1;
+  }
+
+  .widget-md {
+    grid-column: span 2;
+  }
+
+  .widget-lg {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .widget-sm,
+  .widget-md,
+  .widget-lg {
+    grid-column: span 1;
+  }
+}
+
+/* Flex utilities */
+.widget-flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: var(--wx-spacing-md, 16px);
+}
+
+.widget-flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--wx-spacing-md, 16px);
+}
+
+.widget-flex-1 {
+  flex: 1;
+}
+
+.widget-flex-2 {
+  flex: 2;
+}
+
+.widget-flex-3 {
+  flex: 3;
+}
+
+/* Alignment */
+.widget-justify-start {
+  justify-content: flex-start;
+}
+
+.widget-justify-center {
+  justify-content: center;
+}
+
+.widget-justify-end {
+  justify-content: flex-end;
+}
+
+.widget-justify-between {
+  justify-content: space-between;
+}
+
+.widget-items-start {
+  align-items: flex-start;
+}
+
+.widget-items-center {
+  align-items: center;
+}
+
+.widget-items-end {
+  align-items: flex-end;
+}
+
+.widget-items-stretch {
+  align-items: stretch;
+}
+
+/* Spacing utilities */
+.widget-gap-xs {
+  gap: var(--wx-spacing-xs, 4px);
+}
+
+.widget-gap-sm {
+  gap: var(--wx-spacing-sm, 8px);
+}
+
+.widget-gap-md {
+  gap: var(--wx-spacing-md, 16px);
+}
+
+.widget-gap-lg {
+  gap: var(--wx-spacing-lg, 24px);
+}
+
+.widget-gap-xl {
+  gap: var(--wx-spacing-xl, 32px);
+}
+
+/* Resizable widget support */
+.widget-resizable {
+  resize: both;
+  overflow: auto;
+}
+
+.widget-resizable-horizontal {
+  resize: horizontal;
+}
+
+.widget-resizable-vertical {
+  resize: vertical;
+}
+
+/* Grid layout plugin support (react-grid-layout) */
+.react-grid-layout {
+  position: relative;
+  transition: height 300ms ease-in-out;
+}
+
+.react-grid-item {
+  touch-action: none;
+}
+
+.react-grid-item img {
+  pointer-events: none;
+  user-select: none;
+}
+
+.react-grid-item.cssTransforms {
+  transition-property: transform;
+}
+
+.react-grid-item.resizing {
+  transition: none;
+  z-index: 1;
+}
+
+.react-grid-item.react-draggable-dragging {
+  transition: none;
+  z-index: var(--wx-dash-z-sticky, 200);
+}
+
+.react-grid-placeholder {
+  background: var(--wx-dash-status-info-light, #e3f2fd);
+  opacity: 0.2;
+  border-radius: var(--wx-radius-md, 8px);
+  z-index: 2;
+  border: 2px dashed var(--wx-color-info, #3b82f6);
+}

@@ -1,1 +1,46 @@
-{"name":"@waysnx/ui-library-17","version":"0.0.0","license":"Apache-2.0"}
+{
+  "name": "@waysnx/ui-maps",
+  "version": "0.1.2",
+  "description": "Maps and location components from WaysNX - address search, map views, route planning, and geolocation",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "Apache-2.0",
+  "files": ["dist", "README.md"],
+  "keywords": ["react", "maps", "location", "geocoding", "address", "route", "geofence", "waysnx"],
+  "author": "WaysNX Technologies",
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "@waysnx/ui-i18n": "workspace:*",
+    "dompurify": "^3.3.1"
+  },
+  "devDependencies": {
+    "@types/dompurify": "^3.0.5",
+    "@types/node": "^25.0.3",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "copyfiles": "^2.4.1",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "build": "tsup && npm run copy-css",
+    "copy-css": "copyfiles -u 1 \"src/**/*.css\" dist",
+    "clean": "rm -rf dist"
+  },
+  "exports": {
+    "./dist/index.css": "./dist/index.css",
+    "./dist/styles/index.css": "./dist/styles/index.css",
+    ".": {
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "sideEffects": ["*.css"],
+  "repository": { "type": "git", "url": "https://github.com/waysnx/waysnx-ui-kit", "directory": "packages/ui-maps" }
+}

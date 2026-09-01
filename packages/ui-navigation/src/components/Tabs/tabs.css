@@ -1,0 +1,347 @@
+/**
+ * @file components/Tabs/tabs.css
+ * Styles for Tabs component
+ */
+
+/* Tabs Container */
+.nav-tabs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--nav-tabs-bg, var(--wx-color-surface, #ffffff));
+  color: var(--nav-tabs-text, var(--wx-color-text, #1e293b));
+  border-radius: var(--nav-tabs-radius, var(--wx-radius-md, 8px));
+  font-family: var(--nav-tabs-font, inherit);
+}
+
+/* Tabs list */
+.nav-tabs__list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  border-bottom: 1px solid var(--nav-tabs-border, var(--wx-color-border, #e2e8f0));
+  overflow: auto;
+  background-color: var(--nav-tabs-list-bg, transparent);
+}
+
+.nav-tabs--vertical .nav-tabs__list {
+  flex-direction: column;
+  border-bottom: none;
+  border-right: 1px solid var(--nav-tabs-border, var(--wx-color-border, #e2e8f0));
+}
+
+/* Scrollable tabs */
+.nav-tabs--scrollable .nav-tabs__list {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-tabs--scrollable .nav-tabs__list::-webkit-scrollbar {
+  height: 0.35rem;
+}
+
+.nav-tabs--scrollable .nav-tabs__list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.nav-tabs--scrollable .nav-tabs__list::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+}
+
+/* Density variations */
+.nav-tabs--compact {
+  --nav-tabs-tab-height: 2rem;
+  --nav-tabs-tab-padding: 0.35rem 0.75rem;
+  --nav-tabs-font-size: var(--wx-font-size-sm, 14px);
+}
+
+.nav-tabs--normal {
+  --nav-tabs-tab-height: 2.5rem;
+  --nav-tabs-tab-padding: 0.5rem 1rem;
+  --nav-tabs-font-size: var(--wx-font-size-sm, 14px);
+}
+
+.nav-tabs--spacious {
+  --nav-tabs-tab-height: 3rem;
+  --nav-tabs-tab-padding: 0.75rem 1.5rem;
+  --nav-tabs-font-size: var(--wx-font-size-md, 16px);
+}
+
+/* Tab button */
+.nav-tabs__tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: var(--nav-tabs-tab-height, 2.5rem);
+  padding: var(--nav-tabs-tab-padding, 0.5rem 1rem);
+  font-size: var(--nav-tabs-font-size, var(--wx-font-size-sm, 14px));
+  color: var(--nav-tabs-tab-text, var(--wx-color-text-muted, #64748b));
+  background-color: var(--nav-tabs-tab-bg, transparent);
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+  border-radius: 0;
+  outline: none;
+  position: relative;
+  white-space: nowrap;
+  flex-shrink: 0;
+  font-weight: 500;
+}
+
+.nav-tabs--vertical .nav-tabs__tab {
+  border-bottom: none;
+  border-right: 2px solid transparent;
+}
+
+/* Tab hover state */
+.nav-tabs__tab:hover:not([aria-disabled="true"]):not([disabled]) {
+  background-color: var(--nav-tabs-tab-hover-bg, var(--wx-color-surface-hover, #f1f5f9));
+  color: var(--nav-tabs-tab-hover-text, var(--wx-color-text, #1e293b));
+}
+
+/* Tab active state */
+.nav-tabs__tab--active {
+  color: var(--nav-tabs-tab-active-text, var(--wx-color-primary, #f19924));
+  background-color: var(--nav-tabs-tab-active-bg, transparent);
+  border-bottom-color: var(--nav-tabs-tab-active-border, var(--wx-color-primary, #f19924));
+  font-weight: 600;
+}
+
+.nav-tabs--vertical .nav-tabs__tab--active {
+  border-bottom-color: transparent;
+  border-right-color: var(--nav-tabs-tab-active-border, var(--wx-color-primary, #f19924));
+}
+
+/* Tab focused state */
+.nav-tabs__tab--focused {
+  outline: 2px solid var(--nav-tabs-tab-focus-outline, var(--wx-color-primary, #f19924));
+  outline-offset: -2px;
+}
+
+.nav-tabs__tab--focused:focus-visible {
+  outline: 2px solid var(--nav-tabs-tab-focus-outline, var(--wx-color-primary, #f19924));
+  outline-offset: 2px;
+}
+
+/* Tab disabled state */
+.nav-tabs__tab--disabled,
+.nav-tabs__tab[disabled],
+.nav-tabs__tab[aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: transparent;
+  color: var(--nav-tabs-tab-disabled-text, var(--wx-color-text-muted, #64748b));
+}
+
+.nav-tabs__tab--disabled:hover,
+.nav-tabs__tab[disabled]:hover,
+.nav-tabs__tab[aria-disabled="true"]:hover {
+  background-color: transparent;
+  color: var(--nav-tabs-tab-disabled-text, var(--wx-color-text-muted, #64748b));
+}
+
+/* Tab icon */
+.nav-tabs__tab-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+  font-size: var(--wx-font-size-md, 16px);
+  color: currentColor;
+}
+
+/* Tab label */
+.nav-tabs__tab-label {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Tab badge */
+.nav-tabs__tab-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.5rem;
+  height: 1.5rem;
+  padding: 0 0.35rem;
+  font-size: var(--wx-font-size-xs, 12px);
+  font-weight: 600;
+  border-radius: var(--radius-full, 9999px);
+  background-color: var(--nav-tabs-tab-badge-bg, var(--wx-color-primary, #f19924));
+  color: var(--nav-tabs-tab-badge-text, white);
+  flex-shrink: 0;
+}
+
+/* Tab close button */
+.nav-tabs__tab-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  padding: 0;
+  margin-left: 0.35rem;
+  background-color: transparent;
+  border: none;
+  color: currentColor;
+  cursor: pointer;
+  font-size: var(--wx-font-size-sm, 14px);
+  border-radius: var(--wx-radius-sm, 4px);
+  transition: background-color 150ms ease-in-out;
+  flex-shrink: 0;
+}
+
+.nav-tabs__tab-close:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-tabs__tab-close:focus-visible {
+  outline: 2px solid var(--nav-tabs-tab-focus-outline, var(--wx-color-primary, #f19924));
+  outline-offset: 1px;
+}
+
+/* Tab content */
+.nav-tabs__content {
+  flex: 1;
+  padding: 1rem;
+  background-color: var(--nav-tabs-content-bg, transparent);
+  overflow: auto;
+  animation: tabContentAppear 150ms ease-in-out;
+}
+
+@keyframes tabContentAppear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Tab loading state */
+.nav-tabs__loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  font-size: var(--nav-tabs-font-size, var(--wx-font-size-sm, 14px));
+  color: var(--nav-tabs-text, var(--wx-color-text-muted, #64748b));
+}
+
+/* Variant styles */
+.nav-tabs--default {
+  border: 1px solid var(--nav-tabs-border, var(--wx-color-border, #e2e8f0));
+}
+
+.nav-tabs--minimal {
+  border: none;
+}
+
+.nav-tabs--minimal .nav-tabs__list {
+  border-bottom-color: transparent;
+}
+
+.nav-tabs--minimal.nav-tabs--vertical .nav-tabs__list {
+  border-right-color: transparent;
+}
+
+.nav-tabs--elevated {
+  box-shadow: var(--nav-tabs-shadow, var(--wx-shadow-md, 0 4px 6px -1px rgba(0,0,0,0.07)));
+  border: none;
+}
+
+.nav-tabs--elevated .nav-tabs__list {
+  border-bottom-color: var(--nav-tabs-border, var(--wx-color-border, #e2e8f0));
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .nav-tabs {
+    background-color: var(--nav-tabs-bg-dark, var(--wx-color-surface, #ffffff));
+    color: var(--nav-tabs-text-dark, var(--wx-color-text, #1e293b));
+  }
+
+  .nav-tabs__list {
+    border-bottom-color: var(--nav-tabs-border-dark, var(--wx-color-border, #e2e8f0));
+  }
+
+  .nav-tabs--vertical .nav-tabs__list {
+    border-right-color: var(--nav-tabs-border-dark, var(--wx-color-border, #e2e8f0));
+  }
+
+  .nav-tabs__tab:hover:not([aria-disabled="true"]):not([disabled]) {
+    background-color: var(--nav-tabs-tab-hover-bg-dark, var(--wx-color-surface-hover, #f1f5f9));
+  }
+
+  .nav-tabs__tab-close:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-tabs__scrollable .nav-tabs__list::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: more) {
+  .nav-tabs__list {
+    border-bottom-width: 2px;
+  }
+
+  .nav-tabs--vertical .nav-tabs__list {
+    border-right-width: 2px;
+  }
+
+  .nav-tabs__tab {
+    border-bottom-width: 3px;
+  }
+
+  .nav-tabs--vertical .nav-tabs__tab {
+    border-right-width: 3px;
+  }
+
+  .nav-tabs__tab--focused {
+    outline-width: 3px;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .nav-tabs__tab,
+  .nav-tabs__tab-close,
+  .nav-tabs__content {
+    transition: none;
+    animation: none;
+  }
+}
+
+/* Accessibility focus */
+.nav-tabs__tab:focus-visible {
+  outline: 2px solid var(--nav-tabs-tab-focus-outline, var(--wx-color-primary, #f19924));
+  outline-offset: 2px;
+}
+
+/* Vertical tabs adjustments */
+.nav-tabs--vertical {
+  flex-direction: row;
+}
+
+.nav-tabs--vertical .nav-tabs__list {
+  flex-direction: column;
+  min-width: 200px;
+}
+
+.nav-tabs--vertical .nav-tabs__content {
+  flex: 1;
+}

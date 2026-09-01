@@ -1,0 +1,1 @@
+export function warn(c:boolean,m:string){if(!c&&process.env.NODE_ENV!=='production'){console.warn('[WaysNX UI]',m)}}

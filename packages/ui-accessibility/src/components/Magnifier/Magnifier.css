@@ -1,0 +1,107 @@
+.wx-magnifier {
+  position: fixed;
+  width: 150px;
+  height: 150px;
+  border: 3px solid var(--wx-color-primary, #f19924);
+  border-radius: 50%;
+  background-color: var(--wx-color-surface, #ffffff);
+  box-shadow: 0 0 15px rgba(241, 153, 36, 0.5), inset 0 0 10px rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+  z-index: 950;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  overflow: hidden;
+}
+
+.wx-magnifier.wx-magnifier-visible {
+  opacity: 1;
+}
+
+.wx-magnifier-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform-origin: top left;
+  will-change: transform;
+}
+
+/* Crosshair in center */
+.wx-magnifier-crosshair {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--wx-color-primary, #f19924);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  background: radial-gradient(
+    circle,
+    var(--wx-color-primary, #f19924) 30%,
+    transparent 70%
+  );
+}
+
+.wx-magnifier-crosshair::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  width: 1px;
+  height: 16px;
+  background-color: var(--wx-color-primary, #f19924);
+  transform: translateX(-50%);
+}
+
+.wx-magnifier-crosshair::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  height: 1px;
+  width: 16px;
+  background-color: var(--wx-color-primary, #f19924);
+  transform: translateY(-50%);
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: more) {
+  .wx-magnifier {
+    border: 4px solid var(--wx-color-text, #1e293b);
+    box-shadow: 0 0 20px var(--wx-color-text, #1e293b), 
+                inset 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .wx-magnifier-crosshair {
+    border: 3px solid var(--wx-color-text, #1e293b);
+  }
+
+  .wx-magnifier-crosshair::before,
+  .wx-magnifier-crosshair::after {
+    background-color: var(--wx-color-text, #1e293b);
+  }
+}
+
+/* Reduced motion - instant appearance */
+@media (prefers-reduced-motion: reduce) {
+  .wx-magnifier {
+    transition: none;
+  }
+}
+
+/* Print hide */
+@media print {
+  .wx-magnifier {
+    display: none;
+  }
+}
+
+/* Mobile - make larger for touch */
+@media (max-width: 768px) {
+  .wx-magnifier {
+    width: 180px;
+    height: 180px;
+  }
+}

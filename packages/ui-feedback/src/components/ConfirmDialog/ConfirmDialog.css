@@ -1,0 +1,58 @@
+.wx-confirm-message {
+  margin-bottom: 24px;
+  white-space: pre-line;
+  color: var(--wx-color-text-muted, #555);
+  line-height: 1.5;
+}
+
+.wx-confirm-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.wx-confirm-btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.wx-confirm-btn-cancel {
+  background: var(--wx-color-surface-hover, #f0f0f0);
+  color: var(--wx-color-text, #333);
+}
+
+.wx-confirm-btn-cancel:hover {
+  background: var(--wx-color-border, #e0e0e0);
+}
+
+.wx-confirm-btn-default {
+  background: var(--wx-color-primary, #f19924);
+  color: var(--wx-color-primary-contrast, white);
+}
+
+.wx-confirm-btn-default:hover {
+  background: var(--wx-color-primary-hover, #d88420);
+}
+
+.wx-confirm-btn-danger {
+  background: var(--wx-color-error, #ef4444);
+  color: var(--wx-color-primary-contrast, white);
+}
+
+.wx-confirm-btn-danger:hover {
+  background: var(--wx-color-error-hover, #dc2626);
+}
+
+.wx-confirm-btn-warning {
+  background: var(--wx-color-warning, #f59e0b);
+  color: var(--wx-color-primary-contrast, white);
+}
+
+.wx-confirm-btn-warning:hover {
+  background: var(--wx-color-warning, #d97706);
+}

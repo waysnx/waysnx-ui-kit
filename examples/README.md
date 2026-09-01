@@ -17,11 +17,10 @@ A reference admin-style application demonstrating the composition of multiple Wa
 The demo includes:
 
 - Dashboard
-- Complete Form
-- Grid Listing
+- Employee Listing
+- Employee Onboarding
 - Shared application header
 - Sidebar navigation
-- User menu
 - Language selection
 - Theme switching
 - Accessibility controls
@@ -64,3 +63,35 @@ Install repository dependencies from the repository root:
 
 ```bash
 pnpm install
+```
+
+Build all workspace packages before running examples (examples depend on compiled library output):
+
+```bash
+pnpm build
+```
+
+### Run the WaysNX Admin Demo
+
+From the repository root:
+
+```bash
+pnpm demo
+```
+
+Or using the filter directly:
+
+```bash
+pnpm --filter waysnx-admin-demo run dev
+```
+
+Or from the demo directory itself:
+
+```bash
+cd examples/waysnx-admin-demo
+pnpm dev
+```
+
+The demo runs at `http://localhost:5173` by default.
+
+See [`waysnx-admin-demo/README.md`](waysnx-admin-demo/README.md) for more details on what the demo demonstrates.

@@ -1,0 +1,12 @@
+.wx-button{display:inline-flex;align-items:center;justify-content:center;gap:6px;font-family:var(--wx-font-family,inherit);font-weight:500;border-radius:var(--wx-radius-md,6px);padding:10px 16px;cursor:pointer;transition:background 0.15s ease,color 0.15s ease;outline:none;font-size:var(--wx-font-size-md,14px);box-shadow:var(--wx-shadow-sm,none)}
+.wx-button--primary{background:var(--wx-color-primary,#f19924);color:var(--wx-color-primary-contrast,#fff);border:none}
+.wx-button--primary:hover{background:var(--wx-color-primary-hover,#e08916)}
+.wx-button--secondary{background:transparent;color:var(--wx-color-primary,#f19924);border:1px solid var(--wx-color-primary,#f19924)}
+.wx-button--secondary:hover{background:var(--wx-color-primary,#f19924);color:var(--wx-color-primary-contrast,#fff)}
+.wx-button--destructive{background:var(--wx-color-error,#dc2626);color:var(--wx-color-primary-contrast,#fff);border:none}
+.wx-button--destructive:hover{background:var(--wx-color-error-hover,#b91c1c)}
+.wx-button--outline{background:transparent;color:var(--wx-color-text,#333);border:1px solid var(--wx-color-border,#ddd)}
+.wx-button--outline:hover{background:var(--wx-color-surface-hover,#f5f5f5)}
+.wx-button--ghost{background:transparent;color:var(--wx-color-text,#333);border:none}
+.wx-button--ghost:hover{background:var(--wx-color-surface-hover,#f5f5f5)}
+.wx-button:disabled{opacity:0.6;cursor:not-allowed}

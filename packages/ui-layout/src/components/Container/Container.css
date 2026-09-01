@@ -1,0 +1,6 @@
+.wx-container{width:100%;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
+.wx-container-sm{max-width:640px}
+.wx-container-md{max-width:768px}
+.wx-container-lg{max-width:1024px}
+.wx-container-xl{max-width:1280px}
+.wx-container-full{max-width:100%}

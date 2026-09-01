@@ -1,0 +1,7 @@
+.wx-error-message {
+  display: block;
+  color: var(--wx-color-error, #ef4444);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  line-height: 1.25rem;
+}

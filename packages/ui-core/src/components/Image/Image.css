@@ -1,0 +1,36 @@
+.wx-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.wx-image-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--wx-color-text, #1e293b);
+}
+
+.wx-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.wx-image--rounded {
+  border-radius: var(--wx-radius-md, 8px);
+}
+
+.wx-image--circle {
+  border-radius: 50%;
+}
+
+.wx-image--cover { object-fit: cover; }
+.wx-image--contain { object-fit: contain; }
+.wx-image--fill { object-fit: fill; }
+.wx-image--none { object-fit: none; }
+
+.wx-image-caption {
+  font-size: 12px;
+  color: var(--wx-color-text-muted, #64748b);
+  text-align: center;
+}

@@ -1,0 +1,27 @@
+.wx-empty-state {
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.wx-empty-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  color: var(--wx-color-text-light, #999);
+}
+
+.wx-empty-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: var(--wx-color-text, #333);
+}
+
+.wx-empty-description {
+  margin-bottom: 24px;
+  color: var(--wx-color-text-muted, #666);
+  line-height: 1.5;
+}
+
+.wx-empty-action {
+  display: inline-flex;
+}

@@ -1,18 +1,42 @@
-# @waysnx/ui-library-16
+# @waysnx/ui-files
 
-## Purpose
-Describe the responsibility and scope of this library.
+File and document viewing components from WaysNX — PDF viewer and document preview.
 
 ## Installation
+
 ```bash
-npm install @waysnx/ui-library-16
+npm install @waysnx/ui-files
 ```
 
-## Components
-The authoritative component list should be verified through WDG-generated metadata.
+Requires `react` and `react-dom` (>=18) as peer dependencies.
+
+If your bundler does not import package CSS automatically, include the stylesheet:
+
+```ts
+import "@waysnx/ui-files/dist/index.css";
+```
+
+## Overview
+
+`@waysnx/ui-files` provides components for viewing files and documents in the browser, including a PDF viewer and a general document preview.
+
+## Representative exports
+
+- `PDFViewer` — render and view PDF documents
+- `DocumentPreview` — preview documents in the UI
+
+See the documentation site for the complete, authoritative export and prop reference.
+
+## Usage
+
+```tsx
+import { PDFViewer } from "@waysnx/ui-files";
+
+export function Example() {
+  return <PDFViewer src="/document.pdf" />;
+}
+```
 
 ## Documentation
-See Storybook and `docs/generated/`.
 
-## Release Status
-To be verified during public-release validation.
+Full component and API reference: https://uikit.waysnx.tech

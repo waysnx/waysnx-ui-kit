@@ -1,0 +1,3 @@
+.wx-divider{border:none;margin:0}
+.wx-divider-horizontal{width:100%;height:1px;background-color:var(--wx-color-border,#e5e7eb)}
+.wx-divider-vertical{width:1px;height:100%;background-color:var(--wx-color-border,#e5e7eb)}

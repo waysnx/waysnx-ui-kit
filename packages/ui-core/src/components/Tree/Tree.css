@@ -1,0 +1,70 @@
+.wx-tree-wrapper {
+  font-size: 14px;
+}
+
+.wx-tree-label-header {
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: var(--wx-color-text, #333);
+}
+
+.wx-tree {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.wx-tree > li {
+  margin-bottom: 16px;
+}
+
+.wx-tree-node {
+  position: relative;
+}
+
+.wx-tree-node-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+}
+
+.wx-tree-checkbox {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: var(--wx-color-primary);
+}
+
+.wx-tree-label {
+  color: var(--wx-color-text, #333);
+  user-select: none;
+}
+
+.wx-tree-children {
+  list-style: none;
+  margin-bottom: 8px;
+  border-left: 1px solid var(--wx-color-border, #d1d5db);
+  padding-left: 0;
+  margin-left: 22px;
+  margin-top: 5px;
+}
+
+.wx-tree-children > li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.wx-tree-children > li::before {
+  content: '';
+  position: absolute;
+  background-color: var(--wx-color-border, #d1d5db);
+  width: 20px;
+  height: 1px;
+  left: 0;
+  top: 12px;
+}
+
+.wx-tree-last-level {
+  border-left-color: transparent;
+}

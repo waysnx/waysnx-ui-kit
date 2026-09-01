@@ -1,0 +1,89 @@
+/**
+ * @file styles/tokens.css
+ * CSS custom properties for @waysnx/ui-visualization
+ * Extends the base --wx-* token system.
+ */
+
+:root {
+  /* ─── Canvas ─────────────────────────────────────── */
+  --wx-vis-canvas-bg: #f8fafc;
+  --wx-vis-canvas-bg-dark: #0f172a;
+  --wx-vis-canvas-dot-color: #cbd5e1;
+  --wx-vis-canvas-dot-color-dark: #1e293b;
+
+  /* ─── Node ───────────────────────────────────────── */
+  --wx-vis-node-bg: #ffffff;
+  --wx-vis-node-bg-dark: #1e293b;
+  --wx-vis-node-border: #e2e8f0;
+  --wx-vis-node-border-dark: #334155;
+  --wx-vis-node-border-radius: 12px;
+  --wx-vis-node-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --wx-vis-node-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --wx-vis-node-shadow-selected: 0 0 0 2px var(--wx-color-primary, #f19924);
+  --wx-vis-node-width: 220px;
+  --wx-vis-node-height: 80px;
+  --wx-vis-node-padding: 12px;
+
+  /* ─── Node States ────────────────────────────────── */
+  --wx-vis-node-selected-border: var(--wx-color-primary, #f19924);
+  --wx-vis-node-highlighted-bg: #fff5e6;
+  --wx-vis-node-highlighted-bg-dark: #2a1f0f;
+  --wx-vis-node-dragging-opacity: 0.6;
+  --wx-vis-node-dragover-border: var(--wx-color-primary, #f19924);
+
+  /* ─── Connector / Edge ───────────────────────────── */
+  --wx-vis-edge-color: #cbd5e1;
+  --wx-vis-edge-color-dark: #334155;
+  --wx-vis-edge-color-selected: var(--wx-color-primary, #f19924);
+  --wx-vis-edge-stroke-width: 1.5px;
+  --wx-vis-edge-stroke-width-hover: 2.5px;
+
+  /* ─── Status Indicators ──────────────────────────── */
+  --wx-vis-status-online: #22c55e;
+  --wx-vis-status-offline: #94a3b8;
+  --wx-vis-status-away: #f59e0b;
+  --wx-vis-status-busy: #ef4444;
+
+  /* ─── MiniMap ────────────────────────────────────── */
+  --wx-vis-minimap-bg: rgba(255, 255, 255, 0.95);
+  --wx-vis-minimap-bg-dark: rgba(15, 23, 42, 0.95);
+  --wx-vis-minimap-border: #e2e8f0;
+  --wx-vis-minimap-node-fill: #cbd5e1;
+  --wx-vis-minimap-viewport-fill: rgba(241, 153, 36, 0.15);
+  --wx-vis-minimap-viewport-stroke: var(--wx-color-primary, #f19924);
+  --wx-vis-minimap-width: 180px;
+  --wx-vis-minimap-height: 120px;
+
+  /* ─── Toolbar ────────────────────────────────────── */
+  --wx-vis-toolbar-bg: rgba(255, 255, 255, 0.95);
+  --wx-vis-toolbar-bg-dark: rgba(30, 41, 59, 0.95);
+  --wx-vis-toolbar-border: #e2e8f0;
+  --wx-vis-toolbar-border-dark: #334155;
+  --wx-vis-toolbar-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --wx-vis-toolbar-radius: 8px;
+
+  /* ─── SearchBox ──────────────────────────────────── */
+  --wx-vis-search-bg: #ffffff;
+  --wx-vis-search-bg-dark: #1e293b;
+  --wx-vis-search-border: #e2e8f0;
+  --wx-vis-search-border-dark: #334155;
+
+  /* ─── Legend ─────────────────────────────────────── */
+  --wx-vis-legend-bg: rgba(255, 255, 255, 0.95);
+  --wx-vis-legend-bg-dark: rgba(30, 41, 59, 0.95);
+
+  /* ─── Animation ──────────────────────────────────── */
+  --wx-vis-transition-fast: 150ms ease;
+  --wx-vis-transition-normal: 250ms ease;
+  --wx-vis-transition-slow: 400ms ease;
+
+  /* ─── Z-indexes ──────────────────────────────────── */
+  --wx-vis-z-canvas: 0;
+  --wx-vis-z-edge: 1;
+  --wx-vis-z-node: 2;
+  --wx-vis-z-node-selected: 3;
+  --wx-vis-z-overlay: 10;
+  --wx-vis-z-toolbar: 20;
+  --wx-vis-z-minimap: 20;
+  --wx-vis-z-tooltip: 30;
+}

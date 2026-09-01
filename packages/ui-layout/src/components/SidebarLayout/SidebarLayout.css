@@ -1,0 +1,5 @@
+.wx-sidebar-layout{display:flex;height:100%;width:100%}
+.wx-sidebar-vertical{flex-direction:row}
+.wx-sidebar-horizontal{flex-direction:column}
+.wx-sidebar{flex-shrink:0;overflow:auto}
+.wx-sidebar-content{flex:1;overflow:auto}

@@ -101,13 +101,67 @@ The displayed data is synthetic.
 
 ## UI Kit Libraries
 
-The demo is designed to demonstrate composition across multiple WaysNX UI Kit libraries.
-
-Examples may include:
+The demo is designed to demonstrate composition across multiple WaysNX UI Kit libraries:
 
 ```text
-@waysnx/ui-core
-@waysnx/ui-layout
+@waysnx/ui-kit
+@waysnx/ui-accessibility
+@waysnx/ui-dashboard
 @waysnx/ui-feedback
-@waysnx/ui-form-builder
 @waysnx/ui-grid-builder
+@waysnx/ui-i18n
+@waysnx/ui-navigation
+@waysnx/ui-security
+```
+
+---
+
+## Development
+
+### Prerequisites
+
+Install repository dependencies from the monorepo root first:
+
+```bash
+pnpm install
+```
+
+Build all workspace packages (the demo depends on compiled library output):
+
+```bash
+pnpm build
+```
+
+### Run the demo
+
+From the monorepo root:
+
+```bash
+pnpm demo
+```
+
+Or using the workspace filter:
+
+```bash
+pnpm --filter waysnx-admin-demo run dev
+```
+
+Or from this directory directly:
+
+```bash
+pnpm dev
+```
+
+The demo runs at `http://localhost:5173` by default.
+
+### Build the demo
+
+```bash
+pnpm --filter waysnx-admin-demo run build
+```
+
+### Preview the production build
+
+```bash
+pnpm --filter waysnx-admin-demo run preview
+```

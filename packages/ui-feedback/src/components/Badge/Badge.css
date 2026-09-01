@@ -1,0 +1,49 @@
+.wx-badge-wrapper {
+  position: relative;
+  display: inline-flex;
+}
+
+.wx-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--wx-color-primary-contrast, white);
+  line-height: 1;
+}
+
+.wx-badge-dot {
+  min-width: 8px;
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  top: -2px;
+  right: -2px;
+}
+
+.wx-badge-standalone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--wx-color-primary-contrast, white);
+}
+
+.wx-badge-default { background: var(--wx-color-text-light, #999); }
+.wx-badge-success { background: var(--wx-color-success, #22c55e); }
+.wx-badge-error { background: var(--wx-color-error, #ef4444); }
+.wx-badge-warning { background: var(--wx-color-warning, #f59e0b); }
+.wx-badge-info { background: var(--wx-color-info, #3b82f6); }

@@ -1,0 +1,35 @@
+.wx-circular-progress {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.wx-circular-progress-svg {
+  transform: rotate(-90deg);
+  display: block;
+}
+
+.wx-circular-progress-track {
+  fill: none;
+  stroke: var(--wx-color-border, #e2e8f0);
+  transition: stroke 0.2s ease;
+}
+
+.wx-circular-progress-fill {
+  fill: none;
+  stroke: var(--wx-color-primary, #f19924);
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.4s ease, stroke 0.2s ease;
+}
+
+.wx-circular-progress-center {
+  /* text is rendered inside SVG, this class is a hook for overrides */
+}
+
+.wx-circular-progress-label {
+  font-size: 0.875rem;
+  color: var(--wx-color-text-muted, #64748b);
+  font-weight: 500;
+  text-align: center;
+}

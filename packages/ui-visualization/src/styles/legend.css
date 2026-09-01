@@ -1,0 +1,49 @@
+/* ─── Legend ─────────────────────────────────────────────────────────────── */
+
+.wx-vis-legend {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  padding: 10px 14px;
+  background: var(--wx-vis-legend-bg);
+  border: 1px solid var(--wx-vis-node-border);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  z-index: var(--wx-vis-z-toolbar);
+  min-width: 120px;
+}
+
+.wx-vis-canvas--dark .wx-vis-legend {
+  background: var(--wx-vis-legend-bg-dark);
+  border-color: var(--wx-vis-node-border-dark);
+}
+
+.wx-vis-legend__title {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--wx-color-text-muted, #64748b);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.wx-vis-legend__items {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.wx-vis-legend__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--wx-color-text, #1e293b);
+}
+
+.wx-vis-legend__swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}

@@ -1,0 +1,9 @@
+/**
+ * Dashboard styles barrel
+ */
+
+@import "./tokens.css";
+@import "./dashboard.css";
+@import "./widget.css";
+@import "./layout.css";
+@import "../components/Filters/filters.css";

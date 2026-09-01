@@ -3,6 +3,21 @@
   "private": true,
   "description": "WaysNX UI Kit monorepo",
   "license": "Apache-2.0",
-  "packageManager": "pnpm@10",
-  "engines": { "node": ">=20" }
+  "packageManager": "pnpm@10.11.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "pnpm -r --filter='./packages/*' run build",
+    "dev": "pnpm --filter storybook run dev",
+    "storybook": "pnpm --filter storybook run dev",
+    "build-storybook": "pnpm --filter storybook run build",
+    "test": "pnpm -r run test",
+    "test:e2e": "pnpm --filter playwright run test",
+    "test:e2e:ui": "pnpm --filter playwright run test:ui",
+    "test:e2e:report": "pnpm --filter playwright run test:report",
+    "clean": "pnpm -r run clean",
+    "lint": "pnpm -r run lint",
+    "demo": "pnpm --filter waysnx-admin-demo run dev"
+  }
 }

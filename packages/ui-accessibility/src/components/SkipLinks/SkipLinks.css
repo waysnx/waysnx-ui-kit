@@ -1,0 +1,33 @@
+/* SkipLinks — visually hidden until focused */
+.wx-skip-links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+
+.wx-skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  padding: 10px 16px;
+  background: var(--wx-color-primary, #f19924);
+  color: var(--wx-color-primary-contrast, #ffffff);
+  font-size: var(--wx-font-size-sm, 14px);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0 0 6px 0;
+  transition: top 0.15s ease;
+  white-space: nowrap;
+}
+
+.wx-skip-link:focus-visible {
+  top: 0;
+  outline: 3px solid var(--wx-color-primary-contrast, #ffffff);
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+.wx-reduced-motion .wx-skip-link {
+  transition: none;
+}
