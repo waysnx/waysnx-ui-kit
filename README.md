@@ -30,11 +30,11 @@ The project is designed around reusable APIs, shared design tokens, accessibilit
 
 ### Current scope
 
-- **18 focused libraries**
+- **17 focused libraries**
 - **242 documented components**
 - **1 aggregate package:** `@waysnx/ui-kit`
 - React 19 + TypeScript
-- Vite, Storybook and Playwright
+- Vite, Storybook, Vitest and Playwright
 - Shared CSS variables and design tokens
 - Accessibility and security validation
 - Generated documentation through WDG
