@@ -1,6 +1,6 @@
 {
   "name": "@waysnx/ui-grid-builder",
-  "version": "0.3.10",
+  "version": "1.0.0",
   "description": "Data grid component from WaysNX - sortable, filterable, paginated grid with column types and actions",
   "type": "module",
   "main": "dist/index.cjs",

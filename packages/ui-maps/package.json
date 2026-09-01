@@ -1,6 +1,6 @@
 {
   "name": "@waysnx/ui-maps",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "Maps and location components from WaysNX - address search, map views, route planning, and geolocation",
   "type": "module",
   "main": "dist/index.cjs",

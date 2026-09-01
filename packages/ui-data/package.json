@@ -1,6 +1,6 @@
 {
   "name": "@waysnx/ui-data",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "Data editing and viewing components from WaysNX - JSON, XML, code, and markdown editors/viewers",
   "type": "module",
   "main": "dist/index.cjs",

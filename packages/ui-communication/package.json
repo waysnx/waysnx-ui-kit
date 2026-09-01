@@ -1,6 +1,6 @@
 {
   "name": "@waysnx/ui-communication",
-  "version": "0.1.5",
+  "version": "1.0.0",
   "description": "Enterprise-grade communication components from WaysNX - messaging, threads, presence, reactions, mentions, and realtime collaboration",
   "type": "module",
   "main": "dist/index.cjs",

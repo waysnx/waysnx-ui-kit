@@ -1,6 +1,6 @@
 {
   "name": "@waysnx/ui-core",
-  "version": "0.7.12",
+  "version": "1.0.0",
   "description": "Core UI components from WaysNX - includes inputs, buttons, date pickers, and form controls",
   "type": "module",
   "main": "dist/index.cjs",

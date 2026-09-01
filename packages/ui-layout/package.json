@@ -1,6 +1,6 @@
 {
   "name": "@waysnx/ui-layout",
-  "version": "0.5.3",
+  "version": "1.0.0",
   "description": "Comprehensive layout components from WaysNX - page structure, layout utilities, content organization, and navigation",
   "type": "module",
   "main": "dist/index.cjs",

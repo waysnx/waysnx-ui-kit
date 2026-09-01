@@ -1,6 +1,6 @@
 {
   "name": "@waysnx/ui-files",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "File and document viewing components from WaysNX - PDF viewer and document preview",
   "type": "module",
   "main": "dist/index.cjs",

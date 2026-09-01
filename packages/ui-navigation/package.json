@@ -1,6 +1,6 @@
 {
   "name": "@waysnx/ui-navigation",
-  "version": "0.2.5",
+  "version": "1.0.0",
   "description": "Enterprise-grade navigation framework from WaysNX - menus, sidebars, breadcrumbs, and advanced navigation patterns",
   "type": "module",
   "main": "dist/index.cjs",

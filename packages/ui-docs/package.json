@@ -1,6 +1,6 @@
 {
   "name": "@waysnx/ui-docs",
-  "version": "0.1.4",
+  "version": "1.0.0",
   "description": "Enterprise-grade documentation framework for rendering documentation entirely from structured metadata — JSON driven, component based, and completely generic",
   "type": "module",
   "main": "dist/index.cjs",

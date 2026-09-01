@@ -16,12 +16,18 @@ importers:
       '@waysnx/ui-accessibility':
         specifier: workspace:*
         version: link:../../packages/ui-accessibility
+      '@waysnx/ui-core':
+        specifier: workspace:*
+        version: link:../../packages/ui-core
       '@waysnx/ui-dashboard':
         specifier: workspace:*
         version: link:../../packages/ui-dashboard
       '@waysnx/ui-feedback':
         specifier: workspace:*
         version: link:../../packages/ui-feedback
+      '@waysnx/ui-form-builder':
+        specifier: workspace:*
+        version: link:../../packages/ui-form-builder
       '@waysnx/ui-grid-builder':
         specifier: workspace:*
         version: link:../../packages/ui-grid-builder
@@ -31,6 +37,9 @@ importers:
       '@waysnx/ui-kit':
         specifier: workspace:*
         version: link:../../packages/ui-kit-meta
+      '@waysnx/ui-layout':
+        specifier: workspace:*
+        version: link:../../packages/ui-layout
       '@waysnx/ui-navigation':
         specifier: workspace:*
         version: link:../../packages/ui-navigation

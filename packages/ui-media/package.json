@@ -1,6 +1,6 @@
 {
   "name": "@waysnx/ui-media",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "Media and visual components from WaysNX - QR/barcode, signatures, image/video/audio, OCR, and color picker",
   "type": "module",
   "main": "dist/index.cjs",

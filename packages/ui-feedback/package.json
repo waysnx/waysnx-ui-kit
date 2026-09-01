@@ -1,6 +1,6 @@
 {
   "name": "@waysnx/ui-feedback",
-  "version": "0.6.2",
+  "version": "1.0.0",
   "description": "Feedback and overlay components from WaysNX - Modal, Toast, Drawer, Tooltip, Skeleton, Progress, Badge, and more",
   "type": "module",
   "main": "dist/index.cjs",

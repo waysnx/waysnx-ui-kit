@@ -1,6 +1,6 @@
 {
   "name": "@waysnx/ui-visualization",
-  "version": "0.1.5",
+  "version": "1.0.0",
   "description": "Enterprise-grade visualization components for React — OrgChart, Tree, Hierarchy, and more. Built on a high-performance engine with virtualization, zoom/pan, and full accessibility.",
   "type": "module",
   "main": "dist/index.cjs",
