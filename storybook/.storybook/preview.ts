@@ -36,6 +36,34 @@ const preview: Preview = {
         ],
       },
     },
+    options: {
+      // Ordering only — this does NOT change story titles or story IDs, so
+      // existing Playwright story-id references remain valid. It surfaces the
+      // "WaysNX UI Kit" overview/catalog first, then lists the component
+      // sections in a predictable order. Sections not listed here fall back to
+      // alphabetical after the named ones.
+      storySort: {
+        order: [
+          'WaysNX UI Kit',
+          ['Overview', 'Libraries'],
+          'Components',
+          'Accessibility',
+          'Communication',
+          'Dashboard',
+          'Data',
+          'Diagnostics',
+          'Docs',
+          'Files',
+          'Maps',
+          'Media',
+          'Navigation',
+          'Enterprise',
+          'Security',
+          'Visualization',
+          '*',
+        ],
+      },
+    },
   },
 };
 

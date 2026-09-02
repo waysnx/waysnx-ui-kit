@@ -1,0 +1,241 @@
+/* WaysNX UI Kit — Storybook landing & catalog styles.
+   Uses WaysNX design tokens (--wx-*) loaded via preview CSS. Surface/text
+   colors adapt to dark mode so the page looks native in both themes. */
+
+.wx-lp {
+  --lp-bg: var(--wx-color-surface, #ffffff);
+  --lp-surface: var(--wx-color-surface-alt, #f8fafc);
+  --lp-text: var(--wx-color-text, #1e293b);
+  --lp-muted: var(--wx-color-text-muted, #64748b);
+  --lp-border: var(--wx-color-border, #e2e8f0);
+  --lp-primary: var(--wx-color-primary, #f19924);
+  --lp-primary-contrast: var(--wx-color-primary-contrast, #ffffff);
+  --lp-radius: var(--wx-radius-lg, 12px);
+
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 24px;
+  color: var(--lp-text);
+  font-family: 'Nunito Sans', var(--wx-font-family, inherit);
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  .wx-lp {
+    --lp-bg: #0f172a;
+    --lp-surface: #1e293b;
+    --lp-text: #e2e8f0;
+    --lp-muted: #94a3b8;
+    --lp-border: #334155;
+  }
+}
+
+.wx-lp__hero {
+  border: 1px solid var(--lp-border);
+  border-radius: var(--lp-radius);
+  padding: 40px 32px;
+  background:
+    linear-gradient(135deg, rgba(241, 153, 36, 0.12), rgba(241, 153, 36, 0));
+  margin-bottom: 32px;
+}
+
+.wx-lp__eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--lp-primary);
+  margin: 0 0 8px;
+}
+
+.wx-lp__title {
+  font-size: clamp(28px, 5vw, 44px);
+  font-weight: 800;
+  margin: 0 0 12px;
+  line-height: 1.1;
+}
+
+.wx-lp__subtitle {
+  font-size: clamp(15px, 2.5vw, 19px);
+  color: var(--lp-muted);
+  margin: 0 0 20px;
+  max-width: 60ch;
+}
+
+.wx-lp__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.wx-lp__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--lp-border);
+  background: var(--lp-surface);
+  color: var(--lp-text);
+}
+
+.wx-lp__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.wx-lp__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: var(--wx-radius-md, 8px);
+  border: 1px solid var(--lp-border);
+  background: var(--lp-surface);
+  color: var(--lp-text);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wx-lp__btn--primary {
+  background: var(--lp-primary);
+  border-color: var(--lp-primary);
+  color: var(--lp-primary-contrast);
+}
+
+.wx-lp__btn:hover {
+  filter: brightness(0.97);
+}
+
+.wx-lp__section-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 32px 0 4px;
+}
+
+.wx-lp__section-sub {
+  color: var(--lp-muted);
+  margin: 0 0 20px;
+  font-size: 14px;
+}
+
+.wx-lp__explore {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.wx-lp__explore-card {
+  border: 1px solid var(--lp-border);
+  border-radius: var(--lp-radius);
+  padding: 18px;
+  background: var(--lp-surface);
+}
+
+.wx-lp__explore-card h4 {
+  margin: 0 0 6px;
+  font-size: 15px;
+}
+
+.wx-lp__explore-card p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--lp-muted);
+  line-height: 1.5;
+}
+
+.wx-lp__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.wx-lp__card {
+  border: 1px solid var(--lp-border);
+  border-radius: var(--lp-radius);
+  padding: 18px;
+  background: var(--lp-surface);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wx-lp__card-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.wx-lp__card-name {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.wx-lp__badge {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 3px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.wx-lp__badge--visual {
+  background: var(--wx-color-info, #3b82f6);
+  color: #fff;
+}
+
+.wx-lp__badge--functional {
+  background: var(--lp-muted);
+  color: #fff;
+}
+
+.wx-lp__npm {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  color: var(--lp-primary);
+  margin: 0;
+  word-break: break-all;
+}
+
+.wx-lp__desc {
+  font-size: 13px;
+  color: var(--lp-text);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.wx-lp__card-foot {
+  margin-top: auto;
+  font-size: 12px;
+  color: var(--lp-muted);
+}
+
+.wx-lp__note {
+  font-size: 12px;
+  color: var(--lp-muted);
+  font-style: italic;
+  margin: 0;
+}
+
+.wx-lp__footer {
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px solid var(--lp-border);
+  font-size: 13px;
+  color: var(--lp-muted);
+}
+
+.wx-lp__footer a {
+  color: var(--lp-primary);
+}
