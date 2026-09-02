@@ -1,4 +1,4 @@
-/**
+﻿/**
  * ActiveSessions Component
  * 
  * Displays list of active sessions with device info and actions to revoke them.
@@ -11,7 +11,6 @@ import { Badge } from '@waysnx/ui-feedback';
 import type { SessionInfo } from '../../types/session';
 
 export interface ActiveSessionsProps {
-  [key: string]: any;
   /**
    * List of active sessions
    */

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useId } from 'react';
 import './FileUpload.css';
 import { warn } from '../../dev';
 import { useTranslation } from '@waysnx/ui-i18n';
@@ -61,7 +61,8 @@ export function FileUpload({
   const [previewUrls, setPreviewUrls] = useState<string[]>([]);
   const [internalUploadStatus, setInternalUploadStatus] = useState<'idle' | 'ready' | 'uploaded'>('idle');
   const inputRef = useRef<HTMLInputElement>(null);
-  const generatedId = id || `wx-fileupload-${Math.random().toString(36).slice(2)}`;
+  const reactId = useId();
+  const generatedId = id || `wx-fileupload-${reactId}`;
   const { t } = useTranslation();
 
   // Use external status if provided, otherwise use internal status

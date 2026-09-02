@@ -1,4 +1,4 @@
-/**
+﻿/**
  * EncryptionBadge Component
  * 
  * Badge showing encryption status.
@@ -10,7 +10,6 @@ import { Badge } from '@waysnx/ui-feedback';
 export type EncryptionStatus = 'encrypted' | 'unencrypted' | 'partial';
 
 export interface EncryptionBadgeProps {
-  [key: string]: any;
   /**
    * Encryption status
    */
@@ -36,9 +35,9 @@ const getStatusColor = (status: EncryptionStatus) => {
 
 const getStatusIcon = (status: EncryptionStatus) => {
   const icons = {
-    encrypted: '🔒',
-    partial: '⚠️',
-    unencrypted: '🔓',
+    encrypted: 'ðŸ”’',
+    partial: 'âš ï¸',
+    unencrypted: 'ðŸ”“',
   };
   return icons[status];
 };

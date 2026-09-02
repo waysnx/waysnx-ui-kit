@@ -1,4 +1,4 @@
-/**
+﻿/**
  * ForgotPasswordForm Component
  * 
  * Form for password reset flow:
@@ -40,7 +40,6 @@ export interface PasswordResetFormData {
 }
 
 export interface ForgotPasswordFormProps {
-  [key: string]: any;
   /**
    * Password policy for validation
    */

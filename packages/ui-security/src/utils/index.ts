@@ -21,6 +21,10 @@ export {
   verifyHash,
   generateRandomBytes,
   generateRandomString,
+  secureRandomInt,
+  secureRandomString,
+  secureShuffle,
+  generateSecureId,
 } from './crypto';
 
 // Input handling utilities

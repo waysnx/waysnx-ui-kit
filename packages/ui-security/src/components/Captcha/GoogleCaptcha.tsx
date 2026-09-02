@@ -1,4 +1,4 @@
-/**
+﻿/**
  * GoogleCaptcha Component
  * 
  * Google reCAPTCHA integration component.
@@ -121,7 +121,6 @@ export default GoogleCaptcha;
 // Extend window interface for grecaptcha
 declare global {
   interface Window {
-  [key: string]: any;
     grecaptcha?: {
       render: (container: HTMLElement, options: any) => void;
       reset: (widgetId?: number) => void;

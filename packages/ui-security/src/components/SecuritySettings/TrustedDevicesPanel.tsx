@@ -1,4 +1,4 @@
-/**
+﻿/**
  * TrustedDevicesPanel Component
  * 
  * Manage trusted devices and their access.
@@ -9,7 +9,6 @@ import { Button } from '@waysnx/ui-core';
 import { Stack } from '@waysnx/ui-layout';
 
 export interface TrustedDevicesPanelProps {
-  [key: string]: any;
   onViewDevices?: () => void;
   onRevokeDevice?: (deviceId: string) => void;
 }

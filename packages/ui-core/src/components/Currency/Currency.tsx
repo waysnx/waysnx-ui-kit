@@ -49,7 +49,8 @@ export function Currency({
 }: CurrencyProps) {
   warn(Boolean(label || props['aria-label'] || ariaLabel), 'Currency needs label');
   
-  const generatedId = id || `wx-currency-${Math.random().toString(36).slice(2)}`;
+  const reactId = React.useId();
+  const generatedId = id || `wx-currency-${reactId}`;
   
   // Build aria-describedby with error and hint
   const descriptionIds = [];

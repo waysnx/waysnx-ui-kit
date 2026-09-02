@@ -1,4 +1,4 @@
-/**
+﻿/**
  * PINInput Component
  * 
  * Specialized numeric input for PIN/code entry with auto-focus and masked display.
@@ -8,7 +8,6 @@ import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { Stack } from '@waysnx/ui-layout';
 
 export interface PINInputProps {
-  [key: string]: any;
   /**
    * Number of PIN digits
    * @default 4
@@ -156,7 +155,7 @@ export const PINInput: React.FC<PINInputProps> = ({
             }}
             type="text"
             inputMode="numeric"
-            value={masked && pin[index] ? '•' : pin[index]}
+            value={masked && pin[index] ? 'â€¢' : pin[index]}
             onChange={(e: any) => handleInputChange(index, e.target.value)}
             onKeyDown={(e: any) => handleKeyDown(index, e)}
             onPaste={handlePaste}

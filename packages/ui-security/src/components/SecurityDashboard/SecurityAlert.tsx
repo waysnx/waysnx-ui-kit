@@ -1,4 +1,4 @@
-/**
+﻿/**
  * SecurityAlert Component
  * 
  * Card displaying individual security alert with actions.
@@ -12,7 +12,6 @@ export type AlertSeverity = 'critical' | 'high' | 'medium' | 'low';
 export type AlertStatus = 'new' | 'acknowledged' | 'resolved';
 
 export interface SecurityAlertProps {
-  [key: string]: any;
   title: string;
   description: string;
   severity?: AlertSeverity;
@@ -30,7 +29,7 @@ const getSeverityColor = (severity: AlertSeverity) => {
 };
 
 const getSeverityIcon = (severity: AlertSeverity) => {
-  const icons = { critical: '🚨', high: '⚠️', medium: '⚠️', low: 'ℹ️' };
+  const icons = { critical: 'ðŸš¨', high: 'âš ï¸', medium: 'âš ï¸', low: 'â„¹ï¸' };
   return icons[severity];
 };
 

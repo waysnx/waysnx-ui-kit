@@ -1,4 +1,4 @@
-/**
+﻿/**
  * SecuritySettingsPanel Component
  * 
  * Main security settings configuration panel.
@@ -9,7 +9,6 @@ import { Button } from '@waysnx/ui-core';
 import { Stack } from '@waysnx/ui-layout';
 
 export interface SecuritySettingsPanelProps {
-  [key: string]: any;
   /**
    * Callback for password settings
    */

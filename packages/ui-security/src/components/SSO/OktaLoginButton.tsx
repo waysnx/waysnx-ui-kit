@@ -1,4 +1,4 @@
-/**
+﻿/**
  * OktaLoginButton Component
  * 
  * Okta SSO login button.
@@ -8,7 +8,6 @@ import React from 'react';
 import { Button } from '@waysnx/ui-core';
 
 export interface OktaLoginButtonProps {
-  [key: string]: any;
   /**
    * Okta Client ID
    */
@@ -74,7 +73,7 @@ export const OktaLoginButton: React.FC<OktaLoginButtonProps> = ({
      
      
     >
-      🔐 Continue with Okta
+      ðŸ” Continue with Okta
     </Button>
   );
 };

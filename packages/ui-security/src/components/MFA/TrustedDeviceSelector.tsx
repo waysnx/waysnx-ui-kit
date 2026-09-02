@@ -1,4 +1,4 @@
-/**
+﻿/**
  * TrustedDeviceSelector Component
  * 
  * Selector to mark current device as trusted and skip MFA verification.
@@ -9,7 +9,6 @@ import { Button, Checkbox } from '@waysnx/ui-core';
 import { Stack } from '@waysnx/ui-layout';
 
 export interface TrustedDeviceSelectorProps {
-  [key: string]: any;
   /**
    * Current device name
    */
@@ -132,7 +131,7 @@ export const TrustedDeviceSelector: React.FC<TrustedDeviceSelectorProps> = ({
         borderLeftColor="warning"
       >
         <span fontSize="sm" fontWeight="bold" marginBottom="xs">
-          ⚠️ Security Notice
+          âš ï¸ Security Notice
         </span>
         <span fontSize="sm">
           Only trust devices you own and use in secure locations. Public computers should not be
@@ -150,7 +149,7 @@ export const TrustedDeviceSelector: React.FC<TrustedDeviceSelectorProps> = ({
           textAlign="center"
         >
           <span fontSize="sm" fontWeight="bold">
-            ✓ Device will be trusted for {selectedDuration} days
+            âœ“ Device will be trusted for {selectedDuration} days
           </span>
         </div>
       )}

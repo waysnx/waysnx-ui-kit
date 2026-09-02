@@ -1,4 +1,4 @@
-/**
+﻿/**
  * RiskScoreBadge Component
  * 
  * Display account risk score with visual indicator.
@@ -10,7 +10,6 @@ import { Badge } from '@waysnx/ui-feedback';
 export type RiskLevel = 'low' | 'medium' | 'high' | 'critical';
 
 export interface RiskScoreBadgeProps {
-  [key: string]: any;
   /**
    * Risk score 0-100
    */
@@ -48,10 +47,10 @@ const getLevelColor = (level: RiskLevel) => {
 
 const getLevelIcon = (level: RiskLevel) => {
   const icons = {
-    low: '✓',
-    medium: 'ℹ️',
-    high: '⚠️',
-    critical: '🚨',
+    low: 'âœ“',
+    medium: 'â„¹ï¸',
+    high: 'âš ï¸',
+    critical: 'ðŸš¨',
   };
   return icons[level];
 };

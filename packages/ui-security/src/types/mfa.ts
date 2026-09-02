@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file types/mfa.ts
  * Multi-factor authentication types
  */
@@ -29,7 +29,6 @@ export interface MFAMethodDefinition {
  * MFA configuration
  */
 export interface MFAConfiguration {
-  [key: string]: any;
   id: string;
   userId: string;
   primaryMethod: MFAMethodType;
@@ -59,7 +58,6 @@ export interface BackupCode {
  * TOTP secret
  */
 export interface TOTPSecret {
-  [key: string]: any;
   secret: string;
   backupCodes: string[];
   qrCode?: string; // Data URI
@@ -84,7 +82,6 @@ export interface MFAVerificationRequest {
  * MFA verification result
  */
 export interface MFAVerificationResult {
-  [key: string]: any;
   success: boolean;
   method: MFAMethodType;
   verified: boolean;
@@ -113,7 +110,6 @@ export interface MFASetupStep {
  * MFA setup wizard state
  */
 export interface MFASetupWizardState {
-  [key: string]: any;
   currentStep: number;
   totalSteps: number;
   steps: MFASetupStep[];
@@ -145,7 +141,6 @@ export interface MFAStatus {
  * Authenticator QR code
  */
 export interface AuthenticatorQRCode {
-  [key: string]: any;
   qrCodeUrl: string; // Data URI
   manualEntryKey: string;
   algorithm: string;
@@ -181,7 +176,6 @@ export interface TrustedDeviceInfo {
  * Device verification challenge
  */
 export interface DeviceVerificationChallenge {
-  [key: string]: any;
   id: string;
   type: 'sms' | 'email' | 'app_notification' | 'security_question';
   challenge: string;
@@ -210,7 +204,6 @@ export interface BiometricCredential {
  * Security key information
  */
 export interface SecurityKeyInfo {
-  [key: string]: any;
   id: string;
   userId: string;
   type: 'fido2' | 'u2f' | 'webauthn';
@@ -245,7 +238,6 @@ export interface MFAPolicy {
  * MFA event
  */
 export interface MFAEvent {
-  [key: string]: any;
   id: string;
   userId: string;
   type: MFAEventType;
@@ -276,7 +268,6 @@ export type MFAEventType =
  * MFA challenge
  */
 export interface MFAChallenge {
-  [key: string]: any;
   id: string;
   userId: string;
   methods: MFAMethodType[];

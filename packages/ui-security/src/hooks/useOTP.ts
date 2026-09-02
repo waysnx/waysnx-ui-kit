@@ -5,6 +5,7 @@
  */
 
 import { useState, useCallback, useEffect } from 'react';
+import { generateOTP as generateSecureOTP } from '../utils/input';
 
 export interface UseOTPOptions {
   /**
@@ -40,12 +41,8 @@ export const useOTP = ({
 
   // Generate OTP
   const generateOTP = useCallback((): string => {
-    const digits = '0123456789';
-    let generatedOTP = '';
-
-    for (let i = 0; i < length; i++) {
-      generatedOTP += digits.charAt(Math.floor(Math.random() * 10));
-    }
+    // Delegate to the cryptographically-secure OTP generator in utils/input.
+    const generatedOTP = generateSecureOTP(length);
 
     setOtp(generatedOTP);
     setTimeRemaining(expirySeconds);

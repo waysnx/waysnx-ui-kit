@@ -147,3 +147,100 @@ export function generateRandomString(length: number): string {
   const array = generateRandomBytes(length);
   return btoa(String.fromCharCode(...array)).replace(/[^a-z0-9]/gi, '').substring(0, length);
 }
+
+/**
+ * Generate an unbiased cryptographically-secure random integer in [0, max).
+ *
+ * Uses rejection sampling over `crypto.getRandomValues` so that every value in
+ * the range is equally likely (avoids the modulo bias that `x % max` introduces
+ * and the non-cryptographic weakness of `Math.random()`).
+ *
+ * @param max - Exclusive upper bound (must be a positive integer)
+ * @returns A secure random integer 0 <= n < max
+ */
+export function secureRandomInt(max: number): number {
+  if (!Number.isInteger(max) || max <= 0) {
+    throw new Error('secureRandomInt: max must be a positive integer');
+  }
+  if (max === 1) return 0;
+
+  // Largest multiple of `max` that fits in a Uint32, used to reject the biased tail.
+  const range = 0xffffffff + 1; // 2^32
+  const limit = range - (range % max);
+
+  const buffer = new Uint32Array(1);
+  let value: number;
+  do {
+    crypto.getRandomValues(buffer);
+    value = buffer[0];
+  } while (value >= limit);
+
+  return value % max;
+}
+
+/**
+ * Generate a cryptographically-secure random string from a given alphabet.
+ *
+ * Each character is chosen with `secureRandomInt`, guaranteeing uniform,
+ * unbiased selection and a fixed output length (unlike `generateRandomString`,
+ * which drops non-alphanumeric base64 characters).
+ *
+ * @param length - Number of characters to produce
+ * @param alphabet - Character set to draw from
+ * @returns Secure random string of exactly `length` characters
+ */
+export function secureRandomString(
+  length: number,
+  alphabet: string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+): string {
+  if (!Number.isInteger(length) || length < 0) {
+    throw new Error('secureRandomString: length must be a non-negative integer');
+  }
+  if (alphabet.length === 0) {
+    throw new Error('secureRandomString: alphabet must not be empty');
+  }
+
+  let result = '';
+  for (let i = 0; i < length; i++) {
+    result += alphabet[secureRandomInt(alphabet.length)];
+  }
+  return result;
+}
+
+/**
+ * Return a new array shuffled with a cryptographically-secure, unbiased
+ * Fisher-Yates algorithm.
+ *
+ * This replaces the biased `array.sort(() => Math.random() - 0.5)` idiom, which
+ * is both non-uniform and non-cryptographic.
+ *
+ * @param input - Array to shuffle (not mutated)
+ * @returns A new, securely shuffled array
+ */
+export function secureShuffle<T>(input: readonly T[]): T[] {
+  const result = [...input];
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = secureRandomInt(i + 1);
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+  return result;
+}
+
+/**
+ * Generate a collision-resistant identifier with a cryptographically-secure
+ * random component.
+ *
+ * Format: `${prefix}_${timestamp}_${random}`. The timestamp keeps identifiers
+ * roughly ordered/readable for logs, while the random suffix is generated with
+ * `secureRandomString` so the identifier is not predictable. Use this for
+ * security-relevant identifiers (sessions, devices, audit events) instead of
+ * `Math.random().toString(36)`.
+ *
+ * @param prefix - Short semantic prefix (e.g. "sess", "dev", "evt")
+ * @param randomLength - Length of the random suffix (default: 16)
+ * @returns Secure identifier string
+ */
+export function generateSecureId(prefix: string, randomLength: number = 16): string {
+  const random = secureRandomString(randomLength);
+  return `${prefix}_${Date.now()}_${random}`;
+}

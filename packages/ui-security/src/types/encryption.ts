@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file types/encryption.ts
  * Encryption, secure storage, and data protection types
  */
@@ -25,7 +25,6 @@ export interface EncryptionKey {
  * Encrypted data
  */
 export interface EncryptedData {
-  [key: string]: any;
   encrypted: string;
   iv: string;
   algorithm: string;
@@ -46,7 +45,6 @@ export interface EncryptionResult {
  * Decryption result
  */
 export interface DecryptionResult {
-  [key: string]: any;
   decrypted: string;
   parsed: any;
   algorithm: string;
@@ -67,7 +65,6 @@ export interface SecureStorageOptions {
  * Secure storage item
  */
 export interface SecureStorageItem {
-  [key: string]: any;
   key: string;
   encryptedValue: string;
   iv: string;
@@ -92,7 +89,6 @@ export interface SanitizationOptions {
  * Sanitization result
  */
 export interface SanitizationResult {
-  [key: string]: any;
   original: string;
   sanitized: string;
   isClean: boolean;
@@ -113,7 +109,6 @@ export interface SanitizationThreat {
  * HTML sanitization options
  */
 export interface HtmlSanitizationOptions {
-  [key: string]: any;
   ALLOWED_TAGS?: string[];
   ALLOWED_ATTR?: string[];
   ALLOW_DATA_ATTR?: boolean;
@@ -136,7 +131,6 @@ export interface PasswordHashingOptions {
  * Password hash result
  */
 export interface PasswordHashResult {
-  [key: string]: any;
   hash: string;
   salt: string;
   algorithm: string;
@@ -157,7 +151,6 @@ export interface PasswordVerificationResult {
  * Secure clipboard configuration
  */
 export interface SecureClipboardConfig {
-  [key: string]: any;
   enableTimeout: boolean;
   timeoutMs: number;
   showNotification: boolean;
@@ -186,7 +179,6 @@ export type DataMaskingPattern = 'all' | 'email' | 'phone' | 'creditcard' | 'ssn
  * Encryption certificate
  */
 export interface EncryptionCertificate {
-  [key: string]: any;
   id: string;
   issuer: string;
   subject: string;
@@ -218,7 +210,6 @@ export interface SecureFileUploadOptions {
  * Secure file download options
  */
 export interface SecureFileDownloadOptions {
-  [key: string]: any;
   decryptBeforeDownload: boolean;
   logDownload: boolean;
   rateLimit?: number; // Downloads per minute
@@ -241,7 +232,6 @@ export interface EncryptionState {
  * Secure storage statistics
  */
 export interface SecureStorageStats {
-  [key: string]: any;
   totalItems: number;
   encryptedItems: number;
   expiredItems: number;

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * SecureUploader Component
  * 
  * Secure file upload with validation, size limits, and type restrictions.
@@ -9,7 +9,6 @@ import { Button } from '@waysnx/ui-core';
 import { Stack } from '@waysnx/ui-layout';
 
 export interface SecureUploaderProps {
-  [key: string]: any;
   /**
    * Allowed file types (MIME types)
    */

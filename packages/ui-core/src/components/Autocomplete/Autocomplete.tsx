@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, KeyboardEvent } from 'react';
+import React, { useState, useRef, useEffect, useId, KeyboardEvent } from 'react';
 import './Autocomplete.css';
 import { warn } from '../../dev';
 import { getCachedOptions } from '../../utils/xrefCache';
@@ -75,7 +75,8 @@ export function Autocomplete({
   const listRef = useRef<HTMLUListElement>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
 
-  const generatedId = id || `wx-autocomplete-${Math.random().toString(36).slice(2)}`;
+  const reactId = useId();
+  const generatedId = id || `wx-autocomplete-${reactId}`;
   const listboxId = `${generatedId}-listbox`;
   
   // Build aria-describedby with error and hint

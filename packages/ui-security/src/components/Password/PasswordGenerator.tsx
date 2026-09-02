@@ -1,4 +1,4 @@
-/**
+﻿/**
  * PasswordGenerator Component
  * 
  * A password generator utility with:
@@ -14,7 +14,6 @@ import { generatePassword } from '../../utils';
 import PasswordStrengthMeter from './PasswordStrengthMeter';
 
 export interface PasswordGeneratorProps {
-  [key: string]: any;
   /**
    * Default password length
    */

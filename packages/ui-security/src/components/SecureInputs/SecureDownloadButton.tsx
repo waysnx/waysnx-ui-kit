@@ -1,4 +1,4 @@
-/**
+﻿/**
  * SecureDownloadButton Component
  * 
  * Button to securely download files with verification and cleanup.
@@ -8,7 +8,6 @@ import React, { useState, useCallback } from 'react';
 import { Button } from '@waysnx/ui-core';
 
 export interface SecureDownloadButtonProps {
-  [key: string]: any;
   /**
    * File URL or blob to download
    */

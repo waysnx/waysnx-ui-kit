@@ -6,6 +6,7 @@
  */
 
 import type { Session } from '../types';
+import { generateSecureId } from './crypto';
 
 /**
  * Session state constants
@@ -60,7 +61,9 @@ export function createSession(
  * Generate a unique session ID
  */
 function generateSessionId(): string {
-  return `sess_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+  // Session identifiers must be unpredictable to resist session-guessing/
+  // fixation attacks, so use a cryptographically-secure random suffix.
+  return generateSecureId('sess');
 }
 
 /**

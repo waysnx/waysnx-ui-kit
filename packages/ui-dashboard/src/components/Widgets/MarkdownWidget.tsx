@@ -4,6 +4,7 @@
  */
 
 import React, { CSSProperties } from "react";
+import DOMPurify from "dompurify";
 import { Widget } from "../Widget/Widget";
 
 /**
@@ -98,12 +99,22 @@ export const MarkdownWidget: React.FC<MarkdownWidgetProps> = ({
     return html;
   };
 
+  // Sanitize the generated HTML before rendering. The minimal markdown parser
+  // does not escape raw HTML in the source, so any inline markup (e.g.
+  // `<img src=x onerror=...>` or `<script>`) would otherwise reach the DOM.
+  // DOMPurify with a tag allow-list matching what the parser emits prevents XSS
+  // while preserving intended markdown output. Mirrors the HtmlWidget pattern.
+  const sanitizedHtml = DOMPurify.sanitize(parseMarkdown(content), {
+    ALLOWED_TAGS: ["h1", "h2", "h3", "h4", "h5", "h6", "p", "br", "strong", "em", "code", "pre"],
+    ALLOWED_ATTR: [],
+  });
+
   return (
     <Widget id={id} title={title} className={`markdown-widget ${className}`} style={style}>
       <div
         className="markdown-widget-content"
         dangerouslySetInnerHTML={{
-          __html: parseMarkdown(content),
+          __html: sanitizedHtml,
         }}
       />
     </Widget>

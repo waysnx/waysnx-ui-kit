@@ -24,7 +24,13 @@ export function useMessages(conversationId?: string): UseMessagesReturn {
     if (!content.trim() && (!attachments || attachments.length === 0)) return;
 
     const message: Message = {
-      id: `msg_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`,
+      // Application-state identifier (not a DOM/aria id), so it uses a unique
+      // random id rather than useId(). Prefers Web Crypto UUID with a
+      // timestamp+random fallback for non-secure/older environments.
+      id:
+        typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function'
+          ? `msg_${crypto.randomUUID()}`
+          : `msg_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`,
       conversationId: conversationId || '',
       type: 'text',
       author: currentUser,

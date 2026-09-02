@@ -1,4 +1,4 @@
-/**
+﻿/**
  * SecureInput Component
  * 
  * Enhanced text input with security features: content clearing, input validation,
@@ -10,7 +10,6 @@ import { Input } from '@waysnx/ui-core';
 
 export interface SecureInputProps
   extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'type' | 'onChange'> {
-  [key: string]: any;
   /**
    * Input type (password, email, text)
    */

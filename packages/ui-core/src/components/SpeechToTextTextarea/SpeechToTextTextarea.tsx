@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, TextareaHTMLAttributes } from "react";
+import React, { useState, useRef, useEffect, useId, TextareaHTMLAttributes } from "react";
 import './SpeechToTextTextarea.css';
 import { warn } from '../../dev';
 
@@ -32,7 +32,8 @@ export function SpeechToTextTextarea({ label, error, hint, id, value, onChange, 
 
   const [isListening, setIsListening] = useState(false);
   const recognitionRef = useRef<any>(null);
-  const textareaId = id || `wx-speech-textarea-${Math.random().toString(36).slice(2)}`;
+  const reactId = useId();
+  const textareaId = id || `wx-speech-textarea-${reactId}`;
   const statusId = `${textareaId}-status`;
   const errorId = `${textareaId}-error`;
   const hintId = `${textareaId}-hint`;

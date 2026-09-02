@@ -1,4 +1,4 @@
-/**
+﻿/**
  * AccessDenied Component
  * 
  * User-friendly error screen for access denied scenarios.
@@ -9,7 +9,6 @@ import { Button } from '@waysnx/ui-core';
 import { Stack } from '@waysnx/ui-layout';
 
 export interface AccessDeniedProps {
-  [key: string]: any;
   /**
    * Access denied reason
    */

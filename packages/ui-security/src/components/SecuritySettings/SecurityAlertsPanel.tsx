@@ -1,4 +1,4 @@
-/**
+﻿/**
  * SecurityAlertsPanel Component
  * 
  * Security alerts and notification preferences.
@@ -9,7 +9,6 @@ import { Button, Checkbox } from '@waysnx/ui-core';
 import { Stack } from '@waysnx/ui-layout';
 
 export interface SecurityAlertsPanelProps {
-  [key: string]: any;
   onSave?: (prefs: any) => void;
 }
 

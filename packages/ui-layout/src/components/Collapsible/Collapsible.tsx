@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useId } from 'react';
 import './Collapsible.css';
 
 export interface CollapsibleProps {
@@ -17,8 +17,11 @@ export function Collapsible({
   testId,
 }: CollapsibleProps) {
   const [isOpen, setIsOpen] = useState(defaultOpen);
-  const contentId = `collapsible-content-${Math.random().toString(36).slice(2)}`;
-  const triggerId = `collapsible-trigger-${Math.random().toString(36).slice(2)}`;
+  // Stable, SSR-safe ids derived from a single useId() so the trigger/content
+  // aria-controls / aria-labelledby relationship stays paired across renders.
+  const baseId = useId();
+  const contentId = `collapsible-content-${baseId}`;
+  const triggerId = `collapsible-trigger-${baseId}`;
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' || e.key === ' ') {

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * ConcurrentSessionDialog Component
  * 
  * Dialog shown when detecting concurrent session login from different device/location.
@@ -13,7 +13,6 @@ import { Badge } from '@waysnx/ui-feedback';
 import type { SessionInfo } from '../../types/session';
 
 export interface ConcurrentSessionDialogProps {
-  [key: string]: any;
   /**
    * Whether dialog is open
    */
@@ -153,7 +152,7 @@ export const ConcurrentSessionDialog: React.FC<ConcurrentSessionDialogProps> = (
           }}
         >
           <span style={{ display: 'block', fontSize: '0.875rem', fontWeight: 'bold', marginBottom: '0.25rem' }}>
-            ⚠️ Security Notice
+            âš ï¸ Security Notice
           </span>
           <span style={{ fontSize: '0.875rem' }}>
             If you don't recognize this login, reject it immediately. Your current session

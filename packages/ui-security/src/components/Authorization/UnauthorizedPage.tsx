@@ -1,4 +1,4 @@
-/**
+﻿/**
  * UnauthorizedPage Component
  * 
  * Full-page unauthorized error screen.
@@ -9,7 +9,6 @@ import { Button } from '@waysnx/ui-core';
 import { Stack } from '@waysnx/ui-layout';
 
 export interface UnauthorizedPageProps {
-  [key: string]: any;
   /**
    * Page title
    */

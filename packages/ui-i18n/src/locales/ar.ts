@@ -38,6 +38,7 @@ export const arMessages: TranslationMessages = {
   'datePicker.clear': 'مسح',
   'select.placeholder': 'اختر...',
   'select.noOptions': 'لا توجد خيارات متاحة',
+  'select.loadingOptions': 'جارٍ تحميل الخيارات...',
   'select.selectAll': 'تحديد الكل',
   'select.search': 'بحث...',
   'general.loading': 'جاري التحميل...',

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * SecurityKeyButton Component
  * 
  * Button to authenticate using hardware security key (FIDO2/WebAuthn).
@@ -8,7 +8,6 @@ import React, { useState } from 'react';
 import { Button } from '@waysnx/ui-core';
 
 export interface SecurityKeyButtonProps {
-  [key: string]: any;
   /**
    * Button label
    */
@@ -113,7 +112,7 @@ export const SecurityKeyButton: React.FC<SecurityKeyButtonProps> = ({
        
         title={!isSupported ? 'Security key authentication not supported' : undefined}
       >
-        🔐 {isLoading ? loadingLabel : label}
+        ðŸ” {isLoading ? loadingLabel : label}
       </Button>
 
       {message && (

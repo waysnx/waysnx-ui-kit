@@ -1,4 +1,4 @@
-import React, { TextareaHTMLAttributes } from 'react';
+import React, { TextareaHTMLAttributes, useId } from 'react';
 import './Textarea.css';
 import { warn } from '../../dev';
 
@@ -13,7 +13,8 @@ export interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElemen
 
 export function Textarea({ label, error, hint, id, ariaLabel, ariaDescribedBy, testId, ...r }: TextareaProps) {
   warn(Boolean(label || r['aria-label'] || ariaLabel), 'Textarea needs label');
-  const t = id || `wx-textarea-${Math.random().toString(36).slice(2)}`;
+  const reactId = useId();
+  const t = id || `wx-textarea-${reactId}`;
   const charCount = typeof r.value === 'string' ? r.value.length : 0;
   const showCharCount = r.maxLength !== undefined;
   

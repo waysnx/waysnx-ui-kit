@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useId } from 'react';
 import DOMPurify from 'dompurify';
 import './HtmlEditor.css';
 import { warn } from '../../dev';
@@ -40,7 +40,8 @@ export function HtmlEditor({
 
   const [isFocused, setIsFocused] = useState(false);
   const editorRef = useRef<HTMLDivElement>(null);
-  const generatedId = id || `wx-htmleditor-${Math.random().toString(36).slice(2)}`;
+  const reactId = useId();
+  const generatedId = id || `wx-htmleditor-${reactId}`;
   
   // Build aria-describedby with error and hint
   const descriptionIds = [];

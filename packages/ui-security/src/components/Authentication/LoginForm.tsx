@@ -1,4 +1,4 @@
-/**
+﻿/**
  * LoginForm Component
  * 
  * Refactored to use WaysNX component libraries:
@@ -28,7 +28,6 @@ export interface LoginFormProps {
 }
 
 export interface LoginFormData {
-  [key: string]: any;
   email: string;
   password: string;
   rememberMe: boolean;

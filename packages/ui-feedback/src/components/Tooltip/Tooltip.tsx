@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useId } from "react";
 import "./Tooltip.css";
 
 export interface TooltipProps {
@@ -18,7 +18,8 @@ export function Tooltip({
 }: TooltipProps) {
   const [visible, setVisible] = useState(false);
   const timeoutRef = useRef<ReturnType<typeof setTimeout>>(undefined);
-  const tooltipId = `tooltip-${Math.random().toString(36).slice(2)}`;
+  // Stable, SSR-safe id for aria-describedby wiring between trigger and tooltip.
+  const tooltipId = `tooltip-${useId()}`;
 
   const show = () => {
     clearTimeout(timeoutRef.current);

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * AuditHistoryTable Component
  * 
  * Display audit events in table format with filtering and sorting.
@@ -10,7 +10,6 @@ import { Badge } from '@waysnx/ui-feedback';
 import type { AuditEvent } from '../../types/audit';
 
 export interface AuditHistoryTableProps {
-  [key: string]: any;
   /**
    * Audit events to display
    */
@@ -148,7 +147,7 @@ export const AuditHistoryTable: React.FC<AuditHistoryTableProps> = ({
                 <div display="flex" alignItems="center" gap="sm">
                   Timestamp
                   {sortable && sortField === 'timestamp' && (
-                    <span fontSize="xs">{sortOrder === 'asc' ? '↑' : '↓'}</span>
+                    <span fontSize="xs">{sortOrder === 'asc' ? 'â†‘' : 'â†“'}</span>
                   )}
                 </div>
               </th>
@@ -159,7 +158,7 @@ export const AuditHistoryTable: React.FC<AuditHistoryTableProps> = ({
                 <div display="flex" alignItems="center" gap="sm">
                   Event Type
                   {sortable && sortField === 'eventType' && (
-                    <span fontSize="xs">{sortOrder === 'asc' ? '↑' : '↓'}</span>
+                    <span fontSize="xs">{sortOrder === 'asc' ? 'â†‘' : 'â†“'}</span>
                   )}
                 </div>
               </th>
@@ -170,7 +169,7 @@ export const AuditHistoryTable: React.FC<AuditHistoryTableProps> = ({
                 <div display="flex" alignItems="center" gap="sm">
                   User ID
                   {sortable && sortField === 'userId' && (
-                    <span fontSize="xs">{sortOrder === 'asc' ? '↑' : '↓'}</span>
+                    <span fontSize="xs">{sortOrder === 'asc' ? 'â†‘' : 'â†“'}</span>
                   )}
                 </div>
               </th>

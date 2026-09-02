@@ -1,4 +1,4 @@
-/**
+﻿/**
  * PasswordPolicyPanel Component
  * 
  * Display and manage password policy settings.
@@ -9,7 +9,6 @@ import { Button, Checkbox } from '@waysnx/ui-core';
 import { Stack } from '@waysnx/ui-layout';
 
 export interface PasswordPolicyPanelProps {
-  [key: string]: any;
   minLength?: number;
   requireUppercase?: boolean;
   requireLowercase?: boolean;

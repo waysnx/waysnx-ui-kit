@@ -1,4 +1,4 @@
-/**
+﻿/**
  * FeatureGate Component
  * 
  * Gate component for feature flag-based rendering.
@@ -9,7 +9,6 @@ import React, { ReactNode } from 'react';
 
 
 export interface FeatureGateProps {
-  [key: string]: any;
   /**
    * Feature flag identifier
    */

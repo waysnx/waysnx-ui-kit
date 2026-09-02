@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file types/session.ts
  * Session management and idle timeout types
  */
@@ -21,7 +21,6 @@ export interface SessionConfig {
  * Session information
  */
 export interface SessionInfo {
-  [key: string]: any;
   id: string;
   userId: string;
   createdAt: Date;
@@ -53,7 +52,6 @@ export interface SessionActivity {
  * Idle timeout state
  */
 export interface IdleTimeoutState {
-  [key: string]: any;
   isIdle: boolean;
   idleTime: number; // ms
   remainingIdleTime: number; // ms
@@ -77,7 +75,6 @@ export interface SessionTimeoutWarning {
  * Session renewal request
  */
 export interface SessionRenewalRequest {
-  [key: string]: any;
   sessionId: string;
   refreshToken: string;
   reason?: 'idle' | 'expiry_warning' | 'activity' | 'manual';
@@ -98,7 +95,6 @@ export interface SessionRenewalResult {
  * Active session item
  */
 export interface ActiveSession {
-  [key: string]: any;
   id: string;
   deviceName: string;
   deviceType: 'desktop' | 'mobile' | 'tablet' | 'unknown';
@@ -126,7 +122,6 @@ export interface ConcurrentSessionConflict {
  * Session event
  */
 export interface SessionEvent {
-  [key: string]: any;
   id: string;
   sessionId: string;
   userId: string;
@@ -166,7 +161,6 @@ export interface KeepAliveConfig {
  * Keep-alive result
  */
 export interface KeepAliveResult {
-  [key: string]: any;
   success: boolean;
   sessionId: string;
   newExpiryTime?: Date;
@@ -190,7 +184,6 @@ export interface SessionCountdownState {
  * Session lock state
  */
 export interface SessionLockState {
-  [key: string]: any;
   isLocked: boolean;
   lockedAt?: Date;
   lockReason?: string;
@@ -202,7 +195,6 @@ export interface SessionLockState {
  * Session validation result
  */
 export interface SessionValidationResult {
-  [key: string]: any;
   isValid: boolean;
   session?: SessionInfo;
   reason?: string;

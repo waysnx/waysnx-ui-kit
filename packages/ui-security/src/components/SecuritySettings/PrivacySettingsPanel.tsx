@@ -1,4 +1,4 @@
-/**
+﻿/**
  * PrivacySettingsPanel Component
  * 
  * Privacy and data sharing preferences.
@@ -9,7 +9,6 @@ import { Button, Checkbox } from '@waysnx/ui-core';
 import { Stack } from '@waysnx/ui-layout';
 
 export interface PrivacySettingsPanelProps {
-  [key: string]: any;
   onSave?: (settings: any) => void;
 }
 

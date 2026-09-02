@@ -1,4 +1,4 @@
-/**
+﻿/**
  * KeepAliveButton Component
  * 
  * Button to manually extend session and reset idle timeout.
@@ -8,7 +8,6 @@ import React, { useState } from 'react';
 import { Button } from '@waysnx/ui-core';
 
 export interface KeepAliveButtonProps {
-  [key: string]: any;
   /**
    * Callback to keep session alive
    */

@@ -47,6 +47,7 @@ export interface UICoreMessages {
   // Select / Autocomplete
   'select.placeholder': string;
   'select.noOptions': string;
+  'select.loadingOptions': string;
   'select.selectAll': string;
   'select.search': string;
 

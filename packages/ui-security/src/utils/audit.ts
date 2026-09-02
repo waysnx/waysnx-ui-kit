@@ -6,6 +6,7 @@
  */
 
 import type { AuditEvent } from '../types';
+import { generateSecureId } from './crypto';
 
 /**
  * Audit event severity levels
@@ -81,7 +82,8 @@ export function createAuditEvent(
  * Generate a unique event ID
  */
 function generateEventId(): string {
-  return `evt_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+  // Audit event IDs must be non-guessable to preserve forensic integrity.
+  return generateSecureId('evt');
 }
 
 /**

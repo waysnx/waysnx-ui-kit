@@ -19,3 +19,17 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = { args: { value: SAMPLE, showPreview: true, showToolbar: true, minHeight: 250 } };
 export const EditorOnly: Story = { args: { value: SAMPLE, showPreview: false, showToolbar: true, minHeight: 300 } };
 export const NoToolbar: Story = { args: { value: SAMPLE, showPreview: true, showToolbar: false, minHeight: 250 } };
+
+// Batch 9 regression: the preview pane must sanitize malicious markdown.
+export const MaliciousHtml: Story = {
+  args: {
+    value:
+      '# Safe Heading\n\n' +
+      '<script>window.__xss_markdown_editor = true;</script>\n\n' +
+      '<img src="x" onerror="window.__xss_markdown_editor = true" data-testid="me-xss-img" />\n\n' +
+      'Trailing safe text.',
+    showPreview: true,
+    showToolbar: true,
+    minHeight: 250,
+  },
+};

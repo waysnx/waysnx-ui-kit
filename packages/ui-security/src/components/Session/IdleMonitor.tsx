@@ -1,4 +1,4 @@
-/**
+﻿/**
  * IdleMonitor Component
  * 
  * Detects user inactivity and triggers callbacks at configurable idle thresholds.
@@ -8,7 +8,6 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 
 export interface IdleMonitorProps {
-  [key: string]: any;
   /**
    * Time in milliseconds before marking as idle
    * @default 300000 (5 minutes)

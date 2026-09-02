@@ -1,4 +1,4 @@
-/**
+﻿/**
  * MFASettingsPanel Component
  * 
  * MFA configuration panel with method management.
@@ -9,7 +9,6 @@ import { Button } from '@waysnx/ui-core';
 import { Stack } from '@waysnx/ui-layout';
 
 export interface MFASettingsPanelProps {
-  [key: string]: any;
   onSetupMFA?: () => void;
   onManageBackupCodes?: () => void;
 }

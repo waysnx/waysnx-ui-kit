@@ -1,56 +1,51 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
+import QRCodeLib from 'qrcode';
 import type { QRCodeProps } from '../../types';
 
 /**
- * Simple QR code generator using a canvas-based pattern.
- * For production, consumers would integrate a library like 'qrcode' or 'qrcode.react'.
- * This component provides the UI shell + download functionality.
+ * QRCode — renders a real, scannable QR code to a canvas using the `qrcode`
+ * library, with optional PNG download.
+ *
+ * The encoded payload is the raw `value` string (URLs, text, `otpauth://`
+ * URIs, etc.). Colors, size and error-correction level are configurable.
  */
 export function QRCode({
   value,
   size = 200,
   fgColor = '#000000',
   bgColor = '#ffffff',
+  errorCorrection = 'M',
   showDownload = true,
   className = '',
 }: QRCodeProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [error, setError] = useState<string>('');
 
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
 
-    // Draw placeholder QR pattern (real impl would use qrcode library)
-    ctx.fillStyle = bgColor;
-    ctx.fillRect(0, 0, size, size);
-    ctx.fillStyle = fgColor;
+    let cancelled = false;
 
-    const moduleSize = size / 25;
-    // Draw corner patterns
-    for (let i = 0; i < 7; i++) {
-      for (let j = 0; j < 7; j++) {
-        if (i === 0 || i === 6 || j === 0 || j === 6 || (i >= 2 && i <= 4 && j >= 2 && j <= 4)) {
-          ctx.fillRect(i * moduleSize, j * moduleSize, moduleSize, moduleSize);
-          ctx.fillRect((size - 7 * moduleSize) + i * moduleSize, j * moduleSize, moduleSize, moduleSize);
-          ctx.fillRect(i * moduleSize, (size - 7 * moduleSize) + j * moduleSize, moduleSize, moduleSize);
-        }
+    QRCodeLib.toCanvas(
+      canvas,
+      value,
+      {
+        width: size,
+        margin: 1,
+        errorCorrectionLevel: errorCorrection,
+        color: { dark: fgColor, light: bgColor },
+      },
+      (err) => {
+        if (cancelled) return;
+        setError(err ? 'Failed to generate QR code' : '');
       }
-    }
-    // Draw data area (simplified random pattern based on value hash)
-    let hash = 0;
-    for (let i = 0; i < value.length; i++) {
-      hash = ((hash << 5) - hash + value.charCodeAt(i)) | 0;
-    }
-    for (let x = 8; x < 17; x++) {
-      for (let y = 8; y < 17; y++) {
-        if ((hash + x * y) % 3 !== 0) {
-          ctx.fillRect(x * moduleSize, y * moduleSize, moduleSize, moduleSize);
-        }
-      }
-    }
-  }, [value, size, fgColor, bgColor]);
+    );
+
+    return () => {
+      cancelled = true;
+    };
+  }, [value, size, fgColor, bgColor, errorCorrection]);
 
   const handleDownload = () => {
     const canvas = canvasRef.current;
@@ -64,9 +59,20 @@ export function QRCode({
   return (
     <div className={`wx-adv-qr ${className}`}>
       <div className="wx-adv-qr__canvas">
-        <canvas ref={canvasRef} width={size} height={size} aria-label={`QR Code: ${value}`} role="img" />
+        <canvas
+          ref={canvasRef}
+          width={size}
+          height={size}
+          aria-label={`QR Code: ${value}`}
+          role="img"
+        />
+        {error && (
+          <div className="wx-adv-qr__error" role="alert" style={{ color: 'var(--wx-color-danger, #d4183d)', fontSize: 12 }}>
+            {error}
+          </div>
+        )}
       </div>
-      {showDownload && (
+      {showDownload && !error && (
         <button className="wx-adv-qr__download-btn" onClick={handleDownload} type="button">
           ⬇ Download PNG
         </button>

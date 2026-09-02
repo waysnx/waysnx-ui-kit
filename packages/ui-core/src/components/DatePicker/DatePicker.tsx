@@ -43,7 +43,8 @@ export function DatePicker({
   testId,
 }: DatePickerProps) {
   const { t } = useTranslation();
-  const generatedId = id || `wx-datepicker-${Math.random().toString(36).slice(2)}`;
+  const reactId = React.useId();
+  const generatedId = id || `wx-datepicker-${reactId}`;
   
   // Build aria-describedby with error and hint
   const descriptionIds = [];

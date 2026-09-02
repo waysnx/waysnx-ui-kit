@@ -47,6 +47,7 @@ import {
   AuditStatistics,
   AuditExportOptions,
 } from '../types/audit';
+import { generateSecureId } from '../utils/crypto';
 
 /**
  * Audit service configuration
@@ -391,7 +392,8 @@ export class AuditService {
    * Generate unique event ID
    */
   private generateEventId(): string {
-    return `event_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    // Non-guessable audit event IDs to preserve forensic integrity.
+    return generateSecureId('event');
   }
 
   /**

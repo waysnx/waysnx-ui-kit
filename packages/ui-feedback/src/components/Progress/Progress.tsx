@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useId } from "react";
 import "./Progress.css";
 
 export interface ProgressProps {
@@ -23,7 +23,8 @@ export function Progress({
   testId,
 }: ProgressProps) {
   const percent = Math.min(100, Math.max(0, (value / max) * 100));
-  const progressId = `progress-${Math.random().toString(36).slice(2)}`;
+  // Stable, SSR-safe id for label/aria wiring.
+  const progressId = `progress-${useId()}`;
 
   return (
     <div className={`wx-progress ${className}`} data-testid={testId}>

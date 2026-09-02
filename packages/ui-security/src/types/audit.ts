@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file types/audit.ts
  * Audit logging and compliance types
  */
@@ -61,7 +61,6 @@ export interface AuditEvent {
  * Geographic location
  */
 export interface GeoLocation {
-  [key: string]: any;
   ip: string;
   country: string;
   countryCode: string;
@@ -97,7 +96,6 @@ export interface AuditQueryFilter {
  * Audit query result
  */
 export interface AuditQueryResult {
-  [key: string]: any;
   events: AuditEvent[];
   total: number;
   page: number;
@@ -124,7 +122,6 @@ export interface LoginHistoryEntry {
  * Security event log
  */
 export interface SecurityEventLog {
-  [key: string]: any;
   id: string;
   timestamp: Date;
   eventType: string;
@@ -134,6 +131,12 @@ export interface SecurityEventLog {
   ipAddress?: string;
   geoLocation?: GeoLocation;
   riskScore?: number;
+  /** Optional human-readable category label for the event. */
+  category?: string;
+  /** Optional resource identifier the event relates to. */
+  resource?: string;
+  /** Optional structured details rendered as key/value pairs. */
+  details?: Record<string, unknown>;
 }
 
 /**
@@ -178,7 +181,6 @@ export interface ActivityFeedEntry {
  * Audit event timeline
  */
 export interface AuditEventTimeline {
-  [key: string]: any;
   date: Date;
   events: AuditEvent[];
   count: number;
@@ -209,7 +211,6 @@ export interface AuditPolicy {
  * Compliance report
  */
 export interface ComplianceReport {
-  [key: string]: any;
   id: string;
   reportType: ComplianceReportType;
   complianceLevel: string;
@@ -245,7 +246,6 @@ export interface ComplianceFinding {
  * Audit statistics
  */
 export interface AuditStatistics {
-  [key: string]: any;
   totalEvents: number;
   eventsByType: Record<string, number>;
   eventsBySeverity: Record<string, number>;
@@ -263,7 +263,6 @@ export type AuditExportFormat = 'json' | 'csv' | 'xml' | 'pdf';
  * Audit export options
  */
 export interface AuditExportOptions {
-  [key: string]: any;
   format: AuditExportFormat;
   filter?: AuditQueryFilter;
   includeMetadata: boolean;

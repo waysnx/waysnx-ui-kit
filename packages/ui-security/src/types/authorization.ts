@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file types/authorization.ts
  * Authorization, access control, and permission-related types
  */
@@ -20,7 +20,6 @@ export interface PermissionDefinition {
  * Role with permissions
  */
 export interface RoleDefinition {
-  [key: string]: any;
   id: string;
   name: string;
   description?: string;
@@ -45,7 +44,6 @@ export interface ScopeDefinition {
  * Feature flag definition
  */
 export interface FeatureFlagDefinition {
-  [key: string]: any;
   id: string;
   name: string;
   key: string;
@@ -74,7 +72,6 @@ export interface FeatureAudience {
  * Feature condition for evaluation
  */
 export interface FeatureCondition {
-  [key: string]: any;
   field: string;
   operator: 'equals' | 'notEquals' | 'contains' | 'regex' | 'greaterThan' | 'lessThan';
   value: any;
@@ -99,7 +96,6 @@ export interface PolicyDefinition {
  * Policy condition
  */
 export interface PolicyCondition {
-  [key: string]: any;
   field: string;
   operator: 'equals' | 'notEquals' | 'contains' | 'in' | 'regex';
   value: any;
@@ -120,7 +116,6 @@ export interface AccessEvaluationResult {
  * Permission check request
  */
 export interface PermissionCheckRequest {
-  [key: string]: any;
   userId: string;
   permission: string | PermissionDefinition;
   resource?: string;
@@ -142,7 +137,6 @@ export interface RoleCheckRequest {
  * Feature access request
  */
 export interface FeatureAccessRequest {
-  [key: string]: any;
   userId?: string;
   featureId: string;
   organizationId?: string;
@@ -162,7 +156,6 @@ export interface ScopeCheckRequest {
  * Authorization context
  */
 export interface AuthorizationContext {
-  [key: string]: any;
   userId: string;
   roles: string[];
   permissions: string[];
@@ -191,7 +184,6 @@ export interface AccessDeniedError {
  * Authorization check result
  */
 export interface AuthorizationCheckResult {
-  [key: string]: any;
   allowed: boolean;
   reason?: string;
   error?: AccessDeniedError;

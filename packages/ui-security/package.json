@@ -19,6 +19,7 @@
     "@waysnx/ui-feedback": "workspace:*",
     "@waysnx/ui-i18n": "workspace:*",
     "@waysnx/ui-layout": "workspace:*",
+    "@waysnx/ui-media": "workspace:*",
     "dompurify": "^3.3.1"
   },
   "devDependencies": {

@@ -4,6 +4,7 @@
  */
 
 import DOMPurify from 'dompurify';
+import { secureRandomString } from './crypto';
 
 /**
  * Sanitize user input to prevent XSS
@@ -135,12 +136,9 @@ export function isStrongPassword(password: string): boolean {
  * Generate OTP
  */
 export function generateOTP(length: number = 6): string {
-  const digits = '0123456789';
-  let otp = '';
-  for (let i = 0; i < length; i++) {
-    otp += digits[Math.floor(Math.random() * 10)];
-  }
-  return otp;
+  // OTPs are single-use authentication credentials, so digits are drawn with
+  // cryptographically-secure, unbiased randomness rather than Math.random().
+  return secureRandomString(length, '0123456789');
 }
 
 /**

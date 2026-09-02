@@ -1,4 +1,4 @@
-/**
+﻿/**
  * OTPResendButton Component
  * 
  * Button for resending OTP with countdown timer:
@@ -12,7 +12,6 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { Button } from '@waysnx/ui-core';
 
 export interface OTPResendButtonProps {
-  [key: string]: any;
   /**
    * Initial countdown time in seconds
    */

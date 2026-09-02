@@ -1,6 +1,17 @@
 import { useState, useRef, useCallback, useEffect } from 'react';
 import type { CropperProps } from '../../types';
 
+/**
+ * Cropper — interactive crop-selection UI.
+ *
+ * LIMITATION (1.0.0): This component provides a fully interactive crop overlay
+ * (move, resize, aspect-ratio locking) and reports the selected crop geometry
+ * (`x`, `y`, `width`, `height`) via `onCrop`. However, it does NOT yet produce
+ * cropped pixel output — `onCrop` returns the ORIGINAL image in `dataUrl`, not
+ * the cropped region. To obtain actual cropped image data, use the reported
+ * geometry to draw the selection onto a canvas in your application, or
+ * integrate a library such as `react-image-crop` or `cropperjs`.
+ */
 const ASPECTS = [
   { label: '1:1', value: 1 },
   { label: '4:3', value: 4 / 3 },
@@ -143,6 +154,9 @@ export function Cropper({
   }, [activeAspect, containerSize]);
 
   const handleCrop = () => {
+    // NOTE: dataUrl is the ORIGINAL source image, not cropped pixels. Consumers
+    // should use the returned x/y/width/height geometry to produce the actual
+    // cropped output (see component-level JSDoc).
     onCrop?.({ dataUrl: src, x: Math.round(crop.x), y: Math.round(crop.y), width: Math.round(crop.w), height: Math.round(crop.h) });
   };
 
@@ -231,7 +245,7 @@ export function Cropper({
       </div>
 
       <div style={{ padding: '8px 12px', background: 'var(--wx-color-surface-alt)', fontSize: 12, color: 'var(--wx-color-text-muted)', borderTop: '1px solid var(--wx-adv-card-border)' }}>
-        💡 <strong>Drag</strong> the box to move · <strong>Drag corners</strong> to resize · <strong>Aspect buttons</strong> lock proportions · Integrate <strong>react-image-crop</strong> or <strong>cropperjs</strong> for real pixel output
+        💡 <strong>Drag</strong> to move · <strong>Drag corners</strong> to resize · <strong>Aspect buttons</strong> lock proportions · <strong>Crop</strong> returns the selection geometry only — the original image is returned as <code>dataUrl</code>, not cropped pixels. Use the geometry (or integrate <strong>react-image-crop</strong>/<strong>cropperjs</strong>) to produce real cropped output.
       </div>
     </div>
   );

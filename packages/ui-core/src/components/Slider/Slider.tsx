@@ -32,7 +32,8 @@ export function Slider({
   id,
   testId,
 }: SliderProps) {
-  const sliderId = id || `wx-slider-${Math.random().toString(36).slice(2)}`;
+  const reactId = React.useId();
+  const sliderId = id || `wx-slider-${reactId}`;
   
   // Build aria-describedby with hint
   const descriptionIds = [];

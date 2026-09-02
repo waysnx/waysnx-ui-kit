@@ -1,4 +1,4 @@
-import React, { SelectHTMLAttributes, useState, useRef, useEffect } from "react";
+import React, { SelectHTMLAttributes, useState, useRef, useEffect, useId } from "react";
 import "./Select.css";
 import { getCachedOptions } from '../../utils/xrefCache';
 import { useTranslation } from '@waysnx/ui-i18n';
@@ -64,7 +64,8 @@ export function Select({
   const wrapperRef = useRef<HTMLDivElement>(null);
   const searchRef = useRef<HTMLInputElement>(null);
   const triggerRef = useRef<HTMLDivElement>(null);
-  const selectId = r.id || `wx-select-${Math.random().toString(36).slice(2)}`;
+  const reactId = useId();
+  const selectId = r.id || `wx-select-${reactId}`;
 
   // Fetch options dynamically if xref properties are provided
   useEffect(() => {

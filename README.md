@@ -30,8 +30,8 @@ The project is designed around reusable APIs, shared design tokens, accessibilit
 
 ### Current scope
 
-- **17 focused libraries**
-- **242 documented components**
+- **18 focused libraries**
+- **242 documented components** (see the [Libraries](#libraries) table; documented does not mean every component is production-ready — some are adapter/integration shells or planned "coming soon" components. See [Component maturity](#component-maturity).)
 - **1 aggregate package:** `@waysnx/ui-kit`
 - React 19 + TypeScript
 - Vite, Storybook, Vitest and Playwright
@@ -73,23 +73,40 @@ All WaysNX UI Kit packages are planned to be published as `1.0.0` for the initia
 | `@waysnx/ui-security` | 74 | Security-oriented UI and authorization capabilities |
 | `@waysnx/ui-visualization` | 10 | Hierarchies, trees and structured visualization UI |
 
+The **Components** column reflects documented components. Documented components are not all production-ready in the same way — see Component maturity below.
+
+---
+
+## Component maturity
+
+Not every documented component is a fully self-contained, production-ready implementation in `1.0.0`. Components fall into these categories:
+
+- **Production-ready** — the majority of components; fully functional standalone.
+- **Adapter / integration** — render UI but require an external adapter or backend to become functional. These do not bundle a vendor SDK. Examples: all of `@waysnx/ui-maps` (`MapView`, `AddressAutocomplete`, `AddressSelector`, `DistanceCalculator`, etc.) and `@waysnx/ui-media` `OCRScanner`.
+- **Shell / documented-limitation** — provide the intended UI/chrome but do not perform the full underlying operation in `1.0.0`, and say so. Examples: `@waysnx/ui-files` `PDFViewer` (viewer chrome; integrate PDF.js to render pages), `@waysnx/ui-media` `Cropper` (`onCrop` returns the source image plus crop geometry, not cropped pixels).
+- **Coming soon / planned** — placeholder components that render a "Coming Soon" state and are intentionally non-functional. These are the six `@waysnx/ui-docs` placeholders (`DependencyGraph`, `Playground`, `TokenViewer`, `ThemeExplorer`, `AISection`, `WorkflowViewer`) and are **excluded from production-ready expectations**.
+
+Each such component documents its status in its own README/JSDoc and on the documentation site. The `242` figure counts documented components across all categories, not production-ready components only.
+
 ---
 
 ## Aggregate Package
 
-For applications that want the primary WaysNX UI Kit libraries through one dependency:
+For applications that want a curated core set of WaysNX UI Kit libraries through one dependency:
 
 ```bash
 pnpm add @waysnx/ui-kit
 ```
 
-The aggregate package currently includes:
+For `1.0.0`, the aggregate package intentionally re-exports a **curated subset** of five libraries (not all 18):
 
 - `@waysnx/ui-core`
 - `@waysnx/ui-form-builder`
 - `@waysnx/ui-layout`
 - `@waysnx/ui-feedback`
 - `@waysnx/ui-grid-builder`
+
+The remaining focused libraries (e.g. `@waysnx/ui-security`, `@waysnx/ui-navigation`, `@waysnx/ui-media`, `@waysnx/ui-data`, `@waysnx/ui-files`, `@waysnx/ui-maps`, `@waysnx/ui-communication`, `@waysnx/ui-dashboard`, `@waysnx/ui-docs`, `@waysnx/ui-visualization`, `@waysnx/ui-accessibility`, `@waysnx/ui-i18n`, `@waysnx/ui-diagnostics`) are installed directly as needed. The aggregate is also ESM-only for `1.0.0`.
 
 The aggregate package is a convenience entry point and is **not counted as an additional focused library**.
 
@@ -353,12 +370,15 @@ waysnx-ui-kit/
 │       ├── waysnx-ui-kit-logo.png
 │       ├── waysnx-ui-kit-logo@2x.png
 │       └── waysnx-ui-kit-mark.png
+├── decisions/
 ├── docs/
 ├── examples/
 │   ├── README.md
 │   └── waysnx-admin-demo/
 │       └── README.md
 ├── packages/
+├── schemas/
+├── specification/
 ├── storybook/
 │   └── README.md
 ├── playwright/
@@ -366,7 +386,6 @@ waysnx-ui-kit/
 ├── templates/
 ├── tests/
 ├── tools/
-├── wdg/
 ├── README.md
 ├── CONTRIBUTING.md
 ├── CODE_OF_CONDUCT.md

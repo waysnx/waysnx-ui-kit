@@ -1,4 +1,4 @@
-/**
+﻿/**
  * HCaptcha Component
  * 
  * hCaptcha CAPTCHA integration.
@@ -110,7 +110,6 @@ export default HCaptcha;
 
 declare global {
   interface Window {
-  [key: string]: any;
     hcaptcha?: {
       render: (container: HTMLElement, options: any) => string;
       reset: (widgetId?: string) => void;

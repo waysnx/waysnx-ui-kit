@@ -1,4 +1,4 @@
-/**
+﻿/**
  * MFAVerificationDialog Component
  * 
  * Dialog for entering MFA verification code during login.
@@ -13,7 +13,6 @@ import { PINInput } from '../SecureInputs/PINInput';
 export type MFAMethod = 'totp' | 'sms' | 'email' | 'webauthn';
 
 export interface MFAVerificationDialogProps {
-  [key: string]: any;
   /**
    * Whether dialog is open
    */
@@ -163,7 +162,7 @@ export const MFAVerificationDialog: React.FC<MFAVerificationDialogProps> = ({
           }}
         >
           <span style={{ fontSize: '0.875rem' }}>
-            🔒 Never share your verification code with anyone.
+            ðŸ”’ Never share your verification code with anyone.
           </span>
         </div>
 

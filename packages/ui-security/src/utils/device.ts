@@ -6,6 +6,7 @@
  */
 
 import type { DeviceInfo } from '../types';
+import { generateSecureId } from './crypto';
 
 /**
  * Trusted device interface
@@ -160,7 +161,9 @@ export function collectDeviceInfo(): DeviceInfo {
  * @returns Device ID
  */
 export function generateDeviceId(): string {
-  return `dev_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+  // Device identifiers feed trust decisions, so they use a cryptographically-
+  // secure random suffix rather than Math.random().
+  return generateSecureId('dev');
 }
 
 /**
@@ -238,7 +241,7 @@ export async function createTrustedDevice(
  * Generate trusted device ID
  */
 function generateTrustedDeviceId(): string {
-  return `td_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+  return generateSecureId('td');
 }
 
 /**

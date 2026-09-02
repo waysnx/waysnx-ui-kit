@@ -1,4 +1,4 @@
-/**
+﻿/**
  * BiometricButton Component
  * 
  * Button to authenticate using biometric (fingerprint, face recognition).
@@ -8,7 +8,6 @@ import React, { useState } from 'react';
 import { Button } from '@waysnx/ui-core';
 
 export interface BiometricButtonProps {
-  [key: string]: any;
   /**
    * Biometric type
    */
@@ -107,9 +106,9 @@ export const BiometricButton: React.FC<BiometricButtonProps> = ({
   };
 
   const getIcon = () => {
-    if (biometricType === 'face') return '👤';
-    if (biometricType === 'fingerprint') return '👆';
-    return '🔐';
+    if (biometricType === 'face') return 'ðŸ‘¤';
+    if (biometricType === 'fingerprint') return 'ðŸ‘†';
+    return 'ðŸ”';
   };
 
   return (

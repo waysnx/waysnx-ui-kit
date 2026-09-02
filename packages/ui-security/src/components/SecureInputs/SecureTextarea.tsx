@@ -1,4 +1,4 @@
-/**
+﻿/**
  * SecureTextarea Component
  * 
  * Enhanced textarea input with security features and content protection.
@@ -9,7 +9,6 @@ import React, { useState, useRef, useCallback } from 'react';
 
 export interface SecureTextareaProps
   extends Omit<React.TextareaHTMLAttributes<HTMLTextAreaElement>, 'children' | 'onChange'> {
-  [key: string]: any;
   /**
    * Label text
    */

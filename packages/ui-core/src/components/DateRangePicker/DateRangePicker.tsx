@@ -45,7 +45,8 @@ export function DateRangePicker({
   const { t } = useTranslation();
   warn(Boolean(label || ariaLabel), 'DateRangePicker needs label');
 
-  const generatedId = id || `wx-daterangepicker-${Math.random().toString(36).slice(2)}`;
+  const reactId = React.useId();
+  const generatedId = id || `wx-daterangepicker-${reactId}`;
   
   // Build aria-describedby with error and hint
   const descriptionIds = [];

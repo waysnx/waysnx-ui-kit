@@ -1,4 +1,4 @@
-/**
+﻿/**
  * OTPInput Component
  * 
  * One-Time Password input with:
@@ -13,7 +13,6 @@
 import React, { useRef, useEffect, useCallback, useState } from 'react';
 
 export interface OTPInputProps {
-  [key: string]: any;
   /**
    * Number of OTP digits
    */
@@ -79,7 +78,7 @@ export const OTPInput: React.FC<OTPInputProps> = ({
   onChange,
   value = '',
   disabled = false,
-  placeholder = '•',
+  placeholder = 'â€¢',
   label,
   error,
   helperText,

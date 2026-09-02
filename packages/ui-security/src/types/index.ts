@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file types/index.ts
  * Core type definitions for security components and infrastructure
  * 
@@ -71,7 +71,6 @@ export interface User {
  * Trusted device information
  */
 export interface TrustedDeviceInfo {
-  [key: string]: any;
   id: string;
   userId: string;
   deviceId: string;
@@ -103,7 +102,6 @@ export interface AuthenticationResult {
  * Device information
  */
 export interface DeviceInfo {
-  [key: string]: any;
   id: string;
   os: string;
   browser: string;
@@ -137,7 +135,6 @@ export interface RiskScore {
  * Login credentials
  */
 export interface LoginCredentials {
-  [key: string]: any;
   email: string;
   password: string;
   rememberMe?: boolean;
@@ -160,7 +157,6 @@ export interface OTPVerificationData {
  * Password reset data
  */
 export interface PasswordResetData {
-  [key: string]: any;
   token: string;
   email: string;
   newPassword: string;
@@ -181,7 +177,6 @@ export interface ChangePasswordData {
  * Password policy
  */
 export interface PasswordPolicy {
-  [key: string]: any;
   minLength: number;
   maxLength?: number;
   requireUppercase: boolean;
@@ -212,7 +207,6 @@ export interface SecurityPolicy {
  * Generic API response
  */
 export interface ApiResponse<T = any> {
-  [key: string]: any;
   success: boolean;
   data?: T;
   error?: string;
@@ -237,7 +231,6 @@ export interface ErrorResponse {
  * Pagination
  */
 export interface PaginationParams {
-  [key: string]: any;
   page: number;
   pageSize: number;
   sortBy?: string;
@@ -248,7 +241,6 @@ export interface PaginationParams {
  * Paginated response
  */
 export interface PaginatedResponse<T> {
-  [key: string]: any;
   data: T[];
   total: number;
   page: number;

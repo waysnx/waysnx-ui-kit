@@ -1,4 +1,4 @@
-/**
+﻿/**
  * OTPVerificationCard Component
  * 
  * Complete OTP verification flow container:
@@ -16,7 +16,6 @@ import { OTPInput } from './OTPInput';
 import { OTPResendButton } from './OTPResendButton';
 
 export interface OTPVerificationCardProps {
-  [key: string]: any;
   /**
    * Title for the card
    */
@@ -99,7 +98,7 @@ export const OTPVerificationCard: React.FC<OTPVerificationCardProps> = ({
   maskedContact,
   className = '',
   testId,
-  placeholder = '•',
+  placeholder = 'â€¢',
 }) => {
   const [otp, setOtp] = useState('');
   const [isVerifying, setIsVerifying] = useState(false);

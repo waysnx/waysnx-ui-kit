@@ -38,6 +38,7 @@ export const frMessages: TranslationMessages = {
   'datePicker.clear': 'Effacer',
   'select.placeholder': 'Sélectionner...',
   'select.noOptions': 'Aucune option disponible',
+  'select.loadingOptions': 'Chargement des options...',
   'select.selectAll': 'Tout sélectionner',
   'select.search': 'Rechercher...',
   'general.loading': 'Chargement...',

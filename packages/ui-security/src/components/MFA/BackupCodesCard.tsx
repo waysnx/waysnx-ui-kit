@@ -1,4 +1,4 @@
-/**
+﻿/**
  * BackupCodesCard Component
  * 
  * Display and manage backup codes for account recovery.
@@ -10,7 +10,6 @@ import { Stack } from '@waysnx/ui-layout';
 import { Badge } from '@waysnx/ui-feedback';
 
 export interface BackupCodesCardProps {
-  [key: string]: any;
   /**
    * Backup codes array
    */
@@ -129,7 +128,7 @@ Store these codes in a safe place. Each code can be used once if you lose access
           <span as="h3" fontSize="base" fontWeight="bold">
             Backup Codes
           </span>
-          {isConfirmed && <Badge color="success">✓ Saved</Badge>}
+          {isConfirmed && <Badge color="success">âœ“ Saved</Badge>}
         </div>
 
         <span fontSize="sm" color="muted">
@@ -162,7 +161,7 @@ Store these codes in a safe place. Each code can be used once if you lose access
             >
               <div flex={1}>
                 <span fontSize="sm" fontWeight="bold">
-                  {isRevealed ? code : '••••••'}
+                  {isRevealed ? code : 'â€¢â€¢â€¢â€¢â€¢â€¢'}
                 </span>
               </div>
               <Button
@@ -171,7 +170,7 @@ Store these codes in a safe place. Each code can be used once if you lose access
                 onClick={() => handleCopyCode(code, index)}
                 disabled={!isRevealed}
               >
-                {copiedIndex === index ? '✓' : '📋'}
+                {copiedIndex === index ? 'âœ“' : 'ðŸ“‹'}
               </Button>
             </div>
           ))}
@@ -211,7 +210,7 @@ Store these codes in a safe place. Each code can be used once if you lose access
         borderLeftColor="warning"
       >
         <span fontSize="sm" fontWeight="bold" marginBottom="xs">
-          ⚠️ Security Warning
+          âš ï¸ Security Warning
         </span>
         <span fontSize="sm">
           Anyone who has access to these codes can access your account. Store them
@@ -227,7 +226,7 @@ Store these codes in a safe place. Each code can be used once if you lose access
           onClick={handleCopyAll}
           disabled={!isRevealed}
         >
-          📋 Copy All Codes
+          ðŸ“‹ Copy All Codes
         </Button>
 
         <Stack gap="md" direction="row">
@@ -237,7 +236,7 @@ Store these codes in a safe place. Each code can be used once if you lose access
             onClick={handleDownload}
             disabled={!isRevealed}
           >
-            ⬇️ Download
+            â¬‡ï¸ Download
           </Button>
           <Button
             variant="outline"
@@ -245,7 +244,7 @@ Store these codes in a safe place. Each code can be used once if you lose access
             onClick={handlePrint}
             disabled={!isRevealed}
           >
-            🖨️ Print
+            ðŸ–¨ï¸ Print
           </Button>
         </Stack>
       </Stack>
@@ -257,7 +256,7 @@ Store these codes in a safe place. Each code can be used once if you lose access
          
           onClick={onConfirm}
         >
-          ✓ I've Saved My Backup Codes
+          âœ“ I've Saved My Backup Codes
         </Button>
       )}
 
@@ -269,7 +268,7 @@ Store these codes in a safe place. Each code can be used once if you lose access
           textAlign="center"
         >
           <span fontSize="sm" fontWeight="bold">
-            ✓ Backup codes saved successfully
+            âœ“ Backup codes saved successfully
           </span>
         </div>
       )}

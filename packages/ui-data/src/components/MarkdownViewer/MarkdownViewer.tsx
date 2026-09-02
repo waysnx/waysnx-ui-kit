@@ -1,3 +1,4 @@
+import DOMPurify from 'dompurify';
 import type { MarkdownViewerProps } from '../../types';
 
 function simpleMarkdownToHtml(md: string): string {
@@ -14,11 +15,20 @@ function simpleMarkdownToHtml(md: string): string {
 }
 
 export function MarkdownViewer({ content, className = '' }: MarkdownViewerProps) {
+  // The minimal parser does not escape raw HTML in the content, so the
+  // generated markup is sanitized before rendering to prevent XSS. The parser
+  // emits presentational inline styles, so `style` is allowed while scriptable
+  // vectors (script/event handlers/iframe/etc.) are stripped by DOMPurify.
+  const sanitizedHtml = DOMPurify.sanitize(simpleMarkdownToHtml(content), {
+    ALLOWED_TAGS: ['h1', 'h2', 'h3', 'strong', 'em', 'code', 'li', 'blockquote', 'br'],
+    ALLOWED_ATTR: ['style'],
+  });
+
   return (
     <div
       className={`wx-adv-markdown-viewer ${className}`}
       style={{ padding: 16, fontSize: 14, lineHeight: 1.7, color: 'var(--wx-color-text)' }}
-      dangerouslySetInnerHTML={{ __html: simpleMarkdownToHtml(content) }}
+      dangerouslySetInnerHTML={{ __html: sanitizedHtml }}
       role="document"
       aria-label="Markdown content"
     />

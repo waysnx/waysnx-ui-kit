@@ -1,4 +1,4 @@
-/**
+﻿/**
  * MFAStatus Component
  * 
  * Display current MFA setup status and available methods.
@@ -11,7 +11,6 @@ import { Badge } from '@waysnx/ui-feedback';
 import type { MFAConfiguration } from '../../types/mfa';
 
 export interface MFAStatusProps {
-  [key: string]: any;
   /**
    * Current MFA configuration
    */
@@ -84,7 +83,7 @@ export const MFAStatus: React.FC<MFAStatusProps> = ({
             </span>
           </div>
           <Badge color={isMFAEnabled ? 'success' : 'warning'}>
-            {isMFAEnabled ? '✓ Enabled' : 'Disabled'}
+            {isMFAEnabled ? 'âœ“ Enabled' : 'Disabled'}
           </Badge>
         </div>
       </div>
@@ -116,7 +115,7 @@ export const MFAStatus: React.FC<MFAStatusProps> = ({
                     </Badge>
                   )}
                 </div>
-                <div fontSize="lg">✓</div>
+                <div fontSize="lg">âœ“</div>
               </div>
             ))}
           </Stack>
@@ -133,7 +132,7 @@ export const MFAStatus: React.FC<MFAStatusProps> = ({
         borderLeftColor="info"
       >
         <span fontSize="sm" fontWeight="bold" marginBottom="xs">
-          💡 Multi-Factor Authentication
+          ðŸ’¡ Multi-Factor Authentication
         </span>
         <span fontSize="sm">
           {isMFAEnabled

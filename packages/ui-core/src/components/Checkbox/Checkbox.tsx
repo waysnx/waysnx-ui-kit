@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Checkbox.css';
 import { getCachedOptions } from '../../utils/xrefCache';
+import { useTranslation } from '@waysnx/ui-i18n';
 
 export interface CheckboxOption {
   label: string;
@@ -61,6 +62,7 @@ export function Checkbox({
   error,
   testId,
 }: CheckboxProps) {
+  const { t } = useTranslation();
   const [options, setOptions] = useState<CheckboxOption[]>(propOptions || []);
   const [loading, setLoading] = useState(false);
 
@@ -134,10 +136,10 @@ export function Checkbox({
         </legend>
       )}
       
-      {loading && <div className="wx-checkbox-loading">Loading options...</div>}
+      {loading && <div className="wx-checkbox-loading">{t('select.loadingOptions')}</div>}
       
       {!loading && options.length === 0 && (
-        <div className="wx-checkbox-no-options">No options available</div>
+        <div className="wx-checkbox-no-options">{t('select.noOptions')}</div>
       )}
       
       {!loading && options.map((option) => (

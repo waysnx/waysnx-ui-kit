@@ -1,4 +1,4 @@
-/**
+﻿/**
  * SecurityEventLog Component
  * 
  * Display security-specific events with filtering and export.
@@ -11,7 +11,6 @@ import { Badge } from '@waysnx/ui-feedback';
 import type { SecurityEventLog as SecurityEventLogType } from '../../types/audit';
 
 export interface SecurityEventLogProps {
-  [key: string]: any;
   /**
    * Security events to display
    */
@@ -76,14 +75,14 @@ export const SecurityEventLog: React.FC<SecurityEventLogProps> = ({
            
             onClick={() => onExport('json')}
           >
-            📥 Export as JSON
+            ðŸ“¥ Export as JSON
           </Button>
           <Button
             variant="outline"
            
             onClick={() => onExport('csv')}
           >
-            📥 Export as CSV
+            ðŸ“¥ Export as CSV
           </Button>
         </div>
       )}

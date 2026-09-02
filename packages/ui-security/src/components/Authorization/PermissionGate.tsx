@@ -1,4 +1,4 @@
-/**
+﻿/**
  * PermissionGate Component
  * 
  * Gate component that conditionally renders children based on user permissions.
@@ -9,7 +9,6 @@ import React, { ReactNode } from 'react';
 
 
 export interface PermissionGateProps {
-  [key: string]: any;
   /**
    * Permission required to view children
    */

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file utils/token.ts
  * JWT and token utilities
  */
@@ -12,7 +12,15 @@ export interface JWTPayload {
   exp?: number;
   aud?: string;
   iss?: string;
-  [key: string]: any;
+  /** Common non-standard user id claims produced by various auth providers. */
+  user_id?: string;
+  userId?: string;
+  /**
+   * Arbitrary custom claims. JWTs legitimately carry provider-specific claims,
+   * so this is typed as `unknown` (not `any`) to preserve type safety while
+   * allowing extra keys to be read after an explicit narrowing.
+   */
+  [claim: string]: unknown;
 }
 
 /**

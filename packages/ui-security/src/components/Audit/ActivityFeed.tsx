@@ -1,4 +1,4 @@
-/**
+﻿/**
  * ActivityFeed Component
  * 
  * Display user activity in a feed/notification style format.
@@ -41,7 +41,6 @@ export interface ActivityRecord {
 }
 
 export interface ActivityFeedProps {
-  [key: string]: any;
   /**
    * Activity records
    */
@@ -63,18 +62,18 @@ export interface ActivityFeedProps {
 const getActivityIcon = (type: string, customIcon?: string) => {
   if (customIcon) return customIcon;
   const icons: Record<string, string> = {
-    login: '🔓',
-    logout: '🔒',
-    'password-change': '🔐',
-    'mfa-setup': '✓',
-    'permission-grant': '✓',
-    'permission-revoke': '✕',
-    'file-upload': '📤',
-    'file-download': '📥',
+    login: 'ðŸ”“',
+    logout: 'ðŸ”’',
+    'password-change': 'ðŸ”',
+    'mfa-setup': 'âœ“',
+    'permission-grant': 'âœ“',
+    'permission-revoke': 'âœ•',
+    'file-upload': 'ðŸ“¤',
+    'file-download': 'ðŸ“¥',
     'session-created': '+',
     'session-terminated': '-',
   };
-  return icons[type] || '•';
+  return icons[type] || 'â€¢';
 };
 
 const getStatusColor = (status?: string) => {
@@ -187,7 +186,6 @@ export const ActivityFeed: React.FC<ActivityFeedProps> = ({
 };
 
 interface ActivityItemProps {
-  [key: string]: any;
   activity: ActivityRecord;
   isExpanded: boolean;
   onToggle: () => void;
@@ -234,7 +232,7 @@ const ActivityItem: React.FC<ActivityItemProps> = ({ activity, isExpanded, onTog
               {activity.status.charAt(0).toUpperCase() + activity.status.slice(1)}
             </Badge>
           )}
-          <span fontSize="lg">{isExpanded ? '▼' : '▶'}</span>
+          <span fontSize="lg">{isExpanded ? 'â–¼' : 'â–¶'}</span>
         </div>
       </div>
 

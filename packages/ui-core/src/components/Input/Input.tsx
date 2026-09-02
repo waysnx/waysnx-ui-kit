@@ -1,4 +1,4 @@
-import React, { InputHTMLAttributes, useState, useEffect } from 'react';
+import React, { InputHTMLAttributes, useState, useEffect, useId } from 'react';
 import { NumericFormat } from 'react-number-format';
 import { IMaskInput } from 'react-imask';
 import './Input.css';
@@ -68,7 +68,9 @@ export function Input({
 }: InputProps) {
   warn(Boolean(label || r['aria-label'] || ariaLabel), 'Input needs label');
   const { t } = useTranslation();
-  const i = id || `wx-input-${Math.random().toString(36).slice(2)}`;
+  const reactId = useId();
+  // Stable, SSR-safe id for label/aria wiring; explicit `id` prop still wins.
+  const i = id || `wx-input-${reactId}`;
   const [showPassword, setShowPassword] = useState(false);
   const [internalError, setInternalError] = useState<string>();
   const [touched, setTouched] = useState(false);

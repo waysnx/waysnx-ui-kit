@@ -1,4 +1,4 @@
-/**
+﻿/**
  * GitHubLoginButton Component
  * 
  * GitHub OAuth login button.
@@ -8,7 +8,6 @@ import React from 'react';
 import { Button } from '@waysnx/ui-core';
 
 export interface GitHubLoginButtonProps {
-  [key: string]: any;
   /**
    * GitHub OAuth Client ID
    */
@@ -69,7 +68,7 @@ export const GitHubLoginButton: React.FC<GitHubLoginButtonProps> = ({
      
      
     >
-      🐙 Continue with GitHub
+      ðŸ™ Continue with GitHub
     </Button>
   );
 };

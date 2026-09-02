@@ -1,4 +1,4 @@
-/**
+﻿/**
  * AuditTimeline Component
  * 
  * Display audit events in a vertical timeline format.
@@ -9,7 +9,6 @@ import { Badge } from '@waysnx/ui-feedback';
 import type { AuditEvent } from '../../types/audit';
 
 export interface AuditTimelineProps {
-  [key: string]: any;
   /**
    * Audit events to display
    */
@@ -41,17 +40,17 @@ const getEventColor = (eventType: string) => {
 
 const getEventIcon = (eventType: string) => {
   const icons: Record<string, string> = {
-    'login-success': '✓',
-    'login-failure': '✕',
-    'logout': '👋',
-    'password-change': '🔐',
-    'mfa-enabled': '✓',
-    'mfa-disabled': '✕',
+    'login-success': 'âœ“',
+    'login-failure': 'âœ•',
+    'logout': 'ðŸ‘‹',
+    'password-change': 'ðŸ”',
+    'mfa-enabled': 'âœ“',
+    'mfa-disabled': 'âœ•',
     'session-created': '+',
     'session-terminated': '-',
-    'permission-denied': '🚫',
+    'permission-denied': 'ðŸš«',
   };
-  return icons[eventType] || '•';
+  return icons[eventType] || 'â€¢';
 };
 
 /**

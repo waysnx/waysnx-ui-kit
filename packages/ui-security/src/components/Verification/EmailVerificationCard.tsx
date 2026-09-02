@@ -1,4 +1,4 @@
-/**
+﻿/**
  * EmailVerificationCard Component
  * 
  * Email verification flow:
@@ -16,7 +16,6 @@ import { Alert } from '@waysnx/ui-feedback';
 import { OTPResendButton } from '../OTP/OTPResendButton';
 
 export interface EmailVerificationCardProps {
-  [key: string]: any;
   /**
    * Email address to verify
    */

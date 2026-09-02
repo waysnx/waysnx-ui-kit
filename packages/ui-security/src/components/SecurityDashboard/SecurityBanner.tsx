@@ -1,4 +1,4 @@
-/**
+﻿/**
  * SecurityBanner Component
  * 
  * Prominent banner to display security alerts and status messages.
@@ -10,7 +10,6 @@ import { Button } from '@waysnx/ui-core';
 export type SecuritySeverity = 'info' | 'warning' | 'danger' | 'success';
 
 export interface SecurityBannerProps {
-  [key: string]: any;
   /**
    * Banner message
    */
@@ -57,10 +56,10 @@ const getSeverityStyles = (severity: SecuritySeverity) => {
 
 const getDefaultIcon = (severity: SecuritySeverity) => {
   const icons = {
-    info: 'ℹ️',
-    warning: '⚠️',
-    danger: '🚨',
-    success: '✓',
+    info: 'â„¹ï¸',
+    warning: 'âš ï¸',
+    danger: 'ðŸš¨',
+    success: 'âœ“',
   };
   return icons[severity];
 };
@@ -133,7 +132,7 @@ export const SecurityBanner: React.FC<SecurityBannerProps> = ({
             variant="ghost"
             onClick={handleDismiss}
           >
-            ✕
+            âœ•
           </Button>
         )}
       </div>

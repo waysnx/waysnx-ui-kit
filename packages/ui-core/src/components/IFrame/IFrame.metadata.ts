@@ -1,7 +1,7 @@
 export default {
   purpose: "Embed external web content within a sandboxed iframe with security restrictions.",
 
-  description: "A secure container for embedding external web content with enforced HTTPS requirement and sandboxing to prevent script injection. Supports fullscreen mode and configurable sandbox restrictions for fine-grained security control. Lazy loads embedded content to improve page performance and requires both src and title for accessibility.",
+  description: "A secure container for embedding external web content with enforced HTTPS requirement and a secure-by-default sandbox to prevent script injection. The default sandbox permits scripts, popups, forms and presentation while omitting same-origin access so framed content cannot escape the sandbox; it can be overridden or fully locked down via the sandbox prop. Supports fullscreen mode, lazy loads embedded content to improve page performance, and requires both src and title for accessibility.",
 
   functionalAreas: [
     "Visualization",

@@ -45,7 +45,8 @@ export function DateTimePicker({
   const { t } = useTranslation();
   warn(Boolean(label || ariaLabel), 'DateTimePicker needs label');
 
-  const generatedId = id || `wx-datetimepicker-${Math.random().toString(36).slice(2)}`;
+  const reactId = React.useId();
+  const generatedId = id || `wx-datetimepicker-${reactId}`;
   
   // Build aria-describedby with error and hint
   const descriptionIds = [];

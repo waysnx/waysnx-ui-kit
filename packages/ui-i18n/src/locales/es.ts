@@ -38,6 +38,7 @@ export const esMessages: TranslationMessages = {
   'datePicker.clear': 'Limpiar',
   'select.placeholder': 'Seleccionar...',
   'select.noOptions': 'Sin opciones disponibles',
+  'select.loadingOptions': 'Cargando opciones...',
   'select.selectAll': 'Seleccionar todo',
   'select.search': 'Buscar...',
   'general.loading': 'Cargando...',

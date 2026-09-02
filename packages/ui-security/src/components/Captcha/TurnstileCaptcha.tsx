@@ -1,4 +1,4 @@
-/**
+﻿/**
  * TurnstileCaptcha Component
  * 
  * Cloudflare Turnstile CAPTCHA integration.
@@ -113,7 +113,6 @@ export default TurnstileCaptcha;
 
 declare global {
   interface Window {
-  [key: string]: any;
     turnstile?: {
       render: (container: HTMLElement, options: any) => string;
       reset: (widgetId?: string) => void;

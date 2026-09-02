@@ -1,4 +1,4 @@
-/**
+﻿/**
  * PhoneVerificationCard Component
  * 
  * Phone number verification flow:
@@ -17,7 +17,6 @@ import { OTPInput } from '../OTP/OTPInput';
 import { OTPResendButton } from '../OTP/OTPResendButton';
 
 export interface PhoneVerificationCardProps {
-  [key: string]: any;
   /**
    * Title for the card
    */

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * RoleGate Component
  * 
  * Gate component that conditionally renders children based on user roles.
@@ -9,7 +9,6 @@ import React, { ReactNode } from 'react';
 
 
 export interface RoleGateProps {
-  [key: string]: any;
   /**
    * Role(s) required to view children
    */

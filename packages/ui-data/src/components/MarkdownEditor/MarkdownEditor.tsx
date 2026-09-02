@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react';
+import DOMPurify from 'dompurify';
 import type { MarkdownEditorProps } from '../../types';
 
 export function MarkdownEditor({
@@ -62,7 +63,7 @@ export function MarkdownEditor({
         />
         {showPreview && (
           <div className="wx-adv-markdown-editor__preview">
-            <div dangerouslySetInnerHTML={{ __html: simpleMarkdownToHtml(localValue) }} />
+            <div dangerouslySetInnerHTML={{ __html: renderMarkdownPreview(localValue) }} />
           </div>
         )}
       </div>
@@ -74,7 +75,7 @@ export function MarkdownEditor({
   );
 }
 
-/** Minimal markdown to HTML (for preview only — use DOMPurify in production) */
+/** Minimal markdown to HTML (preview only). */
 function simpleMarkdownToHtml(md: string): string {
   return md
     .replace(/^### (.*$)/gm, '<h3>$1</h3>')
@@ -85,4 +86,19 @@ function simpleMarkdownToHtml(md: string): string {
     .replace(/`(.*?)`/g, '<code>$1</code>')
     .replace(/^- (.*$)/gm, '<li>$1</li>')
     .replace(/\n/g, '<br>');
+}
+
+/**
+ * Render the markdown preview as sanitized HTML.
+ *
+ * The minimal parser does not escape raw HTML in the editor input, so the
+ * generated string must be sanitized before it reaches dangerouslySetInnerHTML
+ * to prevent XSS. Uses DOMPurify with a tag allow-list matching the parser's
+ * output (consistent with HtmlContent / HtmlWidget).
+ */
+function renderMarkdownPreview(md: string): string {
+  return DOMPurify.sanitize(simpleMarkdownToHtml(md), {
+    ALLOWED_TAGS: ['h1', 'h2', 'h3', 'strong', 'em', 'code', 'li', 'br'],
+    ALLOWED_ATTR: [],
+  });
 }

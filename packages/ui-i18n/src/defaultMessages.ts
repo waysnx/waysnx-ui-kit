@@ -49,6 +49,7 @@ export const defaultMessages: AllMessages = {
   // === ui-core: Select / Autocomplete ===
   'select.placeholder': 'Select...',
   'select.noOptions': 'No options available',
+  'select.loadingOptions': 'Loading options...',
   'select.selectAll': 'Select All',
   'select.search': 'Search...',
 

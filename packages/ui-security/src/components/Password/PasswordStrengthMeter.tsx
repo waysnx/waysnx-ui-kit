@@ -1,4 +1,4 @@
-/**
+﻿/**
  * PasswordStrengthMeter Component
  * 
  * A visual indicator showing password strength with:
@@ -14,7 +14,6 @@ import { calculatePasswordStrength } from '../../utils';
 import type { PasswordStrengthScore } from '../../utils';
 
 export interface PasswordStrengthMeterProps {
-  [key: string]: any;
   /**
    * Password to evaluate
    */

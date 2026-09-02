@@ -1,18 +1,28 @@
 import { useState, useRef } from 'react';
 import type { OCRScannerProps } from '../../types';
 
-export function OCRScanner({ onResult, accept = '.jpg,.jpeg,.png,.pdf', maxSize: _maxSize = 10, className = '' }: OCRScannerProps) {
-  const [result, setResult] = useState('');
-  const [copied, setCopied] = useState(false);
+/**
+ * OCRScanner — SHELL / INTEGRATION component (no built-in OCR engine).
+ *
+ * Provides the upload/drag-and-drop UI for OCR workflows but does NOT extract
+ * text on its own. To obtain real results, integrate an OCR engine
+ * (e.g. Tesseract.js) or a cloud OCR API in your application and feed the
+ * recognized text back to your own state.
+ *
+ * Importantly, this shell does NOT fabricate OCR output: the `onResult`
+ * callback is only invoked with genuine text, so it will not fire until a real
+ * OCR integration is wired up. This avoids presenting placeholder text as if it
+ * were extracted content.
+ */
+export function OCRScanner({ onResult: _onResult, accept = '.jpg,.jpeg,.png,.pdf', maxSize: _maxSize = 10, className = '' }: OCRScannerProps) {
+  const [filename, setFilename] = useState('');
   const [dragging, setDragging] = useState(false);
-  const [_filename, setFilename] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
 
   const handleFile = (file: File) => {
+    // Record the selection only. No OCR is performed and no result is emitted;
+    // integrate an OCR engine/API to produce and surface real extracted text.
     setFilename(file.name);
-    // UI shell — real OCR via Tesseract.js or cloud API
-    setResult(`OCR result for: ${file.name}\n\nThis is a UI component shell.\nIntegrate Tesseract.js or a cloud OCR API to extract real text.\n\nFile size: ${(file.size / 1024).toFixed(1)} KB`);
-    onResult?.(`OCR result for: ${file.name}`);
   };
 
   const handleDrop = (e: React.DragEvent) => {
@@ -20,12 +30,6 @@ export function OCRScanner({ onResult, accept = '.jpg,.jpeg,.png,.pdf', maxSize:
     setDragging(false);
     const file = e.dataTransfer.files[0];
     if (file) handleFile(file);
-  };
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText(result);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
   };
 
   return (
@@ -47,15 +51,17 @@ export function OCRScanner({ onResult, accept = '.jpg,.jpeg,.png,.pdf', maxSize:
         <input ref={inputRef} type="file" accept={accept} style={{ display: 'none' }} onChange={(e) => { const f = e.target.files?.[0]; if (f) handleFile(f); }} />
       </div>
 
-      {result && (
+      {filename && (
         <div className="wx-adv-ocr__result">
           <div className="wx-adv-ocr__result-header">
-            <span>Extracted Text</span>
-            <button className="wx-adv-ocr__result-copy" onClick={handleCopy} type="button">
-              {copied ? '✓ Copied' : '📋 Copy'}
-            </button>
+            <span>Selected file</span>
           </div>
-          <div className="wx-adv-ocr__result-text">{result}</div>
+          <div className="wx-adv-ocr__result-text">
+            {filename}
+            {'\n\n'}
+            No text was extracted. OCRScanner is an integration shell — connect an
+            OCR engine (e.g. Tesseract.js) or a cloud OCR API to extract real text.
+          </div>
         </div>
       )}
     </div>

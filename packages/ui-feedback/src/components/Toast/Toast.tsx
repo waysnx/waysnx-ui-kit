@@ -83,7 +83,13 @@ export function ToastProvider({
 
   const addToast = useCallback(
     (type: ToastType, message: string | React.ReactNode, duration = 4000) => {
-      const id = Date.now().toString(36) + Math.random().toString(36).slice(2);
+      // Per-toast collection key (application state, not a DOM/aria id), so this
+      // uses a unique random identifier rather than useId(). Prefer the Web
+      // Crypto UUID with a timestamp+random fallback for non-secure/older envs.
+      const id =
+        typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function'
+          ? crypto.randomUUID()
+          : `toast_${Date.now().toString(36)}_${Math.random().toString(36).slice(2)}`;
       setToasts((prev) => {
         const next = [...prev, { id, type, message, duration }];
         return next.slice(-maxToasts);

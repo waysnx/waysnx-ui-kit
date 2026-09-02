@@ -1,6 +1,15 @@
 import { useState } from 'react';
 import type { MapViewProps } from '../../types';
 
+/**
+ * MapView — ADAPTER-BASED map container.
+ *
+ * Renders map chrome and controls but does NOT display an interactive map on
+ * its own: `@waysnx/ui-maps` bundles no maps vendor SDK. Connect a maps adapter
+ * (e.g. Google Maps / Mapbox / custom) via `MapsProvider` to render real tiles
+ * and markers. Until then, an informational placeholder is shown. See the
+ * package README "Adapter / backend requirement" section.
+ */
 export function MapView({
   markers = [],
   mapType = 'roadmap',

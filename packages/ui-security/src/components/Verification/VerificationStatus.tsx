@@ -1,4 +1,4 @@
-/**
+﻿/**
  * VerificationStatus Component
  * 
  * Display verification progress and status:
@@ -22,7 +22,6 @@ export interface VerificationStepInfo {
 }
 
 export interface VerificationStatusProps {
-  [key: string]: any;
   /**
    * Verification steps and their status
    */
@@ -55,7 +54,6 @@ export interface VerificationStatusProps {
 }
 
 interface StepDisplayInfo {
-  [key: string]: any;
   icon: string;
   label: string;
   color: string;
@@ -77,21 +75,21 @@ export const VerificationStatus: React.FC<VerificationStatusProps> = ({
     switch (status) {
       case 'verified':
         return {
-          icon: '✓',
+          icon: 'âœ“',
           label: 'Verified',
           color: '#22c55e',
           bgColor: '#dcfce7',
         };
       case 'failed':
         return {
-          icon: '✕',
+          icon: 'âœ•',
           label: 'Failed',
           color: '#ef4444',
           bgColor: '#fee2e2',
         };
       case 'in-progress':
         return {
-          icon: '⟳',
+          icon: 'âŸ³',
           label: 'In Progress',
           color: '#3b82f6',
           bgColor: '#dbeafe',
@@ -99,7 +97,7 @@ export const VerificationStatus: React.FC<VerificationStatusProps> = ({
       case 'pending':
       default:
         return {
-          icon: '○',
+          icon: 'â—‹',
           label: 'Pending',
           color: '#6b7280',
           bgColor: '#f3f4f6',

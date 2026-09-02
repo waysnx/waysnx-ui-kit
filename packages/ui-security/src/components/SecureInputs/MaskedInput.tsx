@@ -1,4 +1,4 @@
-/**
+﻿/**
  * MaskedInput Component
  * 
  * Text input with input masking (credit cards, phone numbers, etc).
@@ -9,7 +9,6 @@ import { Input } from '@waysnx/ui-core';
 
 export interface MaskedInputProps
   extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'type' | 'onChange'> {
-  [key: string]: any;
   /**
    * Input mask pattern (e.g., '(999) 999-9999')
    * 9 = digit, A = letter, X = alphanumeric

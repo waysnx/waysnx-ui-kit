@@ -42,6 +42,12 @@ export function App() {
 }
 ```
 
+## Testing status
+
+This package contains unit tests under `src/__tests__/` (components, hooks, utils, and a service) written for **Vitest**. As of 1.0.0 these tests are **not wired up**: the repository intentionally ships no unit-test runner (no Vitest/Jest dependency, config, or `test` script). The tests are retained for a future, repository-wide unit-testing decision and are **deferred post-1.0.0**.
+
+The operational test layer for 1.0.0 is Storybook + Playwright (browser-level), which covers the P0 release-contract regressions.
+
 ## Documentation
 
 Full component and API reference: https://uikit.waysnx.tech

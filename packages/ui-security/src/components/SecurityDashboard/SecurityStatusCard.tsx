@@ -1,4 +1,4 @@
-/**
+﻿/**
  * SecurityStatusCard Component
  * 
  * Card displaying security status with icon and action.
@@ -11,7 +11,6 @@ import { Badge } from '@waysnx/ui-feedback';
 export type StatusType = 'secure' | 'warning' | 'critical' | 'info';
 
 export interface SecurityStatusCardProps {
-  [key: string]: any;
   /**
    * Status title
    */
@@ -48,10 +47,10 @@ export interface SecurityStatusCardProps {
 
 const getStatusStyles = (status: StatusType) => {
   const styles = {
-    secure: { color: 'success', icon: '✓' },
-    warning: { color: 'warning', icon: '⚠️' },
-    critical: { color: 'danger', icon: '🚨' },
-    info: { color: 'info', icon: 'ℹ️' },
+    secure: { color: 'success', icon: 'âœ“' },
+    warning: { color: 'warning', icon: 'âš ï¸' },
+    critical: { color: 'danger', icon: 'ðŸš¨' },
+    info: { color: 'info', icon: 'â„¹ï¸' },
   };
   return styles[status];
 };

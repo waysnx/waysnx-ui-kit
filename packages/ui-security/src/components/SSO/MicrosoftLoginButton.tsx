@@ -1,4 +1,4 @@
-/**
+﻿/**
  * MicrosoftLoginButton Component
  * 
  * Microsoft/Azure AD OAuth login button.
@@ -8,7 +8,6 @@ import React from 'react';
 import { Button } from '@waysnx/ui-core';
 
 export interface MicrosoftLoginButtonProps {
-  [key: string]: any;
   /**
    * Microsoft OAuth Client ID
    */
@@ -69,7 +68,7 @@ export const MicrosoftLoginButton: React.FC<MicrosoftLoginButtonProps> = ({
      
      
     >
-      Ⓜ️ Continue with Microsoft
+      â“‚ï¸ Continue with Microsoft
     </Button>
   );
 };

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * ScopeGate Component
  * 
  * Gate component for OAuth/OIDC scope-based access control.
@@ -9,7 +9,6 @@ import React, { ReactNode } from 'react';
 
 
 export interface ScopeGateProps {
-  [key: string]: any;
   /**
    * Scope(s) required
    */

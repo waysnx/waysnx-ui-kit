@@ -1,4 +1,4 @@
-/**
+﻿/**
  * GoogleLoginButton Component
  * 
  * Google OAuth login button.
@@ -8,7 +8,6 @@ import React from 'react';
 import { Button } from '@waysnx/ui-core';
 
 export interface GoogleLoginButtonProps {
-  [key: string]: any;
   /**
    * Google OAuth Client ID
    */
@@ -70,7 +69,7 @@ export const GoogleLoginButton: React.FC<GoogleLoginButtonProps> = ({
      
      
     >
-      🔍 Continue with Google
+      ðŸ” Continue with Google
     </Button>
   );
 };

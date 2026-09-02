@@ -6,6 +6,7 @@
  */
 
 import type { PasswordPolicy } from '../types';
+import { secureRandomInt, secureShuffle } from './crypto';
 
 /**
  * Password strength levels
@@ -309,25 +310,22 @@ export function generatePassword(
   if (includeNumbers) requirements.push(numbers);
   if (includeSpecialChars) requirements.push(specialChars);
 
-  // Add one character from each requirement
+  // Add one character from each requirement (cryptographically-secure selection)
   for (const req of requirements) {
     if (password.length < length) {
-      const randomIndex = Math.floor(Math.random() * req.length);
-      password += req[randomIndex];
+      password += req[secureRandomInt(req.length)];
     }
   }
 
-  // Fill remaining length with random characters
+  // Fill remaining length with cryptographically-secure random characters
   for (let i = password.length; i < length; i++) {
-    const randomIndex = Math.floor(Math.random() * chars.length);
-    password += chars[randomIndex];
+    password += chars[secureRandomInt(chars.length)];
   }
 
-  // Shuffle the password
-  return password
-    .split('')
-    .sort(() => Math.random() - 0.5)
-    .join('');
+  // Shuffle so the guaranteed leading characters are not positionally
+  // predictable. Uses an unbiased Fisher-Yates shuffle over Web Crypto rather
+  // than the biased `sort(() => Math.random() - 0.5)` idiom.
+  return secureShuffle(password.split('')).join('');
 }
 
 /**

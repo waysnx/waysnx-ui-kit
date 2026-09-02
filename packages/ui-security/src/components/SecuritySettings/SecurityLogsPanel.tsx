@@ -1,4 +1,4 @@
-/**
+﻿/**
  * SecurityLogsPanel Component
  * 
  * View and export security logs.
@@ -9,7 +9,6 @@ import { Button } from '@waysnx/ui-core';
 import { Stack } from '@waysnx/ui-layout';
 
 export interface SecurityLogsPanelProps {
-  [key: string]: any;
   onViewLogs?: () => void;
   onExportLogs?: (format: string) => void;
 }

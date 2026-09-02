@@ -1,4 +1,4 @@
-/**
+﻿/**
  * SensitiveText Component
  * 
  * Display sensitive text with reveal/hide toggle and auto-obscuring.
@@ -8,7 +8,6 @@ import React, { useState } from 'react';
 import { Button } from '@waysnx/ui-core';
 
 export interface SensitiveTextProps {
-  [key: string]: any;
   /**
    * The sensitive text to display/hide
    */
@@ -24,7 +23,7 @@ export interface SensitiveTextProps {
   autoHideMs?: number;
   /**
    * Character to use for masking
-   * @default '•'
+   * @default 'â€¢'
    */
   maskCharacter?: string;
   /**
@@ -67,7 +66,7 @@ export const SensitiveText: React.FC<SensitiveTextProps> = ({
   text,
   initiallyRevealed = false,
   autoHideMs = 0,
-  maskCharacter = '•',
+  maskCharacter = 'â€¢',
   showLastCharacters = 0,
   revealLabel = 'Reveal',
   hideLabel = 'Hide',
@@ -171,7 +170,7 @@ export const SensitiveText: React.FC<SensitiveTextProps> = ({
             }}
             title="Copy to clipboard"
           >
-            ðŸ“‹
+            Ã°Å¸â€œâ€¹
           </Button>
         )}
       </div>

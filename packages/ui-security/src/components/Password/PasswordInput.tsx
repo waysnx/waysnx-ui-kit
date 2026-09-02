@@ -1,4 +1,4 @@
-/**
+﻿/**
  * PasswordInput Component
  * 
  * A secure password input component with:
@@ -82,7 +82,6 @@ export interface PasswordInputProps {
   /**
    * Additional props
    */
-  [key: string]: any;
 }
 
 /**
@@ -390,7 +389,7 @@ export const PasswordInput = forwardRef<HTMLInputElement, PasswordInputProps>(
           }
 
           .waysnx-error-message::before {
-            content: '✕';
+            content: 'âœ•';
             font-weight: bold;
           }
 

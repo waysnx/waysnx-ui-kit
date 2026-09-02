@@ -5,6 +5,8 @@
  * backup codes, and recovery workflows.
  */
 
+import { generateSecureId, secureRandomString } from './crypto';
+
 /**
  * MFA configuration interface
  */
@@ -58,14 +60,12 @@ export interface TOTPVerificationResult {
  * @returns Base32-encoded secret
  */
 export function generateTOTPSecret(length: number = 32): string {
+  // RFC 4648 base32 alphabet. Each character carries 5 bits of entropy, so the
+  // default 32-character secret provides 160 bits — the standard for TOTP.
+  // Uses cryptographically-secure, unbiased selection (Web Crypto) rather than
+  // Math.random().
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';
-  let secret = '';
-
-  for (let i = 0; i < length; i++) {
-    secret += alphabet[Math.floor(Math.random() * alphabet.length)];
-  }
-
-  return secret;
+  return secureRandomString(length, alphabet);
 }
 
 /**
@@ -162,15 +162,12 @@ export function generateBackupCodes(
   const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 
   for (let i = 0; i < count; i++) {
-    let code = format;
+    let code = '';
 
-    for (let j = 0; j < code.length; j++) {
-      if (code[j] === 'X') {
-        code =
-          code.substring(0, j) +
-          characters[Math.floor(Math.random() * characters.length)] +
-          code.substring(j + 1);
-      }
+    // Backup codes are single-use authentication credentials, so each 'X'
+    // placeholder is filled with a cryptographically-secure random character.
+    for (let j = 0; j < format.length; j++) {
+      code += format[j] === 'X' ? secureRandomString(1, characters) : format[j];
     }
 
     codes.push(code);
@@ -242,7 +239,7 @@ export function createMFAConfig(
  * Generate MFA config ID
  */
 function generateMFAConfigId(): string {
-  return `mfa_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+  return generateSecureId('mfa');
 }
 
 /**

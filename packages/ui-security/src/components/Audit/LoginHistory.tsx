@@ -1,4 +1,4 @@
-/**
+﻿/**
  * LoginHistory Component
  * 
  * Display login attempts history.
@@ -44,7 +44,6 @@ export interface LoginRecord {
 }
 
 export interface LoginHistoryProps {
-  [key: string]: any;
   /**
    * Login records
    */
@@ -127,7 +126,7 @@ export const LoginHistory: React.FC<LoginHistoryProps> = ({
                   )}
                 </div>
                 <Badge color={record.status === 'success' ? 'success' : 'danger'}>
-                  {record.status === 'success' ? '✓ Success' : '✕ Failed'}
+                  {record.status === 'success' ? 'âœ“ Success' : 'âœ• Failed'}
                 </Badge>
               </div>
 

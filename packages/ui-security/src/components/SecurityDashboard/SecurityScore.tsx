@@ -1,4 +1,4 @@
-/**
+﻿/**
  * SecurityScore Component
  * 
  * Display overall security score with breakdown by category.
@@ -22,7 +22,6 @@ export interface ScoreCategory {
 }
 
 export interface SecurityScoreProps {
-  [key: string]: any;
   /**
    * Overall score 0-100
    */

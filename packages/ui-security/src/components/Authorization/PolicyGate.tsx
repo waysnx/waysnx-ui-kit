@@ -1,4 +1,4 @@
-/**
+﻿/**
  * PolicyGate Component
  * 
  * Gate component for policy-based access control.
@@ -9,7 +9,6 @@ import React, { ReactNode } from 'react';
 
 
 export interface PolicyGateProps {
-  [key: string]: any;
   /**
    * Policy identifier
    */

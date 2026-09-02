@@ -1,4 +1,4 @@
-/**
+﻿/**
  * SessionCountdown Component
  * 
  * Displays session remaining time countdown.
@@ -7,7 +7,6 @@
 import React, { useEffect } from 'react';
 
 export interface SessionCountdownProps {
-  [key: string]: any;
   /**
    * Total session duration in milliseconds
    */

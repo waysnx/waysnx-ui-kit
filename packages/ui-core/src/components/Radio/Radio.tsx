@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Radio.css';
 import { getCachedOptions } from '../../utils/xrefCache';
+import { useTranslation } from '@waysnx/ui-i18n';
 
 export interface RadioOption {
   label: string;
@@ -52,6 +53,7 @@ export function Radio({
   error,
   testId,
 }: RadioProps) {
+  const { t } = useTranslation();
   const [options, setOptions] = useState<RadioOption[]>(propOptions || []);
   const [loading, setLoading] = useState(false);
 
@@ -99,10 +101,10 @@ export function Radio({
         </legend>
       )}
       
-      {loading && <div className="wx-radio-loading">Loading options...</div>}
+      {loading && <div className="wx-radio-loading">{t('select.loadingOptions')}</div>}
       
       {!loading && options.length === 0 && (
-        <div className="wx-radio-no-options">No options available</div>
+        <div className="wx-radio-no-options">{t('select.noOptions')}</div>
       )}
       
       {!loading && options.map((option) => (

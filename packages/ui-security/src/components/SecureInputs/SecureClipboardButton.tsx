@@ -1,4 +1,4 @@
-/**
+﻿/**
  * SecureClipboardButton Component
  * 
  * Button to securely copy sensitive content to clipboard with auto-clearing.
@@ -8,7 +8,6 @@ import React, { useState, useCallback } from 'react';
 import { Button } from '@waysnx/ui-core';
 
 export interface SecureClipboardButtonProps {
-  [key: string]: any;
   /**
    * Text or function that returns text to copy
    */

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * DeviceVerificationDialog Component
  * 
  * Device verification/trust dialog:
@@ -15,7 +15,6 @@ import { Alert } from '@waysnx/ui-feedback';
 import type { DeviceInfo } from '../../types';
 
 export interface DeviceVerificationDialogProps {
-  [key: string]: any;
   /**
    * Whether dialog is open
    */

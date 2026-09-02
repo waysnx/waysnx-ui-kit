@@ -41,7 +41,8 @@ export function TimePicker({
   const { t } = useTranslation();
   warn(Boolean(label || ariaLabel), 'TimePicker needs label');
 
-  const generatedId = id || `wx-timepicker-${Math.random().toString(36).slice(2)}`;
+  const reactId = React.useId();
+  const generatedId = id || `wx-timepicker-${reactId}`;
   
   // Build aria-describedby with error and hint
   const descriptionIds = [];

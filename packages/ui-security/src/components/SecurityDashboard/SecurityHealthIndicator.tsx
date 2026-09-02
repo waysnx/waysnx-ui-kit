@@ -1,4 +1,4 @@
-/**
+﻿/**
  * SecurityHealthIndicator Component
  * 
  * Visual health indicator for overall security posture.
@@ -22,7 +22,6 @@ export interface HealthMetric {
 }
 
 export interface SecurityHealthIndicatorProps {
-  [key: string]: any;
   /**
    * Overall health 0-100
    */

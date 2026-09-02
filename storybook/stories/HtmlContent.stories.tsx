@@ -68,3 +68,23 @@ export const Complex: Story = {
     `,
   },
 };
+
+// Batch 9 regression: a target="_blank" link with a pre-existing legitimate
+// `rel` token. The sanitizer must ADD noopener + noreferrer while PRESERVING
+// the existing token (here `author`).
+export const BlankLinkRelPreserved: Story = {
+  args: {
+    content:
+      '<p>Visit <a href="https://example.com" target="_blank" rel="author">our website</a>.</p>',
+  },
+};
+
+// Batch 9 regression: malicious HTML must be sanitized (script/onerror removed).
+export const MaliciousHtml: Story = {
+  args: {
+    content:
+      '<p>Safe content</p>' +
+      '<script>window.__xss_htmlcontent = true;</script>' +
+      '<img src="x" onerror="window.__xss_htmlcontent = true" />',
+  },
+};

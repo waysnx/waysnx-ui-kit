@@ -1,4 +1,4 @@
-/**
+﻿/**
  * PasswordRequirements Component
  * 
  * Displays password policy requirements with:
@@ -55,7 +55,6 @@ export interface PasswordRequirementsProps {
 }
 
 interface Requirement {
-  [key: string]: any;
   key: string;
   label: string;
   met: boolean;

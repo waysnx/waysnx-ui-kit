@@ -1,4 +1,4 @@
-/**
+﻿/**
  * SessionPolicyPanel Component
  * 
  * Session timeout and policy management.
@@ -9,7 +9,6 @@ import { Button, Checkbox } from '@waysnx/ui-core';
 import { Stack } from '@waysnx/ui-layout';
 
 export interface SessionPolicyPanelProps {
-  [key: string]: any;
   sessionTimeoutMinutes?: number;
   onSave?: (config: any) => void;
 }

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * MFASetupWizard Component
  * 
  * Multi-step wizard for setting up MFA methods (TOTP, backup codes, etc).
@@ -17,7 +17,6 @@ export interface MFASetupStep {
 }
 
 export interface MFASetupWizardProps {
-  [key: string]: any;
   /**
    * Available MFA methods to set up
    */

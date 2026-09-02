@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Auth0LoginButton Component
  * 
  * Auth0 SSO login button.
@@ -8,7 +8,6 @@ import React from 'react';
 import { Button } from '@waysnx/ui-core';
 
 export interface Auth0LoginButtonProps {
-  [key: string]: any;
   /**
    * Auth0 Client ID
    */
@@ -74,7 +73,7 @@ export const Auth0LoginButton: React.FC<Auth0LoginButtonProps> = ({
      
      
     >
-      🔑 Continue with Auth0
+      ðŸ”‘ Continue with Auth0
     </Button>
   );
 };

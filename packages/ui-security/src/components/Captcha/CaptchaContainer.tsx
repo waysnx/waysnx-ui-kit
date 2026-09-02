@@ -1,4 +1,4 @@
-/**
+﻿/**
  * CaptchaContainer Component
  * 
  * Container to switch between different CAPTCHA providers.
@@ -13,7 +13,6 @@ import { HCaptcha } from './HCaptcha';
 export type CaptchaProvider = 'google' | 'turnstile' | 'hcaptcha';
 
 export interface CaptchaContainerProps {
-  [key: string]: any;
   /**
    * CAPTCHA provider to use
    */

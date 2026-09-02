@@ -1,4 +1,4 @@
-/**
+﻿/**
  * SessionTimeoutDialog Component
  * 
  * Modal dialog warning user about impending session timeout.
@@ -10,7 +10,6 @@ import { Modal } from '@waysnx/ui-feedback';
 import { Stack } from '@waysnx/ui-layout';
 
 export interface SessionTimeoutDialogProps {
-  [key: string]: any;
   /**
    * Whether dialog is open
    */

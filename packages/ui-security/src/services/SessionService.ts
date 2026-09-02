@@ -42,6 +42,7 @@ import {
   SessionLockState,
   SessionValidationResult,
 } from '../types/session';
+import { generateSecureId } from '../utils/crypto';
 
 /**
  * Session service configuration
@@ -594,7 +595,8 @@ export class SessionService {
    * Generate unique session ID
    */
   private generateSessionId(): string {
-    return `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    // Unpredictable session identifiers (Web Crypto) to resist session-guessing.
+    return generateSecureId('session');
   }
 
   /**

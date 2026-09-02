@@ -1,4 +1,4 @@
-/**
+﻿/**
  * ChangePasswordForm Component
  * 
  * Form for users to change their existing password
@@ -53,14 +53,12 @@ export interface ChangePasswordFormProps {
 }
 
 interface FormData {
-  [key: string]: any;
   currentPassword: string;
   newPassword: string;
   confirmPassword: string;
 }
 
 interface FormErrors {
-  [key: string]: any;
   currentPassword?: string;
   newPassword?: string;
   confirmPassword?: string;

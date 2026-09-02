@@ -1,4 +1,4 @@
-/**
+﻿/**
  * LoginCard Component
  * 
  * Uses @waysnx/ui-layout Card as base container
@@ -9,7 +9,6 @@ import React from 'react';
 import LoginForm, { LoginFormProps, LoginFormData } from './LoginForm';
 
 export interface LoginCardProps extends Omit<LoginFormProps, 'onSubmit'> {
-  [key: string]: any;
   title?: string;
   description?: string;
   logo?: string | React.ReactNode;

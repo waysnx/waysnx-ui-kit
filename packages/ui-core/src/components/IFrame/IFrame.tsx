@@ -15,7 +15,19 @@ export interface IFrameProps {
   height?: string | number;
   /** Allow fullscreen */
   allowFullscreen?: boolean;
-  /** Sandbox restrictions e.g. "allow-scripts allow-same-origin" */
+  /**
+   * Sandbox restrictions applied to the embedded content.
+   *
+   * Defaults to a restrictive policy (`DEFAULT_SANDBOX`) so the component is
+   * secure-by-default, matching its documented contract of isolating
+   * third-party content. Pass a custom space-separated token string to widen
+   * or narrow the policy, or an empty string (`""`) to apply the most
+   * restrictive sandbox (all permissions denied).
+   *
+   * Note: intentionally does NOT combine `allow-scripts` with
+   * `allow-same-origin` by default, since together they let framed content
+   * remove its own sandbox.
+   */
   sandbox?: string;
   /** Hint text below the iframe */
   hint?: string;
@@ -24,6 +36,16 @@ export interface IFrameProps {
   testId?: string;
 }
 
+/**
+ * Secure-by-default sandbox policy.
+ *
+ * Supports the documented use cases (embedded video, maps, forms, third-party
+ * widgets) while keeping the frame isolated. `allow-same-origin` is deliberately
+ * omitted because combining it with `allow-scripts` would let the framed
+ * document script its way out of the sandbox.
+ */
+export const DEFAULT_SANDBOX = 'allow-scripts allow-popups allow-forms allow-presentation';
+
 export function IFrame({
   src,
   title,
@@ -31,7 +53,7 @@ export function IFrame({
   width = '100%',
   height = 400,
   allowFullscreen = false,
-  sandbox,
+  sandbox = DEFAULT_SANDBOX,
   hint,
   className,
   testId,
