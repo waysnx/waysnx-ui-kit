@@ -49,44 +49,48 @@ export const UnauthorizedPage: React.FC<UnauthorizedPageProps> = ({
   return (
     <div
       className={className}
-      display="flex"
-      alignItems="center"
-      justifyContent="center"
-      minHeight="100vh"
-      padding="lg"
-      backgroundColor="background"
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        minHeight: '100vh',
+        padding: 16,
+        background: 'var(--wx-color-background, #ffffff)',
+      }}
     >
-      <div maxWidth="500px" textAlign="center">
+      <div style={{ maxWidth: '500px', textAlign: 'center' }}>
         {/* Status Code */}
-        <div marginBottom="2xl">
-          <span as="div" fontSize="5xl" fontWeight="bold" color="error" marginBottom="md">
+        <div style={{ marginBottom: 32 }}>
+          <div style={{ fontSize: '3rem', fontWeight: 700, color: 'var(--wx-color-danger, #d4183d)', marginBottom: 12 }}>
             {statusCode}
-          </span>
-          <span as="h1" fontSize="2xl" fontWeight="bold" marginBottom="md">
+          </div>
+          <h1 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: 12 }}>
             {title}
-          </span>
-          <span fontSize="base" color="muted" lineHeight="relaxed">
+          </h1>
+          <span style={{ display: 'block', fontSize: '1rem', color: 'var(--wx-color-text-muted, #717182)', lineHeight: 1.625 }}>
             {message}
           </span>
         </div>
 
         {/* Actions */}
-        <Stack gap="md" direction="row" justifyContent="center">
-          {onLogin && (
-            <Button variant="primary" onClick={onLogin}>
-              Log In
-            </Button>
-          )}
-          {onHome && (
-            <Button variant="outline" onClick={onHome}>
-              Go Home
-            </Button>
-          )}
-        </Stack>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Stack gap="md" direction="horizontal">
+            {onLogin && (
+              <Button variant="primary" onClick={onLogin}>
+                Log In
+              </Button>
+            )}
+            {onHome && (
+              <Button variant="outline" onClick={onHome}>
+                Go Home
+              </Button>
+            )}
+          </Stack>
+        </div>
 
         {/* Additional Info */}
-        <div marginTop="2xl" paddingTop="2xl" borderTop="1px solid">
-          <span fontSize="xs" color="muted">
+        <div style={{ marginTop: 32, paddingTop: 32, borderTop: '1px solid var(--wx-color-border, #ccc)' }}>
+          <span style={{ fontSize: '0.75rem', color: 'var(--wx-color-text-muted, #717182)' }}>
             If you believe this is an error, please contact support.
           </span>
         </div>

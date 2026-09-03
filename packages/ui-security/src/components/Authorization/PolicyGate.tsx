@@ -66,11 +66,11 @@ export const PolicyGate: React.FC<PolicyGateProps> = ({
     <div className={className} role="status" aria-label={`Policy ${policyId} not met`}>
       {fallback || (
         <div>
-          <span color="error" fontSize="sm" fontWeight="medium">
+          <span style={{ display: 'block', color: 'var(--wx-color-danger, #d4183d)', fontSize: '0.875rem', fontWeight: 500 }}>
             Access Denied
           </span>
           {policyDetails?.reason && (
-            <span color="muted" fontSize="xs">
+            <span style={{ display: 'block', color: 'var(--wx-color-text-muted, #717182)', fontSize: '0.75rem' }}>
               {policyDetails.reason}
             </span>
           )}

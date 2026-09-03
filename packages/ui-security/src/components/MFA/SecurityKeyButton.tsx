@@ -109,14 +109,13 @@ export const SecurityKeyButton: React.FC<SecurityKeyButtonProps> = ({
         onClick={handleSecurityKeyAuth}
         variant={variant}
         disabled={disabled || isLoading || !isSupported}
-       
         title={!isSupported ? 'Security key authentication not supported' : undefined}
       >
-        ðŸ” {isLoading ? loadingLabel : label}
+        🔒 {isLoading ? loadingLabel : label}
       </Button>
 
       {message && (
-        <span fontSize="sm" color="info" marginTop="sm" textAlign="center">
+        <span style={{ display: 'block', fontSize: '0.875rem', color: 'var(--wx-color-info, #2563eb)', marginTop: 8, textAlign: 'center' }}>
           {message}
         </span>
       )}

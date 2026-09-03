@@ -116,36 +116,10 @@ export function encodeBase32(input: string): string {
   return encoded.padEnd(Math.ceil(encoded.length / 8) * 8, '=');
 }
 
-/**
- * Verify TOTP code
- * Note: In production, use a proper TOTP library like 'speakeasy' or 'otplib'
- * 
- * @param secret - TOTP secret
- * @param code - 6-digit code to verify
- * @param _window - Time window tolerance (default: 1, means ±30 seconds)
- * @returns Verification result
- */
-export function verifyTOTPCode(
-  _secret: string,
-  code: string,
-  _window: number = 1
-): boolean {
-  // This is a simplified implementation
-  // In production, use a proper TOTP library
-  if (!code || code.length !== 6 || !/^\d+$/.test(code)) {
-    return false;
-  }
-
-  // Placeholder for TOTP verification logic
-  // Real implementation would:
-  // 1. Decode the secret from base32
-  // 2. Generate HMAC-SHA1 based on current time
-  // 3. Extract 6 digits from the hash
-  // 4. Compare with provided code
-  // 5. Check time window tolerance
-
-  return true; // Simplified - actual verification would be more complex
-}
+// Genuine RFC 6238 TOTP primitives live in ./totp (isolated so they depend only
+// on Web Crypto and remain independently testable). Re-exported here to keep the
+// public MFA API surface stable.
+export { base32Decode, generateTOTPCode, verifyTOTPCode } from './totp';
 
 /**
  * Generate backup codes

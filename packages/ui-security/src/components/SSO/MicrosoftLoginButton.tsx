@@ -1,4 +1,4 @@
-﻿/**
+/**
  * MicrosoftLoginButton Component
  * 
  * Microsoft/Azure AD OAuth login button.
@@ -68,7 +68,7 @@ export const MicrosoftLoginButton: React.FC<MicrosoftLoginButtonProps> = ({
      
      
     >
-      â“‚ï¸ Continue with Microsoft
+      ⚠ Continue with Microsoft
     </Button>
   );
 };

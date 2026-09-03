@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Auth0LoginButton Component
  * 
  * Auth0 SSO login button.
@@ -73,7 +73,7 @@ export const Auth0LoginButton: React.FC<Auth0LoginButtonProps> = ({
      
      
     >
-      ðŸ”‘ Continue with Auth0
+      [unlock] Continue with Auth0
     </Button>
   );
 };

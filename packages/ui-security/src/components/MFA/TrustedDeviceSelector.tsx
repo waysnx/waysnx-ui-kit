@@ -5,7 +5,7 @@
  */
 
 import React, { useState } from 'react';
-import { Button, Checkbox } from '@waysnx/ui-core';
+import { Checkbox } from '@waysnx/ui-core';
 import { Stack } from '@waysnx/ui-layout';
 
 export interface TrustedDeviceSelectorProps {
@@ -65,23 +65,25 @@ export const TrustedDeviceSelector: React.FC<TrustedDeviceSelectorProps> = ({
     <div>
       {/* Trust Checkbox */}
       <div
-        padding="md"
-        backgroundColor="background-alt"
-        borderRadius="md"
-        marginBottom="lg"
-        border="1px solid var(--color-border, #ccc)"
+        style={{
+          padding: 12,
+          background: 'var(--wx-color-background-alt, #f3f3f5)',
+          borderRadius: 8,
+          marginBottom: 16,
+          border: '1px solid var(--wx-color-border, #ccc)',
+        }}
       >
-        <div display="flex" alignItems="flex-start" gap="md">
+        <div style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
           <Checkbox
             checked={selected}
             onChange={(e: any) => handleChange(e.target.checked)}
             disabled={disabled}
           />
-          <div flex={1}>
-            <span fontWeight="bold" marginBottom="xs">
+          <div style={{ flex: 1 }}>
+            <span style={{ display: 'block', fontWeight: 700, marginBottom: 4 }}>
               Trust {deviceName}
             </span>
-            <span fontSize="sm" color="muted">
+            <span style={{ display: 'block', fontSize: '0.875rem', color: 'var(--wx-color-text-muted, #717182)' }}>
               {message.replace('{days}', selectedDuration.toString())}
             </span>
           </div>
@@ -91,14 +93,15 @@ export const TrustedDeviceSelector: React.FC<TrustedDeviceSelectorProps> = ({
       {/* Duration Selection */}
       {selected && (
         <div
-          padding="md"
-          backgroundColor="info"
-          borderRadius="md"
-          marginBottom="lg"
-          borderLeft="4px solid"
-          borderLeftColor="info"
+          style={{
+            padding: 12,
+            background: 'var(--wx-color-info, #2563eb)',
+            borderRadius: 8,
+            marginBottom: 16,
+            borderLeft: '4px solid var(--wx-color-info, #2563eb)',
+          }}
         >
-          <span fontSize="sm" fontWeight="bold" marginBottom="md">
+          <span style={{ display: 'block', fontSize: '0.875rem', fontWeight: 700, marginBottom: 12 }}>
             How long to trust this device?
           </span>
 
@@ -106,14 +109,16 @@ export const TrustedDeviceSelector: React.FC<TrustedDeviceSelectorProps> = ({
             {[7, 14, 30, 90].map(days => (
               <div
                 key={days}
-                padding="sm"
-                backgroundColor="background"
-                borderRadius="md"
-                cursor="pointer"
-                border={`2px solid ${selectedDuration === days ? 'var(--color-primary, blue)' : 'var(--color-border, #ccc)'}`}
+                style={{
+                  padding: 8,
+                  background: 'var(--wx-color-background, #ffffff)',
+                  borderRadius: 8,
+                  cursor: 'pointer',
+                  border: `2px solid ${selectedDuration === days ? 'var(--wx-color-primary, #030213)' : 'var(--wx-color-border, #ccc)'}`,
+                }}
                 onClick={() => handleDurationChange(days)}
               >
-                <span fontSize="sm">
+                <span style={{ fontSize: '0.875rem' }}>
                   {days} days {days === 30 ? '(Recommended)' : ''}
                 </span>
               </div>
@@ -124,16 +129,17 @@ export const TrustedDeviceSelector: React.FC<TrustedDeviceSelectorProps> = ({
 
       {/* Security Notice */}
       <div
-        padding="md"
-        backgroundColor="warning"
-        borderRadius="md"
-        borderLeft="4px solid"
-        borderLeftColor="warning"
+        style={{
+          padding: 12,
+          background: 'var(--wx-color-warning, #f59e0b)',
+          borderRadius: 8,
+          borderLeft: '4px solid var(--wx-color-warning, #f59e0b)',
+        }}
       >
-        <span fontSize="sm" fontWeight="bold" marginBottom="xs">
-          âš ï¸ Security Notice
+        <span style={{ display: 'block', fontSize: '0.875rem', fontWeight: 700, marginBottom: 4 }}>
+          ⚠ Security Notice
         </span>
-        <span fontSize="sm">
+        <span style={{ display: 'block', fontSize: '0.875rem' }}>
           Only trust devices you own and use in secure locations. Public computers should not be
           trusted.
         </span>
@@ -142,14 +148,16 @@ export const TrustedDeviceSelector: React.FC<TrustedDeviceSelectorProps> = ({
       {/* Info Box */}
       {selected && (
         <div
-          padding="md"
-          backgroundColor="success"
-          borderRadius="md"
-          marginTop="lg"
-          textAlign="center"
+          style={{
+            padding: 12,
+            background: 'var(--wx-color-success, #16a34a)',
+            borderRadius: 8,
+            marginTop: 16,
+            textAlign: 'center',
+          }}
         >
-          <span fontSize="sm" fontWeight="bold">
-            âœ“ Device will be trusted for {selectedDuration} days
+          <span style={{ fontSize: '0.875rem', fontWeight: 700 }}>
+            ✓ Device will be trusted for {selectedDuration} days
           </span>
         </div>
       )}

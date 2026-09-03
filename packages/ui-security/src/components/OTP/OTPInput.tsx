@@ -1,4 +1,4 @@
-﻿/**
+/**
  * OTPInput Component
  * 
  * One-Time Password input with:
@@ -78,7 +78,7 @@ export const OTPInput: React.FC<OTPInputProps> = ({
   onChange,
   value = '',
   disabled = false,
-  placeholder = 'â€¢',
+  placeholder = '•',
   label,
   error,
   helperText,

@@ -1,4 +1,4 @@
-﻿/**
+/**
  * EncryptionBadge Component
  * 
  * Badge showing encryption status.
@@ -24,20 +24,22 @@ export interface EncryptionBadgeProps {
   showDetails?: boolean;
 }
 
-const getStatusColor = (status: EncryptionStatus) => {
-  const colors = {
+type BadgeColor = 'default' | 'success' | 'error' | 'warning' | 'info';
+
+const getStatusColor = (status: EncryptionStatus): BadgeColor => {
+  const colors: Record<EncryptionStatus, BadgeColor> = {
     encrypted: 'success',
     partial: 'warning',
-    unencrypted: 'danger',
+    unencrypted: 'error',
   };
   return colors[status];
 };
 
 const getStatusIcon = (status: EncryptionStatus) => {
   const icons = {
-    encrypted: 'ðŸ”’',
-    partial: 'âš ï¸',
-    unencrypted: 'ðŸ”“',
+    encrypted: '[lock]',
+    partial: '⚠',
+    unencrypted: '[key]',
   };
   return icons[status];
 };

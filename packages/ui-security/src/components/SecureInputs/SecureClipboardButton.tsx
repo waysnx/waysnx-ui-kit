@@ -131,8 +131,6 @@ export const SecureClipboardButton: React.FC<SecureClipboardButtonProps> = ({
       onClick={handleCopy}
       variant={variant}
       disabled={disabled || isLoading}
-     
-      color={showSuccess ? 'success' : undefined}
     >
       {showSuccess ? successLabel : label}
     </Button>

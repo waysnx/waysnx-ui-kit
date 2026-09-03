@@ -3,6 +3,12 @@
  * Barrel export for all services
  */
 
+import { AuthenticationService } from './AuthenticationService';
+import { AuthorizationService } from './AuthorizationService';
+import { SessionService } from './SessionService';
+import { EncryptionService } from './EncryptionService';
+import { AuditService } from './AuditService';
+
 export { AuthenticationService } from './AuthenticationService';
 export { AuthorizationService } from './AuthorizationService';
 export { SessionService } from './SessionService';
@@ -27,10 +33,13 @@ export {
   SessionExpiredError,
 } from './errors/SecurityError';
 
+// ESM-safe default barrel built from the imported classes. (Previously used
+// CommonJS `require(...)`, which throws "Can't find variable: require" in
+// browser/ESM contexts such as Storybook/Vite.)
 export default {
-  AuthenticationService: require('./AuthenticationService').default,
-  AuthorizationService: require('./AuthorizationService').default,
-  SessionService: require('./SessionService').default,
-  EncryptionService: require('./EncryptionService').default,
-  AuditService: require('./AuditService').default,
+  AuthenticationService,
+  AuthorizationService,
+  SessionService,
+  EncryptionService,
+  AuditService,
 };

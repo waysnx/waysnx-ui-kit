@@ -48,12 +48,14 @@ export const CaptchaContainer: React.FC<CaptchaContainerProps> = ({
   if (!siteKey) {
     return (
       <div
-        padding="lg"
-        backgroundColor="warning"
-        borderRadius="md"
-        textAlign="center"
+        style={{
+          padding: 16,
+          background: 'var(--wx-color-warning, #f59e0b)',
+          borderRadius: 8,
+          textAlign: 'center',
+        }}
       >
-        <span fontSize="sm" color="white">
+        <span style={{ fontSize: '0.875rem', color: '#fff' }}>
           CAPTCHA siteKey is required
         </span>
       </div>

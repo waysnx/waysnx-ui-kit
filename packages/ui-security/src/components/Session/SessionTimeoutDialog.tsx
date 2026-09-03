@@ -63,13 +63,13 @@ export const SessionTimeoutDialog: React.FC<SessionTimeoutDialogProps> = ({
   const seconds = secondsRemaining % 60;
 
   return (
-    <Modal open={isOpen} onClose={onLogout}>
+    <Modal open={isOpen} onClose={onLogout ?? (() => {})}>
       <div style={{ padding: '1.5rem' }}>
-        <span style={{ display: 'block', fontSize: '1.125rem', fontWeight: 'bold', marginBottom: '1rem' }}>
+        <span style={{ display: 'block', fontSize: '1.125rem', fontWeight: 700, marginBottom: '1rem' }}>
           {title}
         </span>
 
-        <span style={{ display: 'block', fontSize: '1rem', color: 'var(--color-muted, #666)', marginBottom: '1.5rem' }}>
+        <span style={{ display: 'block', fontSize: '1rem', color: 'var(--wx-color-text-muted, #717182)', marginBottom: '1.5rem' }}>
           {message ||
             `Your session will expire in ${minutes}:${seconds.toString().padStart(2, '0')} minutes. Would you like to continue your session?`}
         </span>
@@ -77,29 +77,31 @@ export const SessionTimeoutDialog: React.FC<SessionTimeoutDialogProps> = ({
         <div
           style={{
             padding: '1rem',
-            backgroundColor: 'var(--color-warning, #fff3cd)',
+            background: 'var(--wx-color-warning, #f59e0b)',
             borderRadius: '0.375rem',
             marginBottom: '1.5rem',
             textAlign: 'center',
           }}
         >
-          <span style={{ fontSize: '1.125rem', fontWeight: 'bold' }}>
+          <span style={{ fontSize: '1.125rem', fontWeight: 700 }}>
             {minutes}:{seconds.toString().padStart(2, '0')}
           </span>
         </div>
 
-        <Stack gap="md" direction="row" justifyContent="flex-end">
-          {onLogout && (
-            <Button variant="outline" onClick={onLogout}>
-              Logout
-            </Button>
-          )}
-          {onExtend && (
-            <Button variant="primary" onClick={onExtend}>
-              Continue Session
-            </Button>
-          )}
-        </Stack>
+        <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+          <Stack gap="md" direction="horizontal">
+            {onLogout && (
+              <Button variant="outline" onClick={onLogout}>
+                Logout
+              </Button>
+            )}
+            {onExtend && (
+              <Button variant="primary" onClick={onExtend}>
+                Continue Session
+              </Button>
+            )}
+          </Stack>
+        </div>
       </div>
     </Modal>
   );

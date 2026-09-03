@@ -61,7 +61,7 @@ export const FeatureGate: React.FC<FeatureGateProps> = ({
       aria-label={`Feature ${featureId} is disabled`}
     >
       {fallback || (
-        <span color="muted" fontSize="sm">
+        <span style={{ color: 'var(--wx-color-text-muted, #717182)', fontSize: '0.875rem' }}>
           This feature is not available yet.
         </span>
       )}

@@ -79,7 +79,7 @@ export const ScopeGate: React.FC<ScopeGateProps> = ({
   return (
     <div className={className} role="status" aria-label="Scope denied">
       {fallback || (
-        <span color="error" fontSize="sm">
+        <span style={{ color: 'var(--wx-color-danger, #d4183d)', fontSize: '0.875rem' }}>
           Required permissions not granted.
         </span>
       )}

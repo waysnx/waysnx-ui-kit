@@ -1,4 +1,4 @@
-﻿/**
+/**
  * ActiveSessions Component
  * 
  * Displays list of active sessions with device info and actions to revoke them.
@@ -6,7 +6,7 @@
 
 import React, { useState } from 'react';
 import { Button } from '@waysnx/ui-core';
-import { Stack, Card } from '@waysnx/ui-layout';
+import { Stack } from '@waysnx/ui-layout';
 import { Badge } from '@waysnx/ui-feedback';
 import type { SessionInfo } from '../../types/session';
 
@@ -89,14 +89,21 @@ export const ActiveSessions: React.FC<ActiveSessionsProps> = ({
     <div>
       {/* Current Session */}
       {currentSession && (
-        <Card padding="md" marginBottom="lg" borderColor="success" borderWidth="1">
+        <div
+          style={{
+            padding: 12,
+            marginBottom: 16,
+            border: '1px solid var(--wx-color-success, #16a34a)',
+            borderRadius: 8,
+          }}
+        >
           <Stack gap="md">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <div>
                 <span style={{ display: 'block', fontSize: '1rem', fontWeight: 'bold' }}>
                   {currentSessionLabel}
                 </span>
-                <span style={{ display: 'block', fontSize: '0.875rem', color: 'var(--color-muted, #666)', marginTop: '0.25rem' }}>
+                <span style={{ display: 'block', fontSize: '0.875rem', color: 'var(--wx-color-text-muted, #717182)', marginTop: '0.25rem' }}>
                   {currentSession.deviceInfo?.['name'] || 'Unknown Device' || 'Unknown Device'}
                 </span>
               </div>
@@ -105,7 +112,7 @@ export const ActiveSessions: React.FC<ActiveSessionsProps> = ({
 
             <Stack gap="xs">
               <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <span style={{ fontSize: '0.875rem', color: 'var(--color-muted, #666)' }}>
+                <span style={{ fontSize: '0.875rem', color: 'var(--wx-color-text-muted, #717182)' }}>
                   IP Address:
                 </span>
                 <span style={{ fontSize: '0.875rem', fontFamily: 'monospace' }}>
@@ -114,7 +121,7 @@ export const ActiveSessions: React.FC<ActiveSessionsProps> = ({
               </div>
 
               <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <span style={{ fontSize: '0.875rem', color: 'var(--color-muted, #666)' }}>
+                <span style={{ fontSize: '0.875rem', color: 'var(--wx-color-text-muted, #717182)' }}>
                   Last Active:
                 </span>
                 <span style={{ fontSize: '0.875rem' }}>
@@ -126,7 +133,7 @@ export const ActiveSessions: React.FC<ActiveSessionsProps> = ({
 
               {currentSession.userAgent && (
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                  <span style={{ fontSize: '0.875rem', color: 'var(--color-muted, #666)' }}>
+                  <span style={{ fontSize: '0.875rem', color: 'var(--wx-color-text-muted, #717182)' }}>
                     Browser:
                   </span>
                   <span style={{ fontSize: '0.875rem' }}>{currentSession.userAgent}</span>
@@ -134,7 +141,7 @@ export const ActiveSessions: React.FC<ActiveSessionsProps> = ({
               )}
             </Stack>
           </Stack>
-        </Card>
+        </div>
       )}
 
       {/* Other Active Sessions */}
@@ -144,18 +151,20 @@ export const ActiveSessions: React.FC<ActiveSessionsProps> = ({
             <span style={{ display: 'block', fontSize: '1rem', fontWeight: 'bold' }}>
               Other Active Sessions
             </span>
-            <span style={{ display: 'block', fontSize: '0.875rem', color: 'var(--color-muted, #666)', marginTop: '0.25rem' }}>
+            <span style={{ display: 'block', fontSize: '0.875rem', color: 'var(--wx-color-text-muted, #717182)', marginTop: '0.25rem' }}>
               {otherSessions.length} session{otherSessions.length !== 1 ? 's' : ''}
             </span>
           </div>
 
           <Stack gap="md">
             {otherSessions.map(session => (
-              <Card
+              <div
                 key={session.id}
-                padding="md"
-                borderColor="border"
-                borderWidth="1"
+                style={{
+                  padding: 12,
+                  border: '1px solid var(--wx-color-border, #ccc)',
+                  borderRadius: 8,
+                }}
               >
                 <Stack gap="md">
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
@@ -163,13 +172,12 @@ export const ActiveSessions: React.FC<ActiveSessionsProps> = ({
                       <span style={{ display: 'block', fontSize: '1rem', fontWeight: 'bold' }}>
                         {session.deviceInfo?.['name'] || 'Unknown Device' || 'Unknown Device'}
                       </span>
-                      <span style={{ display: 'block', fontSize: '0.875rem', color: 'var(--color-muted, #666)', marginTop: '0.25rem' }}>
+                      <span style={{ display: 'block', fontSize: '0.875rem', color: 'var(--wx-color-text-muted, #717182)', marginTop: '0.25rem' }}>
                         {session.ipAddress || 'Unknown IP'}
                       </span>
                     </div>
                     <Button
                       variant="outline"
-                      color="danger"
                       onClick={() => handleRevokeSession(session.id)}
                       disabled={isRevoking || revokingIds.has(session.id)}
                     >
@@ -179,7 +187,7 @@ export const ActiveSessions: React.FC<ActiveSessionsProps> = ({
 
                   <Stack gap="xs">
                     <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.875rem' }}>
-                      <span style={{ color: 'var(--color-muted, #666)' }}>Created:</span>
+                      <span style={{ color: 'var(--wx-color-text-muted, #717182)' }}>Created:</span>
                       <span>
                         {session.createdAt
                           ? new Date(session.createdAt).toLocaleString()
@@ -188,7 +196,7 @@ export const ActiveSessions: React.FC<ActiveSessionsProps> = ({
                     </div>
 
                     <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.875rem' }}>
-                      <span style={{ color: 'var(--color-muted, #666)' }}>Last Active:</span>
+                      <span style={{ color: 'var(--wx-color-text-muted, #717182)' }}>Last Active:</span>
                       <span>
                         {session.lastActivityAt
                           ? new Date(session.lastActivityAt).toLocaleString()
@@ -198,13 +206,13 @@ export const ActiveSessions: React.FC<ActiveSessionsProps> = ({
 
                     {session.userAgent && (
                       <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.875rem' }}>
-                        <span style={{ color: 'var(--color-muted, #666)' }}>Browser:</span>
+                        <span style={{ color: 'var(--wx-color-text-muted, #717182)' }}>Browser:</span>
                         <span>{session.userAgent}</span>
                       </div>
                     )}
                   </Stack>
                 </Stack>
-              </Card>
+              </div>
             ))}
           </Stack>
 
@@ -212,7 +220,6 @@ export const ActiveSessions: React.FC<ActiveSessionsProps> = ({
             <div style={{ marginTop: '1.5rem' }}>
               <Button
                 variant="outline"
-                color="danger"
                 onClick={handleRevokeAll}
                 disabled={isRevoking || revokingIds.size > 0}
               >
@@ -225,12 +232,12 @@ export const ActiveSessions: React.FC<ActiveSessionsProps> = ({
         <div
           style={{
             padding: '1.5rem',
-            backgroundColor: 'var(--color-background-alt, #f9f9f9)',
+            background: 'var(--wx-color-background-alt, #f3f3f5)',
             borderRadius: '0.375rem',
             textAlign: 'center',
           }}
         >
-          <span style={{ color: 'var(--color-muted, #666)' }}>
+          <span style={{ color: 'var(--wx-color-text-muted, #717182)' }}>
             {currentSession ? 'Only this session is active' : 'No active sessions'}
           </span>
         </div>

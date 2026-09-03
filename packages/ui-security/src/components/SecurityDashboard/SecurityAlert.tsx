@@ -1,4 +1,4 @@
-﻿/**
+/**
  * SecurityAlert Component
  * 
  * Card displaying individual security alert with actions.
@@ -23,18 +23,20 @@ export interface SecurityAlertProps {
   details?: Record<string, string>;
 }
 
-const getSeverityColor = (severity: AlertSeverity) => {
-  const colors = { critical: 'danger', high: 'danger', medium: 'warning', low: 'info' };
+type BadgeColor = 'default' | 'success' | 'error' | 'warning' | 'info';
+
+const getSeverityColor = (severity: AlertSeverity): BadgeColor => {
+  const colors: Record<AlertSeverity, BadgeColor> = { critical: 'error', high: 'error', medium: 'warning', low: 'info' };
   return colors[severity];
 };
 
 const getSeverityIcon = (severity: AlertSeverity) => {
-  const icons = { critical: 'ðŸš¨', high: 'âš ï¸', medium: 'âš ï¸', low: 'â„¹ï¸' };
+  const icons = { critical: '!', high: '⚠', medium: '⚠', low: 'i' };
   return icons[severity];
 };
 
-const getStatusBadgeColor = (status: AlertStatus) => {
-  const colors = { new: 'danger', acknowledged: 'warning', resolved: 'success' };
+const getStatusBadgeColor = (status: AlertStatus): BadgeColor => {
+  const colors: Record<AlertStatus, BadgeColor> = { new: 'error', acknowledged: 'warning', resolved: 'success' };
   return colors[status];
 };
 

@@ -125,72 +125,82 @@ export const MFASetupWizard: React.FC<MFASetupWizardProps> = ({
   const progress = ((activeStep + 1) / displaySteps.length) * 100;
 
   return (
-    <div maxWidth="600px" margin="0 auto" padding="lg">
+    <div style={{ maxWidth: '600px', margin: '0 auto', padding: 16 }}>
       {/* Header */}
-      <div marginBottom="lg">
-        <span as="h2" fontSize="lg" fontWeight="bold" marginBottom="sm">
+      <div style={{ marginBottom: 16 }}>
+        <h2 style={{ fontSize: '1.125rem', fontWeight: 700, marginBottom: 8 }}>
           Set Up Multi-Factor Authentication
-        </span>
-        <span fontSize="sm" color="muted">
+        </h2>
+        <span style={{ fontSize: '0.875rem', color: 'var(--wx-color-text-muted, #717182)' }}>
           Step {activeStep + 1} of {displaySteps.length}
         </span>
       </div>
 
       {/* Progress Bar */}
       <div
-        height="4px"
-        backgroundColor="border"
-        borderRadius="full"
-        marginBottom="lg"
-        overflow="hidden"
+        style={{
+          height: '4px',
+          background: 'var(--wx-color-border, #ccc)',
+          borderRadius: 9999,
+          marginBottom: 16,
+          overflow: 'hidden',
+        }}
       >
         <div
-          height="100%"
-          backgroundColor="primary"
-          width={`${progress}%`}
-          transition="width 0.3s ease"
+          style={{
+            height: '100%',
+            background: 'var(--wx-color-primary, #030213)',
+            width: `${progress}%`,
+            transition: 'width 0.3s ease',
+          }}
         />
       </div>
 
       {/* Step Indicator */}
-      <Stack gap="sm" direction="row" marginBottom="lg">
-        {displaySteps.map((step, idx) => (
-          <div
-            key={step.id}
-            flex={1}
-            padding="sm"
-            backgroundColor={idx <= activeStep ? 'primary' : 'border'}
-            borderRadius="md"
-            textAlign="center"
-            color={idx <= activeStep ? 'white' : 'muted'}
-            cursor={idx < activeStep ? 'pointer' : 'default'}
-            onClick={() => idx < activeStep && setActiveStep(idx)}
-          >
-            <span fontSize="xs" fontWeight="bold">
-              {idx + 1}
-            </span>
-          </div>
-        ))}
-      </Stack>
+      <div style={{ marginBottom: 16 }}>
+        <Stack gap="sm" direction="horizontal">
+          {displaySteps.map((step, idx) => (
+            <div
+              key={step.id}
+              style={{
+                flex: 1,
+                padding: 8,
+                background: idx <= activeStep ? 'var(--wx-color-primary, #030213)' : 'var(--wx-color-border, #ccc)',
+                borderRadius: 8,
+                textAlign: 'center',
+                color: idx <= activeStep ? '#fff' : 'var(--wx-color-text-muted, #717182)',
+                cursor: idx < activeStep ? 'pointer' : 'default',
+              }}
+              onClick={() => idx < activeStep && setActiveStep(idx)}
+            >
+              <span style={{ fontSize: '0.75rem', fontWeight: 700 }}>
+                {idx + 1}
+              </span>
+            </div>
+          ))}
+        </Stack>
+      </div>
 
       {/* Current Step Content */}
       {currentStepData && (
         <div
-          padding="lg"
-          backgroundColor="background-alt"
-          borderRadius="md"
-          marginBottom="lg"
+          style={{
+            padding: 16,
+            background: 'var(--wx-color-background-alt, #f3f3f5)',
+            borderRadius: 8,
+            marginBottom: 16,
+          }}
         >
-          <span as="h3" fontSize="base" fontWeight="bold" marginBottom="sm">
+          <h3 style={{ fontSize: '1rem', fontWeight: 700, marginBottom: 8 }}>
             {currentStepData.title}
-          </span>
-          <span fontSize="sm" color="muted">
+          </h3>
+          <span style={{ display: 'block', fontSize: '0.875rem', color: 'var(--wx-color-text-muted, #717182)' }}>
             {currentStepData.description}
           </span>
 
           {/* Placeholder for step-specific content */}
-          <div marginTop="lg" minHeight="200px" backgroundColor="background">
-            <span color="muted" textAlign="center">
+          <div style={{ marginTop: 16, minHeight: '200px', background: 'var(--wx-color-background, #ffffff)' }}>
+            <span style={{ display: 'block', color: 'var(--wx-color-text-muted, #717182)', textAlign: 'center' }}>
               Step content goes here
             </span>
           </div>
@@ -198,35 +208,36 @@ export const MFASetupWizard: React.FC<MFASetupWizardProps> = ({
       )}
 
       {/* Action Buttons */}
-      <Stack gap="md" direction="row" justifyContent="space-between">
-        <Button
-          variant="outline"
-          onClick={handleBack}
-          disabled={activeStep === 0 || isLoading}
-        >
-          Back
-        </Button>
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <Stack gap="md" direction="horizontal">
+          <Button
+            variant="outline"
+            onClick={handleBack}
+            disabled={activeStep === 0 || isLoading}
+          >
+            Back
+          </Button>
 
-        <Button
-          variant="ghost"
-          onClick={handleSkip}
-          disabled={isLoading}
-        >
-          Skip for Now
-        </Button>
+          <Button
+            variant="ghost"
+            onClick={handleSkip}
+            disabled={isLoading}
+          >
+            Skip for Now
+          </Button>
 
-        <Button
-          variant="primary"
-          onClick={handleStepComplete}
-          disabled={isLoading}
-         
-        >
-          {activeStep === displaySteps.length - 1 ? 'Complete Setup' : 'Next'}
-        </Button>
-      </Stack>
+          <Button
+            variant="primary"
+            onClick={handleStepComplete}
+            disabled={isLoading}
+          >
+            {activeStep === displaySteps.length - 1 ? 'Complete Setup' : 'Next'}
+          </Button>
+        </Stack>
+      </div>
 
       {/* Cancel */}
-      <div textAlign="center" marginTop="lg">
+      <div style={{ textAlign: 'center', marginTop: 16 }}>
         <Button
           variant="ghost"
           onClick={onCancel}

@@ -34,6 +34,7 @@ export interface AuditHistoryTableProps {
 
 type SortField = 'timestamp' | 'eventType' | 'userId';
 type SortOrder = 'asc' | 'desc';
+type BadgeColor = 'default' | 'success' | 'error' | 'warning' | 'info';
 
 /**
  * AuditHistoryTable - Display audit events in table
@@ -84,8 +85,8 @@ export const AuditHistoryTable: React.FC<AuditHistoryTableProps> = ({
     setCurrentPage(0);
   };
 
-  const getTypeColor = (type: string) => {
-    if (type.includes('failure') || type.includes('denied')) return 'danger';
+  const getTypeColor = (type: string): BadgeColor => {
+    if (type.includes('failure') || type.includes('denied')) return 'error';
     if (type.includes('enabled') || type.includes('success')) return 'success';
     if (type.includes('change')) return 'warning';
     return 'info';
@@ -97,14 +98,13 @@ export const AuditHistoryTable: React.FC<AuditHistoryTableProps> = ({
     <div>
       {/* Filter */}
       {filterable && uniqueTypes.length > 0 && (
-        <div marginBottom="lg">
-          <span fontSize="sm" fontWeight="bold" marginBottom="md">
+        <div style={{ marginBottom: 16 }}>
+          <span style={{ display: 'block', fontSize: '0.875rem', fontWeight: 700, marginBottom: 12 }}>
             Filter by Type:
           </span>
-          <div display="flex" flexWrap="wrap" gap="sm">
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
             <Button
               variant={selectedFilter === '' ? 'primary' : 'outline'}
-             
               onClick={() => {
                 setSelectedFilter('');
                 setCurrentPage(0);
@@ -116,7 +116,6 @@ export const AuditHistoryTable: React.FC<AuditHistoryTableProps> = ({
               <Button
                 key={type}
                 variant={selectedFilter === type ? 'primary' : 'outline'}
-               
                 onClick={() => {
                   setSelectedFilter(type);
                   setCurrentPage(0);
@@ -130,7 +129,7 @@ export const AuditHistoryTable: React.FC<AuditHistoryTableProps> = ({
       )}
 
       {/* Table */}
-      <div overflowX="auto">
+      <div style={{ overflowX: 'auto' }}>
         <table
           style={{
             width: '100%',
@@ -139,15 +138,15 @@ export const AuditHistoryTable: React.FC<AuditHistoryTableProps> = ({
           }}
         >
           <thead>
-            <tr style={{ borderBottom: '2px solid var(--color-border, #ccc)' }}>
+            <tr style={{ borderBottom: '2px solid var(--wx-color-border, #ccc)' }}>
               <th
                 style={{ padding: '12px', textAlign: 'left', cursor: sortable ? 'pointer' : 'default' }}
                 onClick={() => sortable && handleSort('timestamp')}
               >
-                <div display="flex" alignItems="center" gap="sm">
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
                   Timestamp
                   {sortable && sortField === 'timestamp' && (
-                    <span fontSize="xs">{sortOrder === 'asc' ? 'â†‘' : 'â†“'}</span>
+                    <span style={{ fontSize: '0.75rem' }}>{sortOrder === 'asc' ? '↑' : '↓'}</span>
                   )}
                 </div>
               </th>
@@ -155,10 +154,10 @@ export const AuditHistoryTable: React.FC<AuditHistoryTableProps> = ({
                 style={{ padding: '12px', textAlign: 'left', cursor: sortable ? 'pointer' : 'default' }}
                 onClick={() => sortable && handleSort('eventType')}
               >
-                <div display="flex" alignItems="center" gap="sm">
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
                   Event Type
                   {sortable && sortField === 'eventType' && (
-                    <span fontSize="xs">{sortOrder === 'asc' ? 'â†‘' : 'â†“'}</span>
+                    <span style={{ fontSize: '0.75rem' }}>{sortOrder === 'asc' ? '↑' : '↓'}</span>
                   )}
                 </div>
               </th>
@@ -166,10 +165,10 @@ export const AuditHistoryTable: React.FC<AuditHistoryTableProps> = ({
                 style={{ padding: '12px', textAlign: 'left', cursor: sortable ? 'pointer' : 'default' }}
                 onClick={() => sortable && handleSort('userId')}
               >
-                <div display="flex" alignItems="center" gap="sm">
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
                   User ID
                   {sortable && sortField === 'userId' && (
-                    <span fontSize="xs">{sortOrder === 'asc' ? 'â†‘' : 'â†“'}</span>
+                    <span style={{ fontSize: '0.75rem' }}>{sortOrder === 'asc' ? '↑' : '↓'}</span>
                   )}
                 </div>
               </th>
@@ -182,12 +181,12 @@ export const AuditHistoryTable: React.FC<AuditHistoryTableProps> = ({
                 <tr
                   key={`${event.id}-${idx}`}
                   style={{
-                    borderBottom: '1px solid var(--color-border, #ccc)',
-                    backgroundColor: idx % 2 === 0 ? 'transparent' : 'var(--color-background-alt, #f9f9f9)',
+                    borderBottom: '1px solid var(--wx-color-border, #ccc)',
+                    backgroundColor: idx % 2 === 0 ? 'transparent' : 'var(--wx-color-background-alt, #f9f9f9)',
                   }}
                 >
                   <td style={{ padding: '12px' }}>
-                    <span fontSize="xs" color="muted">
+                    <span style={{ fontSize: '0.75rem', color: 'var(--wx-color-text-muted, #717182)' }}>
                       {event.timestamp ? new Date(event.timestamp).toLocaleString() : 'N/A'}
                     </span>
                   </td>
@@ -195,19 +194,19 @@ export const AuditHistoryTable: React.FC<AuditHistoryTableProps> = ({
                     <Badge color={getTypeColor(event.eventType)}>{event.eventType}</Badge>
                   </td>
                   <td style={{ padding: '12px' }}>
-                    <span fontSize="sm" fontFamily="monospace">
+                    <span style={{ fontSize: '0.875rem', fontFamily: 'monospace' }}>
                       {event.userId || 'N/A'}
                     </span>
                   </td>
                   <td style={{ padding: '12px' }}>
-                    <span fontSize="sm">{event.description || '-'}</span>
+                    <span style={{ fontSize: '0.875rem' }}>{event.description || '-'}</span>
                   </td>
                 </tr>
               ))
             ) : (
               <tr>
                 <td colSpan={4} style={{ padding: '24px', textAlign: 'center' }}>
-                  <span color="muted">No events found</span>
+                  <span style={{ color: 'var(--wx-color-text-muted, #717182)' }}>No events found</span>
                 </td>
               </tr>
             )}
@@ -218,20 +217,21 @@ export const AuditHistoryTable: React.FC<AuditHistoryTableProps> = ({
       {/* Pagination */}
       {totalPages > 1 && (
         <div
-          display="flex"
-          justifyContent="space-between"
-          alignItems="center"
-          marginTop="lg"
-          paddingTop="lg"
-          borderTop="1px solid var(--color-border, #ccc)"
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            marginTop: 16,
+            paddingTop: 16,
+            borderTop: '1px solid var(--wx-color-border, #ccc)',
+          }}
         >
-          <span fontSize="sm" color="muted">
+          <span style={{ fontSize: '0.875rem', color: 'var(--wx-color-text-muted, #717182)' }}>
             Page {currentPage + 1} of {totalPages} ({sortedEvents.length} events)
           </span>
-          <div display="flex" gap="md">
+          <div style={{ display: 'flex', gap: 12 }}>
             <Button
               variant="outline"
-             
               onClick={() => setCurrentPage(currentPage - 1)}
               disabled={currentPage === 0}
             >
@@ -239,7 +239,6 @@ export const AuditHistoryTable: React.FC<AuditHistoryTableProps> = ({
             </Button>
             <Button
               variant="outline"
-             
               onClick={() => setCurrentPage(currentPage + 1)}
               disabled={currentPage === totalPages - 1}
             >

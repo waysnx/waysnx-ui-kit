@@ -62,25 +62,27 @@ export interface ActivityFeedProps {
 const getActivityIcon = (type: string, customIcon?: string) => {
   if (customIcon) return customIcon;
   const icons: Record<string, string> = {
-    login: 'ðŸ”“',
-    logout: 'ðŸ”’',
-    'password-change': 'ðŸ”',
-    'mfa-setup': 'âœ“',
-    'permission-grant': 'âœ“',
-    'permission-revoke': 'âœ•',
-    'file-upload': 'ðŸ“¤',
-    'file-download': 'ðŸ“¥',
+    login: '🔓',
+    logout: '🔒',
+    'password-change': '🔑',
+    'mfa-setup': '✓',
+    'permission-grant': '✓',
+    'permission-revoke': '✕',
+    'file-upload': '↑',
+    'file-download': '↓',
     'session-created': '+',
     'session-terminated': '-',
   };
-  return icons[type] || 'â€¢';
+  return icons[type] || '•';
 };
 
-const getStatusColor = (status?: string) => {
-  const colors = {
+type BadgeColor = 'default' | 'success' | 'error' | 'warning' | 'info';
+
+const getStatusColor = (status?: string): BadgeColor => {
+  const colors: Record<string, BadgeColor> = {
     completed: 'success',
     pending: 'warning',
-    failed: 'danger',
+    failed: 'error',
   };
   return colors[status as keyof typeof colors] || 'info';
 };
@@ -127,8 +129,8 @@ export const ActivityFeed: React.FC<ActivityFeedProps> = ({
         {Object.entries(grouped)
           .reverse()
           .map(([date, dateActivities]) => (
-            <div key={date} marginBottom="lg">
-              <span fontSize="xs" fontWeight="bold" color="muted" marginBottom="md">
+            <div key={date} style={{ marginBottom: 16 }}>
+              <span style={{ display: 'block', fontSize: '0.75rem', fontWeight: 700, color: 'var(--wx-color-text-muted, #717182)', marginBottom: 12 }}>
                 {date}
               </span>
               <Stack gap="md">
@@ -145,7 +147,7 @@ export const ActivityFeed: React.FC<ActivityFeedProps> = ({
           ))}
 
         {hasMore && !showAll && (
-          <div textAlign="center" marginTop="lg">
+          <div style={{ textAlign: 'center', marginTop: 16 }}>
             <Button
               variant="outline"
               onClick={() => setShowAll(true)}
@@ -172,7 +174,7 @@ export const ActivityFeed: React.FC<ActivityFeedProps> = ({
       </Stack>
 
       {hasMore && !showAll && (
-        <div textAlign="center" marginTop="lg">
+        <div style={{ textAlign: 'center', marginTop: 16 }}>
           <Button
             variant="outline"
             onClick={() => setShowAll(true)}
@@ -197,28 +199,30 @@ const ActivityItem: React.FC<ActivityItemProps> = ({ activity, isExpanded, onTog
 
   return (
     <div
-      padding="md"
-      backgroundColor="background-alt"
-      borderRadius="md"
-      border="1px solid var(--color-border, #ccc)"
-      cursor="pointer"
+      style={{
+        padding: 12,
+        background: 'var(--wx-color-background-alt, #f3f3f5)',
+        borderRadius: 8,
+        border: '1px solid var(--wx-color-border, #ccc)',
+        cursor: 'pointer',
+      }}
       onClick={onToggle}
     >
-      <div display="flex" justifyContent="space-between" alignItems="flex-start">
-        <div display="flex" gap="md" flex={1}>
-          <div fontSize="lg" flex={0}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+        <div style={{ display: 'flex', gap: 12, flex: 1 }}>
+          <div style={{ fontSize: '1.125rem', flex: 0 }}>
             {icon}
           </div>
-          <div flex={1}>
-            <span fontSize="sm" fontWeight="bold">
+          <div style={{ flex: 1 }}>
+            <span style={{ display: 'block', fontSize: '0.875rem', fontWeight: 700 }}>
               {activity.description}
             </span>
-            <div display="flex" gap="md" marginTop="xs">
-              <span fontSize="xs" color="muted">
+            <div style={{ display: 'flex', gap: 12, marginTop: 4 }}>
+              <span style={{ fontSize: '0.75rem', color: 'var(--wx-color-text-muted, #717182)' }}>
                 {activity.timestamp.toLocaleTimeString()}
               </span>
               {activity.actor && (
-                <span fontSize="xs" color="muted">
+                <span style={{ fontSize: '0.75rem', color: 'var(--wx-color-text-muted, #717182)' }}>
                   by {activity.actor}
                 </span>
               )}
@@ -226,32 +230,34 @@ const ActivityItem: React.FC<ActivityItemProps> = ({ activity, isExpanded, onTog
           </div>
         </div>
 
-        <div display="flex" gap="md" alignItems="center">
+        <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
           {activity.status && (
             <Badge color={statusColor}>
               {activity.status.charAt(0).toUpperCase() + activity.status.slice(1)}
             </Badge>
           )}
-          <span fontSize="lg">{isExpanded ? 'â–¼' : 'â–¶'}</span>
+          <span style={{ fontSize: '1.125rem' }}>{isExpanded ? '▼' : '▶'}</span>
         </div>
       </div>
 
       {isExpanded && (
         <div
-          marginTop="md"
-          paddingTop="md"
-          borderTop="1px solid var(--color-border, #ccc)"
+          style={{
+            marginTop: 12,
+            paddingTop: 12,
+            borderTop: '1px solid var(--wx-color-border, #ccc)',
+          }}
         >
-          <div display="flex" justifyContent="space-between" fontSize="sm">
-            <span color="muted">ID:</span>
-            <span fontFamily="monospace">{activity.id}</span>
+          <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.875rem' }}>
+            <span style={{ color: 'var(--wx-color-text-muted, #717182)' }}>ID:</span>
+            <span style={{ fontFamily: 'monospace' }}>{activity.id}</span>
           </div>
-          <div display="flex" justifyContent="space-between" fontSize="sm" marginTop="xs">
-            <span color="muted">Type:</span>
+          <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.875rem', marginTop: 4 }}>
+            <span style={{ color: 'var(--wx-color-text-muted, #717182)' }}>Type:</span>
             <span>{activity.type}</span>
           </div>
-          <div display="flex" justifyContent="space-between" fontSize="sm" marginTop="xs">
-            <span color="muted">Time:</span>
+          <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.875rem', marginTop: 4 }}>
+            <span style={{ color: 'var(--wx-color-text-muted, #717182)' }}>Time:</span>
             <span>{activity.timestamp.toLocaleString()}</span>
           </div>
         </div>

@@ -39,6 +39,8 @@ export interface AccessDeniedProps {
   className?: string;
 }
 
+const MUTED = 'var(--wx-color-text-muted, #717182)';
+
 /**
  * AccessDenied - Screen for access denied errors
  */
@@ -54,39 +56,37 @@ export const AccessDenied: React.FC<AccessDeniedProps> = ({
   return (
     <div
       className={className}
-      display="flex"
-      alignItems="center"
-      justifyContent="center"
-      minHeight="400px"
-      padding="lg"
+      style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 400, padding: 16 }}
     >
-      <div maxWidth="400px" textAlign="center">
-        <div marginBottom="lg">
-          <span as="h2" fontSize="2xl" fontWeight="bold" color="error" marginBottom="md">
+      <div style={{ maxWidth: 400, textAlign: 'center' }}>
+        <div style={{ marginBottom: 16 }}>
+          <h2 style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--wx-color-danger, #d4183d)', marginBottom: 12 }}>
             Access Denied
-          </span>
-          <span fontSize="base" color="muted" marginBottom="sm">
+          </h2>
+          <span style={{ display: 'block', fontSize: '1rem', color: MUTED, marginBottom: 8 }}>
             {reason}
           </span>
           {details && (
-            <span fontSize="sm" color="muted">
+            <span style={{ display: 'block', fontSize: '0.875rem', color: MUTED }}>
               {details}
             </span>
           )}
         </div>
 
-        <Stack gap="md" direction="row" justifyContent="center">
-          {onBack && (
-            <Button variant="outline" onClick={onBack}>
-              {backLabel}
-            </Button>
-          )}
-          {onSupport && (
-            <Button variant="primary" onClick={onSupport}>
-              {supportLabel}
-            </Button>
-          )}
-        </Stack>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Stack gap="md" direction="horizontal">
+            {onBack && (
+              <Button variant="outline" onClick={onBack}>
+                {backLabel}
+              </Button>
+            )}
+            {onSupport && (
+              <Button variant="primary" onClick={onSupport}>
+                {supportLabel}
+              </Button>
+            )}
+          </Stack>
+        </div>
       </div>
     </div>
   );

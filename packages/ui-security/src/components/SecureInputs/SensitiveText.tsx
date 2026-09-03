@@ -23,7 +23,7 @@ export interface SensitiveTextProps {
   autoHideMs?: number;
   /**
    * Character to use for masking
-   * @default 'â€¢'
+   * @default '•'
    */
   maskCharacter?: string;
   /**
@@ -53,6 +53,15 @@ export interface SensitiveTextProps {
   allowCopy?: boolean;
 }
 
+const FONT_SIZE_MAP: Record<string, string> = {
+  xs: '0.75rem',
+  sm: '0.875rem',
+  base: '1rem',
+  lg: '1.125rem',
+  xl: '1.25rem',
+  '2xl': '1.5rem',
+};
+
 /**
  * SensitiveText - Display and reveal sensitive information
  * 
@@ -66,7 +75,7 @@ export const SensitiveText: React.FC<SensitiveTextProps> = ({
   text,
   initiallyRevealed = false,
   autoHideMs = 0,
-  maskCharacter = 'â€¢',
+  maskCharacter = '•',
   showLastCharacters = 0,
   revealLabel = 'Reveal',
   hideLabel = 'Hide',
@@ -110,6 +119,7 @@ export const SensitiveText: React.FC<SensitiveTextProps> = ({
   };
 
   const displayText = isRevealed ? text : getMaskedText();
+  const resolvedFontSize = FONT_SIZE_MAP[fontSize] || fontSize;
 
   React.useEffect(() => {
     return () => {
@@ -120,27 +130,28 @@ export const SensitiveText: React.FC<SensitiveTextProps> = ({
   }, []);
 
   return (
-    <div display="flex" gap="md" alignItems="center">
+    <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
       {/* Text Display */}
       <div
-        padding="sm"
-        backgroundColor="background-alt"
-        borderRadius="md"
-        fontFamily="monospace"
-        flex={1}
-        minWidth="200px"
+        style={{
+          padding: 8,
+          background: 'var(--wx-color-background-alt, #f3f3f5)',
+          borderRadius: 8,
+          fontFamily: 'monospace',
+          flex: 1,
+          minWidth: '200px',
+        }}
       >
-        <span fontSize={fontSize} color={color} wordBreak="break-all">
+        <span style={{ fontSize: resolvedFontSize, color, wordBreak: 'break-all' }}>
           {displayText}
         </span>
       </div>
 
       {/* Controls */}
-      <div display="flex" gap="sm">
+      <div style={{ display: 'flex', gap: 8 }}>
         {isRevealed ? (
           <Button
             variant="outline"
-           
             onClick={handleHide}
             title="Hide sensitive information"
           >
@@ -149,7 +160,6 @@ export const SensitiveText: React.FC<SensitiveTextProps> = ({
         ) : (
           <Button
             variant="outline"
-           
             onClick={handleReveal}
             title="Reveal sensitive information"
           >
@@ -160,7 +170,6 @@ export const SensitiveText: React.FC<SensitiveTextProps> = ({
         {allowCopy && (
           <Button
             variant="outline"
-           
             onClick={async () => {
               try {
                 await navigator.clipboard.writeText(text);
@@ -170,7 +179,7 @@ export const SensitiveText: React.FC<SensitiveTextProps> = ({
             }}
             title="Copy to clipboard"
           >
-            Ã°Å¸â€œâ€¹
+            Copy
           </Button>
         )}
       </div>

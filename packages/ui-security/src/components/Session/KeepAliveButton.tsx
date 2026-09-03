@@ -83,8 +83,6 @@ export const KeepAliveButton: React.FC<KeepAliveButtonProps> = ({
       onClick={handleClick}
       variant={variant}
       disabled={disabled || isLoading}
-     
-      color={showSuccess ? 'success' : undefined}
     >
       {icon && <span style={{ marginRight: '8px' }}>{icon}</span>}
       {buttonLabel}

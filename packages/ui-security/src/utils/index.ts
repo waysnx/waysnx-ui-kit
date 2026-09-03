@@ -137,6 +137,8 @@ export {
   generateTOTPSecret,
   generateTOTPQRCodeURL,
   encodeBase32,
+  base32Decode,
+  generateTOTPCode,
   verifyTOTPCode,
   generateBackupCodes,
   hashBackupCode,

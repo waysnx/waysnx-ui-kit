@@ -149,12 +149,11 @@ export const SecureInput = React.forwardRef<HTMLInputElement, SecureInputProps>(
         {label && (
           <label style={{ display: 'block', marginBottom: '0.5rem' }}>
             {label}
-            {required && <span style={{ color: 'var(--color-danger, red)' }}> *</span>}
+            {required && <span style={{ color: 'var(--wx-color-danger, #d4183d)' }}> *</span>}
           </label>
         )}
 
         <Input
-          ref={setRefs}
           type={type}
           placeholder={placeholder}
           disabled={disabled}
@@ -168,16 +167,17 @@ export const SecureInput = React.forwardRef<HTMLInputElement, SecureInputProps>(
         />
 
         {displayError && (
-          <div
-            as="span"
-            display="block"
-            fontSize="sm"
-            color="danger"
-            marginTop="0.25rem"
+          <span
+            style={{
+              display: 'block',
+              fontSize: '0.875rem',
+              color: 'var(--wx-color-danger, #d4183d)',
+              marginTop: '0.25rem',
+            }}
             role="alert"
           >
             {displayError}
-          </div>
+          </span>
         )}
       </div>
     );

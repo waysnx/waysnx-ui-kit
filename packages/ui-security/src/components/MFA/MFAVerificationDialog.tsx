@@ -106,11 +106,11 @@ export const MFAVerificationDialog: React.FC<MFAVerificationDialogProps> = ({
   return (
     <Modal open={isOpen} onClose={handleClose}>
       <div style={{ padding: '1.5rem' }}>
-        <span style={{ display: 'block', fontSize: '1.125rem', fontWeight: 'bold', marginBottom: '1rem' }}>
+        <span style={{ display: 'block', fontSize: '1.125rem', fontWeight: 700, marginBottom: '1rem' }}>
           {title}
         </span>
 
-        <span style={{ display: 'block', fontSize: '1rem', color: 'var(--color-muted, #666)', marginBottom: '1.5rem' }}>
+        <span style={{ display: 'block', fontSize: '1rem', color: 'var(--wx-color-text-muted, #717182)', marginBottom: '1.5rem' }}>
           Enter the verification code from {getMethodLabel()}.
         </span>
 
@@ -132,14 +132,14 @@ export const MFAVerificationDialog: React.FC<MFAVerificationDialogProps> = ({
           <div
             style={{
               padding: '1rem',
-              backgroundColor: 'var(--color-background-alt, #f9f9f9)',
+              background: 'var(--wx-color-background-alt, #f3f3f5)',
               borderRadius: '0.375rem',
               marginBottom: '1.5rem',
               textAlign: 'center',
             }}
           >
-            <span style={{ display: 'block', fontSize: '0.875rem', color: 'var(--color-muted, #666)', marginBottom: '0.5rem' }}>
-              Can't access your authentication device?
+            <span style={{ display: 'block', fontSize: '0.875rem', color: 'var(--wx-color-text-muted, #717182)', marginBottom: '0.5rem' }}>
+              Can&apos;t access your authentication device?
             </span>
             <Button
               variant="ghost"
@@ -155,34 +155,36 @@ export const MFAVerificationDialog: React.FC<MFAVerificationDialogProps> = ({
         <div
           style={{
             padding: '1rem',
-            backgroundColor: 'var(--color-info, #d1ecf1)',
+            background: 'var(--wx-color-info, #2563eb)',
             borderRadius: '0.375rem',
             marginBottom: '1.5rem',
-            borderLeft: '4px solid var(--color-info, #17a2b8)',
+            borderLeft: '4px solid var(--wx-color-info, #2563eb)',
           }}
         >
           <span style={{ fontSize: '0.875rem' }}>
-            ðŸ”’ Never share your verification code with anyone.
+            🔒 Never share your verification code with anyone.
           </span>
         </div>
 
         {/* Action Buttons */}
-        <Stack gap="md" direction="row" justifyContent="flex-end">
-          <Button
-            variant="outline"
-            onClick={handleClose}
-            disabled={isLoading}
-          >
-            Cancel
-          </Button>
-          <Button
-            variant="primary"
-            onClick={handleVerify}
-            disabled={isLoading || code.length < 6}
-          >
-            Verify
-          </Button>
-        </Stack>
+        <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+          <Stack gap="md" direction="horizontal">
+            <Button
+              variant="outline"
+              onClick={handleClose}
+              disabled={isLoading}
+            >
+              Cancel
+            </Button>
+            <Button
+              variant="primary"
+              onClick={handleVerify}
+              disabled={isLoading || code.length < 6}
+            >
+              Verify
+            </Button>
+          </Stack>
+        </div>
       </div>
     </Modal>
   );

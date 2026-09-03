@@ -147,14 +147,16 @@ export const SecureTextarea = React.forwardRef<
     };
 
     const counterColor =
-      maxCharacters && charCount > maxCharacters * 0.9 ? 'warning' : 'muted';
+      maxCharacters && charCount > maxCharacters * 0.9
+        ? 'var(--wx-color-warning, #f59e0b)'
+        : 'var(--wx-color-text-muted, #717182)';
 
     return (
       <div>
         {label && (
           <label style={{ display: 'block', marginBottom: '0.5rem' }}>
             {label}
-            {required && <span style={{ color: 'var(--color-danger, red)' }}> *</span>}
+            {required && <span style={{ color: 'var(--wx-color-danger, #d4183d)' }}> *</span>}
           </label>
         )}
 
@@ -172,7 +174,7 @@ export const SecureTextarea = React.forwardRef<
             width: '100%',
             padding: '0.5rem',
             borderRadius: '4px',
-            border: '1px solid var(--color-border, #ccc)',
+            border: '1px solid var(--wx-color-border, #ccc)',
             fontFamily: 'inherit',
             fontSize: 'inherit',
           }}
@@ -182,11 +184,13 @@ export const SecureTextarea = React.forwardRef<
         {/* Character Counter */}
         {showCounter && maxCharacters && (
           <div
-            display="flex"
-            justifyContent="flex-end"
-            marginTop="0.25rem"
-            fontSize="sm"
-            color={counterColor}
+            style={{
+              display: 'flex',
+              justifyContent: 'flex-end',
+              marginTop: '0.25rem',
+              fontSize: '0.875rem',
+              color: counterColor,
+            }}
           >
             {charCount} / {maxCharacters}
           </div>
@@ -194,16 +198,17 @@ export const SecureTextarea = React.forwardRef<
 
         {/* Error Message */}
         {displayError && (
-          <div
-            as="span"
-            display="block"
-            fontSize="sm"
-            color="danger"
-            marginTop="0.25rem"
+          <span
+            style={{
+              display: 'block',
+              fontSize: '0.875rem',
+              color: 'var(--wx-color-danger, #d4183d)',
+              marginTop: '0.25rem',
+            }}
             role="alert"
           >
             {displayError}
-          </div>
+          </span>
         )}
       </div>
     );

@@ -79,8 +79,8 @@ export const RoleGate: React.FC<RoleGateProps> = ({
   return (
     <div className={className} role="status" aria-label="Role denied">
       {fallback || (
-        <span color="error" fontSize="sm">
-          Your role doesn't have access to this content.
+        <span style={{ color: 'var(--wx-color-danger, #d4183d)', fontSize: '0.875rem' }}>
+          Your role doesn&apos;t have access to this content.
         </span>
       )}
     </div>

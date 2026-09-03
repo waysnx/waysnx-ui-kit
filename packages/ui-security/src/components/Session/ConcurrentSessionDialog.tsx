@@ -70,7 +70,7 @@ export const ConcurrentSessionDialog: React.FC<ConcurrentSessionDialogProps> = (
       <div
         style={{
           padding: '1rem',
-          backgroundColor: 'var(--color-background-alt, #f9f9f9)',
+          backgroundColor: 'var(--wx-color-background-alt, #f3f3f5)',
           borderRadius: '0.375rem',
           marginBottom: '1rem',
         }}
@@ -84,13 +84,13 @@ export const ConcurrentSessionDialog: React.FC<ConcurrentSessionDialogProps> = (
           </div>
 
           {session.userAgent && (
-            <span style={{ fontSize: '0.875rem', color: 'var(--color-muted, #666)' }}>
+            <span style={{ fontSize: '0.875rem', color: 'var(--wx-color-text-muted, #717182)' }}>
               {session.userAgent}
             </span>
           )}
 
           <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.875rem' }}>
-            <span style={{ color: 'var(--color-muted, #666)' }}>Time:</span>
+            <span style={{ color: 'var(--wx-color-text-muted, #717182)' }}>Time:</span>
             <span>
               {session.createdAt
                 ? new Date(session.createdAt).toLocaleString()
@@ -100,7 +100,7 @@ export const ConcurrentSessionDialog: React.FC<ConcurrentSessionDialogProps> = (
 
           {session.metadata?.['location'] && (
             <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.875rem' }}>
-              <span style={{ color: 'var(--color-muted, #666)' }}>Location:</span>
+              <span style={{ color: 'var(--wx-color-text-muted, #717182)' }}>Location:</span>
               <span>{session.metadata?.['location']}</span>
             </div>
           )}
@@ -116,15 +116,15 @@ export const ConcurrentSessionDialog: React.FC<ConcurrentSessionDialogProps> = (
           {title}
         </span>
 
-        <span style={{ display: 'block', fontSize: '1rem', color: 'var(--color-muted, #666)', marginBottom: '1.5rem' }}>
-          We detected a login from a new device or location. If this wasn't you, we
+        <span style={{ display: 'block', fontSize: '1rem', color: 'var(--wx-color-text-muted, #717182)', marginBottom: '1.5rem' }}>
+          We detected a login from a new device or location. If this wasn&apos;t you, we
           recommend rejecting this login to protect your account.
         </span>
 
         {/* New Session Info */}
         {newSession && (
           <div style={{ marginBottom: '1.5rem' }}>
-            <span style={{ display: 'block', fontSize: '0.875rem', fontWeight: 'bold', marginBottom: '0.5rem', color: 'var(--color-warning, #856404)' }}>
+            <span style={{ display: 'block', fontSize: '0.875rem', fontWeight: 700, marginBottom: '0.5rem', color: 'var(--wx-color-warning, #f59e0b)' }}>
               New Login From:
             </span>
             {formatSessionInfo(newSession)}
@@ -134,7 +134,7 @@ export const ConcurrentSessionDialog: React.FC<ConcurrentSessionDialogProps> = (
         {/* Current Session Info */}
         {currentSession && (
           <div style={{ marginBottom: '1.5rem' }}>
-            <span style={{ display: 'block', fontSize: '0.875rem', fontWeight: 'bold', marginBottom: '0.5rem', color: 'var(--color-info, #0c5460)' }}>
+            <span style={{ display: 'block', fontSize: '0.875rem', fontWeight: 700, marginBottom: '0.5rem', color: 'var(--wx-color-info, #2563eb)' }}>
               Your Current Session:
             </span>
             {formatSessionInfo(currentSession)}
@@ -145,38 +145,40 @@ export const ConcurrentSessionDialog: React.FC<ConcurrentSessionDialogProps> = (
         <div
           style={{
             padding: '1rem',
-            backgroundColor: 'var(--color-warning, #fff3cd)',
+            background: 'var(--wx-color-warning, #f59e0b)',
             borderRadius: '0.375rem',
             marginBottom: '1.5rem',
-            borderLeft: '4px solid var(--color-warning, #ffc107)',
+            borderLeft: '4px solid var(--wx-color-warning, #f59e0b)',
           }}
         >
           <span style={{ display: 'block', fontSize: '0.875rem', fontWeight: 'bold', marginBottom: '0.25rem' }}>
-            âš ï¸ Security Notice
+            ⚠ Security Notice
           </span>
           <span style={{ fontSize: '0.875rem' }}>
-            If you don't recognize this login, reject it immediately. Your current session
+            If you don&apos;t recognize this login, reject it immediately. Your current session
             will remain active.
           </span>
         </div>
 
         {/* Action Buttons */}
-        <Stack gap="md" direction="row" justifyContent="flex-end">
-          <Button
-            variant="outline"
-            onClick={handleReject}
-            disabled={isLoading}
-          >
-            Reject Login
-          </Button>
-          <Button
-            variant="primary"
-            onClick={handleApprove}
-            disabled={isLoading}
-          >
-            {isLoading ? 'Processing...' : 'Approve & Continue'}
-          </Button>
-        </Stack>
+        <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+          <Stack gap="md" direction="horizontal">
+            <Button
+              variant="outline"
+              onClick={handleReject}
+              disabled={isLoading}
+            >
+              Reject Login
+            </Button>
+            <Button
+              variant="primary"
+              onClick={handleApprove}
+              disabled={isLoading}
+            >
+              {isLoading ? 'Processing...' : 'Approve & Continue'}
+            </Button>
+          </Stack>
+        </div>
       </div>
     </Modal>
   );

@@ -1,4 +1,4 @@
-﻿/**
+/**
  * GitHubLoginButton Component
  * 
  * GitHub OAuth login button.
@@ -68,7 +68,7 @@ export const GitHubLoginButton: React.FC<GitHubLoginButtonProps> = ({
      
      
     >
-      ðŸ™ Continue with GitHub
+       Continue with GitHub
     </Button>
   );
 };

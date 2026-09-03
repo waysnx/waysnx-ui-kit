@@ -146,48 +146,51 @@ export const PINInput: React.FC<PINInputProps> = ({
         </label>
       )}
 
-      <Stack gap="sm" direction="row" justifyContent="center">
-        {Array.from({ length }).map((_, index) => (
-          <input
-            key={index}
-            ref={el => {
-              inputRefs.current[index] = el;
-            }}
-            type="text"
-            inputMode="numeric"
-            value={masked && pin[index] ? 'â€¢' : pin[index]}
-            onChange={(e: any) => handleInputChange(index, e.target.value)}
-            onKeyDown={(e: any) => handleKeyDown(index, e)}
-            onPaste={handlePaste}
-            disabled={disabled}
-            maxLength={1}
-            style={{
-              width: '50px',
-              height: '50px',
-              fontSize: '24px',
-              textAlign: 'center',
-              borderRadius: '8px',
-              border: '2px solid var(--color-border, #ccc)',
-              fontWeight: 'bold',
-              backgroundColor: 'var(--color-background, #fff)',
-            }}
-            aria-label={`PIN digit ${index + 1} of ${length}`}
-          />
-        ))}
-      </Stack>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <Stack gap="sm" direction="horizontal">
+          {Array.from({ length }).map((_, index) => (
+            <input
+              key={index}
+              ref={el => {
+                inputRefs.current[index] = el;
+              }}
+              type="text"
+              inputMode="numeric"
+              value={masked && pin[index] ? '•' : pin[index]}
+              onChange={(e: any) => handleInputChange(index, e.target.value)}
+              onKeyDown={(e: any) => handleKeyDown(index, e)}
+              onPaste={handlePaste}
+              disabled={disabled}
+              maxLength={1}
+              style={{
+                width: '50px',
+                height: '50px',
+                fontSize: '24px',
+                textAlign: 'center',
+                borderRadius: '8px',
+                border: '2px solid var(--wx-color-border, #ccc)',
+                fontWeight: 700,
+                background: 'var(--wx-color-background, #fff)',
+              }}
+              aria-label={`PIN digit ${index + 1} of ${length}`}
+            />
+          ))}
+        </Stack>
+      </div>
 
       {error && (
-        <div
-          as="span"
-          display="block"
-          fontSize="sm"
-          color="danger"
-          marginTop="0.5rem"
-          textAlign="center"
+        <span
+          style={{
+            display: 'block',
+            fontSize: '0.875rem',
+            color: 'var(--wx-color-danger, #d4183d)',
+            marginTop: '0.5rem',
+            textAlign: 'center',
+          }}
           role="alert"
         >
           {error}
-        </div>
+        </span>
       )}
     </div>
   );

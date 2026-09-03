@@ -1,4 +1,4 @@
-﻿/**
+/**
  * OktaLoginButton Component
  * 
  * Okta SSO login button.
@@ -73,7 +73,7 @@ export const OktaLoginButton: React.FC<OktaLoginButtonProps> = ({
      
      
     >
-      ðŸ” Continue with Okta
+      [lock] Continue with Okta
     </Button>
   );
 };

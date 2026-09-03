@@ -1,4 +1,4 @@
-﻿/**
+/**
  * GoogleLoginButton Component
  * 
  * Google OAuth login button.
@@ -69,7 +69,7 @@ export const GoogleLoginButton: React.FC<GoogleLoginButtonProps> = ({
      
      
     >
-      ðŸ” Continue with Google
+      [key] Continue with Google
     </Button>
   );
 };

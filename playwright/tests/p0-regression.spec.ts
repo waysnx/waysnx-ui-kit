@@ -79,7 +79,12 @@ test.describe('P0 — HtmlContent external-link safety (ui-core)', () => {
     await page.goto(storyUrl('components-htmlcontent--malicious-html'));
     await page.waitForLoadState('networkidle');
 
-    await expect(page.locator(ROOT).getByText('Safe content')).toBeVisible();
+    // Anchor on the HtmlContent region (role="region" aria-label="Content")
+    // so the assertions run only after the sanitized markup has mounted —
+    // avoids a render race on slower browsers without weakening the check.
+    const region = page.locator(`${ROOT} [role="region"]`);
+    await expect(region).toBeVisible();
+    await expect(region).toContainText('Safe content');
 
     const executed = await page.evaluate(() => (window as any).__xss_htmlcontent === true);
     expect(executed).toBe(false);

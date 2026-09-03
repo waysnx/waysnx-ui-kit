@@ -29,10 +29,12 @@ export interface SecurityEventLogProps {
   maxInitialEvents?: number;
 }
 
-const getSeverityColor = (severity: string) => {
-  const colors: Record<string, string> = {
-    critical: 'danger',
-    high: 'danger',
+type BadgeColor = 'default' | 'success' | 'error' | 'warning' | 'info';
+
+const getSeverityColor = (severity: string): BadgeColor => {
+  const colors: Record<string, BadgeColor> = {
+    critical: 'error',
+    high: 'error',
     medium: 'warning',
     low: 'info',
   };
@@ -69,30 +71,22 @@ export const SecurityEventLog: React.FC<SecurityEventLogProps> = ({
     <div>
       {/* Export Buttons */}
       {enableExport && onExport && (
-        <div marginBottom="lg" display="flex" gap="md">
-          <Button
-            variant="outline"
-           
-            onClick={() => onExport('json')}
-          >
-            ðŸ“¥ Export as JSON
+        <div style={{ marginBottom: 16, display: 'flex', gap: 12 }}>
+          <Button variant="outline" onClick={() => onExport('json')}>
+            Export as JSON
           </Button>
-          <Button
-            variant="outline"
-           
-            onClick={() => onExport('csv')}
-          >
-            ðŸ“¥ Export as CSV
+          <Button variant="outline" onClick={() => onExport('csv')}>
+            Export as CSV
           </Button>
         </div>
       )}
 
       {/* Severity Filter */}
-      <div marginBottom="lg">
-        <span fontSize="sm" fontWeight="bold" marginBottom="md">
+      <div style={{ marginBottom: 16 }}>
+        <span style={{ display: 'block', fontSize: '0.875rem', fontWeight: 700, marginBottom: 12 }}>
           Filter by Severity:
         </span>
-        <Stack gap="sm" direction="row">
+        <Stack gap="sm" direction="horizontal">
           <Button
             variant={selectedSeverity === '' ? 'primary' : 'outline'}
            
@@ -119,17 +113,19 @@ export const SecurityEventLog: React.FC<SecurityEventLogProps> = ({
           displayedEvents.map((event, idx) => (
             <div
               key={idx}
-              padding="lg"
-              backgroundColor="background-alt"
-              borderRadius="md"
-              border="1px solid var(--color-border, #ccc)"
+              style={{
+                padding: 16,
+                background: 'var(--wx-color-background-alt, #f3f3f5)',
+                borderRadius: 8,
+                border: '1px solid var(--wx-color-border, #ccc)',
+              }}
             >
-              <div display="flex" justifyContent="space-between" alignItems="flex-start" marginBottom="md">
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 12 }}>
                 <div>
-                  <span fontSize="base" fontWeight="bold" marginBottom="xs">
+                  <span style={{ display: 'block', fontSize: '1rem', fontWeight: 700, marginBottom: 4 }}>
                     {event.category || 'Security Event'}
                   </span>
-                  <span fontSize="sm" color="muted">
+                  <span style={{ fontSize: '0.875rem', color: 'var(--wx-color-text-muted, #717182)' }}>
                     {event.description}
                   </span>
                 </div>
@@ -140,50 +136,52 @@ export const SecurityEventLog: React.FC<SecurityEventLogProps> = ({
                 )}
               </div>
 
-              <Stack gap="sm" fontSize="sm">
+              <Stack gap="sm">
                 {event.timestamp && (
-                  <div display="flex" justifyContent="space-between">
-                    <span color="muted">Timestamp:</span>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.875rem' }}>
+                    <span style={{ color: 'var(--wx-color-text-muted, #717182)' }}>Timestamp:</span>
                     <span>{new Date(event.timestamp).toLocaleString()}</span>
                   </div>
                 )}
 
                 {event.userId && (
-                  <div display="flex" justifyContent="space-between">
-                    <span color="muted">User ID:</span>
-                    <span fontFamily="monospace">{event.userId}</span>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.875rem' }}>
+                    <span style={{ color: 'var(--wx-color-text-muted, #717182)' }}>User ID:</span>
+                    <span style={{ fontFamily: 'monospace' }}>{event.userId}</span>
                   </div>
                 )}
 
                 {event.ipAddress && (
-                  <div display="flex" justifyContent="space-between">
-                    <span color="muted">IP Address:</span>
-                    <span fontFamily="monospace">{event.ipAddress}</span>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.875rem' }}>
+                    <span style={{ color: 'var(--wx-color-text-muted, #717182)' }}>IP Address:</span>
+                    <span style={{ fontFamily: 'monospace' }}>{event.ipAddress}</span>
                   </div>
                 )}
 
                 {event.resource && (
-                  <div display="flex" justifyContent="space-between">
-                    <span color="muted">Resource:</span>
-                    <span fontFamily="monospace">{event.resource}</span>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.875rem' }}>
+                    <span style={{ color: 'var(--wx-color-text-muted, #717182)' }}>Resource:</span>
+                    <span style={{ fontFamily: 'monospace' }}>{event.resource}</span>
                   </div>
                 )}
               </Stack>
 
               {event.details && Object.keys(event.details).length > 0 && (
                 <div
-                  marginTop="md"
-                  padding="sm"
-                  backgroundColor="background"
-                  borderRadius="md"
-                  fontSize="xs"
+                  style={{
+                    marginTop: 12,
+                    padding: 8,
+                    background: 'var(--wx-color-background, #ffffff)',
+                    borderRadius: 8,
+                    fontSize: '0.75rem',
+                  }}
                 >
-                  <span fontWeight="bold" marginBottom="xs" color="muted">
+                  <span style={{ display: 'block', fontWeight: 700, marginBottom: 4, color: 'var(--wx-color-text-muted, #717182)' }}>
                     Additional Details:
                   </span>
                   {Object.entries(event.details).map(([key, value]) => (
                     <div key={key}>
-                      <span color="muted">
+                      <span style={{ color: 'var(--wx-color-text-muted, #717182)' }}>
                         {key}: {String(value)}
                       </span>
                     </div>
@@ -194,19 +192,21 @@ export const SecurityEventLog: React.FC<SecurityEventLogProps> = ({
           ))
         ) : (
           <div
-            padding="lg"
-            backgroundColor="background-alt"
-            borderRadius="md"
-            textAlign="center"
+            style={{
+              padding: 16,
+              background: 'var(--wx-color-background-alt, #f3f3f5)',
+              borderRadius: 8,
+              textAlign: 'center',
+            }}
           >
-            <span color="muted">No security events found</span>
+            <span style={{ color: 'var(--wx-color-text-muted, #717182)' }}>No security events found</span>
           </div>
         )}
       </Stack>
 
       {/* Load More */}
       {hasMore && !showAll && (
-        <div textAlign="center" marginTop="lg">
+        <div style={{ textAlign: 'center', marginTop: 16 }}>
           <Button
             variant="outline"
             onClick={() => setShowAll(true)}
@@ -217,7 +217,7 @@ export const SecurityEventLog: React.FC<SecurityEventLogProps> = ({
       )}
 
       {showAll && hasMore && (
-        <div textAlign="center" marginTop="lg">
+        <div style={{ textAlign: 'center', marginTop: 16 }}>
           <Button
             variant="outline"
             onClick={() => setShowAll(false)}

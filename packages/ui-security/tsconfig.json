@@ -20,9 +20,9 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@waysnx/ui-core": ["src/@types/ui-core.d.ts"],
-      "@waysnx/ui-layout": ["src/@types/ui-layout.d.ts"],
-      "@waysnx/ui-feedback": ["src/@types/ui-feedback.d.ts"]
+      "@waysnx/ui-core": ["../ui-core/dist/index.d.ts"],
+      "@waysnx/ui-layout": ["../ui-layout/dist/index.d.ts"],
+      "@waysnx/ui-feedback": ["../ui-feedback/dist/index.d.ts"]
     }
   },
   "include": ["src"],

@@ -85,7 +85,8 @@ export const SecuritySettingsPanel: React.FC<SecuritySettingsPanelProps> = ({
 
       {/* Tab Content */}
       {activeTab === 'overview' && (
-        <Stack gap="md" style={{ marginTop: '1.5rem' }}>
+        <div style={{ marginTop: '1.5rem' }}>
+        <Stack gap="md">
           <div
             style={{ padding: '1.5rem', backgroundColor: 'var(--color-background-alt, #f9f9f9)', borderRadius: '0.375rem' }}
           >
@@ -117,6 +118,7 @@ export const SecuritySettingsPanel: React.FC<SecuritySettingsPanelProps> = ({
             </Stack>
           </div>
         </Stack>
+        </div>
       )}
 
       {activeTab === 'password' && (

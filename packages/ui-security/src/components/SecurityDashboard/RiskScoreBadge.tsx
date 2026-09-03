@@ -1,4 +1,4 @@
-﻿/**
+/**
  * RiskScoreBadge Component
  * 
  * Display account risk score with visual indicator.
@@ -35,22 +35,24 @@ const getScoreLevel = (score: number): RiskLevel => {
   return 'critical';
 };
 
-const getLevelColor = (level: RiskLevel) => {
-  const colors = {
+type BadgeColor = 'default' | 'success' | 'error' | 'warning' | 'info';
+
+const getLevelColor = (level: RiskLevel): BadgeColor => {
+  const colors: Record<RiskLevel, BadgeColor> = {
     low: 'success',
     medium: 'info',
     high: 'warning',
-    critical: 'danger',
+    critical: 'error',
   };
   return colors[level];
 };
 
 const getLevelIcon = (level: RiskLevel) => {
   const icons = {
-    low: 'âœ“',
-    medium: 'â„¹ï¸',
-    high: 'âš ï¸',
-    critical: 'ðŸš¨',
+    low: '✓',
+    medium: 'i',
+    high: '⚠',
+    critical: '!',
   };
   return icons[level];
 };

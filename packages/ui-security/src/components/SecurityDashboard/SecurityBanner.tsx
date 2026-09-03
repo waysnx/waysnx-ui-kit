@@ -1,4 +1,4 @@
-﻿/**
+/**
  * SecurityBanner Component
  * 
  * Prominent banner to display security alerts and status messages.
@@ -56,10 +56,10 @@ const getSeverityStyles = (severity: SecuritySeverity) => {
 
 const getDefaultIcon = (severity: SecuritySeverity) => {
   const icons = {
-    info: 'â„¹ï¸',
-    warning: 'âš ï¸',
-    danger: 'ðŸš¨',
-    success: 'âœ“',
+    info: 'i',
+    warning: '⚠',
+    danger: '!',
+    success: '✓',
   };
   return icons[severity];
 };
@@ -132,7 +132,7 @@ export const SecurityBanner: React.FC<SecurityBannerProps> = ({
             variant="ghost"
             onClick={handleDismiss}
           >
-            âœ•
+            ✓
           </Button>
         )}
       </div>

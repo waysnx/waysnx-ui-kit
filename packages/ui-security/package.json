@@ -34,7 +34,8 @@
   "scripts": {
     "build": "tsup && npm run copy-css",
     "copy-css": "copyfiles -u 1 \"src/**/*.css\" dist",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "test:totp": "node --experimental-strip-types scripts/totp.regression.mjs"
   },
   "exports": {
     "./dist/index.css": "./dist/index.css",

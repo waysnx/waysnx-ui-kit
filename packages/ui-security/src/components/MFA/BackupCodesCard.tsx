@@ -123,15 +123,15 @@ Store these codes in a safe place. Each code can be used once if you lose access
 
   return (
     <div>
-      <div marginBottom="lg">
-        <div display="flex" justifyContent="space-between" alignItems="center" marginBottom="md">
-          <span as="h3" fontSize="base" fontWeight="bold">
+      <div style={{ marginBottom: 16 }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
+          <h3 style={{ fontSize: '1rem', fontWeight: 700 }}>
             Backup Codes
-          </span>
-          {isConfirmed && <Badge color="success">âœ“ Saved</Badge>}
+          </h3>
+          {isConfirmed && <Badge color="success">✓ Saved</Badge>}
         </div>
 
-        <span fontSize="sm" color="muted">
+        <span style={{ display: 'block', fontSize: '0.875rem', color: 'var(--wx-color-text-muted, #717182)' }}>
           Store these codes in a secure location. You can use each code once to access your
           account if you lose access to your authentication device.
         </span>
@@ -139,38 +139,41 @@ Store these codes in a safe place. Each code can be used once if you lose access
 
       {/* Codes Display */}
       <div
-        padding="lg"
-        backgroundColor="background-alt"
-        borderRadius="md"
-        marginBottom="lg"
-        maxHeight={isRevealed ? 'auto' : '200px'}
-        overflow={isRevealed ? 'visible' : 'hidden'}
-        position="relative"
+        style={{
+          padding: 16,
+          background: 'var(--wx-color-background-alt, #f3f3f5)',
+          borderRadius: 8,
+          marginBottom: 16,
+          maxHeight: isRevealed ? 'auto' : '200px',
+          overflow: isRevealed ? 'visible' : 'hidden',
+          position: 'relative',
+        }}
       >
         <Stack gap="sm">
           {codes.map((code, index) => (
             <div
               key={index}
-              display="flex"
-              justifyContent="space-between"
-              alignItems="center"
-              padding="sm"
-              backgroundColor="background"
-              borderRadius="md"
-              fontFamily="monospace"
+              style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                padding: 8,
+                background: 'var(--wx-color-background, #ffffff)',
+                borderRadius: 8,
+                fontFamily: 'monospace',
+              }}
             >
-              <div flex={1}>
-                <span fontSize="sm" fontWeight="bold">
-                  {isRevealed ? code : 'â€¢â€¢â€¢â€¢â€¢â€¢'}
+              <div style={{ flex: 1 }}>
+                <span style={{ fontSize: '0.875rem', fontWeight: 700 }}>
+                  {isRevealed ? code : '••••••'}
                 </span>
               </div>
               <Button
                 variant="ghost"
-               
                 onClick={() => handleCopyCode(code, index)}
                 disabled={!isRevealed}
               >
-                {copiedIndex === index ? 'âœ“' : 'ðŸ“‹'}
+                {copiedIndex === index ? '✓' : 'Copy'}
               </Button>
             </div>
           ))}
@@ -179,16 +182,18 @@ Store these codes in a safe place. Each code can be used once if you lose access
         {/* Reveal Overlay */}
         {!isRevealed && (
           <div
-            position="absolute"
-            top={0}
-            left={0}
-            right={0}
-            bottom={0}
-            backgroundColor="rgba(0,0,0,0.1)"
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            borderRadius="md"
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              background: 'rgba(0,0,0,0.1)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              borderRadius: 8,
+            }}
           >
             <Button
               variant="primary"
@@ -202,73 +207,74 @@ Store these codes in a safe place. Each code can be used once if you lose access
 
       {/* Warning */}
       <div
-        padding="md"
-        backgroundColor="warning"
-        borderRadius="md"
-        marginBottom="lg"
-        borderLeft="4px solid"
-        borderLeftColor="warning"
+        style={{
+          padding: 12,
+          background: 'var(--wx-color-warning, #f59e0b)',
+          borderRadius: 8,
+          marginBottom: 16,
+          borderLeft: '4px solid var(--wx-color-warning, #f59e0b)',
+        }}
       >
-        <span fontSize="sm" fontWeight="bold" marginBottom="xs">
-          âš ï¸ Security Warning
+        <span style={{ display: 'block', fontSize: '0.875rem', fontWeight: 700, marginBottom: 4 }}>
+          ⚠ Security Warning
         </span>
-        <span fontSize="sm">
+        <span style={{ display: 'block', fontSize: '0.875rem' }}>
           Anyone who has access to these codes can access your account. Store them
           securely (password manager, safe deposit box, etc).
         </span>
       </div>
 
       {/* Action Buttons */}
-      <Stack gap="md" marginBottom="lg">
-        <Button
-          variant="outline"
-         
-          onClick={handleCopyAll}
-          disabled={!isRevealed}
-        >
-          ðŸ“‹ Copy All Codes
-        </Button>
+      <div style={{ marginBottom: 16 }}>
+        <Stack gap="md">
+          <Button
+            variant="outline"
+            onClick={handleCopyAll}
+            disabled={!isRevealed}
+          >
+            Copy All Codes
+          </Button>
 
-        <Stack gap="md" direction="row">
-          <Button
-            variant="outline"
-            flex={1}
-            onClick={handleDownload}
-            disabled={!isRevealed}
-          >
-            â¬‡ï¸ Download
-          </Button>
-          <Button
-            variant="outline"
-            flex={1}
-            onClick={handlePrint}
-            disabled={!isRevealed}
-          >
-            ðŸ–¨ï¸ Print
-          </Button>
+          <Stack gap="md" direction="horizontal">
+            <Button
+              variant="outline"
+              onClick={handleDownload}
+              disabled={!isRevealed}
+            >
+              Download
+            </Button>
+            <Button
+              variant="outline"
+              onClick={handlePrint}
+              disabled={!isRevealed}
+            >
+              Print
+            </Button>
+          </Stack>
         </Stack>
-      </Stack>
+      </div>
 
       {/* Confirmation */}
       {isRevealed && !isConfirmed && (
         <Button
           variant="primary"
-         
           onClick={onConfirm}
         >
-          âœ“ I've Saved My Backup Codes
+          ✓ I&apos;ve Saved My Backup Codes
         </Button>
       )}
 
       {isConfirmed && (
         <div
-          padding="md"
-          backgroundColor="success"
-          borderRadius="md"
-          textAlign="center"
+          style={{
+            padding: 12,
+            background: 'var(--wx-color-success, #16a34a)',
+            borderRadius: 8,
+            textAlign: 'center',
+          }}
         >
-          <span fontSize="sm" fontWeight="bold">
-            âœ“ Backup codes saved successfully
+          <span style={{ fontSize: '0.875rem', fontWeight: 700 }}>
+            ✓ Backup codes saved successfully
           </span>
         </div>
       )}

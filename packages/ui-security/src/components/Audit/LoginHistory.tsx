@@ -58,6 +58,9 @@ export interface LoginHistoryProps {
   showLocation?: boolean;
 }
 
+const MUTED = 'var(--wx-color-text-muted, #717182)';
+const CARD_BG = 'var(--wx-color-background-alt, #f3f3f5)';
+
 /**
  * LoginHistory - Display login history with details
  */
@@ -73,30 +76,20 @@ export const LoginHistory: React.FC<LoginHistoryProps> = ({
   return (
     <div>
       {/* Statistics */}
-      <Stack gap="md" direction="row" marginBottom="lg">
-        <div
-          padding="md"
-          backgroundColor="background-alt"
-          borderRadius="md"
-          flex={1}
-        >
-          <span fontSize="sm" color="muted" marginBottom="xs">
+      <Stack gap="md" direction="horizontal">
+        <div style={{ padding: 12, background: CARD_BG, borderRadius: 8, flex: 1 }}>
+          <span style={{ display: 'block', fontSize: '0.875rem', color: MUTED, marginBottom: 4 }}>
             Successful Logins
           </span>
-          <span fontSize="lg" fontWeight="bold" color="success">
+          <span style={{ fontSize: '1.125rem', fontWeight: 700, color: 'var(--wx-color-success, #16a34a)' }}>
             {successCount}
           </span>
         </div>
-        <div
-          padding="md"
-          backgroundColor="background-alt"
-          borderRadius="md"
-          flex={1}
-        >
-          <span fontSize="sm" color="muted" marginBottom="xs">
+        <div style={{ padding: 12, background: CARD_BG, borderRadius: 8, flex: 1 }}>
+          <span style={{ display: 'block', fontSize: '0.875rem', color: MUTED, marginBottom: 4 }}>
             Failed Attempts
           </span>
-          <span fontSize="lg" fontWeight="bold" color="danger">
+          <span style={{ fontSize: '1.125rem', fontWeight: 700, color: 'var(--wx-color-danger, #d4183d)' }}>
             {failureCount}
           </span>
         </div>
@@ -105,81 +98,73 @@ export const LoginHistory: React.FC<LoginHistoryProps> = ({
       {/* Login Records */}
       <Stack gap="md">
         {displayedRecords.length > 0 ? (
-          displayedRecords.map(record => (
-            <div
-              key={record.id}
-              padding="md"
-              backgroundColor="background-alt"
-              borderRadius="md"
-              border={`2px solid var(--color-${record.status === 'success' ? 'success' : 'danger'}, #ccc)`}
-              borderLeft={`4px solid var(--color-${record.status === 'success' ? 'success' : 'danger'}, #ccc)`}
-            >
-              <div display="flex" justifyContent="space-between" alignItems="flex-start" marginBottom="md">
-                <div>
-                  <span fontSize="sm" fontWeight="bold">
-                    {record.timestamp.toLocaleString()}
-                  </span>
-                  {record.deviceInfo && (
-                    <span fontSize="xs" color="muted">
-                      {record.deviceInfo}
+          displayedRecords.map(record => {
+            const accent = record.status === 'success'
+              ? 'var(--wx-color-success, #16a34a)'
+              : 'var(--wx-color-danger, #d4183d)';
+            return (
+              <div
+                key={record.id}
+                style={{
+                  padding: 12,
+                  background: CARD_BG,
+                  borderRadius: 8,
+                  border: `2px solid ${accent}`,
+                  borderLeft: `4px solid ${accent}`,
+                }}
+              >
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 12 }}>
+                  <div>
+                    <span style={{ display: 'block', fontSize: '0.875rem', fontWeight: 700 }}>
+                      {record.timestamp.toLocaleString()}
                     </span>
-                  )}
+                    {record.deviceInfo && (
+                      <span style={{ fontSize: '0.75rem', color: MUTED }}>
+                        {record.deviceInfo}
+                      </span>
+                    )}
+                  </div>
+                  <Badge color={record.status === 'success' ? 'success' : 'error'}>
+                    {record.status === 'success' ? 'Success' : 'Failed'}
+                  </Badge>
                 </div>
-                <Badge color={record.status === 'success' ? 'success' : 'danger'}>
-                  {record.status === 'success' ? 'âœ“ Success' : 'âœ• Failed'}
-                </Badge>
+
+                <Stack gap="sm">
+                  {record.ipAddress && (
+                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.875rem' }}>
+                      <span style={{ color: MUTED }}>IP Address:</span>
+                      <span style={{ fontFamily: 'monospace' }}>{record.ipAddress}</span>
+                    </div>
+                  )}
+
+                  {showLocation && record.metadata?.['location'] && (
+                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.875rem' }}>
+                      <span style={{ color: MUTED }}>Location:</span>
+                      <span>{record.metadata?.['location']}</span>
+                    </div>
+                  )}
+
+                  {record.status === 'failure' && record.failureReason && (
+                    <div style={{ padding: 8, background: 'var(--wx-color-danger, #d4183d)', borderRadius: 8 }}>
+                      <span style={{ fontSize: '0.75rem', color: '#fff' }}>
+                        Reason: {record.failureReason}
+                      </span>
+                    </div>
+                  )}
+                </Stack>
               </div>
-
-              <Stack gap="sm" fontSize="sm">
-                {record.ipAddress && (
-                  <div display="flex" justifyContent="space-between">
-                    <span color="muted">IP Address:</span>
-                    <span fontFamily="monospace">{record.ipAddress}</span>
-                  </div>
-                )}
-
-                {showLocation && record.metadata?.['location'] && (
-                  <div display="flex" justifyContent="space-between">
-                    <span color="muted">Location:</span>
-                    <span>{record.metadata?.['location']}</span>
-                  </div>
-                )}
-
-                {record.status === 'failure' && record.failureReason && (
-                  <div
-                    padding="sm"
-                    backgroundColor="danger"
-                    borderRadius="md"
-                  >
-                    <span fontSize="xs" color="white">
-                      Reason: {record.failureReason}
-                    </span>
-                  </div>
-                )}
-              </Stack>
-            </div>
-          ))
+            );
+          })
         ) : (
-          <div
-            padding="lg"
-            backgroundColor="background-alt"
-            borderRadius="md"
-            textAlign="center"
-          >
-            <span color="muted">No login history available</span>
+          <div style={{ padding: 16, background: CARD_BG, borderRadius: 8, textAlign: 'center' }}>
+            <span style={{ color: MUTED }}>No login history available</span>
           </div>
         )}
       </Stack>
 
       {records.length > maxRecords && (
-        <div
-          padding="md"
-          backgroundColor="background-alt"
-          borderRadius="md"
-          textAlign="center"
-          marginTop="lg"
-        >
-          <span fontSize="sm" color="muted">
+        <div style={{ padding: 12, background: CARD_BG, borderRadius: 8, textAlign: 'center', marginTop: 16 }}>
+          <span style={{ fontSize: '0.875rem', color: MUTED }}>
             Showing {maxRecords} of {records.length} login attempts
           </span>
         </div>

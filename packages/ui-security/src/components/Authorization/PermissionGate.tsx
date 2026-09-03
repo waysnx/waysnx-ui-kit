@@ -57,8 +57,8 @@ export const PermissionGate: React.FC<PermissionGateProps> = ({
   return (
     <div className={className} role="status" aria-label="Permission denied">
       {fallback || (
-        <span color="error" fontSize="sm">
-          You don't have permission to access this content.
+        <span style={{ color: 'var(--wx-color-danger, #d4183d)', fontSize: '0.875rem' }}>
+          You don&apos;t have permission to access this content.
         </span>
       )}
     </div>

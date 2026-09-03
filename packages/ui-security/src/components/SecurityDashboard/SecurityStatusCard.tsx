@@ -10,6 +10,8 @@ import { Badge } from '@waysnx/ui-feedback';
 
 export type StatusType = 'secure' | 'warning' | 'critical' | 'info';
 
+type BadgeColor = 'default' | 'success' | 'error' | 'warning' | 'info';
+
 export interface SecurityStatusCardProps {
   /**
    * Status title
@@ -45,12 +47,12 @@ export interface SecurityStatusCardProps {
   icon?: React.ReactNode;
 }
 
-const getStatusStyles = (status: StatusType) => {
-  const styles = {
-    secure: { color: 'success', icon: 'âœ“' },
-    warning: { color: 'warning', icon: 'âš ï¸' },
-    critical: { color: 'danger', icon: 'ðŸš¨' },
-    info: { color: 'info', icon: 'â„¹ï¸' },
+const getStatusStyles = (status: StatusType): { color: BadgeColor; icon: string } => {
+  const styles: Record<StatusType, { color: BadgeColor; icon: string }> = {
+    secure: { color: 'success', icon: '✓' },
+    warning: { color: 'warning', icon: '⚠' },
+    critical: { color: 'error', icon: '⛔' },
+    info: { color: 'info', icon: 'ℹ' },
   };
   return styles[status];
 };
@@ -75,9 +77,9 @@ export const SecurityStatusCard: React.FC<SecurityStatusCardProps> = ({
     <div
       style={{
         padding: '1.5rem',
-        backgroundColor: 'var(--color-background-alt, #f9f9f9)',
+        backgroundColor: 'var(--wx-color-background-alt, #f9f9f9)',
         borderRadius: '0.375rem',
-        border: '1px solid var(--color-border, #ccc)',
+        border: '1px solid var(--wx-color-border, #ccc)',
       }}
     >
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
@@ -89,7 +91,7 @@ export const SecurityStatusCard: React.FC<SecurityStatusCardProps> = ({
             </span>
           </div>
           {description && (
-            <span style={{ display: 'block', fontSize: '0.875rem', color: 'var(--color-muted, #666)' }}>
+            <span style={{ display: 'block', fontSize: '0.875rem', color: 'var(--wx-color-text-muted, #666)' }}>
               {description}
             </span>
           )}
@@ -103,13 +105,13 @@ export const SecurityStatusCard: React.FC<SecurityStatusCardProps> = ({
         <div
           style={{
             padding: '1rem',
-            backgroundColor: 'var(--color-background, #fff)',
+            backgroundColor: 'var(--wx-color-background, #fff)',
             borderRadius: '0.375rem',
             marginBottom: '1rem',
             textAlign: 'center',
           }}
         >
-          <span style={{ fontSize: '1.125rem', fontWeight: 'bold', color: `var(--color-${styles.color}, #333)` }}>
+          <span style={{ fontSize: '1.125rem', fontWeight: 'bold' }}>
             {value}
           </span>
         </div>

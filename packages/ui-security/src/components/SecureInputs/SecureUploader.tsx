@@ -169,19 +169,20 @@ export const SecureUploader: React.FC<SecureUploaderProps> = ({
         onDragOver={handleDragOver}
         onDragLeave={handleDragLeave}
         onDrop={handleDrop}
-        padding="lg"
-        borderRadius="md"
-        border="2px dashed"
-        borderColor={isDragging ? 'primary' : 'border'}
-        backgroundColor={isDragging ? 'primary-light' : 'background-alt'}
-        textAlign="center"
-        cursor="pointer"
-        transition="all 0.2s"
-        style={{ height }}
-        display="flex"
-        flexDirection="column"
-        justifyContent="center"
-        alignItems="center"
+        style={{
+          padding: 16,
+          borderRadius: 8,
+          border: `2px dashed ${isDragging ? 'var(--wx-color-primary, #030213)' : 'var(--wx-color-border, #ccc)'}`,
+          background: isDragging ? 'var(--wx-color-primary-light, #e9ebef)' : 'var(--wx-color-background-alt, #f3f3f5)',
+          textAlign: 'center',
+          cursor: 'pointer',
+          transition: 'all 0.2s',
+          height,
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
       >
         <input
           ref={inputRef}
@@ -192,11 +193,11 @@ export const SecureUploader: React.FC<SecureUploaderProps> = ({
           style={{ display: 'none' }}
         />
 
-        <div marginBottom="md">
-          <span fontSize="lg" fontWeight="bold">
+        <div style={{ marginBottom: 12 }}>
+          <span style={{ display: 'block', fontSize: '1.125rem', fontWeight: 700 }}>
             Drop files here
           </span>
-          <span fontSize="sm" color="muted" marginTop="xs">
+          <span style={{ display: 'block', fontSize: '0.875rem', color: 'var(--wx-color-text-muted, #717182)', marginTop: 4 }}>
             or click to browse
           </span>
         </div>
@@ -205,7 +206,6 @@ export const SecureUploader: React.FC<SecureUploaderProps> = ({
           onClick={handleClick}
           variant="primary"
           disabled={isLoading}
-         
         >
           Select File{multiple ? 's' : ''}
         </Button>
@@ -213,21 +213,21 @@ export const SecureUploader: React.FC<SecureUploaderProps> = ({
 
       {/* Helper Text */}
       {helperText && (
-        <span fontSize="sm" color="muted" marginTop="sm">
+        <span style={{ display: 'block', fontSize: '0.875rem', color: 'var(--wx-color-text-muted, #717182)', marginTop: 8 }}>
           {helperText}
         </span>
       )}
 
       {/* File Size Limit */}
       {maxSize && (
-        <span fontSize="sm" color="muted" marginTop="sm">
+        <span style={{ display: 'block', fontSize: '0.875rem', color: 'var(--wx-color-text-muted, #717182)', marginTop: 8 }}>
           Maximum file size: {formatFileSize(maxSize)}
         </span>
       )}
 
       {/* Allowed Types */}
       {allowedTypes && allowedTypes.length > 0 && (
-        <span fontSize="sm" color="muted" marginTop="sm">
+        <span style={{ display: 'block', fontSize: '0.875rem', color: 'var(--wx-color-text-muted, #717182)', marginTop: 8 }}>
           Allowed types: {allowedTypes.join(', ')}
         </span>
       )}
@@ -235,13 +235,15 @@ export const SecureUploader: React.FC<SecureUploaderProps> = ({
       {/* Error Message */}
       {error && (
         <div
-          padding="md"
-          backgroundColor="danger-light"
-          borderRadius="md"
-          marginTop="md"
+          style={{
+            padding: 12,
+            background: 'var(--wx-color-danger-light, #fde8ec)',
+            borderRadius: 8,
+            marginTop: 12,
+          }}
           role="alert"
         >
-          <span fontSize="sm" color="danger">
+          <span style={{ fontSize: '0.875rem', color: 'var(--wx-color-danger, #d4183d)' }}>
             {error}
           </span>
         </div>
@@ -249,26 +251,28 @@ export const SecureUploader: React.FC<SecureUploaderProps> = ({
 
       {/* Selected Files */}
       {selectedFiles.length > 0 && (
-        <div marginTop="md">
-          <span fontSize="sm" fontWeight="bold" marginBottom="sm">
+        <div style={{ marginTop: 12 }}>
+          <span style={{ display: 'block', fontSize: '0.875rem', fontWeight: 700, marginBottom: 8 }}>
             Selected {selectedFiles.length} file{selectedFiles.length !== 1 ? 's' : ''}:
           </span>
           <Stack gap="sm">
             {selectedFiles.map((file, index) => (
               <div
                 key={index}
-                padding="sm"
-                backgroundColor="background-alt"
-                borderRadius="md"
-                display="flex"
-                justifyContent="space-between"
-                alignItems="center"
+                style={{
+                  padding: 8,
+                  background: 'var(--wx-color-background-alt, #f3f3f5)',
+                  borderRadius: 8,
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                }}
               >
                 <div>
-                  <span fontSize="sm" fontWeight="bold">
+                  <span style={{ display: 'block', fontSize: '0.875rem', fontWeight: 700 }}>
                     {file.name}
                   </span>
-                  <span fontSize="xs" color="muted">
+                  <span style={{ display: 'block', fontSize: '0.75rem', color: 'var(--wx-color-text-muted, #717182)' }}>
                     {formatFileSize(file.size)}
                   </span>
                 </div>

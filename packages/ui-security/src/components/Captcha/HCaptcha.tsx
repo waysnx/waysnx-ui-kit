@@ -83,11 +83,13 @@ export const HCaptcha: React.FC<HCaptchaProps> = ({
   if (error) {
     return (
       <div
-        padding="md"
-        backgroundColor="danger"
-        borderRadius="md"
+        style={{
+          padding: 12,
+          background: 'var(--wx-color-danger, #d4183d)',
+          borderRadius: 8,
+        }}
       >
-        <span fontSize="sm" color="white">
+        <span style={{ fontSize: '0.875rem', color: '#fff' }}>
           {error}
         </span>
       </div>
@@ -97,9 +99,11 @@ export const HCaptcha: React.FC<HCaptchaProps> = ({
   return (
     <div
       ref={containerRef}
-      display="flex"
-      justifyContent="center"
-      padding="md"
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        padding: 12,
+      }}
     />
   );
 };

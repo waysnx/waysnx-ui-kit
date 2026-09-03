@@ -758,6 +758,11 @@ body {
   margin-bottom: 14px;
 }
 
+/* Dark mode: the footer logo has no dark variant, so invert it to render light */
+[data-theme="dark"] .sidebar-footer__logo {
+  filter: brightness(0) invert(1);
+}
+
 .sidebar-footer__btn {
   display: inline-flex;
   align-items: center;
