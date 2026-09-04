@@ -72,4 +72,6 @@ import { DiagnosticsProvider, DiagnosticsErrorBoundary } from "@waysnx/ui-diagno
 Full API reference: https://uikit.waysnx.tech
 
 ## Release Status
-Phase 1 (foundation). To be verified during public-release validation.
+Production-ready and part of the WaysNX UI Kit `1.0.0` public release. As a
+functional/API library it ships zero standalone components by design; its API is
+considered stable for `1.0.0`.

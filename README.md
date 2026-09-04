@@ -44,9 +44,9 @@ The project is designed around reusable APIs, shared design tokens, accessibilit
 ### Public Release
 
 **Version:** `1.0.0`  
-**Target:** September 1, 2026
+**Initial public release: September 2026**
 
-All WaysNX UI Kit packages are planned to be published as `1.0.0` for the initial public release.
+The WaysNX UI Kit public release is `1.0.0`. All 18 focused libraries — including `@waysnx/ui-diagnostics` — and the `@waysnx/ui-kit` aggregate package are released at `1.0.0`.
 
 ---
 
@@ -542,4 +542,4 @@ The UI Kit focuses on reusable UI capabilities and is not intended to replace an
 ---
 
 **WaysNX Technologies Private Limited**  
-**Initial public release: `1.0.0` · Target: September 1, 2026**
+**Initial public release: `1.0.0` · September 2026**
