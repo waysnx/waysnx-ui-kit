@@ -1,0 +1,54 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-dashboard/dashboardheader.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "DashboardHeader component",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-dashboard",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "actions": {
+      "description": "Action buttons/elements",
+      "type": "string"
+    },
+    "breadcrumb": {
+      "description": "Breadcrumb navigation",
+      "type": "string"
+    },
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "icon": {
+      "description": "Header icon",
+      "type": "string"
+    },
+    "style": {
+      "description": "Additional CSS styles",
+      "type": "string"
+    },
+    "subtitle": {
+      "description": "Header subtitle",
+      "type": "string"
+    },
+    "title": {
+      "description": "Header title",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "title": "DashboardHeader",
+  "type": "object"
+}

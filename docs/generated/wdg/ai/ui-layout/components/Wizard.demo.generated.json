@@ -1,0 +1,56 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "wizard",
+    "name": "Wizard",
+    "package": "@waysnx/ui-layout",
+    "export": "Wizard"
+  },
+  "categories": [
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-showStepNumbers-false",
+          "title": "Disabled State",
+          "description": "Example with showStepNumbers enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "showStepNumbers": false
+          },
+          "keywords": [
+            "showStepNumbers",
+            "state"
+          ]
+        },
+        {
+          "id": "states-showStepNumbers-true",
+          "title": "Enabled State",
+          "description": "Example with showStepNumbers enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "showStepNumbers": true
+          },
+          "keywords": [
+            "showStepNumbers",
+            "state"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:00.220087",
+  "stats": {
+    "examplesGenerated": 2,
+    "categoriesGenerated": 1
+  }
+}

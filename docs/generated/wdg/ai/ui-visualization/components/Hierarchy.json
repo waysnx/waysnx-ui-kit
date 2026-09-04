@@ -1,0 +1,316 @@
+{
+  "id": "ui-visualization:hierarchy",
+  "name": "Hierarchy",
+  "slug": "hierarchy",
+  "library": "ui-visualization",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Hierarchy",
+  "purpose": "Visualize organizational or hierarchical relationships",
+  "shortDescription": "Visualize organizational or hierarchical relationships.",
+  "longDescription": "Visualize organizational or hierarchical relationships.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Visualization/Hierarchy",
+      "storyId": "visualization-hierarchy",
+      "url": "https://uikit.waysnx.tech/?path=/docs/visualization-hierarchy",
+      "stories": [],
+      "tags": [],
+      "source": "Hierarchy.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Hierarchy for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Hierarchy"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "Connector",
+      "MiniMap",
+      "Toolbar",
+      "TreeNode"
+    ],
+    "usedBy": [],
+    "related": [
+      "Connector",
+      "MiniMap",
+      "Toolbar",
+      "TreeNode"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": [
+      "Connector",
+      "MiniMap",
+      "Toolbar",
+      "TreeNode"
+    ]
+  },
+  "dependencies": {
+    "useVisualization": "unknown",
+    "useZoom": "unknown",
+    "useSelection": "unknown",
+    "useMiniMap": "unknown",
+    "TreeNode": "unknown",
+    "Connector": "unknown",
+    "MiniMap": "unknown",
+    "Toolbar": "unknown",
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "nodes",
+      "type": "VisNode[]",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "width",
+      "type": "number | string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "height",
+      "type": "number | string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onNodeClick",
+      "type": "(event: VisNodeEvent) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onSelectionChange",
+      "type": "(selectedIds: string[]) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "renderNode",
+      "type": "(node: LayoutNode) => React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showMiniMap",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showToolbar",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showGrid",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "dark",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-vis-canvas__svg",
+    "wx-vis-canvas__transform"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Hierarchy\\Hierarchy.tsx",
+  "keywords": [
+    "hierarchy",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Hierarchy",
+    "Create an example with Hierarchy",
+    "Generate a Hierarchy component",
+    "Build a Hierarchy in my form"
+  ],
+  "componentIntent": "Provide Hierarchy functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.902107",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "ebda11f1",
+  "metadata": {
+    "purpose": "Visualize organizational or hierarchical relationships.",
+    "description": "A component that displays hierarchical data in a structured visual format (org chart, family tree, etc.). Shows connections between nodes and relationships. Often includes customizable layout directions and styling.",
+    "functionalAreas": [
+      "Visualization",
+      "Data Entry"
+    ],
+    "userIntents": [
+      "See organizational structure",
+      "Understand relationships",
+      "View reporting structure",
+      "See team organization"
+    ],
+    "exampleUseCases": [
+      "Organizational Chart",
+      "Team Structure",
+      "Reporting Hierarchy",
+      "Family Tree",
+      "Management Structure",
+      "Workflow Steps",
+      "Decision Tree"
+    ],
+    "useWhen": [
+      "Use this component to display organizational structures.",
+      "Use this component when relationships are important.",
+      "Use this component for org charts or hierarchical display.",
+      "Use this component with customizable styling."
+    ],
+    "avoidWhen": [
+      "Avoid this component for simple lists (use List instead).",
+      "Avoid this component without clear relationships.",
+      "Avoid this component with very large hierarchies.",
+      "Avoid this component without proper layout algorithms."
+    ],
+    "relatedComponents": [
+      "OrgChart",
+      "Tree",
+      "Connector"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

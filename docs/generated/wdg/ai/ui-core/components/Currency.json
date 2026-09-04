@@ -1,0 +1,466 @@
+{
+  "id": "ui-core:currency",
+  "name": "Currency",
+  "slug": "currency",
+  "library": "ui-core",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Currency",
+  "purpose": "Collect and display monetary amounts with automatic currency formatting",
+  "shortDescription": "Collect and display monetary amounts with automatic currency formatting.",
+  "longDescription": "Collect and display monetary amounts with automatic currency formatting.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Components/Currency",
+      "storyId": "components-currency",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-currency",
+      "stories": [],
+      "tags": [],
+      "source": "Currency.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Currency for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Currency"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown",
+    "NumericFormat": "unknown",
+    "NumericFormatProps": "unknown",
+    "warn": "unknown"
+  },
+  "props": [
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "value",
+      "type": "number | string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onChange",
+      "type": "(value: number | null, event?: React.ChangeEvent<HTMLInputElement>) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onBlur",
+      "type": "(event: React.FocusEvent<HTMLInputElement>) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "currencySymbol",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "currencySymbolPosition",
+      "type": "'start' | 'end'",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "precision",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "thousandSeparator",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "decimalSeparator",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "hint",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "required",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaDescribedBy",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-error",
+    "--wx-color-primary",
+    "--wx-color-surface-hover",
+    "--wx-color-text",
+    "--wx-color-text-muted",
+    "--wx-input-height"
+  ],
+  "cssClasses": [
+    "wx-currency-wrapper",
+    "wx-currency-label",
+    "wx-currency-input",
+    "wx-currency-input-error",
+    "wx-currency-hint",
+    "wx-currency-error"
+  ],
+  "designTokens": {
+    "other": {
+      "--wx-input-height": {
+        "properties": [
+          "height"
+        ],
+        "selectors": [
+          ".wx-currency-input"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      }
+    }
+  },
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-color-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-currency-label"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-border": {
+      "properties": [
+        "border"
+      ],
+      "selectors": [
+        ".wx-currency-input"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary": {
+      "properties": [
+        "border-color"
+      ],
+      "selectors": [
+        ".wx-currency-input:focus"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error": {
+      "properties": [
+        "border-color",
+        "color"
+      ],
+      "selectors": [
+        ".wx-currency-input-error",
+        ".wx-currency-input-error:focus",
+        ".wx-currency-error"
+      ],
+      "occurrences": 3,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface-hover": {
+      "properties": [
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-currency-input:disabled"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-currency-hint"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Currency\\Currency.tsx",
+  "keywords": [
+    "label",
+    "currency",
+    "value",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Currency",
+    "Create an example with Currency",
+    "Generate a Currency component",
+    "Build a Currency in my form"
+  ],
+  "componentIntent": "Provide Currency functionality",
+  "semanticCategory": "input",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.565788",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "0b32eeec",
+  "metadata": {
+    "purpose": "Collect and display monetary amounts with automatic currency formatting.",
+    "description": "A specialized numeric input field for currency values that enforces proper formatting with decimal places, thousand separators, and currency symbols. Provides visual formatting as users type without requiring manual format entry. Supports configurable currency symbols and positioning to accommodate different locales and requirements.",
+    "functionalAreas": [
+      "Data Entry",
+      "Forms",
+      "Feedback"
+    ],
+    "userIntents": [
+      "Enter a price or payment amount",
+      "View properly formatted currency values",
+      "Input monetary amounts with validation",
+      "Complete financial transactions"
+    ],
+    "exampleUseCases": [
+      "Purchase Amount",
+      "Invoice Total",
+      "Budget Entry",
+      "Price Input",
+      "Payment Form",
+      "Cost Estimation"
+    ],
+    "useWhen": [
+      "Use this component when collecting monetary values from users.",
+      "Use this component when automatic formatting improves data entry experience.",
+      "Use this component when currency symbol positioning must match regional conventions.",
+      "Use this component when precision to two decimal places is required."
+    ],
+    "avoidWhen": [
+      "Avoid this component when collecting non-monetary numeric values.",
+      "Avoid this component when the system requires raw numeric input without formatting.",
+      "Avoid this component when negative values are valid (component restricts to non-negative).",
+      "Avoid this component when custom decimal precision is needed beyond two places."
+    ],
+    "relatedComponents": [
+      "Input",
+      "Slider",
+      "Textarea"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "react-imask",
+        "version": "^7.6.1"
+      },
+      {
+        "name": "react-number-format",
+        "version": "^5.4.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-datepicker",
+        "version": "^8.0.0"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-datepicker",
+        "version": "^7.0.0"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

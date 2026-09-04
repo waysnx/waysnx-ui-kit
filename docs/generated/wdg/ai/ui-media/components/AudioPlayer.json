@@ -1,0 +1,226 @@
+{
+  "id": "ui-media:audioplayer",
+  "name": "AudioPlayer",
+  "slug": "audio-player",
+  "library": "ui-media",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Audio Player",
+  "purpose": "Play audio content with playback controls and progress tracking",
+  "shortDescription": "Play audio content with playback controls and progress tracking.",
+  "longDescription": "Play audio content with playback controls and progress tracking.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Media/AudioPlayer",
+      "storyId": "media-audioplayer",
+      "url": "https://uikit.waysnx.tech/?path=/docs/media-audioplayer",
+      "stories": [],
+      "tags": [],
+      "source": "AudioPlayer.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use AudioPlayer for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a AudioPlayer"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useRef": "unknown",
+    "useState": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-adv-audio-player__progress-bar",
+    "wx-adv-audio-player__time",
+    "wx-adv-audio-player__progress",
+    "wx-adv-audio-player__play-btn",
+    "wx-adv-audio-player__title",
+    "wx-adv-audio-player__info",
+    "wx-adv-audio-player__artist"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\AudioPlayer\\AudioPlayer.tsx",
+  "keywords": [
+    "audioplayer",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use AudioPlayer",
+    "Create an example with AudioPlayer",
+    "Generate a AudioPlayer component",
+    "Build a AudioPlayer in my form"
+  ],
+  "componentIntent": "Provide AudioPlayer functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.311903",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "3cd9e4f1",
+  "metadata": {
+    "purpose": "Play audio content with playback controls and progress tracking.",
+    "description": "A customizable audio player component with play/pause, volume, seek bar, and time display. Supports multiple audio formats and playlists. Used for music, podcasts, audiobooks, and other audio content.",
+    "functionalAreas": [
+      "Visualization",
+      "Communication"
+    ],
+    "userIntents": [
+      "Play audio content",
+      "Control playback",
+      "Adjust volume",
+      "Skip through audio"
+    ],
+    "exampleUseCases": [
+      "Music Player",
+      "Podcast Playback",
+      "Audiobook Player",
+      "Voice Recording",
+      "Audio Upload Preview",
+      "Sound Effect",
+      "Background Music"
+    ],
+    "useWhen": [
+      "Use this component for audio playback and consumption.",
+      "Use this component with standard audio controls.",
+      "Use this component for music, podcasts, or audiobooks.",
+      "Use this component when audio visualization is helpful."
+    ],
+    "avoidWhen": [
+      "Avoid this component for simple sound effects (use audio tag instead).",
+      "Avoid this component without proper audio format support.",
+      "Avoid this component for live streaming (use streaming solution).",
+      "Avoid this component without bandwidth optimization."
+    ],
+    "relatedComponents": [
+      "VideoPlayer",
+      "VoiceMessage",
+      "Waveform"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "qrcode",
+        "version": "^1.5.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/qrcode",
+        "version": "^1.5.5"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

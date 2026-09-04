@@ -1,0 +1,256 @@
+{
+  "id": "ui-security:backupcodescard",
+  "name": "BackupCodesCard",
+  "slug": "backup-codes-card",
+  "library": "ui-security",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Backup Codes Card",
+  "purpose": "BackupCodesCard - Display backup codes for account recovery",
+  "shortDescription": "BackupCodesCard - Display backup codes for account recovery",
+  "longDescription": "BackupCodesCard - Display backup codes for account recovery",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Security/MFA/BackupCodesCard",
+      "storyId": "security-mfa-backupcodescard",
+      "url": "https://uikit.waysnx.tech/?path=/docs/security-mfa-backupcodescard",
+      "stories": [],
+      "tags": [],
+      "source": "BackupCodesCard.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use BackupCodesCard for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a BackupCodesCard"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "Badge",
+      "Button",
+      "Stack"
+    ],
+    "usedBy": [],
+    "related": [
+      "Badge",
+      "Button",
+      "Stack"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": [
+      "Badge",
+      "Button",
+      "Stack"
+    ]
+  },
+  "dependencies": {
+    "Button": "unknown",
+    "Stack": "unknown",
+    "Badge": "unknown"
+  },
+  "props": [
+    {
+      "name": "codes",
+      "type": "string[]",
+      "description": "Backup codes array",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "initiallyRevealed",
+      "type": "boolean",
+      "description": "Whether codes are initially revealed",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onDownload",
+      "type": "() => void",
+      "description": "Callback to download codes",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onPrint",
+      "type": "() => void",
+      "description": "Callback to print codes",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onCopyAll",
+      "type": "() => void",
+      "description": "Callback to copy all codes",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "isConfirmed",
+      "type": "boolean",
+      "description": "Whether backup codes have been saved/confirmed",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onConfirm",
+      "type": "() => void",
+      "description": "Callback when user confirms they saved codes",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\MFA\\BackupCodesCard.tsx",
+  "keywords": [
+    "backupcodescard",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use BackupCodesCard",
+    "Create an example with BackupCodesCard",
+    "Generate a BackupCodesCard component",
+    "Build a BackupCodesCard in my form"
+  ],
+  "componentIntent": "Provide BackupCodesCard functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.498886",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "af586f8d",
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-media",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

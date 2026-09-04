@@ -1,0 +1,238 @@
+{
+  "id": "ui-core:hidden",
+  "name": "Hidden",
+  "slug": "hidden",
+  "library": "ui-core",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Hidden",
+  "purpose": "Store and submit form field values that should not be visible to users",
+  "shortDescription": "Store and submit form field values that should not be visible to users.",
+  "longDescription": "Store and submit form field values that should not be visible to users.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Components/Hidden",
+      "storyId": "components-hidden",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-hidden",
+      "stories": [],
+      "tags": [],
+      "source": "Hidden.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Hidden for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Hidden"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown"
+  },
+  "props": [
+    {
+      "name": "name",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Hidden\\Hidden.tsx",
+  "keywords": [
+    "components",
+    "value",
+    "hidden"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Hidden",
+    "Create an example with Hidden",
+    "Generate a Hidden component",
+    "Build a Hidden in my form"
+  ],
+  "componentIntent": "Provide Hidden functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.612089",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "b30c12c2",
+  "metadata": {
+    "purpose": "Store and submit form field values that should not be visible to users.",
+    "description": "A hidden form input field that stores data to be submitted with a form without displaying it to users. Used for tracking internal identifiers, system values, or data that should persist without user modification. Maintains form integrity while keeping sensitive or system-generated values out of view.",
+    "functionalAreas": [
+      "Forms",
+      "Data Entry"
+    ],
+    "userIntents": [
+      "Submit internal identifiers with form",
+      "Maintain system values with form submission",
+      "Track session or context information"
+    ],
+    "exampleUseCases": [
+      "Record Parent ID",
+      "Store Session Token",
+      "Maintain Form Context",
+      "Track Record Version",
+      "Store System Identifier",
+      "Include CSRF Token"
+    ],
+    "useWhen": [
+      "Use this component when form data must be submitted without user visibility.",
+      "Use this component when system-generated values must accompany form submission.",
+      "Use this component when tracking internal identifiers for backend processing."
+    ],
+    "avoidWhen": [
+      "Avoid this component when data should be visible or user-editable.",
+      "Avoid this component for sensitive data that should never be transmitted.",
+      "Avoid this component when form data encryption is the actual security need."
+    ],
+    "relatedComponents": [
+      "Input",
+      "Button"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "react-imask",
+        "version": "^7.6.1"
+      },
+      {
+        "name": "react-number-format",
+        "version": "^5.4.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-datepicker",
+        "version": "^8.0.0"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-datepicker",
+        "version": "^7.0.0"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

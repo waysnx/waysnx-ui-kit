@@ -1,0 +1,108 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "drawer",
+    "name": "Drawer",
+    "package": "@waysnx/ui-feedback",
+    "export": "Drawer"
+  },
+  "categories": [
+    {
+      "id": "sizes",
+      "title": "Sizes",
+      "description": "",
+      "examples": [
+        {
+          "id": "sizes-size-sm",
+          "title": "Size: sm",
+          "description": "Demonstrates the sm size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "sm"
+          },
+          "keywords": [
+            "size",
+            "sm"
+          ]
+        },
+        {
+          "id": "sizes-size-md",
+          "title": "Size: md",
+          "description": "Demonstrates the md size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "md"
+          },
+          "keywords": [
+            "size",
+            "md"
+          ]
+        },
+        {
+          "id": "sizes-size-lg",
+          "title": "Size: lg",
+          "description": "Demonstrates the lg size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "lg"
+          },
+          "keywords": [
+            "size",
+            "lg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-open-false",
+          "title": "Disabled State",
+          "description": "The component is open.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "open": false
+          },
+          "keywords": [
+            "open",
+            "state"
+          ]
+        },
+        {
+          "id": "states-open-true",
+          "title": "Enabled State",
+          "description": "The component is open.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "open": true
+          },
+          "keywords": [
+            "open",
+            "state"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:50.484827",
+  "stats": {
+    "examplesGenerated": 5,
+    "categoriesGenerated": 2
+  }
+}

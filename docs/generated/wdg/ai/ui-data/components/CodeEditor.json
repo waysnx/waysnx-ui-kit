@@ -1,0 +1,218 @@
+{
+  "id": "ui-data:codeeditor",
+  "name": "CodeEditor",
+  "slug": "code-editor",
+  "library": "ui-data",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Code Editor",
+  "purpose": "Enable editing and authoring of source code with syntax support",
+  "shortDescription": "Enable editing and authoring of source code with syntax support.",
+  "longDescription": "Enable editing and authoring of source code with syntax support.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Data/CodeEditor",
+      "storyId": "data-codeeditor",
+      "url": "https://uikit.waysnx.tech/?path=/docs/data-codeeditor",
+      "stories": [],
+      "tags": [],
+      "source": "CodeEditor.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use CodeEditor for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a CodeEditor"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useState": "unknown",
+    "useMemo": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-adv-code-viewer__header",
+    "wx-adv-code-viewer__lines",
+    "wx-adv-code-viewer__body",
+    "wx-adv-json-editor__status",
+    "--wx-adv-editor-bg",
+    "--wx-color-text",
+    "--wx-adv-editor-font"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\CodeEditor\\CodeEditor.tsx",
+  "keywords": [
+    "codeeditor",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use CodeEditor",
+    "Create an example with CodeEditor",
+    "Generate a CodeEditor component",
+    "Build a CodeEditor in my form"
+  ],
+  "componentIntent": "Provide CodeEditor functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.197492",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "5398cc23",
+  "metadata": {
+    "purpose": "Enable editing and authoring of source code with syntax support.",
+    "description": "An interactive code editor component with syntax highlighting, line numbers, code completion, and keyboard shortcuts. Supports multiple languages and themes. Used for writing code, scripts, queries, or any text that benefits from code-aware editing.",
+    "functionalAreas": [
+      "Data Entry",
+      "Forms"
+    ],
+    "userIntents": [
+      "Write or edit code",
+      "Author scripts or queries",
+      "Benefit from syntax highlighting",
+      "Use keyboard shortcuts"
+    ],
+    "exampleUseCases": [
+      "SQL Query Editor",
+      "JavaScript Editor",
+      "Configuration File Editor",
+      "Script Editor",
+      "Code Snippet Editor",
+      "Transformation Code",
+      "Filter Expression Editor"
+    ],
+    "useWhen": [
+      "Use this component when users need to edit code or scripts.",
+      "Use this component for configuration or query input.",
+      "Use this component when syntax highlighting improves usability.",
+      "Use this component with keyboard shortcuts for power users."
+    ],
+    "avoidWhen": [
+      "Avoid this component for simple text input (use TextField instead).",
+      "Avoid this component for read-only code (use CodeViewer instead).",
+      "Avoid this component without proper language support setup.",
+      "Avoid this component on mobile (limited space and keyboard challenges)."
+    ],
+    "relatedComponents": [
+      "CodeViewer",
+      "JSONEditor",
+      "TextArea"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

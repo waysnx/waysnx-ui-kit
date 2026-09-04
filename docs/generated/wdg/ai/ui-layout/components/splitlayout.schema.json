@@ -1,0 +1,59 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-layout/splitlayout.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Create a two-panel layout with resizable divider.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-layout",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "children": {
+      "description": "",
+      "type": "string"
+    },
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "direction": {
+      "description": "",
+      "enum": [
+        "horizontal",
+        "vertical"
+      ]
+    },
+    "initialSize": {
+      "description": "",
+      "type": "number"
+    },
+    "maxSize": {
+      "description": "",
+      "type": "number"
+    },
+    "minSize": {
+      "description": "",
+      "type": "number"
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [
+    "children"
+  ],
+  "title": "SplitLayout",
+  "type": "object"
+}

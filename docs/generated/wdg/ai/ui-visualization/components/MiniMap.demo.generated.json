@@ -1,0 +1,44 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "minimap",
+    "name": "MiniMap",
+    "package": "@waysnx/ui-visualization",
+    "export": "MiniMap"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic",
+          "title": "Basic MiniMap",
+          "description": "Simple MiniMap with default configuration.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "state": "Sample Text",
+            "totalWidth": 10,
+            "totalHeight": 10,
+            "onNavigate": 10
+          },
+          "keywords": [
+            "basic",
+            "minimap"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:08.469587",
+  "stats": {
+    "examplesGenerated": 1,
+    "categoriesGenerated": 1
+  }
+}

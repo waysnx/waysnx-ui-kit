@@ -1,0 +1,209 @@
+{
+  "id": "ui-security:securityalertspanel",
+  "name": "SecurityAlertsPanel",
+  "slug": "security-alerts-panel",
+  "library": "ui-security",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Security Alerts Panel",
+  "purpose": "SecurityAlertsPanel component",
+  "shortDescription": "SecurityAlertsPanel component",
+  "longDescription": "SecurityAlertsPanel component",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Security/Panels/SecurityAlertsPanel",
+      "storyId": "security-panels-securityalertspanel",
+      "url": "https://uikit.waysnx.tech/?path=/docs/security-panels-securityalertspanel",
+      "stories": [],
+      "tags": [],
+      "source": "SecurityAlertsPanel.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use SecurityAlertsPanel for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a SecurityAlertsPanel"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "Button",
+      "Checkbox",
+      "Stack"
+    ],
+    "usedBy": [],
+    "related": [
+      "Button",
+      "Checkbox",
+      "Stack"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": [
+      "Button",
+      "Checkbox",
+      "Stack"
+    ]
+  },
+  "dependencies": {
+    "React": "unknown",
+    "Button": "unknown",
+    "Checkbox": "unknown",
+    "Stack": "unknown"
+  },
+  "props": [
+    {
+      "name": "onSave",
+      "type": "(prefs: any) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\SecuritySettings\\SecurityAlertsPanel.tsx",
+  "keywords": [
+    "securityalertspanel",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use SecurityAlertsPanel",
+    "Create an example with SecurityAlertsPanel",
+    "Generate a SecurityAlertsPanel component",
+    "Build a SecurityAlertsPanel in my form"
+  ],
+  "componentIntent": "Provide SecurityAlertsPanel functionality",
+  "semanticCategory": "feedback",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.743851",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "32cd004b",
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-media",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

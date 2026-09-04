@@ -1,0 +1,220 @@
+{
+  "id": "ui-media:barcode",
+  "name": "Barcode",
+  "slug": "barcode",
+  "library": "ui-media",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Barcode",
+  "purpose": "Generate and display barcodes for identification or tracking",
+  "shortDescription": "Generate and display barcodes for identification or tracking.",
+  "longDescription": "Generate and display barcodes for identification or tracking.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Media/Barcode",
+      "storyId": "media-barcode",
+      "url": "https://uikit.waysnx.tech/?path=/docs/media-barcode",
+      "stories": [],
+      "tags": [],
+      "source": "Barcode.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Barcode for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Barcode"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useRef": "unknown",
+    "useEffect": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-adv-barcode__download-btn"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Barcode\\Barcode.tsx",
+  "keywords": [
+    "barcode",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Barcode",
+    "Create an example with Barcode",
+    "Generate a Barcode component",
+    "Build a Barcode in my form"
+  ],
+  "componentIntent": "Provide Barcode functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.319093",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "4a70f1ed",
+  "metadata": {
+    "purpose": "Generate and display barcodes for identification or tracking.",
+    "description": "A component that generates barcode images from data (product codes, tracking numbers, etc.) in various formats (Code128, EAN, etc.). Supports customization of size and styling. Used for product labeling and inventory systems.",
+    "functionalAreas": [
+      "Visualization",
+      "Data Entry"
+    ],
+    "userIntents": [
+      "Generate barcode",
+      "Scan product",
+      "Track inventory",
+      "Print label"
+    ],
+    "exampleUseCases": [
+      "Product Barcode",
+      "Inventory Label",
+      "Shipping Label",
+      "Tracking Number",
+      "Retail Label",
+      "Asset Tag",
+      "Package Label"
+    ],
+    "useWhen": [
+      "Use this component to generate barcodes for products or items.",
+      "Use this component in inventory or point-of-sale systems.",
+      "Use this component for printing labels.",
+      "Use this component for asset tracking."
+    ],
+    "avoidWhen": [
+      "Avoid this component without barcode generation library.",
+      "Avoid this component for simple text display (use Text instead).",
+      "Avoid this component for mobile-only experiences (use QR Code instead).",
+      "Avoid this component without proper barcode format support."
+    ],
+    "relatedComponents": [
+      "QRCode",
+      "BarcodeScanner",
+      "ImageViewer"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "qrcode",
+        "version": "^1.5.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/qrcode",
+        "version": "^1.5.5"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

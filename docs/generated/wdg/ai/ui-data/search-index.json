@@ -1,0 +1,313 @@
+{
+  "version": "2.0.0",
+  "library": "ui-data",
+  "generatedAt": "2026-09-03T20:02:30.804294",
+  "components": [
+    {
+      "id": "ui-data:codeeditor",
+      "name": "CodeEditor",
+      "slug": "code-editor",
+      "category": "components",
+      "description": "Enable editing and authoring of source code with syntax support.",
+      "keywords": [
+        "codeeditor",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use CodeEditor for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-data:codeviewer",
+      "name": "CodeViewer",
+      "slug": "code-viewer",
+      "category": "components",
+      "description": "Display read-only source code with syntax highlighting.",
+      "keywords": [
+        "codeviewer",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use CodeViewer for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-data:jsoneditor",
+      "name": "JSONEditor",
+      "slug": "json-editor",
+      "category": "components",
+      "description": "Enable editing and validation of JSON data.",
+      "keywords": [
+        "jsoneditor",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use JSONEditor for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-data:markdowneditor",
+      "name": "MarkdownEditor",
+      "slug": "markdown-editor",
+      "category": "components",
+      "description": "Enable authoring of markdown content with visual preview.",
+      "keywords": [
+        "markdowneditor",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use MarkdownEditor for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-data:markdownviewer",
+      "name": "MarkdownViewer",
+      "slug": "markdown-viewer",
+      "category": "components",
+      "description": "Display formatted markdown content as rendered HTML.",
+      "keywords": [
+        "components",
+        "markdownviewer"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use MarkdownViewer for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-data:xmlviewer",
+      "name": "XMLViewer",
+      "slug": "xml-viewer",
+      "category": "components",
+      "description": "Display and navigate XML data with hierarchical tree view.",
+      "keywords": [
+        "xmlviewer",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use XMLViewer for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    }
+  ]
+}

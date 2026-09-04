@@ -1,0 +1,229 @@
+{
+  "id": "ui-communication:notificationlist",
+  "name": "NotificationList",
+  "slug": "notification-list",
+  "library": "ui-communication",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Notification List",
+  "purpose": "Display a list of notifications for review and management",
+  "shortDescription": "Display a list of notifications for review and management.",
+  "longDescription": "Display a list of notifications for review and management.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Communication/NotificationList",
+      "storyId": "communication-notificationlist",
+      "url": "https://uikit.waysnx.tech/?path=/docs/communication-notificationlist",
+      "stories": [],
+      "tags": [],
+      "source": "NotificationList.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use NotificationList for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a NotificationList"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-comm-notification-item__body",
+    "wx-comm-notification-list__header",
+    "wx-comm-notification-list__mark-read",
+    "wx-comm-notification-item__avatar",
+    "wx-comm-notification-item__time",
+    "wx-comm-notification-item__content",
+    "wx-comm-notification-item__title",
+    "wx-comm-notification-list__title",
+    "--wx-color-text-muted"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\NotificationList\\NotificationList.tsx",
+  "keywords": [
+    "notificationlist",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use NotificationList",
+    "Create an example with NotificationList",
+    "Generate a NotificationList component",
+    "Build a NotificationList in my form"
+  ],
+  "componentIntent": "Provide NotificationList functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.478229",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "7bfe219d",
+  "metadata": {
+    "purpose": "Display a list of notifications for review and management.",
+    "description": "A component that shows a collection of notifications with content, timestamps, and actions. Users can mark as read, archive, or act on notifications. Often used in notification center or as dropdown from notification icon.",
+    "functionalAreas": [
+      "Communication",
+      "Visualization"
+    ],
+    "userIntents": [
+      "See all notifications",
+      "Review notification content",
+      "Mark notifications as read",
+      "Take action on notifications"
+    ],
+    "exampleUseCases": [
+      "Notification Inbox",
+      "Notification Center",
+      "Notification Dropdown",
+      "Alert List",
+      "Notification Panel",
+      "Notification History",
+      "Message Notifications"
+    ],
+    "useWhen": [
+      "Use this component to display notifications in list format.",
+      "Use this component in notification center or dropdown.",
+      "Use this component when users need to manage notifications.",
+      "Use this component with marking as read and clearing actions."
+    ],
+    "avoidWhen": [
+      "Avoid this component for single temporary notifications (use Toast instead).",
+      "Avoid this component without clear notification management actions.",
+      "Avoid this component for non-notification content.",
+      "Avoid this component without proper timestamp and content display."
+    ],
+    "relatedComponents": [
+      "NotificationCenter",
+      "NotificationBadge",
+      "Toast"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

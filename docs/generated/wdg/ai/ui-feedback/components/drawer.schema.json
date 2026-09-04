@@ -1,0 +1,80 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-feedback/drawer.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display content in a side panel that slides in from the screen edge.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-feedback",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "children": {
+      "description": "",
+      "type": "string"
+    },
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "closeOnBackdrop": {
+      "description": "",
+      "type": "boolean"
+    },
+    "onClose": {
+      "description": "",
+      "type": "null"
+    },
+    "open": {
+      "description": "",
+      "type": "boolean"
+    },
+    "position": {
+      "description": "",
+      "enum": [
+        "left",
+        "right"
+      ]
+    },
+    "showCloseButton": {
+      "description": "",
+      "type": "boolean"
+    },
+    "size": {
+      "description": "",
+      "enum": [
+        "sm",
+        "md",
+        "lg"
+      ]
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    },
+    "title": {
+      "description": "",
+      "enum": [
+        "string",
+        "React.ReactNode"
+      ]
+    }
+  },
+  "required": [
+    "open",
+    "onClose",
+    "children"
+  ],
+  "title": "Drawer",
+  "type": "object"
+}

@@ -1,0 +1,248 @@
+{
+  "id": "ui-communication:chatwindow",
+  "name": "ChatWindow",
+  "slug": "chat-window",
+  "library": "ui-communication",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Chat Window",
+  "purpose": "Display message history and enable real-time chat conversation",
+  "shortDescription": "Display message history and enable real-time chat conversation.",
+  "longDescription": "Display message history and enable real-time chat conversation.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Communication/ChatWindow",
+      "storyId": "communication-chatwindow",
+      "url": "https://uikit.waysnx.tech/?path=/docs/communication-chatwindow",
+      "stories": [],
+      "tags": [],
+      "source": "ChatWindow.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use ChatWindow for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a ChatWindow"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "ChatInput",
+      "MessageBubble",
+      "TypingIndicator"
+    ],
+    "usedBy": [],
+    "related": [
+      "ChatInput",
+      "MessageBubble",
+      "TypingIndicator"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": [
+      "ChatInput",
+      "MessageBubble",
+      "TypingIndicator"
+    ]
+  },
+  "dependencies": {
+    "useRef": "unknown",
+    "useEffect": "unknown",
+    "MessageBubble": "unknown",
+    "ChatInput": "unknown",
+    "TypingIndicator": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-comm-chat-header__info",
+    "wx-comm-chat-header__avatar",
+    "wx-comm-chat-header__subtitle",
+    "wx-comm-chat-header__title",
+    "wx-comm-chat-header__action-btn",
+    "wx-comm-chat-header",
+    "wx-comm-chat-messages",
+    "wx-comm-chat-header__actions",
+    "wx-comm-chat-footer",
+    "--wx-color-text-muted"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\ChatWindow\\ChatWindow.tsx",
+  "keywords": [
+    "chatwindow",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use ChatWindow",
+    "Create an example with ChatWindow",
+    "Generate a ChatWindow component",
+    "Build a ChatWindow in my form"
+  ],
+  "componentIntent": "Provide ChatWindow functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.429460",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "137ab002",
+  "metadata": {
+    "purpose": "Display message history and enable real-time chat conversation.",
+    "description": "A container component that displays messages in chronological order with sender information and timestamps. Automatically scrolls to show new messages, supports message grouping, and integrates with ChatInput. Forms the core of chat interfaces.",
+    "functionalAreas": [
+      "Communication",
+      "Visualization"
+    ],
+    "userIntents": [
+      "See conversation history",
+      "Read messages in order",
+      "View sender information",
+      "See newest messages"
+    ],
+    "exampleUseCases": [
+      "Chat Interface",
+      "Instant Messaging",
+      "Conversation Window",
+      "Discussion Panel",
+      "Support Chat",
+      "Real-time Messaging",
+      "Message History"
+    ],
+    "useWhen": [
+      "Use this component as the main chat display area.",
+      "Use this component to show message history in chronological order.",
+      "Use this component with ChatInput for complete chat interface.",
+      "Use this component for real-time communication applications."
+    ],
+    "avoidWhen": [
+      "Avoid this component without a clear messaging context.",
+      "Avoid this component for single messages (use MessageBubble instead).",
+      "Avoid this component without auto-scroll functionality.",
+      "Avoid this component without proper timestamp display."
+    ],
+    "relatedComponents": [
+      "ChatInput",
+      "MessageBubble",
+      "ConversationList"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

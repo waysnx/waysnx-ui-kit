@@ -1,0 +1,220 @@
+{
+  "id": "ui-security:hcaptcha",
+  "name": "HCaptcha",
+  "slug": "h-captcha",
+  "library": "ui-security",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "H Captcha",
+  "purpose": "HCaptcha - hCaptcha integration",
+  "shortDescription": "HCaptcha - hCaptcha integration",
+  "longDescription": "HCaptcha - hCaptcha integration",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Security/Captcha/HCaptcha",
+      "storyId": "security-captcha-hcaptcha",
+      "url": "https://uikit.waysnx.tech/?path=/docs/security-captcha-hcaptcha",
+      "stories": [],
+      "tags": [],
+      "source": "HCaptcha.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use HCaptcha for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a HCaptcha"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [
+      "CaptchaContainer"
+    ],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [
+      "CaptchaContainer"
+    ],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [
+    {
+      "name": "siteKey",
+      "type": "string",
+      "description": "Sitekey from hCaptcha",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onVerify",
+      "type": "(token: string) => void",
+      "description": "Callback when verification succeeds",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "theme",
+      "type": "'light' | 'dark'",
+      "description": "Theme (light or dark)",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "size",
+      "type": "'normal' | 'compact'",
+      "description": "Size (normal or compact)",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Captcha\\HCaptcha.tsx",
+  "keywords": [
+    "hcaptcha",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use HCaptcha",
+    "Create an example with HCaptcha",
+    "Generate a HCaptcha component",
+    "Build a HCaptcha in my form"
+  ],
+  "componentIntent": "Provide HCaptcha functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.478679",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "fa042096",
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-media",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

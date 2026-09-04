@@ -1,0 +1,241 @@
+{
+  "id": "ui-security:captchacontainer",
+  "name": "CaptchaContainer",
+  "slug": "captcha-container",
+  "library": "ui-security",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Captcha Container",
+  "purpose": "CaptchaContainer - Container for switching CAPTCHA providers",
+  "shortDescription": "CaptchaContainer - Container for switching CAPTCHA providers",
+  "longDescription": "CaptchaContainer - Container for switching CAPTCHA providers",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Security/Captcha/CaptchaContainer",
+      "storyId": "security-captcha-captchacontainer",
+      "url": "https://uikit.waysnx.tech/?path=/docs/security-captcha-captchacontainer",
+      "stories": [],
+      "tags": [],
+      "source": "CaptchaContainer.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use CaptchaContainer for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a CaptchaContainer"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "GoogleCaptcha",
+      "HCaptcha",
+      "TurnstileCaptcha"
+    ],
+    "usedBy": [],
+    "related": [
+      "GoogleCaptcha",
+      "HCaptcha",
+      "TurnstileCaptcha"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": [
+      "GoogleCaptcha",
+      "HCaptcha",
+      "TurnstileCaptcha"
+    ]
+  },
+  "dependencies": {
+    "React": "unknown",
+    "GoogleCaptcha": "unknown",
+    "TurnstileCaptcha": "unknown",
+    "HCaptcha": "unknown"
+  },
+  "props": [
+    {
+      "name": "provider",
+      "type": "CaptchaProvider",
+      "description": "CAPTCHA provider to use",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "siteKey",
+      "type": "string",
+      "description": "Site key for the provider",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onVerify",
+      "type": "(token: string) => void",
+      "description": "Callback on verification",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "theme",
+      "type": "'light' | 'dark'",
+      "description": "Theme",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "size",
+      "type": "'normal' | 'compact'",
+      "description": "Size",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Captcha\\CaptchaContainer.tsx",
+  "keywords": [
+    "captchacontainer",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use CaptchaContainer",
+    "Create an example with CaptchaContainer",
+    "Generate a CaptchaContainer component",
+    "Build a CaptchaContainer in my form"
+  ],
+  "componentIntent": "Provide CaptchaContainer functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.464619",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "fcfefe94",
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-media",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

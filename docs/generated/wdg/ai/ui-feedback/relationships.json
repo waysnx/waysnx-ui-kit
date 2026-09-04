@@ -1,0 +1,209 @@
+{
+  "version": "2.0.0",
+  "library": "ui-feedback",
+  "generatedAt": "2026-09-03T20:02:50.543090",
+  "relationshipModel": {
+    "uses": "Components this component directly imports or uses",
+    "usedBy": "Components that import or use this component",
+    "related": "Related components in the same domain",
+    "alternatives": "Alternative implementations for this component",
+    "parentComponents": "Components that contain or wrap this component",
+    "childComponents": "Components this component uses or renders"
+  },
+  "relationships": [
+    {
+      "from": "Alert",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ChangePasswordForm",
+          "DeviceVerificationDialog",
+          "EmailVerificationCard",
+          "ForgotPasswordForm",
+          "OTPVerificationCard",
+          "PhoneVerificationCard"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ChangePasswordForm",
+          "DeviceVerificationDialog",
+          "EmailVerificationCard",
+          "ForgotPasswordForm",
+          "OTPVerificationCard",
+          "PhoneVerificationCard"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Badge",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ActiveSessions",
+          "ActivityFeed",
+          "AuditHistoryTable",
+          "AuditTimeline",
+          "BackupCodesCard",
+          "ConcurrentSessionDialog",
+          "EncryptionBadge",
+          "LoginHistory",
+          "MFAStatus",
+          "PasswordAgeIndicator",
+          "RiskScoreBadge",
+          "SecurityAlert",
+          "SecurityEventLog",
+          "SecurityStatusCard"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ActiveSessions",
+          "ActivityFeed",
+          "AuditHistoryTable",
+          "AuditTimeline",
+          "BackupCodesCard",
+          "ConcurrentSessionDialog",
+          "EncryptionBadge",
+          "LoginHistory",
+          "MFAStatus",
+          "PasswordAgeIndicator",
+          "RiskScoreBadge",
+          "SecurityAlert",
+          "SecurityEventLog",
+          "SecurityStatusCard"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "CircularProgress",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ConfirmDialog",
+      "relationships": {
+        "uses": [
+          "Modal"
+        ],
+        "usedBy": [],
+        "related": [
+          "Modal"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Modal"
+        ]
+      }
+    },
+    {
+      "from": "Drawer",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "EmptyState",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Modal",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ConfirmDialog",
+          "MFAVerificationDialog",
+          "SessionTimeoutDialog"
+        ],
+        "related": [],
+        "alternatives": [
+          "Dialog"
+        ],
+        "parentComponents": [
+          "ConfirmDialog",
+          "MFAVerificationDialog",
+          "SessionTimeoutDialog"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Progress",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Skeleton",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Spinner",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Toast",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Tooltip",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [
+          "Popover"
+        ],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-dashboard/dashboardfilterbar.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "DashboardFilterBar component",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-dashboard",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "children": {
+      "description": "Additional toolbar content",
+      "type": "string"
+    },
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "filters": {
+      "description": "Filter configurations",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "onClearAll": {
+      "description": "On clear all handler",
+      "type": "null"
+    },
+    "onFilterChange": {
+      "description": "On filter change handler",
+      "type": "string"
+    },
+    "showClearAll": {
+      "description": "Show clear all button",
+      "type": "boolean"
+    },
+    "sticky": {
+      "description": "Is filter bar sticky",
+      "type": "boolean"
+    },
+    "style": {
+      "description": "Additional CSS styles",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "title": "DashboardFilterBar",
+  "type": "object"
+}

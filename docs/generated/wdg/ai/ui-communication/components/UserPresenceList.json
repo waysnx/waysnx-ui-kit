@@ -1,0 +1,230 @@
+{
+  "id": "ui-communication:userpresencelist",
+  "name": "UserPresenceList",
+  "slug": "user-presence-list",
+  "library": "ui-communication",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "User Presence List",
+  "purpose": "Display list of users with their presence or availability status",
+  "shortDescription": "Display list of users with their presence or availability status.",
+  "longDescription": "Display list of users with their presence or availability status.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Communication/UserPresenceList",
+      "storyId": "communication-userpresencelist",
+      "url": "https://uikit.waysnx.tech/?path=/docs/communication-userpresencelist",
+      "stories": [],
+      "tags": [],
+      "source": "UserPresenceList.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use UserPresenceList for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a UserPresenceList"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-comm-user-presence-item__avatar",
+    "wx-comm-user-presence-item__name",
+    "wx-comm-user-presence-item__status-text",
+    "wx-comm-user-presence-item__info",
+    "wx-comm-user-presence-item__status-dot",
+    "wx-comm-user-presence-item",
+    "--wx-comm-presence-away",
+    "--wx-comm-presence-offline",
+    "--wx-comm-presence-online",
+    "--wx-comm-presence-busy"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\UserPresenceList\\UserPresenceList.tsx",
+  "keywords": [
+    "userpresencelist",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use UserPresenceList",
+    "Create an example with UserPresenceList",
+    "Generate a UserPresenceList component",
+    "Build a UserPresenceList in my form"
+  ],
+  "componentIntent": "Provide UserPresenceList functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.525527",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "cc47c577",
+  "metadata": {
+    "purpose": "Display list of users with their presence or availability status.",
+    "description": "A component that shows a list of users with presence indicators, avatars, and status information. Used in real-time collaboration tools, chat applications, or team management interfaces to show who is active or available.",
+    "functionalAreas": [
+      "Communication",
+      "Visualization"
+    ],
+    "userIntents": [
+      "See who is online",
+      "Check user availability",
+      "Know active participants",
+      "Identify available team members"
+    ],
+    "exampleUseCases": [
+      "Online Users List",
+      "Team Availability Panel",
+      "Chat Participants",
+      "Active Users",
+      "Presence List",
+      "Team Status",
+      "Collaboration Participants"
+    ],
+    "useWhen": [
+      "Use this component to show active users or team members.",
+      "Use this component in real-time collaboration tools.",
+      "Use this component with presence indicators and status.",
+      "Use this component to enable quick communication with available users."
+    ],
+    "avoidWhen": [
+      "Avoid this component without real-time presence data.",
+      "Avoid this component for single-user or static contexts.",
+      "Avoid this component with extremely long user lists without filtering.",
+      "Avoid this component without search or organization features."
+    ],
+    "relatedComponents": [
+      "PresenceIndicator",
+      "UserMenu",
+      "Avatar"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

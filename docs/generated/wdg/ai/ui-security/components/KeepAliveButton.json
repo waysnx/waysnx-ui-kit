@@ -1,0 +1,272 @@
+{
+  "id": "ui-security:keepalivebutton",
+  "name": "KeepAliveButton",
+  "slug": "keep-alive-button",
+  "library": "ui-security",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Keep Alive Button",
+  "purpose": "KeepAliveButton - Manually extend user session",
+  "shortDescription": "KeepAliveButton - Manually extend user session",
+  "longDescription": "KeepAliveButton - Manually extend user session",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Security/Sessions/KeepAliveButton",
+      "storyId": "security-sessions-keepalivebutton",
+      "url": "https://uikit.waysnx.tech/?path=/docs/security-sessions-keepalivebutton",
+      "stories": [],
+      "tags": [],
+      "source": "KeepAliveButton.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use KeepAliveButton for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a KeepAliveButton"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "Button"
+    ],
+    "usedBy": [],
+    "related": [
+      "Button"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": [
+      "Button"
+    ]
+  },
+  "dependencies": {
+    "Button": "unknown"
+  },
+  "props": [
+    {
+      "name": "onKeepAlive",
+      "type": "() => Promise<void>",
+      "description": "Callback to keep session alive",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "Button label",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "variant",
+      "type": "'primary' | 'secondary' | 'outline' | 'ghost'",
+      "description": "Button variant",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "size",
+      "type": "'sm' | 'md' | 'lg'",
+      "description": "Button size",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "description": "Whether button is disabled",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "loadingLabel",
+      "type": "string",
+      "description": "Custom loading message",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showFeedback",
+      "type": "boolean",
+      "description": "Whether to show success feedback",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "icon",
+      "type": "React.ReactNode",
+      "description": "Icon to show before label",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Session\\KeepAliveButton.tsx",
+  "keywords": [
+    "keepalivebutton",
+    "label",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [
+    "action control",
+    "clickable element"
+  ],
+  "naturalLanguageQueries": [
+    {
+      "query": "Add a keepalivebutton",
+      "context": "ui",
+      "intent": "create"
+    },
+    {
+      "query": "Create a keepalivebutton action",
+      "context": "interaction",
+      "intent": "create"
+    }
+  ],
+  "recommendedPrompts": [
+    "Create a KeepAliveButton with loading state",
+    "Show me a KeepAliveButton with tooltip",
+    "Generate a KeepAliveButton with icon",
+    "Build a KeepAliveButton for form submission",
+    "Design a KeepAliveButton for delete action"
+  ],
+  "componentIntent": "Provide KeepAliveButton functionality",
+  "semanticCategory": "display",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.802494",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "12470794",
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-media",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

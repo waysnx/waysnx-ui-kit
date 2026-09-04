@@ -1,0 +1,42 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "gridactions",
+    "name": "GridActions",
+    "package": "@waysnx/ui-grid-builder",
+    "export": "GridActions"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic",
+          "title": "Basic GridActions",
+          "description": "Simple GridActions with default configuration.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "row": "Sample Text",
+            "actions": "Sample Text"
+          },
+          "keywords": [
+            "basic",
+            "gridactions"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:55.261428",
+  "stats": {
+    "examplesGenerated": 1,
+    "categoriesGenerated": 1
+  }
+}

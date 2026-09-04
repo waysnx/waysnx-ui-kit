@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "encryptionbadge",
+    "name": "EncryptionBadge",
+    "package": "@waysnx/ui-security",
+    "export": "EncryptionBadge"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic",
+          "title": "Basic EncryptionBadge",
+          "description": "Simple EncryptionBadge with default configuration.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {},
+          "keywords": [
+            "basic",
+            "encryptionbadge"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:05.698742",
+  "stats": {
+    "examplesGenerated": 1,
+    "categoriesGenerated": 1
+  }
+}

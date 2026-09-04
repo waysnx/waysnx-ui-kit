@@ -1,0 +1,95 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-navigation/favoritesmenu.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display user-selected favorite or bookmarked items for quick access.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": true,
+    "isMemo": false,
+    "library": "ui-navigation",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "ariaLabel": {
+      "description": "aria-label for accessibility",
+      "type": "string"
+    },
+    "className": {
+      "description": "Custom class name",
+      "type": "string"
+    },
+    "enableDragDrop": {
+      "description": "Enable drag and drop reordering",
+      "type": "boolean"
+    },
+    "isFavorited": {
+      "description": "Callback to check if item is favorited",
+      "type": "string"
+    },
+    "items": {
+      "description": "Array of favorite items",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "maxDisplayed": {
+      "description": "Maximum number of favorites to display",
+      "type": "number"
+    },
+    "onItemSelect": {
+      "description": "Callback when favorite item is selected",
+      "type": "null"
+    },
+    "onToggleFavorite": {
+      "description": "Callback when favorite is toggled",
+      "type": "boolean"
+    },
+    "showBadge": {
+      "description": "Show favorite count badge",
+      "type": "boolean"
+    },
+    "showCategories": {
+      "description": "Show categories if available",
+      "type": "boolean"
+    },
+    "size": {
+      "description": "Size of component",
+      "enum": [
+        "sm",
+        "md",
+        "lg"
+      ]
+    },
+    "style": {
+      "description": "Custom styles",
+      "type": "string"
+    },
+    "testId": {
+      "description": "Test ID",
+      "type": "string"
+    },
+    "variant": {
+      "description": "Display variant",
+      "enum": [
+        "dropdown",
+        "inline",
+        "compact"
+      ]
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "title": "FavoritesMenu",
+  "type": "object"
+}

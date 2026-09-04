@@ -1,0 +1,476 @@
+{
+  "version": "2.0.0",
+  "library": "ui-maps",
+  "generatedAt": "2026-09-03T20:02:33.240023",
+  "components": [
+    {
+      "id": "ui-maps:addressautocomplete",
+      "name": "AddressAutocomplete",
+      "slug": "address-autocomplete",
+      "category": "components",
+      "description": "Enable rapid address input with autocomplete suggestions.",
+      "keywords": [
+        "addressautocomplete",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use AddressAutocomplete for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-maps:addressselector",
+      "name": "AddressSelector",
+      "slug": "address-selector",
+      "category": "components",
+      "description": "Enable selection from list of available addresses.",
+      "keywords": [
+        "addressselector",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "option selector",
+        "choice control"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "input",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use AddressSelector for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-maps:currentlocationbutton",
+      "name": "CurrentLocationButton",
+      "slug": "current-location-button",
+      "category": "components",
+      "description": "Enable quick access to current device location.",
+      "keywords": [
+        "currentlocationbutton",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "action control",
+        "clickable element"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "display",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use CurrentLocationButton for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-maps:distancecalculator",
+      "name": "DistanceCalculator",
+      "slug": "distance-calculator",
+      "category": "components",
+      "description": "Calculate and display distance between two locations.",
+      "keywords": [
+        "components",
+        "distancecalculator"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use DistanceCalculator for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-maps:geofenceeditor",
+      "name": "GeofenceEditor",
+      "slug": "geofence-editor",
+      "category": "components",
+      "description": "Enable drawing and editing geographic boundaries on a map.",
+      "keywords": [
+        "geofenceeditor",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use GeofenceEditor for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-maps:locationpicker",
+      "name": "LocationPicker",
+      "slug": "location-picker",
+      "category": "components",
+      "description": "Enable selection of geographic location from map.",
+      "keywords": [
+        "locationpicker",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use LocationPicker for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-maps:mapmarker",
+      "name": "MapMarker",
+      "slug": "map-marker",
+      "category": "components",
+      "description": "Display point of interest markers on a map.",
+      "keywords": [
+        "mapmarker",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "marker",
+        "onClick",
+        "className"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use MapMarker for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 3,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-maps:mapview",
+      "name": "MapView",
+      "slug": "map-view",
+      "category": "components",
+      "description": "MapView — ADAPTER-BASED map container. Renders map chrome and controls but does NOT display an interactive map on its...",
+      "keywords": [
+        "mapview",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use MapView for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-maps:routeplanner",
+      "name": "RoutePlanner",
+      "slug": "route-planner",
+      "category": "components",
+      "description": "Display and manage routes with turn-by-turn directions.",
+      "keywords": [
+        "routeplanner",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use RoutePlanner for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    }
+  ]
+}

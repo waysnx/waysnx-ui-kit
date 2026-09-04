@@ -1,0 +1,276 @@
+{
+  "id": "ui-security:pininput",
+  "name": "PINInput",
+  "slug": "pin-input",
+  "library": "ui-security",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "PIN Input",
+  "purpose": "PINInput - Numeric code input with auto-advancing Features: - Auto-focus to next field - Masked digit display - Keyboard navigation (backspace to previous) - Paste support",
+  "shortDescription": "PINInput - Numeric code input with auto-advancing Features: - Auto-focus to next field - Masked digit display - Keybo...",
+  "longDescription": "PINInput - Numeric code input with auto-advancing Features: - Auto-focus to next field - Masked digit display - Keyboard navigation (backspace to previous) - Paste support",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Security/Secure Inputs/PINInput",
+      "storyId": "security-secure-inputs-pininput",
+      "url": "https://uikit.waysnx.tech/?path=/docs/security-secure-inputs-pininput",
+      "stories": [],
+      "tags": [],
+      "source": "PINInput.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use PINInput for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a PINInput"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "Stack"
+    ],
+    "usedBy": [
+      "MFAVerificationDialog"
+    ],
+    "related": [
+      "Stack"
+    ],
+    "alternatives": [],
+    "parentComponents": [
+      "MFAVerificationDialog"
+    ],
+    "childComponents": [
+      "Stack"
+    ]
+  },
+  "dependencies": {
+    "Stack": "unknown"
+  },
+  "props": [
+    {
+      "name": "length",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onComplete",
+      "type": "(pin: string) => void",
+      "description": "Callback when PIN is complete",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onChange",
+      "type": "(value: string) => void",
+      "description": "Callback on value change",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "masked",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "Label text",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Error message",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "description": "Whether input is disabled",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "autoComplete",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\SecureInputs\\PINInput.tsx",
+  "keywords": [
+    "pininput",
+    "label",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [
+    "text entry",
+    "form field"
+  ],
+  "naturalLanguageQueries": [
+    {
+      "query": "Create a pininput for forms",
+      "context": "form",
+      "intent": "create"
+    },
+    {
+      "query": "Add a pininput",
+      "context": "ui",
+      "intent": "create"
+    }
+  ],
+  "recommendedPrompts": [
+    "Show me how to use PINInput for form validation",
+    "Create a PINInput with error handling",
+    "Generate a PINInput with placeholder text",
+    "Build a PINInput with character limit",
+    "Design a PINInput for email addresses"
+  ],
+  "componentIntent": "Provide PINInput functionality",
+  "semanticCategory": "input",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.608197",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "02e60872",
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-media",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,401 @@
+{
+  "version": "2.0.0",
+  "library": "ui-core",
+  "generatedAt": "2026-09-03T20:02:43.141149",
+  "relationshipModel": {
+    "uses": "Components this component directly imports or uses",
+    "usedBy": "Components that import or use this component",
+    "related": "Related components in the same domain",
+    "alternatives": "Alternative implementations for this component",
+    "parentComponents": "Components that contain or wrap this component",
+    "childComponents": "Components this component uses or renders"
+  },
+  "relationships": [
+    {
+      "from": "Autocomplete",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Button",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "AccessDenied",
+          "ActiveSessions",
+          "ActivityFeed",
+          "AuditHistoryTable",
+          "Auth0LoginButton",
+          "AuthenticatorQRCode",
+          "BackupCodesCard",
+          "BiometricButton",
+          "ChangePasswordForm",
+          "ConcurrentSessionDialog",
+          "DeviceVerificationDialog",
+          "EmailVerificationCard",
+          "ForgotPasswordForm",
+          "GitHubLoginButton",
+          "GoogleLoginButton",
+          "KeepAliveButton",
+          "MFASettingsPanel",
+          "MFASetupWizard",
+          "MFAStatus",
+          "MFAVerificationDialog",
+          "MicrosoftLoginButton",
+          "OTPResendButton",
+          "OktaLoginButton",
+          "PasswordAgeIndicator",
+          "PasswordPolicyPanel",
+          "PhoneVerificationCard",
+          "PrivacySettingsPanel",
+          "SecureClipboardButton",
+          "SecureDownloadButton",
+          "SecureUploader",
+          "SecurityAlert",
+          "SecurityAlertsPanel",
+          "SecurityBanner",
+          "SecurityEventLog",
+          "SecurityKeyButton",
+          "SecurityLogsPanel",
+          "SecuritySettingsPanel",
+          "SecurityStatusCard",
+          "SensitiveText",
+          "SessionPolicyPanel",
+          "SessionTimeoutDialog",
+          "TrustedDevicesPanel",
+          "UnauthorizedPage"
+        ],
+        "related": [],
+        "alternatives": [
+          "Iconbutton"
+        ],
+        "parentComponents": [
+          "AccessDenied",
+          "ActiveSessions",
+          "ActivityFeed",
+          "AuditHistoryTable",
+          "Auth0LoginButton",
+          "AuthenticatorQRCode",
+          "BackupCodesCard",
+          "BiometricButton",
+          "ChangePasswordForm",
+          "ConcurrentSessionDialog",
+          "DeviceVerificationDialog",
+          "EmailVerificationCard",
+          "ForgotPasswordForm",
+          "GitHubLoginButton",
+          "GoogleLoginButton",
+          "KeepAliveButton",
+          "MFASettingsPanel",
+          "MFASetupWizard",
+          "MFAStatus",
+          "MFAVerificationDialog",
+          "MicrosoftLoginButton",
+          "OTPResendButton",
+          "OktaLoginButton",
+          "PasswordAgeIndicator",
+          "PasswordPolicyPanel",
+          "PhoneVerificationCard",
+          "PrivacySettingsPanel",
+          "SecureClipboardButton",
+          "SecureDownloadButton",
+          "SecureUploader",
+          "SecurityAlert",
+          "SecurityAlertsPanel",
+          "SecurityBanner",
+          "SecurityEventLog",
+          "SecurityKeyButton",
+          "SecurityLogsPanel",
+          "SecuritySettingsPanel",
+          "SecurityStatusCard",
+          "SensitiveText",
+          "SessionPolicyPanel",
+          "SessionTimeoutDialog",
+          "TrustedDevicesPanel",
+          "UnauthorizedPage"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Checkbox",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "PasswordPolicyPanel",
+          "PrivacySettingsPanel",
+          "SecurityAlertsPanel",
+          "SessionPolicyPanel",
+          "TrustedDeviceSelector"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "PasswordPolicyPanel",
+          "PrivacySettingsPanel",
+          "SecurityAlertsPanel",
+          "SessionPolicyPanel",
+          "TrustedDeviceSelector"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Currency",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "DatePicker",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "DateRangePicker",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "DateTimePicker",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ErrorMessage",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "FileUpload",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Hidden",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "HtmlContent",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "HtmlEditor",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "IFrame",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Image",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Input",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ChangePasswordForm",
+          "EmailVerificationCard",
+          "ForgotPasswordForm",
+          "MaskedInput",
+          "PhoneVerificationCard",
+          "SecureInput"
+        ],
+        "related": [],
+        "alternatives": [
+          "Textarea"
+        ],
+        "parentComponents": [
+          "ChangePasswordForm",
+          "EmailVerificationCard",
+          "ForgotPasswordForm",
+          "MaskedInput",
+          "PhoneVerificationCard",
+          "SecureInput"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Link",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Radio",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Select",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [
+          "Combobox"
+        ],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Slider",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "SpeechToTextTextarea",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Switch",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Textarea",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [
+          "Input"
+        ],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "TimePicker",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Tree",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    }
+  ]
+}

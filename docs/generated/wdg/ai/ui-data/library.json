@@ -1,0 +1,59 @@
+{
+  "name": "ui-data",
+  "version": "1.0.0",
+  "generatedAt": "2026-09-03T20:02:28.413027",
+  "componentCount": 6,
+  "components": [
+    {
+      "id": "ui-data:codeeditor",
+      "name": "CodeEditor",
+      "slug": "codeeditor",
+      "category": "components",
+      "description": "Enable editing and authoring of source code with syntax support."
+    },
+    {
+      "id": "ui-data:codeviewer",
+      "name": "CodeViewer",
+      "slug": "codeviewer",
+      "category": "components",
+      "description": "Display read-only source code with syntax highlighting."
+    },
+    {
+      "id": "ui-data:jsoneditor",
+      "name": "JSONEditor",
+      "slug": "jsoneditor",
+      "category": "components",
+      "description": "Enable editing and validation of JSON data."
+    },
+    {
+      "id": "ui-data:markdowneditor",
+      "name": "MarkdownEditor",
+      "slug": "markdowneditor",
+      "category": "components",
+      "description": "Enable authoring of markdown content with visual preview."
+    },
+    {
+      "id": "ui-data:markdownviewer",
+      "name": "MarkdownViewer",
+      "slug": "markdownviewer",
+      "category": "components",
+      "description": "Display formatted markdown content as rendered HTML."
+    },
+    {
+      "id": "ui-data:xmlviewer",
+      "name": "XMLViewer",
+      "slug": "xmlviewer",
+      "category": "components",
+      "description": "Display and navigate XML data with hierarchical tree view."
+    }
+  ],
+  "categories": {
+    "components": 6
+  },
+  "statistics": {
+    "totalComponents": 6,
+    "documentsGenerated": 6,
+    "storiesGenerated": 0,
+    "testsGenerated": 0
+  }
+}

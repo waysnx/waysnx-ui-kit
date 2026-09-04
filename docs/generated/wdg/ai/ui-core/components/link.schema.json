@@ -1,0 +1,81 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-core/link.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Navigate users to a different page or external resource via a clickable text link.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-core",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "appendText": {
+      "description": "",
+      "type": "string"
+    },
+    "ariaDescribedBy": {
+      "description": "",
+      "type": "string"
+    },
+    "ariaLabel": {
+      "description": "",
+      "type": "string"
+    },
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "disabled": {
+      "description": "",
+      "type": "boolean"
+    },
+    "href": {
+      "description": "",
+      "type": "string"
+    },
+    "isActive": {
+      "description": "",
+      "type": "boolean"
+    },
+    "label": {
+      "description": "",
+      "type": "string"
+    },
+    "onClick": {
+      "description": "",
+      "type": "null"
+    },
+    "prependText": {
+      "description": "",
+      "type": "string"
+    },
+    "target": {
+      "description": "",
+      "enum": [
+        "_blank",
+        "_self",
+        "_parent",
+        "_top"
+      ]
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [
+    "label"
+  ],
+  "title": "Link",
+  "type": "object"
+}

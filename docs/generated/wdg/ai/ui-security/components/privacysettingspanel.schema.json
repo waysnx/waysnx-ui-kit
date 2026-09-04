@@ -1,0 +1,30 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/privacysettingspanel.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "PrivacySettingsPanel component",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "onSave": {
+      "description": "",
+      "type": "object"
+    }
+  },
+  "required": [],
+  "title": "PrivacySettingsPanel",
+  "type": "object"
+}

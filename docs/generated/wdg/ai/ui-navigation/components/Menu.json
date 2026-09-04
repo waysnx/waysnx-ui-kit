@@ -1,0 +1,823 @@
+{
+  "id": "ui-navigation:menu",
+  "name": "Menu",
+  "slug": "menu",
+  "library": "ui-navigation",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Menu",
+  "purpose": "Display a list of selectable menu items",
+  "shortDescription": "Display a list of selectable menu items.",
+  "longDescription": "Display a list of selectable menu items.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Navigation/Menu",
+      "storyId": "navigation-menu",
+      "url": "https://uikit.waysnx.tech/?path=/docs/navigation-menu",
+      "stories": [],
+      "tags": [],
+      "source": "Menu.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Menu for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Menu"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "MenuItem"
+    ],
+    "usedBy": [
+      "Navbar",
+      "Sidebar"
+    ],
+    "related": [
+      "MenuItem"
+    ],
+    "alternatives": [
+      "Dropdown"
+    ],
+    "parentComponents": [
+      "Navbar",
+      "Sidebar"
+    ],
+    "childComponents": [
+      "MenuItem"
+    ]
+  },
+  "dependencies": {
+    "canAccessItem": "unknown",
+    "filterMenuByPermissions": "unknown",
+    "MenuItem": "unknown"
+  },
+  "props": [
+    {
+      "name": "items",
+      "type": "NavigationItem[]",
+      "description": "Menu items to display",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "activeItem",
+      "type": "NavigationItem",
+      "description": "Currently active item",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onItemClick",
+      "type": "(item: NavigationItem) => void",
+      "description": "Callback when item is clicked",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onActiveChange",
+      "type": "(item?: NavigationItem) => void",
+      "description": "Callback when active item changes",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "security",
+      "type": "SecurityContext",
+      "description": "Security context for permission-based filtering",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "orientation",
+      "type": "'vertical' | 'horizontal'",
+      "description": "Menu orientation",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "density",
+      "type": "'compact' | 'normal' | 'spacious'",
+      "description": "Component density",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "variant",
+      "type": "'default' | 'minimal' | 'elevated'",
+      "description": "Theme variant",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "Additional CSS class",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "style",
+      "type": "React.CSSProperties",
+      "description": "Additional styles",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showIcons",
+      "type": "boolean",
+      "description": "Whether to show icons",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showBadges",
+      "type": "boolean",
+      "description": "Whether to show badges",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "maxDepth",
+      "type": "number",
+      "description": "Maximum depth for nested items",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "keyboardNav",
+      "type": "boolean",
+      "description": "Keyboard navigation enabled",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "Accessible label for menu",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "role",
+      "type": "'menu' | 'menubar' | 'navigation' | 'none'",
+      "description": "Menu role",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [
+    "forwardRef"
+  ],
+  "contextsUsed": [],
+  "forwardRef": true,
+  "memo": false,
+  "cssVariables": [
+    "--nav-menu-bg",
+    "--nav-menu-bg-dark",
+    "--nav-menu-border",
+    "--nav-menu-font",
+    "--nav-menu-font-size",
+    "--nav-menu-gap",
+    "--nav-menu-item-active-bg",
+    "--nav-menu-item-active-border",
+    "--nav-menu-item-active-text",
+    "--nav-menu-item-badge-bg",
+    "--nav-menu-item-badge-text",
+    "--nav-menu-item-bg",
+    "--nav-menu-item-chevron-hover-bg",
+    "--nav-menu-item-chevron-hover-bg-dark",
+    "--nav-menu-item-disabled-bg",
+    "--nav-menu-item-disabled-text",
+    "--nav-menu-item-focus-outline",
+    "--nav-menu-item-height",
+    "--nav-menu-item-hover-bg",
+    "--nav-menu-item-hover-bg-dark",
+    "--nav-menu-item-hover-text",
+    "--nav-menu-item-padding",
+    "--nav-menu-item-radius",
+    "--nav-menu-item-text",
+    "--nav-menu-radius",
+    "--nav-menu-shadow",
+    "--nav-menu-submenu-bg",
+    "--nav-menu-submenu-indent",
+    "--nav-menu-text",
+    "--nav-menu-text-dark",
+    "--radius-full",
+    "--wx-font-size-md",
+    "--wx-font-size-sm",
+    "--wx-font-size-xs",
+    "--wx-nav-transition",
+    "--wx-radius-sm"
+  ],
+  "cssClasses": [
+    "css",
+    "nav-menu",
+    "nav-menu--horizontal",
+    "nav-menu--compact",
+    "nav-menu--normal",
+    "nav-menu--spacious",
+    "nav-menu--default",
+    "nav-menu--minimal",
+    "nav-menu--elevated",
+    "nav-menu-item",
+    "nav-menu-item--active",
+    "nav-menu-item--focused",
+    "nav-menu-item--disabled",
+    "nav-menu-item--expanded"
+  ],
+  "designTokens": {
+    "other": {
+      "--nav-menu-bg": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-menu"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-menu-text": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".nav-menu"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-menu-border": {
+        "properties": [
+          "border"
+        ],
+        "selectors": [
+          ".nav-menu--default",
+          ".}\n\n\n.nav-menu--horizontal .nav-menu-item__submenu"
+        ],
+        "occurrences": 2,
+        "used": true,
+        "value": ""
+      },
+      "--nav-menu-item-height": {
+        "properties": [
+          "height"
+        ],
+        "selectors": [
+          ".nav-menu-item__link"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-menu-item-text": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".nav-menu-item__link"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-menu-item-bg": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-menu-item__link"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-menu-item-hover-bg": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-menu-item__link:hover:not([aria-disabled=\"true\"])"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-menu-item-hover-text": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".nav-menu-item__link:hover:not([aria-disabled=\"true\"])"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-menu-item-active-bg": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-menu-item--active .nav-menu-item__link"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-menu-item-active-text": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".nav-menu-item--active .nav-menu-item__link"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-menu-item-active-border": {
+        "properties": [
+          "border-left",
+          "border-bottom"
+        ],
+        "selectors": [
+          ".nav-menu-item--active .nav-menu-item__link",
+          ".nav-menu--horizontal .nav-menu-item--active .nav-menu-item__link"
+        ],
+        "occurrences": 2,
+        "used": true,
+        "value": ""
+      },
+      "--nav-menu-item-focus-outline": {
+        "properties": [
+          "outline"
+        ],
+        "selectors": [
+          ".nav-menu-item--focused .nav-menu-item__link",
+          ".}\n\n\n.nav-menu-item__link:focus-visible"
+        ],
+        "occurrences": 2,
+        "used": true,
+        "value": ""
+      },
+      "--nav-menu-item-disabled-bg": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-menu-item--disabled .nav-menu-item__link",
+          ".nav-menu-item--disabled .nav-menu-item__link:hover"
+        ],
+        "occurrences": 2,
+        "used": true,
+        "value": ""
+      },
+      "--nav-menu-item-disabled-text": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".nav-menu-item--disabled .nav-menu-item__link",
+          ".nav-menu-item--disabled .nav-menu-item__link:hover"
+        ],
+        "occurrences": 2,
+        "used": true,
+        "value": ""
+      },
+      "--nav-menu-item-badge-bg": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-menu-item__badge"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-menu-item-badge-text": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".nav-menu-item__badge"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-menu-item-chevron-hover-bg": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-menu-item__chevron:hover"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-menu-submenu-indent": {
+        "properties": [
+          "padding-left"
+        ],
+        "selectors": [
+          ".nav-menu-item__submenu",
+          ".nav-menu--horizontal .nav-menu-item__submenu"
+        ],
+        "occurrences": 2,
+        "used": true,
+        "value": ""
+      },
+      "--nav-menu-submenu-bg": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".}\n\n\n.nav-menu--horizontal .nav-menu-item__submenu"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-menu-bg-dark": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          "@media (prefers-color-scheme: dark)"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-menu-text-dark": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          "@media (prefers-color-scheme: dark)"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-menu-item-hover-bg-dark": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-menu-item__link:hover:not([aria-disabled=\"true\"])"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-menu-item-chevron-hover-bg-dark": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-menu-item__chevron:hover"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      }
+    }
+  },
+  "themeTokens": {},
+  "spacingTokens": {
+    "--nav-menu-gap": {
+      "properties": [
+        "gap"
+      ],
+      "selectors": [
+        ".nav-menu--horizontal .nav-menu__list"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--nav-menu-item-padding": {
+      "properties": [
+        "padding",
+        "padding-left",
+        "padding-bottom"
+      ],
+      "selectors": [
+        ".nav-menu-item__link",
+        ".nav-menu-item--active .nav-menu-item__link",
+        ".nav-menu--horizontal .nav-menu-item--active .nav-menu-item__link",
+        ".nav-menu-item .nav-menu-item__link"
+      ],
+      "occurrences": 4,
+      "used": true,
+      "value": ""
+    }
+  },
+  "typographyTokens": {
+    "--nav-menu-font": {
+      "properties": [
+        "font-family"
+      ],
+      "selectors": [
+        ".nav-menu"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-sm": {
+      "properties": [
+        "nav-menu-font-size"
+      ],
+      "selectors": [
+        ".nav-menu--compact"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-md": {
+      "properties": [
+        "nav-menu-font-size",
+        "font-size"
+      ],
+      "selectors": [
+        ".nav-menu--normal",
+        ".nav-menu--spacious",
+        ".nav-menu-item__icon"
+      ],
+      "occurrences": 3,
+      "used": true,
+      "value": ""
+    },
+    "--nav-menu-font-size": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".nav-menu-item__link",
+        ".nav-menu-item .nav-menu-item__link"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-xs": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".nav-menu-item__badge"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {},
+  "shadowTokens": {
+    "--nav-menu-shadow": {
+      "properties": [
+        "box-shadow"
+      ],
+      "selectors": [
+        ".nav-menu--elevated",
+        ".}\n\n\n.nav-menu--horizontal .nav-menu-item__submenu"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "radiusTokens": {
+    "--nav-menu-radius": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".nav-menu",
+        ".}\n\n\n.nav-menu--horizontal .nav-menu-item__submenu"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--nav-menu-item-radius": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".nav-menu-item__link"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--radius-full": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".nav-menu-item__badge"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-radius-sm": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".nav-menu-item__chevron"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "animationTokens": {
+    "--wx-nav-transition": {
+      "properties": [
+        "transition"
+      ],
+      "selectors": [
+        ".nav-menu-item__link",
+        ".nav-menu-item__chevron"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Menu\\Menu.tsx",
+  "keywords": [
+    "menu",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Menu",
+    "Create an example with Menu",
+    "Generate a Menu component",
+    "Build a Menu in my form"
+  ],
+  "componentIntent": "Navigate sections",
+  "semanticCategory": "navigation",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.250674",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "dfb6a0f1",
+  "metadata": {
+    "purpose": "Display a list of selectable menu items.",
+    "description": "A vertical or horizontal list of clickable menu items that trigger actions or navigation. Can be a simple dropdown, standalone menu, or part of a navigation structure. Supports grouping, icons, keyboard navigation, and nested submenus.",
+    "functionalAreas": [
+      "Navigation",
+      "Actions"
+    ],
+    "userIntents": [
+      "See menu options",
+      "Select or trigger action",
+      "Navigate to related pages",
+      "Access sub-menu options"
+    ],
+    "exampleUseCases": [
+      "Dropdown Menu",
+      "Context Menu",
+      "Navigation Menu",
+      "Application Menu",
+      "Settings Menu",
+      "User Menu",
+      "Main Navigation"
+    ],
+    "useWhen": [
+      "Use this component to display a list of selectable actions or navigation options.",
+      "Use this component for dropdown menus or contextual menus.",
+      "Use this component to organize related actions or navigation items.",
+      "Use this component when space is limited (collapse into menu)."
+    ],
+    "avoidWhen": [
+      "Avoid this component for simple button groups (use Button instead).",
+      "Avoid this component without keyboard navigation support.",
+      "Avoid this component with too many items (provide search or organization).",
+      "Avoid this component for always-visible items (use dedicated space)."
+    ],
+    "relatedComponents": [
+      "Navigation",
+      "ContextMenu",
+      "Dropdown"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

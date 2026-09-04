@@ -1,0 +1,47 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-layout/accordion.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display collapsible sections of content that expand or collapse.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-layout",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "allowMultiple": {
+      "description": "",
+      "type": "boolean"
+    },
+    "children": {
+      "description": "",
+      "type": "string"
+    },
+    "defaultOpen": {
+      "description": "",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [
+    "children"
+  ],
+  "title": "Accordion",
+  "type": "object"
+}

@@ -1,0 +1,40 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "dashboardheader",
+    "name": "DashboardHeader",
+    "package": "@waysnx/ui-dashboard",
+    "export": "DashboardHeader"
+  },
+  "categories": [
+    {
+      "id": "icons",
+      "title": "Icons",
+      "description": "",
+      "examples": [
+        {
+          "id": "icons-icon",
+          "title": "With Icon",
+          "description": "Displays with an icon.",
+          "category": "icons",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "icon": "Sample Text"
+          },
+          "keywords": [
+            "icon"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:45.544640",
+  "stats": {
+    "examplesGenerated": 1,
+    "categoriesGenerated": 1
+  }
+}

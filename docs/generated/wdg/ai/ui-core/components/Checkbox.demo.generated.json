@@ -1,0 +1,89 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "checkbox",
+    "name": "Checkbox",
+    "package": "@waysnx/ui-core",
+    "export": "Checkbox"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "indeterminate",
+          "title": "Indeterminate",
+          "description": "Mixed selection state",
+          "category": "basic",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "indeterminate": true
+          },
+          "keywords": [
+            "indeterminate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "unchecked",
+          "title": "Unchecked",
+          "description": "Example demonstrating unchecked state",
+          "category": "states",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "checked": false
+          },
+          "keywords": [
+            "unchecked"
+          ]
+        },
+        {
+          "id": "checked",
+          "title": "Checked",
+          "description": "Example demonstrating checked state",
+          "category": "states",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "checked": true
+          },
+          "keywords": [
+            "checked"
+          ]
+        },
+        {
+          "id": "disabled",
+          "title": "Disabled",
+          "description": "Example demonstrating disabled state",
+          "category": "states",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "disabled": true
+          },
+          "keywords": [
+            "disabled"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:42.939025",
+  "stats": {
+    "examplesGenerated": 4,
+    "categoriesGenerated": 2
+  }
+}

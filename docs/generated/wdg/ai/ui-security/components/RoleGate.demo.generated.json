@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "rolegate",
+    "name": "RoleGate",
+    "package": "@waysnx/ui-security",
+    "export": "RoleGate"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic",
+          "title": "Basic RoleGate",
+          "description": "Simple RoleGate with default configuration.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "role": "Sample Text",
+            "userRoles": "Sample Text",
+            "children": "Sample Text"
+          },
+          "keywords": [
+            "basic",
+            "rolegate"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:05.319500",
+  "stats": {
+    "examplesGenerated": 1,
+    "categoriesGenerated": 1
+  }
+}

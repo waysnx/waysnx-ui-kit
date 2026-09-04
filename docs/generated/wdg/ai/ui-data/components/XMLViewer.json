@@ -1,0 +1,213 @@
+{
+  "id": "ui-data:xmlviewer",
+  "name": "XMLViewer",
+  "slug": "xml-viewer",
+  "library": "ui-data",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "XML Viewer",
+  "purpose": "Display and navigate XML data with hierarchical tree view",
+  "shortDescription": "Display and navigate XML data with hierarchical tree view.",
+  "longDescription": "Display and navigate XML data with hierarchical tree view.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Data/XMLViewer",
+      "storyId": "data-xmlviewer",
+      "url": "https://uikit.waysnx.tech/?path=/docs/data-xmlviewer",
+      "stories": [],
+      "tags": [],
+      "source": "XMLViewer.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use XMLViewer for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a XMLViewer"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-adv-code-viewer__header",
+    "wx-adv-code-viewer__code",
+    "wx-adv-code-viewer__lines",
+    "wx-adv-code-viewer__body",
+    "--wx-color-text-muted"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\XMLViewer\\XMLViewer.tsx",
+  "keywords": [
+    "xmlviewer",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use XMLViewer",
+    "Create an example with XMLViewer",
+    "Generate a XMLViewer component",
+    "Build a XMLViewer in my form"
+  ],
+  "componentIntent": "Provide XMLViewer functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.235104",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "0f5d10cb",
+  "metadata": {
+    "purpose": "Display and navigate XML data with hierarchical tree view.",
+    "description": "A component for viewing XML content with syntax highlighting and collapsible tree structure. Shows XML hierarchy visually, making it easier to understand structure. Supports expand/collapse of nodes and optional search or filtering.",
+    "functionalAreas": [
+      "Data Entry",
+      "Visualization"
+    ],
+    "userIntents": [
+      "View XML structure",
+      "Navigate XML hierarchy",
+      "Understand XML content",
+      "Find specific elements"
+    ],
+    "exampleUseCases": [
+      "XML Response Viewer",
+      "Configuration File View",
+      "XML Data Display",
+      "Document Structure View",
+      "API Response Viewer",
+      "Feed Viewer",
+      "Markup Viewer"
+    ],
+    "useWhen": [
+      "Use this component to display XML with hierarchical structure.",
+      "Use this component when users need to navigate XML tree.",
+      "Use this component for read-only XML display.",
+      "Use this component to help understand XML document structure."
+    ],
+    "avoidWhen": [
+      "Avoid this component for editing XML (use CodeEditor instead).",
+      "Avoid this component when flat code display is sufficient.",
+      "Avoid this component for extremely large XML files.",
+      "Avoid this component without proper tree expansion performance."
+    ],
+    "relatedComponents": [
+      "CodeViewer",
+      "JSONEditor",
+      "TreeMenu"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

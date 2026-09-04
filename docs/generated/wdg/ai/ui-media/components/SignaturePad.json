@@ -1,0 +1,225 @@
+{
+  "id": "ui-media:signaturepad",
+  "name": "SignaturePad",
+  "slug": "signature-pad",
+  "library": "ui-media",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Signature Pad",
+  "purpose": "Enable users to draw or write signatures",
+  "shortDescription": "Enable users to draw or write signatures.",
+  "longDescription": "Enable users to draw or write signatures.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Media/SignaturePad",
+      "storyId": "media-signaturepad",
+      "url": "https://uikit.waysnx.tech/?path=/docs/media-signaturepad",
+      "stories": [],
+      "tags": [],
+      "source": "SignaturePad.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use SignaturePad for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a SignaturePad"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useRef": "unknown",
+    "useEffect": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-adv-signature-pad__canvas",
+    "wx-adv-signature-pad__btn--primary",
+    "wx-adv-signature-pad__btn",
+    "wx-adv-signature-pad__actions",
+    "--wx-adv-signature-bg",
+    "--wx-adv-signature-pen-color"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\SignaturePad\\SignaturePad.tsx",
+  "keywords": [
+    "signaturepad",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use SignaturePad",
+    "Create an example with SignaturePad",
+    "Generate a SignaturePad component",
+    "Build a SignaturePad in my form"
+  ],
+  "componentIntent": "Provide SignaturePad functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.380559",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "da222f53",
+  "metadata": {
+    "purpose": "Enable users to draw or write signatures.",
+    "description": "An interactive canvas component where users can draw signatures using mouse or touch input. Captures freehand drawing for signature capture, approval workflows, or form signing. Supports clearing, resizing, and saving as image.",
+    "functionalAreas": [
+      "Data Entry",
+      "Forms"
+    ],
+    "userIntents": [
+      "Sign document",
+      "Provide approval",
+      "Create signature",
+      "Draw on canvas"
+    ],
+    "exampleUseCases": [
+      "Digital Signature",
+      "Document Signing",
+      "Approval Workflow",
+      "Contract Signature",
+      "Authorization",
+      "Consent Form",
+      "Legal Document"
+    ],
+    "useWhen": [
+      "Use this component for digital signature capture.",
+      "Use this component in approval or workflow processes.",
+      "Use this component for document signing.",
+      "Use this component when signature authentication is needed."
+    ],
+    "avoidWhen": [
+      "Avoid this component for typed signatures (use text input instead).",
+      "Avoid this component without proper legal/compliance review.",
+      "Avoid this component without secure signature handling.",
+      "Avoid this component on devices without touch or mouse input."
+    ],
+    "relatedComponents": [
+      "SignatureViewer",
+      "Cropper",
+      "Canvas"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "qrcode",
+        "version": "^1.5.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/qrcode",
+        "version": "^1.5.5"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

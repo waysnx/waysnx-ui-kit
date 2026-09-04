@@ -1,0 +1,65 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/securetextarea.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "SecureTextarea - Textarea input with enhanced security features",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": true,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "clearOnBlur": {
+      "description": "",
+      "type": "boolean"
+    },
+    "disableAutocomplete": {
+      "description": "",
+      "type": "boolean"
+    },
+    "error": {
+      "description": "Error message to display",
+      "type": "string"
+    },
+    "label": {
+      "description": "Label text",
+      "type": "string"
+    },
+    "maxCharacters": {
+      "description": "Maximum character count with warning",
+      "type": "number"
+    },
+    "onChange": {
+      "description": "Callback when value changes",
+      "type": "string"
+    },
+    "onClear": {
+      "description": "Callback when textarea is cleared",
+      "type": "null"
+    },
+    "showCounter": {
+      "description": "Show character counter",
+      "type": "boolean"
+    },
+    "validate": {
+      "description": "Custom validation function",
+      "enum": [
+        "(value: string) => boolean",
+        "string"
+      ]
+    }
+  },
+  "required": [],
+  "title": "SecureTextarea",
+  "type": "object"
+}

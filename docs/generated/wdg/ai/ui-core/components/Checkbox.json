@@ -1,0 +1,516 @@
+{
+  "id": "ui-core:checkbox",
+  "name": "Checkbox",
+  "slug": "checkbox",
+  "library": "ui-core",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Checkbox",
+  "purpose": "Allow users to select one or more options from a list of independent choices",
+  "shortDescription": "Allow users to select one or more options from a list of independent choices.",
+  "longDescription": "Allow users to select one or more options from a list of independent choices.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Components/Checkbox",
+      "storyId": "components-checkbox",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-checkbox",
+      "stories": [],
+      "tags": [],
+      "source": "Checkbox.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Checkbox for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Checkbox"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [
+      "PasswordPolicyPanel",
+      "PrivacySettingsPanel",
+      "SecurityAlertsPanel",
+      "SessionPolicyPanel",
+      "TrustedDeviceSelector"
+    ],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [
+      "PasswordPolicyPanel",
+      "PrivacySettingsPanel",
+      "SecurityAlertsPanel",
+      "SessionPolicyPanel",
+      "TrustedDeviceSelector"
+    ],
+    "childComponents": []
+  },
+  "dependencies": {
+    "getCachedOptions": "unknown",
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "checked",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onChange",
+      "type": "(checked: boolean | (string | number)[]) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaDescribedBy",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "options",
+      "type": "CheckboxOption[]",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "columns",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "groupLabel",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "fetchOptions",
+      "type": "(url: string) => Promise<any[]>",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "xrefIdProp",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "xrefDisplayProp",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onLoadStart",
+      "type": "() => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onLoadEnd",
+      "type": "() => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onError",
+      "type": "(error: Error) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-error",
+    "--wx-color-text",
+    "--wx-color-text-light",
+    "--wx-color-text-muted",
+    "--wx-font-family",
+    "--wx-font-size-sm",
+    "--wx-font-size-xs",
+    "--wx-radius-sm"
+  ],
+  "cssClasses": [
+    "wx-checkbox-group",
+    "wx-checkbox-group-label",
+    "wx-checkbox-wrapper",
+    "wx-checkbox",
+    "wx-checkbox-label",
+    "wx-checkbox-disabled",
+    "wx-checkbox-loading",
+    "wx-checkbox-no-options",
+    "wx-checkbox-group-error",
+    "wx-checkbox-error-text"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {
+    "--wx-font-family": {
+      "properties": [
+        "font-family"
+      ],
+      "selectors": [
+        ".wx-checkbox-group"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-sm": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-checkbox-group-label",
+        ".wx-checkbox-label",
+        ".wx-checkbox-loading",
+        ".wx-checkbox-no-options"
+      ],
+      "occurrences": 4,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-xs": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-checkbox-error-text"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {
+    "--wx-color-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-checkbox-group-label",
+        ".wx-checkbox-label"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-checkbox-loading"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-light": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-checkbox-no-options"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error": {
+      "properties": [
+        "border",
+        "color"
+      ],
+      "selectors": [
+        ".wx-checkbox-group-error",
+        ".wx-checkbox-error-text"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {
+    "--wx-radius-sm": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".wx-checkbox-group-error"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Checkbox\\Checkbox.tsx",
+  "keywords": [
+    "checkbox",
+    "selection",
+    "label",
+    "check",
+    "toggle",
+    "option",
+    "components"
+  ],
+  "aliases": [
+    {
+      "alias": "toggle option",
+      "context": "descriptive",
+      "confidence": 0.9
+    },
+    {
+      "alias": "check box",
+      "context": "casual",
+      "confidence": 0.92
+    },
+    {
+      "alias": "yes/no",
+      "context": "descriptive",
+      "confidence": 0.85
+    }
+  ],
+  "synonyms": [
+    "check box",
+    "toggle option"
+  ],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Checkbox",
+    "Create an example with Checkbox",
+    "Generate a Checkbox component",
+    "Build a Checkbox in my form"
+  ],
+  "componentIntent": "Select multiple options",
+  "semanticCategory": "input",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.557774",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "3be963b3",
+  "metadata": {
+    "purpose": "Allow users to select one or more options from a list of independent choices.",
+    "description": "A control that enables selecting multiple independent items. Supports both single-checkbox and checkbox-group modes for different use cases. Can be configured with dynamic options loaded from external sources or static predefined lists. Provides visual feedback of selected state and supports layout variations.",
+    "functionalAreas": [
+      "Data Entry",
+      "Forms",
+      "Selection"
+    ],
+    "userIntents": [
+      "Toggle a single condition or feature on or off",
+      "Select multiple items from a list",
+      "Agree to terms or conditions",
+      "Enable or disable settings"
+    ],
+    "exampleUseCases": [
+      "Accept Terms",
+      "Select Permissions",
+      "Choose Interests",
+      "Enable Features",
+      "Select Multiple Categories",
+      "Filter by Options"
+    ],
+    "useWhen": [
+      "Use this component when users can select zero, one, or multiple independent options.",
+      "Use this component when all available choices should be visible without scrolling.",
+      "Use this component when user agreement or enablement of features is required.",
+      "Use this component when space permits displaying all options at once."
+    ],
+    "avoidWhen": [
+      "Avoid this component when only one option can be selected (use Radio instead).",
+      "Avoid this component when there are many options that require scrolling.",
+      "Avoid this component when space is extremely limited.",
+      "Avoid this component when a dropdown would be more space-efficient."
+    ],
+    "relatedComponents": [
+      "Radio",
+      "Switch",
+      "Select"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "react-imask",
+        "version": "^7.6.1"
+      },
+      {
+        "name": "react-number-format",
+        "version": "^5.4.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-datepicker",
+        "version": "^8.0.0"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-datepicker",
+        "version": "^7.0.0"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

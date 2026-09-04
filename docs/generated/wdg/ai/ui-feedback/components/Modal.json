@@ -1,0 +1,516 @@
+{
+  "id": "ui-feedback:modal",
+  "name": "Modal",
+  "slug": "modal",
+  "library": "ui-feedback",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Modal",
+  "purpose": "Display important content in a focused dialog window",
+  "shortDescription": "Display important content in a focused dialog window.",
+  "longDescription": "Display important content in a focused dialog window.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "Confirmation Dialog",
+      "description": "Confirm critical actions like delete or approval",
+      "businessDomain": "hrms",
+      "enterpriseModule": "employee_management",
+      "examplePrompt": "Show a confirmation modal"
+    },
+    {
+      "title": "Form Collection",
+      "description": "Collect data in a modal form",
+      "businessDomain": "crm",
+      "enterpriseModule": "client_management",
+      "examplePrompt": "Create a modal for new client"
+    }
+  ],
+  "antiPatterns": [
+    {
+      "title": "No Keyboard Support",
+      "description": "Modal without ESC to close",
+      "whyToAvoid": "Frustrates keyboard users",
+      "betterAlternative": "Support ESC and Enter keys"
+    },
+    {
+      "title": "No Focus Management",
+      "description": "Focus not trapped in modal",
+      "whyToAvoid": "Users can interact with background",
+      "betterAlternative": "Trap focus inside modal"
+    }
+  ],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "workflows",
+    "dashboards",
+    "settings"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [
+      "ConfirmDialog",
+      "MFAVerificationDialog",
+      "SessionTimeoutDialog"
+    ],
+    "related": [],
+    "alternatives": [
+      "Dialog"
+    ],
+    "parentComponents": [
+      "ConfirmDialog",
+      "MFAVerificationDialog",
+      "SessionTimeoutDialog"
+    ],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "open",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "onClose",
+      "type": "() => void",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "title",
+      "type": "string | React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "size",
+      "type": "\"sm\" | \"md\" | \"lg\" | \"fullscreen\"",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "footer",
+      "type": "React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "closeOnBackdrop",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "closeOnEscape",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showCloseButton",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "role",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-surface",
+    "--wx-color-surface-hover",
+    "--wx-color-text",
+    "--wx-color-text-muted",
+    "--wx-font-family",
+    "--wx-overlay-bg",
+    "--wx-radius-md",
+    "--wx-radius-sm",
+    "--wx-shadow-xl"
+  ],
+  "cssClasses": [
+    "wx-modal-backdrop",
+    "wx-modal",
+    "wx-modal-sm",
+    "wx-modal-md",
+    "wx-modal-lg",
+    "wx-modal-fullscreen",
+    "wx-modal-header",
+    "wx-modal-title",
+    "wx-modal-close",
+    "wx-modal-content",
+    "wx-modal-footer"
+  ],
+  "designTokens": {
+    "other": {
+      "--wx-overlay-bg": {
+        "properties": [
+          "background"
+        ],
+        "selectors": [
+          ".wx-modal-backdrop"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      }
+    }
+  },
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {
+    "--wx-font-family": {
+      "properties": [
+        "font-family"
+      ],
+      "selectors": [
+        ".}\n\n.wx-modal"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {
+    "--wx-color-surface": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".}\n\n.wx-modal"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".}\n\n.wx-modal",
+        ".wx-modal-close:hover"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-border": {
+      "properties": [
+        "border-bottom",
+        "border-top"
+      ],
+      "selectors": [
+        ".wx-modal-header",
+        ".wx-modal-footer"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-modal-close"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface-hover": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-modal-close:hover"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {
+    "--wx-shadow-xl": {
+      "properties": [
+        "box-shadow"
+      ],
+      "selectors": [
+        ".}\n\n.wx-modal"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "radiusTokens": {
+    "--wx-radius-md": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".}\n\n.wx-modal"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-radius-sm": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".wx-modal-close"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Modal\\Modal.tsx",
+  "keywords": [
+    "modal",
+    "window",
+    "popup",
+    "dialog",
+    "overlay",
+    "components"
+  ],
+  "aliases": [
+    {
+      "alias": "dialog",
+      "context": "technical",
+      "confidence": 0.95
+    },
+    {
+      "alias": "popup",
+      "context": "casual",
+      "confidence": 0.9
+    },
+    {
+      "alias": "dialog box",
+      "context": "technical",
+      "confidence": 0.92
+    },
+    {
+      "alias": "overlay",
+      "context": "technical",
+      "confidence": 0.88
+    }
+  ],
+  "synonyms": [
+    "dialog",
+    "popup window",
+    "modal dialog"
+  ],
+  "naturalLanguageQueries": [
+    {
+      "query": "Create a confirmation dialog",
+      "context": "interaction",
+      "intent": "create"
+    },
+    {
+      "query": "Add a settings modal",
+      "context": "ui",
+      "intent": "create"
+    },
+    {
+      "query": "Generate an alert modal",
+      "context": "feedback",
+      "intent": "create"
+    },
+    {
+      "query": "Create a form modal",
+      "context": "form",
+      "intent": "create"
+    }
+  ],
+  "recommendedPrompts": [
+    "Create a Modal for confirmation",
+    "Show me a Modal with form",
+    "Generate a Modal with animation",
+    "Build a Modal for alerts"
+  ],
+  "componentIntent": "Display modal content",
+  "semanticCategory": "overlay",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.945588",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "9bc7f174",
+  "metadata": {
+    "purpose": "Display important content in a focused dialog window.",
+    "description": "A modal overlay that displays content in a centered dialog, overlaying the main page content and preventing interaction with the background. Used for critical information, forms, or actions that require focused user attention. Can be sized, closed via button or Escape key, and supports title, content, and custom footer actions.",
+    "functionalAreas": [
+      "Feedback",
+      "Forms"
+    ],
+    "userIntents": [
+      "Focus on a critical task or message",
+      "Complete a form or input task",
+      "View detailed information",
+      "Confirm important information"
+    ],
+    "exampleUseCases": [
+      "Login Modal",
+      "Confirmation Dialog",
+      "Form Submission",
+      "Detailed Information View",
+      "Settings Modal",
+      "Welcome Dialog",
+      "Alert Modal"
+    ],
+    "useWhen": [
+      "Use this component when users should focus on a specific task.",
+      "Use this component when background content should be temporarily blocked.",
+      "Use this component for forms that require dedicated screen space.",
+      "Use this component when content is important enough to demand attention."
+    ],
+    "avoidWhen": [
+      "Avoid this component for supplementary content (use Drawer instead).",
+      "Avoid this component for content that should be in the main page flow.",
+      "Avoid this component for temporary notifications (use Toast instead).",
+      "Avoid this component when users need to frequently reference background content."
+    ],
+    "relatedComponents": [
+      "Drawer",
+      "Dialog",
+      "ConfirmDialog",
+      "Toast"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

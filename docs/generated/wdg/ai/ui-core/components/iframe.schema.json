@@ -1,0 +1,71 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-core/iframe.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Secure-by-default sandbox policy. Supports the documented use cases (embedded video, maps, forms, third-party widgets) while keeping the frame isolated. `allow-same-origin` is deliberately omitted because combining it with `allow-scripts` would let the framed document script its way out of the sandbox.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-core",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "Note": {
+      "description": "",
+      "type": "string"
+    },
+    "allowFullscreen": {
+      "description": "",
+      "type": "boolean"
+    },
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "default": {
+      "description": "",
+      "enum": [
+        "400px) */\n  height?: string",
+        "number"
+      ]
+    },
+    "hint": {
+      "description": "",
+      "type": "string"
+    },
+    "https": {
+      "description": "",
+      "type": "string"
+    },
+    "label": {
+      "description": "",
+      "type": "string"
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    },
+    "title": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [
+    "https",
+    "title",
+    "default",
+    "default",
+    "Note"
+  ],
+  "title": "IFrame",
+  "type": "object"
+}

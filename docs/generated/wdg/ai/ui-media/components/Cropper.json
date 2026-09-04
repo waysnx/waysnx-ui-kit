@@ -1,0 +1,228 @@
+{
+  "id": "ui-media:cropper",
+  "name": "Cropper",
+  "slug": "cropper",
+  "library": "ui-media",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Cropper",
+  "purpose": "Cropper — interactive crop-selection UI",
+  "shortDescription": "Cropper — interactive crop-selection UI. LIMITATION (1.0.0): This component provides a fully interactive crop overlay...",
+  "longDescription": "Cropper — interactive crop-selection UI. LIMITATION (1.0.0): This component provides a fully interactive crop overlay (move, resize, aspect-ratio locking) and reports the selected crop geometry (`x`, `y`, `width`, `height`) via `onCrop`. However, it does NOT yet produce cropped pixel output — `onCrop` returns the ORIGINAL image in `dataUrl`, not the cropped region. To obtain actual cropped image data, use the reported geometry to draw the selection onto a canvas in your application, or integrate a library such as `react-image-crop` or `cropperjs`.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Media/Cropper",
+      "storyId": "media-cropper",
+      "url": "https://uikit.waysnx.tech/?path=/docs/media-cropper",
+      "stories": [],
+      "tags": [],
+      "source": "Cropper.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Cropper for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Cropper"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useState": "unknown",
+    "useRef": "unknown",
+    "useCallback": "unknown",
+    "useEffect": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-adv-cropper__aspects",
+    "wx-adv-cropper__controls",
+    "wx-adv-cropper__crop-btn",
+    "wx-adv-cropper__viewport",
+    "--wx-color-surface-alt",
+    "--wx-color-text-muted",
+    "--wx-adv-card-border"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Cropper\\Cropper.tsx",
+  "keywords": [
+    "cropper",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Cropper",
+    "Create an example with Cropper",
+    "Generate a Cropper component",
+    "Build a Cropper in my form"
+  ],
+  "componentIntent": "Provide Cropper functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.342426",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "d47bf7c8",
+  "metadata": {
+    "purpose": "Enable cropping and editing of images.",
+    "description": "An interactive component that allows users to crop, resize, and rotate images. Provides visual feedback with draggable handles and adjustable crop area. Often used in image upload workflows or photo editing applications.",
+    "functionalAreas": [
+      "Data Entry",
+      "Visualization"
+    ],
+    "userIntents": [
+      "Crop image",
+      "Resize image",
+      "Rotate image",
+      "Edit image"
+    ],
+    "exampleUseCases": [
+      "Profile Picture Upload",
+      "Avatar Cropping",
+      "Image Editing",
+      "Photo Adjustment",
+      "Thumbnail Generation",
+      "Document Scanning",
+      "Image Refinement"
+    ],
+    "useWhen": [
+      "Use this component in image upload workflows.",
+      "Use this component when users need to refine image composition.",
+      "Use this component for avatar or profile picture selection.",
+      "Use this component with crop preset dimensions or aspect ratios."
+    ],
+    "avoidWhen": [
+      "Avoid this component without proper image library.",
+      "Avoid this component for read-only image display (use ImageViewer instead).",
+      "Avoid this component without preview functionality.",
+      "Avoid this component for complex image editing (use full editor instead)."
+    ],
+    "relatedComponents": [
+      "ImageViewer",
+      "Upload",
+      "SignaturePad"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "qrcode",
+        "version": "^1.5.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/qrcode",
+        "version": "^1.5.5"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

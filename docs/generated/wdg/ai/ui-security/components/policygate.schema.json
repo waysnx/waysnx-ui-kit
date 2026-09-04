@@ -1,0 +1,45 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/policygate.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Content to render if policy is met",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "isPolicyMet": {
+      "description": "Whether policy evaluation passed",
+      "type": "boolean"
+    },
+    "policyDetails": {
+      "description": "Policy evaluation details",
+      "type": "string"
+    },
+    "policyId": {
+      "description": "Policy identifier",
+      "type": "string"
+    },
+    "reason": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [
+    "policyId",
+    "isPolicyMet"
+  ],
+  "title": "PolicyGate",
+  "type": "object"
+}

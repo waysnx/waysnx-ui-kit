@@ -1,0 +1,623 @@
+{
+  "version": "2.0.0",
+  "library": "ui-media",
+  "generatedAt": "2026-09-03T20:02:35.687130",
+  "components": [
+    {
+      "id": "ui-media:audioplayer",
+      "name": "AudioPlayer",
+      "slug": "audio-player",
+      "category": "components",
+      "description": "Play audio content with playback controls and progress tracking.",
+      "keywords": [
+        "audioplayer",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use AudioPlayer for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-media:barcode",
+      "name": "Barcode",
+      "slug": "barcode",
+      "category": "components",
+      "description": "Generate and display barcodes for identification or tracking.",
+      "keywords": [
+        "barcode",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Barcode for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-media:barcodescanner",
+      "name": "BarcodeScanner",
+      "slug": "barcode-scanner",
+      "category": "components",
+      "description": "Enable barcode scanning via device camera.",
+      "keywords": [
+        "components",
+        "barcodescanner"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use BarcodeScanner for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-media:colorpicker",
+      "name": "ColorPicker",
+      "slug": "color-picker",
+      "category": "components",
+      "description": "Enable selection and input of colors.",
+      "keywords": [
+        "colorpicker",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use ColorPicker for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-media:cropper",
+      "name": "Cropper",
+      "slug": "cropper",
+      "category": "components",
+      "description": "Cropper — interactive crop-selection UI. LIMITATION (1.0.0): This component provides a fully interactive crop overlay...",
+      "keywords": [
+        "cropper",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Cropper for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-media:imageviewer",
+      "name": "ImageViewer",
+      "slug": "image-viewer",
+      "category": "components",
+      "description": "Display and allow interaction with images in fullscreen or modal.",
+      "keywords": [
+        "imageviewer",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "display",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use ImageViewer for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-media:ocrscanner",
+      "name": "OCRScanner",
+      "slug": "ocr-scanner",
+      "category": "components",
+      "description": "OCRScanner — SHELL / INTEGRATION component (no built-in OCR engine). Provides the upload/drag-and-drop UI for OCR wor...",
+      "keywords": [
+        "ocrscanner",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use OCRScanner for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-media:qrcode",
+      "name": "QRCode",
+      "slug": "qr-code",
+      "category": "components",
+      "description": "QRCode — renders a real, scannable QR code to a canvas using the `qrcode` library, with optional PNG download. The en...",
+      "keywords": [
+        "qrcode",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "AuthenticatorQRCode"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "AuthenticatorQRCode"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use QRCode for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-media:qrscanner",
+      "name": "QRScanner",
+      "slug": "qr-scanner",
+      "category": "components",
+      "description": "Enable QR code scanning via device camera.",
+      "keywords": [
+        "qrscanner",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use QRScanner for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-media:signaturepad",
+      "name": "SignaturePad",
+      "slug": "signature-pad",
+      "category": "components",
+      "description": "Enable users to draw or write signatures.",
+      "keywords": [
+        "signaturepad",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SignaturePad for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-media:signatureviewer",
+      "name": "SignatureViewer",
+      "slug": "signature-viewer",
+      "category": "components",
+      "description": "Display captured signatures for verification or review.",
+      "keywords": [
+        "signatureviewer",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SignatureViewer for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-media:videoplayer",
+      "name": "VideoPlayer",
+      "slug": "video-player",
+      "category": "components",
+      "description": "Play video content with standard player controls.",
+      "keywords": [
+        "videoplayer",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use VideoPlayer for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    }
+  ]
+}

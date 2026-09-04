@@ -1,0 +1,535 @@
+{
+  "name": "ui-security",
+  "version": "1.0.0",
+  "generatedAt": "2026-09-03T20:03:02.781464",
+  "componentCount": 74,
+  "components": [
+    {
+      "id": "ui-security:accessdenied",
+      "name": "AccessDenied",
+      "slug": "accessdenied",
+      "category": "components",
+      "description": "AccessDenied - Screen for access denied errors"
+    },
+    {
+      "id": "ui-security:activesessions",
+      "name": "ActiveSessions",
+      "slug": "activesessions",
+      "category": "components",
+      "description": "ActiveSessions Component Displays list of active sessions with device info and actions to revoke them."
+    },
+    {
+      "id": "ui-security:activityfeed",
+      "name": "ActivityFeed",
+      "slug": "activityfeed",
+      "category": "components",
+      "description": "Timestamp"
+    },
+    {
+      "id": "ui-security:audithistorytable",
+      "name": "AuditHistoryTable",
+      "slug": "audithistorytable",
+      "category": "components",
+      "description": "Audit events to display"
+    },
+    {
+      "id": "ui-security:audittimeline",
+      "name": "AuditTimeline",
+      "slug": "audittimeline",
+      "category": "components",
+      "description": "Audit events to display"
+    },
+    {
+      "id": "ui-security:auth0loginbutton",
+      "name": "Auth0LoginButton",
+      "slug": "auth0loginbutton",
+      "category": "components",
+      "description": "Auth0LoginButton Component Auth0 SSO login button."
+    },
+    {
+      "id": "ui-security:authenticatorqrcode",
+      "name": "AuthenticatorQRCode",
+      "slug": "authenticatorqrcode",
+      "category": "components",
+      "description": "AuthenticatorQRCode Component Displays a real, scannable QR code for TOTP authenticator app setup. The QR encodes a standard `otpauth://totp/...` URI and is rendered by the shared @waysnx/ui-media QRCode component (backed by the `qrcode` library), so there is a single, real QR implementation across the kit."
+    },
+    {
+      "id": "ui-security:backupcodescard",
+      "name": "BackupCodesCard",
+      "slug": "backupcodescard",
+      "category": "components",
+      "description": "BackupCodesCard - Display backup codes for account recovery"
+    },
+    {
+      "id": "ui-security:biometricbutton",
+      "name": "BiometricButton",
+      "slug": "biometricbutton",
+      "category": "components",
+      "description": "BiometricButton Component Button to authenticate using biometric (fingerprint, face recognition)."
+    },
+    {
+      "id": "ui-security:captchacontainer",
+      "name": "CaptchaContainer",
+      "slug": "captchacontainer",
+      "category": "components",
+      "description": "CaptchaContainer - Container for switching CAPTCHA providers"
+    },
+    {
+      "id": "ui-security:changepasswordform",
+      "name": "ChangePasswordForm",
+      "slug": "changepasswordform",
+      "category": "components",
+      "description": "Password policy for validation"
+    },
+    {
+      "id": "ui-security:concurrentsessiondialog",
+      "name": "ConcurrentSessionDialog",
+      "slug": "concurrentsessiondialog",
+      "category": "components",
+      "description": "ConcurrentSessionDialog - Alert user about new concurrent session login"
+    },
+    {
+      "id": "ui-security:deviceverificationdialog",
+      "name": "DeviceVerificationDialog",
+      "slug": "deviceverificationdialog",
+      "category": "components",
+      "description": "Callback to close dialog"
+    },
+    {
+      "id": "ui-security:emailverificationcard",
+      "name": "EmailVerificationCard",
+      "slug": "emailverificationcard",
+      "category": "components",
+      "description": "Callback to resend verification email"
+    },
+    {
+      "id": "ui-security:encryptionbadge",
+      "name": "EncryptionBadge",
+      "slug": "encryptionbadge",
+      "category": "components",
+      "description": "EncryptionBadge Component Badge showing encryption status."
+    },
+    {
+      "id": "ui-security:featuregate",
+      "name": "FeatureGate",
+      "slug": "featuregate",
+      "category": "components",
+      "description": "Content to render if feature is enabled"
+    },
+    {
+      "id": "ui-security:forgotpasswordform",
+      "name": "ForgotPasswordForm",
+      "slug": "forgotpasswordform",
+      "category": "components",
+      "description": "Password policy for validation"
+    },
+    {
+      "id": "ui-security:githubloginbutton",
+      "name": "GitHubLoginButton",
+      "slug": "githubloginbutton",
+      "category": "components",
+      "description": "GitHubLoginButton Component GitHub OAuth login button."
+    },
+    {
+      "id": "ui-security:googlecaptcha",
+      "name": "GoogleCaptcha",
+      "slug": "googlecaptcha",
+      "category": "components",
+      "description": "GoogleCaptcha - Google reCAPTCHA v3 integration"
+    },
+    {
+      "id": "ui-security:googleloginbutton",
+      "name": "GoogleLoginButton",
+      "slug": "googleloginbutton",
+      "category": "components",
+      "description": "GoogleLoginButton Component Google OAuth login button."
+    },
+    {
+      "id": "ui-security:hcaptcha",
+      "name": "HCaptcha",
+      "slug": "hcaptcha",
+      "category": "components",
+      "description": "HCaptcha - hCaptcha integration"
+    },
+    {
+      "id": "ui-security:idlemonitor",
+      "name": "IdleMonitor",
+      "slug": "idlemonitor",
+      "category": "components",
+      "description": "IdleMonitor - Invisible component that tracks user activity and inactivity Detects idle state using: - Mouse/keyboard events - Page visibility changes - requestAnimationFrame for efficient idle timeout checking"
+    },
+    {
+      "id": "ui-security:keepalivebutton",
+      "name": "KeepAliveButton",
+      "slug": "keepalivebutton",
+      "category": "components",
+      "description": "KeepAliveButton - Manually extend user session"
+    },
+    {
+      "id": "ui-security:logincard",
+      "name": "LoginCard",
+      "slug": "logincard",
+      "category": "components",
+      "description": "LoginCard component"
+    },
+    {
+      "id": "ui-security:loginform",
+      "name": "LoginForm",
+      "slug": "loginform",
+      "category": "components",
+      "description": "LoginForm component"
+    },
+    {
+      "id": "ui-security:loginhistory",
+      "name": "LoginHistory",
+      "slug": "loginhistory",
+      "category": "components",
+      "description": "Login timestamp"
+    },
+    {
+      "id": "ui-security:mfasettingspanel",
+      "name": "MFASettingsPanel",
+      "slug": "mfasettingspanel",
+      "category": "components",
+      "description": "MFASettingsPanel component"
+    },
+    {
+      "id": "ui-security:mfasetupwizard",
+      "name": "MFASetupWizard",
+      "slug": "mfasetupwizard",
+      "category": "components",
+      "description": "MFASetupWizard - Multi-step wizard for MFA setup"
+    },
+    {
+      "id": "ui-security:mfastatus",
+      "name": "MFAStatus",
+      "slug": "mfastatus",
+      "category": "components",
+      "description": "MFAStatus - Display MFA configuration status"
+    },
+    {
+      "id": "ui-security:mfaverificationdialog",
+      "name": "MFAVerificationDialog",
+      "slug": "mfaverificationdialog",
+      "category": "components",
+      "description": "MFAVerificationDialog - Enter MFA verification code"
+    },
+    {
+      "id": "ui-security:maskedinput",
+      "name": "MaskedInput",
+      "slug": "maskedinput",
+      "category": "components",
+      "description": "MaskedInput - Text input with pattern masking"
+    },
+    {
+      "id": "ui-security:microsoftloginbutton",
+      "name": "MicrosoftLoginButton",
+      "slug": "microsoftloginbutton",
+      "category": "components",
+      "description": "MicrosoftLoginButton Component Microsoft/Azure AD OAuth login button."
+    },
+    {
+      "id": "ui-security:otpinput",
+      "name": "OTPInput",
+      "slug": "otpinput",
+      "category": "components",
+      "description": "OTPInput Component One-Time Password input with: - Multiple digit fields (configurable, typically 6) - Auto-focus between fields - Keyboard navigation support - Paste support (auto-distribute digits) - Full accessibility - Does NOT use ui-core Input (custom numeric input)"
+    },
+    {
+      "id": "ui-security:otpresendbutton",
+      "name": "OTPResendButton",
+      "slug": "otpresendbutton",
+      "category": "components",
+      "description": "Callback when button is clicked to resend OTP"
+    },
+    {
+      "id": "ui-security:otpverificationcard",
+      "name": "OTPVerificationCard",
+      "slug": "otpverificationcard",
+      "category": "components",
+      "description": "OTPVerificationCard Component Complete OTP verification flow container: - OTPInput for entering digits - OTPResendButton for resending - Error/success messages - Status display - Uses @waysnx/ui-layout Card component as base"
+    },
+    {
+      "id": "ui-security:oktaloginbutton",
+      "name": "OktaLoginButton",
+      "slug": "oktaloginbutton",
+      "category": "components",
+      "description": "OktaLoginButton Component Okta SSO login button."
+    },
+    {
+      "id": "ui-security:pininput",
+      "name": "PINInput",
+      "slug": "pininput",
+      "category": "components",
+      "description": "PINInput - Numeric code input with auto-advancing Features: - Auto-focus to next field - Masked digit display - Keyboard navigation (backspace to previous) - Paste support"
+    },
+    {
+      "id": "ui-security:passwordageindicator",
+      "name": "PasswordAgeIndicator",
+      "slug": "passwordageindicator",
+      "category": "components",
+      "description": "PasswordAgeIndicator Component Display password age and recommend change."
+    },
+    {
+      "id": "ui-security:passwordgenerator",
+      "name": "PasswordGenerator",
+      "slug": "passwordgenerator",
+      "category": "components",
+      "description": "PasswordGenerator Component"
+    },
+    {
+      "id": "ui-security:passwordinput",
+      "name": "PasswordInput",
+      "slug": "passwordinput",
+      "category": "components",
+      "description": "PasswordInput Component A secure password input component with: - Visibility toggle for showing/hiding password - Real-time strength validation with feedback - Policy compliance checking - Accessibility support (ARIA labels, keyboard navigation) - Dark/light theme support"
+    },
+    {
+      "id": "ui-security:passwordpolicypanel",
+      "name": "PasswordPolicyPanel",
+      "slug": "passwordpolicypanel",
+      "category": "components",
+      "description": "PasswordPolicyPanel component"
+    },
+    {
+      "id": "ui-security:passwordrequirements",
+      "name": "PasswordRequirements",
+      "slug": "passwordrequirements",
+      "category": "components",
+      "description": "Password policy"
+    },
+    {
+      "id": "ui-security:passwordstrengthmeter",
+      "name": "PasswordStrengthMeter",
+      "slug": "passwordstrengthmeter",
+      "category": "components",
+      "description": "PasswordStrengthMeter Component"
+    },
+    {
+      "id": "ui-security:permissiongate",
+      "name": "PermissionGate",
+      "slug": "permissiongate",
+      "category": "components",
+      "description": "Content to render if permission is granted"
+    },
+    {
+      "id": "ui-security:phoneverificationcard",
+      "name": "PhoneVerificationCard",
+      "slug": "phoneverificationcard",
+      "category": "components",
+      "description": "Callback to resend verification code"
+    },
+    {
+      "id": "ui-security:policygate",
+      "name": "PolicyGate",
+      "slug": "policygate",
+      "category": "components",
+      "description": "Content to render if policy is met"
+    },
+    {
+      "id": "ui-security:privacysettingspanel",
+      "name": "PrivacySettingsPanel",
+      "slug": "privacysettingspanel",
+      "category": "components",
+      "description": "PrivacySettingsPanel component"
+    },
+    {
+      "id": "ui-security:riskscorebadge",
+      "name": "RiskScoreBadge",
+      "slug": "riskscorebadge",
+      "category": "components",
+      "description": "RiskScoreBadge Component Display account risk score with visual indicator."
+    },
+    {
+      "id": "ui-security:rolegate",
+      "name": "RoleGate",
+      "slug": "rolegate",
+      "category": "components",
+      "description": "Content to render if role matches"
+    },
+    {
+      "id": "ui-security:scopegate",
+      "name": "ScopeGate",
+      "slug": "scopegate",
+      "category": "components",
+      "description": "Content to render if scope is granted"
+    },
+    {
+      "id": "ui-security:secureclipboardbutton",
+      "name": "SecureClipboardButton",
+      "slug": "secureclipboardbutton",
+      "category": "components",
+      "description": "SecureClipboardButton - Copy sensitive content to clipboard securely Features: - Uses Clipboard API for secure copying - Auto-clear clipboard after configured delay - Fallback to legacy approach if Clipboard API unavailable - Feedback on success - Error handling"
+    },
+    {
+      "id": "ui-security:securedownloadbutton",
+      "name": "SecureDownloadButton",
+      "slug": "securedownloadbutton",
+      "category": "components",
+      "description": "SecureDownloadButton - Download files securely with cleanup Features: - Automatic blob URL cleanup - Optional validation callback - Error handling - Memory-safe file handling"
+    },
+    {
+      "id": "ui-security:secureinput",
+      "name": "SecureInput",
+      "slug": "secureinput",
+      "category": "components",
+      "description": "SecureInput - Text input with enhanced security features Features: - Autocomplete disabled for sensitive inputs - Value clearing on blur - Input validation - Memory-safe handling - Accessibility compliant"
+    },
+    {
+      "id": "ui-security:securetextarea",
+      "name": "SecureTextarea",
+      "slug": "securetextarea",
+      "category": "components",
+      "description": "SecureTextarea - Textarea input with enhanced security features"
+    },
+    {
+      "id": "ui-security:secureuploader",
+      "name": "SecureUploader",
+      "slug": "secureuploader",
+      "category": "components",
+      "description": "SecureUploader - File upload with security validation"
+    },
+    {
+      "id": "ui-security:securityalert",
+      "name": "SecurityAlert",
+      "slug": "securityalert",
+      "category": "components",
+      "description": "SecurityAlert Component Card displaying individual security alert with actions."
+    },
+    {
+      "id": "ui-security:securityalertspanel",
+      "name": "SecurityAlertsPanel",
+      "slug": "securityalertspanel",
+      "category": "components",
+      "description": "SecurityAlertsPanel component"
+    },
+    {
+      "id": "ui-security:securitybanner",
+      "name": "SecurityBanner",
+      "slug": "securitybanner",
+      "category": "components",
+      "description": "SecurityBanner Component Prominent banner to display security alerts and status messages."
+    },
+    {
+      "id": "ui-security:securityeventlog",
+      "name": "SecurityEventLog",
+      "slug": "securityeventlog",
+      "category": "components",
+      "description": "Security events to display"
+    },
+    {
+      "id": "ui-security:securityhealthindicator",
+      "name": "SecurityHealthIndicator",
+      "slug": "securityhealthindicator",
+      "category": "components",
+      "description": "SecurityHealthIndicator - Visual security health indicator"
+    },
+    {
+      "id": "ui-security:securitykeybutton",
+      "name": "SecurityKeyButton",
+      "slug": "securitykeybutton",
+      "category": "components",
+      "description": "SecurityKeyButton - Authenticate using FIDO2/WebAuthn security key"
+    },
+    {
+      "id": "ui-security:securitylogspanel",
+      "name": "SecurityLogsPanel",
+      "slug": "securitylogspanel",
+      "category": "components",
+      "description": "SecurityLogsPanel component"
+    },
+    {
+      "id": "ui-security:securityscore",
+      "name": "SecurityScore",
+      "slug": "securityscore",
+      "category": "components",
+      "description": "SecurityScore - Display security score and breakdown"
+    },
+    {
+      "id": "ui-security:securitysettingspanel",
+      "name": "SecuritySettingsPanel",
+      "slug": "securitysettingspanel",
+      "category": "components",
+      "description": "SecuritySettingsPanel - Main security settings dashboard"
+    },
+    {
+      "id": "ui-security:securitystatuscard",
+      "name": "SecurityStatusCard",
+      "slug": "securitystatuscard",
+      "category": "components",
+      "description": "SecurityStatusCard - Individual security status card"
+    },
+    {
+      "id": "ui-security:sensitivetext",
+      "name": "SensitiveText",
+      "slug": "sensitivetext",
+      "category": "components",
+      "description": "SensitiveText - Display and reveal sensitive information Features: - Manual reveal/hide toggle - Auto-obscuring after delay - Customizable masking - Copy to clipboard option"
+    },
+    {
+      "id": "ui-security:sessioncountdown",
+      "name": "SessionCountdown",
+      "slug": "sessioncountdown",
+      "category": "components",
+      "description": "SessionCountdown - Session time countdown display"
+    },
+    {
+      "id": "ui-security:sessionpolicypanel",
+      "name": "SessionPolicyPanel",
+      "slug": "sessionpolicypanel",
+      "category": "components",
+      "description": "SessionPolicyPanel component"
+    },
+    {
+      "id": "ui-security:sessiontimeoutdialog",
+      "name": "SessionTimeoutDialog",
+      "slug": "sessiontimeoutdialog",
+      "category": "components",
+      "description": "SessionTimeoutDialog - Warning dialog for session timeout"
+    },
+    {
+      "id": "ui-security:trusteddeviceselector",
+      "name": "TrustedDeviceSelector",
+      "slug": "trusteddeviceselector",
+      "category": "components",
+      "description": "TrustedDeviceSelector - Mark device as trusted"
+    },
+    {
+      "id": "ui-security:trusteddevicespanel",
+      "name": "TrustedDevicesPanel",
+      "slug": "trusteddevicespanel",
+      "category": "components",
+      "description": "TrustedDevicesPanel component"
+    },
+    {
+      "id": "ui-security:turnstilecaptcha",
+      "name": "TurnstileCaptcha",
+      "slug": "turnstilecaptcha",
+      "category": "components",
+      "description": "TurnstileCaptcha - Cloudflare Turnstile integration"
+    },
+    {
+      "id": "ui-security:unauthorizedpage",
+      "name": "UnauthorizedPage",
+      "slug": "unauthorizedpage",
+      "category": "components",
+      "description": "UnauthorizedPage - Full page unauthorized error screen"
+    },
+    {
+      "id": "ui-security:verificationstatus",
+      "name": "VerificationStatus",
+      "slug": "verificationstatus",
+      "category": "components",
+      "description": "VerificationStatus Component Display verification progress and status: - Multiple verification steps - Status indicators (pending, verified, failed) - Progress bar - Uses ui-layout Stack for layout"
+    }
+  ],
+  "categories": {
+    "components": 74
+  },
+  "statistics": {
+    "totalComponents": 74,
+    "documentsGenerated": 74,
+    "storiesGenerated": 0,
+    "testsGenerated": 0
+  }
+}

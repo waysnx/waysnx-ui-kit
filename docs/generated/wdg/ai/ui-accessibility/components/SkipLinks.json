@@ -1,0 +1,255 @@
+{
+  "id": "ui-accessibility:skiplinks",
+  "name": "SkipLinks",
+  "slug": "skip-links",
+  "library": "ui-accessibility",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Skip Links",
+  "purpose": "SkipLinks — renders visually hidden skip-navigation links",
+  "shortDescription": "SkipLinks — renders visually hidden skip-navigation links. Links appear on keyboard focus, allowing keyboard/screen r...",
+  "longDescription": "SkipLinks — renders visually hidden skip-navigation links. Links appear on keyboard focus, allowing keyboard/screen reader users to bypass repeated navigation blocks. Place as the very first child of or .",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Accessibility/SkipLinks",
+      "storyId": "accessibility-skiplinks",
+      "url": "https://uikit.waysnx.tech/?path=/docs/accessibility-skiplinks",
+      "stories": [],
+      "tags": [],
+      "source": "SkipLinks.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use SkipLinks for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a SkipLinks"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown",
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "links",
+      "type": "SkipLink[]",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-primary",
+    "--wx-color-primary-contrast",
+    "--wx-font-size-sm"
+  ],
+  "cssClasses": [
+    "wx-skip-links",
+    "wx-skip-link",
+    "wx-reduced-motion"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {
+    "--wx-font-size-sm": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-skip-link"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {
+    "--wx-color-primary": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-skip-link"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary-contrast": {
+      "properties": [
+        "color",
+        "outline"
+      ],
+      "selectors": [
+        ".wx-skip-link",
+        ".wx-skip-link:focus-visible"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\SkipLinks\\SkipLinks.tsx",
+  "keywords": [
+    "skiplinks",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use SkipLinks",
+    "Create an example with SkipLinks",
+    "Generate a SkipLinks component",
+    "Build a SkipLinks in my form"
+  ],
+  "componentIntent": "Provide SkipLinks functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.189176",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "22ecdbb3",
+  "metadata": {
+    "purpose": "Provide quick keyboard shortcuts to skip repetitive content.",
+    "description": "A collection of skip links that allow keyboard users to jump to main content, navigation, or other key sections. Typically hidden and revealed on tab focus. Improves keyboard navigation efficiency and accessibility.",
+    "functionalAreas": [
+      "Navigation",
+      "Accessibility"
+    ],
+    "userIntents": [
+      "Skip to main content",
+      "Bypass navigation",
+      "Quick keyboard navigation",
+      "Improve efficiency"
+    ],
+    "exampleUseCases": [
+      "Skip to Main Content",
+      "Skip Navigation",
+      "Skip to Search",
+      "Skip to Footer",
+      "Keyboard Shortcut",
+      "Accessibility Link",
+      "Quick Jump"
+    ],
+    "useWhen": [
+      "Use this component on every page for accessibility compliance.",
+      "Use this component to help keyboard users bypass navigation.",
+      "Use this component with clear skip link text.",
+      "Use this component hidden but keyboard-accessible."
+    ],
+    "avoidWhen": [
+      "Avoid this component without proper keyboard handling.",
+      "Avoid this component without clear skip link destinations.",
+      "Avoid this component without proper WCAG compliance.",
+      "Avoid this component as a replacement for proper navigation structure."
+    ],
+    "relatedComponents": [
+      "Navigation",
+      "Landmark"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

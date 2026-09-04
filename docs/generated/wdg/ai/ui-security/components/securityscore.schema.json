@@ -1,0 +1,47 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/securityscore.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "SecurityScore - Display security score and breakdown",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "categories": {
+      "description": "Score breakdown by category",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "score": {
+      "description": "Score 0-100",
+      "type": "number"
+    },
+    "showPercentage": {
+      "description": "Show percentage",
+      "type": "boolean"
+    },
+    "title": {
+      "description": "Custom title",
+      "type": "string"
+    }
+  },
+  "required": [
+    "score"
+  ],
+  "title": "SecurityScore",
+  "type": "object"
+}

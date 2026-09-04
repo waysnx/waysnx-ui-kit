@@ -1,0 +1,220 @@
+{
+  "id": "ui-layout:section",
+  "name": "Section",
+  "slug": "section",
+  "library": "ui-layout",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Section",
+  "purpose": "Define a semantic content section with consistent spacing",
+  "shortDescription": "Define a semantic content section with consistent spacing.",
+  "longDescription": "Define a semantic content section with consistent spacing.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Section for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Section"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown"
+  },
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-section"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Section\\Section.tsx",
+  "keywords": [
+    "section",
+    "label",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Section",
+    "Create an example with Section",
+    "Generate a Section component",
+    "Build a Section in my form"
+  ],
+  "componentIntent": "Provide Section functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.134592",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "745f7500",
+  "metadata": {
+    "purpose": "Define a semantic content section with consistent spacing.",
+    "description": "A semantic container that represents a distinct section or area of content with consistent padding and spacing. Provides clear visual separation and organization while being semantically meaningful. Used to break up pages into logical, scannable sections.",
+    "functionalAreas": [
+      "Layout"
+    ],
+    "userIntents": [
+      "Organize content into logical sections",
+      "Improve page scanning and readability",
+      "Create visual hierarchy",
+      "Separate related content"
+    ],
+    "exampleUseCases": [
+      "Page Section",
+      "Article Section",
+      "Dashboard Section",
+      "Content Area",
+      "Feature Section",
+      "Information Section",
+      "Related Items Section"
+    ],
+    "useWhen": [
+      "Use this component to create semantic sections of content.",
+      "Use this component to organize page content into logical areas.",
+      "Use this component for consistent spacing between content sections.",
+      "Use this component to improve page structure and readability."
+    ],
+    "avoidWhen": [
+      "Avoid this component for simple layout needs (use Stack instead).",
+      "Avoid this component for styled containers (use Card or Panel instead).",
+      "Avoid this component excessively (too many sections fragment content).",
+      "Avoid this component without clear semantic purpose."
+    ],
+    "relatedComponents": [
+      "Container",
+      "Card",
+      "Stack"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

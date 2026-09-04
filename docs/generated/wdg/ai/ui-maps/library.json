@@ -1,0 +1,80 @@
+{
+  "name": "ui-maps",
+  "version": "1.0.0",
+  "generatedAt": "2026-09-03T20:02:30.811479",
+  "componentCount": 9,
+  "components": [
+    {
+      "id": "ui-maps:addressautocomplete",
+      "name": "AddressAutocomplete",
+      "slug": "addressautocomplete",
+      "category": "components",
+      "description": "Enable rapid address input with autocomplete suggestions."
+    },
+    {
+      "id": "ui-maps:addressselector",
+      "name": "AddressSelector",
+      "slug": "addressselector",
+      "category": "components",
+      "description": "Enable selection from list of available addresses."
+    },
+    {
+      "id": "ui-maps:currentlocationbutton",
+      "name": "CurrentLocationButton",
+      "slug": "currentlocationbutton",
+      "category": "components",
+      "description": "Enable quick access to current device location."
+    },
+    {
+      "id": "ui-maps:distancecalculator",
+      "name": "DistanceCalculator",
+      "slug": "distancecalculator",
+      "category": "components",
+      "description": "Calculate and display distance between two locations."
+    },
+    {
+      "id": "ui-maps:geofenceeditor",
+      "name": "GeofenceEditor",
+      "slug": "geofenceeditor",
+      "category": "components",
+      "description": "Enable drawing and editing geographic boundaries on a map."
+    },
+    {
+      "id": "ui-maps:locationpicker",
+      "name": "LocationPicker",
+      "slug": "locationpicker",
+      "category": "components",
+      "description": "Enable selection of geographic location from map."
+    },
+    {
+      "id": "ui-maps:mapmarker",
+      "name": "MapMarker",
+      "slug": "mapmarker",
+      "category": "components",
+      "description": "Display point of interest markers on a map."
+    },
+    {
+      "id": "ui-maps:mapview",
+      "name": "MapView",
+      "slug": "mapview",
+      "category": "components",
+      "description": "MapView — ADAPTER-BASED map container. Renders map chrome and controls but does NOT display an interactive map on its own: `@waysnx/ui-maps` bundles no maps vendor SDK. Connect a maps adapter (e.g. Google Maps / Mapbox / custom) via `MapsProvider` to render real tiles and markers. Until then, an informational placeholder is shown. See the package README \"Adapter / backend requirement\" section."
+    },
+    {
+      "id": "ui-maps:routeplanner",
+      "name": "RoutePlanner",
+      "slug": "routeplanner",
+      "category": "components",
+      "description": "Display and manage routes with turn-by-turn directions."
+    }
+  ],
+  "categories": {
+    "components": 9
+  },
+  "statistics": {
+    "totalComponents": 9,
+    "documentsGenerated": 9,
+    "storiesGenerated": 0,
+    "testsGenerated": 0
+  }
+}

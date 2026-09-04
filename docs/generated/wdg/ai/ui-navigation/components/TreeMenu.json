@@ -1,0 +1,371 @@
+{
+  "id": "ui-navigation:treemenu",
+  "name": "TreeMenu",
+  "slug": "tree-menu",
+  "library": "ui-navigation",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Tree Menu",
+  "purpose": "Display hierarchical menu structure with collapsible tree nodes",
+  "shortDescription": "Display hierarchical menu structure with collapsible tree nodes.",
+  "longDescription": "Display hierarchical menu structure with collapsible tree nodes.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Navigation/TreeMenu",
+      "storyId": "navigation-treemenu",
+      "url": "https://uikit.waysnx.tech/?path=/docs/navigation-treemenu",
+      "stories": [],
+      "tags": [],
+      "source": "TreeMenu.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use TreeMenu for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a TreeMenu"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "filterMenuByPermissions": "unknown"
+  },
+  "props": [
+    {
+      "name": "items",
+      "type": "NavigationItem[]",
+      "description": "Root menu items for tree",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "onItemClick",
+      "type": "(item: NavigationItem) => void",
+      "description": "Callback when item is clicked",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onItemSelect",
+      "type": "(item: NavigationItem | undefined) => void",
+      "description": "Callback when item is selected",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "selectedItem",
+      "type": "NavigationItem",
+      "description": "Currently selected item",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "security",
+      "type": "SecurityContext",
+      "description": "Security context for permission-based filtering",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "density",
+      "type": "'compact' | 'normal' | 'spacious'",
+      "description": "Component density",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "variant",
+      "type": "'default' | 'minimal' | 'elevated'",
+      "description": "Theme variant",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "Additional CSS class",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "style",
+      "type": "React.CSSProperties",
+      "description": "Additional styles",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showIcons",
+      "type": "boolean",
+      "description": "Whether to show icons",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showBadges",
+      "type": "boolean",
+      "description": "Whether to show badges",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "maxDepth",
+      "type": "number",
+      "description": "Maximum depth for nested items",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "keyboardNav",
+      "type": "boolean",
+      "description": "Keyboard navigation enabled",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "Accessible label for tree",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "multiSelect",
+      "type": "boolean",
+      "description": "Allow multiple item selection (checkbox mode)",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "selectedIds",
+      "type": "Set<string>",
+      "description": "Selected item IDs (for multi-select mode)",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onSelectionChange",
+      "type": "(selectedIds: Set<string>) => void",
+      "description": "Callback when selection changes (multi-select mode)",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "expandAll",
+      "type": "boolean",
+      "description": "Expand all items initially",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "indentSize",
+      "type": "number",
+      "description": "Indent size in pixels",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showExpandIcons",
+      "type": "boolean",
+      "description": "Show expand/collapse icons",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [
+    "forwardRef"
+  ],
+  "contextsUsed": [],
+  "forwardRef": true,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "nav-tree-menu__list",
+    "nav-tree-menu__item-icon",
+    "nav-tree-menu__checkbox",
+    "nav-tree-menu__item-badge",
+    "nav-tree-menu__expand-placeholder",
+    "nav-tree-menu__item-label"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\TreeMenu\\TreeMenu.tsx",
+  "keywords": [
+    "treemenu",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use TreeMenu",
+    "Create an example with TreeMenu",
+    "Generate a TreeMenu component",
+    "Build a TreeMenu in my form"
+  ],
+  "componentIntent": "Provide TreeMenu functionality",
+  "semanticCategory": "navigation",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.328653",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "9ab6c6b2",
+  "metadata": {
+    "purpose": "Display hierarchical menu structure with collapsible tree nodes.",
+    "description": "A menu component that represents hierarchical relationships with expandable and collapsible nodes. Each node can have child items that reveal on expansion. Used for navigation structures, file trees, or any hierarchical menu.",
+    "functionalAreas": [
+      "Navigation",
+      "Visualization"
+    ],
+    "userIntents": [
+      "Navigate hierarchical structure",
+      "Expand/collapse menu sections",
+      "See nested options",
+      "Navigate deep hierarchies"
+    ],
+    "exampleUseCases": [
+      "File System Navigation",
+      "Hierarchical Menu",
+      "Navigation Tree",
+      "Category Navigation",
+      "Site Map",
+      "Nested Menu",
+      "Documentation Tree"
+    ],
+    "useWhen": [
+      "Use this component to display hierarchical navigation structures.",
+      "Use this component when navigation has multiple levels.",
+      "Use this component to allow users to explore nested items.",
+      "Use this component for file systems or documentation structures."
+    ],
+    "avoidWhen": [
+      "Avoid this component for flat navigation (use Menu instead).",
+      "Avoid this component with very deep hierarchies (5+ levels).",
+      "Avoid this component when most items are always expanded.",
+      "Avoid this component without collapsible expansion."
+    ],
+    "relatedComponents": [
+      "Menu",
+      "Navigation",
+      "Drawer"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

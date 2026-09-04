@@ -1,0 +1,95 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-navigation/recentitems.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display recently accessed or used items for quick navigation.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": true,
+    "isMemo": false,
+    "library": "ui-navigation",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "ariaLabel": {
+      "description": "aria-label for accessibility",
+      "type": "string"
+    },
+    "className": {
+      "description": "Custom class name",
+      "type": "string"
+    },
+    "groupByType": {
+      "description": "Group items by type",
+      "type": "boolean"
+    },
+    "items": {
+      "description": "Array of recent items",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "maxItems": {
+      "description": "Maximum number of items to display",
+      "type": "number"
+    },
+    "onClear": {
+      "description": "Callback to clear history",
+      "type": "null"
+    },
+    "onItemSelect": {
+      "description": "Callback when recent item is selected",
+      "type": "null"
+    },
+    "showClearButton": {
+      "description": "Show clear button",
+      "type": "boolean"
+    },
+    "showTimestamps": {
+      "description": "Show timestamps",
+      "type": "boolean"
+    },
+    "showTypes": {
+      "description": "Show item types/categories",
+      "type": "boolean"
+    },
+    "size": {
+      "description": "Size of component",
+      "enum": [
+        "sm",
+        "md",
+        "lg"
+      ]
+    },
+    "style": {
+      "description": "Custom styles",
+      "type": "string"
+    },
+    "testId": {
+      "description": "Test ID",
+      "type": "string"
+    },
+    "variant": {
+      "description": "Display variant",
+      "enum": [
+        "dropdown",
+        "list",
+        "compact"
+      ]
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "title": "RecentItems",
+  "type": "object"
+}

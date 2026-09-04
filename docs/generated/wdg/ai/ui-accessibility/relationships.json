@@ -1,0 +1,83 @@
+{
+  "version": "2.0.0",
+  "library": "ui-accessibility",
+  "generatedAt": "2026-09-03T20:02:28.405037",
+  "relationshipModel": {
+    "uses": "Components this component directly imports or uses",
+    "usedBy": "Components that import or use this component",
+    "related": "Related components in the same domain",
+    "alternatives": "Alternative implementations for this component",
+    "parentComponents": "Components that contain or wrap this component",
+    "childComponents": "Components this component uses or renders"
+  },
+  "relationships": [
+    {
+      "from": "AccessibilityCenter",
+      "relationships": {
+        "uses": [
+          "FloatingButton"
+        ],
+        "usedBy": [],
+        "related": [
+          "AccessibilityCenterProps",
+          "FloatingButton"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "FloatingButton"
+        ]
+      }
+    },
+    {
+      "from": "FloatingButton",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "AccessibilityCenter"
+        ],
+        "related": [
+          "FloatingButtonProps"
+        ],
+        "alternatives": [],
+        "parentComponents": [
+          "AccessibilityCenter"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Magnifier",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ReadingGuide",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "SkipLinks",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    }
+  ]
+}

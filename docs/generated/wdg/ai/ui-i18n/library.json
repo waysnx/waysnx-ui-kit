@@ -1,0 +1,115 @@
+{
+  "id": "ui-i18n",
+  "name": "UI i18n",
+  "slug": "ui-i18n",
+  "version": "1.0.0",
+  "status": "stable",
+  "type": "functional-library",
+  "purpose": "Internationalization and localization system providing translation provider, hooks, and multi-language support",
+  "short_description": "i18n translation provider with React hooks and HOC support",
+  "long_description": "\n@waysnx/ui-i18n provides a complete internationalization system for React applications.\n\nKey Capabilities:\n- React Context-based translation provider\n- useTranslation hook for functional components\n- HOC for class component support\n- Multi-language message sets (ES, FR, AR)\n- Component-specific message definitions\n- Runtime language switching\n- Default messages with fallback support\n- Library-wide consistent translation model\n",
+  "capabilities": [
+    "React Context translations",
+    "useTranslation hook",
+    "Class component HOC",
+    "Multi-language support",
+    "Language switching",
+    "Message composition",
+    "Default messages",
+    "Nested message objects"
+  ],
+  "exports": {
+    "provider": [
+      {
+        "name": "TranslationProvider",
+        "description": "Root context provider for translations",
+        "props": "TranslationProviderProps",
+        "usage": "Wrap application tree with TranslationProvider to enable translation system"
+      }
+    ],
+    "hooks": [
+      {
+        "name": "useTranslation",
+        "description": "Hook to access translations in functional components",
+        "signature": "useTranslation(): { t: (key: string) => string; language: string }"
+      }
+    ],
+    "hoc": [
+      {
+        "name": "withTranslation",
+        "description": "HOC to inject translations into class components",
+        "signature": "withTranslation<P extends { t: (key: string) => string }>(Component: React.ComponentType<P>): React.ComponentType<Omit<P, 't'>>"
+      }
+    ],
+    "messages": [
+      {
+        "name": "defaultMessages",
+        "description": "Default English message set",
+        "type": "TranslationMessages"
+      },
+      {
+        "name": "esMessages",
+        "description": "Spanish translation messages",
+        "type": "TranslationMessages"
+      },
+      {
+        "name": "frMessages",
+        "description": "French translation messages",
+        "type": "TranslationMessages"
+      },
+      {
+        "name": "arMessages",
+        "description": "Arabic translation messages",
+        "type": "TranslationMessages"
+      }
+    ],
+    "types": [
+      "TranslationProviderProps",
+      "TranslationMessages",
+      "TranslationConfig",
+      "AllMessages",
+      "UICoreMessages",
+      "UIFormBuilderMessages",
+      "UIGridBuilderMessages",
+      "UILayoutMessages",
+      "UIFeedbackMessages",
+      "UINavigationMessages",
+      "UIDashboardMessages",
+      "UICommunicationMessages",
+      "UIMapsMessages",
+      "UIMediaMessages",
+      "UIFilesMessages",
+      "UIDataMessages",
+      "UIVisualizationMessages",
+      "UIAccessibilityMessages",
+      "UIDocsMessages"
+    ]
+  },
+  "integration": {
+    "react_requirement": "React 16.8+ (hooks support)",
+    "context_api": "Built on React Context",
+    "provider_pattern": "Wrap root component with TranslationProvider",
+    "usage": "Use useTranslation hook in functional components or withTranslation HOC in class components",
+    "message_structure": "Nested objects by library domain"
+  },
+  "use_cases": [
+    "Multi-language UI component libraries",
+    "Global application localization",
+    "Runtime language switching",
+    "Component-scoped translations",
+    "User preference persistence",
+    "Library-wide consistent messaging",
+    "Custom language extension"
+  ],
+  "keywords": [
+    "i18n",
+    "internationalization",
+    "localization",
+    "l10n",
+    "translation",
+    "multi-language",
+    "react-context",
+    "language-switching"
+  ],
+  "generatedAt": "2026-09-03T20:02:55.296576"
+}

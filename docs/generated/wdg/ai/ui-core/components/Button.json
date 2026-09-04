@@ -1,0 +1,654 @@
+{
+  "id": "ui-core:button",
+  "name": "Button",
+  "slug": "button",
+  "library": "ui-core",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Button",
+  "purpose": "Enable users to trigger actions by pressing a clickable element",
+  "shortDescription": "Enable users to trigger actions by pressing a clickable element.",
+  "longDescription": "Enable users to trigger actions by pressing a clickable element.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Example/Button",
+      "storyId": "example-button",
+      "url": "https://uikit.waysnx.tech/?path=/docs/example-button",
+      "stories": [],
+      "tags": [],
+      "source": "Button.stories.ts"
+    }
+  },
+  "useCases": [
+    {
+      "title": "Form Submission",
+      "description": "Submit forms in HR, CRM, or inventory systems",
+      "businessDomain": "hrms",
+      "enterpriseModule": "employee_management",
+      "examplePrompt": "Add a save button"
+    },
+    {
+      "title": "Action Trigger",
+      "description": "Approve leave, confirm deletion, or trigger workflows",
+      "businessDomain": "hrms",
+      "enterpriseModule": "workflows",
+      "examplePrompt": "Create an approve button"
+    },
+    {
+      "title": "Navigation",
+      "description": "Navigate between screens in applications",
+      "businessDomain": "erp",
+      "enterpriseModule": null,
+      "examplePrompt": "Add a next button"
+    }
+  ],
+  "antiPatterns": [
+    {
+      "title": "Disabled by Default",
+      "description": "Button disabled when user hasn't filled form",
+      "whyToAvoid": "Users don't know they need to fill something",
+      "betterAlternative": "Show validation errors instead of disabling"
+    },
+    {
+      "title": "Unclear Label",
+      "description": "Button with vague label like 'OK' or 'Submit'",
+      "whyToAvoid": "Users don't know what action will be performed",
+      "betterAlternative": "Use specific labels like 'Save Employee'"
+    }
+  ],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp",
+    "project_management"
+  ],
+  "enterpriseModules": [
+    "workflows",
+    "employee_management",
+    "dashboards"
+  ],
+  "recommendedScenarios": [
+    {
+      "scenario": "Form Submission",
+      "reason": "Use Button to submit forms",
+      "alternativeComponents": [
+        "Link"
+      ]
+    },
+    {
+      "scenario": "Action Triggers",
+      "reason": "Use Button for any clickable action",
+      "alternativeComponents": [
+        "Link"
+      ]
+    }
+  ],
+  "avoidScenarios": [
+    {
+      "scenario": "Instead of Link",
+      "reason": "Use Button for form submission, not navigation",
+      "recommendedAlternative": "Use Link for navigation"
+    }
+  ],
+  "relationships": {
+    "uses": [],
+    "usedBy": [
+      "AccessDenied",
+      "ActiveSessions",
+      "ActivityFeed",
+      "AuditHistoryTable",
+      "Auth0LoginButton",
+      "AuthenticatorQRCode",
+      "BackupCodesCard",
+      "BiometricButton",
+      "ChangePasswordForm",
+      "ConcurrentSessionDialog",
+      "DeviceVerificationDialog",
+      "EmailVerificationCard",
+      "ForgotPasswordForm",
+      "GitHubLoginButton",
+      "GoogleLoginButton",
+      "KeepAliveButton",
+      "MFASettingsPanel",
+      "MFASetupWizard",
+      "MFAStatus",
+      "MFAVerificationDialog",
+      "MicrosoftLoginButton",
+      "OTPResendButton",
+      "OktaLoginButton",
+      "PasswordAgeIndicator",
+      "PasswordPolicyPanel",
+      "PhoneVerificationCard",
+      "PrivacySettingsPanel",
+      "SecureClipboardButton",
+      "SecureDownloadButton",
+      "SecureUploader",
+      "SecurityAlert",
+      "SecurityAlertsPanel",
+      "SecurityBanner",
+      "SecurityEventLog",
+      "SecurityKeyButton",
+      "SecurityLogsPanel",
+      "SecuritySettingsPanel",
+      "SecurityStatusCard",
+      "SensitiveText",
+      "SessionPolicyPanel",
+      "SessionTimeoutDialog",
+      "TrustedDevicesPanel",
+      "UnauthorizedPage"
+    ],
+    "related": [],
+    "alternatives": [
+      "Iconbutton"
+    ],
+    "parentComponents": [
+      "AccessDenied",
+      "ActiveSessions",
+      "ActivityFeed",
+      "AuditHistoryTable",
+      "Auth0LoginButton",
+      "AuthenticatorQRCode",
+      "BackupCodesCard",
+      "BiometricButton",
+      "ChangePasswordForm",
+      "ConcurrentSessionDialog",
+      "DeviceVerificationDialog",
+      "EmailVerificationCard",
+      "ForgotPasswordForm",
+      "GitHubLoginButton",
+      "GoogleLoginButton",
+      "KeepAliveButton",
+      "MFASettingsPanel",
+      "MFASetupWizard",
+      "MFAStatus",
+      "MFAVerificationDialog",
+      "MicrosoftLoginButton",
+      "OTPResendButton",
+      "OktaLoginButton",
+      "PasswordAgeIndicator",
+      "PasswordPolicyPanel",
+      "PhoneVerificationCard",
+      "PrivacySettingsPanel",
+      "SecureClipboardButton",
+      "SecureDownloadButton",
+      "SecureUploader",
+      "SecurityAlert",
+      "SecurityAlertsPanel",
+      "SecurityBanner",
+      "SecurityEventLog",
+      "SecurityKeyButton",
+      "SecurityLogsPanel",
+      "SecuritySettingsPanel",
+      "SecurityStatusCard",
+      "SensitiveText",
+      "SessionPolicyPanel",
+      "SessionTimeoutDialog",
+      "TrustedDevicesPanel",
+      "UnauthorizedPage"
+    ],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [
+    {
+      "name": "children",
+      "type": "ReactNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "variant",
+      "type": "'primary' | 'secondary' | 'destructive' | 'outline' | 'ghost'",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaPressed",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-error",
+    "--wx-color-error-hover",
+    "--wx-color-primary",
+    "--wx-color-primary-contrast",
+    "--wx-color-primary-hover",
+    "--wx-color-surface-hover",
+    "--wx-color-text",
+    "--wx-font-family",
+    "--wx-font-size-md",
+    "--wx-radius-md",
+    "--wx-shadow-sm"
+  ],
+  "cssClasses": [
+    "wx-button",
+    "wx-button--primary",
+    "wx-button--secondary",
+    "wx-button--destructive",
+    "wx-button--outline",
+    "wx-button--ghost"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {
+    "--wx-font-family": {
+      "properties": [
+        "font-family"
+      ],
+      "selectors": [
+        ".wx-button"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-md": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-button"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {
+    "--wx-color-primary": {
+      "properties": [
+        "background",
+        "color",
+        "border"
+      ],
+      "selectors": [
+        ".wx-button--primary",
+        ".wx-button--secondary",
+        ".wx-button--secondary:hover"
+      ],
+      "occurrences": 4,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary-contrast": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-button--primary",
+        ".wx-button--secondary:hover",
+        ".wx-button--destructive"
+      ],
+      "occurrences": 3,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary-hover": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-button--primary:hover"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-button--destructive"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error-hover": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-button--destructive:hover"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-button--outline",
+        ".wx-button--ghost"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-border": {
+      "properties": [
+        "border"
+      ],
+      "selectors": [
+        ".wx-button--outline"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface-hover": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-button--outline:hover",
+        ".wx-button--ghost:hover"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {
+    "--wx-shadow-sm": {
+      "properties": [
+        "box-shadow"
+      ],
+      "selectors": [
+        ".wx-button"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "radiusTokens": {
+    "--wx-radius-md": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".wx-button"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Button\\Button.tsx",
+  "keywords": [
+    "cta",
+    "trigger",
+    "action",
+    "submit",
+    "click",
+    "interactive",
+    "button",
+    "components"
+  ],
+  "aliases": [
+    {
+      "alias": "action",
+      "context": "intent",
+      "confidence": 0.92
+    },
+    {
+      "alias": "submit",
+      "context": "specific",
+      "confidence": 0.9
+    },
+    {
+      "alias": "save",
+      "context": "specific",
+      "confidence": 0.88
+    },
+    {
+      "alias": "cta",
+      "context": "technical",
+      "confidence": 0.85
+    },
+    {
+      "alias": "confirm",
+      "context": "specific",
+      "confidence": 0.88
+    },
+    {
+      "alias": "approve",
+      "context": "business",
+      "confidence": 0.85
+    },
+    {
+      "alias": "clickable",
+      "context": "functional",
+      "confidence": 0.8
+    }
+  ],
+  "synonyms": [
+    "action button",
+    "submit button",
+    "call-to-action"
+  ],
+  "naturalLanguageQueries": [
+    {
+      "query": "I need a save button",
+      "context": "form",
+      "intent": "create"
+    },
+    {
+      "query": "Create a primary action",
+      "context": "ui",
+      "intent": "create"
+    },
+    {
+      "query": "Generate a submit button",
+      "context": "form",
+      "intent": "create"
+    },
+    {
+      "query": "Add a confirmation button",
+      "context": "dialog",
+      "intent": "create"
+    },
+    {
+      "query": "Create a delete button",
+      "context": "action",
+      "intent": "create"
+    },
+    {
+      "query": "Add a cancel button",
+      "context": "form",
+      "intent": "create"
+    },
+    {
+      "query": "Generate an approve button",
+      "context": "workflow",
+      "intent": "create"
+    }
+  ],
+  "recommendedPrompts": [
+    "Create a Button with loading state",
+    "Show me a Button with tooltip",
+    "Generate a Button with icon",
+    "Build a Button for form submission",
+    "Design a Button for delete action"
+  ],
+  "componentIntent": "Trigger actions",
+  "semanticCategory": "display",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.549751",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "60ccec90",
+  "metadata": {
+    "purpose": "Enable users to trigger actions by pressing a clickable element.",
+    "description": "A clickable control that initiates an action when activated by the user. Supports semantic variants to communicate action importance and context, helping users understand the consequence or priority of the action they are about to take. Enables consistent interaction patterns across different types of actions.",
+    "functionalAreas": [
+      "Actions",
+      "Workflow"
+    ],
+    "userIntents": [
+      "Submit a form",
+      "Execute an action",
+      "Navigate to another location",
+      "Confirm or cancel an operation",
+      "Delete or remove content",
+      "Save or apply changes"
+    ],
+    "exampleUseCases": [
+      "Submit Form",
+      "Search Trigger",
+      "Confirm Dialog",
+      "Delete Confirmation",
+      "Save Changes",
+      "Close Panel",
+      "Clear Form",
+      "Apply Filter"
+    ],
+    "useWhen": [
+      "Use this component when users need to trigger an immediate action.",
+      "Use this component when you need to communicate action importance through semantic variants.",
+      "Use this component when the action is optional and user-initiated.",
+      "Use this component when you need multiple action options at different semantic levels."
+    ],
+    "avoidWhen": [
+      "Avoid this component when the primary purpose is navigation between pages.",
+      "Avoid this component when content should be static or read-only.",
+      "Avoid this component when the interaction requires complex multi-step workflows.",
+      "Avoid this component when the action is automatic or system-initiated."
+    ],
+    "relatedComponents": [
+      "Link",
+      "IconButton"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "react-imask",
+        "version": "^7.6.1"
+      },
+      {
+        "name": "react-number-format",
+        "version": "^5.4.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-datepicker",
+        "version": "^8.0.0"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-datepicker",
+        "version": "^7.0.0"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

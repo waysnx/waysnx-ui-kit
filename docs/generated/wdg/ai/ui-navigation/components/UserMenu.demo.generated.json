@@ -1,0 +1,56 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "usermenu",
+    "name": "UserMenu",
+    "package": "@waysnx/ui-navigation",
+    "export": "UserMenu"
+  },
+  "categories": [
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-showUserInfo-false",
+          "title": "Disabled State",
+          "description": "Example with showUserInfo enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "showUserInfo": false
+          },
+          "keywords": [
+            "showUserInfo",
+            "state"
+          ]
+        },
+        {
+          "id": "states-showUserInfo-true",
+          "title": "Enabled State",
+          "description": "Example with showUserInfo enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "showUserInfo": true
+          },
+          "keywords": [
+            "showUserInfo",
+            "state"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:02.761602",
+  "stats": {
+    "examplesGenerated": 2,
+    "categoriesGenerated": 1
+  }
+}

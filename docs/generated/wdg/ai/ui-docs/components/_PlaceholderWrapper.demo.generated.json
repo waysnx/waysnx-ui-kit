@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "_placeholderwrapper",
+    "name": "_PlaceholderWrapper",
+    "package": "@waysnx/ui-docs",
+    "export": "_PlaceholderWrapper"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic",
+          "title": "Basic _PlaceholderWrapper",
+          "description": "Simple _PlaceholderWrapper with default configuration.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {},
+          "keywords": [
+            "basic",
+            "_placeholderwrapper"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "e3b0c44298fc1c14",
+  "generatedAt": "2026-09-03T20:02:48.026425",
+  "stats": {
+    "examplesGenerated": 1,
+    "categoriesGenerated": 1
+  }
+}

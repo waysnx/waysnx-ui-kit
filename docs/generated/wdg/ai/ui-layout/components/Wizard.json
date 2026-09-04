@@ -1,0 +1,670 @@
+{
+  "id": "ui-layout:wizard",
+  "name": "Wizard",
+  "slug": "wizard",
+  "library": "ui-layout",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Wizard",
+  "purpose": "Guide users through a multi-step process or form",
+  "shortDescription": "Guide users through a multi-step process or form.",
+  "longDescription": "Guide users through a multi-step process or form.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Wizard for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Wizard"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "onComplete",
+      "type": "() => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onStepChange",
+      "type": "(step: number) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "defaultStep",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showStepNumbers",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "Default",
+      "type": "'default' */\n  theme?: 'default' | 'minimal' | 'modern'",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "Default",
+      "type": "'horizontal' */\n  layout?: 'horizontal' | 'vertical'",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "Default",
+      "type": "false */\n  saveProgress?: boolean",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "onSaveProgress",
+      "type": "(stepIndex: number) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "Default",
+      "type": "'Finish' */\n  submitButtonText?: string",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "successMessage",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "errorMessage",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-error",
+    "--wx-color-error-bg",
+    "--wx-color-error-text",
+    "--wx-color-primary",
+    "--wx-color-primary-contrast",
+    "--wx-color-primary-hover",
+    "--wx-color-success",
+    "--wx-color-success-bg",
+    "--wx-color-success-text",
+    "--wx-color-surface",
+    "--wx-color-surface-alt",
+    "--wx-color-surface-hover",
+    "--wx-color-text",
+    "--wx-color-text-light",
+    "--wx-color-text-muted",
+    "--wx-font-family",
+    "--wx-font-size-md",
+    "--wx-font-size-sm",
+    "--wx-font-size-xs",
+    "--wx-radius-lg",
+    "--wx-radius-md",
+    "--wx-radius-sm",
+    "--wx-shadow-focus"
+  ],
+  "cssClasses": [
+    "wx-wizard",
+    "wx-wizard-steps",
+    "wx-wizard-step-indicator",
+    "wx-wizard-step-circle",
+    "wx-wizard-step-active",
+    "wx-wizard-step-completed",
+    "wx-wizard-step-info",
+    "wx-wizard-step-title",
+    "wx-wizard-step-upcoming",
+    "wx-wizard-step-description",
+    "wx-wizard-step-line",
+    "wx-wizard-content",
+    "wx-wizard-step-content",
+    "wx-wizard-step-body",
+    "wx-wizard-step-actions",
+    "wx-wizard-button",
+    "wx-wizard-button-primary",
+    "wx-wizard-button-secondary",
+    "wx-wizard-success",
+    "wx-wizard-error",
+    "wx-wizard--minimal",
+    "wx-wizard--modern",
+    "wx-wizard--vertical"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {
+    "--wx-font-family": {
+      "properties": [
+        "font-family"
+      ],
+      "selectors": [
+        ".wx-wizard"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-md": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-wizard-step-circle",
+        ".wx-wizard-success"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-sm": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-wizard-step-title",
+        ".wx-wizard-error"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-xs": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-wizard-step-description"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {
+    "--wx-color-surface-alt": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-wizard-steps"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-border": {
+      "properties": [
+        "background",
+        "border-top",
+        "border",
+        "border-color"
+      ],
+      "selectors": [
+        ".wx-wizard-step-circle",
+        ".wx-wizard-step-line",
+        ".wx-wizard-step-actions",
+        ".wx-wizard-button-secondary",
+        ".wx-wizard--minimal .wx-wizard-step-circle",
+        ".wx-wizard--minimal .wx-wizard-step-line",
+        ".wx-wizard--minimal .wx-wizard-step-completed .wx-wizard-step-line",
+        ".wx-wizard--modern .wx-wizard-step-circle",
+        ".wx-wizard--modern .wx-wizard-button-secondary",
+        ".wx-wizard--vertical .wx-wizard-step-line"
+      ],
+      "occurrences": 10,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-wizard-step-circle",
+        ".wx-wizard-step-description",
+        ".wx-wizard--minimal .wx-wizard-step-circle"
+      ],
+      "occurrences": 3,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary": {
+      "properties": [
+        "background",
+        "border-color",
+        "color",
+        "border"
+      ],
+      "selectors": [
+        ".wx-wizard-step-active .wx-wizard-step-circle",
+        ".wx-wizard-button-primary",
+        ".wx-wizard--minimal .wx-wizard-step-active .wx-wizard-step-circle",
+        ".wx-wizard--minimal .wx-wizard-button-primary",
+        ".wx-wizard--minimal .wx-wizard-button-primary:hover:not(:disabled)",
+        ".wx-wizard--modern .wx-wizard-step-active .wx-wizard-step-circle",
+        ".wx-wizard--modern .wx-wizard-button-primary"
+      ],
+      "occurrences": 9,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary-contrast": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-wizard-step-active .wx-wizard-step-circle",
+        ".wx-wizard-step-completed .wx-wizard-step-circle",
+        ".wx-wizard-button-primary",
+        ".wx-wizard--minimal .wx-wizard-button-primary:hover:not(:disabled)"
+      ],
+      "occurrences": 4,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-success": {
+      "properties": [
+        "background",
+        "border",
+        "border-color",
+        "color"
+      ],
+      "selectors": [
+        ".wx-wizard-step-completed .wx-wizard-step-circle",
+        ".wx-wizard-step-completed .wx-wizard-step-line",
+        ".wx-wizard-success",
+        ".wx-wizard--minimal .wx-wizard-step-completed .wx-wizard-step-circle",
+        ".wx-wizard--modern .wx-wizard-step-completed .wx-wizard-step-circle",
+        ".wx-wizard--vertical .wx-wizard-step-completed .wx-wizard-step-line"
+      ],
+      "occurrences": 7,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-wizard-step-title",
+        ".wx-wizard-button-secondary"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-light": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-wizard-step-upcoming .wx-wizard-step-title",
+        ".wx-wizard-step-upcoming .wx-wizard-step-description"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary-hover": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-wizard-button-primary:hover:not(:disabled)",
+        ".wx-wizard--modern .wx-wizard-step-active .wx-wizard-step-circle",
+        ".wx-wizard--modern .wx-wizard-button-primary"
+      ],
+      "occurrences": 3,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-wizard-button-secondary",
+        ".wx-wizard--modern .wx-wizard-steps",
+        ".wx-wizard--modern .wx-wizard-content"
+      ],
+      "occurrences": 3,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface-hover": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-wizard-button-secondary:hover:not(:disabled)"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-success-bg": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-wizard-success"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-success-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-wizard-success"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error-bg": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-wizard-error"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-wizard-error"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error": {
+      "properties": [
+        "border"
+      ],
+      "selectors": [
+        ".wx-wizard-error"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {
+    "--wx-shadow-focus": {
+      "properties": [
+        "box-shadow"
+      ],
+      "selectors": [
+        ".wx-wizard-step-active .wx-wizard-step-circle"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "radiusTokens": {
+    "--wx-radius-md": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".wx-wizard-steps",
+        ".wx-wizard-success",
+        ".wx-wizard--modern .wx-wizard-button",
+        ".wx-wizard--modern .wx-wizard-button-secondary"
+      ],
+      "occurrences": 4,
+      "used": true,
+      "value": ""
+    },
+    "--wx-radius-sm": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".wx-wizard-button",
+        ".wx-wizard-error"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-radius-lg": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".wx-wizard--modern .wx-wizard-steps",
+        ".wx-wizard--modern .wx-wizard-content"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Wizard\\Wizard.tsx",
+  "keywords": [
+    "wizard",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Wizard",
+    "Create an example with Wizard",
+    "Generate a Wizard component",
+    "Build a Wizard in my form"
+  ],
+  "componentIntent": "Provide Wizard functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.187779",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "04f3ed9d",
+  "metadata": {
+    "purpose": "Guide users through a multi-step process or form.",
+    "description": "An interactive component that orchestrates a step-by-step workflow with validation, error messages, and navigation controls. Displays one step at a time, validates before progressing, and provides save/skip options. Commonly used for onboarding, complex forms, and multi-step processes requiring user guidance.",
+    "functionalAreas": [
+      "Forms",
+      "Workflow"
+    ],
+    "userIntents": [
+      "Complete multi-step process",
+      "Fill complex form in stages",
+      "Receive guidance through process",
+      "Validate and confirm each step"
+    ],
+    "exampleUseCases": [
+      "Checkout Wizard",
+      "Onboarding Flow",
+      "Complex Form",
+      "Setup Wizard",
+      "Multi-step Registration",
+      "Installation Wizard",
+      "Configuration Flow"
+    ],
+    "useWhen": [
+      "Use this component for complex multi-step processes or forms.",
+      "Use this component when validation is needed at each step.",
+      "Use this component to guide users through intimidating processes.",
+      "Use this component when users may want to save progress and continue later."
+    ],
+    "avoidWhen": [
+      "Avoid this component for simple single-step forms (use basic form instead).",
+      "Avoid this component for processes with dynamic or highly variable steps.",
+      "Avoid this component when all steps should be visible (use checklist instead).",
+      "Avoid this component for optional or exploratory flows."
+    ],
+    "relatedComponents": [
+      "Stepper",
+      "Form",
+      "Dialog"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

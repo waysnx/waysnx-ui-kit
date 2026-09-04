@@ -1,0 +1,111 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-navigation/menu.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display a list of selectable menu items.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": true,
+    "isMemo": false,
+    "library": "ui-navigation",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "activeItem": {
+      "description": "Currently active item",
+      "type": "string"
+    },
+    "ariaLabel": {
+      "description": "Accessible label for menu",
+      "type": "string"
+    },
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "density": {
+      "description": "Component density",
+      "enum": [
+        "compact",
+        "normal",
+        "spacious"
+      ]
+    },
+    "items": {
+      "description": "Menu items to display",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "keyboardNav": {
+      "description": "Keyboard navigation enabled",
+      "type": "boolean"
+    },
+    "maxDepth": {
+      "description": "Maximum depth for nested items",
+      "type": "number"
+    },
+    "onActiveChange": {
+      "description": "Callback when active item changes",
+      "type": "null"
+    },
+    "onItemClick": {
+      "description": "Callback when item is clicked",
+      "type": "null"
+    },
+    "orientation": {
+      "description": "Menu orientation",
+      "enum": [
+        "vertical",
+        "horizontal"
+      ]
+    },
+    "role": {
+      "description": "Menu role",
+      "enum": [
+        "menu",
+        "menubar",
+        "navigation",
+        "none"
+      ]
+    },
+    "security": {
+      "description": "Security context for permission-based filtering",
+      "type": "string"
+    },
+    "showBadges": {
+      "description": "Whether to show badges",
+      "type": "boolean"
+    },
+    "showIcons": {
+      "description": "Whether to show icons",
+      "type": "boolean"
+    },
+    "style": {
+      "description": "Additional styles",
+      "type": "string"
+    },
+    "variant": {
+      "description": "Theme variant",
+      "enum": [
+        "default",
+        "minimal",
+        "elevated"
+      ]
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "title": "Menu",
+  "type": "object"
+}

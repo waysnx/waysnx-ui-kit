@@ -1,0 +1,50 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/microsoftloginbutton.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "MicrosoftLoginButton Component Microsoft/Azure AD OAuth login button.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "clientId": {
+      "description": "Microsoft OAuth Client ID",
+      "type": "string"
+    },
+    "isLoading": {
+      "description": "Show loading state",
+      "type": "boolean"
+    },
+    "onError": {
+      "description": "Callback on login error",
+      "type": "null"
+    },
+    "onSuccess": {
+      "description": "Callback on successful login",
+      "type": "object"
+    },
+    "variant": {
+      "description": "Button variant",
+      "enum": [
+        "primary",
+        "outline",
+        "ghost"
+      ]
+    }
+  },
+  "required": [],
+  "title": "MicrosoftLoginButton",
+  "type": "object"
+}

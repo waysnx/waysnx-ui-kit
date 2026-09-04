@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "tokenviewerplaceholder",
+    "name": "TokenViewerPlaceholder",
+    "package": "@waysnx/ui-docs",
+    "export": "TokenViewerPlaceholder"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic",
+          "title": "Basic TokenViewerPlaceholder",
+          "description": "Simple TokenViewerPlaceholder with default configuration.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {},
+          "keywords": [
+            "basic",
+            "tokenviewerplaceholder"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:48.064603",
+  "stats": {
+    "examplesGenerated": 1,
+    "categoriesGenerated": 1
+  }
+}

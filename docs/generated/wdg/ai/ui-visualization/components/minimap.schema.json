@@ -1,0 +1,51 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-visualization/minimap.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display a zoomed-out overview of large visualizations.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-visualization",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "onNavigate": {
+      "description": "",
+      "type": "number"
+    },
+    "state": {
+      "description": "",
+      "type": "string"
+    },
+    "totalHeight": {
+      "description": "",
+      "type": "number"
+    },
+    "totalWidth": {
+      "description": "",
+      "type": "number"
+    }
+  },
+  "required": [
+    "state",
+    "totalWidth",
+    "totalHeight",
+    "onNavigate"
+  ],
+  "title": "MiniMap",
+  "type": "object"
+}

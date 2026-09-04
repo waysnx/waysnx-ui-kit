@@ -1,0 +1,40 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "dashboardsearch",
+    "name": "DashboardSearch",
+    "package": "@waysnx/ui-dashboard",
+    "export": "DashboardSearch"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic-placeholder",
+          "title": "With Placeholder",
+          "description": "Shows placeholder text.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "placeholder": "Sample Text"
+          },
+          "keywords": [
+            "placeholder"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:45.576095",
+  "stats": {
+    "examplesGenerated": 1,
+    "categoriesGenerated": 1
+  }
+}

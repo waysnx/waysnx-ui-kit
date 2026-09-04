@@ -1,0 +1,152 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "button",
+    "name": "Button",
+    "package": "@waysnx/ui-core",
+    "export": "Button"
+  },
+  "categories": [
+    {
+      "id": "sizes",
+      "title": "Sizes",
+      "description": "",
+      "examples": [
+        {
+          "id": "small",
+          "title": "Small",
+          "description": "Example demonstrating small state",
+          "category": "sizes",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "size": "small"
+          },
+          "keywords": [
+            "small"
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Large",
+          "description": "Example demonstrating large state",
+          "category": "sizes",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "size": "large"
+          },
+          "keywords": [
+            "large"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "disabled",
+          "title": "Disabled",
+          "description": "Button in disabled state",
+          "category": "states",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "disabled": true
+          },
+          "keywords": [
+            "disabled"
+          ]
+        },
+        {
+          "id": "loading",
+          "title": "Loading",
+          "description": "Button showing loading state",
+          "category": "states",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "loading": true
+          },
+          "keywords": [
+            "loading"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "variants",
+      "title": "Variants",
+      "description": "",
+      "examples": [
+        {
+          "id": "primary",
+          "title": "Primary",
+          "description": "Example demonstrating primary state",
+          "category": "variants",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "variant": "primary"
+          },
+          "keywords": [
+            "primary"
+          ]
+        },
+        {
+          "id": "secondary",
+          "title": "Secondary",
+          "description": "Example demonstrating secondary state",
+          "category": "variants",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "variant": "secondary"
+          },
+          "keywords": [
+            "secondary"
+          ]
+        },
+        {
+          "id": "outlined",
+          "title": "Outlined",
+          "description": "Example demonstrating outlined state",
+          "category": "variants",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "variant": "outlined"
+          },
+          "keywords": [
+            "outlined"
+          ]
+        },
+        {
+          "id": "ghost",
+          "title": "Ghost",
+          "description": "Example demonstrating ghost state",
+          "category": "variants",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "variant": "ghost"
+          },
+          "keywords": [
+            "ghost"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:42.929890",
+  "stats": {
+    "examplesGenerated": 8,
+    "categoriesGenerated": 3
+  }
+}

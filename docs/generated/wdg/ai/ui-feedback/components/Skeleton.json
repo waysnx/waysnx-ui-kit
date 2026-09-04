@@ -1,0 +1,272 @@
+{
+  "id": "ui-feedback:skeleton",
+  "name": "Skeleton",
+  "slug": "skeleton",
+  "library": "ui-feedback",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Skeleton",
+  "purpose": "Display a placeholder while content is loading",
+  "shortDescription": "Display a placeholder while content is loading.",
+  "longDescription": "Display a placeholder while content is loading.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Skeleton for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Skeleton"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown"
+  },
+  "props": [
+    {
+      "name": "variant",
+      "type": "\"text\" | \"circle\" | \"rect\"",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "width",
+      "type": "string | number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "height",
+      "type": "string | number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "count",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-surface-hover"
+  ],
+  "cssClasses": [
+    "wx-skeleton",
+    "wx-skeleton-text",
+    "wx-skeleton-circle",
+    "wx-skeleton-rect",
+    "wx-skeleton-group"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-color-border": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-skeleton"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface-hover": {
+      "properties": [],
+      "selectors": [
+        ".wx-skeleton"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Skeleton\\Skeleton.tsx",
+  "keywords": [
+    "components",
+    "skeleton"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Skeleton",
+    "Create an example with Skeleton",
+    "Generate a Skeleton component",
+    "Build a Skeleton in my form"
+  ],
+  "componentIntent": "Provide Skeleton functionality",
+  "semanticCategory": "feedback",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.960604",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "6d5e4e00",
+  "metadata": {
+    "purpose": "Display a placeholder while content is loading.",
+    "description": "An animated placeholder shape that mimics the size and structure of actual content while data is being fetched or processed. Creates a perception of faster loading and provides visual continuity by showing users what content is coming. Available in multiple shapes to match different content types like text lines, images, and components.",
+    "functionalAreas": [
+      "Feedback",
+      "Data Entry"
+    ],
+    "userIntents": [
+      "Know content is loading",
+      "See what type of content will appear",
+      "Experience faster perceived performance",
+      "Anticipate page content structure"
+    ],
+    "exampleUseCases": [
+      "Content Loading Placeholder",
+      "List Item Skeleton",
+      "Card Loading State",
+      "Image Loading Placeholder",
+      "Text Block Skeleton",
+      "Avatar Loading State",
+      "Table Row Placeholder"
+    ],
+    "useWhen": [
+      "Use this component when content takes noticeable time to load.",
+      "Use this component to match the shape and size of the expected content.",
+      "Use this component to provide visual continuity during data loading.",
+      "Use this component as an alternative to spinners for content-aware loading states."
+    ],
+    "avoidWhen": [
+      "Avoid this component when loading is instant or imperceptible.",
+      "Avoid this component for simple operations that show a spinner instead.",
+      "Avoid this component when the content structure is complex and skeleton would be confusing.",
+      "Avoid this component for streaming content that updates gradually."
+    ],
+    "relatedComponents": [
+      "Spinner",
+      "Progress",
+      "EmptyState"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

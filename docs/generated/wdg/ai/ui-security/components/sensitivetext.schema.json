@@ -1,0 +1,68 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/sensitivetext.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "SensitiveText - Display and reveal sensitive information Features: - Manual reveal/hide toggle - Auto-obscuring after delay - Customizable masking - Copy to clipboard option",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "allowCopy": {
+      "description": "Allow copy to clipboard button",
+      "type": "boolean"
+    },
+    "autoHideMs": {
+      "description": "",
+      "type": "number"
+    },
+    "color": {
+      "description": "Custom text color",
+      "type": "string"
+    },
+    "fontSize": {
+      "description": "Custom text styling",
+      "type": "string"
+    },
+    "hideLabel": {
+      "description": "Label for hide button",
+      "type": "string"
+    },
+    "initiallyRevealed": {
+      "description": "Whether text is initially revealed",
+      "type": "boolean"
+    },
+    "maskCharacter": {
+      "description": "",
+      "type": "string"
+    },
+    "revealLabel": {
+      "description": "Label for reveal button",
+      "type": "string"
+    },
+    "showLastCharacters": {
+      "description": "",
+      "type": "number"
+    },
+    "text": {
+      "description": "The sensitive text to display/hide",
+      "type": "string"
+    }
+  },
+  "required": [
+    "text"
+  ],
+  "title": "SensitiveText",
+  "type": "object"
+}

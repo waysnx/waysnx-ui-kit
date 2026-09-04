@@ -1,0 +1,74 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-dashboard/dashboard.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Provide the main container and layout structure for dashboard applications.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-dashboard",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "children": {
+      "description": "Content to render inside dashboard",
+      "type": "string"
+    },
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "config": {
+      "description": "Dashboard configuration",
+      "type": "string"
+    },
+    "description": {
+      "description": "Dashboard description",
+      "type": "string"
+    },
+    "footer": {
+      "description": "Footer content",
+      "type": "string"
+    },
+    "loading": {
+      "description": "Is dashboard in loading state",
+      "type": "boolean"
+    },
+    "onFiltersChange": {
+      "description": "Callback when filters change",
+      "type": "string"
+    },
+    "onThemeChange": {
+      "description": "Callback when theme changes",
+      "type": "null"
+    },
+    "sidebar": {
+      "description": "Sidebar content",
+      "type": "string"
+    },
+    "style": {
+      "description": "Additional CSS styles",
+      "type": "string"
+    },
+    "title": {
+      "description": "Dashboard title",
+      "type": "string"
+    },
+    "toolbar": {
+      "description": "Toolbar content",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "title": "Dashboard",
+  "type": "object"
+}

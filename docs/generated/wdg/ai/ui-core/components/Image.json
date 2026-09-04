@@ -1,0 +1,353 @@
+{
+  "id": "ui-core:image",
+  "name": "Image",
+  "slug": "image",
+  "library": "ui-core",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Image",
+  "purpose": "Display images with responsive sizing, fallback handling, and accessibility support",
+  "shortDescription": "Display images with responsive sizing, fallback handling, and accessibility support.",
+  "longDescription": "Display images with responsive sizing, fallback handling, and accessibility support.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Image for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Image"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [
+    {
+      "name": "src",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "alt",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "caption",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "width",
+      "type": "string | number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "height",
+      "type": "string | number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "fit",
+      "type": "'cover' | 'contain' | 'fill' | 'none'",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "rounded",
+      "type": "boolean | 'full'",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "fallback",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-text",
+    "--wx-color-text-muted",
+    "--wx-radius-md"
+  ],
+  "cssClasses": [
+    "wx-image-wrapper",
+    "wx-image-label",
+    "wx-image",
+    "wx-image--rounded",
+    "wx-image--circle",
+    "wx-image--cover",
+    "wx-image--contain",
+    "wx-image--fill",
+    "wx-image--none",
+    "wx-image-caption"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-color-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-image-label"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-image-caption"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {
+    "--wx-radius-md": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".wx-image--rounded"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Image\\Image.tsx",
+  "keywords": [
+    "components",
+    "image"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Image",
+    "Create an example with Image",
+    "Generate a Image component",
+    "Build a Image in my form"
+  ],
+  "componentIntent": "Display images",
+  "semanticCategory": "display",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.643088",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "a167612c",
+  "metadata": {
+    "purpose": "Display images with responsive sizing, fallback handling, and accessibility support.",
+    "description": "A component for rendering images with automatic lazy loading and responsive sizing. Supports multiple object-fit options for controlling how images fill their containers. Includes fallback image support when the primary image fails to load and optional caption display. Requires alt text for accessibility.",
+    "functionalAreas": [
+      "Visualization",
+      "Communication",
+      "Feedback"
+    ],
+    "userIntents": [
+      "View a photograph or illustration",
+      "See a diagram or chart",
+      "View product images",
+      "Display profile pictures"
+    ],
+    "exampleUseCases": [
+      "Product Gallery",
+      "Profile Avatar",
+      "Diagram Display",
+      "Screenshot Preview",
+      "Logo Display",
+      "Hero Image"
+    ],
+    "useWhen": [
+      "Use this component when displaying images with responsive sizing needs.",
+      "Use this component when lazy loading improves page performance.",
+      "Use this component when fallback images should be displayed on load failure.",
+      "Use this component when captions or additional context are needed."
+    ],
+    "avoidWhen": [
+      "Avoid this component when images should not be accessible to all users.",
+      "Avoid this component without providing meaningful alt text.",
+      "Avoid this component when decorative images alone convey critical information.",
+      "Avoid this component when HTML img tag direct control is required."
+    ],
+    "relatedComponents": [
+      "HtmlContent",
+      "Link"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "react-imask",
+        "version": "^7.6.1"
+      },
+      {
+        "name": "react-number-format",
+        "version": "^5.4.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-datepicker",
+        "version": "^8.0.0"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-datepicker",
+        "version": "^7.0.0"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

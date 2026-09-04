@@ -1,0 +1,80 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-dashboard/chartwidget.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "ChartWidget component",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-dashboard",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "children": {
+      "description": "Table content",
+      "type": "string"
+    },
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "currentPage": {
+      "description": "Current page",
+      "type": "number"
+    },
+    "error": {
+      "description": "Widget error",
+      "enum": [
+        "Error",
+        "null"
+      ]
+    },
+    "id": {
+      "description": "Widget ID",
+      "type": "string"
+    },
+    "loading": {
+      "description": "Is widget loading",
+      "type": "boolean"
+    },
+    "onPageChange": {
+      "description": "On page change handler",
+      "type": "number"
+    },
+    "paginated": {
+      "description": "Is table paginated",
+      "type": "boolean"
+    },
+    "style": {
+      "description": "Additional CSS styles",
+      "type": "string"
+    },
+    "subtitle": {
+      "description": "Widget subtitle",
+      "type": "string"
+    },
+    "title": {
+      "description": "Widget title",
+      "type": "string"
+    },
+    "totalPages": {
+      "description": "Total pages",
+      "type": "number"
+    }
+  },
+  "required": [
+    "id",
+    "children"
+  ],
+  "title": "ChartWidget",
+  "type": "object"
+}

@@ -1,0 +1,313 @@
+{
+  "version": "2.0.0",
+  "library": "ui-layout",
+  "generatedAt": "2026-09-03T20:03:00.225763",
+  "relationshipModel": {
+    "uses": "Components this component directly imports or uses",
+    "usedBy": "Components that import or use this component",
+    "related": "Related components in the same domain",
+    "alternatives": "Alternative implementations for this component",
+    "parentComponents": "Components that contain or wrap this component",
+    "childComponents": "Components this component uses or renders"
+  },
+  "relationships": [
+    {
+      "from": "Accordion",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Breadcrumb",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Card",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "EmailVerificationCard",
+          "OTPVerificationCard",
+          "PhoneVerificationCard"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "EmailVerificationCard",
+          "OTPVerificationCard",
+          "PhoneVerificationCard"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Collapsible",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Column",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Container",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Divider",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Grid",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "PageContent",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "PageHeader",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "PageLayout",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "PageTabs",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Panel",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Row",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Section",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "SidebarLayout",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Spacer",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "SplitLayout",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Stack",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "AccessDenied",
+          "ActiveSessions",
+          "ActivityFeed",
+          "BackupCodesCard",
+          "ConcurrentSessionDialog",
+          "LoginHistory",
+          "MFASettingsPanel",
+          "MFASetupWizard",
+          "MFAStatus",
+          "MFAVerificationDialog",
+          "PINInput",
+          "PasswordPolicyPanel",
+          "PrivacySettingsPanel",
+          "SecureUploader",
+          "SecurityAlertsPanel",
+          "SecurityEventLog",
+          "SecurityLogsPanel",
+          "SecuritySettingsPanel",
+          "SessionPolicyPanel",
+          "SessionTimeoutDialog",
+          "TrustedDeviceSelector",
+          "TrustedDevicesPanel",
+          "UnauthorizedPage"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "AccessDenied",
+          "ActiveSessions",
+          "ActivityFeed",
+          "BackupCodesCard",
+          "ConcurrentSessionDialog",
+          "LoginHistory",
+          "MFASettingsPanel",
+          "MFASetupWizard",
+          "MFAStatus",
+          "MFAVerificationDialog",
+          "PINInput",
+          "PasswordPolicyPanel",
+          "PrivacySettingsPanel",
+          "SecureUploader",
+          "SecurityAlertsPanel",
+          "SecurityEventLog",
+          "SecurityLogsPanel",
+          "SecuritySettingsPanel",
+          "SessionPolicyPanel",
+          "SessionTimeoutDialog",
+          "TrustedDeviceSelector",
+          "TrustedDevicesPanel",
+          "UnauthorizedPage"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Stepper",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Tabs",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Wizard",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    }
+  ]
+}

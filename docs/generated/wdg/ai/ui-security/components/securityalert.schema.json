@@ -1,0 +1,65 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/securityalert.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "SecurityAlert Component Card displaying individual security alert with actions.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "actionLabel": {
+      "description": "",
+      "type": "string"
+    },
+    "description": {
+      "description": "",
+      "type": "string"
+    },
+    "details": {
+      "description": "",
+      "type": "string"
+    },
+    "onAction": {
+      "description": "",
+      "type": "null"
+    },
+    "onDismiss": {
+      "description": "",
+      "type": "null"
+    },
+    "severity": {
+      "description": "",
+      "type": "string"
+    },
+    "status": {
+      "description": "",
+      "type": "string"
+    },
+    "timestamp": {
+      "description": "",
+      "type": "string"
+    },
+    "title": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "description"
+  ],
+  "title": "SecurityAlert",
+  "type": "object"
+}

@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "routeplanner",
+    "name": "RoutePlanner",
+    "package": "@waysnx/ui-maps",
+    "export": "RoutePlanner"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic",
+          "title": "Basic RoutePlanner",
+          "description": "Simple RoutePlanner with default configuration.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {},
+          "keywords": [
+            "basic",
+            "routeplanner"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "e3b0c44298fc1c14",
+  "generatedAt": "2026-09-03T20:02:33.238800",
+  "stats": {
+    "examplesGenerated": 1,
+    "categoriesGenerated": 1
+  }
+}

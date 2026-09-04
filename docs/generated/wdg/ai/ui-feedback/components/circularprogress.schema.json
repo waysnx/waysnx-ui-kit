@@ -1,0 +1,71 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-feedback/circularprogress.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Visualize numeric progress in a circular format.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-feedback",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "color": {
+      "description": "",
+      "type": "string"
+    },
+    "default": {
+      "description": "",
+      "type": "boolean"
+    },
+    "label": {
+      "description": "",
+      "type": "string"
+    },
+    "sm": {
+      "description": "",
+      "type": "string"
+    },
+    "strokeWidth": {
+      "description": "",
+      "type": "number"
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    },
+    "trackColor": {
+      "description": "",
+      "type": "string"
+    },
+    "value": {
+      "description": "",
+      "type": "number"
+    },
+    "valueLabel": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [
+    "value",
+    "default",
+    "sm",
+    "default"
+  ],
+  "title": "CircularProgress",
+  "type": "object"
+}

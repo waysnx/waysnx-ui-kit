@@ -1,0 +1,87 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-core/htmleditor.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Enable users to create and format HTML content with a visual text editor toolbar.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-core",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "ariaDescribedBy": {
+      "description": "",
+      "type": "string"
+    },
+    "ariaLabel": {
+      "description": "",
+      "type": "string"
+    },
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "disabled": {
+      "description": "",
+      "type": "boolean"
+    },
+    "error": {
+      "description": "",
+      "type": "string"
+    },
+    "hint": {
+      "description": "",
+      "type": "string"
+    },
+    "label": {
+      "description": "",
+      "type": "string"
+    },
+    "minHeight": {
+      "description": "",
+      "type": "number"
+    },
+    "onChange": {
+      "description": "",
+      "type": "string"
+    },
+    "placeholder": {
+      "description": "",
+      "type": "string"
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    },
+    "toolbar": {
+      "description": "",
+      "enum": [
+        "('bold",
+        "italic",
+        "underline",
+        "link",
+        "ul",
+        "ol",
+        "h1",
+        "h2')[]"
+      ]
+    },
+    "value": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "title": "HtmlEditor",
+  "type": "object"
+}

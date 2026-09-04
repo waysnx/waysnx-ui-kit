@@ -1,0 +1,703 @@
+{
+  "version": "2.0.0",
+  "library": "ui-visualization",
+  "generatedAt": "2026-09-03T20:03:08.515843",
+  "components": [
+    {
+      "id": "ui-visualization:connector",
+      "name": "Connector",
+      "slug": "connector",
+      "category": "components",
+      "description": "Draw connections between elements to show relationships.",
+      "keywords": [
+        "connector",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "edge",
+        "sourceNode",
+        "targetNode",
+        "isSelected",
+        "onClick"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "Hierarchy",
+          "OrgChart",
+          "Tree"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "Hierarchy",
+          "OrgChart",
+          "Tree"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Connector for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 5,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-visualization:hierarchy",
+      "name": "Hierarchy",
+      "slug": "hierarchy",
+      "category": "components",
+      "description": "Visualize organizational or hierarchical relationships.",
+      "keywords": [
+        "hierarchy",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "nodes",
+        "width",
+        "height",
+        "onNodeClick",
+        "onSelectionChange",
+        "renderNode",
+        "showMiniMap",
+        "showToolbar",
+        "showGrid",
+        "dark",
+        "className"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Connector",
+          "MiniMap",
+          "Toolbar",
+          "TreeNode"
+        ],
+        "usedBy": [],
+        "related": [
+          "Connector",
+          "MiniMap",
+          "Toolbar",
+          "TreeNode"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Connector",
+          "MiniMap",
+          "Toolbar",
+          "TreeNode"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Hierarchy for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 11,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-visualization:legend",
+      "name": "Legend",
+      "slug": "legend",
+      "category": "components",
+      "description": "Explain chart symbols, colors, and data categories.",
+      "keywords": [
+        "legend",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "items",
+        "className"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Legend for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 2,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-visualization:minimap",
+      "name": "MiniMap",
+      "slug": "mini-map",
+      "category": "components",
+      "description": "Display a zoomed-out overview of large visualizations.",
+      "keywords": [
+        "components",
+        "minimap"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "state",
+        "totalWidth",
+        "totalHeight",
+        "onNavigate",
+        "className"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "Hierarchy",
+          "OrgChart"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "Hierarchy",
+          "OrgChart"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use MiniMap for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 5,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-visualization:orgchart",
+      "name": "OrgChart",
+      "slug": "org-chart",
+      "category": "components",
+      "description": "Display organizational structure and reporting relationships.",
+      "keywords": [
+        "orgchart",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "nodes",
+        "edges",
+        "config",
+        "width",
+        "height",
+        "onNodeClick",
+        "onNodeDoubleClick",
+        "onSelectionChange",
+        "renderNode",
+        "showToolbar",
+        "showMiniMap",
+        "showSearch",
+        "showZoomControls",
+        "showGrid",
+        "dark",
+        "className"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Connector",
+          "MiniMap",
+          "SearchBox",
+          "Toolbar",
+          "TreeNode",
+          "ZoomControls"
+        ],
+        "usedBy": [],
+        "related": [
+          "Connector",
+          "DEFAULT_VIRTUALIZE_THRESHOLD",
+          "MiniMap",
+          "SearchBox",
+          "Toolbar",
+          "TreeNode",
+          "VirtualizationEngine",
+          "ZoomControls"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Connector",
+          "MiniMap",
+          "SearchBox",
+          "Toolbar",
+          "TreeNode",
+          "ZoomControls"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use OrgChart for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 16,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-visualization:searchbox",
+      "name": "SearchBox",
+      "slug": "search-box",
+      "category": "components",
+      "description": "Enable searching and filtering within visualizations.",
+      "keywords": [
+        "components",
+        "placeholder",
+        "searchbox"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "searchState",
+        "onSearch",
+        "onNext",
+        "onPrev",
+        "onClear",
+        "placeholder",
+        "className"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "OrgChart"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "OrgChart"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SearchBox for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 7,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-visualization:toolbar",
+      "name": "Toolbar",
+      "slug": "toolbar",
+      "category": "components",
+      "description": "Display tool or action buttons for interactive visualizations.",
+      "keywords": [
+        "toolbar",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "position",
+        "actions",
+        "showZoom",
+        "zoom",
+        "onZoomIn",
+        "onZoomOut",
+        "onFitView",
+        "onResetZoom",
+        "className"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "Hierarchy",
+          "OrgChart"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "Hierarchy",
+          "OrgChart"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Toolbar for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 9,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-visualization:tree",
+      "name": "Tree",
+      "slug": "tree",
+      "category": "components",
+      "description": "Display hierarchical tree structure with expandable nodes.",
+      "keywords": [
+        "tree",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "nodes",
+        "width",
+        "height",
+        "onNodeClick",
+        "onSelectionChange",
+        "renderNode",
+        "showZoomControls",
+        "showGrid",
+        "dark",
+        "className"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Connector",
+          "TreeNode",
+          "ZoomControls"
+        ],
+        "usedBy": [],
+        "related": [
+          "Connector",
+          "TreeNode",
+          "ZoomControls"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Connector",
+          "TreeNode",
+          "ZoomControls"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Tree for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 10,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-visualization:treenode",
+      "name": "TreeNode",
+      "slug": "tree-node",
+      "category": "components",
+      "description": "Represent a single node within a hierarchical tree structure.",
+      "keywords": [
+        "treenode",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "node",
+        "isSelected",
+        "isDragging",
+        "isDragOver",
+        "canDropHere",
+        "onClick",
+        "onDoubleClick",
+        "onContextMenu",
+        "onToggleExpand",
+        "onDragStart",
+        "onDragOver",
+        "onDrop",
+        "enableDragDrop",
+        "renderNode",
+        "hasChildren",
+        "className"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "Hierarchy",
+          "OrgChart",
+          "Tree"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "Hierarchy",
+          "OrgChart",
+          "Tree"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use TreeNode for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 16,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-visualization:zoomcontrols",
+      "name": "ZoomControls",
+      "slug": "zoom-controls",
+      "category": "components",
+      "description": "Provide zoom in/out controls for interactive visualizations.",
+      "keywords": [
+        "zoomcontrols",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "zoom",
+        "onZoomIn",
+        "onZoomOut",
+        "onFitView",
+        "onResetZoom",
+        "className"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "OrgChart",
+          "Tree"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "OrgChart",
+          "Tree"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use ZoomControls for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 6,
+        "eventsCount": 0
+      }
+    }
+  ]
+}

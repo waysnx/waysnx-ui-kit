@@ -1,0 +1,77 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-feedback/confirmdialog.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Request explicit user confirmation before performing a consequential action.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-feedback",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "cancelLabel": {
+      "description": "",
+      "type": "string"
+    },
+    "confirmLabel": {
+      "description": "",
+      "type": "string"
+    },
+    "message": {
+      "description": "",
+      "enum": [
+        "string",
+        "React.ReactNode"
+      ]
+    },
+    "onCancel": {
+      "description": "",
+      "type": "null"
+    },
+    "onConfirm": {
+      "description": "",
+      "type": "null"
+    },
+    "open": {
+      "description": "",
+      "type": "boolean"
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    },
+    "title": {
+      "description": "",
+      "enum": [
+        "string",
+        "React.ReactNode"
+      ]
+    },
+    "variant": {
+      "description": "",
+      "enum": [
+        "default",
+        "danger",
+        "warning"
+      ]
+    }
+  },
+  "required": [
+    "open",
+    "message",
+    "onConfirm",
+    "onCancel"
+  ],
+  "title": "ConfirmDialog",
+  "type": "object"
+}

@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "breadcrumb",
+    "name": "Breadcrumb",
+    "package": "@waysnx/ui-layout",
+    "export": "Breadcrumb"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic",
+          "title": "Basic Breadcrumb",
+          "description": "Simple Breadcrumb with default configuration.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "items": "Sample Text"
+          },
+          "keywords": [
+            "basic",
+            "breadcrumb"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:00.042849",
+  "stats": {
+    "examplesGenerated": 1,
+    "categoriesGenerated": 1
+  }
+}

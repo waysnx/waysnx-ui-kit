@@ -1,0 +1,437 @@
+{
+  "id": "ui-core:daterangepicker",
+  "name": "DateRangePicker",
+  "slug": "date-range-picker",
+  "library": "ui-core",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Date Range Picker",
+  "purpose": "Enable users to select a start and end date range through an interactive calendar",
+  "shortDescription": "Enable users to select a start and end date range through an interactive calendar.",
+  "longDescription": "Enable users to select a start and end date range through an interactive calendar.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Components/DateRangePicker",
+      "storyId": "components-daterangepicker",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-daterangepicker",
+      "stories": [],
+      "tags": [],
+      "source": "DateRangePicker.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use DateRangePicker for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a DateRangePicker"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown",
+    "ReactDatePicker": "unknown",
+    "warn": "unknown",
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "startDate",
+      "type": "Date | null",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "endDate",
+      "type": "Date | null",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onChange",
+      "type": "(dates: [Date | null, Date | null]) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "placeholder",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "hint",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "minDate",
+      "type": "Date",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "maxDate",
+      "type": "Date",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "dateFormat",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaDescribedBy",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-error",
+    "--wx-color-primary",
+    "--wx-color-text-muted",
+    "--wx-input-height"
+  ],
+  "cssClasses": [
+    "wx-daterangepicker-wrapper",
+    "wx-daterangepicker-label",
+    "wx-daterangepicker-input-wrapper",
+    "wx-daterangepicker-react-wrapper",
+    "wx-daterangepicker-input",
+    "wx-daterangepicker-icon",
+    "wx-daterangepicker-input-error",
+    "wx-daterangepicker-hint",
+    "wx-daterangepicker-error-text"
+  ],
+  "designTokens": {
+    "other": {
+      "--wx-input-height": {
+        "properties": [
+          "height"
+        ],
+        "selectors": [
+          ".wx-daterangepicker-input"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      }
+    }
+  },
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-color-border": {
+      "properties": [
+        "border"
+      ],
+      "selectors": [
+        ".wx-daterangepicker-input"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-daterangepicker-icon",
+        ".wx-daterangepicker-hint"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary": {
+      "properties": [
+        "border-color"
+      ],
+      "selectors": [
+        ".wx-daterangepicker-input:focus"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error": {
+      "properties": [
+        "border-color",
+        "color"
+      ],
+      "selectors": [
+        ".wx-daterangepicker-input-error",
+        ".wx-daterangepicker-error-text"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\DateRangePicker\\DateRangePicker.tsx",
+  "keywords": [
+    "daterangepicker",
+    "placeholder",
+    "label",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use DateRangePicker",
+    "Create an example with DateRangePicker",
+    "Generate a DateRangePicker component",
+    "Build a DateRangePicker in my form"
+  ],
+  "componentIntent": "Provide DateRangePicker functionality",
+  "semanticCategory": "input",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.581604",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "3c755f3c",
+  "metadata": {
+    "purpose": "Enable users to select a start and end date range through an interactive calendar.",
+    "description": "A date range selection control that displays a calendar interface for picking both start and end dates. Provides month and year dropdown selectors for efficient navigation and highlights the selected range on the calendar. Respects minimum and maximum date constraints and displays both dates in the input field.",
+    "functionalAreas": [
+      "Data Entry",
+      "Forms",
+      "Selection"
+    ],
+    "userIntents": [
+      "Select a date range for filtering",
+      "Define project duration or timeline",
+      "Specify vacation or leave dates",
+      "Set report period or interval"
+    ],
+    "exampleUseCases": [
+      "Analytics Date Range",
+      "Vacation Dates",
+      "Project Timeline",
+      "Report Period",
+      "Booking Dates",
+      "Historical Data Range"
+    ],
+    "useWhen": [
+      "Use this component when users need to select both start and end dates.",
+      "Use this component when visualizing the date range on a calendar is helpful.",
+      "Use this component when filtering data by a specific time period.",
+      "Use this component when date range constraints need visual representation."
+    ],
+    "avoidWhen": [
+      "Avoid this component when only a single date is needed (use DatePicker instead).",
+      "Avoid this component when both date and time selection is required (use DateTimePicker twice or similar).",
+      "Avoid this component when users typically enter date ranges as text.",
+      "Avoid this component when only preset date ranges should be available."
+    ],
+    "relatedComponents": [
+      "DatePicker",
+      "DateTimePicker",
+      "TimePicker"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "react-imask",
+        "version": "^7.6.1"
+      },
+      {
+        "name": "react-number-format",
+        "version": "^5.4.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-datepicker",
+        "version": "^8.0.0"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-datepicker",
+        "version": "^7.0.0"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

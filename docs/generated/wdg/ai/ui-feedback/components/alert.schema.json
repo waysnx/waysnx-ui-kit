@@ -1,0 +1,49 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-feedback/alert.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display a contextual message that requires user attention.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-feedback",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "children": {
+      "description": "",
+      "type": "string"
+    },
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    },
+    "type": {
+      "description": "",
+      "enum": [
+        "info",
+        "success",
+        "warning",
+        "error"
+      ]
+    }
+  },
+  "required": [
+    "children"
+  ],
+  "title": "Alert",
+  "type": "object"
+}

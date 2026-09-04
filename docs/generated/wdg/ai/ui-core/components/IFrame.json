@@ -1,0 +1,377 @@
+{
+  "id": "ui-core:iframe",
+  "name": "IFrame",
+  "slug": "i-frame",
+  "library": "ui-core",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "I Frame",
+  "purpose": "Secure-by-default sandbox policy",
+  "shortDescription": "Secure-by-default sandbox policy. Supports the documented use cases (embedded video, maps, forms, third-party widgets...",
+  "longDescription": "Secure-by-default sandbox policy. Supports the documented use cases (embedded video, maps, forms, third-party widgets) while keeping the frame isolated. `allow-same-origin` is deliberately omitted because combining it with `allow-scripts` would let the framed document script its way out of the sandbox.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Components/IFrame",
+      "storyId": "components-iframe",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-iframe",
+      "stories": [],
+      "tags": [],
+      "source": "IFrame.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use IFrame for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a IFrame"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown",
+    "warn": "unknown"
+  },
+  "props": [
+    {
+      "name": "https",
+      "type": "// */\n  src: string",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "default",
+      "type": "100%) */\n  width?: string | number",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "default",
+      "type": "400px) */\n  height?: string | number",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "allowFullscreen",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "Note",
+      "type": "intentionally does NOT combine `allow-scripts` with\n   * `allow-same-origin` by default, since together they let framed content\n   * remove its own sandbox.\n   */\n  sandbox?: string",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "hint",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-surface",
+    "--wx-color-text",
+    "--wx-color-text-muted",
+    "--wx-radius-md"
+  ],
+  "cssClasses": [
+    "wx-iframe-wrapper",
+    "wx-iframe-label",
+    "wx-iframe-container",
+    "wx-iframe",
+    "wx-iframe-hint"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-color-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-iframe-label"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-border": {
+      "properties": [
+        "border"
+      ],
+      "selectors": [
+        ".wx-iframe-container"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-iframe-container"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-iframe-hint"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {
+    "--wx-radius-md": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".wx-iframe-container"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\IFrame\\IFrame.tsx",
+  "keywords": [
+    "components",
+    "label",
+    "iframe"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use IFrame",
+    "Create an example with IFrame",
+    "Generate a IFrame component",
+    "Build a IFrame in my form"
+  ],
+  "componentIntent": "Provide IFrame functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.635535",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "10bb4817",
+  "metadata": {
+    "purpose": "Embed external web content within a sandboxed iframe with security restrictions.",
+    "description": "A secure container for embedding external web content with enforced HTTPS requirement and a secure-by-default sandbox to prevent script injection. The default sandbox permits scripts, popups, forms and presentation while omitting same-origin access so framed content cannot escape the sandbox; it can be overridden or fully locked down via the sandbox prop. Supports fullscreen mode, lazy loads embedded content to improve page performance, and requires both src and title for accessibility.",
+    "functionalAreas": [
+      "Visualization",
+      "Communication",
+      "Navigation"
+    ],
+    "userIntents": [
+      "View embedded web content",
+      "Watch embedded videos",
+      "Display external forms",
+      "Show third-party widgets"
+    ],
+    "exampleUseCases": [
+      "Embedded Video Player",
+      "External Form",
+      "Third-party Widget",
+      "Embedded Map",
+      "Documentation Viewer",
+      "Live Demo Display"
+    ],
+    "useWhen": [
+      "Use this component when embedding external web content securely.",
+      "Use this component when HTTPS-only URLs are available.",
+      "Use this component when script sandboxing requirements are critical.",
+      "Use this component when third-party widgets must be isolated from main content."
+    ],
+    "avoidWhen": [
+      "Avoid this component without HTTPS URLs (security requirement).",
+      "Avoid this component when embedding untrusted content without sandbox restrictions.",
+      "Avoid this component for content that requires direct DOM access.",
+      "Avoid this component when full JavaScript execution is needed."
+    ],
+    "relatedComponents": [
+      "HtmlContent",
+      "Link",
+      "Image"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "react-imask",
+        "version": "^7.6.1"
+      },
+      {
+        "name": "react-number-format",
+        "version": "^5.4.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-datepicker",
+        "version": "^8.0.0"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-datepicker",
+        "version": "^7.0.0"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

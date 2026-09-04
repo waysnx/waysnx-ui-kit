@@ -1,0 +1,50 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-visualization/connector.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Draw connections between elements to show relationships.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-visualization",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "edge": {
+      "description": "",
+      "type": "string"
+    },
+    "isSelected": {
+      "description": "",
+      "type": "boolean"
+    },
+    "onClick": {
+      "description": "",
+      "type": "string"
+    },
+    "sourceNode": {
+      "description": "",
+      "type": "string"
+    },
+    "targetNode": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [
+    "edge",
+    "sourceNode",
+    "targetNode"
+  ],
+  "title": "Connector",
+  "type": "object"
+}

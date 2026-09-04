@@ -1,0 +1,59 @@
+{
+  "name": "ui-grid-builder",
+  "version": "1.0.0",
+  "generatedAt": "2026-09-03T20:02:52.878403",
+  "componentCount": 6,
+  "components": [
+    {
+      "id": "ui-grid-builder:grid",
+      "name": "Grid",
+      "slug": "grid",
+      "category": "components",
+      "description": "Build and configure responsive data grids with columns and rows."
+    },
+    {
+      "id": "ui-grid-builder:gridactions",
+      "name": "GridActions",
+      "slug": "gridactions",
+      "category": "components",
+      "description": "GridActions component"
+    },
+    {
+      "id": "ui-grid-builder:gridcell",
+      "name": "GridCell",
+      "slug": "gridcell",
+      "category": "components",
+      "description": "GridCell component"
+    },
+    {
+      "id": "ui-grid-builder:gridpagination",
+      "name": "GridPagination",
+      "slug": "gridpagination",
+      "category": "components",
+      "description": "GridPagination component"
+    },
+    {
+      "id": "ui-grid-builder:gridselectionbar",
+      "name": "GridSelectionBar",
+      "slug": "gridselectionbar",
+      "category": "components",
+      "description": "GridSelectionBar component"
+    },
+    {
+      "id": "ui-grid-builder:gridtoolbar",
+      "name": "GridToolbar",
+      "slug": "gridtoolbar",
+      "category": "components",
+      "description": "GridToolbar component"
+    }
+  ],
+  "categories": {
+    "components": 6
+  },
+  "statistics": {
+    "totalComponents": 6,
+    "documentsGenerated": 6,
+    "storiesGenerated": 0,
+    "testsGenerated": 0
+  }
+}

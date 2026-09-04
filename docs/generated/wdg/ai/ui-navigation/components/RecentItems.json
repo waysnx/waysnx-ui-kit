@@ -1,0 +1,340 @@
+{
+  "id": "ui-navigation:recentitems",
+  "name": "RecentItems",
+  "slug": "recent-items",
+  "library": "ui-navigation",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Recent Items",
+  "purpose": "Display recently accessed or used items for quick navigation",
+  "shortDescription": "Display recently accessed or used items for quick navigation.",
+  "longDescription": "Display recently accessed or used items for quick navigation.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Enterprise/RecentItems",
+      "storyId": "enterprise-recentitems",
+      "url": "https://uikit.waysnx.tech/?path=/docs/enterprise-recentitems",
+      "stories": [],
+      "tags": [],
+      "source": "RecentItems.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use RecentItems for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a RecentItems"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "items",
+      "type": "RecentItem[]",
+      "description": "Array of recent items",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "onItemSelect",
+      "type": "(item: RecentItem) => void",
+      "description": "Callback when recent item is selected",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onClear",
+      "type": "() => void",
+      "description": "Callback to clear history",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "maxItems",
+      "type": "number",
+      "description": "Maximum number of items to display",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showClearButton",
+      "type": "boolean",
+      "description": "Show clear button",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showTimestamps",
+      "type": "boolean",
+      "description": "Show timestamps",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showTypes",
+      "type": "boolean",
+      "description": "Show item types/categories",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "groupByType",
+      "type": "boolean",
+      "description": "Group items by type",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "variant",
+      "type": "'dropdown' | 'list' | 'compact'",
+      "description": "Display variant",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "size",
+      "type": "'sm' | 'md' | 'lg'",
+      "description": "Size of component",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "Custom class name",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "style",
+      "type": "React.CSSProperties",
+      "description": "Custom styles",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "aria-label for accessibility",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "Test ID",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [
+    "forwardRef"
+  ],
+  "contextsUsed": [],
+  "forwardRef": true,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-recent-items__menu",
+    "wx-recent-items__empty",
+    "wx-recent-items__type-label",
+    "wx-recent-items__type-group",
+    "wx-recent-items__compact-list",
+    "wx-recent-items__list",
+    "wx-recent-items__item-label",
+    "wx-recent-items__compact-initial",
+    "wx-recent-items__item-icon",
+    "wx-recent-items__type-items",
+    "wx-recent-items__item-main",
+    "wx-recent-items__item-type",
+    "wx-recent-items__compact-item",
+    "wx-recent-items__title",
+    "wx-recent-items__trigger",
+    "wx-recent-items__trigger-icon",
+    "wx-recent-items__empty-compact",
+    "wx-recent-items__clear-text",
+    "wx-recent-items__clear",
+    "wx-recent-items__item",
+    "wx-recent-items__header",
+    "wx-recent-items__grouped",
+    "wx-recent-items__item-text",
+    "wx-recent-items__item-time"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\RecentItems\\RecentItems.tsx",
+  "keywords": [
+    "recentitems",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use RecentItems",
+    "Create an example with RecentItems",
+    "Generate a RecentItems component",
+    "Build a RecentItems in my form"
+  ],
+  "componentIntent": "Provide RecentItems functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.289238",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "a93a149d",
+  "metadata": {
+    "purpose": "Display recently accessed or used items for quick navigation.",
+    "description": "A menu or list showing recently accessed items, documents, or pages. Helps users quickly return to work in progress or frequently used items. Often appears in dropdown or panel form in header or sidebar.",
+    "functionalAreas": [
+      "Navigation"
+    ],
+    "userIntents": [
+      "Access recently used items",
+      "Resume previous work",
+      "Navigate quickly to past items",
+      "See work history"
+    ],
+    "exampleUseCases": [
+      "Recent Documents",
+      "Recent Pages",
+      "Recently Viewed Items",
+      "Recent Projects",
+      "Recent Searches",
+      "Open Recent Menu",
+      "Activity History"
+    ],
+    "useWhen": [
+      "Use this component to provide quick access to recent items.",
+      "Use this component to help users resume work quickly.",
+      "Use this component when users frequently revisit items.",
+      "Use this component in applications with many items or documents."
+    ],
+    "avoidWhen": [
+      "Avoid this component without reliable usage history tracking.",
+      "Avoid this component in simple applications with few items.",
+      "Avoid this component when items are always visible in main navigation.",
+      "Avoid this component without clear time-based ordering."
+    ],
+    "relatedComponents": [
+      "Menu",
+      "FavoritesMenu",
+      "QuickActions"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

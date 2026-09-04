@@ -1,0 +1,86 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "alert",
+    "name": "Alert",
+    "package": "@waysnx/ui-feedback",
+    "export": "Alert"
+  },
+  "categories": [
+    {
+      "id": "variants",
+      "title": "Variants",
+      "description": "",
+      "examples": [
+        {
+          "id": "variants-type-info",
+          "title": "Type: info",
+          "description": "Demonstrates the info type.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "type": "info"
+          },
+          "keywords": [
+            "type",
+            "info"
+          ]
+        },
+        {
+          "id": "variants-type-success",
+          "title": "Type: success",
+          "description": "Demonstrates the success type.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "type": "success"
+          },
+          "keywords": [
+            "type",
+            "success"
+          ]
+        },
+        {
+          "id": "variants-type-warning",
+          "title": "Type: warning",
+          "description": "Demonstrates the warning type.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "type": "warning"
+          },
+          "keywords": [
+            "type",
+            "warning"
+          ]
+        },
+        {
+          "id": "variants-type-error",
+          "title": "Type: error",
+          "description": "Demonstrates the error type.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "type": "error"
+          },
+          "keywords": [
+            "type",
+            "error"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:50.448300",
+  "stats": {
+    "examplesGenerated": 4,
+    "categoriesGenerated": 1
+  }
+}

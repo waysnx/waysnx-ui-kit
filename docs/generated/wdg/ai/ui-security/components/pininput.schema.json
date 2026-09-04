@@ -1,0 +1,58 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/pininput.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "PINInput - Numeric code input with auto-advancing Features: - Auto-focus to next field - Masked digit display - Keyboard navigation (backspace to previous) - Paste support",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "autoComplete": {
+      "description": "",
+      "type": "boolean"
+    },
+    "disabled": {
+      "description": "Whether input is disabled",
+      "type": "boolean"
+    },
+    "error": {
+      "description": "Error message",
+      "type": "string"
+    },
+    "label": {
+      "description": "Label text",
+      "type": "string"
+    },
+    "length": {
+      "description": "",
+      "type": "number"
+    },
+    "masked": {
+      "description": "",
+      "type": "boolean"
+    },
+    "onChange": {
+      "description": "Callback on value change",
+      "type": "string"
+    },
+    "onComplete": {
+      "description": "Callback when PIN is complete",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "title": "PINInput",
+  "type": "object"
+}

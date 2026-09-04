@@ -1,0 +1,25 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-maps/geofenceeditor.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Enable drawing and editing geographic boundaries on a map.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-maps",
+    "version": "1.0.0"
+  },
+  "properties": {},
+  "required": [],
+  "title": "GeofenceEditor",
+  "type": "object"
+}

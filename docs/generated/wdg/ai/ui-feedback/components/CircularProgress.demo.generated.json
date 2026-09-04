@@ -1,0 +1,54 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "circularprogress",
+    "name": "CircularProgress",
+    "package": "@waysnx/ui-feedback",
+    "export": "CircularProgress"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic-valueLabel",
+          "title": "With Label",
+          "description": "Displays with a label.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "valueLabel": "Sample Text"
+          },
+          "keywords": [
+            "valueLabel"
+          ]
+        },
+        {
+          "id": "basic-label",
+          "title": "With Label",
+          "description": "Displays with a label.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "label": "Sample Text"
+          },
+          "keywords": [
+            "label"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:50.469051",
+  "stats": {
+    "examplesGenerated": 2,
+    "categoriesGenerated": 1
+  }
+}

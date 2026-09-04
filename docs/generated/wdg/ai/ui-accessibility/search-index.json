@@ -1,0 +1,280 @@
+{
+  "version": "2.0.0",
+  "library": "ui-accessibility",
+  "generatedAt": "2026-09-03T20:02:28.403336",
+  "components": [
+    {
+      "id": "ui-accessibility:accessibilitycenter",
+      "name": "AccessibilityCenter",
+      "slug": "accessibility-center",
+      "category": "components",
+      "description": "AccessibilityCenter Component The main UI for accessibility settings",
+      "keywords": [
+        "accessibilitycenter",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "FloatingButton"
+        ],
+        "usedBy": [],
+        "related": [
+          "AccessibilityCenterProps",
+          "FloatingButton"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "FloatingButton"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use AccessibilityCenter for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-accessibility:floatingbutton",
+      "name": "FloatingButton",
+      "slug": "floating-button",
+      "category": "components",
+      "description": "FloatingButton Component A floating button that triggers the accessibility center",
+      "keywords": [
+        "floatingbutton",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "action control",
+        "clickable element"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "display",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "AccessibilityCenter"
+        ],
+        "related": [
+          "FloatingButtonProps"
+        ],
+        "alternatives": [],
+        "parentComponents": [
+          "AccessibilityCenter"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use FloatingButton for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-accessibility:magnifier",
+      "name": "Magnifier",
+      "slug": "magnifier",
+      "category": "components",
+      "description": "Magnifier Component Provides a magnified view of page content for users with low vision Follows cursor/scroll position",
+      "keywords": [
+        "magnifier",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Magnifier for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-accessibility:readingguide",
+      "name": "ReadingGuide",
+      "slug": "reading-guide",
+      "category": "components",
+      "description": "ReadingGuide Component Displays a visual reading line to help users follow text Only renders when readingGuide is ena...",
+      "keywords": [
+        "readingguide",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use ReadingGuide for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-accessibility:skiplinks",
+      "name": "SkipLinks",
+      "slug": "skip-links",
+      "category": "components",
+      "description": "SkipLinks — renders visually hidden skip-navigation links. Links appear on keyboard focus, allowing keyboard/screen r...",
+      "keywords": [
+        "skiplinks",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "links"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SkipLinks for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 1,
+        "eventsCount": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "id": "ui-communication:typingindicator",
+  "name": "TypingIndicator",
+  "slug": "typing-indicator",
+  "library": "ui-communication",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Typing Indicator",
+  "purpose": "Show that another user is currently typing a message",
+  "shortDescription": "Show that another user is currently typing a message.",
+  "longDescription": "Show that another user is currently typing a message.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Communication/TypingIndicator",
+      "storyId": "communication-typingindicator",
+      "url": "https://uikit.waysnx.tech/?path=/docs/communication-typingindicator",
+      "stories": [],
+      "tags": [],
+      "source": "TypingIndicator.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use TypingIndicator for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a TypingIndicator"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [
+      "ChatWindow"
+    ],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [
+      "ChatWindow"
+    ],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-comm-typing__dot",
+    "wx-comm-typing__dots",
+    "wx-comm-typing__text"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\TypingIndicator\\TypingIndicator.tsx",
+  "keywords": [
+    "typingindicator",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use TypingIndicator",
+    "Create an example with TypingIndicator",
+    "Generate a TypingIndicator component",
+    "Build a TypingIndicator in my form"
+  ],
+  "componentIntent": "Provide TypingIndicator functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.517864",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "8c222201",
+  "metadata": {
+    "purpose": "Show that another user is currently typing a message.",
+    "description": "An animated indicator that shows when other participants are composing messages. Typically displayed in chat windows or message areas with animated dots or text. Improves user experience by providing real-time feedback.",
+    "functionalAreas": [
+      "Communication",
+      "Feedback"
+    ],
+    "userIntents": [
+      "Know someone is typing",
+      "Understand response is coming",
+      "See real-time activity",
+      "Feel engaged in conversation"
+    ],
+    "exampleUseCases": [
+      "Chat Typing Indicator",
+      "Message Compose Activity",
+      "Typing Status",
+      "Real-time Indicator",
+      "Presence Activity",
+      "Live Conversation Feedback",
+      "Active User Indicator"
+    ],
+    "useWhen": [
+      "Use this component to show typing activity in chat.",
+      "Use this component to provide real-time feedback in messaging.",
+      "Use this component when multiple users are in conversation.",
+      "Use this component to reduce perceived latency."
+    ],
+    "avoidWhen": [
+      "Avoid this component without real-time communication infrastructure.",
+      "Avoid this component for non-messaging contexts.",
+      "Avoid this component with distracting animations.",
+      "Avoid this component without proper performance optimization."
+    ],
+    "relatedComponents": [
+      "ChatWindow",
+      "PresenceIndicator",
+      "MessageBubble"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

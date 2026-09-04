@@ -1,0 +1,378 @@
+{
+  "id": "ui-dashboard:widget",
+  "name": "Widget",
+  "slug": "widget",
+  "library": "ui-dashboard",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Widget",
+  "purpose": "Display dashboard content in a contained, reusable panel with optional header and footer",
+  "shortDescription": "Display dashboard content in a contained, reusable panel with optional header and footer.",
+  "longDescription": "Display dashboard content in a contained, reusable panel with optional header and footer.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Dashboard/Widget",
+      "storyId": "dashboard-widget",
+      "url": "https://uikit.waysnx.tech/?path=/docs/dashboard-widget",
+      "stories": [],
+      "tags": [],
+      "source": "Widget.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Widget for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Widget"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [
+      "ChartWidget",
+      "HtmlWidget",
+      "MarkdownWidget"
+    ],
+    "related": [
+      "WidgetElevation",
+      "WidgetVariant"
+    ],
+    "alternatives": [],
+    "parentComponents": [
+      "ChartWidget",
+      "HtmlWidget",
+      "MarkdownWidget"
+    ],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useTranslation": "unknown",
+    "WidgetVariant": "unknown",
+    "WidgetElevation": "unknown"
+  },
+  "props": [
+    {
+      "name": "id",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "subtitle",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "icon",
+      "type": "ReactNode",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "toolbar",
+      "type": "ReactNode",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "footer",
+      "type": "ReactNode",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "loading",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "error",
+      "type": "Error | null",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "empty",
+      "type": "boolean | ReactNode",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "children",
+      "type": "ReactNode",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "height",
+      "type": "number | string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "width",
+      "type": "number | string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "variant",
+      "type": "WidgetVariant",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "elevation",
+      "type": "WidgetElevation",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "bordered",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "style",
+      "type": "CSSProperties",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "widget-empty",
+    "widget-header",
+    "widget-state-icon",
+    "widget-state-message",
+    "widget-header-icon",
+    "widget-title",
+    "widget-error",
+    "widget-toolbar",
+    "widget-offline",
+    "widget-state-title",
+    "widget-error-retry",
+    "widget-footer",
+    "widget-permission-denied",
+    "widget-loading",
+    "widget-body",
+    "widget-subtitle",
+    "widget-header-text",
+    "widget-header-title"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Widget\\Widget.tsx",
+  "keywords": [
+    "widget",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Widget",
+    "Create an example with Widget",
+    "Generate a Widget component",
+    "Build a Widget in my form"
+  ],
+  "componentIntent": "Provide Widget functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.788349",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "8ada1a44",
+  "metadata": {
+    "purpose": "Display dashboard content in a contained, reusable panel with optional header and footer.",
+    "description": "A versatile dashboard card component that displays content with optional title, subtitle, icon, and toolbar. Supports loading, error, and empty states with configurable messages and retry functionality. Includes elevation and border styling variants and can be sized to fit grid layouts flexibly.",
+    "functionalAreas": [
+      "Visualization",
+      "Layout",
+      "Feedback"
+    ],
+    "userIntents": [
+      "View dashboard metrics and data",
+      "Interact with dashboard panels",
+      "Monitor loading and error states",
+      "Access widget-specific actions"
+    ],
+    "exampleUseCases": [
+      "Chart Display",
+      "Metric Card",
+      "Data Table",
+      "Status Indicator",
+      "Recent Activity",
+      "KPI Display"
+    ],
+    "useWhen": [
+      "Use this component to display dashboard content in consistent containers.",
+      "Use this component when widgets need loading, error, and empty states.",
+      "Use this component when widget headers with titles and toolbars are needed.",
+      "Use this component when widgets should have consistent styling and layout."
+    ],
+    "avoidWhen": [
+      "Avoid this component for simple inline content without panel presentation.",
+      "Avoid this component when full-page content should not be constrained.",
+      "Avoid this component without title or meaningful content to display.",
+      "Avoid this component for content requiring custom container styling."
+    ],
+    "relatedComponents": [
+      "Dashboard",
+      "Layout",
+      "Widgets"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

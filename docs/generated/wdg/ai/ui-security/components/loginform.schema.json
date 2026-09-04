@@ -1,0 +1,83 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/loginform.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "LoginForm component",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "autoFocus": {
+      "description": "",
+      "type": "boolean"
+    },
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "emailPlaceholder": {
+      "description": "",
+      "type": "string"
+    },
+    "error": {
+      "description": "",
+      "type": "string"
+    },
+    "helpText": {
+      "description": "",
+      "type": "string"
+    },
+    "initialEmail": {
+      "description": "",
+      "type": "string"
+    },
+    "isLoading": {
+      "description": "",
+      "type": "boolean"
+    },
+    "onForgotPassword": {
+      "description": "",
+      "type": "null"
+    },
+    "onSubmit": {
+      "description": "",
+      "enum": [
+        "(data: LoginFormData) => Promise<void>",
+        "void"
+      ]
+    },
+    "passwordPlaceholder": {
+      "description": "",
+      "type": "string"
+    },
+    "showRememberMe": {
+      "description": "",
+      "type": "boolean"
+    },
+    "showTrustedDevice": {
+      "description": "",
+      "type": "boolean"
+    },
+    "submitLabel": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [
+    "onSubmit"
+  ],
+  "title": "LoginForm",
+  "type": "object"
+}

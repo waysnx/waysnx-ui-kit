@@ -1,0 +1,42 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-core/switch.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Enable users to toggle a setting or feature on or off with a visual switch.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-core",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "ariaDescribedBy": {
+      "description": "",
+      "type": "string"
+    },
+    "ariaLabel": {
+      "description": "",
+      "type": "string"
+    },
+    "label": {
+      "description": "",
+      "type": "string"
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "title": "Switch",
+  "type": "object"
+}

@@ -1,0 +1,429 @@
+{
+  "id": "ui-core:slider",
+  "name": "Slider",
+  "slug": "slider",
+  "library": "ui-core",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Slider",
+  "purpose": "Enable users to select a numeric value from a continuous range using a draggable control",
+  "shortDescription": "Enable users to select a numeric value from a continuous range using a draggable control.",
+  "longDescription": "Enable users to select a numeric value from a continuous range using a draggable control.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Components/Slider",
+      "storyId": "components-slider",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-slider",
+      "stories": [],
+      "tags": [],
+      "source": "Slider.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Slider for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Slider"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown"
+  },
+  "props": [
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "value",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onChange",
+      "type": "(value: number) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "min",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "max",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "step",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "hint",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showValue",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaDescribedBy",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-primary",
+    "--wx-color-text",
+    "--wx-color-text-muted",
+    "--wx-font-family",
+    "--wx-font-size-sm",
+    "--wx-font-size-xs"
+  ],
+  "cssClasses": [
+    "wx-slider-container",
+    "wx-slider-label",
+    "wx-slider-wrapper",
+    "wx-slider",
+    "wx-slider-value",
+    "wx-slider-hint"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {
+    "--wx-font-family": {
+      "properties": [
+        "font-family"
+      ],
+      "selectors": [
+        ".wx-slider-container"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-sm": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-slider-label"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-xs": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-slider-hint"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {
+    "--wx-color-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-slider-label"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-border": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-slider"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary": {
+      "properties": [
+        "background",
+        "color"
+      ],
+      "selectors": [
+        ".wx-slider::-webkit-slider-thumb",
+        ".wx-slider::-moz-range-thumb",
+        ".wx-slider-value"
+      ],
+      "occurrences": 3,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-slider-hint"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Slider\\Slider.tsx",
+  "keywords": [
+    "slider",
+    "label",
+    "value",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Slider",
+    "Create an example with Slider",
+    "Generate a Slider component",
+    "Build a Slider in my form"
+  ],
+  "componentIntent": "Provide Slider functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.681536",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "9bf4d90d",
+  "metadata": {
+    "purpose": "Enable users to select a numeric value from a continuous range using a draggable control.",
+    "description": "A range input control that lets users select a value by dragging a thumb along a track. Displays the current value numerically and supports configurable minimum, maximum, and step values. Provides keyboard arrow key support for precise value adjustment and visual feedback during interaction.",
+    "functionalAreas": [
+      "Data Entry",
+      "Forms",
+      "Selection"
+    ],
+    "userIntents": [
+      "Adjust volume or intensity level",
+      "Select a price range",
+      "Set quality or resolution",
+      "Adjust brightness or opacity"
+    ],
+    "exampleUseCases": [
+      "Volume Control",
+      "Price Range Filter",
+      "Quality Selection",
+      "Brightness Adjustment",
+      "Zoom Level",
+      "Opacity Control"
+    ],
+    "useWhen": [
+      "Use this component when selecting from a continuous numeric range.",
+      "Use this component when visual feedback of value within a range is helpful.",
+      "Use this component when approximate values are acceptable.",
+      "Use this component for settings like volume, brightness, or quality levels."
+    ],
+    "avoidWhen": [
+      "Avoid this component when exact numeric input is preferred.",
+      "Avoid this component when selecting from a discrete list of options.",
+      "Avoid this component when precision beyond available steps is needed.",
+      "Avoid this component when users prefer typing values directly."
+    ],
+    "relatedComponents": [
+      "Input",
+      "Currency",
+      "Select"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "react-imask",
+        "version": "^7.6.1"
+      },
+      {
+        "name": "react-number-format",
+        "version": "^5.4.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-datepicker",
+        "version": "^8.0.0"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-datepicker",
+        "version": "^7.0.0"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

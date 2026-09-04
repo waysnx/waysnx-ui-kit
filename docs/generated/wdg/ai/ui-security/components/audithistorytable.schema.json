@@ -1,0 +1,54 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/audithistorytable.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Audit events to display",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "events": {
+      "description": "Audit events to display",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "filterOptions": {
+      "description": "Event type filter options",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "filterable": {
+      "description": "Enable filtering",
+      "type": "boolean"
+    },
+    "pageSize": {
+      "description": "Rows per page",
+      "type": "number"
+    },
+    "sortable": {
+      "description": "Enable sorting",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "events"
+  ],
+  "title": "AuditHistoryTable",
+  "type": "object"
+}

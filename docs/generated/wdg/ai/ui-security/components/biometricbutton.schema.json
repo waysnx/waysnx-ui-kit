@@ -1,0 +1,71 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/biometricbutton.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "BiometricButton Component Button to authenticate using biometric (fingerprint, face recognition).",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "biometricType": {
+      "description": "Biometric type",
+      "enum": [
+        "fingerprint",
+        "face",
+        "auto"
+      ]
+    },
+    "disabled": {
+      "description": "Whether button is disabled",
+      "type": "boolean"
+    },
+    "label": {
+      "description": "Button label",
+      "type": "string"
+    },
+    "loadingLabel": {
+      "description": "Custom loading message",
+      "type": "string"
+    },
+    "onAuthError": {
+      "description": "Callback when authentication fails",
+      "type": "null"
+    },
+    "onAuthSuccess": {
+      "description": "Callback when authentication succeeds",
+      "type": "object"
+    },
+    "size": {
+      "description": "Button size",
+      "enum": [
+        "sm",
+        "md",
+        "lg"
+      ]
+    },
+    "variant": {
+      "description": "Button variant",
+      "enum": [
+        "primary",
+        "secondary",
+        "outline",
+        "ghost"
+      ]
+    }
+  },
+  "required": [],
+  "title": "BiometricButton",
+  "type": "object"
+}

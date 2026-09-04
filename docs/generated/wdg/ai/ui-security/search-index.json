@@ -1,0 +1,4975 @@
+{
+  "version": "2.0.0",
+  "library": "ui-security",
+  "generatedAt": "2026-09-03T20:03:06.087541",
+  "components": [
+    {
+      "id": "ui-security:accessdenied",
+      "name": "AccessDenied",
+      "slug": "access-denied",
+      "category": "components",
+      "description": "AccessDenied - Screen for access denied errors",
+      "keywords": [
+        "components",
+        "accessdenied"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "reason",
+        "details",
+        "backLabel",
+        "onBack",
+        "supportLabel",
+        "onSupport",
+        "className"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Stack"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use AccessDenied for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 7,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:activesessions",
+      "name": "ActiveSessions",
+      "slug": "active-sessions",
+      "category": "components",
+      "description": "ActiveSessions Component Displays list of active sessions with device info and actions to revoke them.",
+      "keywords": [
+        "activesessions",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "sessions",
+        "currentSessionId",
+        "onRevokeSession",
+        "isRevoking",
+        "currentSessionLabel",
+        "onRevokeAll",
+        "showRevokeAll"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Badge",
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge",
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge",
+          "Button",
+          "Stack"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use ActiveSessions for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 7,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:activityfeed",
+      "name": "ActivityFeed",
+      "slug": "activity-feed",
+      "category": "components",
+      "description": "Timestamp",
+      "keywords": [
+        "activityfeed",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "activities",
+        "maxInitial",
+        "isLive",
+        "groupByDate"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Badge",
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge",
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge",
+          "Button",
+          "Stack"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use ActivityFeed for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 4,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:audithistorytable",
+      "name": "AuditHistoryTable",
+      "slug": "audit-history-table",
+      "category": "components",
+      "description": "Audit events to display",
+      "keywords": [
+        "audithistorytable",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "table",
+      "propNames": [
+        "events",
+        "sortable",
+        "filterable",
+        "pageSize",
+        "filterOptions"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Badge",
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge",
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge",
+          "Button"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use AuditHistoryTable for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 5,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:audittimeline",
+      "name": "AuditTimeline",
+      "slug": "audit-timeline",
+      "category": "components",
+      "description": "Audit events to display",
+      "keywords": [
+        "audittimeline",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "input",
+      "propNames": [
+        "events",
+        "maxEvents",
+        "showTimestamp"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Badge"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use AuditTimeline for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 3,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:auth0loginbutton",
+      "name": "Auth0LoginButton",
+      "slug": "auth0-login-button",
+      "category": "components",
+      "description": "Auth0LoginButton Component Auth0 SSO login button.",
+      "keywords": [
+        "components",
+        "auth0loginbutton"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "action control",
+        "clickable element"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "display",
+      "propNames": [
+        "clientId",
+        "domain",
+        "onSuccess",
+        "onError",
+        "variant",
+        "isLoading"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Auth0LoginButton for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 6,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:authenticatorqrcode",
+      "name": "AuthenticatorQRCode",
+      "slug": "authenticator-qr-code",
+      "category": "components",
+      "description": "AuthenticatorQRCode Component Displays a real, scannable QR code for TOTP authenticator app setup. The QR encodes a s...",
+      "keywords": [
+        "components",
+        "authenticatorqrcode"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "secret",
+        "accountName",
+        "issuer",
+        "size",
+        "onCopySecret",
+        "isLoading",
+        "instructions",
+        "className"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button",
+          "QRCode"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "QRCode"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "QRCode"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use AuthenticatorQRCode for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 8,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:backupcodescard",
+      "name": "BackupCodesCard",
+      "slug": "backup-codes-card",
+      "category": "components",
+      "description": "BackupCodesCard - Display backup codes for account recovery",
+      "keywords": [
+        "backupcodescard",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "codes",
+        "initiallyRevealed",
+        "onDownload",
+        "onPrint",
+        "onCopyAll",
+        "isConfirmed",
+        "onConfirm"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Badge",
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge",
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge",
+          "Button",
+          "Stack"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use BackupCodesCard for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 7,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:biometricbutton",
+      "name": "BiometricButton",
+      "slug": "biometric-button",
+      "category": "components",
+      "description": "BiometricButton Component Button to authenticate using biometric (fingerprint, face recognition).",
+      "keywords": [
+        "label",
+        "biometricbutton",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "action control",
+        "clickable element"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "display",
+      "propNames": [
+        "biometricType",
+        "label",
+        "variant",
+        "size",
+        "onAuthSuccess",
+        "onAuthError",
+        "disabled",
+        "loadingLabel"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use BiometricButton for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 8,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:captchacontainer",
+      "name": "CaptchaContainer",
+      "slug": "captcha-container",
+      "category": "components",
+      "description": "CaptchaContainer - Container for switching CAPTCHA providers",
+      "keywords": [
+        "captchacontainer",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "provider",
+        "siteKey",
+        "onVerify",
+        "theme",
+        "size"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "GoogleCaptcha",
+          "HCaptcha",
+          "TurnstileCaptcha"
+        ],
+        "usedBy": [],
+        "related": [
+          "GoogleCaptcha",
+          "HCaptcha",
+          "TurnstileCaptcha"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "GoogleCaptcha",
+          "HCaptcha",
+          "TurnstileCaptcha"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use CaptchaContainer for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 5,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:changepasswordform",
+      "name": "ChangePasswordForm",
+      "slug": "change-password-form",
+      "category": "components",
+      "description": "Password policy for validation",
+      "keywords": [
+        "changepasswordform",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "form",
+      "propNames": [
+        "policy",
+        "onSubmit",
+        "loading",
+        "error",
+        "success",
+        "className",
+        "showStrength"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Alert",
+          "Button",
+          "Input"
+        ],
+        "usedBy": [],
+        "related": [
+          "Alert",
+          "Button",
+          "Input"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Alert",
+          "Button",
+          "Input"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use ChangePasswordForm for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 7,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:concurrentsessiondialog",
+      "name": "ConcurrentSessionDialog",
+      "slug": "concurrent-session-dialog",
+      "category": "components",
+      "description": "ConcurrentSessionDialog - Alert user about new concurrent session login",
+      "keywords": [
+        "concurrentsessiondialog",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "popup window",
+        "overlay panel"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "overlay",
+      "propNames": [
+        "isOpen",
+        "newSession",
+        "currentSession",
+        "onApprove",
+        "onReject",
+        "isLoading",
+        "title"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Badge",
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge",
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge",
+          "Button",
+          "Stack"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use ConcurrentSessionDialog for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 7,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:deviceverificationdialog",
+      "name": "DeviceVerificationDialog",
+      "slug": "device-verification-dialog",
+      "category": "components",
+      "description": "Callback to close dialog",
+      "keywords": [
+        "deviceverificationdialog",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "popup window",
+        "overlay panel"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "overlay",
+      "propNames": [
+        "open",
+        "onClose",
+        "device",
+        "onApprove",
+        "onReject",
+        "loading",
+        "error",
+        "title",
+        "description",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Alert",
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Alert",
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Alert",
+          "Button"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use DeviceVerificationDialog for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 10,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:emailverificationcard",
+      "name": "EmailVerificationCard",
+      "slug": "email-verification-card",
+      "category": "components",
+      "description": "Callback to resend verification email",
+      "keywords": [
+        "emailverificationcard",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "email",
+        "title",
+        "description",
+        "onVerify",
+        "onResend",
+        "loading",
+        "error",
+        "success",
+        "resendCountdown",
+        "className",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Alert",
+          "Button",
+          "Card",
+          "Input",
+          "OTPResendButton"
+        ],
+        "usedBy": [],
+        "related": [
+          "Alert",
+          "Button",
+          "Card",
+          "Input",
+          "OTPResendButton"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Alert",
+          "Button",
+          "Card",
+          "Input",
+          "OTPResendButton"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use EmailVerificationCard for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 11,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:encryptionbadge",
+      "name": "EncryptionBadge",
+      "slug": "encryption-badge",
+      "category": "components",
+      "description": "EncryptionBadge Component Badge showing encryption status.",
+      "keywords": [
+        "encryptionbadge",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "display",
+      "propNames": [
+        "status",
+        "method",
+        "showDetails"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Badge"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use EncryptionBadge for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 3,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:featuregate",
+      "name": "FeatureGate",
+      "slug": "feature-gate",
+      "category": "components",
+      "description": "Content to render if feature is enabled",
+      "keywords": [
+        "featuregate",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "featureId",
+        "isEnabled",
+        "children",
+        "fallback",
+        "unmountOnDisable",
+        "className"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use FeatureGate for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 6,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:forgotpasswordform",
+      "name": "ForgotPasswordForm",
+      "slug": "forgot-password-form",
+      "category": "components",
+      "description": "Password policy for validation",
+      "keywords": [
+        "forgotpasswordform",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "form",
+      "propNames": [
+        "policy",
+        "onSubmitEmail",
+        "onSubmitReset",
+        "loading",
+        "error",
+        "success",
+        "onBackToLogin",
+        "className",
+        "showStrength"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Alert",
+          "Button",
+          "Input"
+        ],
+        "usedBy": [],
+        "related": [
+          "Alert",
+          "Button",
+          "Input"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Alert",
+          "Button",
+          "Input"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use ForgotPasswordForm for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 9,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:githubloginbutton",
+      "name": "GitHubLoginButton",
+      "slug": "git-hub-login-button",
+      "category": "components",
+      "description": "GitHubLoginButton Component GitHub OAuth login button.",
+      "keywords": [
+        "githubloginbutton",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "action control",
+        "clickable element"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "display",
+      "propNames": [
+        "clientId",
+        "onSuccess",
+        "onError",
+        "variant",
+        "isLoading"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use GitHubLoginButton for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 5,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:googlecaptcha",
+      "name": "GoogleCaptcha",
+      "slug": "google-captcha",
+      "category": "components",
+      "description": "GoogleCaptcha - Google reCAPTCHA v3 integration",
+      "keywords": [
+        "googlecaptcha",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "siteKey",
+        "onVerify",
+        "onError",
+        "theme",
+        "size"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "CaptchaContainer"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "CaptchaContainer"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use GoogleCaptcha for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 5,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:googleloginbutton",
+      "name": "GoogleLoginButton",
+      "slug": "google-login-button",
+      "category": "components",
+      "description": "GoogleLoginButton Component Google OAuth login button.",
+      "keywords": [
+        "googleloginbutton",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "action control",
+        "clickable element"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "display",
+      "propNames": [
+        "clientId",
+        "onSuccess",
+        "onError",
+        "variant",
+        "isLoading"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use GoogleLoginButton for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 5,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:hcaptcha",
+      "name": "HCaptcha",
+      "slug": "h-captcha",
+      "category": "components",
+      "description": "HCaptcha - hCaptcha integration",
+      "keywords": [
+        "hcaptcha",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "siteKey",
+        "onVerify",
+        "theme",
+        "size"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "CaptchaContainer"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "CaptchaContainer"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use HCaptcha for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 4,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:idlemonitor",
+      "name": "IdleMonitor",
+      "slug": "idle-monitor",
+      "category": "components",
+      "description": "IdleMonitor - Invisible component that tracks user activity and inactivity Detects idle state using: - Mouse/keyboard...",
+      "keywords": [
+        "components",
+        "idlemonitor"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "idleTimeoutMs",
+        "warningTimeoutMs",
+        "onIdle",
+        "onIdleWarning",
+        "onActive",
+        "monitorPageVisibility",
+        "monitorUserInput"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use IdleMonitor for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 7,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:keepalivebutton",
+      "name": "KeepAliveButton",
+      "slug": "keep-alive-button",
+      "category": "components",
+      "description": "KeepAliveButton - Manually extend user session",
+      "keywords": [
+        "keepalivebutton",
+        "label",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "action control",
+        "clickable element"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "display",
+      "propNames": [
+        "onKeepAlive",
+        "label",
+        "variant",
+        "size",
+        "disabled",
+        "loadingLabel",
+        "showFeedback",
+        "icon"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use KeepAliveButton for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 8,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:logincard",
+      "name": "LoginCard",
+      "slug": "login-card",
+      "category": "components",
+      "description": "LoginCard component",
+      "keywords": [
+        "logincard",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "title",
+        "description",
+        "logo",
+        "logoAlt",
+        "footerText",
+        "footerLinkText",
+        "onFooterLinkClick",
+        "maxWidth",
+        "onSubmit",
+        "className"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use LoginCard for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 10,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:loginform",
+      "name": "LoginForm",
+      "slug": "login-form",
+      "category": "components",
+      "description": "LoginForm component",
+      "keywords": [
+        "loginform",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "form",
+      "propNames": [
+        "onSubmit",
+        "error",
+        "isLoading",
+        "showRememberMe",
+        "showTrustedDevice",
+        "submitLabel",
+        "emailPlaceholder",
+        "passwordPlaceholder",
+        "onForgotPassword",
+        "className",
+        "initialEmail",
+        "autoFocus",
+        "helpText"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "PasswordInput"
+        ],
+        "usedBy": [],
+        "related": [
+          "PasswordInput"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "PasswordInput"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use LoginForm for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 13,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:loginhistory",
+      "name": "LoginHistory",
+      "slug": "login-history",
+      "category": "components",
+      "description": "Login timestamp",
+      "keywords": [
+        "loginhistory",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "records",
+        "maxRecords",
+        "showLocation"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Badge",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge",
+          "Stack"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use LoginHistory for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 3,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:mfasettingspanel",
+      "name": "MFASettingsPanel",
+      "slug": "mfa-settings-panel",
+      "category": "components",
+      "description": "MFASettingsPanel component",
+      "keywords": [
+        "mfasettingspanel",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "onSetupMFA",
+        "onManageBackupCodes"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Stack"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use MFASettingsPanel for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 2,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:mfasetupwizard",
+      "name": "MFASetupWizard",
+      "slug": "mfa-setup-wizard",
+      "category": "components",
+      "description": "MFASetupWizard - Multi-step wizard for MFA setup",
+      "keywords": [
+        "mfasetupwizard",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "methods",
+        "steps",
+        "currentStep",
+        "onStepComplete",
+        "onComplete",
+        "onCancel",
+        "isLoading"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Stack"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use MFASetupWizard for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 7,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:mfastatus",
+      "name": "MFAStatus",
+      "slug": "mfa-status",
+      "category": "components",
+      "description": "MFAStatus - Display MFA configuration status",
+      "keywords": [
+        "mfastatus",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "config",
+        "onEnable",
+        "onDisable",
+        "onChangeMethod",
+        "isLoading",
+        "allowDisable"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Badge",
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge",
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge",
+          "Button",
+          "Stack"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use MFAStatus for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 6,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:mfaverificationdialog",
+      "name": "MFAVerificationDialog",
+      "slug": "mfa-verification-dialog",
+      "category": "components",
+      "description": "MFAVerificationDialog - Enter MFA verification code",
+      "keywords": [
+        "mfaverificationdialog",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "popup window",
+        "overlay panel"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "overlay",
+      "propNames": [
+        "isOpen",
+        "method",
+        "onVerify",
+        "onUseBackupCode",
+        "onCancel",
+        "isLoading",
+        "error",
+        "title"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button",
+          "Modal",
+          "PINInput",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Modal",
+          "PINInput",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Modal",
+          "PINInput",
+          "Stack"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use MFAVerificationDialog for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 8,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:maskedinput",
+      "name": "MaskedInput",
+      "slug": "masked-input",
+      "category": "components",
+      "description": "MaskedInput - Text input with pattern masking",
+      "keywords": [
+        "label",
+        "maskedinput",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "text entry",
+        "form field"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "input",
+      "propNames": [
+        "mask",
+        "maskChar",
+        "label",
+        "onChange",
+        "onChangeFormatted",
+        "error",
+        "isComplete"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Input"
+        ],
+        "usedBy": [],
+        "related": [
+          "Input"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Input"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use MaskedInput for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 7,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:microsoftloginbutton",
+      "name": "MicrosoftLoginButton",
+      "slug": "microsoft-login-button",
+      "category": "components",
+      "description": "MicrosoftLoginButton Component Microsoft/Azure AD OAuth login button.",
+      "keywords": [
+        "microsoftloginbutton",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "action control",
+        "clickable element"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "display",
+      "propNames": [
+        "clientId",
+        "onSuccess",
+        "onError",
+        "variant",
+        "isLoading"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use MicrosoftLoginButton for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 5,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:otpinput",
+      "name": "OTPInput",
+      "slug": "otp-input",
+      "category": "components",
+      "description": "OTPInput Component One-Time Password input with: - Multiple digit fields (configurable, typically 6) - Auto-focus bet...",
+      "keywords": [
+        "label",
+        "otpinput",
+        "placeholder",
+        "value",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "text entry",
+        "form field"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "input",
+      "propNames": [
+        "length",
+        "onComplete",
+        "onChange",
+        "value",
+        "disabled",
+        "placeholder",
+        "label",
+        "error",
+        "helperText",
+        "className",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "OTPVerificationCard",
+          "PhoneVerificationCard"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "OTPVerificationCard",
+          "PhoneVerificationCard"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use OTPInput for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 11,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:otpresendbutton",
+      "name": "OTPResendButton",
+      "slug": "otp-resend-button",
+      "category": "components",
+      "description": "Callback when button is clicked to resend OTP",
+      "keywords": [
+        "otpresendbutton",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "action control",
+        "clickable element"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "display",
+      "propNames": [
+        "initialCountdown",
+        "onResend",
+        "loading",
+        "disabled"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [
+          "EmailVerificationCard",
+          "OTPVerificationCard",
+          "PhoneVerificationCard"
+        ],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [
+          "EmailVerificationCard",
+          "OTPVerificationCard",
+          "PhoneVerificationCard"
+        ],
+        "childComponents": [
+          "Button"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use OTPResendButton for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 4,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:otpverificationcard",
+      "name": "OTPVerificationCard",
+      "slug": "otp-verification-card",
+      "category": "components",
+      "description": "OTPVerificationCard Component Complete OTP verification flow container: - OTPInput for entering digits - OTPResendBut...",
+      "keywords": [
+        "otpverificationcard",
+        "placeholder",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "title",
+        "description",
+        "otpLength",
+        "onVerify",
+        "onResend",
+        "loading",
+        "error",
+        "success",
+        "resendCountdown",
+        "maskedContact",
+        "className",
+        "testId",
+        "placeholder"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Alert",
+          "Card",
+          "OTPInput",
+          "OTPResendButton"
+        ],
+        "usedBy": [],
+        "related": [
+          "Alert",
+          "Card",
+          "OTPInput",
+          "OTPResendButton"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Alert",
+          "Card",
+          "OTPInput",
+          "OTPResendButton"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use OTPVerificationCard for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 13,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:oktaloginbutton",
+      "name": "OktaLoginButton",
+      "slug": "okta-login-button",
+      "category": "components",
+      "description": "OktaLoginButton Component Okta SSO login button.",
+      "keywords": [
+        "oktaloginbutton",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "action control",
+        "clickable element"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "display",
+      "propNames": [
+        "clientId",
+        "domain",
+        "onSuccess",
+        "onError",
+        "variant",
+        "isLoading"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use OktaLoginButton for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 6,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:pininput",
+      "name": "PINInput",
+      "slug": "pin-input",
+      "category": "components",
+      "description": "PINInput - Numeric code input with auto-advancing Features: - Auto-focus to next field - Masked digit display - Keybo...",
+      "keywords": [
+        "pininput",
+        "label",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "text entry",
+        "form field"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "input",
+      "propNames": [
+        "length",
+        "onComplete",
+        "onChange",
+        "masked",
+        "label",
+        "error",
+        "disabled",
+        "autoComplete"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Stack"
+        ],
+        "usedBy": [
+          "MFAVerificationDialog"
+        ],
+        "related": [
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [
+          "MFAVerificationDialog"
+        ],
+        "childComponents": [
+          "Stack"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use PINInput for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 8,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:passwordageindicator",
+      "name": "PasswordAgeIndicator",
+      "slug": "password-age-indicator",
+      "category": "components",
+      "description": "PasswordAgeIndicator Component Display password age and recommend change.",
+      "keywords": [
+        "passwordageindicator",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "lastChangedDate",
+        "recommendChangeDaysThreshold",
+        "onChangePassword",
+        "showAction"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Badge",
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge",
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge",
+          "Button"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use PasswordAgeIndicator for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 4,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:passwordgenerator",
+      "name": "PasswordGenerator",
+      "slug": "password-generator",
+      "category": "components",
+      "description": "PasswordGenerator Component",
+      "keywords": [
+        "passwordgenerator",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "defaultLength",
+        "minLength",
+        "maxLength",
+        "includeUppercase",
+        "includeLowercase",
+        "includeNumbers",
+        "includeSpecialChars",
+        "onGenerate",
+        "onCopy",
+        "className",
+        "showStrength",
+        "showOptions"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "PasswordStrengthMeter"
+        ],
+        "usedBy": [],
+        "related": [
+          "PasswordStrengthMeter"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "PasswordStrengthMeter"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use PasswordGenerator for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 12,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:passwordinput",
+      "name": "PasswordInput",
+      "slug": "password-input",
+      "category": "components",
+      "description": "PasswordInput Component A secure password input component with: - Visibility toggle for showing/hiding password - Rea...",
+      "keywords": [
+        "label",
+        "placeholder",
+        "value",
+        "passwordinput",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "text entry",
+        "form field"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "input",
+      "propNames": [
+        "value",
+        "onChange",
+        "policy",
+        "showStrength",
+        "showFeedback",
+        "placeholder",
+        "label",
+        "error",
+        "helperText",
+        "disabled",
+        "required",
+        "autoFocus",
+        "className"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "LoginForm"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "LoginForm"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use PasswordInput for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 13,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:passwordpolicypanel",
+      "name": "PasswordPolicyPanel",
+      "slug": "password-policy-panel",
+      "category": "components",
+      "description": "PasswordPolicyPanel component",
+      "keywords": [
+        "passwordpolicypanel",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "minLength",
+        "requireUppercase",
+        "requireLowercase",
+        "requireNumbers",
+        "requireSpecialChars",
+        "onSave"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button",
+          "Checkbox",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Checkbox",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Checkbox",
+          "Stack"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use PasswordPolicyPanel for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 6,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:passwordrequirements",
+      "name": "PasswordRequirements",
+      "slug": "password-requirements",
+      "category": "components",
+      "description": "Password policy",
+      "keywords": [
+        "passwordrequirements",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "password",
+        "policy",
+        "showTitle",
+        "title",
+        "compact",
+        "className",
+        "showMet",
+        "animated"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use PasswordRequirements for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 8,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:passwordstrengthmeter",
+      "name": "PasswordStrengthMeter",
+      "slug": "password-strength-meter",
+      "category": "components",
+      "description": "PasswordStrengthMeter Component",
+      "keywords": [
+        "passwordstrengthmeter",
+        "label",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "password",
+        "showLabel",
+        "showPercentage",
+        "barHeight",
+        "variant",
+        "className",
+        "animationDuration",
+        "label"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "PasswordGenerator"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "PasswordGenerator"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use PasswordStrengthMeter for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 8,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:permissiongate",
+      "name": "PermissionGate",
+      "slug": "permission-gate",
+      "category": "components",
+      "description": "Content to render if permission is granted",
+      "keywords": [
+        "permissiongate",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "permission",
+        "hasPermission",
+        "children",
+        "fallback",
+        "unmountOnDeny",
+        "className"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use PermissionGate for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 6,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:phoneverificationcard",
+      "name": "PhoneVerificationCard",
+      "slug": "phone-verification-card",
+      "category": "components",
+      "description": "Callback to resend verification code",
+      "keywords": [
+        "phoneverificationcard",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "title",
+        "description",
+        "flow",
+        "onSubmitPhone",
+        "onVerifyOTP",
+        "onResendCode",
+        "loading",
+        "error",
+        "success",
+        "phoneNumber",
+        "otpLength",
+        "resendCountdown",
+        "className",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Alert",
+          "Button",
+          "Card",
+          "Input",
+          "OTPInput",
+          "OTPResendButton"
+        ],
+        "usedBy": [],
+        "related": [
+          "Alert",
+          "Button",
+          "Card",
+          "Input",
+          "OTPInput",
+          "OTPResendButton"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Alert",
+          "Button",
+          "Card",
+          "Input",
+          "OTPInput",
+          "OTPResendButton"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use PhoneVerificationCard for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 14,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:policygate",
+      "name": "PolicyGate",
+      "slug": "policy-gate",
+      "category": "components",
+      "description": "Content to render if policy is met",
+      "keywords": [
+        "policygate",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "policyId",
+        "isPolicyMet",
+        "policyDetails",
+        "reason"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use PolicyGate for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 4,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:privacysettingspanel",
+      "name": "PrivacySettingsPanel",
+      "slug": "privacy-settings-panel",
+      "category": "components",
+      "description": "PrivacySettingsPanel component",
+      "keywords": [
+        "privacysettingspanel",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "onSave"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button",
+          "Checkbox",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Checkbox",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Checkbox",
+          "Stack"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use PrivacySettingsPanel for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 1,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:riskscorebadge",
+      "name": "RiskScoreBadge",
+      "slug": "risk-score-badge",
+      "category": "components",
+      "description": "RiskScoreBadge Component Display account risk score with visual indicator.",
+      "keywords": [
+        "riskscorebadge",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "display",
+      "propNames": [
+        "score",
+        "level",
+        "factors",
+        "showDetails"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Badge"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use RiskScoreBadge for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 4,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:rolegate",
+      "name": "RoleGate",
+      "slug": "role-gate",
+      "category": "components",
+      "description": "Content to render if role matches",
+      "keywords": [
+        "rolegate",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "role",
+        "userRoles",
+        "children",
+        "fallback",
+        "requireAll",
+        "unmountOnDeny",
+        "className"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use RoleGate for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 7,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:scopegate",
+      "name": "ScopeGate",
+      "slug": "scope-gate",
+      "category": "components",
+      "description": "Content to render if scope is granted",
+      "keywords": [
+        "components",
+        "scopegate"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "scope",
+        "grantedScopes",
+        "children",
+        "fallback",
+        "requireAll",
+        "unmountOnDeny",
+        "className"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use ScopeGate for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 7,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:secureclipboardbutton",
+      "name": "SecureClipboardButton",
+      "slug": "secure-clipboard-button",
+      "category": "components",
+      "description": "SecureClipboardButton - Copy sensitive content to clipboard securely Features: - Uses Clipboard API for secure copyin...",
+      "keywords": [
+        "label",
+        "secureclipboardbutton",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "action control",
+        "clickable element"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "display",
+      "propNames": [
+        "content",
+        "label",
+        "successLabel",
+        "variant",
+        "size",
+        "autoClearMs",
+        "disabled",
+        "onCopySuccess",
+        "onCopyError"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SecureClipboardButton for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 9,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:securedownloadbutton",
+      "name": "SecureDownloadButton",
+      "slug": "secure-download-button",
+      "category": "components",
+      "description": "SecureDownloadButton - Download files securely with cleanup Features: - Automatic blob URL cleanup - Optional validat...",
+      "keywords": [
+        "label",
+        "securedownloadbutton",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "action control",
+        "clickable element"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "display",
+      "propNames": [
+        "fileUrl",
+        "fileName",
+        "label",
+        "variant",
+        "size",
+        "onBeforeDownload",
+        "onDownloadComplete",
+        "onError",
+        "disabled",
+        "loadingLabel"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SecureDownloadButton for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 10,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:secureinput",
+      "name": "SecureInput",
+      "slug": "secure-input",
+      "category": "components",
+      "description": "SecureInput - Text input with enhanced security features Features: - Autocomplete disabled for sensitive inputs - Val...",
+      "keywords": [
+        "label",
+        "placeholder",
+        "secureinput",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "text entry",
+        "form field"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "input",
+      "propNames": [
+        "type",
+        "placeholder",
+        "label",
+        "disableAutocomplete",
+        "clearOnBlur",
+        "onChange",
+        "onClear",
+        "validate",
+        "error",
+        "maskInput"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Input"
+        ],
+        "usedBy": [],
+        "related": [
+          "Input"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Input"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SecureInput for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 10,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:securetextarea",
+      "name": "SecureTextarea",
+      "slug": "secure-textarea",
+      "category": "components",
+      "description": "SecureTextarea - Textarea input with enhanced security features",
+      "keywords": [
+        "label",
+        "securetextarea",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "input",
+      "propNames": [
+        "label",
+        "disableAutocomplete",
+        "clearOnBlur",
+        "onChange",
+        "onClear",
+        "validate",
+        "error",
+        "maxCharacters",
+        "showCounter"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SecureTextarea for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 9,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:secureuploader",
+      "name": "SecureUploader",
+      "slug": "secure-uploader",
+      "category": "components",
+      "description": "SecureUploader - File upload with security validation",
+      "keywords": [
+        "label",
+        "secureuploader",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "allowedTypes",
+        "maxSize",
+        "multiple",
+        "label",
+        "onFilesSelected",
+        "onError",
+        "isLoading",
+        "height",
+        "helperText"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Stack"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SecureUploader for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 9,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:securityalert",
+      "name": "SecurityAlert",
+      "slug": "security-alert",
+      "category": "components",
+      "description": "SecurityAlert Component Card displaying individual security alert with actions.",
+      "keywords": [
+        "securityalert",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "feedback",
+      "propNames": [
+        "title",
+        "description",
+        "severity",
+        "status",
+        "timestamp",
+        "actionLabel",
+        "onAction",
+        "onDismiss",
+        "details"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Badge",
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge",
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge",
+          "Button"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SecurityAlert for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 9,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:securityalertspanel",
+      "name": "SecurityAlertsPanel",
+      "slug": "security-alerts-panel",
+      "category": "components",
+      "description": "SecurityAlertsPanel component",
+      "keywords": [
+        "securityalertspanel",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "feedback",
+      "propNames": [
+        "onSave"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button",
+          "Checkbox",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Checkbox",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Checkbox",
+          "Stack"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SecurityAlertsPanel for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 1,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:securitybanner",
+      "name": "SecurityBanner",
+      "slug": "security-banner",
+      "category": "components",
+      "description": "SecurityBanner Component Prominent banner to display security alerts and status messages.",
+      "keywords": [
+        "securitybanner",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "message",
+        "severity",
+        "title",
+        "dismissible",
+        "onDismiss",
+        "actionLabel",
+        "onAction",
+        "icon"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SecurityBanner for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 8,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:securityeventlog",
+      "name": "SecurityEventLog",
+      "slug": "security-event-log",
+      "category": "components",
+      "description": "Security events to display",
+      "keywords": [
+        "securityeventlog",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "events",
+        "enableExport",
+        "onExport",
+        "maxInitialEvents"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Badge",
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge",
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge",
+          "Button",
+          "Stack"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SecurityEventLog for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 4,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:securityhealthindicator",
+      "name": "SecurityHealthIndicator",
+      "slug": "security-health-indicator",
+      "category": "components",
+      "description": "SecurityHealthIndicator - Visual security health indicator",
+      "keywords": [
+        "securityhealthindicator",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "overallHealth",
+        "metrics",
+        "showDetails"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SecurityHealthIndicator for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 3,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:securitykeybutton",
+      "name": "SecurityKeyButton",
+      "slug": "security-key-button",
+      "category": "components",
+      "description": "SecurityKeyButton - Authenticate using FIDO2/WebAuthn security key",
+      "keywords": [
+        "securitykeybutton",
+        "label",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "action control",
+        "clickable element"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "display",
+      "propNames": [
+        "label",
+        "variant",
+        "size",
+        "onAuthSuccess",
+        "onAuthError",
+        "disabled",
+        "loadingLabel",
+        "challenge"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SecurityKeyButton for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 8,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:securitylogspanel",
+      "name": "SecurityLogsPanel",
+      "slug": "security-logs-panel",
+      "category": "components",
+      "description": "SecurityLogsPanel component",
+      "keywords": [
+        "securitylogspanel",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "onViewLogs",
+        "onExportLogs"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Stack"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SecurityLogsPanel for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 2,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:securityscore",
+      "name": "SecurityScore",
+      "slug": "security-score",
+      "category": "components",
+      "description": "SecurityScore - Display security score and breakdown",
+      "keywords": [
+        "securityscore",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "score",
+        "categories",
+        "title",
+        "showPercentage"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SecurityScore for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 4,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:securitysettingspanel",
+      "name": "SecuritySettingsPanel",
+      "slug": "security-settings-panel",
+      "category": "components",
+      "description": "SecuritySettingsPanel - Main security settings dashboard",
+      "keywords": [
+        "securitysettingspanel",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "onPasswordSettings",
+        "onMFASettings",
+        "onSessionSettings",
+        "onTrustedDevices",
+        "onPrivacySettings"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Stack"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SecuritySettingsPanel for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 5,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:securitystatuscard",
+      "name": "SecurityStatusCard",
+      "slug": "security-status-card",
+      "category": "components",
+      "description": "SecurityStatusCard - Individual security status card",
+      "keywords": [
+        "securitystatuscard",
+        "label",
+        "value",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "title",
+        "description",
+        "status",
+        "value",
+        "label",
+        "actionLabel",
+        "onAction",
+        "icon"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Badge",
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge",
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge",
+          "Button"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SecurityStatusCard for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 8,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:sensitivetext",
+      "name": "SensitiveText",
+      "slug": "sensitive-text",
+      "category": "components",
+      "description": "SensitiveText - Display and reveal sensitive information Features: - Manual reveal/hide toggle - Auto-obscuring after...",
+      "keywords": [
+        "components",
+        "sensitivetext"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "input",
+      "propNames": [
+        "text",
+        "initiallyRevealed",
+        "autoHideMs",
+        "maskCharacter",
+        "showLastCharacters",
+        "revealLabel",
+        "hideLabel",
+        "fontSize",
+        "color",
+        "allowCopy"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SensitiveText for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 10,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:sessioncountdown",
+      "name": "SessionCountdown",
+      "slug": "session-countdown",
+      "category": "components",
+      "description": "SessionCountdown - Session time countdown display",
+      "keywords": [
+        "sessioncountdown",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "totalDuration",
+        "remainingTime",
+        "onTimeLow",
+        "onTimeCritical",
+        "format",
+        "className"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SessionCountdown for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 6,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:sessionpolicypanel",
+      "name": "SessionPolicyPanel",
+      "slug": "session-policy-panel",
+      "category": "components",
+      "description": "SessionPolicyPanel component",
+      "keywords": [
+        "sessionpolicypanel",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "sessionTimeoutMinutes",
+        "onSave"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button",
+          "Checkbox",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Checkbox",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Checkbox",
+          "Stack"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SessionPolicyPanel for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 2,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:sessiontimeoutdialog",
+      "name": "SessionTimeoutDialog",
+      "slug": "session-timeout-dialog",
+      "category": "components",
+      "description": "SessionTimeoutDialog - Warning dialog for session timeout",
+      "keywords": [
+        "sessiontimeoutdialog",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "popup window",
+        "overlay panel"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "input",
+      "propNames": [
+        "isOpen",
+        "minutesRemaining",
+        "onExtend",
+        "onLogout",
+        "title",
+        "message"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button",
+          "Modal",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Modal",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Modal",
+          "Stack"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SessionTimeoutDialog for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 6,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:trusteddeviceselector",
+      "name": "TrustedDeviceSelector",
+      "slug": "trusted-device-selector",
+      "category": "components",
+      "description": "TrustedDeviceSelector - Mark device as trusted",
+      "keywords": [
+        "trusteddeviceselector",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "option selector",
+        "choice control"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "input",
+      "propNames": [
+        "deviceName",
+        "trustDurationDays",
+        "isTrusted",
+        "onTrustChange",
+        "disabled",
+        "message"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Checkbox",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Checkbox",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Checkbox",
+          "Stack"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use TrustedDeviceSelector for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 6,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:trusteddevicespanel",
+      "name": "TrustedDevicesPanel",
+      "slug": "trusted-devices-panel",
+      "category": "components",
+      "description": "TrustedDevicesPanel component",
+      "keywords": [
+        "trusteddevicespanel",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "onViewDevices",
+        "onRevokeDevice"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Stack"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use TrustedDevicesPanel for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 2,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:turnstilecaptcha",
+      "name": "TurnstileCaptcha",
+      "slug": "turnstile-captcha",
+      "category": "components",
+      "description": "TurnstileCaptcha - Cloudflare Turnstile integration",
+      "keywords": [
+        "turnstilecaptcha",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "siteKey",
+        "onVerify",
+        "theme",
+        "size"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "CaptchaContainer"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "CaptchaContainer"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use TurnstileCaptcha for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 4,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:unauthorizedpage",
+      "name": "UnauthorizedPage",
+      "slug": "unauthorized-page",
+      "category": "components",
+      "description": "UnauthorizedPage - Full page unauthorized error screen",
+      "keywords": [
+        "unauthorizedpage",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "title",
+        "message",
+        "statusCode",
+        "onLogin",
+        "onHome",
+        "className"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Stack"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use UnauthorizedPage for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 6,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-security:verificationstatus",
+      "name": "VerificationStatus",
+      "slug": "verification-status",
+      "category": "components",
+      "description": "VerificationStatus Component Display verification progress and status: - Multiple verification steps - Status indicat...",
+      "keywords": [
+        "verificationstatus",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "steps",
+        "overallStatus",
+        "showProgress",
+        "timeline",
+        "className",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use VerificationStatus for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 6,
+        "eventsCount": 0
+      }
+    }
+  ]
+}

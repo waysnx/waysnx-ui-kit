@@ -1,0 +1,108 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "googlecaptcha",
+    "name": "GoogleCaptcha",
+    "package": "@waysnx/ui-security",
+    "export": "GoogleCaptcha"
+  },
+  "categories": [
+    {
+      "id": "sizes",
+      "title": "Sizes",
+      "description": "",
+      "examples": [
+        {
+          "id": "sizes-size-normal",
+          "title": "Size: normal",
+          "description": "Demonstrates the normal size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "normal"
+          },
+          "keywords": [
+            "size",
+            "normal"
+          ]
+        },
+        {
+          "id": "sizes-size-compact",
+          "title": "Size: compact",
+          "description": "Demonstrates the compact size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "compact"
+          },
+          "keywords": [
+            "size",
+            "compact"
+          ]
+        },
+        {
+          "id": "sizes-size-invisible",
+          "title": "Size: invisible",
+          "description": "Demonstrates the invisible size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "invisible"
+          },
+          "keywords": [
+            "size",
+            "invisible"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "variants",
+      "title": "Variants",
+      "description": "",
+      "examples": [
+        {
+          "id": "variants-theme-light",
+          "title": "Theme: light",
+          "description": "Demonstrates the light theme.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "theme": "light"
+          },
+          "keywords": [
+            "theme",
+            "light"
+          ]
+        },
+        {
+          "id": "variants-theme-dark",
+          "title": "Theme: dark",
+          "description": "Demonstrates the dark theme.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "theme": "dark"
+          },
+          "keywords": [
+            "theme",
+            "dark"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:05.370563",
+  "stats": {
+    "examplesGenerated": 5,
+    "categoriesGenerated": 2
+  }
+}

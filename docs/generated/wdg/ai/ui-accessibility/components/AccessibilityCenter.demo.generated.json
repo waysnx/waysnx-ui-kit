@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "accessibilitycenter",
+    "name": "AccessibilityCenter",
+    "package": "@waysnx/ui-accessibility",
+    "export": "AccessibilityCenter"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic",
+          "title": "Basic AccessibilityCenter",
+          "description": "Simple AccessibilityCenter with default configuration.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {},
+          "keywords": [
+            "basic",
+            "accessibilitycenter"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "e3b0c44298fc1c14",
+  "generatedAt": "2026-09-03T20:02:28.374444",
+  "stats": {
+    "examplesGenerated": 1,
+    "categoriesGenerated": 1
+  }
+}

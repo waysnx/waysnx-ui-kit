@@ -1,0 +1,106 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-navigation/tabs.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Organize navigation into switchable tabs.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": true,
+    "isMemo": false,
+    "library": "ui-navigation",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "activeTabId": {
+      "description": "Currently active tab ID",
+      "type": "string"
+    },
+    "ariaLabel": {
+      "description": "Accessible label for tabs",
+      "type": "string"
+    },
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "closable": {
+      "description": "Show tab close buttons",
+      "type": "boolean"
+    },
+    "density": {
+      "description": "Component density",
+      "enum": [
+        "compact",
+        "normal",
+        "spacious"
+      ]
+    },
+    "keyboardNav": {
+      "description": "Keyboard navigation enabled",
+      "type": "boolean"
+    },
+    "lazyLoad": {
+      "description": "Enable lazy loading",
+      "type": "boolean"
+    },
+    "onTabChange": {
+      "description": "Callback when tab is changed",
+      "type": "string"
+    },
+    "onTabClose": {
+      "description": "Callback when tab is closed",
+      "type": "string"
+    },
+    "orientation": {
+      "description": "Tab orientation",
+      "enum": [
+        "horizontal",
+        "vertical"
+      ]
+    },
+    "scrollable": {
+      "description": "Scroll tabs when overflow",
+      "type": "boolean"
+    },
+    "showBadges": {
+      "description": "Show tab badges",
+      "type": "boolean"
+    },
+    "showIcons": {
+      "description": "Show tab icons",
+      "type": "boolean"
+    },
+    "style": {
+      "description": "Additional styles",
+      "type": "string"
+    },
+    "tabs": {
+      "description": "Tab items",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "variant": {
+      "description": "Tab position",
+      "enum": [
+        "default",
+        "minimal",
+        "elevated"
+      ]
+    }
+  },
+  "required": [
+    "tabs"
+  ],
+  "title": "Tabs",
+  "type": "object"
+}

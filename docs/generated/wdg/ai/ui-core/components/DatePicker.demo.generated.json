@@ -1,0 +1,73 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "datepicker",
+    "name": "DatePicker",
+    "package": "@waysnx/ui-core",
+    "export": "DatePicker"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic",
+          "title": "Basic Date Picker",
+          "description": "Example demonstrating basic state",
+          "category": "basic",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {},
+          "keywords": [
+            "basic"
+          ]
+        },
+        {
+          "id": "range",
+          "title": "Date Range",
+          "description": "Select date range",
+          "category": "basic",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "range": true
+          },
+          "keywords": [
+            "range"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "disabled",
+          "title": "Disabled",
+          "description": "Example demonstrating disabled state",
+          "category": "states",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "disabled": true
+          },
+          "keywords": [
+            "disabled"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:42.958659",
+  "stats": {
+    "examplesGenerated": 3,
+    "categoriesGenerated": 2
+  }
+}

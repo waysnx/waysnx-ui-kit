@@ -1,0 +1,122 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-navigation/treemenu.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display hierarchical menu structure with collapsible tree nodes.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": true,
+    "isMemo": false,
+    "library": "ui-navigation",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "ariaLabel": {
+      "description": "Accessible label for tree",
+      "type": "string"
+    },
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "density": {
+      "description": "Component density",
+      "enum": [
+        "compact",
+        "normal",
+        "spacious"
+      ]
+    },
+    "expandAll": {
+      "description": "Expand all items initially",
+      "type": "boolean"
+    },
+    "indentSize": {
+      "description": "Indent size in pixels",
+      "type": "number"
+    },
+    "items": {
+      "description": "Root menu items for tree",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "keyboardNav": {
+      "description": "Keyboard navigation enabled",
+      "type": "boolean"
+    },
+    "maxDepth": {
+      "description": "Maximum depth for nested items",
+      "type": "number"
+    },
+    "multiSelect": {
+      "description": "Allow multiple item selection (checkbox mode)",
+      "type": "boolean"
+    },
+    "onItemClick": {
+      "description": "Callback when item is clicked",
+      "type": "null"
+    },
+    "onItemSelect": {
+      "description": "Callback when item is selected",
+      "enum": [
+        "(item: NavigationItem",
+        "undefined) => void"
+      ]
+    },
+    "onSelectionChange": {
+      "description": "Callback when selection changes (multi-select mode)",
+      "type": "string"
+    },
+    "security": {
+      "description": "Security context for permission-based filtering",
+      "type": "string"
+    },
+    "selectedIds": {
+      "description": "Selected item IDs (for multi-select mode)",
+      "type": "string"
+    },
+    "selectedItem": {
+      "description": "Currently selected item",
+      "type": "string"
+    },
+    "showBadges": {
+      "description": "Whether to show badges",
+      "type": "boolean"
+    },
+    "showExpandIcons": {
+      "description": "Show expand/collapse icons",
+      "type": "boolean"
+    },
+    "showIcons": {
+      "description": "Whether to show icons",
+      "type": "boolean"
+    },
+    "style": {
+      "description": "Additional styles",
+      "type": "string"
+    },
+    "variant": {
+      "description": "Theme variant",
+      "enum": [
+        "default",
+        "minimal",
+        "elevated"
+      ]
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "title": "TreeMenu",
+  "type": "object"
+}

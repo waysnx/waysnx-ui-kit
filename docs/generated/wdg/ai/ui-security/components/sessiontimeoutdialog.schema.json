@@ -1,0 +1,52 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/sessiontimeoutdialog.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "SessionTimeoutDialog - Warning dialog for session timeout",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "isOpen": {
+      "description": "Whether dialog is open",
+      "type": "boolean"
+    },
+    "message": {
+      "description": "Warning message",
+      "type": "string"
+    },
+    "minutesRemaining": {
+      "description": "Minutes until session timeout",
+      "type": "number"
+    },
+    "onExtend": {
+      "description": "Callback to extend session",
+      "type": "null"
+    },
+    "onLogout": {
+      "description": "Callback to logout",
+      "type": "null"
+    },
+    "title": {
+      "description": "Warning title",
+      "type": "string"
+    }
+  },
+  "required": [
+    "isOpen"
+  ],
+  "title": "SessionTimeoutDialog",
+  "type": "object"
+}

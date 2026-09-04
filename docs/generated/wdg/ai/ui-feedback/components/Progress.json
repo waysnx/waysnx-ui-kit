@@ -1,0 +1,318 @@
+{
+  "id": "ui-feedback:progress",
+  "name": "Progress",
+  "slug": "progress",
+  "library": "ui-feedback",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Progress",
+  "purpose": "Visualize numeric progress as a linear bar",
+  "shortDescription": "Visualize numeric progress as a linear bar.",
+  "longDescription": "Visualize numeric progress as a linear bar.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Progress for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Progress"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [
+    {
+      "name": "value",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "max",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showValue",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "size",
+      "type": "\"sm\" | \"md\" | \"lg\"",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "color",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-primary",
+    "--wx-color-text",
+    "--wx-color-text-muted"
+  ],
+  "cssClasses": [
+    "wx-progress",
+    "wx-progress-header",
+    "wx-progress-label",
+    "wx-progress-value",
+    "wx-progress-track",
+    "wx-progress-sm",
+    "wx-progress-md",
+    "wx-progress-lg",
+    "wx-progress-fill"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-color-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-progress-label"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-progress-value"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-border": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-progress-track"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-progress-fill"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Progress\\Progress.tsx",
+  "keywords": [
+    "label",
+    "value",
+    "progress",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Progress",
+    "Create an example with Progress",
+    "Generate a Progress component",
+    "Build a Progress in my form"
+  ],
+  "componentIntent": "Show progress",
+  "semanticCategory": "feedback",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.953247",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "d7d9ff96",
+  "metadata": {
+    "purpose": "Visualize numeric progress as a linear bar.",
+    "description": "A horizontal progress indicator that shows the completion percentage of a task or process. Displays progress as a filled bar that grows from 0% to 100%, with optional percentage text. Commonly used for downloads, uploads, form completion, and other time-bound operations where users benefit from seeing progress.",
+    "functionalAreas": [
+      "Feedback",
+      "Visualization"
+    ],
+    "userIntents": [
+      "Track task completion status",
+      "Monitor file transfer progress",
+      "See form completion percentage",
+      "Understand remaining time or work"
+    ],
+    "exampleUseCases": [
+      "File Download Progress",
+      "File Upload Progress",
+      "Installation Progress",
+      "Form Completion Status",
+      "Page Load Progress",
+      "Task Completion Bar",
+      "Storage Usage Bar"
+    ],
+    "useWhen": [
+      "Use this component when you need to display determinate progress.",
+      "Use this component in horizontal layouts where a linear bar fits naturally.",
+      "Use this component for tasks that take a noticeable but bounded amount of time.",
+      "Use this component when users need frequent updates on progress."
+    ],
+    "avoidWhen": [
+      "Avoid this component for indeterminate progress (use Spinner instead).",
+      "Avoid this component in compact spaces where circular progress is more suitable.",
+      "Avoid this component when progress information requires detailed breakdown.",
+      "Avoid this component for animations or transitions (use animation libraries instead)."
+    ],
+    "relatedComponents": [
+      "CircularProgress",
+      "Spinner",
+      "Skeleton"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

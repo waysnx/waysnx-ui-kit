@@ -1,0 +1,698 @@
+{
+  "id": "ui-core:fileupload",
+  "name": "FileUpload",
+  "slug": "file-upload",
+  "library": "ui-core",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "File Upload",
+  "purpose": "Enable users to upload files with drag-and-drop support and validation",
+  "shortDescription": "Enable users to upload files with drag-and-drop support and validation.",
+  "longDescription": "Enable users to upload files with drag-and-drop support and validation.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Components/FileUpload",
+      "storyId": "components-fileupload",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-fileupload",
+      "stories": [],
+      "tags": [],
+      "source": "FileUpload.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use FileUpload for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a FileUpload"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "warn": "unknown",
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "accept",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "multiple",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "maxSize",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onChange",
+      "type": "(files: File[] | string[]) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onError",
+      "type": "(error: string) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "hint",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "format",
+      "type": "'blob' | 'binary'",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showPreview",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "autoUpload",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "browseButtonText",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "uploadedFiles",
+      "type": "Array<{ name: string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-error",
+    "--wx-color-error-light",
+    "--wx-color-info",
+    "--wx-color-primary",
+    "--wx-color-primary-contrast",
+    "--wx-color-primary-hover",
+    "--wx-color-primary-light",
+    "--wx-color-success",
+    "--wx-color-success-light",
+    "--wx-color-surface",
+    "--wx-color-surface-alt",
+    "--wx-color-surface-hover",
+    "--wx-color-text",
+    "--wx-color-text-light",
+    "--wx-color-text-muted",
+    "--wx-font-family",
+    "--wx-font-size-sm",
+    "--wx-font-size-xs",
+    "--wx-radius-md",
+    "--wx-radius-sm"
+  ],
+  "cssClasses": [
+    "wx-fileupload-wrapper",
+    "wx-fileupload-label",
+    "wx-fileupload-dropzone",
+    "wx-fileupload-dropzone-dragging",
+    "wx-fileupload-dropzone-error",
+    "wx-fileupload-dropzone-disabled",
+    "wx-fileupload-input",
+    "wx-fileupload-icon",
+    "wx-fileupload-text",
+    "wx-fileupload-text-primary",
+    "wx-fileupload-text-secondary",
+    "wx-fileupload-list",
+    "wx-fileupload-item",
+    "wx-fileupload-item-info",
+    "wx-fileupload-item-name",
+    "wx-fileupload-item-size",
+    "wx-fileupload-item-remove",
+    "wx-fileupload-hint",
+    "wx-fileupload-error-text",
+    "wx-fileupload-preview",
+    "wx-fileupload-item-status",
+    "wx-fileupload-item-status-success",
+    "wx-fileupload-actions",
+    "wx-fileupload-upload-btn",
+    "wx-fileupload-uploaded-section",
+    "wx-fileupload-uploaded-label",
+    "wx-fileupload-uploaded-list",
+    "wx-fileupload-uploaded-item",
+    "wx-fileupload-uploaded-preview",
+    "wx-fileupload-uploaded-info",
+    "wx-fileupload-uploaded-link",
+    "wx-fileupload-item-meta",
+    "wx-fileupload-item-date",
+    "wx-fileupload-item-status-uploading",
+    "wx-fileupload-item-status-error",
+    "wx-fileupload-progress-text",
+    "wx-fileupload-progress-bar",
+    "wx-fileupload-progress-fill"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {
+    "--wx-font-family": {
+      "properties": [
+        "font-family"
+      ],
+      "selectors": [
+        ".wx-fileupload-wrapper"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-sm": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-fileupload-label",
+        ".wx-fileupload-text-primary",
+        ".wx-fileupload-item-name",
+        ".wx-fileupload-upload-btn",
+        ".wx-fileupload-uploaded-link"
+      ],
+      "occurrences": 5,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-xs": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-fileupload-text-secondary",
+        ".wx-fileupload-item-size",
+        ".wx-fileupload-hint",
+        ".wx-fileupload-error-text"
+      ],
+      "occurrences": 4,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {
+    "--wx-color-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-fileupload-label",
+        ".wx-fileupload-text-primary",
+        ".wx-fileupload-item-name"
+      ],
+      "occurrences": 3,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-border": {
+      "properties": [
+        "border",
+        "border-color",
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-fileupload-dropzone",
+        ".wx-fileupload-dropzone-disabled:hover",
+        ".wx-fileupload-item",
+        ".wx-fileupload-progress-bar"
+      ],
+      "occurrences": 4,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface-alt": {
+      "properties": [
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-fileupload-dropzone",
+        ".wx-fileupload-item"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary": {
+      "properties": [
+        "border-color",
+        "color",
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-fileupload-dropzone:hover",
+        ".wx-fileupload-dropzone-dragging",
+        ".wx-fileupload-dropzone:hover .wx-fileupload-icon",
+        ".wx-fileupload-dropzone-dragging .wx-fileupload-icon",
+        ".wx-fileupload-upload-btn",
+        ".wx-fileupload-uploaded-link",
+        ".wx-fileupload-progress-fill"
+      ],
+      "occurrences": 7,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary-light": {
+      "properties": [
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-fileupload-dropzone:hover",
+        ".wx-fileupload-dropzone-dragging"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error": {
+      "properties": [
+        "border-color",
+        "color"
+      ],
+      "selectors": [
+        ".wx-fileupload-dropzone-error",
+        ".wx-fileupload-item-remove:hover",
+        ".wx-fileupload-error-text",
+        ".wx-fileupload-item-status-error"
+      ],
+      "occurrences": 4,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error-light": {
+      "properties": [
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-fileupload-dropzone-error",
+        ".wx-fileupload-item-remove:hover"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface-hover": {
+      "properties": [
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-fileupload-dropzone-disabled",
+        ".wx-fileupload-dropzone-disabled:hover",
+        ".wx-fileupload-item:hover",
+        ".wx-fileupload-preview",
+        ".wx-fileupload-uploaded-preview"
+      ],
+      "occurrences": 5,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-light": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-fileupload-icon",
+        ".wx-fileupload-item-date"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-fileupload-text-secondary",
+        ".wx-fileupload-item-size",
+        ".wx-fileupload-item-remove",
+        ".wx-fileupload-hint",
+        ".wx-fileupload-item-status"
+      ],
+      "occurrences": 5,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-success": {
+      "properties": [
+        "color",
+        "border"
+      ],
+      "selectors": [
+        ".wx-fileupload-item-status-success",
+        ".wx-fileupload-uploaded-section",
+        ".wx-fileupload-uploaded-label"
+      ],
+      "occurrences": 3,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary-contrast": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-fileupload-upload-btn"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary-hover": {
+      "properties": [
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-fileupload-upload-btn:hover"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-success-light": {
+      "properties": [
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-fileupload-uploaded-section"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface": {
+      "properties": [
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-fileupload-uploaded-item"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-info": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-fileupload-item-status-uploading"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {
+    "--wx-radius-md": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".wx-fileupload-dropzone",
+        ".wx-fileupload-item",
+        ".wx-fileupload-upload-btn",
+        ".wx-fileupload-uploaded-section"
+      ],
+      "occurrences": 4,
+      "used": true,
+      "value": ""
+    },
+    "--wx-radius-sm": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".wx-fileupload-item-remove",
+        ".wx-fileupload-preview",
+        ".wx-fileupload-uploaded-item",
+        ".wx-fileupload-uploaded-preview"
+      ],
+      "occurrences": 4,
+      "used": true,
+      "value": ""
+    }
+  },
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\FileUpload\\FileUpload.tsx",
+  "keywords": [
+    "fileupload",
+    "label",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use FileUpload",
+    "Create an example with FileUpload",
+    "Generate a FileUpload component",
+    "Build a FileUpload in my form"
+  ],
+  "componentIntent": "Provide FileUpload functionality",
+  "semanticCategory": "input",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.604571",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "0d3ba5d1",
+  "metadata": {
+    "purpose": "Enable users to upload files with drag-and-drop support and validation.",
+    "description": "A file upload control supporting both click-to-browse and drag-and-drop interactions. Validates files by size and type before acceptance and displays validation errors clearly. Supports both single and multiple file uploads with preview thumbnails for images. Can operate in auto-upload or manual upload mode with progress tracking.",
+    "functionalAreas": [
+      "Data Entry",
+      "Forms",
+      "Communication"
+    ],
+    "userIntents": [
+      "Upload a document or file",
+      "Attach files to a form",
+      "Share images or media",
+      "Backup or store files"
+    ],
+    "exampleUseCases": [
+      "Document Submission",
+      "Profile Picture Upload",
+      "Attachment Form",
+      "Media Gallery",
+      "Bulk File Import",
+      "Resume Upload"
+    ],
+    "useWhen": [
+      "Use this component when users need to upload files with drag-and-drop convenience.",
+      "Use this component when file validation by size and type is required.",
+      "Use this component when file previews are helpful for user confirmation.",
+      "Use this component when progress tracking improves upload experience."
+    ],
+    "avoidWhen": [
+      "Avoid this component when no file uploads are needed.",
+      "Avoid this component without clear file type restrictions.",
+      "Avoid this component when file size limits are not enforced.",
+      "Avoid this component for security-sensitive file types without backend validation."
+    ],
+    "relatedComponents": [
+      "Input",
+      "Button",
+      "ErrorMessage"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "react-imask",
+        "version": "^7.6.1"
+      },
+      {
+        "name": "react-number-format",
+        "version": "^5.4.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-datepicker",
+        "version": "^8.0.0"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-datepicker",
+        "version": "^7.0.0"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

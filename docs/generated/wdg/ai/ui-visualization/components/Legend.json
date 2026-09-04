@@ -1,0 +1,223 @@
+{
+  "id": "ui-visualization:legend",
+  "name": "Legend",
+  "slug": "legend",
+  "library": "ui-visualization",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Legend",
+  "purpose": "Explain chart symbols, colors, and data categories",
+  "shortDescription": "Explain chart symbols, colors, and data categories.",
+  "longDescription": "Explain chart symbols, colors, and data categories.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Visualization/Legend",
+      "storyId": "visualization-legend",
+      "url": "https://uikit.waysnx.tech/?path=/docs/visualization-legend",
+      "stories": [],
+      "tags": [],
+      "source": "Legend.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Legend for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Legend"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "items",
+      "type": "LegendItem[]",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-vis-legend__item",
+    "wx-vis-legend__items",
+    "wx-vis-legend__title",
+    "wx-vis-legend__swatch"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Legend\\Legend.tsx",
+  "keywords": [
+    "legend",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Legend",
+    "Create an example with Legend",
+    "Generate a Legend component",
+    "Build a Legend in my form"
+  ],
+  "componentIntent": "Provide Legend functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.910306",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "e8d6f1fa",
+  "metadata": {
+    "purpose": "Explain chart symbols, colors, and data categories.",
+    "description": "A component that displays legend information for charts, graphs, or visualizations. Shows what colors, symbols, or patterns represent. Often interactive for showing/hiding data series or filtering.",
+    "functionalAreas": [
+      "Visualization",
+      "Communication"
+    ],
+    "userIntents": [
+      "Understand chart symbols",
+      "Know what colors mean",
+      "See data categories",
+      "Filter chart data"
+    ],
+    "exampleUseCases": [
+      "Chart Legend",
+      "Map Legend",
+      "Data Visualization",
+      "Symbol Explanation",
+      "Category Key",
+      "Data Key",
+      "Visual Reference"
+    ],
+    "useWhen": [
+      "Use this component in charts and visualizations.",
+      "Use this component to explain colors or symbols.",
+      "Use this component with interactive filtering.",
+      "Use this component when multiple data series need explanation."
+    ],
+    "avoidWhen": [
+      "Avoid this component with obvious or self-explanatory symbols.",
+      "Avoid this component without accompanying visualization.",
+      "Avoid this component for too many legend items (organize instead).",
+      "Avoid this component without clear legend styling."
+    ],
+    "relatedComponents": [
+      "Chart",
+      "Graph",
+      "Visualization"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

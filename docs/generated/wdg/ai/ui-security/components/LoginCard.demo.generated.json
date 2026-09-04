@@ -1,0 +1,56 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "logincard",
+    "name": "LoginCard",
+    "package": "@waysnx/ui-security",
+    "export": "LoginCard"
+  },
+  "categories": [
+    {
+      "id": "sizes",
+      "title": "Sizes",
+      "description": "",
+      "examples": [
+        {
+          "id": "sizes-maxWidth-string",
+          "title": "Max Width: string",
+          "description": "Demonstrates the string maxWidth.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "maxWidth": "string"
+          },
+          "keywords": [
+            "maxWidth",
+            "string"
+          ]
+        },
+        {
+          "id": "sizes-maxWidth-number",
+          "title": "Max Width: number",
+          "description": "Demonstrates the number maxWidth.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "maxWidth": "number"
+          },
+          "keywords": [
+            "maxWidth",
+            "number"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:05.247315",
+  "stats": {
+    "examplesGenerated": 2,
+    "categoriesGenerated": 1
+  }
+}

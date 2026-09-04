@@ -1,0 +1,304 @@
+{
+  "id": "ui-layout:collapsible",
+  "name": "Collapsible",
+  "slug": "collapsible",
+  "library": "ui-layout",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Collapsible",
+  "purpose": "Show or hide content with a click or interaction",
+  "shortDescription": "Show or hide content with a click or interaction.",
+  "longDescription": "Show or hide content with a click or interaction.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Collapsible for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Collapsible"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [
+    {
+      "name": "title",
+      "type": "React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "defaultOpen",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-surface",
+    "--wx-color-surface-alt",
+    "--wx-font-size-md",
+    "--wx-font-size-xs"
+  ],
+  "cssClasses": [
+    "wx-collapsible",
+    "wx-collapsible-trigger",
+    "wx-collapsible-title",
+    "wx-collapsible-icon",
+    "wx-collapsible-icon-open",
+    "wx-collapsible-content"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {
+    "--wx-font-size-md": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-collapsible-trigger"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-xs": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-collapsible-icon"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {
+    "--wx-color-border": {
+      "properties": [
+        "border",
+        "border-top"
+      ],
+      "selectors": [
+        ".wx-collapsible",
+        ".wx-collapsible-content"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-collapsible-trigger"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface-alt": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-collapsible-trigger:hover"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Collapsible\\Collapsible.tsx",
+  "keywords": [
+    "collapsible",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Collapsible",
+    "Create an example with Collapsible",
+    "Generate a Collapsible component",
+    "Build a Collapsible in my form"
+  ],
+  "componentIntent": "Provide Collapsible functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.055386",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "025ce0f5",
+  "metadata": {
+    "purpose": "Show or hide content with a click or interaction.",
+    "description": "A simple collapsible component that toggles the visibility of content based on user interaction. Often used for revealing optional details, advanced options, or secondary information without occupying permanent space. Simpler than Accordion when only one section needs to expand or collapse.",
+    "functionalAreas": [
+      "Layout",
+      "Navigation"
+    ],
+    "userIntents": [
+      "Show or hide optional details",
+      "Expand advanced options",
+      "View more information when needed",
+      "Keep interface clean by hiding less-used options"
+    ],
+    "exampleUseCases": [
+      "Show More Details",
+      "Advanced Options Toggle",
+      "Comments Section Expand",
+      "Additional Information",
+      "Related Items Reveal",
+      "Details Expansion",
+      "Options Panel Toggle"
+    ],
+    "useWhen": [
+      "Use this component for toggling single sections of content.",
+      "Use this component when you want to progressively disclose information.",
+      "Use this component for optional or advanced content that doesn't clutter the main view.",
+      "Use this component when a simple on/off visibility state is needed."
+    ],
+    "avoidWhen": [
+      "Avoid this component when multiple sections need independent toggle (use Accordion instead).",
+      "Avoid this component for critical content that users should see by default.",
+      "Avoid this component when frequent toggling is part of normal workflow.",
+      "Avoid this component for content that should always be visible."
+    ],
+    "relatedComponents": [
+      "Accordion",
+      "Drawer",
+      "Modal"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

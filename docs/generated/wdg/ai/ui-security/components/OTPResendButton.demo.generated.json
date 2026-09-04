@@ -1,0 +1,71 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "otpresendbutton",
+    "name": "OTPResendButton",
+    "package": "@waysnx/ui-security",
+    "export": "OTPResendButton"
+  },
+  "categories": [
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-loading-false",
+          "title": "Disabled State",
+          "description": "Shows a loading state while data is being processed.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "loading": false
+          },
+          "keywords": [
+            "loading",
+            "state"
+          ]
+        },
+        {
+          "id": "states-loading-true",
+          "title": "Enabled State",
+          "description": "Shows a loading state while data is being processed.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "loading": true
+          },
+          "keywords": [
+            "loading",
+            "state"
+          ]
+        },
+        {
+          "id": "states-disabled-false",
+          "title": "Disabled State",
+          "description": "The component is displayed in a non-interactive state.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "disabled": false
+          },
+          "keywords": [
+            "disabled",
+            "state"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:05.524573",
+  "stats": {
+    "examplesGenerated": 3,
+    "categoriesGenerated": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-core/errormessage.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display error messages to users with prominent visual and semantic prominence.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-core",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "error": {
+      "description": "",
+      "type": "string"
+    },
+    "show": {
+      "description": "",
+      "type": "boolean"
+    }
+  },
+  "required": [],
+  "title": "ErrorMessage",
+  "type": "object"
+}

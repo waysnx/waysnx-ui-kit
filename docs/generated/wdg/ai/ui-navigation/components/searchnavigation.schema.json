@@ -1,0 +1,99 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-navigation/searchnavigation.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Enable users to search for content or pages and navigate quickly.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": true,
+    "isMemo": false,
+    "library": "ui-navigation",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "ariaLabel": {
+      "description": "Accessible label",
+      "type": "string"
+    },
+    "autoFocus": {
+      "description": "Auto-focus on mount",
+      "type": "boolean"
+    },
+    "categories": {
+      "description": "Available search categories",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "debounceMs": {
+      "description": "Debounce delay in ms",
+      "type": "number"
+    },
+    "groupByCategory": {
+      "description": "Group results by category",
+      "type": "boolean"
+    },
+    "isLoading": {
+      "description": "Loading state",
+      "type": "boolean"
+    },
+    "maxResults": {
+      "description": "Max results to display",
+      "type": "number"
+    },
+    "onSearch": {
+      "description": "Callback to perform search",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "onSelect": {
+      "description": "Callback when result is selected",
+      "type": "null"
+    },
+    "placeholder": {
+      "description": "Search input placeholder",
+      "type": "string"
+    },
+    "recentCount": {
+      "description": "Number of recent searches to show",
+      "type": "number"
+    },
+    "searchIcon": {
+      "description": "Search icon",
+      "type": "string"
+    },
+    "showClear": {
+      "description": "Clear search button visible",
+      "type": "boolean"
+    },
+    "showHistory": {
+      "description": "Show search history",
+      "type": "boolean"
+    },
+    "style": {
+      "description": "Additional styles",
+      "type": "string"
+    }
+  },
+  "required": [
+    "onSearch",
+    "onSelect"
+  ],
+  "title": "SearchNavigation",
+  "type": "object"
+}

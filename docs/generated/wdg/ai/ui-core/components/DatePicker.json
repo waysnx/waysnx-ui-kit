@@ -1,0 +1,536 @@
+{
+  "id": "ui-core:datepicker",
+  "name": "DatePicker",
+  "slug": "date-picker",
+  "library": "ui-core",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Date Picker",
+  "purpose": "Enable users to select a specific date through an interactive calendar interface",
+  "shortDescription": "Enable users to select a specific date through an interactive calendar interface.",
+  "longDescription": "Enable users to select a specific date through an interactive calendar interface.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Components/DatePicker",
+      "storyId": "components-datepicker",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-datepicker",
+      "stories": [],
+      "tags": [],
+      "source": "DatePicker.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use DatePicker for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a DatePicker"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown",
+    "ReactDatePicker": "unknown",
+    "warn": "unknown",
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "value",
+      "type": "Date | null",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onChange",
+      "type": "(date: Date | null) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "placeholder",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "hint",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "minDate",
+      "type": "Date",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "maxDate",
+      "type": "Date",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "dateFormat",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showTimeSelect",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaDescribedBy",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-error",
+    "--wx-color-primary",
+    "--wx-color-surface",
+    "--wx-color-text",
+    "--wx-color-text-muted",
+    "--wx-font-family",
+    "--wx-font-size-sm",
+    "--wx-font-size-xs",
+    "--wx-input-height",
+    "--wx-radius-md",
+    "--wx-radius-sm"
+  ],
+  "cssClasses": [
+    "wx-datepicker-wrapper",
+    "wx-datepicker-label",
+    "wx-datepicker-input-wrapper",
+    "wx-datepicker-react-wrapper",
+    "wx-datepicker-input",
+    "wx-datepicker-icon",
+    "wx-datepicker-input-error",
+    "wx-datepicker-hint",
+    "wx-datepicker-error-text",
+    "react-datepicker"
+  ],
+  "designTokens": {
+    "other": {
+      "--wx-input-height": {
+        "properties": [
+          "height"
+        ],
+        "selectors": [
+          ".wx-datepicker-input"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      }
+    }
+  },
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {
+    "--wx-font-family": {
+      "properties": [
+        "font-family"
+      ],
+      "selectors": [
+        ".wx-datepicker-wrapper"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-sm": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-datepicker-label",
+        ".wx-datepicker-input"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-xs": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-datepicker-hint",
+        ".wx-datepicker-error-text"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {
+    "--wx-color-border": {
+      "properties": [
+        "border"
+      ],
+      "selectors": [
+        ".wx-datepicker-input",
+        ".react-datepicker__month-select",
+        ".react-datepicker__year-select"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-datepicker-icon",
+        ".wx-datepicker-hint"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary": {
+      "properties": [
+        "border-color"
+      ],
+      "selectors": [
+        ".wx-datepicker-input:focus",
+        ".react-datepicker__month-select:focus",
+        ".react-datepicker__year-select:focus",
+        ".react-datepicker__month-select:hover",
+        ".react-datepicker__year-select:hover"
+      ],
+      "occurrences": 3,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error": {
+      "properties": [
+        "border-color",
+        "color"
+      ],
+      "selectors": [
+        ".wx-datepicker-input-error",
+        ".wx-datepicker-error-text"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".react-datepicker__month-select",
+        ".react-datepicker__year-select"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".react-datepicker__month-select",
+        ".react-datepicker__year-select"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {
+    "--wx-radius-md": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".wx-datepicker-input"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-radius-sm": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".react-datepicker__month-select",
+        ".react-datepicker__year-select"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\DatePicker\\DatePicker.tsx",
+  "keywords": [
+    "label",
+    "placeholder",
+    "value",
+    "datepicker",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use DatePicker",
+    "Create an example with DatePicker",
+    "Generate a DatePicker component",
+    "Build a DatePicker in my form"
+  ],
+  "componentIntent": "Provide DatePicker functionality",
+  "semanticCategory": "input",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.573555",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "6ca1e45c",
+  "metadata": {
+    "purpose": "Enable users to select a specific date through an interactive calendar interface.",
+    "description": "A date selection control that presents an interactive calendar popup for picking individual dates. Provides month and year dropdown selectors for quick navigation and respects minimum and maximum date constraints. Displays the selected date in a readable format within the input field and supports keyboard navigation.",
+    "functionalAreas": [
+      "Data Entry",
+      "Forms",
+      "Selection"
+    ],
+    "userIntents": [
+      "Choose a specific date from a calendar",
+      "Enter a birth date or anniversary",
+      "Set an appointment or event date",
+      "Select a deadline or due date"
+    ],
+    "exampleUseCases": [
+      "Birth Date Selection",
+      "Meeting Scheduler",
+      "Task Deadline",
+      "Event Date",
+      "Project Start Date",
+      "Report Date Range Selection"
+    ],
+    "useWhen": [
+      "Use this component when users need to select a single specific date.",
+      "Use this component when a calendar view helps date selection.",
+      "Use this component when date format consistency across the application is important.",
+      "Use this component when users may need to navigate between months and years."
+    ],
+    "avoidWhen": [
+      "Avoid this component when users are selecting a date range (use DateRangePicker instead).",
+      "Avoid this component when both date and time selection is needed (use DateTimePicker instead).",
+      "Avoid this component when only time selection is required (use TimePicker instead).",
+      "Avoid this component when users typically enter dates manually in a known format."
+    ],
+    "relatedComponents": [
+      "DateRangePicker",
+      "DateTimePicker",
+      "TimePicker"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "react-imask",
+        "version": "^7.6.1"
+      },
+      {
+        "name": "react-number-format",
+        "version": "^5.4.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-datepicker",
+        "version": "^8.0.0"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-datepicker",
+        "version": "^7.0.0"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

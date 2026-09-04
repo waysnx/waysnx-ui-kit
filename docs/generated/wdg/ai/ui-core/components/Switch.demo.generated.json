@@ -1,0 +1,75 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "switch",
+    "name": "Switch",
+    "package": "@waysnx/ui-core",
+    "export": "Switch"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "off",
+          "title": "Off",
+          "description": "Example demonstrating off state",
+          "category": "basic",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "checked": false
+          },
+          "keywords": [
+            "off"
+          ]
+        },
+        {
+          "id": "on",
+          "title": "On",
+          "description": "Example demonstrating on state",
+          "category": "basic",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "checked": true
+          },
+          "keywords": [
+            "on"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "disabled",
+          "title": "Disabled",
+          "description": "Example demonstrating disabled state",
+          "category": "states",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "disabled": true
+          },
+          "keywords": [
+            "disabled"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:43.108166",
+  "stats": {
+    "examplesGenerated": 3,
+    "categoriesGenerated": 2
+  }
+}

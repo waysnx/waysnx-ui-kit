@@ -1,0 +1,265 @@
+{
+  "id": "ui-layout:sidebarlayout",
+  "name": "SidebarLayout",
+  "slug": "sidebar-layout",
+  "library": "ui-layout",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Sidebar Layout",
+  "purpose": "Create a layout with a sidebar and main content area",
+  "shortDescription": "Create a layout with a sidebar and main content area.",
+  "longDescription": "Create a layout with a sidebar and main content area.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use SidebarLayout for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a SidebarLayout"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown"
+  },
+  "props": [
+    {
+      "name": "sidebar",
+      "type": "React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "orientation",
+      "type": "\"vertical\" | \"horizontal\"",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "sidebarWidth",
+      "type": "number | string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "collapsible",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "collapsed",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "sidebarLabel",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "contentLabel",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-sidebar-layout",
+    "wx-sidebar-vertical",
+    "wx-sidebar-horizontal",
+    "wx-sidebar",
+    "wx-sidebar-content"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\SidebarLayout\\SidebarLayout.tsx",
+  "keywords": [
+    "components",
+    "sidebarlayout"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use SidebarLayout",
+    "Create an example with SidebarLayout",
+    "Generate a SidebarLayout component",
+    "Build a SidebarLayout in my form"
+  ],
+  "componentIntent": "Provide SidebarLayout functionality",
+  "semanticCategory": "layout",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.141970",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "2c12c9b1",
+  "metadata": {
+    "purpose": "Create a layout with a sidebar and main content area.",
+    "description": "A specialized layout component that arranges a sidebar navigation or content area alongside the main content. Provides responsive adjustments for hiding or collapsing the sidebar on smaller screens. Commonly used for applications with persistent navigation or multi-column layouts.",
+    "functionalAreas": [
+      "Layout",
+      "Navigation"
+    ],
+    "userIntents": [
+      "See navigation sidebar alongside content",
+      "Access secondary navigation",
+      "Maintain navigation while browsing content",
+      "Switch between sidebar and full-width on mobile"
+    ],
+    "exampleUseCases": [
+      "Application Layout",
+      "Dashboard with Sidebar",
+      "Documentation Site",
+      "Admin Interface",
+      "Settings with Sidebar",
+      "News Site Layout",
+      "CMS Layout"
+    ],
+    "useWhen": [
+      "Use this component for persistent sidebar navigation.",
+      "Use this component in multi-panel layouts.",
+      "Use this component when sidebar should remain visible during content navigation.",
+      "Use this component for responsive layouts that collapse on mobile."
+    ],
+    "avoidWhen": [
+      "Avoid this component for simple two-column layouts (use Grid instead).",
+      "Avoid this component when sidebar should not be persistent.",
+      "Avoid this component for temporary sidebars (use Drawer instead).",
+      "Avoid this component when main content should full-width."
+    ],
+    "relatedComponents": [
+      "Drawer",
+      "PageLayout",
+      "Grid",
+      "Navigation"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

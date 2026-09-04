@@ -1,0 +1,93 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "chartwidget",
+    "name": "ChartWidget",
+    "package": "@waysnx/ui-dashboard",
+    "export": "ChartWidget"
+  },
+  "categories": [
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-loading-false",
+          "title": "Disabled State",
+          "description": "Shows a loading state while data is being processed.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "loading": false
+          },
+          "keywords": [
+            "loading",
+            "state"
+          ]
+        },
+        {
+          "id": "states-loading-true",
+          "title": "Enabled State",
+          "description": "Shows a loading state while data is being processed.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "loading": true
+          },
+          "keywords": [
+            "loading",
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "variants",
+      "title": "Variants",
+      "description": "",
+      "examples": [
+        {
+          "id": "variants-error-error",
+          "title": "Error: Error",
+          "description": "Demonstrates the Error error.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "error": "Error"
+          },
+          "keywords": [
+            "error",
+            "error"
+          ]
+        },
+        {
+          "id": "variants-error-null",
+          "title": "Error: null",
+          "description": "Demonstrates the null error.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "error": "null"
+          },
+          "keywords": [
+            "error",
+            "null"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:45.609455",
+  "stats": {
+    "examplesGenerated": 4,
+    "categoriesGenerated": 2
+  }
+}

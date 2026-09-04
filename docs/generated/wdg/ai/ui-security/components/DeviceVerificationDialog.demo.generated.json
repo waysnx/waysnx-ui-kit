@@ -1,0 +1,86 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "deviceverificationdialog",
+    "name": "DeviceVerificationDialog",
+    "package": "@waysnx/ui-security",
+    "export": "DeviceVerificationDialog"
+  },
+  "categories": [
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-open-false",
+          "title": "Disabled State",
+          "description": "The component is open.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "open": false
+          },
+          "keywords": [
+            "open",
+            "state"
+          ]
+        },
+        {
+          "id": "states-open-true",
+          "title": "Enabled State",
+          "description": "The component is open.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "open": true
+          },
+          "keywords": [
+            "open",
+            "state"
+          ]
+        },
+        {
+          "id": "states-loading-false",
+          "title": "Disabled State",
+          "description": "Shows a loading state while data is being processed.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "loading": false
+          },
+          "keywords": [
+            "loading",
+            "state"
+          ]
+        },
+        {
+          "id": "states-loading-true",
+          "title": "Enabled State",
+          "description": "Shows a loading state while data is being processed.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "loading": true
+          },
+          "keywords": [
+            "loading",
+            "state"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:06.042150",
+  "stats": {
+    "examplesGenerated": 4,
+    "categoriesGenerated": 1
+  }
+}

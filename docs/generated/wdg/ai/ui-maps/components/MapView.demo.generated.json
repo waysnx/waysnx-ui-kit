@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "mapview",
+    "name": "MapView",
+    "package": "@waysnx/ui-maps",
+    "export": "MapView"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic",
+          "title": "Basic MapView",
+          "description": "Simple MapView with default configuration.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {},
+          "keywords": [
+            "basic",
+            "mapview"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "e3b0c44298fc1c14",
+  "generatedAt": "2026-09-03T20:02:33.231281",
+  "stats": {
+    "examplesGenerated": 1,
+    "categoriesGenerated": 1
+  }
+}

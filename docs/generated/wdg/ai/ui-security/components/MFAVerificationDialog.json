@@ -1,0 +1,271 @@
+{
+  "id": "ui-security:mfaverificationdialog",
+  "name": "MFAVerificationDialog",
+  "slug": "mfa-verification-dialog",
+  "library": "ui-security",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "MFA Verification Dialog",
+  "purpose": "MFAVerificationDialog - Enter MFA verification code",
+  "shortDescription": "MFAVerificationDialog - Enter MFA verification code",
+  "longDescription": "MFAVerificationDialog - Enter MFA verification code",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Security/MFA/MFAVerificationDialog",
+      "storyId": "security-mfa-mfaverificationdialog",
+      "url": "https://uikit.waysnx.tech/?path=/docs/security-mfa-mfaverificationdialog",
+      "stories": [],
+      "tags": [],
+      "source": "MFAVerificationDialog.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use MFAVerificationDialog for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a MFAVerificationDialog"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "Button",
+      "Modal",
+      "PINInput",
+      "Stack"
+    ],
+    "usedBy": [],
+    "related": [
+      "Button",
+      "Modal",
+      "PINInput",
+      "Stack"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": [
+      "Button",
+      "Modal",
+      "PINInput",
+      "Stack"
+    ]
+  },
+  "dependencies": {
+    "Button": "unknown",
+    "Modal": "unknown",
+    "Stack": "unknown",
+    "PINInput": "unknown"
+  },
+  "props": [
+    {
+      "name": "isOpen",
+      "type": "boolean",
+      "description": "Whether dialog is open",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "method",
+      "type": "MFAMethod",
+      "description": "MFA method being used",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onVerify",
+      "type": "(code: string) => Promise<void>",
+      "description": "Callback to verify code",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onUseBackupCode",
+      "type": "() => void",
+      "description": "Callback to use backup code instead",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onCancel",
+      "type": "() => void",
+      "description": "Callback to cancel verification",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "isLoading",
+      "type": "boolean",
+      "description": "Whether verification is in progress",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Error message",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "Custom title",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\MFA\\MFAVerificationDialog.tsx",
+  "keywords": [
+    "mfaverificationdialog",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [
+    "popup window",
+    "overlay panel"
+  ],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Create a MFAVerificationDialog for confirmation",
+    "Show me a MFAVerificationDialog with form",
+    "Generate a MFAVerificationDialog with animation",
+    "Build a MFAVerificationDialog for alerts"
+  ],
+  "componentIntent": "Provide MFAVerificationDialog functionality",
+  "semanticCategory": "overlay",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.527993",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "3fae8b6a",
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-media",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "magnifier",
+    "name": "Magnifier",
+    "package": "@waysnx/ui-accessibility",
+    "export": "Magnifier"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic",
+          "title": "Basic Magnifier",
+          "description": "Simple Magnifier with default configuration.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {},
+          "keywords": [
+            "basic",
+            "magnifier"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "e3b0c44298fc1c14",
+  "generatedAt": "2026-09-03T20:02:28.388446",
+  "stats": {
+    "examplesGenerated": 1,
+    "categoriesGenerated": 1
+  }
+}

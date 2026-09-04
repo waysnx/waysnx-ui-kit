@@ -1,0 +1,47 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/otpresendbutton.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Callback when button is clicked to resend OTP",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "disabled": {
+      "description": "Disabled state",
+      "type": "boolean"
+    },
+    "initialCountdown": {
+      "description": "Initial countdown time in seconds",
+      "type": "number"
+    },
+    "loading": {
+      "description": "Loading state while resending",
+      "type": "boolean"
+    },
+    "onResend": {
+      "description": "Callback when button is clicked to resend OTP",
+      "enum": [
+        "() => void",
+        "Promise<void>"
+      ]
+    }
+  },
+  "required": [
+    "onResend"
+  ],
+  "title": "OTPResendButton",
+  "type": "object"
+}

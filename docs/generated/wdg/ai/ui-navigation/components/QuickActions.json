@@ -1,0 +1,327 @@
+{
+  "id": "ui-navigation:quickactions",
+  "name": "QuickActions",
+  "slug": "quick-actions",
+  "library": "ui-navigation",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Quick Actions",
+  "purpose": "Provide quick access to frequent actions in a compact menu",
+  "shortDescription": "Provide quick access to frequent actions in a compact menu.",
+  "longDescription": "Provide quick access to frequent actions in a compact menu.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Enterprise/QuickActions",
+      "storyId": "enterprise-quickactions",
+      "url": "https://uikit.waysnx.tech/?path=/docs/enterprise-quickactions",
+      "stories": [],
+      "tags": [],
+      "source": "QuickActions.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use QuickActions for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a QuickActions"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [
+    {
+      "name": "actions",
+      "type": "(QuickAction | QuickActionGroup)[]",
+      "description": "Array of quick action groups or individual actions",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "onActionClick",
+      "type": "(action: QuickAction) => void | Promise<void>",
+      "description": "Callback when action is triggered",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "orientation",
+      "type": "'horizontal' | 'vertical'",
+      "description": "Display orientation",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "variant",
+      "type": "'bar' | 'grid' | 'compact'",
+      "description": "Display variant",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "size",
+      "type": "'sm' | 'md' | 'lg'",
+      "description": "Size of actions",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showLabels",
+      "type": "boolean",
+      "description": "Show action labels",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showIcons",
+      "type": "boolean",
+      "description": "Show action icons",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "enableKeyboardShortcuts",
+      "type": "boolean",
+      "description": "Enable keyboard shortcuts",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "maxVisible",
+      "type": "number",
+      "description": "Maximum number of visible actions (rest go to \"More\")",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "permissions",
+      "type": "string[]",
+      "description": "User permissions for filtering",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "Custom class name",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "style",
+      "type": "React.CSSProperties",
+      "description": "Custom styles",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "aria-label for accessibility",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "Test ID",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [
+    "forwardRef"
+  ],
+  "contextsUsed": [],
+  "forwardRef": true,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-quick-actions__more-icon",
+    "wx-quick-actions__more",
+    "wx-quick-actions__spinner",
+    "wx-quick-actions__visible",
+    "wx-quick-actions__more-button",
+    "wx-quick-actions__group",
+    "wx-quick-actions__group-label",
+    "wx-quick-actions__shortcut",
+    "wx-quick-actions__more-menu",
+    "wx-quick-actions__icon",
+    "wx-quick-actions__group-items",
+    "wx-quick-actions__label"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\QuickActions\\QuickActions.tsx",
+  "keywords": [
+    "quickactions",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use QuickActions",
+    "Create an example with QuickActions",
+    "Generate a QuickActions component",
+    "Build a QuickActions in my form"
+  ],
+  "componentIntent": "Provide QuickActions functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.281962",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "58a6c9cb",
+  "metadata": {
+    "purpose": "Provide quick access to frequent actions in a compact menu.",
+    "description": "A floating or dropdown menu containing frequently used or recommended actions. Appears in a convenient location (often corner or top) and provides one-click access to common tasks. Used to reduce navigation steps for power users and frequent operations.",
+    "functionalAreas": [
+      "Navigation",
+      "Actions"
+    ],
+    "userIntents": [
+      "Access frequent actions quickly",
+      "Perform common tasks",
+      "See recommended next actions",
+      "Reduce navigation steps"
+    ],
+    "exampleUseCases": [
+      "Floating Action Button Menu",
+      "Quick Actions Dropdown",
+      "Frequent Tasks Menu",
+      "Recommendations Menu",
+      "Quick Create Menu",
+      "Shortcut Actions",
+      "Fast Access Menu"
+    ],
+    "useWhen": [
+      "Use this component to provide fast access to frequent actions.",
+      "Use this component when power users benefit from shortcuts.",
+      "Use this component to surface recommended next actions.",
+      "Use this component to reduce clicks for common workflows."
+    ],
+    "avoidWhen": [
+      "Avoid this component without clear frequent actions.",
+      "Avoid this component when actions are already easily accessible.",
+      "Avoid this component in mobile apps without careful placement.",
+      "Avoid this component for one-off or rarely used actions."
+    ],
+    "relatedComponents": [
+      "Menu",
+      "FloatingButton",
+      "Navigation"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

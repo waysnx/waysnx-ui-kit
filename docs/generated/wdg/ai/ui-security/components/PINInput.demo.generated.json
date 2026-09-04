@@ -1,0 +1,92 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "pininput",
+    "name": "PINInput",
+    "package": "@waysnx/ui-security",
+    "export": "PINInput"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic-label",
+          "title": "With Label",
+          "description": "Displays with a label.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "label": "Sample Text"
+          },
+          "keywords": [
+            "label"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-masked-false",
+          "title": "Disabled State",
+          "description": "Example with masked enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "masked": false
+          },
+          "keywords": [
+            "masked",
+            "state"
+          ]
+        },
+        {
+          "id": "states-masked-true",
+          "title": "Enabled State",
+          "description": "Example with masked enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "masked": true
+          },
+          "keywords": [
+            "masked",
+            "state"
+          ]
+        },
+        {
+          "id": "states-disabled-false",
+          "title": "Disabled State",
+          "description": "The component is displayed in a non-interactive state.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "disabled": false
+          },
+          "keywords": [
+            "disabled",
+            "state"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:05.611448",
+  "stats": {
+    "examplesGenerated": 4,
+    "categoriesGenerated": 2
+  }
+}

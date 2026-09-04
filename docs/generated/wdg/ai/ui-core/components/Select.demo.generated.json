@@ -1,0 +1,101 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "select",
+    "name": "Select",
+    "package": "@waysnx/ui-core",
+    "export": "Select"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic",
+          "title": "Basic Select",
+          "description": "Example demonstrating basic state",
+          "category": "basic",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {},
+          "keywords": [
+            "basic"
+          ]
+        },
+        {
+          "id": "multiple",
+          "title": "Multiple Selection",
+          "description": "Select allows multiple options",
+          "category": "basic",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "multiple": true
+          },
+          "keywords": [
+            "multiple"
+          ]
+        },
+        {
+          "id": "searchable",
+          "title": "Searchable",
+          "description": "Search functionality enabled",
+          "category": "basic",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "searchable": true
+          },
+          "keywords": [
+            "searchable"
+          ]
+        },
+        {
+          "id": "clearable",
+          "title": "Clearable",
+          "description": "Example demonstrating clearable state",
+          "category": "basic",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "clearable": true
+          },
+          "keywords": [
+            "clearable"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "disabled",
+          "title": "Disabled",
+          "description": "Example demonstrating disabled state",
+          "category": "states",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "disabled": true
+          },
+          "keywords": [
+            "disabled"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:43.080173",
+  "stats": {
+    "examplesGenerated": 5,
+    "categoriesGenerated": 2
+  }
+}

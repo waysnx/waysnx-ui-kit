@@ -1,0 +1,171 @@
+{
+  "name": "ui-layout",
+  "version": "1.0.0",
+  "generatedAt": "2026-09-03T20:02:57.637273",
+  "componentCount": 22,
+  "components": [
+    {
+      "id": "ui-layout:accordion",
+      "name": "Accordion",
+      "slug": "accordion",
+      "category": "components",
+      "description": "Display collapsible sections of content that expand or collapse."
+    },
+    {
+      "id": "ui-layout:breadcrumb",
+      "name": "Breadcrumb",
+      "slug": "breadcrumb",
+      "category": "components",
+      "description": "Display the current navigation path and enable quick navigation to parent levels."
+    },
+    {
+      "id": "ui-layout:card",
+      "name": "Card",
+      "slug": "card",
+      "category": "components",
+      "description": "Contain and organize related content in a bordered container."
+    },
+    {
+      "id": "ui-layout:collapsible",
+      "name": "Collapsible",
+      "slug": "collapsible",
+      "category": "components",
+      "description": "Show or hide content with a click or interaction."
+    },
+    {
+      "id": "ui-layout:column",
+      "name": "Column",
+      "slug": "column",
+      "category": "components",
+      "description": "Organize content in a vertical column within a layout grid."
+    },
+    {
+      "id": "ui-layout:container",
+      "name": "Container",
+      "slug": "container",
+      "category": "components",
+      "description": "Constrain content width and provide consistent margins."
+    },
+    {
+      "id": "ui-layout:divider",
+      "name": "Divider",
+      "slug": "divider",
+      "category": "components",
+      "description": "Create a visual separation between content sections."
+    },
+    {
+      "id": "ui-layout:grid",
+      "name": "Grid",
+      "slug": "grid",
+      "category": "components",
+      "description": "Arrange content in a responsive grid layout."
+    },
+    {
+      "id": "ui-layout:pagecontent",
+      "name": "PageContent",
+      "slug": "pagecontent",
+      "category": "components",
+      "description": "Organize main content area of a page layout."
+    },
+    {
+      "id": "ui-layout:pageheader",
+      "name": "PageHeader",
+      "slug": "pageheader",
+      "category": "components",
+      "description": "Display header information and controls at the top of a page."
+    },
+    {
+      "id": "ui-layout:pagelayout",
+      "name": "PageLayout",
+      "slug": "pagelayout",
+      "category": "components",
+      "description": "Define the overall structure and layout of a page."
+    },
+    {
+      "id": "ui-layout:pagetabs",
+      "name": "PageTabs",
+      "slug": "pagetabs",
+      "category": "components",
+      "description": "Organize page sections using tab navigation."
+    },
+    {
+      "id": "ui-layout:panel",
+      "name": "Panel",
+      "slug": "panel",
+      "category": "components",
+      "description": "Create a contained panel or section with consistent styling."
+    },
+    {
+      "id": "ui-layout:row",
+      "name": "Row",
+      "slug": "row",
+      "category": "components",
+      "description": "Organize content in a horizontal row within a layout grid."
+    },
+    {
+      "id": "ui-layout:section",
+      "name": "Section",
+      "slug": "section",
+      "category": "components",
+      "description": "Define a semantic content section with consistent spacing."
+    },
+    {
+      "id": "ui-layout:sidebarlayout",
+      "name": "SidebarLayout",
+      "slug": "sidebarlayout",
+      "category": "components",
+      "description": "Create a layout with a sidebar and main content area."
+    },
+    {
+      "id": "ui-layout:spacer",
+      "name": "Spacer",
+      "slug": "spacer",
+      "category": "components",
+      "description": "Add flexible spacing between layout elements."
+    },
+    {
+      "id": "ui-layout:splitlayout",
+      "name": "SplitLayout",
+      "slug": "splitlayout",
+      "category": "components",
+      "description": "Create a two-panel layout with resizable divider."
+    },
+    {
+      "id": "ui-layout:stack",
+      "name": "Stack",
+      "slug": "stack",
+      "category": "components",
+      "description": "Arrange elements in a single row or column with consistent spacing."
+    },
+    {
+      "id": "ui-layout:stepper",
+      "name": "Stepper",
+      "slug": "stepper",
+      "category": "components",
+      "description": "Show progress through a multi-step process."
+    },
+    {
+      "id": "ui-layout:tabs",
+      "name": "Tabs",
+      "slug": "tabs",
+      "category": "components",
+      "description": "Organize content into tabs that users can switch between."
+    },
+    {
+      "id": "ui-layout:wizard",
+      "name": "Wizard",
+      "slug": "wizard",
+      "category": "components",
+      "description": "Guide users through a multi-step process or form."
+    }
+  ],
+  "categories": {
+    "components": 22
+  },
+  "statistics": {
+    "totalComponents": 22,
+    "documentsGenerated": 22,
+    "storiesGenerated": 0,
+    "testsGenerated": 0
+  }
+}

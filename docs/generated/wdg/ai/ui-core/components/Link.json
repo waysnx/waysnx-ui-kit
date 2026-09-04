@@ -1,0 +1,368 @@
+{
+  "id": "ui-core:link",
+  "name": "Link",
+  "slug": "link",
+  "library": "ui-core",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Link",
+  "purpose": "Navigate users to a different page or external resource via a clickable text link",
+  "shortDescription": "Navigate users to a different page or external resource via a clickable text link.",
+  "longDescription": "Navigate users to a different page or external resource via a clickable text link.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Components/Link",
+      "storyId": "components-link",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-link",
+      "stories": [],
+      "tags": [],
+      "source": "Link.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Link for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Link"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown"
+  },
+  "props": [
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "href",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onClick",
+      "type": "(e: React.MouseEvent<HTMLAnchorElement>) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "prependText",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "appendText",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "target",
+      "type": "'_blank' | '_self' | '_parent' | '_top'",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaDescribedBy",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "isActive",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-primary",
+    "--wx-color-text-light",
+    "--wx-color-text-muted"
+  ],
+  "cssClasses": [
+    "wx-link-wrapper",
+    "wx-link",
+    "wx-link-disabled",
+    "wx-link-prepend",
+    "wx-link-append"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-color-primary": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-link"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-light": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-link-disabled"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-link-prepend",
+        ".wx-link-append"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Link\\Link.tsx",
+  "keywords": [
+    "label",
+    "link",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Link",
+    "Create an example with Link",
+    "Generate a Link component",
+    "Build a Link in my form"
+  ],
+  "componentIntent": "Provide Link functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.658854",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "e644ab3c",
+  "metadata": {
+    "purpose": "Navigate users to a different page or external resource via a clickable text link.",
+    "description": "An interactive link element for page navigation and deep linking to external resources. Enforces safe URL protocols (https, mailto, relative paths) to prevent security issues. Supports disabled state, target window configuration, and active link highlighting. Provides optional prepend and append text for contextual information.",
+    "functionalAreas": [
+      "Navigation",
+      "Actions",
+      "Communication"
+    ],
+    "userIntents": [
+      "Navigate to another page",
+      "Open an external website",
+      "Send an email",
+      "Jump to a section",
+      "Access related content"
+    ],
+    "exampleUseCases": [
+      "Navigation Menu",
+      "Breadcrumb Trail",
+      "Related Links",
+      "Email Contact",
+      "External Documentation",
+      "Inline Text Link"
+    ],
+    "useWhen": [
+      "Use this component when navigation between pages is the primary action.",
+      "Use this component when opening external resources is needed.",
+      "Use this component for email links or other special protocols.",
+      "Use this component when link state (active, visited, disabled) needs indication."
+    ],
+    "avoidWhen": [
+      "Avoid this component when the primary action is non-navigational (use Button instead).",
+      "Avoid this component when opening untrusted URLs without validation.",
+      "Avoid this component for form submission or data actions.",
+      "Avoid this component when the target is not a real resource."
+    ],
+    "relatedComponents": [
+      "Button",
+      "IFrame"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "react-imask",
+        "version": "^7.6.1"
+      },
+      {
+        "name": "react-number-format",
+        "version": "^5.4.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-datepicker",
+        "version": "^8.0.0"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-datepicker",
+        "version": "^7.0.0"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

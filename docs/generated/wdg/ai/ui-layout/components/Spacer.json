@@ -1,0 +1,211 @@
+{
+  "id": "ui-layout:spacer",
+  "name": "Spacer",
+  "slug": "spacer",
+  "library": "ui-layout",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Spacer",
+  "purpose": "Add flexible spacing between layout elements",
+  "shortDescription": "Add flexible spacing between layout elements.",
+  "longDescription": "Add flexible spacing between layout elements.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Spacer for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Spacer"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown"
+  },
+  "props": [
+    {
+      "name": "size",
+      "type": "number | string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-spacer"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Spacer\\Spacer.tsx",
+  "keywords": [
+    "spacer",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Spacer",
+    "Create an example with Spacer",
+    "Generate a Spacer component",
+    "Build a Spacer in my form"
+  ],
+  "componentIntent": "Provide Spacer functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.149322",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "9f66493a",
+  "metadata": {
+    "purpose": "Add flexible spacing between layout elements.",
+    "description": "A layout component that creates flexible vertical or horizontal space between elements. Often used to push elements apart or create breathing room without using margins or padding. Simplifies responsive spacing by providing a reusable spacing primitive.",
+    "functionalAreas": [
+      "Layout"
+    ],
+    "userIntents": [
+      "Add space between elements",
+      "Push elements to edges",
+      "Create visual breathing room",
+      "Control layout spacing"
+    ],
+    "exampleUseCases": [
+      "Space Between Form Elements",
+      "Toolbar Spacing",
+      "Footer Spacing",
+      "Header Spacing",
+      "Flexible Space",
+      "Page Section Spacing",
+      "Column Spacing"
+    ],
+    "useWhen": [
+      "Use this component to add flexible spacing between elements.",
+      "Use this component to push elements apart in a layout.",
+      "Use this component as an alternative to margin and padding.",
+      "Use this component in responsive layouts for flexible spacing."
+    ],
+    "avoidWhen": [
+      "Avoid this component for fixed spacing (use margin or padding instead).",
+      "Avoid this component when styling would be clearer.",
+      "Avoid this component excessively (use layout components instead).",
+      "Avoid this component when CSS Grid or Flexbox would be simpler."
+    ],
+    "relatedComponents": [
+      "Stack",
+      "Container",
+      "Grid"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

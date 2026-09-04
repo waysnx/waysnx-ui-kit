@@ -1,0 +1,54 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/idlemonitor.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "IdleMonitor - Invisible component that tracks user activity and inactivity Detects idle state using: - Mouse/keyboard events - Page visibility changes - requestAnimationFrame for efficient idle timeout checking",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "idleTimeoutMs": {
+      "description": "",
+      "type": "number"
+    },
+    "monitorPageVisibility": {
+      "description": "",
+      "type": "boolean"
+    },
+    "monitorUserInput": {
+      "description": "",
+      "type": "boolean"
+    },
+    "onActive": {
+      "description": "Callback when user returns from idle",
+      "type": "null"
+    },
+    "onIdle": {
+      "description": "Callback when user becomes idle",
+      "type": "null"
+    },
+    "onIdleWarning": {
+      "description": "Callback when idle warning is triggered",
+      "type": "null"
+    },
+    "warningTimeoutMs": {
+      "description": "",
+      "type": "number"
+    }
+  },
+  "required": [],
+  "title": "IdleMonitor",
+  "type": "object"
+}

@@ -1,0 +1,346 @@
+{
+  "id": "ui-navigation:commandpalette",
+  "name": "CommandPalette",
+  "slug": "command-palette",
+  "library": "ui-navigation",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Command Palette",
+  "purpose": "Enable quick access to commands and navigation via keyboard",
+  "shortDescription": "Enable quick access to commands and navigation via keyboard.",
+  "longDescription": "Enable quick access to commands and navigation via keyboard.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Navigation/CommandPalette",
+      "storyId": "navigation-commandpalette",
+      "url": "https://uikit.waysnx.tech/?path=/docs/navigation-commandpalette",
+      "stories": [],
+      "tags": [],
+      "source": "CommandPalette.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use CommandPalette for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a CommandPalette"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "commands",
+      "type": "Command[]",
+      "description": "List of available commands",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "onCommandSelect",
+      "type": "(command: Command) => void",
+      "description": "Callback when command is selected",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "isOpen",
+      "type": "boolean",
+      "description": "Whether palette is open",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onOpen",
+      "type": "() => void",
+      "description": "Callback when palette is opened",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onClose",
+      "type": "() => void",
+      "description": "Callback when palette is closed",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "searchPlaceholder",
+      "type": "string",
+      "description": "Search input placeholder",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "recentCount",
+      "type": "number",
+      "description": "Number of recent commands to show",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showShortcuts",
+      "type": "boolean",
+      "description": "Show keyboard shortcuts",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "permissions",
+      "type": "string[]",
+      "description": "User permissions for filtering",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "roles",
+      "type": "string[]",
+      "description": "User roles for filtering",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "Additional CSS class",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "style",
+      "type": "React.CSSProperties",
+      "description": "Additional styles",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "default",
+      "type": "Ctrl+K or Cmd+K)\n   */\n  openShortcut?: string[]",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "maxResults",
+      "type": "number",
+      "description": "Max results to display",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "Accessible label",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [
+    "forwardRef"
+  ],
+  "contextsUsed": [],
+  "forwardRef": true,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "command-palette__content",
+    "command-palette__modal",
+    "command-palette__input",
+    "command-palette__search-inner",
+    "command-palette__group",
+    "command-palette__count",
+    "command-palette__esc-badge",
+    "command-palette__search-icon",
+    "command-palette__category-header",
+    "command-palette__footer",
+    "command-palette__description",
+    "command-palette__results",
+    "command-palette__icon",
+    "command-palette__backdrop",
+    "command-palette__title",
+    "command-palette__help",
+    "command-palette__empty",
+    "command-palette__group-items",
+    "command-palette__shortcut",
+    "command-palette__search",
+    "command-palette__hint-key"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\CommandPalette\\CommandPalette.tsx",
+  "keywords": [
+    "commandpalette",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use CommandPalette",
+    "Create an example with CommandPalette",
+    "Generate a CommandPalette component",
+    "Build a CommandPalette in my form"
+  ],
+  "componentIntent": "Provide CommandPalette functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.203508",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "a5b1dfc3",
+  "metadata": {
+    "purpose": "Enable quick access to commands and navigation via keyboard.",
+    "description": "A search-driven interface that lets users quickly find and execute commands, navigate to sections, or access features by typing. Usually triggered with a keyboard shortcut (like Cmd+K) and features fuzzy search matching. Popular in developer tools and modern applications for power-user access.",
+    "functionalAreas": [
+      "Navigation",
+      "Search"
+    ],
+    "userIntents": [
+      "Quickly execute commands",
+      "Find features by typing",
+      "Navigate without mouse",
+      "Discover available actions"
+    ],
+    "exampleUseCases": [
+      "Application Command Palette",
+      "Settings Shortcut Access",
+      "Help Search",
+      "Navigation Search",
+      "Feature Discovery",
+      "Developer Tools Access",
+      "Document Outline Search"
+    ],
+    "useWhen": [
+      "Use this component for power-user access to commands and features.",
+      "Use this component in applications with many commands or features.",
+      "Use this component to enable keyboard-driven workflows.",
+      "Use this component for discovering lesser-known features."
+    ],
+    "avoidWhen": [
+      "Avoid this component in simple applications with few commands.",
+      "Avoid this component without a clear keyboard shortcut trigger.",
+      "Avoid this component on mobile platforms.",
+      "Avoid this component without good command descriptions for discoverability."
+    ],
+    "relatedComponents": [
+      "Menu",
+      "SearchNavigation",
+      "Navigation"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

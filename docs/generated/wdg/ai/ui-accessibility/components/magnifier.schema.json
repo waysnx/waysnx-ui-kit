@@ -1,0 +1,25 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-accessibility/magnifier.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Magnifier Component Provides a magnified view of page content for users with low vision Follows cursor/scroll position",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": true,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-accessibility",
+    "version": "1.0.0"
+  },
+  "properties": {},
+  "required": [],
+  "title": "Magnifier",
+  "type": "object"
+}

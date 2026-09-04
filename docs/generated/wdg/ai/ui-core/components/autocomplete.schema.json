@@ -1,0 +1,115 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-core/autocomplete.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Enable users to search and select from a filtered list of options as they type.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-core",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "ariaDescribedBy": {
+      "description": "",
+      "type": "string"
+    },
+    "ariaLabel": {
+      "description": "",
+      "type": "string"
+    },
+    "disabled": {
+      "description": "",
+      "type": "boolean"
+    },
+    "error": {
+      "description": "",
+      "type": "string"
+    },
+    "fetchOptions": {
+      "description": "",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "hint": {
+      "description": "",
+      "type": "string"
+    },
+    "id": {
+      "description": "",
+      "type": "string"
+    },
+    "label": {
+      "description": "",
+      "type": "string"
+    },
+    "minChars": {
+      "description": "",
+      "type": "number"
+    },
+    "noOptionsText": {
+      "description": "",
+      "type": "string"
+    },
+    "onChange": {
+      "description": "",
+      "type": "string"
+    },
+    "onError": {
+      "description": "",
+      "type": "null"
+    },
+    "onLoadEnd": {
+      "description": "",
+      "type": "null"
+    },
+    "onLoadStart": {
+      "description": "",
+      "type": "null"
+    },
+    "onSelect": {
+      "description": "",
+      "enum": [
+        "(option: AutocompleteOption",
+        "null) => void"
+      ]
+    },
+    "options": {
+      "description": "",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "placeholder": {
+      "description": "",
+      "type": "string"
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    },
+    "xrefDisplayProp": {
+      "description": "",
+      "type": "string"
+    },
+    "xrefIdProp": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "title": "Autocomplete",
+  "type": "object"
+}

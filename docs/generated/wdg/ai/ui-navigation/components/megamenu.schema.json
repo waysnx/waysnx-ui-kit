@@ -1,0 +1,123 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-navigation/megamenu.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display large menu with multiple columns and rich content.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": true,
+    "isMemo": false,
+    "library": "ui-navigation",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "allowMultipleOpen": {
+      "description": "Allow multiple dropdowns open simultaneously",
+      "type": "boolean"
+    },
+    "ariaLabel": {
+      "description": "Accessible label for menu",
+      "type": "string"
+    },
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "closeOnItemClick": {
+      "description": "Close dropdown when item is clicked",
+      "type": "boolean"
+    },
+    "density": {
+      "description": "Component density",
+      "enum": [
+        "compact",
+        "normal",
+        "spacious"
+      ]
+    },
+    "gridColumns": {
+      "description": "Number of columns for mega menu grid",
+      "enum": [
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "gridGap": {
+      "description": "Gap between grid items",
+      "enum": [
+        "sm",
+        "md",
+        "lg"
+      ]
+    },
+    "hoverDelay": {
+      "description": "Delay in ms before opening dropdown on hover",
+      "type": "number"
+    },
+    "hoverToOpen": {
+      "description": "Enable hover to open dropdowns",
+      "type": "boolean"
+    },
+    "items": {
+      "description": "Items in this section",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "keyboardNav": {
+      "description": "Keyboard navigation enabled",
+      "type": "boolean"
+    },
+    "onDropdownClose": {
+      "description": "Callback when dropdown is closed",
+      "type": "string"
+    },
+    "onDropdownOpen": {
+      "description": "Callback when dropdown is opened",
+      "type": "string"
+    },
+    "onItemClick": {
+      "description": "Callback when item is clicked",
+      "type": "null"
+    },
+    "security": {
+      "description": "Security context for permission-based filtering",
+      "type": "string"
+    },
+    "showBadges": {
+      "description": "Whether to show badges",
+      "type": "boolean"
+    },
+    "showIcons": {
+      "description": "Whether to show icons",
+      "type": "boolean"
+    },
+    "style": {
+      "description": "Additional styles",
+      "type": "string"
+    },
+    "variant": {
+      "description": "Theme variant",
+      "enum": [
+        "default",
+        "minimal",
+        "elevated"
+      ]
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "title": "MegaMenu",
+  "type": "object"
+}

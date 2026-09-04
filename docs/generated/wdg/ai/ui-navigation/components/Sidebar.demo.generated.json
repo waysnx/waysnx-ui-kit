@@ -1,0 +1,160 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "sidebar",
+    "name": "Sidebar",
+    "package": "@waysnx/ui-navigation",
+    "export": "Sidebar"
+  },
+  "categories": [
+    {
+      "id": "sizes",
+      "title": "Sizes",
+      "description": "",
+      "examples": [
+        {
+          "id": "sizes-expandedWidth-string",
+          "title": "Expanded Width: string",
+          "description": "Demonstrates the string expandedWidth.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "expandedWidth": "string"
+          },
+          "keywords": [
+            "expandedWidth",
+            "string"
+          ]
+        },
+        {
+          "id": "sizes-expandedWidth-number",
+          "title": "Expanded Width: number",
+          "description": "Demonstrates the number expandedWidth.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "expandedWidth": "number"
+          },
+          "keywords": [
+            "expandedWidth",
+            "number"
+          ]
+        },
+        {
+          "id": "sizes-collapsedWidth-string",
+          "title": "Collapsed Width: string",
+          "description": "Demonstrates the string collapsedWidth.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "collapsedWidth": "string"
+          },
+          "keywords": [
+            "collapsedWidth",
+            "string"
+          ]
+        },
+        {
+          "id": "sizes-collapsedWidth-number",
+          "title": "Collapsed Width: number",
+          "description": "Demonstrates the number collapsedWidth.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "collapsedWidth": "number"
+          },
+          "keywords": [
+            "collapsedWidth",
+            "number"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-isCollapsed-false",
+          "title": "Disabled State",
+          "description": "Example with isCollapsed enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "isCollapsed": false
+          },
+          "keywords": [
+            "isCollapsed",
+            "state"
+          ]
+        },
+        {
+          "id": "states-isCollapsed-true",
+          "title": "Enabled State",
+          "description": "Example with isCollapsed enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "isCollapsed": true
+          },
+          "keywords": [
+            "isCollapsed",
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "variants",
+      "title": "Variants",
+      "description": "",
+      "examples": [
+        {
+          "id": "variants-colorScheme-light",
+          "title": "Color Scheme: light",
+          "description": "Demonstrates the light colorScheme.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "colorScheme": "light"
+          },
+          "keywords": [
+            "colorScheme",
+            "light"
+          ]
+        },
+        {
+          "id": "variants-colorScheme-dark",
+          "title": "Color Scheme: dark",
+          "description": "Demonstrates the dark colorScheme.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "colorScheme": "dark"
+          },
+          "keywords": [
+            "colorScheme",
+            "dark"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:02.724890",
+  "stats": {
+    "examplesGenerated": 8,
+    "categoriesGenerated": 3
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "id": "ui-accessibility:floatingbutton",
+  "name": "FloatingButton",
+  "slug": "floating-button",
+  "library": "ui-accessibility",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Floating Button",
+  "purpose": "FloatingButton Component A floating button that triggers the accessibility center",
+  "shortDescription": "FloatingButton Component A floating button that triggers the accessibility center",
+  "longDescription": "FloatingButton Component A floating button that triggers the accessibility center",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Accessibility/FloatingButton",
+      "storyId": "accessibility-floatingbutton",
+      "url": "https://uikit.waysnx.tech/?path=/docs/accessibility-floatingbutton",
+      "stories": [],
+      "tags": [],
+      "source": "FloatingButton.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use FloatingButton for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a FloatingButton"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [
+      "AccessibilityCenter"
+    ],
+    "related": [
+      "FloatingButtonProps"
+    ],
+    "alternatives": [],
+    "parentComponents": [
+      "AccessibilityCenter"
+    ],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useTranslation": "unknown",
+    "FloatingButtonProps": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [
+    "forwardRef"
+  ],
+  "contextsUsed": [],
+  "forwardRef": true,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-primary",
+    "--wx-color-primary-contrast",
+    "--wx-color-primary-hover",
+    "--wx-shadow-focus",
+    "--wx-shadow-lg",
+    "--wx-shadow-xl"
+  ],
+  "cssClasses": [
+    "wx-floating-button",
+    "wx-floating-button--bottom-right",
+    "wx-floating-button--bottom-left",
+    "wx-floating-button--top-right",
+    "wx-floating-button--top-left",
+    "wx-reduced-motion"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-color-primary": {
+      "properties": [
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-floating-button"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary-contrast": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-floating-button"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary-hover": {
+      "properties": [
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-floating-button:hover"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {
+    "--wx-shadow-lg": {
+      "properties": [
+        "box-shadow"
+      ],
+      "selectors": [
+        ".wx-floating-button"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-shadow-xl": {
+      "properties": [
+        "box-shadow"
+      ],
+      "selectors": [
+        ".wx-floating-button:hover"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-shadow-focus": {
+      "properties": [
+        "outline"
+      ],
+      "selectors": [
+        ".wx-floating-button:focus-visible"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\FloatingButton\\FloatingButton.tsx",
+  "keywords": [
+    "floatingbutton",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [
+    "action control",
+    "clickable element"
+  ],
+  "naturalLanguageQueries": [
+    {
+      "query": "Add a floatingbutton",
+      "context": "ui",
+      "intent": "create"
+    },
+    {
+      "query": "Create a floatingbutton action",
+      "context": "interaction",
+      "intent": "create"
+    }
+  ],
+  "recommendedPrompts": [
+    "Create a FloatingButton with loading state",
+    "Show me a FloatingButton with tooltip",
+    "Generate a FloatingButton with icon",
+    "Build a FloatingButton for form submission",
+    "Design a FloatingButton for delete action"
+  ],
+  "componentIntent": "Provide FloatingButton functionality",
+  "semanticCategory": "display",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.165658",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "3052c87a",
+  "metadata": {
+    "purpose": "Provide persistent access to important features via floating button.",
+    "description": "A button that floats above page content, typically in a corner, providing constant access to important features or actions. Often used for accessibility features, live chat, or frequent actions. Should be non-intrusive and dismissible.",
+    "functionalAreas": [
+      "Actions",
+      "Accessibility"
+    ],
+    "userIntents": [
+      "Access features quickly",
+      "Get help easily",
+      "Start action",
+      "Find accessibility features"
+    ],
+    "exampleUseCases": [
+      "Accessibility Button",
+      "Help Button",
+      "Chat Button",
+      "Feedback Button",
+      "Action Button",
+      "Floating Action Button",
+      "Quick Access Button"
+    ],
+    "useWhen": [
+      "Use this component for persistent access to important features.",
+      "Use this component for accessibility feature access.",
+      "Use this component with clear, obvious placement.",
+      "Use this component with dismissible or movable capability."
+    ],
+    "avoidWhen": [
+      "Avoid this component without important feature justification.",
+      "Avoid this component that covers essential content.",
+      "Avoid this component without accessibility consideration.",
+      "Avoid this component with too many floating buttons."
+    ],
+    "relatedComponents": [
+      "Button",
+      "FloatingMenu",
+      "QuickActions"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

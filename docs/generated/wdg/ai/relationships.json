@@ -1,0 +1,4244 @@
+{
+  "version": "2.0.0",
+  "generatedAt": "2026-09-03T20:03:10.917999",
+  "totalLibraries": 18,
+  "totalComponents": 242,
+  "relationshipModel": {
+    "uses": "Components this component directly imports or uses",
+    "usedBy": "Components that import or use this component",
+    "related": "Related components in the same domain",
+    "alternatives": "Alternative implementations for this component",
+    "parentComponents": "Components that contain or wrap this component",
+    "childComponents": "Components this component uses or renders"
+  },
+  "targetIdentityResolution": {
+    "strategy": "library-qualified IDs (e.g., ui-core:Button)",
+    "totalTargets": 767,
+    "resolvedTargets": 737,
+    "unresolvedTargets": 30,
+    "crossLibraryReferences": 515,
+    "sameLibraryReferences": 222,
+    "ambiguousResolutions": 0
+  },
+  "relationships": [
+    {
+      "from": "AccessibilityCenter",
+      "library": "ui-accessibility",
+      "id": "ui-accessibility:accessibilitycenter",
+      "relationships": {
+        "uses": [
+          "ui-accessibility:floatingbutton"
+        ],
+        "usedBy": [],
+        "related": [
+          "AccessibilityCenterProps",
+          "ui-accessibility:floatingbutton"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-accessibility:floatingbutton"
+        ]
+      }
+    },
+    {
+      "from": "FloatingButton",
+      "library": "ui-accessibility",
+      "id": "ui-accessibility:floatingbutton",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-accessibility:accessibilitycenter"
+        ],
+        "related": [
+          "FloatingButtonProps"
+        ],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-accessibility:accessibilitycenter"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Magnifier",
+      "library": "ui-accessibility",
+      "id": "ui-accessibility:magnifier",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ReadingGuide",
+      "library": "ui-accessibility",
+      "id": "ui-accessibility:readingguide",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "SkipLinks",
+      "library": "ui-accessibility",
+      "id": "ui-accessibility:skiplinks",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ChatInput",
+      "library": "ui-communication",
+      "id": "ui-communication:chatinput",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-communication:chatwindow",
+          "ui-communication:threadpanel"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-communication:chatwindow",
+          "ui-communication:threadpanel"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ChatWindow",
+      "library": "ui-communication",
+      "id": "ui-communication:chatwindow",
+      "relationships": {
+        "uses": [
+          "ui-communication:chatinput",
+          "ui-communication:messagebubble",
+          "ui-communication:typingindicator"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-communication:chatinput",
+          "ui-communication:messagebubble",
+          "ui-communication:typingindicator"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-communication:chatinput",
+          "ui-communication:messagebubble",
+          "ui-communication:typingindicator"
+        ]
+      }
+    },
+    {
+      "from": "ConversationList",
+      "library": "ui-communication",
+      "id": "ui-communication:conversationlist",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "EmojiPicker",
+      "library": "ui-communication",
+      "id": "ui-communication:emojipicker",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "MentionInput",
+      "library": "ui-communication",
+      "id": "ui-communication:mentioninput",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "MessageBubble",
+      "library": "ui-communication",
+      "id": "ui-communication:messagebubble",
+      "relationships": {
+        "uses": [
+          "ui-communication:reactionbar",
+          "ui-communication:readreceipts"
+        ],
+        "usedBy": [
+          "ui-communication:chatwindow",
+          "ui-communication:threadpanel"
+        ],
+        "related": [
+          "ui-communication:reactionbar",
+          "ui-communication:readreceipts"
+        ],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-communication:chatwindow",
+          "ui-communication:threadpanel"
+        ],
+        "childComponents": [
+          "ui-communication:reactionbar",
+          "ui-communication:readreceipts"
+        ]
+      }
+    },
+    {
+      "from": "NotificationBadge",
+      "library": "ui-communication",
+      "id": "ui-communication:notificationbadge",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "NotificationList",
+      "library": "ui-communication",
+      "id": "ui-communication:notificationlist",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "PresenceIndicator",
+      "library": "ui-communication",
+      "id": "ui-communication:presenceindicator",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ReactionBar",
+      "library": "ui-communication",
+      "id": "ui-communication:reactionbar",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-communication:messagebubble"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-communication:messagebubble"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ReadReceipts",
+      "library": "ui-communication",
+      "id": "ui-communication:readreceipts",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-communication:messagebubble"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-communication:messagebubble"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ThreadPanel",
+      "library": "ui-communication",
+      "id": "ui-communication:threadpanel",
+      "relationships": {
+        "uses": [
+          "ui-communication:chatinput",
+          "ui-communication:messagebubble"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-communication:chatinput",
+          "ui-communication:messagebubble"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-communication:chatinput",
+          "ui-communication:messagebubble"
+        ]
+      }
+    },
+    {
+      "from": "TypingIndicator",
+      "library": "ui-communication",
+      "id": "ui-communication:typingindicator",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-communication:chatwindow"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-communication:chatwindow"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "UserPresenceList",
+      "library": "ui-communication",
+      "id": "ui-communication:userpresencelist",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "VoiceMessage",
+      "library": "ui-communication",
+      "id": "ui-communication:voicemessage",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Autocomplete",
+      "library": "ui-core",
+      "id": "ui-core:autocomplete",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Button",
+      "library": "ui-core",
+      "id": "ui-core:button",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-security:accessdenied",
+          "ui-security:activesessions",
+          "ui-security:activityfeed",
+          "ui-security:audithistorytable",
+          "ui-security:auth0loginbutton",
+          "ui-security:authenticatorqrcode",
+          "ui-security:backupcodescard",
+          "ui-security:biometricbutton",
+          "ui-security:changepasswordform",
+          "ui-security:concurrentsessiondialog",
+          "ui-security:deviceverificationdialog",
+          "ui-security:emailverificationcard",
+          "ui-security:forgotpasswordform",
+          "ui-security:githubloginbutton",
+          "ui-security:googleloginbutton",
+          "ui-security:keepalivebutton",
+          "ui-security:mfasettingspanel",
+          "ui-security:mfasetupwizard",
+          "ui-security:mfastatus",
+          "ui-security:mfaverificationdialog",
+          "ui-security:microsoftloginbutton",
+          "ui-security:otpresendbutton",
+          "ui-security:oktaloginbutton",
+          "ui-security:passwordageindicator",
+          "ui-security:passwordpolicypanel",
+          "ui-security:phoneverificationcard",
+          "ui-security:privacysettingspanel",
+          "ui-security:secureclipboardbutton",
+          "ui-security:securedownloadbutton",
+          "ui-security:secureuploader",
+          "ui-security:securityalert",
+          "ui-security:securityalertspanel",
+          "ui-security:securitybanner",
+          "ui-security:securityeventlog",
+          "ui-security:securitykeybutton",
+          "ui-security:securitylogspanel",
+          "ui-security:securitysettingspanel",
+          "ui-security:securitystatuscard",
+          "ui-security:sensitivetext",
+          "ui-security:sessionpolicypanel",
+          "ui-security:sessiontimeoutdialog",
+          "ui-security:trusteddevicespanel",
+          "ui-security:unauthorizedpage"
+        ],
+        "related": [],
+        "alternatives": [
+          "Iconbutton"
+        ],
+        "parentComponents": [
+          "ui-security:accessdenied",
+          "ui-security:activesessions",
+          "ui-security:activityfeed",
+          "ui-security:audithistorytable",
+          "ui-security:auth0loginbutton",
+          "ui-security:authenticatorqrcode",
+          "ui-security:backupcodescard",
+          "ui-security:biometricbutton",
+          "ui-security:changepasswordform",
+          "ui-security:concurrentsessiondialog",
+          "ui-security:deviceverificationdialog",
+          "ui-security:emailverificationcard",
+          "ui-security:forgotpasswordform",
+          "ui-security:githubloginbutton",
+          "ui-security:googleloginbutton",
+          "ui-security:keepalivebutton",
+          "ui-security:mfasettingspanel",
+          "ui-security:mfasetupwizard",
+          "ui-security:mfastatus",
+          "ui-security:mfaverificationdialog",
+          "ui-security:microsoftloginbutton",
+          "ui-security:otpresendbutton",
+          "ui-security:oktaloginbutton",
+          "ui-security:passwordageindicator",
+          "ui-security:passwordpolicypanel",
+          "ui-security:phoneverificationcard",
+          "ui-security:privacysettingspanel",
+          "ui-security:secureclipboardbutton",
+          "ui-security:securedownloadbutton",
+          "ui-security:secureuploader",
+          "ui-security:securityalert",
+          "ui-security:securityalertspanel",
+          "ui-security:securitybanner",
+          "ui-security:securityeventlog",
+          "ui-security:securitykeybutton",
+          "ui-security:securitylogspanel",
+          "ui-security:securitysettingspanel",
+          "ui-security:securitystatuscard",
+          "ui-security:sensitivetext",
+          "ui-security:sessionpolicypanel",
+          "ui-security:sessiontimeoutdialog",
+          "ui-security:trusteddevicespanel",
+          "ui-security:unauthorizedpage"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Checkbox",
+      "library": "ui-core",
+      "id": "ui-core:checkbox",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-security:passwordpolicypanel",
+          "ui-security:privacysettingspanel",
+          "ui-security:securityalertspanel",
+          "ui-security:sessionpolicypanel",
+          "ui-security:trusteddeviceselector"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-security:passwordpolicypanel",
+          "ui-security:privacysettingspanel",
+          "ui-security:securityalertspanel",
+          "ui-security:sessionpolicypanel",
+          "ui-security:trusteddeviceselector"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Currency",
+      "library": "ui-core",
+      "id": "ui-core:currency",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "DatePicker",
+      "library": "ui-core",
+      "id": "ui-core:datepicker",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "DateRangePicker",
+      "library": "ui-core",
+      "id": "ui-core:daterangepicker",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "DateTimePicker",
+      "library": "ui-core",
+      "id": "ui-core:datetimepicker",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ErrorMessage",
+      "library": "ui-core",
+      "id": "ui-core:errormessage",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "FileUpload",
+      "library": "ui-core",
+      "id": "ui-core:fileupload",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Hidden",
+      "library": "ui-core",
+      "id": "ui-core:hidden",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "HtmlContent",
+      "library": "ui-core",
+      "id": "ui-core:htmlcontent",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "HtmlEditor",
+      "library": "ui-core",
+      "id": "ui-core:htmleditor",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "IFrame",
+      "library": "ui-core",
+      "id": "ui-core:iframe",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Image",
+      "library": "ui-core",
+      "id": "ui-core:image",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Input",
+      "library": "ui-core",
+      "id": "ui-core:input",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-security:changepasswordform",
+          "ui-security:emailverificationcard",
+          "ui-security:forgotpasswordform",
+          "ui-security:maskedinput",
+          "ui-security:phoneverificationcard",
+          "ui-security:secureinput"
+        ],
+        "related": [],
+        "alternatives": [
+          "ui-core:textarea"
+        ],
+        "parentComponents": [
+          "ui-security:changepasswordform",
+          "ui-security:emailverificationcard",
+          "ui-security:forgotpasswordform",
+          "ui-security:maskedinput",
+          "ui-security:phoneverificationcard",
+          "ui-security:secureinput"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Link",
+      "library": "ui-core",
+      "id": "ui-core:link",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Radio",
+      "library": "ui-core",
+      "id": "ui-core:radio",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Select",
+      "library": "ui-core",
+      "id": "ui-core:select",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [
+          "Combobox"
+        ],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Slider",
+      "library": "ui-core",
+      "id": "ui-core:slider",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "SpeechToTextTextarea",
+      "library": "ui-core",
+      "id": "ui-core:speechtotexttextarea",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Switch",
+      "library": "ui-core",
+      "id": "ui-core:switch",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Textarea",
+      "library": "ui-core",
+      "id": "ui-core:textarea",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [
+          "ui-core:input"
+        ],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "TimePicker",
+      "library": "ui-core",
+      "id": "ui-core:timepicker",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Tree",
+      "library": "ui-core",
+      "id": "ui-core:tree",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ChartWidget",
+      "library": "ui-dashboard",
+      "id": "ui-dashboard:chartwidget",
+      "relationships": {
+        "uses": [
+          "ui-dashboard:widget"
+        ],
+        "usedBy": [],
+        "related": [
+          "ChartWidgetProps",
+          "ui-dashboard:widget"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-dashboard:widget"
+        ]
+      }
+    },
+    {
+      "from": "Dashboard",
+      "library": "ui-dashboard",
+      "id": "ui-dashboard:dashboard",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [
+          "DashboardConfig",
+          "DashboardProvider",
+          "DashboardTheme"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "DashboardFilterBar",
+      "library": "ui-dashboard",
+      "id": "ui-dashboard:dashboardfilterbar",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [
+          "FilterConfig"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "DashboardFooter",
+      "library": "ui-dashboard",
+      "id": "ui-dashboard:dashboardfooter",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "DashboardHeader",
+      "library": "ui-dashboard",
+      "id": "ui-dashboard:dashboardheader",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "DashboardSearch",
+      "library": "ui-dashboard",
+      "id": "ui-dashboard:dashboardsearch",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "DashboardSidebar",
+      "library": "ui-dashboard",
+      "id": "ui-dashboard:dashboardsidebar",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "DashboardToolbar",
+      "library": "ui-dashboard",
+      "id": "ui-dashboard:dashboardtoolbar",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "HtmlWidget",
+      "library": "ui-dashboard",
+      "id": "ui-dashboard:htmlwidget",
+      "relationships": {
+        "uses": [
+          "ui-dashboard:widget"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-dashboard:widget"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-dashboard:widget"
+        ]
+      }
+    },
+    {
+      "from": "KPICard",
+      "library": "ui-dashboard",
+      "id": "ui-dashboard:kpicard",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [
+          "KPIData",
+          "MetricData",
+          "StatusType",
+          "TrendDirection"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "MarkdownWidget",
+      "library": "ui-dashboard",
+      "id": "ui-dashboard:markdownwidget",
+      "relationships": {
+        "uses": [
+          "ui-dashboard:widget"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-dashboard:widget"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-dashboard:widget"
+        ]
+      }
+    },
+    {
+      "from": "Widget",
+      "library": "ui-dashboard",
+      "id": "ui-dashboard:widget",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-dashboard:chartwidget",
+          "ui-dashboard:htmlwidget",
+          "ui-dashboard:markdownwidget"
+        ],
+        "related": [
+          "WidgetElevation",
+          "WidgetVariant"
+        ],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-dashboard:chartwidget",
+          "ui-dashboard:htmlwidget",
+          "ui-dashboard:markdownwidget"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "WidgetGrid",
+      "library": "ui-dashboard",
+      "id": "ui-dashboard:widgetgrid",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "CodeEditor",
+      "library": "ui-data",
+      "id": "ui-data:codeeditor",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "CodeViewer",
+      "library": "ui-data",
+      "id": "ui-data:codeviewer",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "JSONEditor",
+      "library": "ui-data",
+      "id": "ui-data:jsoneditor",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "MarkdownEditor",
+      "library": "ui-data",
+      "id": "ui-data:markdowneditor",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "MarkdownViewer",
+      "library": "ui-data",
+      "id": "ui-data:markdownviewer",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "XMLViewer",
+      "library": "ui-data",
+      "id": "ui-data:xmlviewer",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "AISectionPlaceholder",
+      "library": "ui-docs",
+      "id": "ui-docs:aisectionplaceholder",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [
+          "PlaceholderWrapper"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ComponentHero",
+      "library": "ui-docs",
+      "id": "ui-docs:componenthero",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "DependencyGraphPlaceholder",
+      "library": "ui-docs",
+      "id": "ui-docs:dependencygraphplaceholder",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [
+          "PlaceholderWrapper"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "DocumentationDemoViewer",
+      "library": "ui-docs",
+      "id": "ui-docs:documentationdemoviewer",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [
+          "DemoCategory",
+          "DemoExample",
+          "DocumentationDemoViewerProps"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "LiveComponentRenderer",
+      "library": "ui-docs",
+      "id": "ui-docs:livecomponentrenderer",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [
+          "LiveComponentRendererProps"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "MarkdownRenderer",
+      "library": "ui-docs",
+      "id": "ui-docs:markdownrenderer",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "PlaygroundPlaceholder",
+      "library": "ui-docs",
+      "id": "ui-docs:playgroundplaceholder",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [
+          "PlaceholderWrapper"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "PropsTable",
+      "library": "ui-docs",
+      "id": "ui-docs:propstable",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ThemeExplorerPlaceholder",
+      "library": "ui-docs",
+      "id": "ui-docs:themeexplorerplaceholder",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [
+          "PlaceholderWrapper"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "TokenViewerPlaceholder",
+      "library": "ui-docs",
+      "id": "ui-docs:tokenviewerplaceholder",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [
+          "PlaceholderWrapper"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "WorkflowViewerPlaceholder",
+      "library": "ui-docs",
+      "id": "ui-docs:workflowviewerplaceholder",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [
+          "PlaceholderWrapper"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "_PlaceholderWrapper",
+      "library": "ui-docs",
+      "id": "ui-docs:_placeholderwrapper",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Alert",
+      "library": "ui-feedback",
+      "id": "ui-feedback:alert",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-security:changepasswordform",
+          "ui-security:deviceverificationdialog",
+          "ui-security:emailverificationcard",
+          "ui-security:forgotpasswordform",
+          "ui-security:otpverificationcard",
+          "ui-security:phoneverificationcard"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-security:changepasswordform",
+          "ui-security:deviceverificationdialog",
+          "ui-security:emailverificationcard",
+          "ui-security:forgotpasswordform",
+          "ui-security:otpverificationcard",
+          "ui-security:phoneverificationcard"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Badge",
+      "library": "ui-feedback",
+      "id": "ui-feedback:badge",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-security:activesessions",
+          "ui-security:activityfeed",
+          "ui-security:audithistorytable",
+          "ui-security:audittimeline",
+          "ui-security:backupcodescard",
+          "ui-security:concurrentsessiondialog",
+          "ui-security:encryptionbadge",
+          "ui-security:loginhistory",
+          "ui-security:mfastatus",
+          "ui-security:passwordageindicator",
+          "ui-security:riskscorebadge",
+          "ui-security:securityalert",
+          "ui-security:securityeventlog",
+          "ui-security:securitystatuscard"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-security:activesessions",
+          "ui-security:activityfeed",
+          "ui-security:audithistorytable",
+          "ui-security:audittimeline",
+          "ui-security:backupcodescard",
+          "ui-security:concurrentsessiondialog",
+          "ui-security:encryptionbadge",
+          "ui-security:loginhistory",
+          "ui-security:mfastatus",
+          "ui-security:passwordageindicator",
+          "ui-security:riskscorebadge",
+          "ui-security:securityalert",
+          "ui-security:securityeventlog",
+          "ui-security:securitystatuscard"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "CircularProgress",
+      "library": "ui-feedback",
+      "id": "ui-feedback:circularprogress",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ConfirmDialog",
+      "library": "ui-feedback",
+      "id": "ui-feedback:confirmdialog",
+      "relationships": {
+        "uses": [
+          "ui-feedback:modal"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-feedback:modal"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-feedback:modal"
+        ]
+      }
+    },
+    {
+      "from": "Drawer",
+      "library": "ui-feedback",
+      "id": "ui-feedback:drawer",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "EmptyState",
+      "library": "ui-feedback",
+      "id": "ui-feedback:emptystate",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Modal",
+      "library": "ui-feedback",
+      "id": "ui-feedback:modal",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-feedback:confirmdialog",
+          "ui-security:mfaverificationdialog",
+          "ui-security:sessiontimeoutdialog"
+        ],
+        "related": [],
+        "alternatives": [
+          "Dialog"
+        ],
+        "parentComponents": [
+          "ui-feedback:confirmdialog",
+          "ui-security:mfaverificationdialog",
+          "ui-security:sessiontimeoutdialog"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Progress",
+      "library": "ui-feedback",
+      "id": "ui-feedback:progress",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Skeleton",
+      "library": "ui-feedback",
+      "id": "ui-feedback:skeleton",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Spinner",
+      "library": "ui-feedback",
+      "id": "ui-feedback:spinner",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Toast",
+      "library": "ui-feedback",
+      "id": "ui-feedback:toast",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Tooltip",
+      "library": "ui-feedback",
+      "id": "ui-feedback:tooltip",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [
+          "Popover"
+        ],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "DocumentPreview",
+      "library": "ui-files",
+      "id": "ui-files:documentpreview",
+      "relationships": {
+        "uses": [
+          "ui-files:pdfviewer"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-files:pdfviewer"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-files:pdfviewer"
+        ]
+      }
+    },
+    {
+      "from": "PDFViewer",
+      "library": "ui-files",
+      "id": "ui-files:pdfviewer",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-files:documentpreview"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-files:documentpreview"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Grid",
+      "library": "ui-grid-builder",
+      "id": "ui-grid-builder:grid",
+      "relationships": {
+        "uses": [
+          "ui-grid-builder:gridactions",
+          "ui-grid-builder:gridcell",
+          "ui-grid-builder:gridpagination",
+          "ui-grid-builder:gridselectionbar",
+          "ui-grid-builder:gridtoolbar"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-grid-builder:gridactions",
+          "ui-grid-builder:gridcell",
+          "ui-grid-builder:gridpagination",
+          "ui-grid-builder:gridselectionbar",
+          "ui-grid-builder:gridtoolbar"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "GridActions",
+      "library": "ui-grid-builder",
+      "id": "ui-grid-builder:gridactions",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "GridCell",
+      "library": "ui-grid-builder",
+      "id": "ui-grid-builder:gridcell",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "GridPagination",
+      "library": "ui-grid-builder",
+      "id": "ui-grid-builder:gridpagination",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "GridSelectionBar",
+      "library": "ui-grid-builder",
+      "id": "ui-grid-builder:gridselectionbar",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "GridToolbar",
+      "library": "ui-grid-builder",
+      "id": "ui-grid-builder:gridtoolbar",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Accordion",
+      "library": "ui-layout",
+      "id": "ui-layout:accordion",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Breadcrumb",
+      "library": "ui-layout",
+      "id": "ui-layout:breadcrumb",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Card",
+      "library": "ui-layout",
+      "id": "ui-layout:card",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-security:emailverificationcard",
+          "ui-security:otpverificationcard",
+          "ui-security:phoneverificationcard"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-security:emailverificationcard",
+          "ui-security:otpverificationcard",
+          "ui-security:phoneverificationcard"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Collapsible",
+      "library": "ui-layout",
+      "id": "ui-layout:collapsible",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Column",
+      "library": "ui-layout",
+      "id": "ui-layout:column",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Container",
+      "library": "ui-layout",
+      "id": "ui-layout:container",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Divider",
+      "library": "ui-layout",
+      "id": "ui-layout:divider",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Grid",
+      "library": "ui-layout",
+      "id": "ui-layout:grid",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "PageContent",
+      "library": "ui-layout",
+      "id": "ui-layout:pagecontent",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "PageHeader",
+      "library": "ui-layout",
+      "id": "ui-layout:pageheader",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "PageLayout",
+      "library": "ui-layout",
+      "id": "ui-layout:pagelayout",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "PageTabs",
+      "library": "ui-layout",
+      "id": "ui-layout:pagetabs",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Panel",
+      "library": "ui-layout",
+      "id": "ui-layout:panel",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Row",
+      "library": "ui-layout",
+      "id": "ui-layout:row",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Section",
+      "library": "ui-layout",
+      "id": "ui-layout:section",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "SidebarLayout",
+      "library": "ui-layout",
+      "id": "ui-layout:sidebarlayout",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Spacer",
+      "library": "ui-layout",
+      "id": "ui-layout:spacer",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "SplitLayout",
+      "library": "ui-layout",
+      "id": "ui-layout:splitlayout",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Stack",
+      "library": "ui-layout",
+      "id": "ui-layout:stack",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-security:accessdenied",
+          "ui-security:activesessions",
+          "ui-security:activityfeed",
+          "ui-security:backupcodescard",
+          "ui-security:concurrentsessiondialog",
+          "ui-security:loginhistory",
+          "ui-security:mfasettingspanel",
+          "ui-security:mfasetupwizard",
+          "ui-security:mfastatus",
+          "ui-security:mfaverificationdialog",
+          "ui-security:pininput",
+          "ui-security:passwordpolicypanel",
+          "ui-security:privacysettingspanel",
+          "ui-security:secureuploader",
+          "ui-security:securityalertspanel",
+          "ui-security:securityeventlog",
+          "ui-security:securitylogspanel",
+          "ui-security:securitysettingspanel",
+          "ui-security:sessionpolicypanel",
+          "ui-security:sessiontimeoutdialog",
+          "ui-security:trusteddeviceselector",
+          "ui-security:trusteddevicespanel",
+          "ui-security:unauthorizedpage"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-security:accessdenied",
+          "ui-security:activesessions",
+          "ui-security:activityfeed",
+          "ui-security:backupcodescard",
+          "ui-security:concurrentsessiondialog",
+          "ui-security:loginhistory",
+          "ui-security:mfasettingspanel",
+          "ui-security:mfasetupwizard",
+          "ui-security:mfastatus",
+          "ui-security:mfaverificationdialog",
+          "ui-security:pininput",
+          "ui-security:passwordpolicypanel",
+          "ui-security:privacysettingspanel",
+          "ui-security:secureuploader",
+          "ui-security:securityalertspanel",
+          "ui-security:securityeventlog",
+          "ui-security:securitylogspanel",
+          "ui-security:securitysettingspanel",
+          "ui-security:sessionpolicypanel",
+          "ui-security:sessiontimeoutdialog",
+          "ui-security:trusteddeviceselector",
+          "ui-security:trusteddevicespanel",
+          "ui-security:unauthorizedpage"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Stepper",
+      "library": "ui-layout",
+      "id": "ui-layout:stepper",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Tabs",
+      "library": "ui-layout",
+      "id": "ui-layout:tabs",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Wizard",
+      "library": "ui-layout",
+      "id": "ui-layout:wizard",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "AddressAutocomplete",
+      "library": "ui-maps",
+      "id": "ui-maps:addressautocomplete",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "AddressSelector",
+      "library": "ui-maps",
+      "id": "ui-maps:addressselector",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "CurrentLocationButton",
+      "library": "ui-maps",
+      "id": "ui-maps:currentlocationbutton",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "DistanceCalculator",
+      "library": "ui-maps",
+      "id": "ui-maps:distancecalculator",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "GeofenceEditor",
+      "library": "ui-maps",
+      "id": "ui-maps:geofenceeditor",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "LocationPicker",
+      "library": "ui-maps",
+      "id": "ui-maps:locationpicker",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "MapMarker",
+      "library": "ui-maps",
+      "id": "ui-maps:mapmarker",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "MapView",
+      "library": "ui-maps",
+      "id": "ui-maps:mapview",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "RoutePlanner",
+      "library": "ui-maps",
+      "id": "ui-maps:routeplanner",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "AudioPlayer",
+      "library": "ui-media",
+      "id": "ui-media:audioplayer",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Barcode",
+      "library": "ui-media",
+      "id": "ui-media:barcode",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "BarcodeScanner",
+      "library": "ui-media",
+      "id": "ui-media:barcodescanner",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ColorPicker",
+      "library": "ui-media",
+      "id": "ui-media:colorpicker",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Cropper",
+      "library": "ui-media",
+      "id": "ui-media:cropper",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ImageViewer",
+      "library": "ui-media",
+      "id": "ui-media:imageviewer",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "OCRScanner",
+      "library": "ui-media",
+      "id": "ui-media:ocrscanner",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "QRCode",
+      "library": "ui-media",
+      "id": "ui-media:qrcode",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-security:authenticatorqrcode"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-security:authenticatorqrcode"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "QRScanner",
+      "library": "ui-media",
+      "id": "ui-media:qrscanner",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "SignaturePad",
+      "library": "ui-media",
+      "id": "ui-media:signaturepad",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "SignatureViewer",
+      "library": "ui-media",
+      "id": "ui-media:signatureviewer",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "VideoPlayer",
+      "library": "ui-media",
+      "id": "ui-media:videoplayer",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Breadcrumb",
+      "library": "ui-navigation",
+      "id": "ui-navigation:breadcrumb",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-navigation:header"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-navigation:header"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "CommandPalette",
+      "library": "ui-navigation",
+      "id": "ui-navigation:commandpalette",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ContextMenu",
+      "library": "ui-navigation",
+      "id": "ui-navigation:contextmenu",
+      "relationships": {
+        "uses": [
+          "ui-navigation:menuitem"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-navigation:menuitem"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-navigation:menuitem"
+        ]
+      }
+    },
+    {
+      "from": "Drawer",
+      "library": "ui-navigation",
+      "id": "ui-navigation:drawer",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "FavoritesMenu",
+      "library": "ui-navigation",
+      "id": "ui-navigation:favoritesmenu",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Header",
+      "library": "ui-navigation",
+      "id": "ui-navigation:header",
+      "relationships": {
+        "uses": [
+          "ui-navigation:breadcrumb"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-navigation:breadcrumb"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-navigation:breadcrumb"
+        ]
+      }
+    },
+    {
+      "from": "MegaMenu",
+      "library": "ui-navigation",
+      "id": "ui-navigation:megamenu",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Menu",
+      "library": "ui-navigation",
+      "id": "ui-navigation:menu",
+      "relationships": {
+        "uses": [
+          "ui-navigation:menuitem"
+        ],
+        "usedBy": [
+          "ui-navigation:navbar",
+          "ui-navigation:sidebar"
+        ],
+        "related": [
+          "ui-navigation:menuitem"
+        ],
+        "alternatives": [
+          "Dropdown"
+        ],
+        "parentComponents": [
+          "ui-navigation:navbar",
+          "ui-navigation:sidebar"
+        ],
+        "childComponents": [
+          "ui-navigation:menuitem"
+        ]
+      }
+    },
+    {
+      "from": "MenuItem",
+      "library": "ui-navigation",
+      "id": "ui-navigation:menuitem",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-navigation:contextmenu",
+          "ui-navigation:menu"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-navigation:contextmenu",
+          "ui-navigation:menu"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Navbar",
+      "library": "ui-navigation",
+      "id": "ui-navigation:navbar",
+      "relationships": {
+        "uses": [
+          "ui-navigation:menu"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-navigation:menu"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-navigation:menu"
+        ]
+      }
+    },
+    {
+      "from": "NotificationCenter",
+      "library": "ui-navigation",
+      "id": "ui-navigation:notificationcenter",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "QuickActions",
+      "library": "ui-navigation",
+      "id": "ui-navigation:quickactions",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "RecentItems",
+      "library": "ui-navigation",
+      "id": "ui-navigation:recentitems",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "SearchNavigation",
+      "library": "ui-navigation",
+      "id": "ui-navigation:searchnavigation",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Sidebar",
+      "library": "ui-navigation",
+      "id": "ui-navigation:sidebar",
+      "relationships": {
+        "uses": [
+          "ui-navigation:menu"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-navigation:menu"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-navigation:menu"
+        ]
+      }
+    },
+    {
+      "from": "StepNavigation",
+      "library": "ui-navigation",
+      "id": "ui-navigation:stepnavigation",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Tabs",
+      "library": "ui-navigation",
+      "id": "ui-navigation:tabs",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "TreeMenu",
+      "library": "ui-navigation",
+      "id": "ui-navigation:treemenu",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "UserMenu",
+      "library": "ui-navigation",
+      "id": "ui-navigation:usermenu",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "WorkspaceSwitcher",
+      "library": "ui-navigation",
+      "id": "ui-navigation:workspaceswitcher",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "AccessDenied",
+      "library": "ui-security",
+      "id": "ui-security:accessdenied",
+      "relationships": {
+        "uses": [
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button",
+          "ui-layout:stack"
+        ]
+      }
+    },
+    {
+      "from": "ActiveSessions",
+      "library": "ui-security",
+      "id": "ui-security:activesessions",
+      "relationships": {
+        "uses": [
+          "ui-feedback:badge",
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-feedback:badge",
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-feedback:badge",
+          "ui-core:button",
+          "ui-layout:stack"
+        ]
+      }
+    },
+    {
+      "from": "ActivityFeed",
+      "library": "ui-security",
+      "id": "ui-security:activityfeed",
+      "relationships": {
+        "uses": [
+          "ui-feedback:badge",
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-feedback:badge",
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-feedback:badge",
+          "ui-core:button",
+          "ui-layout:stack"
+        ]
+      }
+    },
+    {
+      "from": "AuditHistoryTable",
+      "library": "ui-security",
+      "id": "ui-security:audithistorytable",
+      "relationships": {
+        "uses": [
+          "ui-feedback:badge",
+          "ui-core:button"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-feedback:badge",
+          "ui-core:button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-feedback:badge",
+          "ui-core:button"
+        ]
+      }
+    },
+    {
+      "from": "AuditTimeline",
+      "library": "ui-security",
+      "id": "ui-security:audittimeline",
+      "relationships": {
+        "uses": [
+          "ui-feedback:badge"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-feedback:badge"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-feedback:badge"
+        ]
+      }
+    },
+    {
+      "from": "Auth0LoginButton",
+      "library": "ui-security",
+      "id": "ui-security:auth0loginbutton",
+      "relationships": {
+        "uses": [
+          "ui-core:button"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button"
+        ]
+      }
+    },
+    {
+      "from": "AuthenticatorQRCode",
+      "library": "ui-security",
+      "id": "ui-security:authenticatorqrcode",
+      "relationships": {
+        "uses": [
+          "ui-core:button",
+          "ui-media:qrcode"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button",
+          "ui-media:qrcode"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button",
+          "ui-media:qrcode"
+        ]
+      }
+    },
+    {
+      "from": "BackupCodesCard",
+      "library": "ui-security",
+      "id": "ui-security:backupcodescard",
+      "relationships": {
+        "uses": [
+          "ui-feedback:badge",
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-feedback:badge",
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-feedback:badge",
+          "ui-core:button",
+          "ui-layout:stack"
+        ]
+      }
+    },
+    {
+      "from": "BiometricButton",
+      "library": "ui-security",
+      "id": "ui-security:biometricbutton",
+      "relationships": {
+        "uses": [
+          "ui-core:button"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button"
+        ]
+      }
+    },
+    {
+      "from": "CaptchaContainer",
+      "library": "ui-security",
+      "id": "ui-security:captchacontainer",
+      "relationships": {
+        "uses": [
+          "ui-security:googlecaptcha",
+          "ui-security:hcaptcha",
+          "ui-security:turnstilecaptcha"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-security:googlecaptcha",
+          "ui-security:hcaptcha",
+          "ui-security:turnstilecaptcha"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-security:googlecaptcha",
+          "ui-security:hcaptcha",
+          "ui-security:turnstilecaptcha"
+        ]
+      }
+    },
+    {
+      "from": "ChangePasswordForm",
+      "library": "ui-security",
+      "id": "ui-security:changepasswordform",
+      "relationships": {
+        "uses": [
+          "ui-feedback:alert",
+          "ui-core:button",
+          "ui-core:input"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-feedback:alert",
+          "ui-core:button",
+          "ui-core:input"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-feedback:alert",
+          "ui-core:button",
+          "ui-core:input"
+        ]
+      }
+    },
+    {
+      "from": "ConcurrentSessionDialog",
+      "library": "ui-security",
+      "id": "ui-security:concurrentsessiondialog",
+      "relationships": {
+        "uses": [
+          "ui-feedback:badge",
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-feedback:badge",
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-feedback:badge",
+          "ui-core:button",
+          "ui-layout:stack"
+        ]
+      }
+    },
+    {
+      "from": "DeviceVerificationDialog",
+      "library": "ui-security",
+      "id": "ui-security:deviceverificationdialog",
+      "relationships": {
+        "uses": [
+          "ui-feedback:alert",
+          "ui-core:button"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-feedback:alert",
+          "ui-core:button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-feedback:alert",
+          "ui-core:button"
+        ]
+      }
+    },
+    {
+      "from": "EmailVerificationCard",
+      "library": "ui-security",
+      "id": "ui-security:emailverificationcard",
+      "relationships": {
+        "uses": [
+          "ui-feedback:alert",
+          "ui-core:button",
+          "ui-layout:card",
+          "ui-core:input",
+          "ui-security:otpresendbutton"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-feedback:alert",
+          "ui-core:button",
+          "ui-layout:card",
+          "ui-core:input",
+          "ui-security:otpresendbutton"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-feedback:alert",
+          "ui-core:button",
+          "ui-layout:card",
+          "ui-core:input",
+          "ui-security:otpresendbutton"
+        ]
+      }
+    },
+    {
+      "from": "EncryptionBadge",
+      "library": "ui-security",
+      "id": "ui-security:encryptionbadge",
+      "relationships": {
+        "uses": [
+          "ui-feedback:badge"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-feedback:badge"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-feedback:badge"
+        ]
+      }
+    },
+    {
+      "from": "FeatureGate",
+      "library": "ui-security",
+      "id": "ui-security:featuregate",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ForgotPasswordForm",
+      "library": "ui-security",
+      "id": "ui-security:forgotpasswordform",
+      "relationships": {
+        "uses": [
+          "ui-feedback:alert",
+          "ui-core:button",
+          "ui-core:input"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-feedback:alert",
+          "ui-core:button",
+          "ui-core:input"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-feedback:alert",
+          "ui-core:button",
+          "ui-core:input"
+        ]
+      }
+    },
+    {
+      "from": "GitHubLoginButton",
+      "library": "ui-security",
+      "id": "ui-security:githubloginbutton",
+      "relationships": {
+        "uses": [
+          "ui-core:button"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button"
+        ]
+      }
+    },
+    {
+      "from": "GoogleCaptcha",
+      "library": "ui-security",
+      "id": "ui-security:googlecaptcha",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-security:captchacontainer"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-security:captchacontainer"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "GoogleLoginButton",
+      "library": "ui-security",
+      "id": "ui-security:googleloginbutton",
+      "relationships": {
+        "uses": [
+          "ui-core:button"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button"
+        ]
+      }
+    },
+    {
+      "from": "HCaptcha",
+      "library": "ui-security",
+      "id": "ui-security:hcaptcha",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-security:captchacontainer"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-security:captchacontainer"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "IdleMonitor",
+      "library": "ui-security",
+      "id": "ui-security:idlemonitor",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "KeepAliveButton",
+      "library": "ui-security",
+      "id": "ui-security:keepalivebutton",
+      "relationships": {
+        "uses": [
+          "ui-core:button"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button"
+        ]
+      }
+    },
+    {
+      "from": "LoginCard",
+      "library": "ui-security",
+      "id": "ui-security:logincard",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "LoginForm",
+      "library": "ui-security",
+      "id": "ui-security:loginform",
+      "relationships": {
+        "uses": [
+          "ui-security:passwordinput"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-security:passwordinput"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-security:passwordinput"
+        ]
+      }
+    },
+    {
+      "from": "LoginHistory",
+      "library": "ui-security",
+      "id": "ui-security:loginhistory",
+      "relationships": {
+        "uses": [
+          "ui-feedback:badge",
+          "ui-layout:stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-feedback:badge",
+          "ui-layout:stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-feedback:badge",
+          "ui-layout:stack"
+        ]
+      }
+    },
+    {
+      "from": "MFASettingsPanel",
+      "library": "ui-security",
+      "id": "ui-security:mfasettingspanel",
+      "relationships": {
+        "uses": [
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button",
+          "ui-layout:stack"
+        ]
+      }
+    },
+    {
+      "from": "MFASetupWizard",
+      "library": "ui-security",
+      "id": "ui-security:mfasetupwizard",
+      "relationships": {
+        "uses": [
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button",
+          "ui-layout:stack"
+        ]
+      }
+    },
+    {
+      "from": "MFAStatus",
+      "library": "ui-security",
+      "id": "ui-security:mfastatus",
+      "relationships": {
+        "uses": [
+          "ui-feedback:badge",
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-feedback:badge",
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-feedback:badge",
+          "ui-core:button",
+          "ui-layout:stack"
+        ]
+      }
+    },
+    {
+      "from": "MFAVerificationDialog",
+      "library": "ui-security",
+      "id": "ui-security:mfaverificationdialog",
+      "relationships": {
+        "uses": [
+          "ui-core:button",
+          "ui-feedback:modal",
+          "ui-security:pininput",
+          "ui-layout:stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button",
+          "ui-feedback:modal",
+          "ui-security:pininput",
+          "ui-layout:stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button",
+          "ui-feedback:modal",
+          "ui-security:pininput",
+          "ui-layout:stack"
+        ]
+      }
+    },
+    {
+      "from": "MaskedInput",
+      "library": "ui-security",
+      "id": "ui-security:maskedinput",
+      "relationships": {
+        "uses": [
+          "ui-core:input"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:input"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:input"
+        ]
+      }
+    },
+    {
+      "from": "MicrosoftLoginButton",
+      "library": "ui-security",
+      "id": "ui-security:microsoftloginbutton",
+      "relationships": {
+        "uses": [
+          "ui-core:button"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button"
+        ]
+      }
+    },
+    {
+      "from": "OTPInput",
+      "library": "ui-security",
+      "id": "ui-security:otpinput",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-security:otpverificationcard",
+          "ui-security:phoneverificationcard"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-security:otpverificationcard",
+          "ui-security:phoneverificationcard"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "OTPResendButton",
+      "library": "ui-security",
+      "id": "ui-security:otpresendbutton",
+      "relationships": {
+        "uses": [
+          "ui-core:button"
+        ],
+        "usedBy": [
+          "ui-security:emailverificationcard",
+          "ui-security:otpverificationcard",
+          "ui-security:phoneverificationcard"
+        ],
+        "related": [
+          "ui-core:button"
+        ],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-security:emailverificationcard",
+          "ui-security:otpverificationcard",
+          "ui-security:phoneverificationcard"
+        ],
+        "childComponents": [
+          "ui-core:button"
+        ]
+      }
+    },
+    {
+      "from": "OTPVerificationCard",
+      "library": "ui-security",
+      "id": "ui-security:otpverificationcard",
+      "relationships": {
+        "uses": [
+          "ui-feedback:alert",
+          "ui-layout:card",
+          "ui-security:otpinput",
+          "ui-security:otpresendbutton"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-feedback:alert",
+          "ui-layout:card",
+          "ui-security:otpinput",
+          "ui-security:otpresendbutton"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-feedback:alert",
+          "ui-layout:card",
+          "ui-security:otpinput",
+          "ui-security:otpresendbutton"
+        ]
+      }
+    },
+    {
+      "from": "OktaLoginButton",
+      "library": "ui-security",
+      "id": "ui-security:oktaloginbutton",
+      "relationships": {
+        "uses": [
+          "ui-core:button"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button"
+        ]
+      }
+    },
+    {
+      "from": "PINInput",
+      "library": "ui-security",
+      "id": "ui-security:pininput",
+      "relationships": {
+        "uses": [
+          "ui-layout:stack"
+        ],
+        "usedBy": [
+          "ui-security:mfaverificationdialog"
+        ],
+        "related": [
+          "ui-layout:stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-security:mfaverificationdialog"
+        ],
+        "childComponents": [
+          "ui-layout:stack"
+        ]
+      }
+    },
+    {
+      "from": "PasswordAgeIndicator",
+      "library": "ui-security",
+      "id": "ui-security:passwordageindicator",
+      "relationships": {
+        "uses": [
+          "ui-feedback:badge",
+          "ui-core:button"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-feedback:badge",
+          "ui-core:button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-feedback:badge",
+          "ui-core:button"
+        ]
+      }
+    },
+    {
+      "from": "PasswordGenerator",
+      "library": "ui-security",
+      "id": "ui-security:passwordgenerator",
+      "relationships": {
+        "uses": [
+          "ui-security:passwordstrengthmeter"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-security:passwordstrengthmeter"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-security:passwordstrengthmeter"
+        ]
+      }
+    },
+    {
+      "from": "PasswordInput",
+      "library": "ui-security",
+      "id": "ui-security:passwordinput",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-security:loginform"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-security:loginform"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "PasswordPolicyPanel",
+      "library": "ui-security",
+      "id": "ui-security:passwordpolicypanel",
+      "relationships": {
+        "uses": [
+          "ui-core:button",
+          "ui-core:checkbox",
+          "ui-layout:stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button",
+          "ui-core:checkbox",
+          "ui-layout:stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button",
+          "ui-core:checkbox",
+          "ui-layout:stack"
+        ]
+      }
+    },
+    {
+      "from": "PasswordRequirements",
+      "library": "ui-security",
+      "id": "ui-security:passwordrequirements",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "PasswordStrengthMeter",
+      "library": "ui-security",
+      "id": "ui-security:passwordstrengthmeter",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-security:passwordgenerator"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-security:passwordgenerator"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "PermissionGate",
+      "library": "ui-security",
+      "id": "ui-security:permissiongate",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "PhoneVerificationCard",
+      "library": "ui-security",
+      "id": "ui-security:phoneverificationcard",
+      "relationships": {
+        "uses": [
+          "ui-feedback:alert",
+          "ui-core:button",
+          "ui-layout:card",
+          "ui-core:input",
+          "ui-security:otpinput",
+          "ui-security:otpresendbutton"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-feedback:alert",
+          "ui-core:button",
+          "ui-layout:card",
+          "ui-core:input",
+          "ui-security:otpinput",
+          "ui-security:otpresendbutton"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-feedback:alert",
+          "ui-core:button",
+          "ui-layout:card",
+          "ui-core:input",
+          "ui-security:otpinput",
+          "ui-security:otpresendbutton"
+        ]
+      }
+    },
+    {
+      "from": "PolicyGate",
+      "library": "ui-security",
+      "id": "ui-security:policygate",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "PrivacySettingsPanel",
+      "library": "ui-security",
+      "id": "ui-security:privacysettingspanel",
+      "relationships": {
+        "uses": [
+          "ui-core:button",
+          "ui-core:checkbox",
+          "ui-layout:stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button",
+          "ui-core:checkbox",
+          "ui-layout:stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button",
+          "ui-core:checkbox",
+          "ui-layout:stack"
+        ]
+      }
+    },
+    {
+      "from": "RiskScoreBadge",
+      "library": "ui-security",
+      "id": "ui-security:riskscorebadge",
+      "relationships": {
+        "uses": [
+          "ui-feedback:badge"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-feedback:badge"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-feedback:badge"
+        ]
+      }
+    },
+    {
+      "from": "RoleGate",
+      "library": "ui-security",
+      "id": "ui-security:rolegate",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ScopeGate",
+      "library": "ui-security",
+      "id": "ui-security:scopegate",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "SecureClipboardButton",
+      "library": "ui-security",
+      "id": "ui-security:secureclipboardbutton",
+      "relationships": {
+        "uses": [
+          "ui-core:button"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button"
+        ]
+      }
+    },
+    {
+      "from": "SecureDownloadButton",
+      "library": "ui-security",
+      "id": "ui-security:securedownloadbutton",
+      "relationships": {
+        "uses": [
+          "ui-core:button"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button"
+        ]
+      }
+    },
+    {
+      "from": "SecureInput",
+      "library": "ui-security",
+      "id": "ui-security:secureinput",
+      "relationships": {
+        "uses": [
+          "ui-core:input"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:input"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:input"
+        ]
+      }
+    },
+    {
+      "from": "SecureTextarea",
+      "library": "ui-security",
+      "id": "ui-security:securetextarea",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "SecureUploader",
+      "library": "ui-security",
+      "id": "ui-security:secureuploader",
+      "relationships": {
+        "uses": [
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button",
+          "ui-layout:stack"
+        ]
+      }
+    },
+    {
+      "from": "SecurityAlert",
+      "library": "ui-security",
+      "id": "ui-security:securityalert",
+      "relationships": {
+        "uses": [
+          "ui-feedback:badge",
+          "ui-core:button"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-feedback:badge",
+          "ui-core:button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-feedback:badge",
+          "ui-core:button"
+        ]
+      }
+    },
+    {
+      "from": "SecurityAlertsPanel",
+      "library": "ui-security",
+      "id": "ui-security:securityalertspanel",
+      "relationships": {
+        "uses": [
+          "ui-core:button",
+          "ui-core:checkbox",
+          "ui-layout:stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button",
+          "ui-core:checkbox",
+          "ui-layout:stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button",
+          "ui-core:checkbox",
+          "ui-layout:stack"
+        ]
+      }
+    },
+    {
+      "from": "SecurityBanner",
+      "library": "ui-security",
+      "id": "ui-security:securitybanner",
+      "relationships": {
+        "uses": [
+          "ui-core:button"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button"
+        ]
+      }
+    },
+    {
+      "from": "SecurityEventLog",
+      "library": "ui-security",
+      "id": "ui-security:securityeventlog",
+      "relationships": {
+        "uses": [
+          "ui-feedback:badge",
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-feedback:badge",
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-feedback:badge",
+          "ui-core:button",
+          "ui-layout:stack"
+        ]
+      }
+    },
+    {
+      "from": "SecurityHealthIndicator",
+      "library": "ui-security",
+      "id": "ui-security:securityhealthindicator",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "SecurityKeyButton",
+      "library": "ui-security",
+      "id": "ui-security:securitykeybutton",
+      "relationships": {
+        "uses": [
+          "ui-core:button"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button"
+        ]
+      }
+    },
+    {
+      "from": "SecurityLogsPanel",
+      "library": "ui-security",
+      "id": "ui-security:securitylogspanel",
+      "relationships": {
+        "uses": [
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button",
+          "ui-layout:stack"
+        ]
+      }
+    },
+    {
+      "from": "SecurityScore",
+      "library": "ui-security",
+      "id": "ui-security:securityscore",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "SecuritySettingsPanel",
+      "library": "ui-security",
+      "id": "ui-security:securitysettingspanel",
+      "relationships": {
+        "uses": [
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button",
+          "ui-layout:stack"
+        ]
+      }
+    },
+    {
+      "from": "SecurityStatusCard",
+      "library": "ui-security",
+      "id": "ui-security:securitystatuscard",
+      "relationships": {
+        "uses": [
+          "ui-feedback:badge",
+          "ui-core:button"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-feedback:badge",
+          "ui-core:button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-feedback:badge",
+          "ui-core:button"
+        ]
+      }
+    },
+    {
+      "from": "SensitiveText",
+      "library": "ui-security",
+      "id": "ui-security:sensitivetext",
+      "relationships": {
+        "uses": [
+          "ui-core:button"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button"
+        ]
+      }
+    },
+    {
+      "from": "SessionCountdown",
+      "library": "ui-security",
+      "id": "ui-security:sessioncountdown",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "SessionPolicyPanel",
+      "library": "ui-security",
+      "id": "ui-security:sessionpolicypanel",
+      "relationships": {
+        "uses": [
+          "ui-core:button",
+          "ui-core:checkbox",
+          "ui-layout:stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button",
+          "ui-core:checkbox",
+          "ui-layout:stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button",
+          "ui-core:checkbox",
+          "ui-layout:stack"
+        ]
+      }
+    },
+    {
+      "from": "SessionTimeoutDialog",
+      "library": "ui-security",
+      "id": "ui-security:sessiontimeoutdialog",
+      "relationships": {
+        "uses": [
+          "ui-core:button",
+          "ui-feedback:modal",
+          "ui-layout:stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button",
+          "ui-feedback:modal",
+          "ui-layout:stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button",
+          "ui-feedback:modal",
+          "ui-layout:stack"
+        ]
+      }
+    },
+    {
+      "from": "TrustedDeviceSelector",
+      "library": "ui-security",
+      "id": "ui-security:trusteddeviceselector",
+      "relationships": {
+        "uses": [
+          "ui-core:checkbox",
+          "ui-layout:stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:checkbox",
+          "ui-layout:stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:checkbox",
+          "ui-layout:stack"
+        ]
+      }
+    },
+    {
+      "from": "TrustedDevicesPanel",
+      "library": "ui-security",
+      "id": "ui-security:trusteddevicespanel",
+      "relationships": {
+        "uses": [
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button",
+          "ui-layout:stack"
+        ]
+      }
+    },
+    {
+      "from": "TurnstileCaptcha",
+      "library": "ui-security",
+      "id": "ui-security:turnstilecaptcha",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-security:captchacontainer"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-security:captchacontainer"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "UnauthorizedPage",
+      "library": "ui-security",
+      "id": "ui-security:unauthorizedpage",
+      "relationships": {
+        "uses": [
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-core:button",
+          "ui-layout:stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-core:button",
+          "ui-layout:stack"
+        ]
+      }
+    },
+    {
+      "from": "VerificationStatus",
+      "library": "ui-security",
+      "id": "ui-security:verificationstatus",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Connector",
+      "library": "ui-visualization",
+      "id": "ui-visualization:connector",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-visualization:hierarchy",
+          "ui-visualization:orgchart",
+          "ui-visualization:tree"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-visualization:hierarchy",
+          "ui-visualization:orgchart",
+          "ui-visualization:tree"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Hierarchy",
+      "library": "ui-visualization",
+      "id": "ui-visualization:hierarchy",
+      "relationships": {
+        "uses": [
+          "ui-visualization:connector",
+          "ui-visualization:minimap",
+          "ui-visualization:toolbar",
+          "ui-visualization:treenode"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-visualization:connector",
+          "ui-visualization:minimap",
+          "ui-visualization:toolbar",
+          "ui-visualization:treenode"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-visualization:connector",
+          "ui-visualization:minimap",
+          "ui-visualization:toolbar",
+          "ui-visualization:treenode"
+        ]
+      }
+    },
+    {
+      "from": "Legend",
+      "library": "ui-visualization",
+      "id": "ui-visualization:legend",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "MiniMap",
+      "library": "ui-visualization",
+      "id": "ui-visualization:minimap",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-visualization:hierarchy",
+          "ui-visualization:orgchart"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-visualization:hierarchy",
+          "ui-visualization:orgchart"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "OrgChart",
+      "library": "ui-visualization",
+      "id": "ui-visualization:orgchart",
+      "relationships": {
+        "uses": [
+          "ui-visualization:connector",
+          "ui-visualization:minimap",
+          "ui-visualization:searchbox",
+          "ui-visualization:toolbar",
+          "ui-visualization:treenode",
+          "ui-visualization:zoomcontrols"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-visualization:connector",
+          "DEFAULT_VIRTUALIZE_THRESHOLD",
+          "ui-visualization:minimap",
+          "ui-visualization:searchbox",
+          "ui-visualization:toolbar",
+          "ui-visualization:treenode",
+          "VirtualizationEngine",
+          "ui-visualization:zoomcontrols"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-visualization:connector",
+          "ui-visualization:minimap",
+          "ui-visualization:searchbox",
+          "ui-visualization:toolbar",
+          "ui-visualization:treenode",
+          "ui-visualization:zoomcontrols"
+        ]
+      }
+    },
+    {
+      "from": "SearchBox",
+      "library": "ui-visualization",
+      "id": "ui-visualization:searchbox",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-visualization:orgchart"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-visualization:orgchart"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Toolbar",
+      "library": "ui-visualization",
+      "id": "ui-visualization:toolbar",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-visualization:hierarchy",
+          "ui-visualization:orgchart"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-visualization:hierarchy",
+          "ui-visualization:orgchart"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Tree",
+      "library": "ui-visualization",
+      "id": "ui-visualization:tree",
+      "relationships": {
+        "uses": [
+          "ui-visualization:connector",
+          "ui-visualization:treenode",
+          "ui-visualization:zoomcontrols"
+        ],
+        "usedBy": [],
+        "related": [
+          "ui-visualization:connector",
+          "ui-visualization:treenode",
+          "ui-visualization:zoomcontrols"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ui-visualization:connector",
+          "ui-visualization:treenode",
+          "ui-visualization:zoomcontrols"
+        ]
+      }
+    },
+    {
+      "from": "TreeNode",
+      "library": "ui-visualization",
+      "id": "ui-visualization:treenode",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-visualization:hierarchy",
+          "ui-visualization:orgchart",
+          "ui-visualization:tree"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-visualization:hierarchy",
+          "ui-visualization:orgchart",
+          "ui-visualization:tree"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ZoomControls",
+      "library": "ui-visualization",
+      "id": "ui-visualization:zoomcontrols",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ui-visualization:orgchart",
+          "ui-visualization:tree"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ui-visualization:orgchart",
+          "ui-visualization:tree"
+        ],
+        "childComponents": []
+      }
+    }
+  ]
+}

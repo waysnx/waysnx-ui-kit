@@ -1,0 +1,67 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/keepalivebutton.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "KeepAliveButton - Manually extend user session",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "disabled": {
+      "description": "Whether button is disabled",
+      "type": "boolean"
+    },
+    "icon": {
+      "description": "Icon to show before label",
+      "type": "string"
+    },
+    "label": {
+      "description": "Button label",
+      "type": "string"
+    },
+    "loadingLabel": {
+      "description": "Custom loading message",
+      "type": "string"
+    },
+    "onKeepAlive": {
+      "description": "Callback to keep session alive",
+      "type": "null"
+    },
+    "showFeedback": {
+      "description": "Whether to show success feedback",
+      "type": "boolean"
+    },
+    "size": {
+      "description": "Button size",
+      "enum": [
+        "sm",
+        "md",
+        "lg"
+      ]
+    },
+    "variant": {
+      "description": "Button variant",
+      "enum": [
+        "primary",
+        "secondary",
+        "outline",
+        "ghost"
+      ]
+    }
+  },
+  "required": [],
+  "title": "KeepAliveButton",
+  "type": "object"
+}

@@ -1,0 +1,77 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/logincard.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "LoginCard component",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "description": {
+      "description": "",
+      "type": "string"
+    },
+    "footerLinkText": {
+      "description": "",
+      "type": "string"
+    },
+    "footerText": {
+      "description": "",
+      "type": "string"
+    },
+    "logo": {
+      "description": "",
+      "enum": [
+        "string",
+        "React.ReactNode"
+      ]
+    },
+    "logoAlt": {
+      "description": "",
+      "type": "string"
+    },
+    "maxWidth": {
+      "description": "",
+      "enum": [
+        "string",
+        "number"
+      ]
+    },
+    "onFooterLinkClick": {
+      "description": "",
+      "type": "null"
+    },
+    "onSubmit": {
+      "description": "",
+      "enum": [
+        "(data: LoginFormData) => Promise<void>",
+        "void"
+      ]
+    },
+    "title": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [
+    "onSubmit"
+  ],
+  "title": "LoginCard",
+  "type": "object"
+}

@@ -1,0 +1,221 @@
+{
+  "id": "ui-communication:presenceindicator",
+  "name": "PresenceIndicator",
+  "slug": "presence-indicator",
+  "library": "ui-communication",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Presence Indicator",
+  "purpose": "Display user online status or availability",
+  "shortDescription": "Display user online status or availability.",
+  "longDescription": "Display user online status or availability.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Communication/PresenceIndicator",
+      "storyId": "communication-presenceindicator",
+      "url": "https://uikit.waysnx.tech/?path=/docs/communication-presenceindicator",
+      "stories": [],
+      "tags": [],
+      "source": "PresenceIndicator.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use PresenceIndicator for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a PresenceIndicator"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-comm-presence__label"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\PresenceIndicator\\PresenceIndicator.tsx",
+  "keywords": [
+    "presenceindicator",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use PresenceIndicator",
+    "Create an example with PresenceIndicator",
+    "Generate a PresenceIndicator component",
+    "Build a PresenceIndicator in my form"
+  ],
+  "componentIntent": "Provide PresenceIndicator functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.486013",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "d7ab587c",
+  "metadata": {
+    "purpose": "Display user online status or availability.",
+    "description": "A small visual indicator (typically a dot) that shows whether a user is online, away, offline, or in a specific status. Often overlaid on avatars or displayed next to usernames. Provides real-time presence information.",
+    "functionalAreas": [
+      "Communication",
+      "Feedback"
+    ],
+    "userIntents": [
+      "Know if user is online",
+      "See user availability",
+      "Know if user is active",
+      "Check contact status"
+    ],
+    "exampleUseCases": [
+      "Online Status Indicator",
+      "Availability Dot",
+      "User Status Badge",
+      "Contact Status",
+      "Presence Dot",
+      "User Availability",
+      "Activity Status"
+    ],
+    "useWhen": [
+      "Use this component to show user presence or availability.",
+      "Use this component on avatars, user lists, or headers.",
+      "Use this component with multiple status states (online, away, offline).",
+      "Use this component in collaborative or real-time applications."
+    ],
+    "avoidWhen": [
+      "Avoid this component without real-time presence data.",
+      "Avoid this component in non-collaborative contexts.",
+      "Avoid this component with unclear status meanings.",
+      "Avoid this component without proper performance optimization."
+    ],
+    "relatedComponents": [
+      "Avatar",
+      "UserPresenceList",
+      "Badge"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

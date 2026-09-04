@@ -1,0 +1,60 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-visualization/searchbox.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Enable searching and filtering within visualizations.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-visualization",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "onClear": {
+      "description": "",
+      "type": "null"
+    },
+    "onNext": {
+      "description": "",
+      "type": "null"
+    },
+    "onPrev": {
+      "description": "",
+      "type": "null"
+    },
+    "onSearch": {
+      "description": "",
+      "type": "string"
+    },
+    "placeholder": {
+      "description": "",
+      "type": "string"
+    },
+    "searchState": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [
+    "searchState",
+    "onSearch",
+    "onNext",
+    "onPrev",
+    "onClear"
+  ],
+  "title": "SearchBox",
+  "type": "object"
+}

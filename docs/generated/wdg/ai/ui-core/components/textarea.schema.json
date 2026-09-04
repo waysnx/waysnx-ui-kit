@@ -1,0 +1,50 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-core/textarea.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Collect multi-line text input from users with optional length limits and formatting.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-core",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "ariaDescribedBy": {
+      "description": "",
+      "type": "string"
+    },
+    "ariaLabel": {
+      "description": "",
+      "type": "string"
+    },
+    "error": {
+      "description": "",
+      "type": "string"
+    },
+    "hint": {
+      "description": "",
+      "type": "string"
+    },
+    "label": {
+      "description": "",
+      "type": "string"
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "title": "Textarea",
+  "type": "object"
+}

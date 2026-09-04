@@ -1,0 +1,83 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/securedownloadbutton.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "SecureDownloadButton - Download files securely with cleanup Features: - Automatic blob URL cleanup - Optional validation callback - Error handling - Memory-safe file handling",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "disabled": {
+      "description": "Whether button is disabled",
+      "type": "boolean"
+    },
+    "fileName": {
+      "description": "File name for download",
+      "type": "string"
+    },
+    "fileUrl": {
+      "description": "File URL or blob to download",
+      "enum": [
+        "string",
+        "Blob"
+      ]
+    },
+    "label": {
+      "description": "Button label",
+      "type": "string"
+    },
+    "loadingLabel": {
+      "description": "Custom loading message",
+      "type": "string"
+    },
+    "onBeforeDownload": {
+      "description": "Callback before download starts",
+      "enum": [
+        "() => Promise<Blob",
+        "string>"
+      ]
+    },
+    "onDownloadComplete": {
+      "description": "Callback after download completes",
+      "type": "null"
+    },
+    "onError": {
+      "description": "Callback for errors",
+      "type": "null"
+    },
+    "size": {
+      "description": "Button size",
+      "enum": [
+        "sm",
+        "md",
+        "lg"
+      ]
+    },
+    "variant": {
+      "description": "Button variant",
+      "enum": [
+        "primary",
+        "secondary",
+        "outline",
+        "ghost"
+      ]
+    }
+  },
+  "required": [
+    "fileName"
+  ],
+  "title": "SecureDownloadButton",
+  "type": "object"
+}

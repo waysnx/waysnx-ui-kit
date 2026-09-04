@@ -1,0 +1,58 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-feedback/emptystate.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Show a clear message when no data is available to display.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-feedback",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "action": {
+      "description": "",
+      "type": "string"
+    },
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "description": {
+      "description": "",
+      "enum": [
+        "string",
+        "React.ReactNode"
+      ]
+    },
+    "icon": {
+      "description": "",
+      "type": "string"
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    },
+    "title": {
+      "description": "",
+      "enum": [
+        "string",
+        "React.ReactNode"
+      ]
+    }
+  },
+  "required": [
+    "title"
+  ],
+  "title": "EmptyState",
+  "type": "object"
+}

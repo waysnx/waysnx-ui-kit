@@ -1,0 +1,157 @@
+{
+  "name": "ui-navigation",
+  "version": "1.0.0",
+  "generatedAt": "2026-09-03T20:03:00.232362",
+  "componentCount": 20,
+  "components": [
+    {
+      "id": "ui-navigation:breadcrumb",
+      "name": "Breadcrumb",
+      "slug": "breadcrumb",
+      "category": "components",
+      "description": "Display the current navigation path and enable quick navigation to parent levels."
+    },
+    {
+      "id": "ui-navigation:commandpalette",
+      "name": "CommandPalette",
+      "slug": "commandpalette",
+      "category": "components",
+      "description": "Enable quick access to commands and navigation via keyboard."
+    },
+    {
+      "id": "ui-navigation:contextmenu",
+      "name": "ContextMenu",
+      "slug": "contextmenu",
+      "category": "components",
+      "description": "Display context-sensitive actions triggered by right-click or long-press."
+    },
+    {
+      "id": "ui-navigation:drawer",
+      "name": "Drawer",
+      "slug": "drawer",
+      "category": "components",
+      "description": "Display navigation content in a side panel that slides in from the screen edge."
+    },
+    {
+      "id": "ui-navigation:favoritesmenu",
+      "name": "FavoritesMenu",
+      "slug": "favoritesmenu",
+      "category": "components",
+      "description": "Display user-selected favorite or bookmarked items for quick access."
+    },
+    {
+      "id": "ui-navigation:header",
+      "name": "Header",
+      "slug": "header",
+      "category": "components",
+      "description": "Display application or site header with branding and navigation."
+    },
+    {
+      "id": "ui-navigation:megamenu",
+      "name": "MegaMenu",
+      "slug": "megamenu",
+      "category": "components",
+      "description": "Display large menu with multiple columns and rich content."
+    },
+    {
+      "id": "ui-navigation:menu",
+      "name": "Menu",
+      "slug": "menu",
+      "category": "components",
+      "description": "Display a list of selectable menu items."
+    },
+    {
+      "id": "ui-navigation:menuitem",
+      "name": "MenuItem",
+      "slug": "menuitem",
+      "category": "components",
+      "description": "MenuItem component"
+    },
+    {
+      "id": "ui-navigation:navbar",
+      "name": "Navbar",
+      "slug": "navbar",
+      "category": "components",
+      "description": "Display a horizontal navigation bar with multiple navigation links."
+    },
+    {
+      "id": "ui-navigation:notificationcenter",
+      "name": "NotificationCenter",
+      "slug": "notificationcenter",
+      "category": "components",
+      "description": "Display and manage system notifications in a centralized location."
+    },
+    {
+      "id": "ui-navigation:quickactions",
+      "name": "QuickActions",
+      "slug": "quickactions",
+      "category": "components",
+      "description": "Provide quick access to frequent actions in a compact menu."
+    },
+    {
+      "id": "ui-navigation:recentitems",
+      "name": "RecentItems",
+      "slug": "recentitems",
+      "category": "components",
+      "description": "Display recently accessed or used items for quick navigation."
+    },
+    {
+      "id": "ui-navigation:searchnavigation",
+      "name": "SearchNavigation",
+      "slug": "searchnavigation",
+      "category": "components",
+      "description": "Enable users to search for content or pages and navigate quickly."
+    },
+    {
+      "id": "ui-navigation:sidebar",
+      "name": "Sidebar",
+      "slug": "sidebar",
+      "category": "components",
+      "description": "Display persistent sidebar navigation alongside main content."
+    },
+    {
+      "id": "ui-navigation:stepnavigation",
+      "name": "StepNavigation",
+      "slug": "stepnavigation",
+      "category": "components",
+      "description": "Navigate between steps of a multi-step process or guide."
+    },
+    {
+      "id": "ui-navigation:tabs",
+      "name": "Tabs",
+      "slug": "tabs",
+      "category": "components",
+      "description": "Organize navigation into switchable tabs."
+    },
+    {
+      "id": "ui-navigation:treemenu",
+      "name": "TreeMenu",
+      "slug": "treemenu",
+      "category": "components",
+      "description": "Display hierarchical menu structure with collapsible tree nodes."
+    },
+    {
+      "id": "ui-navigation:usermenu",
+      "name": "UserMenu",
+      "slug": "usermenu",
+      "category": "components",
+      "description": "Display user profile and account-related options."
+    },
+    {
+      "id": "ui-navigation:workspaceswitcher",
+      "name": "WorkspaceSwitcher",
+      "slug": "workspaceswitcher",
+      "category": "components",
+      "description": "Enable users to switch between multiple workspaces or environments."
+    }
+  ],
+  "categories": {
+    "components": 20
+  },
+  "statistics": {
+    "totalComponents": 20,
+    "documentsGenerated": 20,
+    "storiesGenerated": 0,
+    "testsGenerated": 0
+  }
+}

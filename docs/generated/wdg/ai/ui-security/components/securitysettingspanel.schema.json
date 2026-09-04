@@ -1,0 +1,46 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/securitysettingspanel.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "SecuritySettingsPanel - Main security settings dashboard",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "onMFASettings": {
+      "description": "Callback for MFA settings",
+      "type": "null"
+    },
+    "onPasswordSettings": {
+      "description": "Callback for password settings",
+      "type": "null"
+    },
+    "onPrivacySettings": {
+      "description": "Callback for privacy settings",
+      "type": "null"
+    },
+    "onSessionSettings": {
+      "description": "Callback for session settings",
+      "type": "null"
+    },
+    "onTrustedDevices": {
+      "description": "Callback for trusted devices",
+      "type": "null"
+    }
+  },
+  "required": [],
+  "title": "SecuritySettingsPanel",
+  "type": "object"
+}

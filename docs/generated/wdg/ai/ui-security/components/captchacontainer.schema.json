@@ -1,0 +1,52 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/captchacontainer.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "CaptchaContainer - Container for switching CAPTCHA providers",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "onVerify": {
+      "description": "Callback on verification",
+      "type": "string"
+    },
+    "provider": {
+      "description": "CAPTCHA provider to use",
+      "type": "string"
+    },
+    "siteKey": {
+      "description": "Site key for the provider",
+      "type": "string"
+    },
+    "size": {
+      "description": "Size",
+      "enum": [
+        "normal",
+        "compact"
+      ]
+    },
+    "theme": {
+      "description": "Theme",
+      "enum": [
+        "light",
+        "dark"
+      ]
+    }
+  },
+  "required": [],
+  "title": "CaptchaContainer",
+  "type": "object"
+}

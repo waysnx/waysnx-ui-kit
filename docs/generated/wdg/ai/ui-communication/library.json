@@ -1,0 +1,122 @@
+{
+  "name": "ui-communication",
+  "version": "1.0.0",
+  "generatedAt": "2026-09-03T20:02:38.051406",
+  "componentCount": 15,
+  "components": [
+    {
+      "id": "ui-communication:chatinput",
+      "name": "ChatInput",
+      "slug": "chatinput",
+      "category": "components",
+      "description": "Provide user input for composing chat or message content."
+    },
+    {
+      "id": "ui-communication:chatwindow",
+      "name": "ChatWindow",
+      "slug": "chatwindow",
+      "category": "components",
+      "description": "Display message history and enable real-time chat conversation."
+    },
+    {
+      "id": "ui-communication:conversationlist",
+      "name": "ConversationList",
+      "slug": "conversationlist",
+      "category": "components",
+      "description": "Display a list of conversations for quick access."
+    },
+    {
+      "id": "ui-communication:emojipicker",
+      "name": "EmojiPicker",
+      "slug": "emojipicker",
+      "category": "components",
+      "description": "Enable selection and insertion of emoji characters."
+    },
+    {
+      "id": "ui-communication:mentioninput",
+      "name": "MentionInput",
+      "slug": "mentioninput",
+      "category": "components",
+      "description": "Enable mentioning users or entities within text input."
+    },
+    {
+      "id": "ui-communication:messagebubble",
+      "name": "MessageBubble",
+      "slug": "messagebubble",
+      "category": "components",
+      "description": "Display a single message in a chat or messaging interface."
+    },
+    {
+      "id": "ui-communication:notificationbadge",
+      "name": "NotificationBadge",
+      "slug": "notificationbadge",
+      "category": "components",
+      "description": "Display notification count or alert status on UI elements."
+    },
+    {
+      "id": "ui-communication:notificationlist",
+      "name": "NotificationList",
+      "slug": "notificationlist",
+      "category": "components",
+      "description": "Display a list of notifications for review and management."
+    },
+    {
+      "id": "ui-communication:presenceindicator",
+      "name": "PresenceIndicator",
+      "slug": "presenceindicator",
+      "category": "components",
+      "description": "Display user online status or availability."
+    },
+    {
+      "id": "ui-communication:reactionbar",
+      "name": "ReactionBar",
+      "slug": "reactionbar",
+      "category": "components",
+      "description": "Enable quick reactions to messages through emoji selections."
+    },
+    {
+      "id": "ui-communication:readreceipts",
+      "name": "ReadReceipts",
+      "slug": "readreceipts",
+      "category": "components",
+      "description": "Show message delivery and read status indicators."
+    },
+    {
+      "id": "ui-communication:threadpanel",
+      "name": "ThreadPanel",
+      "slug": "threadpanel",
+      "category": "components",
+      "description": "Display threaded conversations branching from parent messages."
+    },
+    {
+      "id": "ui-communication:typingindicator",
+      "name": "TypingIndicator",
+      "slug": "typingindicator",
+      "category": "components",
+      "description": "Show that another user is currently typing a message."
+    },
+    {
+      "id": "ui-communication:userpresencelist",
+      "name": "UserPresenceList",
+      "slug": "userpresencelist",
+      "category": "components",
+      "description": "Display list of users with their presence or availability status."
+    },
+    {
+      "id": "ui-communication:voicemessage",
+      "name": "VoiceMessage",
+      "slug": "voicemessage",
+      "category": "components",
+      "description": "Display and play audio/voice messages in chat or messaging."
+    }
+  ],
+  "categories": {
+    "components": 15
+  },
+  "statistics": {
+    "totalComponents": 15,
+    "documentsGenerated": 15,
+    "storiesGenerated": 0,
+    "testsGenerated": 0
+  }
+}

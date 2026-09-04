@@ -1,0 +1,71 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "breadcrumb",
+    "name": "Breadcrumb",
+    "package": "@waysnx/ui-navigation",
+    "export": "Breadcrumb"
+  },
+  "categories": [
+    {
+      "id": "sizes",
+      "title": "Sizes",
+      "description": "",
+      "examples": [
+        {
+          "id": "sizes-size-sm",
+          "title": "Size: sm",
+          "description": "Demonstrates the sm size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "sm"
+          },
+          "keywords": [
+            "size",
+            "sm"
+          ]
+        },
+        {
+          "id": "sizes-size-md",
+          "title": "Size: md",
+          "description": "Demonstrates the md size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "md"
+          },
+          "keywords": [
+            "size",
+            "md"
+          ]
+        },
+        {
+          "id": "sizes-size-lg",
+          "title": "Size: lg",
+          "description": "Demonstrates the lg size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "lg"
+          },
+          "keywords": [
+            "size",
+            "lg"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:02.599720",
+  "stats": {
+    "examplesGenerated": 3,
+    "categoriesGenerated": 1
+  }
+}

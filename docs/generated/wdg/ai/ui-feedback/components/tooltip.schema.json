@@ -1,0 +1,57 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-feedback/tooltip.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display supplementary information when user hovers over an element.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-feedback",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "children": {
+      "description": "",
+      "type": "string"
+    },
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "content": {
+      "description": "",
+      "enum": [
+        "string",
+        "React.ReactNode"
+      ]
+    },
+    "position": {
+      "description": "",
+      "enum": [
+        "top",
+        "bottom",
+        "left",
+        "right"
+      ]
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [
+    "content",
+    "children"
+  ],
+  "title": "Tooltip",
+  "type": "object"
+}

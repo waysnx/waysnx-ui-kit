@@ -1,0 +1,108 @@
+{
+  "name": "ui-dashboard",
+  "version": "1.0.0",
+  "generatedAt": "2026-09-03T20:02:43.147459",
+  "componentCount": 13,
+  "components": [
+    {
+      "id": "ui-dashboard:chartwidget",
+      "name": "ChartWidget",
+      "slug": "chartwidget",
+      "category": "components",
+      "description": "ChartWidget component"
+    },
+    {
+      "id": "ui-dashboard:dashboard",
+      "name": "Dashboard",
+      "slug": "dashboard",
+      "category": "components",
+      "description": "Provide the main container and layout structure for dashboard applications."
+    },
+    {
+      "id": "ui-dashboard:dashboardfilterbar",
+      "name": "DashboardFilterBar",
+      "slug": "dashboardfilterbar",
+      "category": "components",
+      "description": "DashboardFilterBar component"
+    },
+    {
+      "id": "ui-dashboard:dashboardfooter",
+      "name": "DashboardFooter",
+      "slug": "dashboardfooter",
+      "category": "components",
+      "description": "DashboardFooter component"
+    },
+    {
+      "id": "ui-dashboard:dashboardheader",
+      "name": "DashboardHeader",
+      "slug": "dashboardheader",
+      "category": "components",
+      "description": "DashboardHeader component"
+    },
+    {
+      "id": "ui-dashboard:dashboardsearch",
+      "name": "DashboardSearch",
+      "slug": "dashboardsearch",
+      "category": "components",
+      "description": "DashboardSearch component"
+    },
+    {
+      "id": "ui-dashboard:dashboardsidebar",
+      "name": "DashboardSidebar",
+      "slug": "dashboardsidebar",
+      "category": "components",
+      "description": "DashboardSidebar component"
+    },
+    {
+      "id": "ui-dashboard:dashboardtoolbar",
+      "name": "DashboardToolbar",
+      "slug": "dashboardtoolbar",
+      "category": "components",
+      "description": "DashboardToolbar component"
+    },
+    {
+      "id": "ui-dashboard:htmlwidget",
+      "name": "HtmlWidget",
+      "slug": "htmlwidget",
+      "category": "components",
+      "description": "HtmlWidget component"
+    },
+    {
+      "id": "ui-dashboard:kpicard",
+      "name": "KPICard",
+      "slug": "kpicard",
+      "category": "components",
+      "description": "KPICard component"
+    },
+    {
+      "id": "ui-dashboard:markdownwidget",
+      "name": "MarkdownWidget",
+      "slug": "markdownwidget",
+      "category": "components",
+      "description": "MarkdownWidget component"
+    },
+    {
+      "id": "ui-dashboard:widget",
+      "name": "Widget",
+      "slug": "widget",
+      "category": "components",
+      "description": "Display dashboard content in a contained, reusable panel with optional header and footer."
+    },
+    {
+      "id": "ui-dashboard:widgetgrid",
+      "name": "WidgetGrid",
+      "slug": "widgetgrid",
+      "category": "components",
+      "description": "WidgetGrid component"
+    }
+  ],
+  "categories": {
+    "components": 13
+  },
+  "statistics": {
+    "totalComponents": 13,
+    "documentsGenerated": 13,
+    "storiesGenerated": 0,
+    "testsGenerated": 0
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "id": "ui-layout:row",
+  "name": "Row",
+  "slug": "row",
+  "library": "ui-layout",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Row",
+  "purpose": "Organize content in a horizontal row within a layout grid",
+  "shortDescription": "Organize content in a horizontal row within a layout grid.",
+  "longDescription": "Organize content in a horizontal row within a layout grid.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Row for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Row"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown"
+  },
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "gap",
+      "type": "number | string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "align",
+      "type": "'start' | 'center' | 'end' | 'stretch'",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "justify",
+      "type": "'start' | 'center' | 'end' | 'between' | 'around'",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "wrap",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-row"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Row\\Row.tsx",
+  "keywords": [
+    "row",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Row",
+    "Create an example with Row",
+    "Generate a Row component",
+    "Build a Row in my form"
+  ],
+  "componentIntent": "Provide Row functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.127539",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "ce29f0c2",
+  "metadata": {
+    "purpose": "Organize content in a horizontal row within a layout grid.",
+    "description": "A layout primitive that defines a horizontal row in a flexible grid system. Used as a building block within grid layouts to arrange items horizontally with consistent spacing. Supports responsive adjustments and alignment options for creating complex layouts.",
+    "functionalAreas": [
+      "Layout"
+    ],
+    "userIntents": [
+      "Organize content into rows",
+      "Create horizontal layouts",
+      "Control content alignment",
+      "Build grid structures"
+    ],
+    "exampleUseCases": [
+      "Form Row",
+      "Grid Row",
+      "Data Table Row",
+      "Item Row",
+      "Toolbar Row",
+      "Navigation Row",
+      "Content Row"
+    ],
+    "useWhen": [
+      "Use this component as a building block within grid systems.",
+      "Use this component to organize content horizontally.",
+      "Use this component in combination with Column for grid layouts.",
+      "Use this component when you need consistent row spacing and alignment."
+    ],
+    "avoidWhen": [
+      "Avoid this component for simple horizontal layouts (use Stack instead).",
+      "Avoid this component for layout without a grid system.",
+      "Avoid this component when Flex would be simpler.",
+      "Avoid this component without clear grid requirements."
+    ],
+    "relatedComponents": [
+      "Column",
+      "Grid",
+      "Container",
+      "Stack"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

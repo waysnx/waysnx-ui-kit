@@ -1,0 +1,217 @@
+{
+  "id": "ui-security:audittimeline",
+  "name": "AuditTimeline",
+  "slug": "audit-timeline",
+  "library": "ui-security",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Audit Timeline",
+  "purpose": "Audit events to display",
+  "shortDescription": "Audit events to display",
+  "longDescription": "Audit events to display",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Security/Audit/AuditTimeline",
+      "storyId": "security-audit-audittimeline",
+      "url": "https://uikit.waysnx.tech/?path=/docs/security-audit-audittimeline",
+      "stories": [],
+      "tags": [],
+      "source": "AuditTimeline.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use AuditTimeline for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a AuditTimeline"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "Badge"
+    ],
+    "usedBy": [],
+    "related": [
+      "Badge"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": [
+      "Badge"
+    ]
+  },
+  "dependencies": {
+    "React": "unknown",
+    "Badge": "unknown"
+  },
+  "props": [
+    {
+      "name": "events",
+      "type": "AuditEvent[]",
+      "description": "Audit events to display",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "maxEvents",
+      "type": "number",
+      "description": "Maximum events to show",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showTimestamp",
+      "type": "boolean",
+      "description": "Show timestamp",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Audit\\AuditTimeline.tsx",
+  "keywords": [
+    "audittimeline",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use AuditTimeline",
+    "Create an example with AuditTimeline",
+    "Generate a AuditTimeline component",
+    "Build a AuditTimeline in my form"
+  ],
+  "componentIntent": "Provide AuditTimeline functionality",
+  "semanticCategory": "input",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.366057",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "9c14e1f3",
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-media",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

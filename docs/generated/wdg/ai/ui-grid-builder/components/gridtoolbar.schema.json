@@ -1,0 +1,80 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-grid-builder/gridtoolbar.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "GridToolbar component",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-grid-builder",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "colDropdownOpen": {
+      "description": "",
+      "type": "boolean"
+    },
+    "columns": {
+      "description": "",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "globalFilter": {
+      "description": "",
+      "type": "string"
+    },
+    "onGlobalFilterChange": {
+      "description": "",
+      "type": "string"
+    },
+    "onVisibilityChange": {
+      "description": "",
+      "type": "string"
+    },
+    "setColDropdownOpen": {
+      "description": "",
+      "type": "boolean"
+    },
+    "showColumnToggle": {
+      "description": "",
+      "type": "boolean"
+    },
+    "showGlobalFilter": {
+      "description": "",
+      "type": "boolean"
+    },
+    "title": {
+      "description": "",
+      "type": "string"
+    },
+    "toolbarActions": {
+      "description": "",
+      "type": "string"
+    },
+    "totalCount": {
+      "description": "",
+      "type": "number"
+    }
+  },
+  "required": [
+    "totalCount",
+    "columns",
+    "onVisibilityChange",
+    "showColumnToggle",
+    "colDropdownOpen",
+    "setColDropdownOpen"
+  ],
+  "title": "GridToolbar",
+  "type": "object"
+}

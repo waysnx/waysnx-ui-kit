@@ -1,0 +1,283 @@
+{
+  "version": "2.0.0",
+  "library": "ui-navigation",
+  "generatedAt": "2026-09-03T20:03:02.775343",
+  "relationshipModel": {
+    "uses": "Components this component directly imports or uses",
+    "usedBy": "Components that import or use this component",
+    "related": "Related components in the same domain",
+    "alternatives": "Alternative implementations for this component",
+    "parentComponents": "Components that contain or wrap this component",
+    "childComponents": "Components this component uses or renders"
+  },
+  "relationships": [
+    {
+      "from": "Breadcrumb",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "Header"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "Header"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "CommandPalette",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ContextMenu",
+      "relationships": {
+        "uses": [
+          "MenuItem"
+        ],
+        "usedBy": [],
+        "related": [
+          "MenuItem"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "MenuItem"
+        ]
+      }
+    },
+    {
+      "from": "Drawer",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "FavoritesMenu",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Header",
+      "relationships": {
+        "uses": [
+          "Breadcrumb"
+        ],
+        "usedBy": [],
+        "related": [
+          "Breadcrumb"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Breadcrumb"
+        ]
+      }
+    },
+    {
+      "from": "MegaMenu",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Menu",
+      "relationships": {
+        "uses": [
+          "MenuItem"
+        ],
+        "usedBy": [
+          "Navbar",
+          "Sidebar"
+        ],
+        "related": [
+          "MenuItem"
+        ],
+        "alternatives": [
+          "Dropdown"
+        ],
+        "parentComponents": [
+          "Navbar",
+          "Sidebar"
+        ],
+        "childComponents": [
+          "MenuItem"
+        ]
+      }
+    },
+    {
+      "from": "MenuItem",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ContextMenu",
+          "Menu"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ContextMenu",
+          "Menu"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Navbar",
+      "relationships": {
+        "uses": [
+          "Menu"
+        ],
+        "usedBy": [],
+        "related": [
+          "Menu"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Menu"
+        ]
+      }
+    },
+    {
+      "from": "NotificationCenter",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "QuickActions",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "RecentItems",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "SearchNavigation",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Sidebar",
+      "relationships": {
+        "uses": [
+          "Menu"
+        ],
+        "usedBy": [],
+        "related": [
+          "Menu"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Menu"
+        ]
+      }
+    },
+    {
+      "from": "StepNavigation",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Tabs",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "TreeMenu",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "UserMenu",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "WorkspaceSwitcher",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    }
+  ]
+}

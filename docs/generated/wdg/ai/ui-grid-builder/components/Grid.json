@@ -1,0 +1,731 @@
+{
+  "id": "ui-grid-builder:grid",
+  "name": "Grid",
+  "slug": "grid",
+  "library": "ui-grid-builder",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Grid",
+  "purpose": "Build and configure responsive data grids with columns and rows",
+  "shortDescription": "Build and configure responsive data grids with columns and rows.",
+  "longDescription": "Build and configure responsive data grids with columns and rows.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Grid for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Grid"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "GridActions",
+      "GridCell",
+      "GridPagination",
+      "GridSelectionBar",
+      "GridToolbar"
+    ],
+    "usedBy": [],
+    "related": [
+      "GridActions",
+      "GridCell",
+      "GridPagination",
+      "GridSelectionBar",
+      "GridToolbar"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useReactTable": "unknown",
+    "getCoreRowModel": "unknown",
+    "getSortedRowModel": "unknown",
+    "getFilteredRowModel": "unknown",
+    "getPaginationRowModel": "unknown",
+    "flexRender": "unknown",
+    "SortingState": "unknown",
+    "ColumnFiltersState": "unknown",
+    "VisibilityState": "unknown",
+    "FilterFn": "unknown",
+    "RowSelectionState": "unknown",
+    "": "unknown",
+    "useTranslation": "unknown",
+    "GridCell": "unknown",
+    "GridActions": "unknown",
+    "GridToolbar": "unknown",
+    "GridPagination": "unknown",
+    "GridSelectionBar": "unknown"
+  },
+  "props": [
+    {
+      "name": "columnId",
+      "type": "string;\n  filterState: FilterState;\n  onFilterChange: (state: FilterState) => void;\n  onClose: () => void;",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-error",
+    "--wx-color-error-light",
+    "--wx-color-primary",
+    "--wx-color-primary-contrast",
+    "--wx-color-primary-hover",
+    "--wx-color-primary-light",
+    "--wx-color-success",
+    "--wx-color-success-light",
+    "--wx-color-surface",
+    "--wx-color-surface-alt",
+    "--wx-color-surface-hover",
+    "--wx-color-text",
+    "--wx-color-text-light",
+    "--wx-color-text-muted",
+    "--wx-font-family",
+    "--wx-font-size-md",
+    "--wx-font-size-sm",
+    "--wx-font-size-xs",
+    "--wx-radius-md",
+    "--wx-radius-sm",
+    "--wx-shadow-focus",
+    "--wx-shadow-lg"
+  ],
+  "cssClasses": [
+    "wx-grid-wrapper",
+    "wx-grid-toolbar",
+    "wx-grid-toolbar-left",
+    "wx-grid-toolbar-right",
+    "wx-grid-title",
+    "wx-grid-count",
+    "wx-grid-col-toggle",
+    "wx-grid-col-toggle-btn",
+    "wx-grid-col-dropdown",
+    "wx-grid-col-dropdown-title",
+    "wx-grid-col-item",
+    "wx-grid-table-wrapper",
+    "wx-grid-table",
+    "wx-grid-thead",
+    "wx-grid-th",
+    "wx-grid-th-sortable",
+    "wx-grid-th-inner",
+    "wx-grid-sort-icon",
+    "wx-grid-filter-row",
+    "wx-grid-filter-input",
+    "wx-grid-tbody",
+    "wx-grid-row-clickable",
+    "wx-grid-td",
+    "wx-grid-cell-email",
+    "wx-grid-cell-image",
+    "wx-grid-cell-boolean",
+    "wx-grid-cell-boolean--true",
+    "wx-grid-cell-boolean--false",
+    "wx-grid-actions",
+    "wx-grid-action-btn",
+    "wx-grid-action-btn--destructive",
+    "wx-grid-action-btn--primary",
+    "wx-grid-action-btn--icon-only",
+    "wx-grid-empty",
+    "wx-grid-skeleton-row",
+    "wx-grid-skeleton-cell",
+    "wx-grid-pagination",
+    "wx-grid-pagination-info",
+    "wx-grid-pagination-controls",
+    "wx-grid-page-btn",
+    "wx-grid-page-btn--active",
+    "wx-grid-page-size",
+    "wx-grid-filter-icon-btn",
+    "wx-grid-filter-icon-btn--active",
+    "wx-grid-filter-dropdown",
+    "wx-grid-filter-operator",
+    "wx-grid-filter-popup-input",
+    "wx-grid-filter-actions",
+    "wx-grid-filter-clear-btn",
+    "wx-grid-global-search",
+    "wx-grid-global-search-input",
+    "wx-grid-global-search-clear",
+    "wx-grid-kebab",
+    "wx-grid-kebab-btn",
+    "wx-grid-kebab-menu",
+    "wx-grid-kebab-item",
+    "wx-grid-kebab-item--destructive",
+    "wx-grid-kebab-item-icon",
+    "wx-grid-badge",
+    "wx-grid-badge--default",
+    "wx-grid-row-checkbox",
+    "wx-grid-row-selected",
+    "wx-grid-selection-bar",
+    "wx-grid-selection-bar-left",
+    "wx-grid-selection-count",
+    "wx-grid-selection-clear",
+    "wx-grid-selection-actions"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {
+    "--wx-font-family": {
+      "properties": [
+        "font-family"
+      ],
+      "selectors": [
+        ".wx-grid-wrapper"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-md": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-grid-title"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-sm": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-grid-count",
+        ".wx-grid-col-toggle-btn",
+        ".wx-grid-col-item",
+        ".wx-grid-table",
+        ".wx-grid-th",
+        ".wx-grid-empty",
+        ".wx-grid-pagination-info",
+        ".wx-grid-page-btn",
+        ".wx-grid-page-size",
+        ".wx-grid-page-size select",
+        ".wx-grid-filter-operator",
+        ".wx-grid-filter-popup-input",
+        ".wx-grid-filter-clear-btn",
+        ".wx-grid-global-search-input",
+        ".wx-grid-kebab-item",
+        ".wx-grid-selection-count"
+      ],
+      "occurrences": 16,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-xs": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-grid-col-dropdown-title",
+        ".wx-grid-sort-icon",
+        ".wx-grid-filter-input",
+        ".wx-grid-cell-boolean",
+        ".wx-grid-action-btn",
+        ".}\n\n\n.wx-grid-filter-icon-btn",
+        ".wx-grid-global-search-clear",
+        ".wx-grid-badge",
+        ".wx-grid-selection-clear"
+      ],
+      "occurrences": 9,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {
+    "--wx-color-border": {
+      "properties": [
+        "border",
+        "border-bottom",
+        "background",
+        "border-top",
+        "border-color"
+      ],
+      "selectors": [
+        ".wx-grid-wrapper",
+        ".wx-grid-toolbar",
+        ".wx-grid-col-toggle-btn",
+        ".wx-grid-col-dropdown",
+        ".wx-grid-filter-row th",
+        ".wx-grid-filter-input",
+        ".wx-grid-tbody tr",
+        ".wx-grid-action-btn",
+        ".wx-grid-skeleton-cell",
+        ".}\n\n\n.wx-grid-pagination",
+        ".wx-grid-page-btn",
+        ".wx-grid-page-size select",
+        ".wx-grid-filter-dropdown",
+        ".wx-grid-filter-operator",
+        ".wx-grid-global-search-input",
+        ".wx-grid-kebab-btn",
+        ".wx-grid-kebab-menu",
+        ".wx-grid-badge--default"
+      ],
+      "occurrences": 19,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-grid-wrapper",
+        ".wx-grid-col-toggle-btn",
+        ".wx-grid-col-dropdown",
+        ".wx-grid-filter-input",
+        ".wx-grid-action-btn",
+        ".}\n\n\n.wx-grid-pagination",
+        ".wx-grid-page-btn",
+        ".wx-grid-page-size select",
+        ".wx-grid-filter-dropdown",
+        ".wx-grid-filter-operator",
+        ".wx-grid-filter-popup-input",
+        ".wx-grid-global-search-input",
+        ".wx-grid-kebab-menu"
+      ],
+      "occurrences": 13,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-grid-title",
+        ".wx-grid-col-item",
+        ".wx-grid-filter-input",
+        ".wx-grid-td",
+        ".wx-grid-page-btn",
+        ".wx-grid-page-size select",
+        ".wx-grid-filter-operator",
+        ".wx-grid-filter-popup-input",
+        ".wx-grid-global-search-input",
+        ".wx-grid-kebab-item",
+        ".wx-grid-selection-clear:hover"
+      ],
+      "occurrences": 11,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-grid-count",
+        ".wx-grid-col-toggle-btn",
+        ".wx-grid-col-dropdown-title",
+        ".wx-grid-action-btn",
+        ".wx-grid-empty",
+        ".wx-grid-pagination-info",
+        ".wx-grid-page-size",
+        ".wx-grid-kebab-btn",
+        ".wx-grid-badge--default",
+        ".wx-grid-selection-clear"
+      ],
+      "occurrences": 10,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary": {
+      "properties": [
+        "border-color",
+        "color",
+        "accent-color",
+        "background",
+        "border",
+        "border-bottom"
+      ],
+      "selectors": [
+        ".wx-grid-col-toggle-btn:hover",
+        ".wx-grid-col-item input[type=\"checkbox\"]",
+        ".wx-grid-thead",
+        ".wx-grid-filter-input:focus",
+        ".wx-grid-cell-email a",
+        ".wx-grid-action-btn:hover",
+        ".wx-grid-action-btn--primary",
+        ".wx-grid-page-btn:hover:not(:disabled):not(.wx-grid-page-btn--active)",
+        ".wx-grid-page-btn--active",
+        ".wx-grid-page-btn--active:hover",
+        ".wx-grid-page-size select:focus",
+        ".wx-grid-filter-operator:focus",
+        ".wx-grid-filter-popup-input",
+        ".wx-grid-filter-popup-input:focus",
+        ".wx-grid-filter-clear-btn",
+        ".wx-grid-filter-clear-btn:hover",
+        ".wx-grid-global-search-input:focus",
+        ".wx-grid-kebab-btn:hover",
+        ".wx-grid-row-checkbox",
+        ".wx-grid-selection-bar",
+        ".wx-grid-selection-count"
+      ],
+      "occurrences": 27,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface-hover": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-grid-col-item:hover",
+        ".wx-grid-tbody tr:hover",
+        ".wx-grid-skeleton-cell",
+        ".wx-grid-kebab-item:hover",
+        ".wx-grid-badge--default",
+        ".wx-grid-selection-clear:hover"
+      ],
+      "occurrences": 6,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary-contrast": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-grid-th",
+        ".wx-grid-action-btn--primary",
+        ".wx-grid-action-btn--primary:hover",
+        ".wx-grid-filter-clear-btn:hover"
+      ],
+      "occurrences": 4,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface-alt": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-grid-filter-row th"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-success-light": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-grid-cell-boolean--true"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-success": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-grid-cell-boolean--true"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error-light": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-grid-cell-boolean--false",
+        ".wx-grid-kebab-item--destructive:hover"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error": {
+      "properties": [
+        "color",
+        "border-color"
+      ],
+      "selectors": [
+        ".wx-grid-cell-boolean--false",
+        ".wx-grid-action-btn--destructive:hover",
+        ".wx-grid-global-search-clear:hover",
+        ".wx-grid-kebab-item--destructive"
+      ],
+      "occurrences": 5,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary-hover": {
+      "properties": [
+        "background",
+        "border-color"
+      ],
+      "selectors": [
+        ".wx-grid-action-btn--primary:hover"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-light": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-grid-global-search-input::placeholder",
+        ".wx-grid-global-search-clear"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary-light": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-grid-tbody tr.wx-grid-row-selected",
+        ".wx-grid-selection-bar"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {
+    "--wx-shadow-lg": {
+      "properties": [
+        "box-shadow"
+      ],
+      "selectors": [
+        ".wx-grid-col-dropdown",
+        ".wx-grid-filter-dropdown",
+        ".wx-grid-kebab-menu"
+      ],
+      "occurrences": 3,
+      "used": true,
+      "value": ""
+    },
+    "--wx-shadow-focus": {
+      "properties": [
+        "box-shadow"
+      ],
+      "selectors": [
+        ".wx-grid-filter-popup-input:focus"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "radiusTokens": {
+    "--wx-radius-md": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".wx-grid-wrapper",
+        ".wx-grid-col-toggle-btn",
+        ".wx-grid-col-dropdown",
+        ".wx-grid-filter-dropdown",
+        ".wx-grid-filter-operator",
+        ".wx-grid-filter-popup-input",
+        ".wx-grid-filter-clear-btn",
+        ".wx-grid-global-search-input",
+        ".wx-grid-kebab-menu"
+      ],
+      "occurrences": 9,
+      "used": true,
+      "value": ""
+    },
+    "--wx-radius-sm": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".wx-grid-filter-input",
+        ".wx-grid-cell-image img",
+        ".wx-grid-action-btn",
+        ".wx-grid-skeleton-cell",
+        ".wx-grid-page-btn",
+        ".wx-grid-page-size select",
+        ".wx-grid-kebab-btn",
+        ".wx-grid-selection-clear"
+      ],
+      "occurrences": 8,
+      "used": true,
+      "value": ""
+    }
+  },
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Grid\\Grid.tsx",
+  "keywords": [
+    "grid",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Grid",
+    "Create an example with Grid",
+    "Generate a Grid component",
+    "Build a Grid in my form"
+  ],
+  "componentIntent": "Create grid layouts",
+  "semanticCategory": "layout",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.991945",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "4b3e5c36",
+  "metadata": {
+    "purpose": "Build and configure responsive data grids with columns and rows.",
+    "description": "A comprehensive grid builder component that enables creating, configuring, and managing data grids. Supports column definition, sorting, filtering, pagination, and responsive layouts. Used for displaying tabular data in customizable formats.",
+    "functionalAreas": [
+      "Data Entry",
+      "Visualization",
+      "Layout"
+    ],
+    "userIntents": [
+      "View data in table format",
+      "Sort and filter data",
+      "Navigate pages",
+      "Configure columns"
+    ],
+    "exampleUseCases": [
+      "Data Table",
+      "Results Table",
+      "Admin Grid",
+      "Inventory Table",
+      "Report Grid",
+      "Data Management",
+      "Spreadsheet View"
+    ],
+    "useWhen": [
+      "Use this component to display and manage tabular data.",
+      "Use this component when sorting and filtering are important.",
+      "Use this component for large datasets with pagination.",
+      "Use this component when column customization is needed."
+    ],
+    "avoidWhen": [
+      "Avoid this component for simple list display (use List instead).",
+      "Avoid this component without proper data structure.",
+      "Avoid this component on mobile without responsive design.",
+      "Avoid this component for hierarchical data (use Tree instead)."
+    ],
+    "relatedComponents": [
+      "Table",
+      "DataGrid",
+      "Grid",
+      "List"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "@tanstack/react-table",
+        "version": "^8.0.0"
+      },
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@tanstack/react-table",
+        "version": "^8.21.3"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "version": "2.0.0",
+  "name": "WaysNX UI Kit - AI Knowledge Base",
+  "description": "Complete AI knowledge base for all WaysNX UI Kit libraries",
+  "generatedAt": "2026-09-03T20:03:10.869129",
+  "libraries": [
+    {
+      "name": "ui-accessibility",
+      "version": "1.0.0",
+      "componentCount": 5,
+      "path": "./ui-accessibility/",
+      "files": {
+        "readme": "./ui-accessibility/README.md",
+        "llm": "./ui-accessibility/LLM.md",
+        "library": "./ui-accessibility/library.json",
+        "searchIndex": "./ui-accessibility/search-index.json",
+        "relationships": "./ui-accessibility/relationships.json",
+        "components": "./ui-accessibility/components/"
+      }
+    },
+    {
+      "name": "ui-communication",
+      "version": "1.0.0",
+      "componentCount": 15,
+      "path": "./ui-communication/",
+      "files": {
+        "readme": "./ui-communication/README.md",
+        "llm": "./ui-communication/LLM.md",
+        "library": "./ui-communication/library.json",
+        "searchIndex": "./ui-communication/search-index.json",
+        "relationships": "./ui-communication/relationships.json",
+        "components": "./ui-communication/components/"
+      }
+    },
+    {
+      "name": "ui-core",
+      "version": "1.0.0",
+      "componentCount": 24,
+      "path": "./ui-core/",
+      "files": {
+        "readme": "./ui-core/README.md",
+        "llm": "./ui-core/LLM.md",
+        "library": "./ui-core/library.json",
+        "searchIndex": "./ui-core/search-index.json",
+        "relationships": "./ui-core/relationships.json",
+        "components": "./ui-core/components/"
+      }
+    },
+    {
+      "name": "ui-dashboard",
+      "version": "1.0.0",
+      "componentCount": 13,
+      "path": "./ui-dashboard/",
+      "files": {
+        "readme": "./ui-dashboard/README.md",
+        "llm": "./ui-dashboard/LLM.md",
+        "library": "./ui-dashboard/library.json",
+        "searchIndex": "./ui-dashboard/search-index.json",
+        "relationships": "./ui-dashboard/relationships.json",
+        "components": "./ui-dashboard/components/"
+      }
+    },
+    {
+      "name": "ui-data",
+      "version": "1.0.0",
+      "componentCount": 6,
+      "path": "./ui-data/",
+      "files": {
+        "readme": "./ui-data/README.md",
+        "llm": "./ui-data/LLM.md",
+        "library": "./ui-data/library.json",
+        "searchIndex": "./ui-data/search-index.json",
+        "relationships": "./ui-data/relationships.json",
+        "components": "./ui-data/components/"
+      }
+    },
+    {
+      "name": "ui-diagnostics",
+      "version": "0.1.0",
+      "componentCount": 0,
+      "path": "./ui-diagnostics/",
+      "files": {
+        "readme": "./ui-diagnostics/README.md",
+        "llm": "./ui-diagnostics/LLM.md",
+        "library": "./ui-diagnostics/library.json",
+        "searchIndex": "./ui-diagnostics/search-index.json",
+        "relationships": "./ui-diagnostics/relationships.json",
+        "components": "./ui-diagnostics/components/"
+      }
+    },
+    {
+      "name": "ui-docs",
+      "version": "1.0.0",
+      "componentCount": 12,
+      "path": "./ui-docs/",
+      "files": {
+        "readme": "./ui-docs/README.md",
+        "llm": "./ui-docs/LLM.md",
+        "library": "./ui-docs/library.json",
+        "searchIndex": "./ui-docs/search-index.json",
+        "relationships": "./ui-docs/relationships.json",
+        "components": "./ui-docs/components/"
+      }
+    },
+    {
+      "name": "ui-feedback",
+      "version": "1.0.0",
+      "componentCount": 12,
+      "path": "./ui-feedback/",
+      "files": {
+        "readme": "./ui-feedback/README.md",
+        "llm": "./ui-feedback/LLM.md",
+        "library": "./ui-feedback/library.json",
+        "searchIndex": "./ui-feedback/search-index.json",
+        "relationships": "./ui-feedback/relationships.json",
+        "components": "./ui-feedback/components/"
+      }
+    },
+    {
+      "name": "ui-files",
+      "version": "1.0.0",
+      "componentCount": 2,
+      "path": "./ui-files/",
+      "files": {
+        "readme": "./ui-files/README.md",
+        "llm": "./ui-files/LLM.md",
+        "library": "./ui-files/library.json",
+        "searchIndex": "./ui-files/search-index.json",
+        "relationships": "./ui-files/relationships.json",
+        "components": "./ui-files/components/"
+      }
+    },
+    {
+      "name": "ui-form-builder",
+      "version": "1.0.0",
+      "componentCount": 0,
+      "path": "./ui-form-builder/",
+      "files": {
+        "readme": "./ui-form-builder/README.md",
+        "llm": "./ui-form-builder/LLM.md",
+        "library": "./ui-form-builder/library.json",
+        "searchIndex": "./ui-form-builder/search-index.json",
+        "relationships": "./ui-form-builder/relationships.json",
+        "components": "./ui-form-builder/components/"
+      }
+    },
+    {
+      "name": "ui-grid-builder",
+      "version": "1.0.0",
+      "componentCount": 6,
+      "path": "./ui-grid-builder/",
+      "files": {
+        "readme": "./ui-grid-builder/README.md",
+        "llm": "./ui-grid-builder/LLM.md",
+        "library": "./ui-grid-builder/library.json",
+        "searchIndex": "./ui-grid-builder/search-index.json",
+        "relationships": "./ui-grid-builder/relationships.json",
+        "components": "./ui-grid-builder/components/"
+      }
+    },
+    {
+      "name": "ui-i18n",
+      "version": "1.0.0",
+      "componentCount": 0,
+      "path": "./ui-i18n/",
+      "files": {
+        "readme": "./ui-i18n/README.md",
+        "llm": "./ui-i18n/LLM.md",
+        "library": "./ui-i18n/library.json",
+        "searchIndex": "./ui-i18n/search-index.json",
+        "relationships": "./ui-i18n/relationships.json",
+        "components": "./ui-i18n/components/"
+      }
+    },
+    {
+      "name": "ui-layout",
+      "version": "1.0.0",
+      "componentCount": 22,
+      "path": "./ui-layout/",
+      "files": {
+        "readme": "./ui-layout/README.md",
+        "llm": "./ui-layout/LLM.md",
+        "library": "./ui-layout/library.json",
+        "searchIndex": "./ui-layout/search-index.json",
+        "relationships": "./ui-layout/relationships.json",
+        "components": "./ui-layout/components/"
+      }
+    },
+    {
+      "name": "ui-maps",
+      "version": "1.0.0",
+      "componentCount": 9,
+      "path": "./ui-maps/",
+      "files": {
+        "readme": "./ui-maps/README.md",
+        "llm": "./ui-maps/LLM.md",
+        "library": "./ui-maps/library.json",
+        "searchIndex": "./ui-maps/search-index.json",
+        "relationships": "./ui-maps/relationships.json",
+        "components": "./ui-maps/components/"
+      }
+    },
+    {
+      "name": "ui-media",
+      "version": "1.0.0",
+      "componentCount": 12,
+      "path": "./ui-media/",
+      "files": {
+        "readme": "./ui-media/README.md",
+        "llm": "./ui-media/LLM.md",
+        "library": "./ui-media/library.json",
+        "searchIndex": "./ui-media/search-index.json",
+        "relationships": "./ui-media/relationships.json",
+        "components": "./ui-media/components/"
+      }
+    },
+    {
+      "name": "ui-navigation",
+      "version": "1.0.0",
+      "componentCount": 20,
+      "path": "./ui-navigation/",
+      "files": {
+        "readme": "./ui-navigation/README.md",
+        "llm": "./ui-navigation/LLM.md",
+        "library": "./ui-navigation/library.json",
+        "searchIndex": "./ui-navigation/search-index.json",
+        "relationships": "./ui-navigation/relationships.json",
+        "components": "./ui-navigation/components/"
+      }
+    },
+    {
+      "name": "ui-security",
+      "version": "1.0.0",
+      "componentCount": 74,
+      "path": "./ui-security/",
+      "files": {
+        "readme": "./ui-security/README.md",
+        "llm": "./ui-security/LLM.md",
+        "library": "./ui-security/library.json",
+        "searchIndex": "./ui-security/search-index.json",
+        "relationships": "./ui-security/relationships.json",
+        "components": "./ui-security/components/"
+      }
+    },
+    {
+      "name": "ui-visualization",
+      "version": "1.0.0",
+      "componentCount": 10,
+      "path": "./ui-visualization/",
+      "files": {
+        "readme": "./ui-visualization/README.md",
+        "llm": "./ui-visualization/LLM.md",
+        "library": "./ui-visualization/library.json",
+        "searchIndex": "./ui-visualization/search-index.json",
+        "relationships": "./ui-visualization/relationships.json",
+        "components": "./ui-visualization/components/"
+      }
+    }
+  ],
+  "totalLibraries": 18,
+  "totalComponents": 242
+}

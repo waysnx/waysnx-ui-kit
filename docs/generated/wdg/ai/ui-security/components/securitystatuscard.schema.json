@@ -1,0 +1,63 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/securitystatuscard.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "SecurityStatusCard - Individual security status card",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "actionLabel": {
+      "description": "Action button label",
+      "type": "string"
+    },
+    "description": {
+      "description": "Status description",
+      "type": "string"
+    },
+    "icon": {
+      "description": "Card icon",
+      "type": "string"
+    },
+    "label": {
+      "description": "Status label",
+      "type": "string"
+    },
+    "onAction": {
+      "description": "Action button callback",
+      "type": "null"
+    },
+    "status": {
+      "description": "Current status",
+      "type": "string"
+    },
+    "title": {
+      "description": "Status title",
+      "type": "string"
+    },
+    "value": {
+      "description": "Status value/percentage",
+      "enum": [
+        "string",
+        "number"
+      ]
+    }
+  },
+  "required": [
+    "title"
+  ],
+  "title": "SecurityStatusCard",
+  "type": "object"
+}

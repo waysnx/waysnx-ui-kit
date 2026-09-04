@@ -1,0 +1,88 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-navigation/menuitem.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "MenuItem component",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": true,
+    "isMemo": false,
+    "library": "ui-navigation",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "canAccess": {
+      "description": "Function to check access for this item",
+      "type": "boolean"
+    },
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "depth": {
+      "description": "Current nesting depth",
+      "type": "number"
+    },
+    "isActive": {
+      "description": "Whether this item is currently active",
+      "type": "boolean"
+    },
+    "isExpanded": {
+      "description": "Whether this item's children are expanded",
+      "type": "boolean"
+    },
+    "isFocused": {
+      "description": "Whether this item is focused via keyboard navigation",
+      "type": "boolean"
+    },
+    "item": {
+      "description": "The navigation item to render",
+      "type": "string"
+    },
+    "maxDepth": {
+      "description": "Maximum nesting depth allowed",
+      "type": "number"
+    },
+    "onFocus": {
+      "description": "Callback when item receives focus",
+      "type": "string"
+    },
+    "onItemClick": {
+      "description": "Callback when item is clicked",
+      "type": "null"
+    },
+    "onToggleExpand": {
+      "description": "Callback to toggle expansion",
+      "type": "string"
+    },
+    "security": {
+      "description": "Security context for permission checking",
+      "type": "string"
+    },
+    "showBadges": {
+      "description": "Whether to show badges",
+      "type": "boolean"
+    },
+    "showIcons": {
+      "description": "Whether to show icons",
+      "type": "boolean"
+    },
+    "style": {
+      "description": "Additional styles",
+      "type": "string"
+    }
+  },
+  "required": [
+    "item"
+  ],
+  "title": "MenuItem",
+  "type": "object"
+}

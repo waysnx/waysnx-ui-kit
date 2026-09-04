@@ -1,0 +1,68 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/secureuploader.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "SecureUploader - File upload with security validation",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "allowedTypes": {
+      "description": "Allowed file types (MIME types)",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "height": {
+      "description": "Drag and drop area height",
+      "type": "string"
+    },
+    "helperText": {
+      "description": "Custom help text",
+      "type": "string"
+    },
+    "isLoading": {
+      "description": "Whether upload is in progress",
+      "type": "boolean"
+    },
+    "label": {
+      "description": "Label text",
+      "type": "string"
+    },
+    "maxSize": {
+      "description": "Maximum file size in bytes",
+      "type": "number"
+    },
+    "multiple": {
+      "description": "Whether to allow multiple files",
+      "type": "boolean"
+    },
+    "onError": {
+      "description": "Callback for upload errors",
+      "type": "string"
+    },
+    "onFilesSelected": {
+      "description": "Callback when files are selected",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [],
+  "title": "SecureUploader",
+  "type": "object"
+}

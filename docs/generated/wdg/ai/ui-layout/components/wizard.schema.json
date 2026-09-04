@@ -1,0 +1,76 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-layout/wizard.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Guide users through a multi-step process or form.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-layout",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "Default": {
+      "description": "",
+      "type": "string"
+    },
+    "children": {
+      "description": "",
+      "type": "string"
+    },
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "defaultStep": {
+      "description": "",
+      "type": "number"
+    },
+    "errorMessage": {
+      "description": "",
+      "type": "string"
+    },
+    "onComplete": {
+      "description": "",
+      "type": "null"
+    },
+    "onSaveProgress": {
+      "description": "",
+      "type": "number"
+    },
+    "onStepChange": {
+      "description": "",
+      "type": "number"
+    },
+    "showStepNumbers": {
+      "description": "",
+      "type": "boolean"
+    },
+    "successMessage": {
+      "description": "",
+      "type": "string"
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [
+    "children",
+    "Default",
+    "Default",
+    "Default",
+    "Default"
+  ],
+  "title": "Wizard",
+  "type": "object"
+}

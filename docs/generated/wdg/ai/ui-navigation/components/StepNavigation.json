@@ -1,0 +1,366 @@
+{
+  "id": "ui-navigation:stepnavigation",
+  "name": "StepNavigation",
+  "slug": "step-navigation",
+  "library": "ui-navigation",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Step Navigation",
+  "purpose": "Navigate between steps of a multi-step process or guide",
+  "shortDescription": "Navigate between steps of a multi-step process or guide.",
+  "longDescription": "Navigate between steps of a multi-step process or guide.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Enterprise/StepNavigation",
+      "storyId": "enterprise-stepnavigation",
+      "url": "https://uikit.waysnx.tech/?path=/docs/enterprise-stepnavigation",
+      "stories": [],
+      "tags": [],
+      "source": "StepNavigation.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use StepNavigation for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a StepNavigation"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [
+    {
+      "name": "steps",
+      "type": "StepItem[]",
+      "description": "Array of step definitions",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "currentStep",
+      "type": "number",
+      "description": "Current active step index",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "onStepChange",
+      "type": "(stepIndex: number) => void | Promise<void>",
+      "description": "Callback when step changes",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onValidateStep",
+      "type": "(stepIndex: number) => boolean | Promise<boolean>",
+      "description": "Callback to validate if step can be changed",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "allowBacktrack",
+      "type": "boolean",
+      "description": "Allow going back to previous steps",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "variant",
+      "type": "'horizontal' | 'vertical' | 'dots'",
+      "description": "Display variant",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showDescriptions",
+      "type": "boolean",
+      "description": "Show step descriptions",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showProgress",
+      "type": "boolean",
+      "description": "Show progress percentage",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "disableNextOnLastStep",
+      "type": "boolean",
+      "description": "Disable next button on last step",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "previousLabel",
+      "type": "string",
+      "description": "Custom previous button label",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "nextLabel",
+      "type": "string",
+      "description": "Custom next button label",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "finishLabel",
+      "type": "string",
+      "description": "Custom finish button label",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onFinish",
+      "type": "() => void | Promise<void>",
+      "description": "Callback when process is finished",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showFinishButton",
+      "type": "boolean",
+      "description": "Show custom button labels at end of wizard",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "Additional CSS class",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "style",
+      "type": "React.CSSProperties",
+      "description": "Additional styles",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "aria-label for accessibility",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "Test ID",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [
+    "forwardRef"
+  ],
+  "contextsUsed": [],
+  "forwardRef": true,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-step-navigation__current-step",
+    "wx-step-navigation__dots",
+    "wx-step-navigation__button",
+    "wx-step-navigation__buttons",
+    "wx-step-navigation__current-description",
+    "wx-step-navigation__progress-bar",
+    "wx-step-navigation__indicator",
+    "wx-step-navigation__button--next",
+    "wx-step-navigation__spinner",
+    "wx-step-navigation__progress",
+    "wx-step-navigation__button--finish",
+    "wx-step-navigation__current",
+    "wx-step-navigation__button--previous",
+    "wx-step-navigation__step-content",
+    "wx-step-navigation__checkmark",
+    "wx-step-navigation__current-title",
+    "wx-step-navigation__step-label",
+    "wx-step-navigation__step-number",
+    "wx-step-navigation__step-description"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\StepNavigation\\StepNavigation.tsx",
+  "keywords": [
+    "stepnavigation",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use StepNavigation",
+    "Create an example with StepNavigation",
+    "Generate a StepNavigation component",
+    "Build a StepNavigation in my form"
+  ],
+  "componentIntent": "Provide StepNavigation functionality",
+  "semanticCategory": "navigation",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.313526",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "7bb5fb65",
+  "metadata": {
+    "purpose": "Navigate between steps of a multi-step process or guide.",
+    "description": "A navigation component that shows and enables switching between steps of a multi-step workflow or tutorial. Often includes progress indicators and may allow skipping or revisiting steps. Coordinates with step content to provide cohesive multi-step experience.",
+    "functionalAreas": [
+      "Navigation",
+      "Workflow"
+    ],
+    "userIntents": [
+      "Navigate between process steps",
+      "See current step",
+      "Go back to previous step",
+      "Progress to next step"
+    ],
+    "exampleUseCases": [
+      "Onboarding Steps Navigation",
+      "Wizard Navigation",
+      "Tutorial Steps",
+      "Setup Steps",
+      "Form Steps Navigation",
+      "Process Steps",
+      "Multi-step Workflow"
+    ],
+    "useWhen": [
+      "Use this component to navigate between multi-step processes.",
+      "Use this component in wizards or onboarding flows.",
+      "Use this component when users should progress linearly through steps.",
+      "Use this component alongside Stepper for visual progress indication."
+    ],
+    "avoidWhen": [
+      "Avoid this component for non-linear workflows.",
+      "Avoid this component with too many steps (provide checkpoints).",
+      "Avoid this component without clear step structure.",
+      "Avoid this component for optional or exploratory flows."
+    ],
+    "relatedComponents": [
+      "Stepper",
+      "Wizard",
+      "Tabs"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

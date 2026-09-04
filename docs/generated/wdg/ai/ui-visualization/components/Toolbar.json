@@ -1,0 +1,285 @@
+{
+  "id": "ui-visualization:toolbar",
+  "name": "Toolbar",
+  "slug": "toolbar",
+  "library": "ui-visualization",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Toolbar",
+  "purpose": "Display tool or action buttons for interactive visualizations",
+  "shortDescription": "Display tool or action buttons for interactive visualizations.",
+  "longDescription": "Display tool or action buttons for interactive visualizations.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Toolbar for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Toolbar"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [
+      "Hierarchy",
+      "OrgChart"
+    ],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [
+      "Hierarchy",
+      "OrgChart"
+    ],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown",
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "position",
+      "type": "ToolbarPosition",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "actions",
+      "type": "ToolbarAction[]",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showZoom",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "zoom",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onZoomIn",
+      "type": "() => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onZoomOut",
+      "type": "() => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onFitView",
+      "type": "() => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onResetZoom",
+      "type": "() => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-vis-toolbar__separator",
+    "wx-vis-toolbar__btn",
+    "wx-vis-toolbar__zoom-label"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Toolbar\\Toolbar.tsx",
+  "keywords": [
+    "toolbar",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Toolbar",
+    "Create an example with Toolbar",
+    "Generate a Toolbar component",
+    "Build a Toolbar in my form"
+  ],
+  "componentIntent": "Provide Toolbar functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.941393",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "896c0c71",
+  "metadata": {
+    "purpose": "Display tool or action buttons for interactive visualizations.",
+    "description": "A container component for displaying tool buttons, drawing tools, or action controls. Often positioned above or alongside the main visualization. Supports organizing tools into groups and showing/hiding tools.",
+    "functionalAreas": [
+      "Visualization",
+      "Actions"
+    ],
+    "userIntents": [
+      "Access tools",
+      "Perform actions",
+      "Select drawing tool",
+      "Execute commands"
+    ],
+    "exampleUseCases": [
+      "Drawing Toolbar",
+      "Visualization Tools",
+      "Action Toolbar",
+      "Editor Toolbar",
+      "Canvas Tools",
+      "Format Toolbar",
+      "Editing Toolbar"
+    ],
+    "useWhen": [
+      "Use this component to display tools for visualizations.",
+      "Use this component for drawing or editing tools.",
+      "Use this component with organized tool groups.",
+      "Use this component above the main interaction area."
+    ],
+    "avoidWhen": [
+      "Avoid this component without clear tool functionality.",
+      "Avoid this component with too many tools without organization.",
+      "Avoid this component for simple action buttons (use Button instead).",
+      "Avoid this component without clear visual feedback."
+    ],
+    "relatedComponents": [
+      "Button",
+      "Canvas",
+      "Visualization"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

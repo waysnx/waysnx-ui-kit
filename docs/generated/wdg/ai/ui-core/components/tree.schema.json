@@ -1,0 +1,51 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-core/tree.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display hierarchical data with expandable nodes and checkboxes for selection.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-core",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "ariaLabel": {
+      "description": "",
+      "type": "string"
+    },
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "data": {
+      "description": "",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "label": {
+      "description": "",
+      "type": "string"
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [
+    "data"
+  ],
+  "title": "Tree",
+  "type": "object"
+}

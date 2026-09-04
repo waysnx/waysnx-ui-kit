@@ -1,0 +1,54 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/auth0loginbutton.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Auth0LoginButton Component Auth0 SSO login button.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "clientId": {
+      "description": "Auth0 Client ID",
+      "type": "string"
+    },
+    "domain": {
+      "description": "Auth0 domain",
+      "type": "string"
+    },
+    "isLoading": {
+      "description": "Show loading state",
+      "type": "boolean"
+    },
+    "onError": {
+      "description": "Callback on login error",
+      "type": "null"
+    },
+    "onSuccess": {
+      "description": "Callback on successful login",
+      "type": "object"
+    },
+    "variant": {
+      "description": "Button variant",
+      "enum": [
+        "primary",
+        "outline",
+        "ghost"
+      ]
+    }
+  },
+  "required": [],
+  "title": "Auth0LoginButton",
+  "type": "object"
+}

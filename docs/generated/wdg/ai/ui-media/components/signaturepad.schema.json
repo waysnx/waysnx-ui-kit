@@ -1,0 +1,25 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-media/signaturepad.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Enable users to draw or write signatures.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-media",
+    "version": "1.0.0"
+  },
+  "properties": {},
+  "required": [],
+  "title": "SignaturePad",
+  "type": "object"
+}

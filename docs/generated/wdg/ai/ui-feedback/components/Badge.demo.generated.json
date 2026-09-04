@@ -1,0 +1,101 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "badge",
+    "name": "Badge",
+    "package": "@waysnx/ui-feedback",
+    "export": "Badge"
+  },
+  "categories": [
+    {
+      "id": "variants",
+      "title": "Variants",
+      "description": "",
+      "examples": [
+        {
+          "id": "variants-color-default",
+          "title": "Color: default",
+          "description": "Demonstrates the default color.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "color": "default"
+          },
+          "keywords": [
+            "color",
+            "default"
+          ]
+        },
+        {
+          "id": "variants-color-success",
+          "title": "Color: success",
+          "description": "Demonstrates the success color.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "color": "success"
+          },
+          "keywords": [
+            "color",
+            "success"
+          ]
+        },
+        {
+          "id": "variants-color-error",
+          "title": "Color: error",
+          "description": "Demonstrates the error color.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "color": "error"
+          },
+          "keywords": [
+            "color",
+            "error"
+          ]
+        },
+        {
+          "id": "variants-color-warning",
+          "title": "Color: warning",
+          "description": "Demonstrates the warning color.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "color": "warning"
+          },
+          "keywords": [
+            "color",
+            "warning"
+          ]
+        },
+        {
+          "id": "variants-color-info",
+          "title": "Color: info",
+          "description": "Demonstrates the info color.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "color": "info"
+          },
+          "keywords": [
+            "color",
+            "info"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:50.461351",
+  "stats": {
+    "examplesGenerated": 5,
+    "categoriesGenerated": 1
+  }
+}

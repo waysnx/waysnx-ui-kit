@@ -1,0 +1,123 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "favoritesmenu",
+    "name": "FavoritesMenu",
+    "package": "@waysnx/ui-navigation",
+    "export": "FavoritesMenu"
+  },
+  "categories": [
+    {
+      "id": "sizes",
+      "title": "Sizes",
+      "description": "",
+      "examples": [
+        {
+          "id": "sizes-size-sm",
+          "title": "Size: sm",
+          "description": "Demonstrates the sm size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "sm"
+          },
+          "keywords": [
+            "size",
+            "sm"
+          ]
+        },
+        {
+          "id": "sizes-size-md",
+          "title": "Size: md",
+          "description": "Demonstrates the md size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "md"
+          },
+          "keywords": [
+            "size",
+            "md"
+          ]
+        },
+        {
+          "id": "sizes-size-lg",
+          "title": "Size: lg",
+          "description": "Demonstrates the lg size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "lg"
+          },
+          "keywords": [
+            "size",
+            "lg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "variants",
+      "title": "Variants",
+      "description": "",
+      "examples": [
+        {
+          "id": "variants-variant-dropdown",
+          "title": "Variant: dropdown",
+          "description": "Demonstrates the dropdown variant.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "variant": "dropdown"
+          },
+          "keywords": [
+            "variant",
+            "dropdown"
+          ]
+        },
+        {
+          "id": "variants-variant-inline",
+          "title": "Variant: inline",
+          "description": "Demonstrates the inline variant.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "variant": "inline"
+          },
+          "keywords": [
+            "variant",
+            "inline"
+          ]
+        },
+        {
+          "id": "variants-variant-compact",
+          "title": "Variant: compact",
+          "description": "Demonstrates the compact variant.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "variant": "compact"
+          },
+          "keywords": [
+            "variant",
+            "compact"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:02.635396",
+  "stats": {
+    "examplesGenerated": 6,
+    "categoriesGenerated": 2
+  }
+}

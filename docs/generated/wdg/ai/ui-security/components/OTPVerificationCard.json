@@ -1,0 +1,318 @@
+{
+  "id": "ui-security:otpverificationcard",
+  "name": "OTPVerificationCard",
+  "slug": "otp-verification-card",
+  "library": "ui-security",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "OTP Verification Card",
+  "purpose": "OTPVerificationCard Component Complete OTP verification flow container: - OTPInput for entering digits - OTPResendButton for resending - Error/success messages - Status display - Uses @waysnx/ui-layout Card component as base",
+  "shortDescription": "OTPVerificationCard Component Complete OTP verification flow container: - OTPInput for entering digits - OTPResendBut...",
+  "longDescription": "OTPVerificationCard Component Complete OTP verification flow container: - OTPInput for entering digits - OTPResendButton for resending - Error/success messages - Status display - Uses @waysnx/ui-layout Card component as base",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Security/OTP/OTPVerificationCard",
+      "storyId": "security-otp-otpverificationcard",
+      "url": "https://uikit.waysnx.tech/?path=/docs/security-otp-otpverificationcard",
+      "stories": [],
+      "tags": [],
+      "source": "OTPVerificationCard.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use OTPVerificationCard for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a OTPVerificationCard"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "Alert",
+      "Card",
+      "OTPInput",
+      "OTPResendButton"
+    ],
+    "usedBy": [],
+    "related": [
+      "Alert",
+      "Card",
+      "OTPInput",
+      "OTPResendButton"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": [
+      "Alert",
+      "Card",
+      "OTPInput",
+      "OTPResendButton"
+    ]
+  },
+  "dependencies": {
+    "Card": "unknown",
+    "Alert": "unknown",
+    "OTPInput": "unknown",
+    "OTPResendButton": "unknown"
+  },
+  "props": [
+    {
+      "name": "title",
+      "type": "string",
+      "description": "Title for the card",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "description": "Description/instructions",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "otpLength",
+      "type": "number",
+      "description": "OTP length (default 6)",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onVerify",
+      "type": "(otp: string) => void | Promise<void>",
+      "description": "Callback when OTP is complete",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "onResend",
+      "type": "() => void | Promise<void>",
+      "description": "Callback to resend OTP",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "loading",
+      "type": "boolean",
+      "description": "Loading state",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Error message",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "success",
+      "type": "string",
+      "description": "Success message",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "resendCountdown",
+      "type": "number",
+      "description": "Countdown time for resend button",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "maskedContact",
+      "type": "string",
+      "description": "Email or phone for display (e.g., \"****1234\")",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "Custom CSS class",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "Test ID",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "placeholder",
+      "type": "string",
+      "description": "Show password placeholder",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "waysnx-otp-card-info",
+    "waysnx-otp-card-contact",
+    "waysnx-otp-card-content",
+    "waysnx-otp-card-description",
+    "waysnx-otp-card-info-text",
+    "waysnx-otp-card-resend",
+    "waysnx-otp-card-title",
+    "waysnx-otp-card-fields"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\OTP\\OTPVerificationCard.tsx",
+  "keywords": [
+    "otpverificationcard",
+    "placeholder",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use OTPVerificationCard",
+    "Create an example with OTPVerificationCard",
+    "Generate a OTPVerificationCard component",
+    "Build a OTPVerificationCard in my form"
+  ],
+  "componentIntent": "Provide OTPVerificationCard functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.565397",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "0ac2537f",
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-media",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

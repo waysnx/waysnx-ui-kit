@@ -1,0 +1,101 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-navigation/commandpalette.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Enable quick access to commands and navigation via keyboard.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": true,
+    "isMemo": false,
+    "library": "ui-navigation",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "ariaLabel": {
+      "description": "Accessible label",
+      "type": "string"
+    },
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "commands": {
+      "description": "List of available commands",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "default": {
+      "description": "",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "isOpen": {
+      "description": "Whether palette is open",
+      "type": "boolean"
+    },
+    "maxResults": {
+      "description": "Max results to display",
+      "type": "number"
+    },
+    "onClose": {
+      "description": "Callback when palette is closed",
+      "type": "null"
+    },
+    "onCommandSelect": {
+      "description": "Callback when command is selected",
+      "type": "null"
+    },
+    "onOpen": {
+      "description": "Callback when palette is opened",
+      "type": "null"
+    },
+    "permissions": {
+      "description": "User permissions for filtering",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "recentCount": {
+      "description": "Number of recent commands to show",
+      "type": "number"
+    },
+    "roles": {
+      "description": "User roles for filtering",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "searchPlaceholder": {
+      "description": "Search input placeholder",
+      "type": "string"
+    },
+    "showShortcuts": {
+      "description": "Show keyboard shortcuts",
+      "type": "boolean"
+    },
+    "style": {
+      "description": "Additional styles",
+      "type": "string"
+    }
+  },
+  "required": [
+    "commands",
+    "default"
+  ],
+  "title": "CommandPalette",
+  "type": "object"
+}

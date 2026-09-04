@@ -1,0 +1,286 @@
+{
+  "id": "ui-feedback:emptystate",
+  "name": "EmptyState",
+  "slug": "empty-state",
+  "library": "ui-feedback",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Empty State",
+  "purpose": "Show a clear message when no data is available to display",
+  "shortDescription": "Show a clear message when no data is available to display.",
+  "longDescription": "Show a clear message when no data is available to display.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use EmptyState for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a EmptyState"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown"
+  },
+  "props": [
+    {
+      "name": "icon",
+      "type": "React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "title",
+      "type": "string | React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "description",
+      "type": "string | React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "action",
+      "type": "React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-text",
+    "--wx-color-text-light",
+    "--wx-color-text-muted"
+  ],
+  "cssClasses": [
+    "wx-empty-state",
+    "wx-empty-icon",
+    "wx-empty-title",
+    "wx-empty-description",
+    "wx-empty-action"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-color-text-light": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-empty-icon"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-empty-title"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-empty-description"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\EmptyState\\EmptyState.tsx",
+  "keywords": [
+    "emptystate",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use EmptyState",
+    "Create an example with EmptyState",
+    "Generate a EmptyState component",
+    "Build a EmptyState in my form"
+  ],
+  "componentIntent": "Provide EmptyState functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.937842",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "058c79af",
+  "metadata": {
+    "purpose": "Show a clear message when no data is available to display.",
+    "description": "A full-page or container-sized message displayed when a view has no content to show. Includes optional icon, title, description, and action to help users understand why the view is empty and what they can do next. Transforms an empty state into an opportunity to guide users or suggest next steps.",
+    "functionalAreas": [
+      "Feedback",
+      "Data Entry"
+    ],
+    "userIntents": [
+      "Understand why content is missing",
+      "Find next action to populate content",
+      "Create first item or start workflow",
+      "Troubleshoot why data is absent"
+    ],
+    "exampleUseCases": [
+      "No Search Results",
+      "Empty List Message",
+      "No Data Available",
+      "First Time User State",
+      "Completed Task State",
+      "Filter Returned Nothing",
+      "Empty Inbox State"
+    ],
+    "useWhen": [
+      "Use this component when a list or data view contains no items.",
+      "Use this component to guide users on how to populate the view.",
+      "Use this component to explain why a view is empty (e.g., no search results).",
+      "Use this component with an action button to help users get started."
+    ],
+    "avoidWhen": [
+      "Avoid this component when some content should still be visible.",
+      "Avoid this component for error states (use Alert instead).",
+      "Avoid this component when loading data (use Skeleton or Spinner instead).",
+      "Avoid this component with overly complex explanations or too many actions."
+    ],
+    "relatedComponents": [
+      "Alert",
+      "Button",
+      "Skeleton"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

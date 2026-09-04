@@ -1,0 +1,25 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-maps/mapview.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "MapView — ADAPTER-BASED map container. Renders map chrome and controls but does NOT display an interactive map on its own: `@waysnx/ui-maps` bundles no maps vendor SDK. Connect a maps adapter (e.g. Google Maps / Mapbox / custom) via `MapsProvider` to render real tiles and markers. Until then, an informational placeholder is shown. See the package README \"Adapter / backend requirement\" section.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-maps",
+    "version": "1.0.0"
+  },
+  "properties": {},
+  "required": [],
+  "title": "MapView",
+  "type": "object"
+}

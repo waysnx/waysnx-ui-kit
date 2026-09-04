@@ -1,0 +1,1374 @@
+{
+  "version": "2.0.0",
+  "library": "ui-security",
+  "generatedAt": "2026-09-03T20:03:06.098792",
+  "relationshipModel": {
+    "uses": "Components this component directly imports or uses",
+    "usedBy": "Components that import or use this component",
+    "related": "Related components in the same domain",
+    "alternatives": "Alternative implementations for this component",
+    "parentComponents": "Components that contain or wrap this component",
+    "childComponents": "Components this component uses or renders"
+  },
+  "relationships": [
+    {
+      "from": "AccessDenied",
+      "relationships": {
+        "uses": [
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Stack"
+        ]
+      }
+    },
+    {
+      "from": "ActiveSessions",
+      "relationships": {
+        "uses": [
+          "Badge",
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge",
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge",
+          "Button",
+          "Stack"
+        ]
+      }
+    },
+    {
+      "from": "ActivityFeed",
+      "relationships": {
+        "uses": [
+          "Badge",
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge",
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge",
+          "Button",
+          "Stack"
+        ]
+      }
+    },
+    {
+      "from": "AuditHistoryTable",
+      "relationships": {
+        "uses": [
+          "Badge",
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge",
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge",
+          "Button"
+        ]
+      }
+    },
+    {
+      "from": "AuditTimeline",
+      "relationships": {
+        "uses": [
+          "Badge"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge"
+        ]
+      }
+    },
+    {
+      "from": "Auth0LoginButton",
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button"
+        ]
+      }
+    },
+    {
+      "from": "AuthenticatorQRCode",
+      "relationships": {
+        "uses": [
+          "Button",
+          "QRCode"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "QRCode"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "QRCode"
+        ]
+      }
+    },
+    {
+      "from": "BackupCodesCard",
+      "relationships": {
+        "uses": [
+          "Badge",
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge",
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge",
+          "Button",
+          "Stack"
+        ]
+      }
+    },
+    {
+      "from": "BiometricButton",
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button"
+        ]
+      }
+    },
+    {
+      "from": "CaptchaContainer",
+      "relationships": {
+        "uses": [
+          "GoogleCaptcha",
+          "HCaptcha",
+          "TurnstileCaptcha"
+        ],
+        "usedBy": [],
+        "related": [
+          "GoogleCaptcha",
+          "HCaptcha",
+          "TurnstileCaptcha"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "GoogleCaptcha",
+          "HCaptcha",
+          "TurnstileCaptcha"
+        ]
+      }
+    },
+    {
+      "from": "ChangePasswordForm",
+      "relationships": {
+        "uses": [
+          "Alert",
+          "Button",
+          "Input"
+        ],
+        "usedBy": [],
+        "related": [
+          "Alert",
+          "Button",
+          "Input"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Alert",
+          "Button",
+          "Input"
+        ]
+      }
+    },
+    {
+      "from": "ConcurrentSessionDialog",
+      "relationships": {
+        "uses": [
+          "Badge",
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge",
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge",
+          "Button",
+          "Stack"
+        ]
+      }
+    },
+    {
+      "from": "DeviceVerificationDialog",
+      "relationships": {
+        "uses": [
+          "Alert",
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Alert",
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Alert",
+          "Button"
+        ]
+      }
+    },
+    {
+      "from": "EmailVerificationCard",
+      "relationships": {
+        "uses": [
+          "Alert",
+          "Button",
+          "Card",
+          "Input",
+          "OTPResendButton"
+        ],
+        "usedBy": [],
+        "related": [
+          "Alert",
+          "Button",
+          "Card",
+          "Input",
+          "OTPResendButton"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Alert",
+          "Button",
+          "Card",
+          "Input",
+          "OTPResendButton"
+        ]
+      }
+    },
+    {
+      "from": "EncryptionBadge",
+      "relationships": {
+        "uses": [
+          "Badge"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge"
+        ]
+      }
+    },
+    {
+      "from": "FeatureGate",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ForgotPasswordForm",
+      "relationships": {
+        "uses": [
+          "Alert",
+          "Button",
+          "Input"
+        ],
+        "usedBy": [],
+        "related": [
+          "Alert",
+          "Button",
+          "Input"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Alert",
+          "Button",
+          "Input"
+        ]
+      }
+    },
+    {
+      "from": "GitHubLoginButton",
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button"
+        ]
+      }
+    },
+    {
+      "from": "GoogleCaptcha",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "CaptchaContainer"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "CaptchaContainer"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "GoogleLoginButton",
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button"
+        ]
+      }
+    },
+    {
+      "from": "HCaptcha",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "CaptchaContainer"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "CaptchaContainer"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "IdleMonitor",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "KeepAliveButton",
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button"
+        ]
+      }
+    },
+    {
+      "from": "LoginCard",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "LoginForm",
+      "relationships": {
+        "uses": [
+          "PasswordInput"
+        ],
+        "usedBy": [],
+        "related": [
+          "PasswordInput"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "PasswordInput"
+        ]
+      }
+    },
+    {
+      "from": "LoginHistory",
+      "relationships": {
+        "uses": [
+          "Badge",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge",
+          "Stack"
+        ]
+      }
+    },
+    {
+      "from": "MFASettingsPanel",
+      "relationships": {
+        "uses": [
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Stack"
+        ]
+      }
+    },
+    {
+      "from": "MFASetupWizard",
+      "relationships": {
+        "uses": [
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Stack"
+        ]
+      }
+    },
+    {
+      "from": "MFAStatus",
+      "relationships": {
+        "uses": [
+          "Badge",
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge",
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge",
+          "Button",
+          "Stack"
+        ]
+      }
+    },
+    {
+      "from": "MFAVerificationDialog",
+      "relationships": {
+        "uses": [
+          "Button",
+          "Modal",
+          "PINInput",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Modal",
+          "PINInput",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Modal",
+          "PINInput",
+          "Stack"
+        ]
+      }
+    },
+    {
+      "from": "MaskedInput",
+      "relationships": {
+        "uses": [
+          "Input"
+        ],
+        "usedBy": [],
+        "related": [
+          "Input"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Input"
+        ]
+      }
+    },
+    {
+      "from": "MicrosoftLoginButton",
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button"
+        ]
+      }
+    },
+    {
+      "from": "OTPInput",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "OTPVerificationCard",
+          "PhoneVerificationCard"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "OTPVerificationCard",
+          "PhoneVerificationCard"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "OTPResendButton",
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [
+          "EmailVerificationCard",
+          "OTPVerificationCard",
+          "PhoneVerificationCard"
+        ],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [
+          "EmailVerificationCard",
+          "OTPVerificationCard",
+          "PhoneVerificationCard"
+        ],
+        "childComponents": [
+          "Button"
+        ]
+      }
+    },
+    {
+      "from": "OTPVerificationCard",
+      "relationships": {
+        "uses": [
+          "Alert",
+          "Card",
+          "OTPInput",
+          "OTPResendButton"
+        ],
+        "usedBy": [],
+        "related": [
+          "Alert",
+          "Card",
+          "OTPInput",
+          "OTPResendButton"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Alert",
+          "Card",
+          "OTPInput",
+          "OTPResendButton"
+        ]
+      }
+    },
+    {
+      "from": "OktaLoginButton",
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button"
+        ]
+      }
+    },
+    {
+      "from": "PINInput",
+      "relationships": {
+        "uses": [
+          "Stack"
+        ],
+        "usedBy": [
+          "MFAVerificationDialog"
+        ],
+        "related": [
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [
+          "MFAVerificationDialog"
+        ],
+        "childComponents": [
+          "Stack"
+        ]
+      }
+    },
+    {
+      "from": "PasswordAgeIndicator",
+      "relationships": {
+        "uses": [
+          "Badge",
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge",
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge",
+          "Button"
+        ]
+      }
+    },
+    {
+      "from": "PasswordGenerator",
+      "relationships": {
+        "uses": [
+          "PasswordStrengthMeter"
+        ],
+        "usedBy": [],
+        "related": [
+          "PasswordStrengthMeter"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "PasswordStrengthMeter"
+        ]
+      }
+    },
+    {
+      "from": "PasswordInput",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "LoginForm"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "LoginForm"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "PasswordPolicyPanel",
+      "relationships": {
+        "uses": [
+          "Button",
+          "Checkbox",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Checkbox",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Checkbox",
+          "Stack"
+        ]
+      }
+    },
+    {
+      "from": "PasswordRequirements",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "PasswordStrengthMeter",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "PasswordGenerator"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "PasswordGenerator"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "PermissionGate",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "PhoneVerificationCard",
+      "relationships": {
+        "uses": [
+          "Alert",
+          "Button",
+          "Card",
+          "Input",
+          "OTPInput",
+          "OTPResendButton"
+        ],
+        "usedBy": [],
+        "related": [
+          "Alert",
+          "Button",
+          "Card",
+          "Input",
+          "OTPInput",
+          "OTPResendButton"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Alert",
+          "Button",
+          "Card",
+          "Input",
+          "OTPInput",
+          "OTPResendButton"
+        ]
+      }
+    },
+    {
+      "from": "PolicyGate",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "PrivacySettingsPanel",
+      "relationships": {
+        "uses": [
+          "Button",
+          "Checkbox",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Checkbox",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Checkbox",
+          "Stack"
+        ]
+      }
+    },
+    {
+      "from": "RiskScoreBadge",
+      "relationships": {
+        "uses": [
+          "Badge"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge"
+        ]
+      }
+    },
+    {
+      "from": "RoleGate",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ScopeGate",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "SecureClipboardButton",
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button"
+        ]
+      }
+    },
+    {
+      "from": "SecureDownloadButton",
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button"
+        ]
+      }
+    },
+    {
+      "from": "SecureInput",
+      "relationships": {
+        "uses": [
+          "Input"
+        ],
+        "usedBy": [],
+        "related": [
+          "Input"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Input"
+        ]
+      }
+    },
+    {
+      "from": "SecureTextarea",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "SecureUploader",
+      "relationships": {
+        "uses": [
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Stack"
+        ]
+      }
+    },
+    {
+      "from": "SecurityAlert",
+      "relationships": {
+        "uses": [
+          "Badge",
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge",
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge",
+          "Button"
+        ]
+      }
+    },
+    {
+      "from": "SecurityAlertsPanel",
+      "relationships": {
+        "uses": [
+          "Button",
+          "Checkbox",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Checkbox",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Checkbox",
+          "Stack"
+        ]
+      }
+    },
+    {
+      "from": "SecurityBanner",
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button"
+        ]
+      }
+    },
+    {
+      "from": "SecurityEventLog",
+      "relationships": {
+        "uses": [
+          "Badge",
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge",
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge",
+          "Button",
+          "Stack"
+        ]
+      }
+    },
+    {
+      "from": "SecurityHealthIndicator",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "SecurityKeyButton",
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button"
+        ]
+      }
+    },
+    {
+      "from": "SecurityLogsPanel",
+      "relationships": {
+        "uses": [
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Stack"
+        ]
+      }
+    },
+    {
+      "from": "SecurityScore",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "SecuritySettingsPanel",
+      "relationships": {
+        "uses": [
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Stack"
+        ]
+      }
+    },
+    {
+      "from": "SecurityStatusCard",
+      "relationships": {
+        "uses": [
+          "Badge",
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Badge",
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Badge",
+          "Button"
+        ]
+      }
+    },
+    {
+      "from": "SensitiveText",
+      "relationships": {
+        "uses": [
+          "Button"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button"
+        ]
+      }
+    },
+    {
+      "from": "SessionCountdown",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "SessionPolicyPanel",
+      "relationships": {
+        "uses": [
+          "Button",
+          "Checkbox",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Checkbox",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Checkbox",
+          "Stack"
+        ]
+      }
+    },
+    {
+      "from": "SessionTimeoutDialog",
+      "relationships": {
+        "uses": [
+          "Button",
+          "Modal",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Modal",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Modal",
+          "Stack"
+        ]
+      }
+    },
+    {
+      "from": "TrustedDeviceSelector",
+      "relationships": {
+        "uses": [
+          "Checkbox",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Checkbox",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Checkbox",
+          "Stack"
+        ]
+      }
+    },
+    {
+      "from": "TrustedDevicesPanel",
+      "relationships": {
+        "uses": [
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Stack"
+        ]
+      }
+    },
+    {
+      "from": "TurnstileCaptcha",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "CaptchaContainer"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "CaptchaContainer"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "UnauthorizedPage",
+      "relationships": {
+        "uses": [
+          "Button",
+          "Stack"
+        ],
+        "usedBy": [],
+        "related": [
+          "Button",
+          "Stack"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Button",
+          "Stack"
+        ]
+      }
+    },
+    {
+      "from": "VerificationStatus",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    }
+  ]
+}

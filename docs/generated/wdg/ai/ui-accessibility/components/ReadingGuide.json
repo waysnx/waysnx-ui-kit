@@ -1,0 +1,247 @@
+{
+  "id": "ui-accessibility:readingguide",
+  "name": "ReadingGuide",
+  "slug": "reading-guide",
+  "library": "ui-accessibility",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Reading Guide",
+  "purpose": "ReadingGuide Component Displays a visual reading line to help users follow text Only renders when readingGuide is enabled in accessibility settings",
+  "shortDescription": "ReadingGuide Component Displays a visual reading line to help users follow text Only renders when readingGuide is ena...",
+  "longDescription": "ReadingGuide Component Displays a visual reading line to help users follow text Only renders when readingGuide is enabled in accessibility settings",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Accessibility/ReadingGuide",
+      "storyId": "accessibility-readingguide",
+      "url": "https://uikit.waysnx.tech/?path=/docs/accessibility-readingguide",
+      "stories": [],
+      "tags": [],
+      "source": "ReadingGuide.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use ReadingGuide for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a ReadingGuide"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useAccessibility": "unknown",
+    "useTranslation": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-reading-guide-color",
+    "--wx-reading-guide-height",
+    "--wx-reading-guide-outline"
+  ],
+  "cssClasses": [
+    "wx-reading-guide"
+  ],
+  "designTokens": {
+    "other": {
+      "--wx-reading-guide-height": {
+        "properties": [
+          "height"
+        ],
+        "selectors": [
+          ".wx-reading-guide"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--wx-reading-guide-outline": {
+        "properties": [
+          "box-shadow"
+        ],
+        "selectors": [
+          ".wx-reading-guide",
+          "@media (prefers-contrast: more)"
+        ],
+        "occurrences": 2,
+        "used": true,
+        "value": ""
+      }
+    }
+  },
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-reading-guide-color": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-reading-guide",
+        "@media (prefers-contrast: more)"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\ReadingGuide\\ReadingGuide.tsx",
+  "keywords": [
+    "readingguide",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use ReadingGuide",
+    "Create an example with ReadingGuide",
+    "Generate a ReadingGuide component",
+    "Build a ReadingGuide in my form"
+  ],
+  "componentIntent": "Provide ReadingGuide functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.181438",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "51b8f6bb",
+  "metadata": {
+    "purpose": "Help users focus on reading by highlighting or guiding visual attention.",
+    "description": "An accessibility aid that helps users with reading difficulties by highlighting or emphasizing the current line or focused area. May show a ruler or guide to help track position. Improves reading focus and comprehension.",
+    "functionalAreas": [
+      "Accessibility",
+      "Visualization"
+    ],
+    "userIntents": [
+      "Focus on reading",
+      "Reduce visual distraction",
+      "Track reading position",
+      "Improve comprehension"
+    ],
+    "exampleUseCases": [
+      "Reading Line Highlighter",
+      "Focus Guide",
+      "Reading Aid",
+      "Dyslexia Support",
+      "Line Tracker",
+      "Accessibility Feature",
+      "Reading Helper"
+    ],
+    "useWhen": [
+      "Use this component to support users with reading difficulties.",
+      "Use this component with adjustable highlight styles.",
+      "Use this component with focus tracking.",
+      "Use this component as part of accessibility features."
+    ],
+    "avoidWhen": [
+      "Avoid this component without clear reading context.",
+      "Avoid this component as a replacement for proper typography.",
+      "Avoid this component without performance consideration.",
+      "Avoid this component without clear on/off toggle."
+    ],
+    "relatedComponents": [
+      "AccessibilityCenter",
+      "Magnifier",
+      "SkipLinks"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

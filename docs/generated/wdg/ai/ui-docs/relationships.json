@@ -1,0 +1,165 @@
+{
+  "version": "2.0.0",
+  "library": "ui-docs",
+  "generatedAt": "2026-09-03T20:02:48.083308",
+  "relationshipModel": {
+    "uses": "Components this component directly imports or uses",
+    "usedBy": "Components that import or use this component",
+    "related": "Related components in the same domain",
+    "alternatives": "Alternative implementations for this component",
+    "parentComponents": "Components that contain or wrap this component",
+    "childComponents": "Components this component uses or renders"
+  },
+  "relationships": [
+    {
+      "from": "AISectionPlaceholder",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [
+          "PlaceholderWrapper"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ComponentHero",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "DependencyGraphPlaceholder",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [
+          "PlaceholderWrapper"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "DocumentationDemoViewer",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [
+          "DemoCategory",
+          "DemoExample",
+          "DocumentationDemoViewerProps"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "LiveComponentRenderer",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [
+          "LiveComponentRendererProps"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "MarkdownRenderer",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "PlaygroundPlaceholder",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [
+          "PlaceholderWrapper"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "PropsTable",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ThemeExplorerPlaceholder",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [
+          "PlaceholderWrapper"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "TokenViewerPlaceholder",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [
+          "PlaceholderWrapper"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "WorkflowViewerPlaceholder",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [
+          "PlaceholderWrapper"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "_PlaceholderWrapper",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    }
+  ]
+}

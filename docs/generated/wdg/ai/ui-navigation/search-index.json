@@ -1,0 +1,1411 @@
+{
+  "version": "2.0.0",
+  "library": "ui-navigation",
+  "generatedAt": "2026-09-03T20:03:02.771361",
+  "components": [
+    {
+      "id": "ui-navigation:breadcrumb",
+      "name": "Breadcrumb",
+      "slug": "breadcrumb",
+      "category": "components",
+      "description": "Display the current navigation path and enable quick navigation to parent levels.",
+      "keywords": [
+        "breadcrumb",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "navigation",
+      "propNames": [
+        "items",
+        "separator",
+        "onItemClick",
+        "showActive",
+        "maxItems",
+        "className",
+        "style",
+        "ariaLabel",
+        "size"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "Header"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "Header"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Breadcrumb for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 9,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-navigation:commandpalette",
+      "name": "CommandPalette",
+      "slug": "command-palette",
+      "category": "components",
+      "description": "Enable quick access to commands and navigation via keyboard.",
+      "keywords": [
+        "commandpalette",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "commands",
+        "onCommandSelect",
+        "isOpen",
+        "onOpen",
+        "onClose",
+        "searchPlaceholder",
+        "recentCount",
+        "showShortcuts",
+        "permissions",
+        "roles",
+        "className",
+        "style",
+        "default",
+        "maxResults",
+        "ariaLabel"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use CommandPalette for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 15,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-navigation:contextmenu",
+      "name": "ContextMenu",
+      "slug": "context-menu",
+      "category": "components",
+      "description": "Display context-sensitive actions triggered by right-click or long-press.",
+      "keywords": [
+        "contextmenu",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "input",
+      "propNames": [
+        "items",
+        "onItemClick",
+        "security",
+        "density",
+        "variant",
+        "className",
+        "style",
+        "showIcons",
+        "showBadges",
+        "maxDepth",
+        "keyboardNav",
+        "ariaLabel",
+        "onOpen",
+        "onClose",
+        "isOpen",
+        "position",
+        "offset"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "MenuItem"
+        ],
+        "usedBy": [],
+        "related": [
+          "MenuItem"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "MenuItem"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use ContextMenu for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 17,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-navigation:drawer",
+      "name": "Drawer",
+      "slug": "drawer",
+      "category": "components",
+      "description": "Display navigation content in a side panel that slides in from the screen edge.",
+      "keywords": [
+        "components",
+        "drawer"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "isOpen",
+        "onClose",
+        "children",
+        "position",
+        "width",
+        "height",
+        "showBackdrop",
+        "closeOnBackdropClick",
+        "closeOnEscape",
+        "animationDuration",
+        "className",
+        "style",
+        "title",
+        "showCloseButton",
+        "backdropOpacity",
+        "lockScroll",
+        "zIndex",
+        "resizable",
+        "header",
+        "footer",
+        "ariaLabel",
+        "ariaDescription"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Drawer for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 22,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-navigation:favoritesmenu",
+      "name": "FavoritesMenu",
+      "slug": "favorites-menu",
+      "category": "components",
+      "description": "Display user-selected favorite or bookmarked items for quick access.",
+      "keywords": [
+        "favoritesmenu",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "navigation",
+      "propNames": [
+        "items",
+        "onItemSelect",
+        "onToggleFavorite",
+        "maxDisplayed",
+        "showBadge",
+        "enableDragDrop",
+        "showCategories",
+        "variant",
+        "size",
+        "isFavorited",
+        "className",
+        "style",
+        "ariaLabel",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use FavoritesMenu for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 14,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-navigation:header",
+      "name": "Header",
+      "slug": "header",
+      "category": "components",
+      "description": "Display application or site header with branding and navigation.",
+      "keywords": [
+        "header",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "title",
+        "subtitle",
+        "breadcrumbs",
+        "icon",
+        "left",
+        "right",
+        "variant",
+        "size",
+        "showBreadcrumb",
+        "className",
+        "style",
+        "sticky",
+        "breadcrumbSeparator",
+        "onBreadcrumbClick"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Breadcrumb"
+        ],
+        "usedBy": [],
+        "related": [
+          "Breadcrumb"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Breadcrumb"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Header for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 14,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-navigation:megamenu",
+      "name": "MegaMenu",
+      "slug": "mega-menu",
+      "category": "components",
+      "description": "Display large menu with multiple columns and rich content.",
+      "keywords": [
+        "megamenu",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "navigation",
+      "propNames": [
+        "items",
+        "onItemClick",
+        "security",
+        "density",
+        "variant",
+        "className",
+        "style",
+        "showIcons",
+        "showBadges",
+        "keyboardNav",
+        "ariaLabel",
+        "closeOnItemClick",
+        "gridColumns",
+        "gridGap",
+        "hoverToOpen",
+        "hoverDelay",
+        "onDropdownOpen",
+        "onDropdownClose",
+        "allowMultipleOpen"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use MegaMenu for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 19,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-navigation:menu",
+      "name": "Menu",
+      "slug": "menu",
+      "category": "components",
+      "description": "Display a list of selectable menu items.",
+      "keywords": [
+        "menu",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "navigation",
+      "propNames": [
+        "items",
+        "activeItem",
+        "onItemClick",
+        "onActiveChange",
+        "security",
+        "orientation",
+        "density",
+        "variant",
+        "className",
+        "style",
+        "showIcons",
+        "showBadges",
+        "maxDepth",
+        "keyboardNav",
+        "ariaLabel",
+        "role"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "MenuItem"
+        ],
+        "usedBy": [
+          "Navbar",
+          "Sidebar"
+        ],
+        "related": [
+          "MenuItem"
+        ],
+        "alternatives": [
+          "Dropdown"
+        ],
+        "parentComponents": [
+          "Navbar",
+          "Sidebar"
+        ],
+        "childComponents": [
+          "MenuItem"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Menu for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 16,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-navigation:menuitem",
+      "name": "MenuItem",
+      "slug": "menu-item",
+      "category": "components",
+      "description": "MenuItem component",
+      "keywords": [
+        "menuitem",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "navigation",
+      "propNames": [
+        "item",
+        "isActive",
+        "isFocused",
+        "isExpanded",
+        "onItemClick",
+        "onToggleExpand",
+        "onFocus",
+        "showIcons",
+        "showBadges",
+        "depth",
+        "maxDepth",
+        "security",
+        "canAccess",
+        "className",
+        "style"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ContextMenu",
+          "Menu"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ContextMenu",
+          "Menu"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use MenuItem for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 15,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-navigation:navbar",
+      "name": "Navbar",
+      "slug": "navbar",
+      "category": "components",
+      "description": "Display a horizontal navigation bar with multiple navigation links.",
+      "keywords": [
+        "navbar",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "navigation",
+      "propNames": [
+        "logo",
+        "left",
+        "right",
+        "title",
+        "position",
+        "sticky",
+        "height",
+        "showMobileMenu",
+        "onMobileMenuToggle",
+        "backgroundColor",
+        "shadow"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Menu"
+        ],
+        "usedBy": [],
+        "related": [
+          "Menu"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Menu"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Navbar for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 11,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-navigation:notificationcenter",
+      "name": "NotificationCenter",
+      "slug": "notification-center",
+      "category": "components",
+      "description": "Display and manage system notifications in a centralized location.",
+      "keywords": [
+        "label",
+        "notificationcenter",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "notifications",
+        "onMarkAsRead",
+        "onDelete",
+        "onMarkAllAsRead",
+        "onClearAll",
+        "showBadge",
+        "trigger",
+        "maxNotifications",
+        "showCategories",
+        "categories",
+        "label"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use NotificationCenter for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 11,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-navigation:quickactions",
+      "name": "QuickActions",
+      "slug": "quick-actions",
+      "category": "components",
+      "description": "Provide quick access to frequent actions in a compact menu.",
+      "keywords": [
+        "quickactions",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "actions",
+        "onActionClick",
+        "orientation",
+        "variant",
+        "size",
+        "showLabels",
+        "showIcons",
+        "enableKeyboardShortcuts",
+        "maxVisible",
+        "permissions",
+        "className",
+        "style",
+        "ariaLabel",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use QuickActions for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 14,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-navigation:recentitems",
+      "name": "RecentItems",
+      "slug": "recent-items",
+      "category": "components",
+      "description": "Display recently accessed or used items for quick navigation.",
+      "keywords": [
+        "recentitems",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "items",
+        "onItemSelect",
+        "onClear",
+        "maxItems",
+        "showClearButton",
+        "showTimestamps",
+        "showTypes",
+        "groupByType",
+        "variant",
+        "size",
+        "className",
+        "style",
+        "ariaLabel",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use RecentItems for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 14,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-navigation:searchnavigation",
+      "name": "SearchNavigation",
+      "slug": "search-navigation",
+      "category": "components",
+      "description": "Enable users to search for content or pages and navigate quickly.",
+      "keywords": [
+        "searchnavigation",
+        "placeholder",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "navigation",
+      "propNames": [
+        "onSearch",
+        "onSelect",
+        "placeholder",
+        "categories",
+        "maxResults",
+        "debounceMs",
+        "showHistory",
+        "className",
+        "style",
+        "isLoading",
+        "searchIcon",
+        "showClear",
+        "autoFocus",
+        "ariaLabel",
+        "recentCount",
+        "groupByCategory"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SearchNavigation for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 16,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-navigation:sidebar",
+      "name": "Sidebar",
+      "slug": "sidebar",
+      "category": "components",
+      "description": "Display persistent sidebar navigation alongside main content.",
+      "keywords": [
+        "sidebar",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "layout",
+      "propNames": [
+        "logo",
+        "isCollapsed",
+        "onCollapseChange",
+        "collapsible",
+        "expandedWidth",
+        "collapsedWidth",
+        "footer",
+        "header",
+        "position",
+        "overlay",
+        "mobileBreakpoint",
+        "persistState",
+        "storageKey",
+        "showDivider",
+        "colorScheme"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Menu"
+        ],
+        "usedBy": [],
+        "related": [
+          "Menu"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Menu"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Sidebar for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 15,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-navigation:stepnavigation",
+      "name": "StepNavigation",
+      "slug": "step-navigation",
+      "category": "components",
+      "description": "Navigate between steps of a multi-step process or guide.",
+      "keywords": [
+        "stepnavigation",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "navigation",
+      "propNames": [
+        "steps",
+        "currentStep",
+        "onStepChange",
+        "onValidateStep",
+        "allowBacktrack",
+        "variant",
+        "showDescriptions",
+        "showProgress",
+        "disableNextOnLastStep",
+        "previousLabel",
+        "nextLabel",
+        "finishLabel",
+        "onFinish",
+        "showFinishButton",
+        "className",
+        "style",
+        "ariaLabel",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use StepNavigation for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 18,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-navigation:tabs",
+      "name": "Tabs",
+      "slug": "tabs",
+      "category": "components",
+      "description": "Organize navigation into switchable tabs.",
+      "keywords": [
+        "organize",
+        "panel",
+        "navigation",
+        "tab",
+        "components",
+        "tabs"
+      ],
+      "aliases": [
+        "AIAlias(alias='tabbed panel', context='technical', confidence=0.92)",
+        "AIAlias(alias='tabbed interface', context='technical', confidence=0.9)",
+        "AIAlias(alias='panel tabs', context='descriptive', confidence=0.88)"
+      ],
+      "synonyms": [
+        "tabbed panel",
+        "tab navigation"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "navigation",
+      "propNames": [
+        "tabs",
+        "activeTabId",
+        "onTabChange",
+        "density",
+        "variant",
+        "className",
+        "style",
+        "showIcons",
+        "showBadges",
+        "keyboardNav",
+        "ariaLabel",
+        "orientation",
+        "scrollable",
+        "closable",
+        "onTabClose",
+        "lazyLoad"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Tabs for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 16,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-navigation:treemenu",
+      "name": "TreeMenu",
+      "slug": "tree-menu",
+      "category": "components",
+      "description": "Display hierarchical menu structure with collapsible tree nodes.",
+      "keywords": [
+        "treemenu",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "navigation",
+      "propNames": [
+        "items",
+        "onItemClick",
+        "onItemSelect",
+        "selectedItem",
+        "security",
+        "density",
+        "variant",
+        "className",
+        "style",
+        "showIcons",
+        "showBadges",
+        "maxDepth",
+        "keyboardNav",
+        "ariaLabel",
+        "multiSelect",
+        "selectedIds",
+        "onSelectionChange",
+        "expandAll",
+        "indentSize",
+        "showExpandIcons"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use TreeMenu for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 20,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-navigation:usermenu",
+      "name": "UserMenu",
+      "slug": "user-menu",
+      "category": "components",
+      "description": "Display user profile and account-related options.",
+      "keywords": [
+        "usermenu",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "navigation",
+      "propNames": [
+        "user",
+        "items",
+        "trigger",
+        "position",
+        "showStatus",
+        "showTrigger",
+        "customTrigger",
+        "className",
+        "style",
+        "onOpen",
+        "onClose",
+        "menuWidth",
+        "showUserInfo",
+        "headerContent",
+        "ariaLabel"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use UserMenu for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 15,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-navigation:workspaceswitcher",
+      "name": "WorkspaceSwitcher",
+      "slug": "workspace-switcher",
+      "category": "components",
+      "description": "Enable users to switch between multiple workspaces or environments.",
+      "keywords": [
+        "workspaceswitcher",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "workspaces",
+        "activeWorkspace",
+        "onWorkspaceChange",
+        "variant",
+        "size",
+        "showIcons",
+        "showDescriptions",
+        "className",
+        "style",
+        "enableKeyboardNav",
+        "ariaLabel",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use WorkspaceSwitcher for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 12,
+        "eventsCount": 0
+      }
+    }
+  ]
+}

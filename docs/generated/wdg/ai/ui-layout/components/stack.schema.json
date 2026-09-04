@@ -1,0 +1,63 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-layout/stack.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Arrange elements in a single row or column with consistent spacing.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-layout",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "align": {
+      "description": "",
+      "enum": [
+        "start",
+        "center",
+        "end",
+        "stretch"
+      ]
+    },
+    "children": {
+      "description": "",
+      "type": "string"
+    },
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "direction": {
+      "description": "",
+      "enum": [
+        "vertical",
+        "horizontal"
+      ]
+    },
+    "gap": {
+      "description": "",
+      "enum": [
+        "number",
+        "string"
+      ]
+    },
+    "label": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [
+    "children"
+  ],
+  "title": "Stack",
+  "type": "object"
+}

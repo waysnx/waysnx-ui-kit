@@ -1,0 +1,50 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-dashboard/dashboardtoolbar.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "DashboardToolbar component",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-dashboard",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "dense": {
+      "description": "Dense/compact mode",
+      "type": "boolean"
+    },
+    "left": {
+      "description": "Left-aligned content",
+      "type": "string"
+    },
+    "right": {
+      "description": "Right-aligned content",
+      "type": "string"
+    },
+    "sticky": {
+      "description": "Make toolbar sticky",
+      "type": "boolean"
+    },
+    "style": {
+      "description": "Additional CSS styles",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "title": "DashboardToolbar",
+  "type": "object"
+}

@@ -1,0 +1,701 @@
+{
+  "id": "ui-core:input",
+  "name": "Input",
+  "slug": "input",
+  "library": "ui-core",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Input",
+  "purpose": "Collect single-line text and numeric input from users with validation and formatting support",
+  "shortDescription": "Collect single-line text and numeric input from users with validation and formatting support.",
+  "longDescription": "Collect single-line text and numeric input from users with validation and formatting support.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Components/Input",
+      "storyId": "components-input",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-input",
+      "stories": [],
+      "tags": [],
+      "source": "Input.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "Employee Registration",
+      "description": "Collect employee name, email, and contact information during registration",
+      "businessDomain": "hrms",
+      "enterpriseModule": "employee_management",
+      "examplePrompt": "Create an input field for employee name"
+    },
+    {
+      "title": "Leave Request",
+      "description": "Capture leave reason and comments in leave management",
+      "businessDomain": "hrms",
+      "enterpriseModule": "leave_management",
+      "examplePrompt": "Add an input for leave reason"
+    },
+    {
+      "title": "Client Registration",
+      "description": "Collect client information in CRM",
+      "businessDomain": "crm",
+      "enterpriseModule": "client_management",
+      "examplePrompt": "Create an input for client name"
+    }
+  ],
+  "antiPatterns": [
+    {
+      "title": "Unvalidated Input",
+      "description": "Accepting any text without validation",
+      "whyToAvoid": "Can lead to invalid data and security issues",
+      "betterAlternative": "Add validation rules and error messages"
+    },
+    {
+      "title": "No Placeholder Text",
+      "description": "Input without helpful placeholder text",
+      "whyToAvoid": "Users don't know what to enter",
+      "betterAlternative": "Always provide meaningful placeholder"
+    }
+  ],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp",
+    "accounting"
+  ],
+  "enterpriseModules": [
+    "employee_management",
+    "client_management",
+    "recruitment"
+  ],
+  "recommendedScenarios": [
+    {
+      "scenario": "Required Form Fields",
+      "reason": "Use Input for any required form field",
+      "alternativeComponents": [
+        "Textarea"
+      ]
+    },
+    {
+      "scenario": "Search Functionality",
+      "reason": "Use Input for search boxes",
+      "alternativeComponents": [
+        "Autocomplete"
+      ]
+    }
+  ],
+  "avoidScenarios": [
+    {
+      "scenario": "Instead of Hidden Fields",
+      "reason": "Use Input for visible fields only",
+      "recommendedAlternative": "Use hidden input field for non-editable data"
+    }
+  ],
+  "relationships": {
+    "uses": [],
+    "usedBy": [
+      "ChangePasswordForm",
+      "EmailVerificationCard",
+      "ForgotPasswordForm",
+      "MaskedInput",
+      "PhoneVerificationCard",
+      "SecureInput"
+    ],
+    "related": [],
+    "alternatives": [
+      "Textarea"
+    ],
+    "parentComponents": [
+      "ChangePasswordForm",
+      "EmailVerificationCard",
+      "ForgotPasswordForm",
+      "MaskedInput",
+      "PhoneVerificationCard",
+      "SecureInput"
+    ],
+    "childComponents": []
+  },
+  "dependencies": {
+    "NumericFormat": "unknown",
+    "IMaskInput": "unknown",
+    "warn": "unknown",
+    "useTranslation": "unknown",
+    "validateRequired": "unknown",
+    "validateEmail": "unknown",
+    "validatePattern": "unknown",
+    "validateMinLength": "unknown",
+    "validateMaxLength": "unknown",
+    "validateMin": "unknown",
+    "validateMax": "unknown",
+    "runValidations": "unknown"
+  },
+  "props": [
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "hint",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showPasswordToggle",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "validateOnChange",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "validateOnBlur",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onValidation",
+      "type": "(isValid: boolean, error?: string) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "errorMessage",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaDescribedBy",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "mask",
+      "type": "boolean | string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "thousandSeparator",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "decimalSeparator",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "decimalScale",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "allowNegative",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-error",
+    "--wx-color-primary",
+    "--wx-color-text",
+    "--wx-color-text-muted",
+    "--wx-font-family",
+    "--wx-font-size-md",
+    "--wx-font-size-sm",
+    "--wx-font-size-xs",
+    "--wx-input-height",
+    "--wx-radius-md",
+    "--wx-shadow-focus",
+    "--wx-shadow-sm"
+  ],
+  "cssClasses": [
+    "wx-input-wrapper",
+    "wx-required",
+    "wx-input-container",
+    "wx-input",
+    "wx-input-icon",
+    "wx-input-error",
+    "wx-input-hint",
+    "wx-input-error-text"
+  ],
+  "designTokens": {
+    "other": {
+      "--wx-input-height": {
+        "properties": [
+          "height"
+        ],
+        "selectors": [
+          ".wx-input"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      }
+    }
+  },
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {
+    "--wx-font-family": {
+      "properties": [
+        "font-family"
+      ],
+      "selectors": [
+        ".wx-input-wrapper",
+        ".wx-input"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-sm": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-input-wrapper label"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-md": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-input"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-xs": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-input-hint",
+        ".wx-input-error-text"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {
+    "--wx-color-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-input-wrapper label"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error": {
+      "properties": [
+        "color",
+        "border-color"
+      ],
+      "selectors": [
+        ".wx-required",
+        ".wx-input-error",
+        ".wx-input-error-text"
+      ],
+      "occurrences": 3,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-border": {
+      "properties": [
+        "border"
+      ],
+      "selectors": [
+        ".wx-input"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary": {
+      "properties": [
+        "border-color"
+      ],
+      "selectors": [
+        ".wx-input:focus"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-input-hint"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {
+    "--wx-shadow-sm": {
+      "properties": [
+        "box-shadow"
+      ],
+      "selectors": [
+        ".wx-input"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-shadow-focus": {
+      "properties": [
+        "box-shadow"
+      ],
+      "selectors": [
+        ".wx-input:focus"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "radiusTokens": {
+    "--wx-radius-md": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".wx-input"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Input\\Input.tsx",
+  "keywords": [
+    "form-control",
+    "label",
+    "entry",
+    "field",
+    "form",
+    "text",
+    "input",
+    "textbox",
+    "form-field",
+    "components"
+  ],
+  "aliases": [
+    {
+      "alias": "text field",
+      "context": "form",
+      "confidence": 0.95
+    },
+    {
+      "alias": "textbox",
+      "context": "simple",
+      "confidence": 0.9
+    },
+    {
+      "alias": "entry",
+      "context": "technical",
+      "confidence": 0.85
+    },
+    {
+      "alias": "text input",
+      "context": "descriptive",
+      "confidence": 0.95
+    },
+    {
+      "alias": "form field",
+      "context": "context",
+      "confidence": 0.8
+    },
+    {
+      "alias": "text box",
+      "context": "casual",
+      "confidence": 0.88
+    }
+  ],
+  "synonyms": [
+    "text input",
+    "textbox",
+    "entry field",
+    "form field"
+  ],
+  "naturalLanguageQueries": [
+    {
+      "query": "I need an employee name field",
+      "context": "employee",
+      "intent": "create"
+    },
+    {
+      "query": "Create a search box",
+      "context": "search",
+      "intent": "create"
+    },
+    {
+      "query": "Add a password field",
+      "context": "security",
+      "intent": "create"
+    },
+    {
+      "query": "Create an email textbox",
+      "context": "contact",
+      "intent": "create"
+    },
+    {
+      "query": "Generate a phone number input",
+      "context": "contact",
+      "intent": "create"
+    },
+    {
+      "query": "Create an address field",
+      "context": "location",
+      "intent": "create"
+    },
+    {
+      "query": "Add a discount code input",
+      "context": "ecommerce",
+      "intent": "create"
+    }
+  ],
+  "recommendedPrompts": [
+    "Show me how to use Input for form validation",
+    "Create a Input with error handling",
+    "Generate a Input with placeholder text",
+    "Build a Input with character limit",
+    "Design a Input for email addresses"
+  ],
+  "componentIntent": "Collect text input",
+  "semanticCategory": "input",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.650685",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "be48b060",
+  "metadata": {
+    "purpose": "Collect single-line text and numeric input from users with validation and formatting support.",
+    "description": "A field for capturing user-entered data in a single line. Supports multiple input types including text, email, password, and numeric values. Provides built-in validation, field hints, error messaging, and optional masking for formatted input like phone numbers and currency amounts. Helps users understand what information is required and provides immediate feedback when input is invalid.",
+    "functionalAreas": [
+      "Data Entry",
+      "Forms",
+      "Feedback"
+    ],
+    "userIntents": [
+      "Enter text information",
+      "Provide an email address",
+      "Enter a password",
+      "Input numeric values",
+      "Enter a phone number",
+      "Enter a currency amount",
+      "Search for content",
+      "Complete a required field"
+    ],
+    "exampleUseCases": [
+      "Login Form",
+      "Registration Form",
+      "Search Toolbar",
+      "Settings Page",
+      "Contact Form",
+      "Payment Form",
+      "Profile Page",
+      "Filter Criteria"
+    ],
+    "useWhen": [
+      "Use this component when collecting single-line text or numeric input.",
+      "Use this component when input validation is required to ensure data quality.",
+      "Use this component when input needs formatting such as phone numbers or currency values.",
+      "Use this component when password input needs optional visibility control.",
+      "Use this component when field hints or error messages should guide the user."
+    ],
+    "avoidWhen": [
+      "Avoid this component when users need to enter multi-line content.",
+      "Avoid this component when users must select from many predefined options.",
+      "Avoid this component when collecting boolean values.",
+      "Avoid this component when date or time selection is the primary interaction.",
+      "Avoid this component when large amounts of structured data entry are required."
+    ],
+    "relatedComponents": [
+      "Textarea",
+      "Select",
+      "DatePicker",
+      "Checkbox",
+      "Radio"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "react-imask",
+        "version": "^7.6.1"
+      },
+      {
+        "name": "react-number-format",
+        "version": "^5.4.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-datepicker",
+        "version": "^8.0.0"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-datepicker",
+        "version": "^7.0.0"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

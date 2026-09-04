@@ -1,0 +1,193 @@
+{
+  "id": "ui-docs:_placeholderwrapper",
+  "name": "_PlaceholderWrapper",
+  "slug": "_-placeholder-wrapper",
+  "library": "ui-docs",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "_ Placeholder Wrapper",
+  "purpose": "_PlaceholderWrapper component",
+  "shortDescription": "_PlaceholderWrapper component",
+  "longDescription": "_PlaceholderWrapper component",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use _PlaceholderWrapper for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a _PlaceholderWrapper"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown",
+    "useTranslation": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "--wx-color-primary",
+    "--wx-font-size-lg",
+    "--wx-radius-lg",
+    "--wx-color-surface-alt",
+    "--wx-color-text",
+    "--wx-font-size-sm",
+    "--wx-font-size-xs",
+    "--wx-color-border",
+    "--wx-color-text-muted",
+    "--wx-color-primary-light"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\placeholders\\_PlaceholderWrapper.tsx",
+  "keywords": [
+    "_placeholderwrapper",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use _PlaceholderWrapper",
+    "Create an example with _PlaceholderWrapper",
+    "Generate a _PlaceholderWrapper component",
+    "Build a _PlaceholderWrapper in my form"
+  ],
+  "componentIntent": "Provide _PlaceholderWrapper functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.845431",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "477a423c",
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "prismjs",
+        "version": "^1.29.0"
+      },
+      {
+        "name": "react-markdown",
+        "version": "^9.0.1"
+      },
+      {
+        "name": "react-syntax-highlighter",
+        "version": "^15.5.0"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/prismjs",
+        "version": "^1.26.4"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "@types/react-syntax-highlighter",
+        "version": "^15.5.11"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

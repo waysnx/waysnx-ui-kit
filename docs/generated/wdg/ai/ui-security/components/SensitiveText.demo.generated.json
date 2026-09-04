@@ -1,0 +1,54 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "sensitivetext",
+    "name": "SensitiveText",
+    "package": "@waysnx/ui-security",
+    "export": "SensitiveText"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic-revealLabel",
+          "title": "With Label",
+          "description": "Displays with a label.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "revealLabel": "Sample Text"
+          },
+          "keywords": [
+            "revealLabel"
+          ]
+        },
+        {
+          "id": "basic-hideLabel",
+          "title": "With Label",
+          "description": "Displays with a label.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "hideLabel": "Sample Text"
+          },
+          "keywords": [
+            "hideLabel"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:05.686886",
+  "stats": {
+    "examplesGenerated": 2,
+    "categoriesGenerated": 1
+  }
+}

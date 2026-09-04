@@ -1,0 +1,371 @@
+{
+  "id": "ui-visualization:orgchart",
+  "name": "OrgChart",
+  "slug": "org-chart",
+  "library": "ui-visualization",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Org Chart",
+  "purpose": "Display organizational structure and reporting relationships",
+  "shortDescription": "Display organizational structure and reporting relationships.",
+  "longDescription": "Display organizational structure and reporting relationships.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Visualization/OrgChart",
+      "storyId": "visualization-orgchart",
+      "url": "https://uikit.waysnx.tech/?path=/docs/visualization-orgchart",
+      "stories": [],
+      "tags": [],
+      "source": "OrgChart.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use OrgChart for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a OrgChart"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "Connector",
+      "MiniMap",
+      "SearchBox",
+      "Toolbar",
+      "TreeNode",
+      "ZoomControls"
+    ],
+    "usedBy": [],
+    "related": [
+      "Connector",
+      "DEFAULT_VIRTUALIZE_THRESHOLD",
+      "MiniMap",
+      "SearchBox",
+      "Toolbar",
+      "TreeNode",
+      "VirtualizationEngine",
+      "ZoomControls"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": [
+      "Connector",
+      "MiniMap",
+      "SearchBox",
+      "Toolbar",
+      "TreeNode",
+      "ZoomControls"
+    ]
+  },
+  "dependencies": {
+    "useVisualization": "unknown",
+    "useZoom": "unknown",
+    "useSelection": "unknown",
+    "useSearch": "unknown",
+    "useDragDrop": "unknown",
+    "useMiniMap": "unknown",
+    "useExport": "unknown",
+    "VirtualizationEngine": "unknown",
+    "TreeNode": "unknown",
+    "Connector": "unknown",
+    "MiniMap": "unknown",
+    "Toolbar": "unknown",
+    "SearchBox": "unknown",
+    "ZoomControls": "unknown",
+    "DEFAULT_VIRTUALIZE_THRESHOLD": "unknown",
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "nodes",
+      "type": "VisNode[]",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "edges",
+      "type": "VisEdge[]",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "config",
+      "type": "VisualizationConfig",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "width",
+      "type": "number | string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "height",
+      "type": "number | string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onNodeClick",
+      "type": "(event: VisNodeEvent) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onNodeDoubleClick",
+      "type": "(event: VisNodeEvent) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onSelectionChange",
+      "type": "(selectedIds: string[]) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "renderNode",
+      "type": "(node: LayoutNode) => React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showToolbar",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showMiniMap",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showSearch",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showZoomControls",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showGrid",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "dark",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-vis-canvas__svg",
+    "wx-vis-canvas__transform"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\OrgChart\\OrgChart.tsx",
+  "keywords": [
+    "orgchart",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use OrgChart",
+    "Create an example with OrgChart",
+    "Generate a OrgChart component",
+    "Build a OrgChart in my form"
+  ],
+  "componentIntent": "Provide OrgChart functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.925323",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "6c5517f6",
+  "metadata": {
+    "purpose": "Display organizational structure and reporting relationships.",
+    "description": "A specialized component for visualizing organizational hierarchies with employee cards and reporting lines. Shows manager-subordinate relationships visually. Used for team management, HR systems, and organizational planning.",
+    "functionalAreas": [
+      "Visualization",
+      "Data Entry"
+    ],
+    "userIntents": [
+      "See organization structure",
+      "Know reporting relationships",
+      "View team members",
+      "Understand org hierarchy"
+    ],
+    "exampleUseCases": [
+      "Company Organization Chart",
+      "Department Structure",
+      "Team Hierarchy",
+      "Leadership Structure",
+      "Management Chain",
+      "Employee Reporting",
+      "Organizational Planning"
+    ],
+    "useWhen": [
+      "Use this component for organizational structure visualization.",
+      "Use this component in HR or management applications.",
+      "Use this component to show reporting relationships.",
+      "Use this component with employee information display."
+    ],
+    "avoidWhen": [
+      "Avoid this component for non-organizational hierarchies (use Hierarchy instead).",
+      "Avoid this component without clear org structure.",
+      "Avoid this component for very large organizations (provide search/filter).",
+      "Avoid this component without proper layout for hierarchy."
+    ],
+    "relatedComponents": [
+      "Hierarchy",
+      "Tree",
+      "Card"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

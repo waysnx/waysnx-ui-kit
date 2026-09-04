@@ -1,0 +1,402 @@
+{
+  "id": "ui-feedback:toast",
+  "name": "Toast",
+  "slug": "toast",
+  "library": "ui-feedback",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Toast",
+  "purpose": "Display a temporary notification message that auto-dismisses",
+  "shortDescription": "Display a temporary notification message that auto-dismisses.",
+  "longDescription": "Display a temporary notification message that auto-dismisses.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Toast for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Toast"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "type",
+      "type": "ToastType",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "message",
+      "type": "string | React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-error-hover",
+    "--wx-color-error-light",
+    "--wx-color-primary-contrast",
+    "--wx-font-family",
+    "--wx-info-info-bg",
+    "--wx-info-info-text",
+    "--wx-info-success-bg",
+    "--wx-info-success-text",
+    "--wx-info-warning-bg",
+    "--wx-info-warning-text",
+    "--wx-radius-md",
+    "--wx-radius-sm",
+    "--wx-shadow-md"
+  ],
+  "cssClasses": [
+    "wx-toast",
+    "wx-toast-icon",
+    "wx-toast-message",
+    "wx-toast-success",
+    "wx-toast-error",
+    "wx-toast-info",
+    "wx-toast-warning",
+    "wx-toast-container",
+    "wx-toast-top-right",
+    "wx-toast-top-left",
+    "wx-toast-top-center",
+    "wx-toast-bottom-right",
+    "wx-toast-bottom-left",
+    "wx-toast-bottom-center",
+    "wx-toast-close",
+    "wx-toast-exit"
+  ],
+  "designTokens": {
+    "other": {
+      "--wx-info-success-bg": {
+        "properties": [
+          "background"
+        ],
+        "selectors": [
+          ".wx-toast-success"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--wx-info-success-text": {
+        "properties": [
+          "color",
+          "background"
+        ],
+        "selectors": [
+          ".wx-toast-success",
+          ".wx-toast-success .wx-toast-icon"
+        ],
+        "occurrences": 2,
+        "used": true,
+        "value": ""
+      },
+      "--wx-info-info-bg": {
+        "properties": [
+          "background"
+        ],
+        "selectors": [
+          ".wx-toast-info"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--wx-info-info-text": {
+        "properties": [
+          "color",
+          "background"
+        ],
+        "selectors": [
+          ".wx-toast-info",
+          ".wx-toast-info .wx-toast-icon"
+        ],
+        "occurrences": 2,
+        "used": true,
+        "value": ""
+      },
+      "--wx-info-warning-bg": {
+        "properties": [
+          "background"
+        ],
+        "selectors": [
+          ".wx-toast-warning"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--wx-info-warning-text": {
+        "properties": [
+          "color",
+          "background"
+        ],
+        "selectors": [
+          ".wx-toast-warning",
+          ".wx-toast-warning .wx-toast-icon"
+        ],
+        "occurrences": 2,
+        "used": true,
+        "value": ""
+      }
+    }
+  },
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {
+    "--wx-font-family": {
+      "properties": [
+        "font-family"
+      ],
+      "selectors": [
+        ".wx-toast"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {
+    "--wx-color-primary-contrast": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-toast-success .wx-toast-icon",
+        ".wx-toast-error .wx-toast-icon",
+        ".wx-toast-info .wx-toast-icon",
+        ".wx-toast-warning .wx-toast-icon"
+      ],
+      "occurrences": 4,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error-light": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-toast-error"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error-hover": {
+      "properties": [
+        "color",
+        "background"
+      ],
+      "selectors": [
+        ".wx-toast-error",
+        ".wx-toast-error .wx-toast-icon"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {
+    "--wx-shadow-md": {
+      "properties": [
+        "box-shadow"
+      ],
+      "selectors": [
+        ".wx-toast"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "radiusTokens": {
+    "--wx-radius-md": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".wx-toast"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-radius-sm": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".wx-toast-close"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Toast\\Toast.tsx",
+  "keywords": [
+    "toast",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Toast",
+    "Create an example with Toast",
+    "Generate a Toast component",
+    "Build a Toast in my form"
+  ],
+  "componentIntent": "Show temporary notifications",
+  "semanticCategory": "feedback",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.975413",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "fd69e01b",
+  "metadata": {
+    "purpose": "Display a temporary notification message that auto-dismisses.",
+    "description": "A transient notification that appears briefly at the edge of the screen and automatically disappears after a set duration. Supports semantic variants (success, error, warning, info) to communicate message importance. Used for non-critical feedback like confirmation messages, operation status, or subtle alerts that don't require immediate action.",
+    "functionalAreas": [
+      "Feedback",
+      "Communication"
+    ],
+    "userIntents": [
+      "Receive confirmation of action",
+      "See brief status updates",
+      "Get notified of background events",
+      "Dismiss or ignore non-critical messages"
+    ],
+    "exampleUseCases": [
+      "Copy to Clipboard Confirmation",
+      "Save Success Message",
+      "Network Connection Status",
+      "Background Operation Complete",
+      "Auto-Save Confirmation",
+      "Brief Error Notification",
+      "System Update Notice"
+    ],
+    "useWhen": [
+      "Use this component for non-critical feedback that doesn't require action.",
+      "Use this component when the message should disappear automatically.",
+      "Use this component for confirmation messages that are secondary to the main workflow.",
+      "Use this component to notify users of background operations or status changes."
+    ],
+    "avoidWhen": [
+      "Avoid this component when users must act on the message.",
+      "Avoid this component for critical errors (use Modal or Alert instead).",
+      "Avoid this component for messages that require user confirmation.",
+      "Avoid this component when the message should persist permanently in the view."
+    ],
+    "relatedComponents": [
+      "Alert",
+      "Modal",
+      "ConfirmDialog"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

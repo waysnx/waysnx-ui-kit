@@ -1,0 +1,80 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/emailverificationcard.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Callback to resend verification email",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "className": {
+      "description": "Custom CSS class",
+      "type": "string"
+    },
+    "description": {
+      "description": "Description/instructions",
+      "type": "string"
+    },
+    "email": {
+      "description": "Email address to verify",
+      "type": "string"
+    },
+    "error": {
+      "description": "Error message",
+      "type": "string"
+    },
+    "loading": {
+      "description": "Loading state",
+      "type": "boolean"
+    },
+    "onResend": {
+      "description": "Callback to resend verification email",
+      "enum": [
+        "() => void",
+        "Promise<void>"
+      ]
+    },
+    "onVerify": {
+      "description": "Callback when verification code is submitted",
+      "enum": [
+        "(code: string) => void",
+        "Promise<void>"
+      ]
+    },
+    "resendCountdown": {
+      "description": "Countdown time for resend button",
+      "type": "number"
+    },
+    "success": {
+      "description": "Success message",
+      "type": "string"
+    },
+    "testId": {
+      "description": "Test ID",
+      "type": "string"
+    },
+    "title": {
+      "description": "Title for the card",
+      "type": "string"
+    }
+  },
+  "required": [
+    "email",
+    "onVerify",
+    "onResend"
+  ],
+  "title": "EmailVerificationCard",
+  "type": "object"
+}

@@ -1,0 +1,219 @@
+{
+  "id": "ui-data:markdowneditor",
+  "name": "MarkdownEditor",
+  "slug": "markdown-editor",
+  "library": "ui-data",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Markdown Editor",
+  "purpose": "Enable authoring of markdown content with visual preview",
+  "shortDescription": "Enable authoring of markdown content with visual preview.",
+  "longDescription": "Enable authoring of markdown content with visual preview.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Data/MarkdownEditor",
+      "storyId": "data-markdowneditor",
+      "url": "https://uikit.waysnx.tech/?path=/docs/data-markdowneditor",
+      "stories": [],
+      "tags": [],
+      "source": "MarkdownEditor.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use MarkdownEditor for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a MarkdownEditor"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useState": "unknown",
+    "useMemo": "unknown",
+    "DOMPurify": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-adv-toolbar",
+    "wx-adv-markdown-editor__input",
+    "wx-adv-markdown-editor__preview",
+    "wx-adv-markdown-editor__footer",
+    "wx-adv-markdown-editor__body",
+    "wx-adv-toolbar__separator",
+    "wx-adv-toolbar__btn"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\MarkdownEditor\\MarkdownEditor.tsx",
+  "keywords": [
+    "markdowneditor",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use MarkdownEditor",
+    "Create an example with MarkdownEditor",
+    "Generate a MarkdownEditor component",
+    "Build a MarkdownEditor in my form"
+  ],
+  "componentIntent": "Provide MarkdownEditor functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.220338",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "22939934",
+  "metadata": {
+    "purpose": "Enable authoring of markdown content with visual preview.",
+    "description": "A markdown editor component with split-pane view showing markdown source and live preview. Supports common markdown formatting with toolbar buttons or keyboard shortcuts. Useful for writing documentation, blog posts, comments, or any markdown content.",
+    "functionalAreas": [
+      "Data Entry",
+      "Forms"
+    ],
+    "userIntents": [
+      "Write markdown content",
+      "Preview formatted output",
+      "Use formatting helpers",
+      "Author rich text"
+    ],
+    "exampleUseCases": [
+      "Blog Post Editor",
+      "Documentation Editor",
+      "Comment Editor",
+      "Note Taker",
+      "README Editor",
+      "Rich Text Input",
+      "Content Editor"
+    ],
+    "useWhen": [
+      "Use this component when users need to author markdown content.",
+      "Use this component when live preview helps understanding formatting.",
+      "Use this component for documentation or content creation.",
+      "Use this component when markdown is preferred over WYSIWYG."
+    ],
+    "avoidWhen": [
+      "Avoid this component for simple text input (use TextField instead).",
+      "Avoid this component when users prefer WYSIWYG editing (use RichEditor instead).",
+      "Avoid this component without markdown syntax knowledge.",
+      "Avoid this component on mobile without proper responsive design."
+    ],
+    "relatedComponents": [
+      "MarkdownViewer",
+      "CodeEditor",
+      "RichTextEditor"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

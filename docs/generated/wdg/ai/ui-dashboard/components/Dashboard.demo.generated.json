@@ -1,0 +1,56 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "dashboard",
+    "name": "Dashboard",
+    "package": "@waysnx/ui-dashboard",
+    "export": "Dashboard"
+  },
+  "categories": [
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-loading-false",
+          "title": "Disabled State",
+          "description": "Shows a loading state while data is being processed.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "loading": false
+          },
+          "keywords": [
+            "loading",
+            "state"
+          ]
+        },
+        {
+          "id": "states-loading-true",
+          "title": "Enabled State",
+          "description": "Shows a loading state while data is being processed.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "loading": true
+          },
+          "keywords": [
+            "loading",
+            "state"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:45.528983",
+  "stats": {
+    "examplesGenerated": 2,
+    "categoriesGenerated": 1
+  }
+}

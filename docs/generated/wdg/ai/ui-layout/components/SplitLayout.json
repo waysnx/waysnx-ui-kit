@@ -1,0 +1,309 @@
+{
+  "id": "ui-layout:splitlayout",
+  "name": "SplitLayout",
+  "slug": "split-layout",
+  "library": "ui-layout",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Split Layout",
+  "purpose": "Create a two-panel layout with resizable divider",
+  "shortDescription": "Create a two-panel layout with resizable divider.",
+  "longDescription": "Create a two-panel layout with resizable divider.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use SplitLayout for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a SplitLayout"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [
+    {
+      "name": "children",
+      "type": "[React.ReactNode, React.ReactNode]",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "direction",
+      "type": "'horizontal' | 'vertical'",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "initialSize",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "minSize",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "maxSize",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-primary",
+    "--wx-color-text-light",
+    "--wx-color-text-muted"
+  ],
+  "cssClasses": [
+    "split-layout",
+    "split-layout-horizontal",
+    "split-layout-vertical",
+    "split-layout-pane",
+    "split-layout-divider",
+    "split-layout-divider-horizontal",
+    "split-layout-divider-vertical",
+    "split-layout-divider-handle",
+    "split-layout-dragging"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-color-border": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".split-layout-divider"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-light": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".split-layout-divider:hover",
+        ".split-layout-divider-handle"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".split-layout-divider:hover .split-layout-divider-handle"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".split-layout-dragging .split-layout-divider",
+        ".split-layout-dragging .split-layout-divider-handle"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\SplitLayout\\SplitLayout.tsx",
+  "keywords": [
+    "splitlayout",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use SplitLayout",
+    "Create an example with SplitLayout",
+    "Generate a SplitLayout component",
+    "Build a SplitLayout in my form"
+  ],
+  "componentIntent": "Provide SplitLayout functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.157035",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "723bec40",
+  "metadata": {
+    "purpose": "Create a two-panel layout with resizable divider.",
+    "description": "A layout component that divides the screen into two adjustable panels separated by a resizable divider. Users can drag the divider to adjust panel sizes while maintaining responsive behavior. Useful for comparison views, split-pane editors, or master-detail layouts.",
+    "functionalAreas": [
+      "Layout"
+    ],
+    "userIntents": [
+      "View two panels side by side",
+      "Adjust panel sizes flexibly",
+      "Compare content side by side",
+      "Use split-pane editing interface"
+    ],
+    "exampleUseCases": [
+      "Master-detail View",
+      "Code Editor with Preview",
+      "Document Editor with Preview",
+      "File Tree with Content",
+      "Settings with Preview",
+      "Source Code Comparison",
+      "Image Editor with Toolbar"
+    ],
+    "useWhen": [
+      "Use this component when users need to view two panels simultaneously.",
+      "Use this component when panel size adjustment is important.",
+      "Use this component for comparison or master-detail relationships.",
+      "Use this component for applications like code editors or document viewers."
+    ],
+    "avoidWhen": [
+      "Avoid this component when one panel should be primary and dominant.",
+      "Avoid this component on mobile or small screens where split view doesn't work.",
+      "Avoid this component when tabs would suffice for switching views.",
+      "Avoid this component when panels are unrelated or don't need simultaneous viewing."
+    ],
+    "relatedComponents": [
+      "Container",
+      "Drawer",
+      "SidebarLayout"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-navigation/drawer.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display navigation content in a side panel that slides in from the screen edge.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": true,
+    "isMemo": false,
+    "library": "ui-navigation",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "animationDuration": {
+      "description": "Animation duration in ms",
+      "type": "number"
+    },
+    "ariaDescription": {
+      "description": "Drawer description for a11y",
+      "type": "string"
+    },
+    "ariaLabel": {
+      "description": "Accessible label for drawer",
+      "type": "string"
+    },
+    "backdropOpacity": {
+      "description": "Backdrop opacity (0-1)",
+      "type": "number"
+    },
+    "children": {
+      "description": "Drawer content",
+      "type": "string"
+    },
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "closeOnBackdropClick": {
+      "description": "Close on backdrop click",
+      "type": "boolean"
+    },
+    "closeOnEscape": {
+      "description": "Close on Escape key press",
+      "type": "boolean"
+    },
+    "footer": {
+      "description": "Drawer footer content",
+      "type": "string"
+    },
+    "header": {
+      "description": "Drawer header content",
+      "type": "string"
+    },
+    "height": {
+      "description": "Height of drawer (for top/bottom)",
+      "enum": [
+        "string",
+        "number"
+      ]
+    },
+    "isOpen": {
+      "description": "Whether drawer is open",
+      "type": "boolean"
+    },
+    "lockScroll": {
+      "description": "Lock body scroll when drawer is open",
+      "type": "boolean"
+    },
+    "onClose": {
+      "description": "Callback when drawer is requested to close",
+      "type": "null"
+    },
+    "position": {
+      "description": "Position of drawer",
+      "enum": [
+        "left",
+        "right",
+        "top",
+        "bottom"
+      ]
+    },
+    "resizable": {
+      "description": "Allow drawer resizing",
+      "type": "boolean"
+    },
+    "showBackdrop": {
+      "description": "Show backdrop overlay",
+      "type": "boolean"
+    },
+    "showCloseButton": {
+      "description": "Show close button",
+      "type": "boolean"
+    },
+    "style": {
+      "description": "Additional styles",
+      "type": "string"
+    },
+    "title": {
+      "description": "Drawer title",
+      "type": "string"
+    },
+    "width": {
+      "description": "Width of drawer (for left/right)",
+      "enum": [
+        "string",
+        "number"
+      ]
+    },
+    "zIndex": {
+      "description": "Z-index for drawer",
+      "type": "number"
+    }
+  },
+  "required": [
+    "isOpen"
+  ],
+  "title": "Drawer",
+  "type": "object"
+}

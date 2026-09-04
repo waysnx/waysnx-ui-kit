@@ -1,0 +1,81 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-navigation/notificationcenter.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display and manage system notifications in a centralized location.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": true,
+    "isMemo": false,
+    "library": "ui-navigation",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "categories": {
+      "description": "Available categories for filtering",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "label": {
+      "description": "",
+      "type": "string"
+    },
+    "maxNotifications": {
+      "description": "Max notifications to display",
+      "type": "number"
+    },
+    "notifications": {
+      "description": "List of notifications",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "onClearAll": {
+      "description": "Callback when all notifications are cleared",
+      "type": "null"
+    },
+    "onDelete": {
+      "description": "Callback when notification is deleted",
+      "type": "string"
+    },
+    "onMarkAllAsRead": {
+      "description": "Callback when all notifications are marked as read",
+      "type": "null"
+    },
+    "onMarkAsRead": {
+      "description": "Callback when notification is read",
+      "type": "string"
+    },
+    "showBadge": {
+      "description": "Show unread count badge",
+      "type": "boolean"
+    },
+    "showCategories": {
+      "description": "Show notification categories",
+      "type": "boolean"
+    },
+    "trigger": {
+      "description": "Trigger button trigger ('hover' or 'click')",
+      "enum": [
+        "hover",
+        "click"
+      ]
+    }
+  },
+  "required": [
+    "label"
+  ],
+  "title": "NotificationCenter",
+  "type": "object"
+}

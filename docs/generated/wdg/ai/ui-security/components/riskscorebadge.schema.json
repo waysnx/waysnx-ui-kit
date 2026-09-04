@@ -1,0 +1,45 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/riskscorebadge.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "RiskScoreBadge Component Display account risk score with visual indicator.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "factors": {
+      "description": "Risk factors",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "level": {
+      "description": "Risk level",
+      "type": "string"
+    },
+    "score": {
+      "description": "Risk score 0-100",
+      "type": "number"
+    },
+    "showDetails": {
+      "description": "Show details",
+      "type": "boolean"
+    }
+  },
+  "required": [],
+  "title": "RiskScoreBadge",
+  "type": "object"
+}

@@ -1,0 +1,98 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-navigation/sidebar.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display persistent sidebar navigation alongside main content.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": true,
+    "isMemo": false,
+    "library": "ui-navigation",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "collapsedWidth": {
+      "description": "Width of sidebar when collapsed",
+      "enum": [
+        "string",
+        "number"
+      ]
+    },
+    "collapsible": {
+      "description": "Whether sidebar is collapsible",
+      "type": "boolean"
+    },
+    "colorScheme": {
+      "description": "",
+      "enum": [
+        "light",
+        "dark"
+      ]
+    },
+    "expandedWidth": {
+      "description": "Width of sidebar when expanded",
+      "enum": [
+        "string",
+        "number"
+      ]
+    },
+    "footer": {
+      "description": "Footer content",
+      "type": "string"
+    },
+    "header": {
+      "description": "Header content (above logo)",
+      "type": "string"
+    },
+    "isCollapsed": {
+      "description": "Whether sidebar is collapsed",
+      "type": "boolean"
+    },
+    "logo": {
+      "description": "Logo or brand content",
+      "type": "string"
+    },
+    "mobileBreakpoint": {
+      "description": "Mobile breakpoint for responsive behavior",
+      "type": "string"
+    },
+    "onCollapseChange": {
+      "description": "Callback when collapse state changes",
+      "type": "boolean"
+    },
+    "overlay": {
+      "description": "Whether to show overlay on mobile",
+      "type": "boolean"
+    },
+    "persistState": {
+      "description": "Persist collapsed state to localStorage",
+      "type": "boolean"
+    },
+    "position": {
+      "description": "Position of sidebar",
+      "enum": [
+        "left",
+        "right"
+      ]
+    },
+    "showDivider": {
+      "description": "Whether to show divider after menu",
+      "type": "boolean"
+    },
+    "storageKey": {
+      "description": "Storage key for persistence",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "title": "Sidebar",
+  "type": "object"
+}

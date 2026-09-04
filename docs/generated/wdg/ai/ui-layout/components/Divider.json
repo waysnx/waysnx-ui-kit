@@ -1,0 +1,229 @@
+{
+  "id": "ui-layout:divider",
+  "name": "Divider",
+  "slug": "divider",
+  "library": "ui-layout",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Divider",
+  "purpose": "Create a visual separation between content sections",
+  "shortDescription": "Create a visual separation between content sections.",
+  "longDescription": "Create a visual separation between content sections.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Divider for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Divider"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown"
+  },
+  "props": [
+    {
+      "name": "orientation",
+      "type": "'horizontal' | 'vertical'",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border"
+  ],
+  "cssClasses": [
+    "wx-divider",
+    "wx-divider-horizontal",
+    "wx-divider-vertical"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-color-border": {
+      "properties": [
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-divider-horizontal",
+        ".wx-divider-vertical"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Divider\\Divider.tsx",
+  "keywords": [
+    "divider",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Divider",
+    "Create an example with Divider",
+    "Generate a Divider component",
+    "Build a Divider in my form"
+  ],
+  "componentIntent": "Provide Divider functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.077229",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "156fa4c3",
+  "metadata": {
+    "purpose": "Create a visual separation between content sections.",
+    "description": "A simple horizontal or vertical line that separates distinct content areas visually. Helps organize information and improve visual hierarchy by creating clear boundaries. Can be styled and used to break up long content into more digestible sections.",
+    "functionalAreas": [
+      "Layout",
+      "Visualization"
+    ],
+    "userIntents": [
+      "Separate content sections visually",
+      "Improve page organization",
+      "Create visual breaks in content",
+      "Help scan and understand structure"
+    ],
+    "exampleUseCases": [
+      "Section Separator",
+      "Menu Item Divider",
+      "Content Break",
+      "Form Section Divider",
+      "List Item Separator",
+      "Dialog Content Divider",
+      "Navigation Divider"
+    ],
+    "useWhen": [
+      "Use this component to separate distinct content sections.",
+      "Use this component to improve visual organization and scanning.",
+      "Use this component to create clear visual breaks in long content.",
+      "Use this component in menus, dropdowns, and lists for grouping items."
+    ],
+    "avoidWhen": [
+      "Avoid this component for layout structure (use Container or Stack instead).",
+      "Avoid this component excessively (too many dividers create visual noise).",
+      "Avoid this component when margin or padding can achieve the same effect.",
+      "Avoid this component for styling unrelated content together."
+    ],
+    "relatedComponents": [
+      "Spacer",
+      "Stack",
+      "Section"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

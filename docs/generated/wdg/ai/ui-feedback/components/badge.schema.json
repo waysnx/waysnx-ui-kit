@@ -1,0 +1,60 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-feedback/badge.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display a small numeric or dot indicator to convey status or count information.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-feedback",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "children": {
+      "description": "",
+      "type": "string"
+    },
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "color": {
+      "description": "",
+      "enum": [
+        "default",
+        "success",
+        "error",
+        "warning",
+        "info"
+      ]
+    },
+    "count": {
+      "description": "",
+      "type": "number"
+    },
+    "dot": {
+      "description": "",
+      "type": "boolean"
+    },
+    "maxCount": {
+      "description": "",
+      "type": "number"
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "title": "Badge",
+  "type": "object"
+}

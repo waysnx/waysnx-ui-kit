@@ -1,0 +1,225 @@
+{
+  "id": "ui-communication:readreceipts",
+  "name": "ReadReceipts",
+  "slug": "read-receipts",
+  "library": "ui-communication",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Read Receipts",
+  "purpose": "Show message delivery and read status indicators",
+  "shortDescription": "Show message delivery and read status indicators.",
+  "longDescription": "Show message delivery and read status indicators.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Communication/ReadReceipts",
+      "storyId": "communication-readreceipts",
+      "url": "https://uikit.waysnx.tech/?path=/docs/communication-readreceipts",
+      "stories": [],
+      "tags": [],
+      "source": "ReadReceipts.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use ReadReceipts for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a ReadReceipts"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [
+      "MessageBubble"
+    ],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [
+      "MessageBubble"
+    ],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-comm-read-receipts__icon"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\ReadReceipts\\ReadReceipts.tsx",
+  "keywords": [
+    "readreceipts",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use ReadReceipts",
+    "Create an example with ReadReceipts",
+    "Generate a ReadReceipts component",
+    "Build a ReadReceipts in my form"
+  ],
+  "componentIntent": "Provide ReadReceipts functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.501844",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "5e02e63b",
+  "metadata": {
+    "purpose": "Show message delivery and read status indicators.",
+    "description": "Status indicators that show whether messages have been sent, delivered, or read. Typically displayed as small icons next to messages (checkmarks, double-checkmarks). Provides sender feedback on message status.",
+    "functionalAreas": [
+      "Communication",
+      "Feedback"
+    ],
+    "userIntents": [
+      "Know if message was sent",
+      "See if message was delivered",
+      "Check if message was read",
+      "Understand message status"
+    ],
+    "exampleUseCases": [
+      "Message Status Indicator",
+      "Sent/Delivered/Read Status",
+      "Message Delivery Status",
+      "Read Status Indicator",
+      "Message Receipt",
+      "Delivery Confirmation",
+      "Message Tracking"
+    ],
+    "useWhen": [
+      "Use this component to show message delivery status.",
+      "Use this component with sent, delivered, and read states.",
+      "Use this component in messaging applications.",
+      "Use this component to provide sender confidence on message status."
+    ],
+    "avoidWhen": [
+      "Avoid this component without backend tracking.",
+      "Avoid this component in non-messaging contexts.",
+      "Avoid this component when detailed status history isn't needed.",
+      "Avoid this component without clear status icon semantics."
+    ],
+    "relatedComponents": [
+      "MessageBubble",
+      "PresenceIndicator",
+      "TypingIndicator"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "id": "ui-communication:chatinput",
+  "name": "ChatInput",
+  "slug": "chat-input",
+  "library": "ui-communication",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Chat Input",
+  "purpose": "Provide user input for composing chat or message content",
+  "shortDescription": "Provide user input for composing chat or message content.",
+  "longDescription": "Provide user input for composing chat or message content.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Communication/ChatInput",
+      "storyId": "communication-chatinput",
+      "url": "https://uikit.waysnx.tech/?path=/docs/communication-chatinput",
+      "stories": [],
+      "tags": [],
+      "source": "ChatInput.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use ChatInput for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a ChatInput"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [
+      "ChatWindow",
+      "ThreadPanel"
+    ],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [
+      "ChatWindow",
+      "ThreadPanel"
+    ],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useState": "unknown",
+    "useRef": "unknown",
+    "useCallback": "unknown",
+    "useEffect": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-comm-chat-input__textarea",
+    "wx-comm-chat-input__reply-close",
+    "wx-comm-chat-input__send-btn",
+    "wx-comm-chat-input__container",
+    "wx-comm-chat-input__actions",
+    "wx-comm-chat-input__action-btn",
+    "wx-comm-chat-input__reply-preview"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\ChatInput\\ChatInput.tsx",
+  "keywords": [
+    "chatinput",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [
+    "text entry",
+    "form field"
+  ],
+  "naturalLanguageQueries": [
+    {
+      "query": "Create a chatinput for forms",
+      "context": "form",
+      "intent": "create"
+    },
+    {
+      "query": "Add a chatinput",
+      "context": "ui",
+      "intent": "create"
+    }
+  ],
+  "recommendedPrompts": [
+    "Show me how to use ChatInput for form validation",
+    "Create a ChatInput with error handling",
+    "Generate a ChatInput with placeholder text",
+    "Build a ChatInput with character limit",
+    "Design a ChatInput for email addresses"
+  ],
+  "componentIntent": "Provide ChatInput functionality",
+  "semanticCategory": "input",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.421558",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "a695440d",
+  "metadata": {
+    "purpose": "Provide user input for composing chat or message content.",
+    "description": "A specialized text input component designed for composing messages in chat interfaces. Typically grows as user types, supports multiline input, emoji insertion, file attachments, and send button. Often integrated with message history or chat windows.",
+    "functionalAreas": [
+      "Communication",
+      "Data Entry"
+    ],
+    "userIntents": [
+      "Compose messages",
+      "Add attachments to message",
+      "Insert emojis",
+      "Send messages"
+    ],
+    "exampleUseCases": [
+      "Chat Message Input",
+      "Messaging App Input",
+      "Comment Input",
+      "Chat Box",
+      "Instant Message Input",
+      "Discussion Message",
+      "Conversation Input"
+    ],
+    "useWhen": [
+      "Use this component for message composition in chat interfaces.",
+      "Use this component when multiline input and attachments are needed.",
+      "Use this component to provide emoji picker and formatting options.",
+      "Use this component in real-time communication applications."
+    ],
+    "avoidWhen": [
+      "Avoid this component for simple text input without chat context.",
+      "Avoid this component without accompanying chat window.",
+      "Avoid this component for single-line-only input (use TextInput instead).",
+      "Avoid this component without proper send/submit handling."
+    ],
+    "relatedComponents": [
+      "ChatWindow",
+      "MessageBubble",
+      "EmojiPicker",
+      "TextArea"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

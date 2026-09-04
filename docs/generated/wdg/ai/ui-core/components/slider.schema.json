@@ -1,0 +1,78 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-core/slider.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Enable users to select a numeric value from a continuous range using a draggable control.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-core",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "ariaDescribedBy": {
+      "description": "",
+      "type": "string"
+    },
+    "ariaLabel": {
+      "description": "",
+      "type": "string"
+    },
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "hint": {
+      "description": "",
+      "type": "string"
+    },
+    "id": {
+      "description": "",
+      "type": "string"
+    },
+    "label": {
+      "description": "",
+      "type": "string"
+    },
+    "max": {
+      "description": "",
+      "type": "number"
+    },
+    "min": {
+      "description": "",
+      "type": "number"
+    },
+    "onChange": {
+      "description": "",
+      "type": "number"
+    },
+    "showValue": {
+      "description": "",
+      "type": "boolean"
+    },
+    "step": {
+      "description": "",
+      "type": "number"
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    },
+    "value": {
+      "description": "",
+      "type": "number"
+    }
+  },
+  "required": [],
+  "title": "Slider",
+  "type": "object"
+}

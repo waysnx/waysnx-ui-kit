@@ -1,0 +1,39 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-feedback/toast.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display a temporary notification message that auto-dismisses.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-feedback",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "message": {
+      "description": "",
+      "enum": [
+        "string",
+        "React.ReactNode"
+      ]
+    },
+    "type": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [
+    "message"
+  ],
+  "title": "Toast",
+  "type": "object"
+}

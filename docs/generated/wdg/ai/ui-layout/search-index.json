@@ -1,0 +1,1330 @@
+{
+  "version": "2.0.0",
+  "library": "ui-layout",
+  "generatedAt": "2026-09-03T20:03:00.221665",
+  "components": [
+    {
+      "id": "ui-layout:accordion",
+      "name": "Accordion",
+      "slug": "accordion",
+      "category": "components",
+      "description": "Display collapsible sections of content that expand or collapse.",
+      "keywords": [
+        "accordion",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "children",
+        "allowMultiple",
+        "defaultOpen",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Accordion for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 4,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-layout:breadcrumb",
+      "name": "Breadcrumb",
+      "slug": "breadcrumb",
+      "category": "components",
+      "description": "Display the current navigation path and enable quick navigation to parent levels.",
+      "keywords": [
+        "breadcrumb",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "navigation",
+      "propNames": [
+        "items",
+        "className",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Breadcrumb for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 3,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-layout:card",
+      "name": "Card",
+      "slug": "card",
+      "category": "components",
+      "description": "Contain and organize related content in a bordered container.",
+      "keywords": [
+        "card",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "children",
+        "className",
+        "title",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "EmailVerificationCard",
+          "OTPVerificationCard",
+          "PhoneVerificationCard"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "EmailVerificationCard",
+          "OTPVerificationCard",
+          "PhoneVerificationCard"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Card for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 4,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-layout:collapsible",
+      "name": "Collapsible",
+      "slug": "collapsible",
+      "category": "components",
+      "description": "Show or hide content with a click or interaction.",
+      "keywords": [
+        "collapsible",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "title",
+        "children",
+        "defaultOpen",
+        "className",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Collapsible for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 5,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-layout:column",
+      "name": "Column",
+      "slug": "column",
+      "category": "components",
+      "description": "Organize content in a vertical column within a layout grid.",
+      "keywords": [
+        "column",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "children",
+        "gap",
+        "align",
+        "justify",
+        "className"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Column for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 5,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-layout:container",
+      "name": "Container",
+      "slug": "container",
+      "category": "components",
+      "description": "Constrain content width and provide consistent margins.",
+      "keywords": [
+        "label",
+        "container",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "children",
+        "maxWidth",
+        "className",
+        "label"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Container for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 4,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-layout:divider",
+      "name": "Divider",
+      "slug": "divider",
+      "category": "components",
+      "description": "Create a visual separation between content sections.",
+      "keywords": [
+        "divider",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "orientation",
+        "className"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Divider for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 2,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-layout:grid",
+      "name": "Grid",
+      "slug": "grid",
+      "category": "components",
+      "description": "Arrange content in a responsive grid layout.",
+      "keywords": [
+        "label",
+        "grid",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "layout",
+      "propNames": [
+        "children",
+        "columns",
+        "gap",
+        "className",
+        "label"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Grid for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 5,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-layout:pagecontent",
+      "name": "PageContent",
+      "slug": "page-content",
+      "category": "components",
+      "description": "Organize main content area of a page layout.",
+      "keywords": [
+        "pagecontent",
+        "label",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "children",
+        "label"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use PageContent for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 2,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-layout:pageheader",
+      "name": "PageHeader",
+      "slug": "page-header",
+      "category": "components",
+      "description": "Display header information and controls at the top of a page.",
+      "keywords": [
+        "pageheader",
+        "label",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "children",
+        "label"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use PageHeader for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 2,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-layout:pagelayout",
+      "name": "PageLayout",
+      "slug": "page-layout",
+      "category": "components",
+      "description": "Define the overall structure and layout of a page.",
+      "keywords": [
+        "label",
+        "pagelayout",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "children",
+        "label"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use PageLayout for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 2,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-layout:pagetabs",
+      "name": "PageTabs",
+      "slug": "page-tabs",
+      "category": "components",
+      "description": "Organize page sections using tab navigation.",
+      "keywords": [
+        "pagetabs",
+        "label",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "navigation",
+      "propNames": [
+        "tabs",
+        "onTabChange",
+        "className",
+        "label"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use PageTabs for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 4,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-layout:panel",
+      "name": "Panel",
+      "slug": "panel",
+      "category": "components",
+      "description": "Create a contained panel or section with consistent styling.",
+      "keywords": [
+        "panel",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "children",
+        "className",
+        "title",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Panel for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 4,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-layout:row",
+      "name": "Row",
+      "slug": "row",
+      "category": "components",
+      "description": "Organize content in a horizontal row within a layout grid.",
+      "keywords": [
+        "row",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "children",
+        "gap",
+        "align",
+        "justify",
+        "wrap",
+        "className"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Row for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 6,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-layout:section",
+      "name": "Section",
+      "slug": "section",
+      "category": "components",
+      "description": "Define a semantic content section with consistent spacing.",
+      "keywords": [
+        "section",
+        "label",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "children",
+        "className",
+        "label"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Section for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 3,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-layout:sidebarlayout",
+      "name": "SidebarLayout",
+      "slug": "sidebar-layout",
+      "category": "components",
+      "description": "Create a layout with a sidebar and main content area.",
+      "keywords": [
+        "components",
+        "sidebarlayout"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "layout",
+      "propNames": [
+        "sidebar",
+        "orientation",
+        "sidebarWidth",
+        "collapsible",
+        "collapsed",
+        "children",
+        "sidebarLabel",
+        "contentLabel"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SidebarLayout for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 8,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-layout:spacer",
+      "name": "Spacer",
+      "slug": "spacer",
+      "category": "components",
+      "description": "Add flexible spacing between layout elements.",
+      "keywords": [
+        "spacer",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "size",
+        "className"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Spacer for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 2,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-layout:splitlayout",
+      "name": "SplitLayout",
+      "slug": "split-layout",
+      "category": "components",
+      "description": "Create a two-panel layout with resizable divider.",
+      "keywords": [
+        "splitlayout",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "children",
+        "direction",
+        "initialSize",
+        "minSize",
+        "maxSize",
+        "className",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SplitLayout for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 7,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-layout:stack",
+      "name": "Stack",
+      "slug": "stack",
+      "category": "components",
+      "description": "Arrange elements in a single row or column with consistent spacing.",
+      "keywords": [
+        "stack",
+        "label",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "children",
+        "direction",
+        "gap",
+        "align",
+        "className",
+        "label"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "AccessDenied",
+          "ActiveSessions",
+          "ActivityFeed",
+          "BackupCodesCard",
+          "ConcurrentSessionDialog",
+          "LoginHistory",
+          "MFASettingsPanel",
+          "MFASetupWizard",
+          "MFAStatus",
+          "MFAVerificationDialog",
+          "PINInput",
+          "PasswordPolicyPanel",
+          "PrivacySettingsPanel",
+          "SecureUploader",
+          "SecurityAlertsPanel",
+          "SecurityEventLog",
+          "SecurityLogsPanel",
+          "SecuritySettingsPanel",
+          "SessionPolicyPanel",
+          "SessionTimeoutDialog",
+          "TrustedDeviceSelector",
+          "TrustedDevicesPanel",
+          "UnauthorizedPage"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "AccessDenied",
+          "ActiveSessions",
+          "ActivityFeed",
+          "BackupCodesCard",
+          "ConcurrentSessionDialog",
+          "LoginHistory",
+          "MFASettingsPanel",
+          "MFASetupWizard",
+          "MFAStatus",
+          "MFAVerificationDialog",
+          "PINInput",
+          "PasswordPolicyPanel",
+          "PrivacySettingsPanel",
+          "SecureUploader",
+          "SecurityAlertsPanel",
+          "SecurityEventLog",
+          "SecurityLogsPanel",
+          "SecuritySettingsPanel",
+          "SessionPolicyPanel",
+          "SessionTimeoutDialog",
+          "TrustedDeviceSelector",
+          "TrustedDevicesPanel",
+          "UnauthorizedPage"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Stack for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 6,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-layout:stepper",
+      "name": "Stepper",
+      "slug": "stepper",
+      "category": "components",
+      "description": "Show progress through a multi-step process.",
+      "keywords": [
+        "stepper",
+        "label",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "steps",
+        "orientation",
+        "className",
+        "label",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Stepper for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 5,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-layout:tabs",
+      "name": "Tabs",
+      "slug": "tabs",
+      "category": "components",
+      "description": "Organize content into tabs that users can switch between.",
+      "keywords": [
+        "organize",
+        "label",
+        "panel",
+        "navigation",
+        "tab",
+        "components",
+        "tabs"
+      ],
+      "aliases": [
+        "AIAlias(alias='tabbed panel', context='technical', confidence=0.92)",
+        "AIAlias(alias='tabbed interface', context='technical', confidence=0.9)",
+        "AIAlias(alias='panel tabs', context='descriptive', confidence=0.88)"
+      ],
+      "synonyms": [
+        "tabbed panel",
+        "tab navigation"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "navigation",
+      "propNames": [
+        "children",
+        "defaultTab",
+        "className",
+        "label",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Tabs for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 5,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-layout:wizard",
+      "name": "Wizard",
+      "slug": "wizard",
+      "category": "components",
+      "description": "Guide users through a multi-step process or form.",
+      "keywords": [
+        "wizard",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "children",
+        "onComplete",
+        "onStepChange",
+        "defaultStep",
+        "showStepNumbers",
+        "className",
+        "Default",
+        "Default",
+        "Default",
+        "onSaveProgress",
+        "Default",
+        "successMessage",
+        "errorMessage",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Wizard for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 14,
+        "eventsCount": 0
+      }
+    }
+  ]
+}

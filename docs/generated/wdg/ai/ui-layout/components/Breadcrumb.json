@@ -1,0 +1,278 @@
+{
+  "id": "ui-layout:breadcrumb",
+  "name": "Breadcrumb",
+  "slug": "breadcrumb",
+  "library": "ui-layout",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Breadcrumb",
+  "purpose": "Display the current navigation path and enable quick navigation to parent levels",
+  "shortDescription": "Display the current navigation path and enable quick navigation to parent levels.",
+  "longDescription": "Display the current navigation path and enable quick navigation to parent levels.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Navigation/Breadcrumb",
+      "storyId": "navigation-breadcrumb",
+      "url": "https://uikit.waysnx.tech/?path=/docs/navigation-breadcrumb",
+      "stories": [],
+      "tags": [],
+      "source": "Breadcrumb.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Breadcrumb for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Breadcrumb"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown"
+  },
+  "props": [
+    {
+      "name": "items",
+      "type": "BreadcrumbItem[]",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-primary",
+    "--wx-color-primary-hover",
+    "--wx-color-text",
+    "--wx-color-text-muted"
+  ],
+  "cssClasses": [
+    "breadcrumb",
+    "breadcrumb-list",
+    "breadcrumb-item",
+    "breadcrumb-link",
+    "breadcrumb-button",
+    "breadcrumb-current",
+    "breadcrumb-separator"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-color-primary": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".breadcrumb-link",
+        ".breadcrumb-button"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary-hover": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".breadcrumb-link:hover",
+        ".breadcrumb-button:hover"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".breadcrumb-current"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".breadcrumb-separator"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Breadcrumb\\Breadcrumb.tsx",
+  "keywords": [
+    "breadcrumb",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Breadcrumb",
+    "Create an example with Breadcrumb",
+    "Generate a Breadcrumb component",
+    "Build a Breadcrumb in my form"
+  ],
+  "componentIntent": "Show navigation path",
+  "semanticCategory": "navigation",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.040962",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "1603563d",
+  "metadata": {
+    "purpose": "Display the current navigation path and enable quick navigation to parent levels.",
+    "description": "A secondary navigation aid that shows the hierarchy of pages or locations in the application and current position within it. Each level is clickable for quick navigation back to parent pages. Helps users understand their location in the site structure and provides shortcuts for navigation.",
+    "functionalAreas": [
+      "Navigation",
+      "Layout"
+    ],
+    "userIntents": [
+      "Know where I am in the site",
+      "Go back to parent page quickly",
+      "Understand the navigation hierarchy",
+      "See the path I took to get here"
+    ],
+    "exampleUseCases": [
+      "Page Navigation Hierarchy",
+      "File System Path",
+      "Document Hierarchy",
+      "Category Navigation",
+      "Multi-level Product Navigation",
+      "Search Result Path",
+      "Documentation Structure"
+    ],
+    "useWhen": [
+      "Use this component when your application has a hierarchical structure.",
+      "Use this component to help users understand their location in a multi-level navigation.",
+      "Use this component as a secondary navigation aid alongside primary navigation.",
+      "Use this component in documentation or content-heavy sites with clear hierarchy."
+    ],
+    "avoidWhen": [
+      "Avoid this component in flat, non-hierarchical structures.",
+      "Avoid this component as the primary navigation mechanism.",
+      "Avoid this component on mobile when space is extremely limited.",
+      "Avoid this component for single-level applications."
+    ],
+    "relatedComponents": [
+      "Navigation",
+      "Tabs",
+      "Menu"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

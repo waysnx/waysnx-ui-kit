@@ -1,0 +1,43 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/audittimeline.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Audit events to display",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "events": {
+      "description": "Audit events to display",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "maxEvents": {
+      "description": "Maximum events to show",
+      "type": "number"
+    },
+    "showTimestamp": {
+      "description": "Show timestamp",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "events"
+  ],
+  "title": "AuditTimeline",
+  "type": "object"
+}

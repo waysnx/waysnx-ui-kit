@@ -1,0 +1,50 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-layout/container.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Constrain content width and provide consistent margins.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-layout",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "children": {
+      "description": "",
+      "type": "string"
+    },
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "label": {
+      "description": "",
+      "type": "string"
+    },
+    "maxWidth": {
+      "description": "",
+      "enum": [
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "full"
+      ]
+    }
+  },
+  "required": [
+    "children"
+  ],
+  "title": "Container",
+  "type": "object"
+}

@@ -1,0 +1,60 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/securitybanner.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "SecurityBanner Component Prominent banner to display security alerts and status messages.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "actionLabel": {
+      "description": "Action button label",
+      "type": "string"
+    },
+    "dismissible": {
+      "description": "Whether banner is dismissible",
+      "type": "boolean"
+    },
+    "icon": {
+      "description": "Icon to display",
+      "type": "string"
+    },
+    "message": {
+      "description": "Banner message",
+      "type": "string"
+    },
+    "onAction": {
+      "description": "Action button callback",
+      "type": "null"
+    },
+    "onDismiss": {
+      "description": "Callback when dismissed",
+      "type": "null"
+    },
+    "severity": {
+      "description": "Severity level",
+      "type": "string"
+    },
+    "title": {
+      "description": "Banner title",
+      "type": "string"
+    }
+  },
+  "required": [
+    "message"
+  ],
+  "title": "SecurityBanner",
+  "type": "object"
+}

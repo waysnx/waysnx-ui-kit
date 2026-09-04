@@ -1,0 +1,267 @@
+{
+  "id": "ui-feedback:tooltip",
+  "name": "Tooltip",
+  "slug": "tooltip",
+  "library": "ui-feedback",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Tooltip",
+  "purpose": "Display supplementary information when user hovers over an element",
+  "shortDescription": "Display supplementary information when user hovers over an element.",
+  "longDescription": "Display supplementary information when user hovers over an element.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Tooltip for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Tooltip"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [
+      "Popover"
+    ],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [
+    {
+      "name": "content",
+      "type": "string | React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "position",
+      "type": "\"top\" | \"bottom\" | \"left\" | \"right\"",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-primary-contrast",
+    "--wx-color-text"
+  ],
+  "cssClasses": [
+    "wx-tooltip-wrapper",
+    "wx-tooltip",
+    "wx-tooltip-top",
+    "wx-tooltip-bottom",
+    "wx-tooltip-left",
+    "wx-tooltip-right"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-color-text": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-tooltip"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary-contrast": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-tooltip"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Tooltip\\Tooltip.tsx",
+  "keywords": [
+    "tooltip",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Tooltip",
+    "Create an example with Tooltip",
+    "Generate a Tooltip component",
+    "Build a Tooltip in my form"
+  ],
+  "componentIntent": "Show additional info",
+  "semanticCategory": "overlay",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.983119",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "ff443d3b",
+  "metadata": {
+    "purpose": "Display supplementary information when user hovers over an element.",
+    "description": "A small popup that appears near an element when the user hovers over or focuses on it, providing context-sensitive help or additional information. Positioned intelligently to stay within viewport bounds and disappears when the user moves away. Used for explaining UI elements, showing abbreviations, or providing quick tips without cluttering the interface.",
+    "functionalAreas": [
+      "Feedback",
+      "Communication"
+    ],
+    "userIntents": [
+      "Understand what a UI element does",
+      "Learn the full form of an abbreviation",
+      "Get quick help or tips",
+      "See supplementary information"
+    ],
+    "exampleUseCases": [
+      "Icon Button Help",
+      "Abbreviation Explanation",
+      "Form Field Tips",
+      "Settings Descriptions",
+      "Action Button Help",
+      "Data Point Explanation",
+      "Keyboard Shortcut Info"
+    ],
+    "useWhen": [
+      "Use this component when supplementary information enhances but isn't critical.",
+      "Use this component for explaining icon-only buttons or abbreviations.",
+      "Use this component when you need to save space by hiding helpful context.",
+      "Use this component for keyboard shortcuts or quick tips."
+    ],
+    "avoidWhen": [
+      "Avoid this component for critical information that users must see.",
+      "Avoid this component on touch devices where hover doesn't work intuitively.",
+      "Avoid this component when the tooltip text is longer than a sentence or two.",
+      "Avoid this component for complex explanations (provide help text instead)."
+    ],
+    "relatedComponents": [
+      "Popover",
+      "Drawer",
+      "Modal"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

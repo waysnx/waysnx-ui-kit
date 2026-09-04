@@ -1,0 +1,59 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/backupcodescard.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "BackupCodesCard - Display backup codes for account recovery",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "codes": {
+      "description": "Backup codes array",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "initiallyRevealed": {
+      "description": "Whether codes are initially revealed",
+      "type": "boolean"
+    },
+    "isConfirmed": {
+      "description": "Whether backup codes have been saved/confirmed",
+      "type": "boolean"
+    },
+    "onConfirm": {
+      "description": "Callback when user confirms they saved codes",
+      "type": "null"
+    },
+    "onCopyAll": {
+      "description": "Callback to copy all codes",
+      "type": "null"
+    },
+    "onDownload": {
+      "description": "Callback to download codes",
+      "type": "null"
+    },
+    "onPrint": {
+      "description": "Callback to print codes",
+      "type": "null"
+    }
+  },
+  "required": [
+    "codes"
+  ],
+  "title": "BackupCodesCard",
+  "type": "object"
+}

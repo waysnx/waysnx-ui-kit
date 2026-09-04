@@ -1,0 +1,30 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-grid-builder/grid.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Build and configure responsive data grids with columns and rows.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-grid-builder",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "columnId": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "title": "Grid",
+  "type": "object"
+}

@@ -1,0 +1,247 @@
+{
+  "id": "ui-security:trusteddeviceselector",
+  "name": "TrustedDeviceSelector",
+  "slug": "trusted-device-selector",
+  "library": "ui-security",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Trusted Device Selector",
+  "purpose": "TrustedDeviceSelector - Mark device as trusted",
+  "shortDescription": "TrustedDeviceSelector - Mark device as trusted",
+  "longDescription": "TrustedDeviceSelector - Mark device as trusted",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Security/Devices/TrustedDeviceSelector",
+      "storyId": "security-devices-trusteddeviceselector",
+      "url": "https://uikit.waysnx.tech/?path=/docs/security-devices-trusteddeviceselector",
+      "stories": [],
+      "tags": [],
+      "source": "TrustedDeviceSelector.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use TrustedDeviceSelector for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a TrustedDeviceSelector"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "Checkbox",
+      "Stack"
+    ],
+    "usedBy": [],
+    "related": [
+      "Checkbox",
+      "Stack"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": [
+      "Checkbox",
+      "Stack"
+    ]
+  },
+  "dependencies": {
+    "Checkbox": "unknown",
+    "Stack": "unknown"
+  },
+  "props": [
+    {
+      "name": "deviceName",
+      "type": "string",
+      "description": "Current device name",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "trustDurationDays",
+      "type": "number",
+      "description": "How long to trust device (in days)",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "isTrusted",
+      "type": "boolean",
+      "description": "Whether device is selected as trusted",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onTrustChange",
+      "type": "(isTrusted: boolean, durationDays?: number) => void",
+      "description": "Callback when trust state changes",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "description": "Whether selection is disabled",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Custom message",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\MFA\\TrustedDeviceSelector.tsx",
+  "keywords": [
+    "trusteddeviceselector",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [
+    "option selector",
+    "choice control"
+  ],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use TrustedDeviceSelector",
+    "Create an example with TrustedDeviceSelector",
+    "Generate a TrustedDeviceSelector component",
+    "Build a TrustedDeviceSelector in my form"
+  ],
+  "componentIntent": "Provide TrustedDeviceSelector functionality",
+  "semanticCategory": "input",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.543050",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "fcc882f2",
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-media",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

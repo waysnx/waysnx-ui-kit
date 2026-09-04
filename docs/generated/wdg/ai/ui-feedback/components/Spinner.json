@@ -1,0 +1,246 @@
+{
+  "id": "ui-feedback:spinner",
+  "name": "Spinner",
+  "slug": "spinner",
+  "library": "ui-feedback",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Spinner",
+  "purpose": "Show indeterminate progress or loading activity",
+  "shortDescription": "Show indeterminate progress or loading activity.",
+  "longDescription": "Show indeterminate progress or loading activity.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Components/Spinner",
+      "storyId": "components-spinner",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-spinner",
+      "stories": [],
+      "tags": [],
+      "source": "Spinner.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Spinner for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Spinner"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown"
+  },
+  "props": [
+    {
+      "name": "size",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-primary"
+  ],
+  "cssClasses": [
+    "wx-spinner"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-color-border": {
+      "properties": [
+        "border"
+      ],
+      "selectors": [
+        ".wx-spinner"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary": {
+      "properties": [
+        "border-top-color"
+      ],
+      "selectors": [
+        ".wx-spinner"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Spinner\\Spinner.tsx",
+  "keywords": [
+    "spinner",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Spinner",
+    "Create an example with Spinner",
+    "Generate a Spinner component",
+    "Build a Spinner in my form"
+  ],
+  "componentIntent": "Show loading state",
+  "semanticCategory": "feedback",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.968084",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "185d383e",
+  "metadata": {
+    "purpose": "Show indeterminate progress or loading activity.",
+    "description": "An animated spinning icon that indicates a background process is running or data is loading, without showing specific progress. Used when the duration of an operation is unknown or progress cannot be measured. Available in multiple sizes and colors to fit various contexts and layout requirements.",
+    "functionalAreas": [
+      "Feedback",
+      "Visualization"
+    ],
+    "userIntents": [
+      "Know that loading is happening",
+      "Understand system is processing",
+      "Wait for async operation to complete",
+      "See visual feedback during latency"
+    ],
+    "exampleUseCases": [
+      "Page Loading",
+      "Data Fetching",
+      "API Request Processing",
+      "Background Task Indicator",
+      "Form Submission Loading",
+      "Modal Content Loading",
+      "Search Results Loading"
+    ],
+    "useWhen": [
+      "Use this component when progress duration or percentage cannot be determined.",
+      "Use this component for background processes or async operations.",
+      "Use this component to indicate that the application is responsive and processing.",
+      "Use this component in small, compact spaces where a spinner fits better than a progress bar."
+    ],
+    "avoidWhen": [
+      "Avoid this component when you can measure and display specific progress (use Progress instead).",
+      "Avoid this component for operations that complete instantly.",
+      "Avoid this component without accompanying text explaining what is loading.",
+      "Avoid this component in places where user input is still expected."
+    ],
+    "relatedComponents": [
+      "Progress",
+      "CircularProgress",
+      "Skeleton"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

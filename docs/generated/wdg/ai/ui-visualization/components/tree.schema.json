@@ -1,0 +1,80 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-visualization/tree.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display hierarchical tree structure with expandable nodes.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-visualization",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "dark": {
+      "description": "",
+      "type": "boolean"
+    },
+    "height": {
+      "description": "",
+      "enum": [
+        "number",
+        "string"
+      ]
+    },
+    "nodes": {
+      "description": "",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "onNodeClick": {
+      "description": "",
+      "type": "null"
+    },
+    "onSelectionChange": {
+      "description": "",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "renderNode": {
+      "description": "",
+      "type": "string"
+    },
+    "showGrid": {
+      "description": "",
+      "type": "boolean"
+    },
+    "showZoomControls": {
+      "description": "",
+      "type": "boolean"
+    },
+    "width": {
+      "description": "",
+      "enum": [
+        "number",
+        "string"
+      ]
+    }
+  },
+  "required": [
+    "nodes"
+  ],
+  "title": "Tree",
+  "type": "object"
+}

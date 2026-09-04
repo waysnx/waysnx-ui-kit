@@ -1,0 +1,38 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/encryptionbadge.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "EncryptionBadge Component Badge showing encryption status.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "method": {
+      "description": "Encryption method (e.g., 'AES-256')",
+      "type": "string"
+    },
+    "showDetails": {
+      "description": "Show detailed tooltip",
+      "type": "boolean"
+    },
+    "status": {
+      "description": "Encryption status",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "title": "EncryptionBadge",
+  "type": "object"
+}

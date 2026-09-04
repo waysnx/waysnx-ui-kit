@@ -1,0 +1,584 @@
+{
+  "id": "ui-navigation:header",
+  "name": "Header",
+  "slug": "header",
+  "library": "ui-navigation",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Header",
+  "purpose": "Display application or site header with branding and navigation",
+  "shortDescription": "Display application or site header with branding and navigation.",
+  "longDescription": "Display application or site header with branding and navigation.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Example/Header",
+      "storyId": "example-header",
+      "url": "https://uikit.waysnx.tech/?path=/docs/example-header",
+      "stories": [],
+      "tags": [],
+      "source": "Header.stories.ts"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Header for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Header"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "Breadcrumb"
+    ],
+    "usedBy": [],
+    "related": [
+      "Breadcrumb"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": [
+      "Breadcrumb"
+    ]
+  },
+  "dependencies": {
+    "Breadcrumb": "unknown"
+  },
+  "props": [
+    {
+      "name": "title",
+      "type": "string",
+      "description": "Page title",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "subtitle",
+      "type": "string",
+      "description": "Page subtitle or description",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "breadcrumbs",
+      "type": "BreadcrumbItem[]",
+      "description": "Breadcrumb items",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "icon",
+      "type": "React.ReactNode",
+      "description": "Icon to display next to title",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "left",
+      "type": "React.ReactNode",
+      "description": "Left side content",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "right",
+      "type": "React.ReactNode",
+      "description": "Right side content (actions, buttons, etc.)",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "variant",
+      "type": "'default' | 'minimal' | 'elevated'",
+      "description": "Background variant",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "size",
+      "type": "'sm' | 'md' | 'lg'",
+      "description": "Size of header",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showBreadcrumb",
+      "type": "boolean",
+      "description": "Whether to show breadcrumb",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "Additional CSS class",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "style",
+      "type": "React.CSSProperties",
+      "description": "Additional styles",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "sticky",
+      "type": "boolean",
+      "description": "Sticky header",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "breadcrumbSeparator",
+      "type": "React.ReactNode",
+      "description": "Breadcrumb separator",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onBreadcrumbClick",
+      "type": "(item: BreadcrumbItem) => void",
+      "description": "Callback when breadcrumb item is clicked",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [
+    "forwardRef"
+  ],
+  "contextsUsed": [],
+  "forwardRef": true,
+  "memo": false,
+  "cssVariables": [
+    "--nav-header-bg",
+    "--nav-header-bg-dark",
+    "--nav-header-border",
+    "--nav-header-breadcrumb-bg",
+    "--nav-header-breadcrumb-bg-dark",
+    "--nav-header-gap",
+    "--nav-header-icon-bg",
+    "--nav-header-icon-bg-dark",
+    "--nav-header-icon-border",
+    "--nav-header-icon-text",
+    "--nav-header-padding",
+    "--nav-header-shadow",
+    "--nav-header-subtitle-size",
+    "--nav-header-subtitle-text",
+    "--nav-header-text",
+    "--nav-header-text-dark",
+    "--nav-header-title-size",
+    "--nav-header-title-text",
+    "--wx-font-size-xl",
+    "--wx-radius-md"
+  ],
+  "cssClasses": [
+    "css",
+    "nav-header",
+    "nav-header--sticky",
+    "nav-header--default",
+    "nav-header--minimal",
+    "nav-header--elevated",
+    "nav-header--sm",
+    "nav-header--md",
+    "nav-header--lg"
+  ],
+  "designTokens": {
+    "other": {
+      "--nav-header-bg": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-header",
+          ".nav-header--default"
+        ],
+        "occurrences": 2,
+        "used": true,
+        "value": ""
+      },
+      "--nav-header-text": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".nav-header"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-header-border": {
+        "properties": [
+          "border-bottom"
+        ],
+        "selectors": [
+          ".nav-header",
+          ".nav-header__breadcrumb-wrapper"
+        ],
+        "occurrences": 2,
+        "used": true,
+        "value": ""
+      },
+      "--nav-header-breadcrumb-bg": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-header__breadcrumb-wrapper"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-header-icon-bg": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-header__icon"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-header-icon-text": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".nav-header__icon"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-header-title-text": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".nav-header__title"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-header-subtitle-text": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".nav-header__subtitle"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-header-bg-dark": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          "@media (prefers-color-scheme: dark)"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-header-text-dark": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          "@media (prefers-color-scheme: dark)"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-header-breadcrumb-bg-dark": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-header__breadcrumb-wrapper"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-header-icon-bg-dark": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-header__icon"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-header-icon-border": {
+        "properties": [
+          "border"
+        ],
+        "selectors": [
+          ".nav-header__icon"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      }
+    }
+  },
+  "themeTokens": {},
+  "spacingTokens": {
+    "--nav-header-gap": {
+      "properties": [
+        "gap"
+      ],
+      "selectors": [
+        ".nav-header__content",
+        ".nav-header__section"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--nav-header-padding": {
+      "properties": [
+        "padding"
+      ],
+      "selectors": [
+        ".nav-header__content"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "typographyTokens": {
+    "--wx-font-size-xl": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".nav-header__icon"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--nav-header-title-size": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".nav-header__title"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--nav-header-subtitle-size": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".nav-header__subtitle"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {},
+  "shadowTokens": {
+    "--nav-header-shadow": {
+      "properties": [
+        "box-shadow"
+      ],
+      "selectors": [
+        ".nav-header--sticky",
+        ".nav-header--elevated"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "radiusTokens": {
+    "--wx-radius-md": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".nav-header__icon"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Header\\Header.tsx",
+  "keywords": [
+    "header",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Header",
+    "Create an example with Header",
+    "Generate a Header component",
+    "Build a Header in my form"
+  ],
+  "componentIntent": "Provide Header functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.234606",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "880dbc44",
+  "metadata": {
+    "purpose": "Display application or site header with branding and navigation.",
+    "description": "The top-level header component for applications and websites containing logo, site name, and navigation elements. Often includes user profile access, search, and other utility functions. Sets the context and provides key navigation entry points.",
+    "functionalAreas": [
+      "Navigation",
+      "Layout"
+    ],
+    "userIntents": [
+      "See application name or branding",
+      "Access main navigation",
+      "Return to home",
+      "Access user account options"
+    ],
+    "exampleUseCases": [
+      "Website Header",
+      "Application Header",
+      "Site Navigation Header",
+      "App Top Bar",
+      "Header with Logo",
+      "Navigation Header",
+      "Branded Header"
+    ],
+    "useWhen": [
+      "Use this component at the top of pages as the main header.",
+      "Use this component to establish branding and navigation context.",
+      "Use this component to include logo, navigation, and user options.",
+      "Use this component as a persistent page element across sections."
+    ],
+    "avoidWhen": [
+      "Avoid this component for sub-pages without branding needs.",
+      "Avoid this component when space is extremely limited.",
+      "Avoid this component for temporary or contextual headers.",
+      "Avoid this component for footer or secondary headers."
+    ],
+    "relatedComponents": [
+      "Navbar",
+      "Navigation",
+      "Menu"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

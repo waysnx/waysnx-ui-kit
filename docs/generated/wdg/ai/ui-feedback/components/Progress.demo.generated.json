@@ -1,0 +1,92 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "progress",
+    "name": "Progress",
+    "package": "@waysnx/ui-feedback",
+    "export": "Progress"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic-label",
+          "title": "With Label",
+          "description": "Displays with a label.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "label": "Sample Text"
+          },
+          "keywords": [
+            "label"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sizes",
+      "title": "Sizes",
+      "description": "",
+      "examples": [
+        {
+          "id": "sizes-size-sm",
+          "title": "Size: sm",
+          "description": "Demonstrates the sm size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "sm"
+          },
+          "keywords": [
+            "size",
+            "sm"
+          ]
+        },
+        {
+          "id": "sizes-size-md",
+          "title": "Size: md",
+          "description": "Demonstrates the md size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "md"
+          },
+          "keywords": [
+            "size",
+            "md"
+          ]
+        },
+        {
+          "id": "sizes-size-lg",
+          "title": "Size: lg",
+          "description": "Demonstrates the lg size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "lg"
+          },
+          "keywords": [
+            "size",
+            "lg"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:50.507788",
+  "stats": {
+    "examplesGenerated": 4,
+    "categoriesGenerated": 2
+  }
+}

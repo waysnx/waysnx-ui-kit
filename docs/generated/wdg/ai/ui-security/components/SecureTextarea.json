@@ -1,0 +1,259 @@
+{
+  "id": "ui-security:securetextarea",
+  "name": "SecureTextarea",
+  "slug": "secure-textarea",
+  "library": "ui-security",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Secure Textarea",
+  "purpose": "SecureTextarea - Textarea input with enhanced security features",
+  "shortDescription": "SecureTextarea - Textarea input with enhanced security features",
+  "longDescription": "SecureTextarea - Textarea input with enhanced security features",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Security/Secure Inputs/SecureTextarea",
+      "storyId": "security-secure-inputs-securetextarea",
+      "url": "https://uikit.waysnx.tech/?path=/docs/security-secure-inputs-securetextarea",
+      "stories": [],
+      "tags": [],
+      "source": "SecureTextarea.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use SecureTextarea for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a SecureTextarea"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [
+    {
+      "name": "label",
+      "type": "string",
+      "description": "Label text",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "disableAutocomplete",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "clearOnBlur",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onChange",
+      "type": "(value: string) => void",
+      "description": "Callback when value changes",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onClear",
+      "type": "() => void",
+      "description": "Callback when textarea is cleared",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "validate",
+      "type": "(value: string) => boolean | string",
+      "description": "Custom validation function",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Error message to display",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "maxCharacters",
+      "type": "number",
+      "description": "Maximum character count with warning",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showCounter",
+      "type": "boolean",
+      "description": "Show character counter",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [
+    "forwardRef"
+  ],
+  "contextsUsed": [],
+  "forwardRef": true,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\SecureInputs\\SecureTextarea.tsx",
+  "keywords": [
+    "label",
+    "securetextarea",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use SecureTextarea",
+    "Create an example with SecureTextarea",
+    "Generate a SecureTextarea component",
+    "Build a SecureTextarea in my form"
+  ],
+  "componentIntent": "Provide SecureTextarea functionality",
+  "semanticCategory": "input",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.640759",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "eb70b9ca",
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-media",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

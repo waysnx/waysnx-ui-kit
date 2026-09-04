@@ -1,0 +1,56 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "spacer",
+    "name": "Spacer",
+    "package": "@waysnx/ui-layout",
+    "export": "Spacer"
+  },
+  "categories": [
+    {
+      "id": "sizes",
+      "title": "Sizes",
+      "description": "",
+      "examples": [
+        {
+          "id": "sizes-size-number",
+          "title": "Size: number",
+          "description": "Demonstrates the number size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "number"
+          },
+          "keywords": [
+            "size",
+            "number"
+          ]
+        },
+        {
+          "id": "sizes-size-string",
+          "title": "Size: string",
+          "description": "Demonstrates the string size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "string"
+          },
+          "keywords": [
+            "size",
+            "string"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:00.174337",
+  "stats": {
+    "examplesGenerated": 2,
+    "categoriesGenerated": 1
+  }
+}

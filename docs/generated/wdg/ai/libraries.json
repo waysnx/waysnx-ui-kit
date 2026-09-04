@@ -1,0 +1,3449 @@
+{
+  "version": "2.0.0",
+  "generatedAt": "2026-09-03T20:03:10.870861",
+  "libraries": [
+    {
+      "id": "ui-accessibility",
+      "name": "ui-accessibility",
+      "displayName": "Ui Accessibility",
+      "version": "1.0.0",
+      "componentCount": 5,
+      "categories": [
+        {
+          "name": "components",
+          "displayName": "components",
+          "componentCount": 5,
+          "components": [
+            {
+              "id": "ui-accessibility:accessibilitycenter",
+              "name": "AccessibilityCenter",
+              "slug": "accessibilitycenter",
+              "path": "./ui-accessibility/components/AccessibilityCenter"
+            },
+            {
+              "id": "ui-accessibility:floatingbutton",
+              "name": "FloatingButton",
+              "slug": "floatingbutton",
+              "path": "./ui-accessibility/components/FloatingButton"
+            },
+            {
+              "id": "ui-accessibility:magnifier",
+              "name": "Magnifier",
+              "slug": "magnifier",
+              "path": "./ui-accessibility/components/Magnifier"
+            },
+            {
+              "id": "ui-accessibility:readingguide",
+              "name": "ReadingGuide",
+              "slug": "readingguide",
+              "path": "./ui-accessibility/components/ReadingGuide"
+            },
+            {
+              "id": "ui-accessibility:skiplinks",
+              "name": "SkipLinks",
+              "slug": "skiplinks",
+              "path": "./ui-accessibility/components/SkipLinks"
+            }
+          ]
+        }
+      ],
+      "components": [
+        {
+          "id": "ui-accessibility:accessibilitycenter",
+          "name": "AccessibilityCenter",
+          "slug": "accessibilitycenter",
+          "category": "components",
+          "path": "./ui-accessibility/components/AccessibilityCenter"
+        },
+        {
+          "id": "ui-accessibility:floatingbutton",
+          "name": "FloatingButton",
+          "slug": "floatingbutton",
+          "category": "components",
+          "path": "./ui-accessibility/components/FloatingButton"
+        },
+        {
+          "id": "ui-accessibility:magnifier",
+          "name": "Magnifier",
+          "slug": "magnifier",
+          "category": "components",
+          "path": "./ui-accessibility/components/Magnifier"
+        },
+        {
+          "id": "ui-accessibility:readingguide",
+          "name": "ReadingGuide",
+          "slug": "readingguide",
+          "category": "components",
+          "path": "./ui-accessibility/components/ReadingGuide"
+        },
+        {
+          "id": "ui-accessibility:skiplinks",
+          "name": "SkipLinks",
+          "slug": "skiplinks",
+          "category": "components",
+          "path": "./ui-accessibility/components/SkipLinks"
+        }
+      ]
+    },
+    {
+      "id": "ui-communication",
+      "name": "ui-communication",
+      "displayName": "Ui Communication",
+      "version": "1.0.0",
+      "componentCount": 15,
+      "categories": [
+        {
+          "name": "components",
+          "displayName": "components",
+          "componentCount": 15,
+          "components": [
+            {
+              "id": "ui-communication:chatinput",
+              "name": "ChatInput",
+              "slug": "chatinput",
+              "path": "./ui-communication/components/ChatInput"
+            },
+            {
+              "id": "ui-communication:chatwindow",
+              "name": "ChatWindow",
+              "slug": "chatwindow",
+              "path": "./ui-communication/components/ChatWindow"
+            },
+            {
+              "id": "ui-communication:conversationlist",
+              "name": "ConversationList",
+              "slug": "conversationlist",
+              "path": "./ui-communication/components/ConversationList"
+            },
+            {
+              "id": "ui-communication:emojipicker",
+              "name": "EmojiPicker",
+              "slug": "emojipicker",
+              "path": "./ui-communication/components/EmojiPicker"
+            },
+            {
+              "id": "ui-communication:mentioninput",
+              "name": "MentionInput",
+              "slug": "mentioninput",
+              "path": "./ui-communication/components/MentionInput"
+            },
+            {
+              "id": "ui-communication:messagebubble",
+              "name": "MessageBubble",
+              "slug": "messagebubble",
+              "path": "./ui-communication/components/MessageBubble"
+            },
+            {
+              "id": "ui-communication:notificationbadge",
+              "name": "NotificationBadge",
+              "slug": "notificationbadge",
+              "path": "./ui-communication/components/NotificationBadge"
+            },
+            {
+              "id": "ui-communication:notificationlist",
+              "name": "NotificationList",
+              "slug": "notificationlist",
+              "path": "./ui-communication/components/NotificationList"
+            },
+            {
+              "id": "ui-communication:presenceindicator",
+              "name": "PresenceIndicator",
+              "slug": "presenceindicator",
+              "path": "./ui-communication/components/PresenceIndicator"
+            },
+            {
+              "id": "ui-communication:reactionbar",
+              "name": "ReactionBar",
+              "slug": "reactionbar",
+              "path": "./ui-communication/components/ReactionBar"
+            },
+            {
+              "id": "ui-communication:readreceipts",
+              "name": "ReadReceipts",
+              "slug": "readreceipts",
+              "path": "./ui-communication/components/ReadReceipts"
+            },
+            {
+              "id": "ui-communication:threadpanel",
+              "name": "ThreadPanel",
+              "slug": "threadpanel",
+              "path": "./ui-communication/components/ThreadPanel"
+            },
+            {
+              "id": "ui-communication:typingindicator",
+              "name": "TypingIndicator",
+              "slug": "typingindicator",
+              "path": "./ui-communication/components/TypingIndicator"
+            },
+            {
+              "id": "ui-communication:userpresencelist",
+              "name": "UserPresenceList",
+              "slug": "userpresencelist",
+              "path": "./ui-communication/components/UserPresenceList"
+            },
+            {
+              "id": "ui-communication:voicemessage",
+              "name": "VoiceMessage",
+              "slug": "voicemessage",
+              "path": "./ui-communication/components/VoiceMessage"
+            }
+          ]
+        }
+      ],
+      "components": [
+        {
+          "id": "ui-communication:chatinput",
+          "name": "ChatInput",
+          "slug": "chatinput",
+          "category": "components",
+          "path": "./ui-communication/components/ChatInput"
+        },
+        {
+          "id": "ui-communication:chatwindow",
+          "name": "ChatWindow",
+          "slug": "chatwindow",
+          "category": "components",
+          "path": "./ui-communication/components/ChatWindow"
+        },
+        {
+          "id": "ui-communication:conversationlist",
+          "name": "ConversationList",
+          "slug": "conversationlist",
+          "category": "components",
+          "path": "./ui-communication/components/ConversationList"
+        },
+        {
+          "id": "ui-communication:emojipicker",
+          "name": "EmojiPicker",
+          "slug": "emojipicker",
+          "category": "components",
+          "path": "./ui-communication/components/EmojiPicker"
+        },
+        {
+          "id": "ui-communication:mentioninput",
+          "name": "MentionInput",
+          "slug": "mentioninput",
+          "category": "components",
+          "path": "./ui-communication/components/MentionInput"
+        },
+        {
+          "id": "ui-communication:messagebubble",
+          "name": "MessageBubble",
+          "slug": "messagebubble",
+          "category": "components",
+          "path": "./ui-communication/components/MessageBubble"
+        },
+        {
+          "id": "ui-communication:notificationbadge",
+          "name": "NotificationBadge",
+          "slug": "notificationbadge",
+          "category": "components",
+          "path": "./ui-communication/components/NotificationBadge"
+        },
+        {
+          "id": "ui-communication:notificationlist",
+          "name": "NotificationList",
+          "slug": "notificationlist",
+          "category": "components",
+          "path": "./ui-communication/components/NotificationList"
+        },
+        {
+          "id": "ui-communication:presenceindicator",
+          "name": "PresenceIndicator",
+          "slug": "presenceindicator",
+          "category": "components",
+          "path": "./ui-communication/components/PresenceIndicator"
+        },
+        {
+          "id": "ui-communication:reactionbar",
+          "name": "ReactionBar",
+          "slug": "reactionbar",
+          "category": "components",
+          "path": "./ui-communication/components/ReactionBar"
+        },
+        {
+          "id": "ui-communication:readreceipts",
+          "name": "ReadReceipts",
+          "slug": "readreceipts",
+          "category": "components",
+          "path": "./ui-communication/components/ReadReceipts"
+        },
+        {
+          "id": "ui-communication:threadpanel",
+          "name": "ThreadPanel",
+          "slug": "threadpanel",
+          "category": "components",
+          "path": "./ui-communication/components/ThreadPanel"
+        },
+        {
+          "id": "ui-communication:typingindicator",
+          "name": "TypingIndicator",
+          "slug": "typingindicator",
+          "category": "components",
+          "path": "./ui-communication/components/TypingIndicator"
+        },
+        {
+          "id": "ui-communication:userpresencelist",
+          "name": "UserPresenceList",
+          "slug": "userpresencelist",
+          "category": "components",
+          "path": "./ui-communication/components/UserPresenceList"
+        },
+        {
+          "id": "ui-communication:voicemessage",
+          "name": "VoiceMessage",
+          "slug": "voicemessage",
+          "category": "components",
+          "path": "./ui-communication/components/VoiceMessage"
+        }
+      ]
+    },
+    {
+      "id": "ui-core",
+      "name": "ui-core",
+      "displayName": "Ui Core",
+      "version": "1.0.0",
+      "componentCount": 24,
+      "categories": [
+        {
+          "name": "components",
+          "displayName": "components",
+          "componentCount": 24,
+          "components": [
+            {
+              "id": "ui-core:autocomplete",
+              "name": "Autocomplete",
+              "slug": "autocomplete",
+              "path": "./ui-core/components/Autocomplete"
+            },
+            {
+              "id": "ui-core:button",
+              "name": "Button",
+              "slug": "button",
+              "path": "./ui-core/components/Button"
+            },
+            {
+              "id": "ui-core:checkbox",
+              "name": "Checkbox",
+              "slug": "checkbox",
+              "path": "./ui-core/components/Checkbox"
+            },
+            {
+              "id": "ui-core:currency",
+              "name": "Currency",
+              "slug": "currency",
+              "path": "./ui-core/components/Currency"
+            },
+            {
+              "id": "ui-core:datepicker",
+              "name": "DatePicker",
+              "slug": "datepicker",
+              "path": "./ui-core/components/DatePicker"
+            },
+            {
+              "id": "ui-core:daterangepicker",
+              "name": "DateRangePicker",
+              "slug": "daterangepicker",
+              "path": "./ui-core/components/DateRangePicker"
+            },
+            {
+              "id": "ui-core:datetimepicker",
+              "name": "DateTimePicker",
+              "slug": "datetimepicker",
+              "path": "./ui-core/components/DateTimePicker"
+            },
+            {
+              "id": "ui-core:errormessage",
+              "name": "ErrorMessage",
+              "slug": "errormessage",
+              "path": "./ui-core/components/ErrorMessage"
+            },
+            {
+              "id": "ui-core:fileupload",
+              "name": "FileUpload",
+              "slug": "fileupload",
+              "path": "./ui-core/components/FileUpload"
+            },
+            {
+              "id": "ui-core:hidden",
+              "name": "Hidden",
+              "slug": "hidden",
+              "path": "./ui-core/components/Hidden"
+            },
+            {
+              "id": "ui-core:htmlcontent",
+              "name": "HtmlContent",
+              "slug": "htmlcontent",
+              "path": "./ui-core/components/HtmlContent"
+            },
+            {
+              "id": "ui-core:htmleditor",
+              "name": "HtmlEditor",
+              "slug": "htmleditor",
+              "path": "./ui-core/components/HtmlEditor"
+            },
+            {
+              "id": "ui-core:iframe",
+              "name": "IFrame",
+              "slug": "iframe",
+              "path": "./ui-core/components/IFrame"
+            },
+            {
+              "id": "ui-core:image",
+              "name": "Image",
+              "slug": "image",
+              "path": "./ui-core/components/Image"
+            },
+            {
+              "id": "ui-core:input",
+              "name": "Input",
+              "slug": "input",
+              "path": "./ui-core/components/Input"
+            },
+            {
+              "id": "ui-core:link",
+              "name": "Link",
+              "slug": "link",
+              "path": "./ui-core/components/Link"
+            },
+            {
+              "id": "ui-core:radio",
+              "name": "Radio",
+              "slug": "radio",
+              "path": "./ui-core/components/Radio"
+            },
+            {
+              "id": "ui-core:select",
+              "name": "Select",
+              "slug": "select",
+              "path": "./ui-core/components/Select"
+            },
+            {
+              "id": "ui-core:slider",
+              "name": "Slider",
+              "slug": "slider",
+              "path": "./ui-core/components/Slider"
+            },
+            {
+              "id": "ui-core:speechtotexttextarea",
+              "name": "SpeechToTextTextarea",
+              "slug": "speechtotexttextarea",
+              "path": "./ui-core/components/SpeechToTextTextarea"
+            },
+            {
+              "id": "ui-core:switch",
+              "name": "Switch",
+              "slug": "switch",
+              "path": "./ui-core/components/Switch"
+            },
+            {
+              "id": "ui-core:textarea",
+              "name": "Textarea",
+              "slug": "textarea",
+              "path": "./ui-core/components/Textarea"
+            },
+            {
+              "id": "ui-core:timepicker",
+              "name": "TimePicker",
+              "slug": "timepicker",
+              "path": "./ui-core/components/TimePicker"
+            },
+            {
+              "id": "ui-core:tree",
+              "name": "Tree",
+              "slug": "tree",
+              "path": "./ui-core/components/Tree"
+            }
+          ]
+        }
+      ],
+      "components": [
+        {
+          "id": "ui-core:autocomplete",
+          "name": "Autocomplete",
+          "slug": "autocomplete",
+          "category": "components",
+          "path": "./ui-core/components/Autocomplete"
+        },
+        {
+          "id": "ui-core:button",
+          "name": "Button",
+          "slug": "button",
+          "category": "components",
+          "path": "./ui-core/components/Button"
+        },
+        {
+          "id": "ui-core:checkbox",
+          "name": "Checkbox",
+          "slug": "checkbox",
+          "category": "components",
+          "path": "./ui-core/components/Checkbox"
+        },
+        {
+          "id": "ui-core:currency",
+          "name": "Currency",
+          "slug": "currency",
+          "category": "components",
+          "path": "./ui-core/components/Currency"
+        },
+        {
+          "id": "ui-core:datepicker",
+          "name": "DatePicker",
+          "slug": "datepicker",
+          "category": "components",
+          "path": "./ui-core/components/DatePicker"
+        },
+        {
+          "id": "ui-core:daterangepicker",
+          "name": "DateRangePicker",
+          "slug": "daterangepicker",
+          "category": "components",
+          "path": "./ui-core/components/DateRangePicker"
+        },
+        {
+          "id": "ui-core:datetimepicker",
+          "name": "DateTimePicker",
+          "slug": "datetimepicker",
+          "category": "components",
+          "path": "./ui-core/components/DateTimePicker"
+        },
+        {
+          "id": "ui-core:errormessage",
+          "name": "ErrorMessage",
+          "slug": "errormessage",
+          "category": "components",
+          "path": "./ui-core/components/ErrorMessage"
+        },
+        {
+          "id": "ui-core:fileupload",
+          "name": "FileUpload",
+          "slug": "fileupload",
+          "category": "components",
+          "path": "./ui-core/components/FileUpload"
+        },
+        {
+          "id": "ui-core:hidden",
+          "name": "Hidden",
+          "slug": "hidden",
+          "category": "components",
+          "path": "./ui-core/components/Hidden"
+        },
+        {
+          "id": "ui-core:htmlcontent",
+          "name": "HtmlContent",
+          "slug": "htmlcontent",
+          "category": "components",
+          "path": "./ui-core/components/HtmlContent"
+        },
+        {
+          "id": "ui-core:htmleditor",
+          "name": "HtmlEditor",
+          "slug": "htmleditor",
+          "category": "components",
+          "path": "./ui-core/components/HtmlEditor"
+        },
+        {
+          "id": "ui-core:iframe",
+          "name": "IFrame",
+          "slug": "iframe",
+          "category": "components",
+          "path": "./ui-core/components/IFrame"
+        },
+        {
+          "id": "ui-core:image",
+          "name": "Image",
+          "slug": "image",
+          "category": "components",
+          "path": "./ui-core/components/Image"
+        },
+        {
+          "id": "ui-core:input",
+          "name": "Input",
+          "slug": "input",
+          "category": "components",
+          "path": "./ui-core/components/Input"
+        },
+        {
+          "id": "ui-core:link",
+          "name": "Link",
+          "slug": "link",
+          "category": "components",
+          "path": "./ui-core/components/Link"
+        },
+        {
+          "id": "ui-core:radio",
+          "name": "Radio",
+          "slug": "radio",
+          "category": "components",
+          "path": "./ui-core/components/Radio"
+        },
+        {
+          "id": "ui-core:select",
+          "name": "Select",
+          "slug": "select",
+          "category": "components",
+          "path": "./ui-core/components/Select"
+        },
+        {
+          "id": "ui-core:slider",
+          "name": "Slider",
+          "slug": "slider",
+          "category": "components",
+          "path": "./ui-core/components/Slider"
+        },
+        {
+          "id": "ui-core:speechtotexttextarea",
+          "name": "SpeechToTextTextarea",
+          "slug": "speechtotexttextarea",
+          "category": "components",
+          "path": "./ui-core/components/SpeechToTextTextarea"
+        },
+        {
+          "id": "ui-core:switch",
+          "name": "Switch",
+          "slug": "switch",
+          "category": "components",
+          "path": "./ui-core/components/Switch"
+        },
+        {
+          "id": "ui-core:textarea",
+          "name": "Textarea",
+          "slug": "textarea",
+          "category": "components",
+          "path": "./ui-core/components/Textarea"
+        },
+        {
+          "id": "ui-core:timepicker",
+          "name": "TimePicker",
+          "slug": "timepicker",
+          "category": "components",
+          "path": "./ui-core/components/TimePicker"
+        },
+        {
+          "id": "ui-core:tree",
+          "name": "Tree",
+          "slug": "tree",
+          "category": "components",
+          "path": "./ui-core/components/Tree"
+        }
+      ]
+    },
+    {
+      "id": "ui-dashboard",
+      "name": "ui-dashboard",
+      "displayName": "Ui Dashboard",
+      "version": "1.0.0",
+      "componentCount": 13,
+      "categories": [
+        {
+          "name": "components",
+          "displayName": "components",
+          "componentCount": 13,
+          "components": [
+            {
+              "id": "ui-dashboard:chartwidget",
+              "name": "ChartWidget",
+              "slug": "chartwidget",
+              "path": "./ui-dashboard/components/ChartWidget"
+            },
+            {
+              "id": "ui-dashboard:dashboard",
+              "name": "Dashboard",
+              "slug": "dashboard",
+              "path": "./ui-dashboard/components/Dashboard"
+            },
+            {
+              "id": "ui-dashboard:dashboardfilterbar",
+              "name": "DashboardFilterBar",
+              "slug": "dashboardfilterbar",
+              "path": "./ui-dashboard/components/DashboardFilterBar"
+            },
+            {
+              "id": "ui-dashboard:dashboardfooter",
+              "name": "DashboardFooter",
+              "slug": "dashboardfooter",
+              "path": "./ui-dashboard/components/DashboardFooter"
+            },
+            {
+              "id": "ui-dashboard:dashboardheader",
+              "name": "DashboardHeader",
+              "slug": "dashboardheader",
+              "path": "./ui-dashboard/components/DashboardHeader"
+            },
+            {
+              "id": "ui-dashboard:dashboardsearch",
+              "name": "DashboardSearch",
+              "slug": "dashboardsearch",
+              "path": "./ui-dashboard/components/DashboardSearch"
+            },
+            {
+              "id": "ui-dashboard:dashboardsidebar",
+              "name": "DashboardSidebar",
+              "slug": "dashboardsidebar",
+              "path": "./ui-dashboard/components/DashboardSidebar"
+            },
+            {
+              "id": "ui-dashboard:dashboardtoolbar",
+              "name": "DashboardToolbar",
+              "slug": "dashboardtoolbar",
+              "path": "./ui-dashboard/components/DashboardToolbar"
+            },
+            {
+              "id": "ui-dashboard:htmlwidget",
+              "name": "HtmlWidget",
+              "slug": "htmlwidget",
+              "path": "./ui-dashboard/components/HtmlWidget"
+            },
+            {
+              "id": "ui-dashboard:kpicard",
+              "name": "KPICard",
+              "slug": "kpicard",
+              "path": "./ui-dashboard/components/KPICard"
+            },
+            {
+              "id": "ui-dashboard:markdownwidget",
+              "name": "MarkdownWidget",
+              "slug": "markdownwidget",
+              "path": "./ui-dashboard/components/MarkdownWidget"
+            },
+            {
+              "id": "ui-dashboard:widget",
+              "name": "Widget",
+              "slug": "widget",
+              "path": "./ui-dashboard/components/Widget"
+            },
+            {
+              "id": "ui-dashboard:widgetgrid",
+              "name": "WidgetGrid",
+              "slug": "widgetgrid",
+              "path": "./ui-dashboard/components/WidgetGrid"
+            }
+          ]
+        }
+      ],
+      "components": [
+        {
+          "id": "ui-dashboard:chartwidget",
+          "name": "ChartWidget",
+          "slug": "chartwidget",
+          "category": "components",
+          "path": "./ui-dashboard/components/ChartWidget"
+        },
+        {
+          "id": "ui-dashboard:dashboard",
+          "name": "Dashboard",
+          "slug": "dashboard",
+          "category": "components",
+          "path": "./ui-dashboard/components/Dashboard"
+        },
+        {
+          "id": "ui-dashboard:dashboardfilterbar",
+          "name": "DashboardFilterBar",
+          "slug": "dashboardfilterbar",
+          "category": "components",
+          "path": "./ui-dashboard/components/DashboardFilterBar"
+        },
+        {
+          "id": "ui-dashboard:dashboardfooter",
+          "name": "DashboardFooter",
+          "slug": "dashboardfooter",
+          "category": "components",
+          "path": "./ui-dashboard/components/DashboardFooter"
+        },
+        {
+          "id": "ui-dashboard:dashboardheader",
+          "name": "DashboardHeader",
+          "slug": "dashboardheader",
+          "category": "components",
+          "path": "./ui-dashboard/components/DashboardHeader"
+        },
+        {
+          "id": "ui-dashboard:dashboardsearch",
+          "name": "DashboardSearch",
+          "slug": "dashboardsearch",
+          "category": "components",
+          "path": "./ui-dashboard/components/DashboardSearch"
+        },
+        {
+          "id": "ui-dashboard:dashboardsidebar",
+          "name": "DashboardSidebar",
+          "slug": "dashboardsidebar",
+          "category": "components",
+          "path": "./ui-dashboard/components/DashboardSidebar"
+        },
+        {
+          "id": "ui-dashboard:dashboardtoolbar",
+          "name": "DashboardToolbar",
+          "slug": "dashboardtoolbar",
+          "category": "components",
+          "path": "./ui-dashboard/components/DashboardToolbar"
+        },
+        {
+          "id": "ui-dashboard:htmlwidget",
+          "name": "HtmlWidget",
+          "slug": "htmlwidget",
+          "category": "components",
+          "path": "./ui-dashboard/components/HtmlWidget"
+        },
+        {
+          "id": "ui-dashboard:kpicard",
+          "name": "KPICard",
+          "slug": "kpicard",
+          "category": "components",
+          "path": "./ui-dashboard/components/KPICard"
+        },
+        {
+          "id": "ui-dashboard:markdownwidget",
+          "name": "MarkdownWidget",
+          "slug": "markdownwidget",
+          "category": "components",
+          "path": "./ui-dashboard/components/MarkdownWidget"
+        },
+        {
+          "id": "ui-dashboard:widget",
+          "name": "Widget",
+          "slug": "widget",
+          "category": "components",
+          "path": "./ui-dashboard/components/Widget"
+        },
+        {
+          "id": "ui-dashboard:widgetgrid",
+          "name": "WidgetGrid",
+          "slug": "widgetgrid",
+          "category": "components",
+          "path": "./ui-dashboard/components/WidgetGrid"
+        }
+      ]
+    },
+    {
+      "id": "ui-data",
+      "name": "ui-data",
+      "displayName": "Ui Data",
+      "version": "1.0.0",
+      "componentCount": 6,
+      "categories": [
+        {
+          "name": "components",
+          "displayName": "components",
+          "componentCount": 6,
+          "components": [
+            {
+              "id": "ui-data:codeeditor",
+              "name": "CodeEditor",
+              "slug": "codeeditor",
+              "path": "./ui-data/components/CodeEditor"
+            },
+            {
+              "id": "ui-data:codeviewer",
+              "name": "CodeViewer",
+              "slug": "codeviewer",
+              "path": "./ui-data/components/CodeViewer"
+            },
+            {
+              "id": "ui-data:jsoneditor",
+              "name": "JSONEditor",
+              "slug": "jsoneditor",
+              "path": "./ui-data/components/JSONEditor"
+            },
+            {
+              "id": "ui-data:markdowneditor",
+              "name": "MarkdownEditor",
+              "slug": "markdowneditor",
+              "path": "./ui-data/components/MarkdownEditor"
+            },
+            {
+              "id": "ui-data:markdownviewer",
+              "name": "MarkdownViewer",
+              "slug": "markdownviewer",
+              "path": "./ui-data/components/MarkdownViewer"
+            },
+            {
+              "id": "ui-data:xmlviewer",
+              "name": "XMLViewer",
+              "slug": "xmlviewer",
+              "path": "./ui-data/components/XMLViewer"
+            }
+          ]
+        }
+      ],
+      "components": [
+        {
+          "id": "ui-data:codeeditor",
+          "name": "CodeEditor",
+          "slug": "codeeditor",
+          "category": "components",
+          "path": "./ui-data/components/CodeEditor"
+        },
+        {
+          "id": "ui-data:codeviewer",
+          "name": "CodeViewer",
+          "slug": "codeviewer",
+          "category": "components",
+          "path": "./ui-data/components/CodeViewer"
+        },
+        {
+          "id": "ui-data:jsoneditor",
+          "name": "JSONEditor",
+          "slug": "jsoneditor",
+          "category": "components",
+          "path": "./ui-data/components/JSONEditor"
+        },
+        {
+          "id": "ui-data:markdowneditor",
+          "name": "MarkdownEditor",
+          "slug": "markdowneditor",
+          "category": "components",
+          "path": "./ui-data/components/MarkdownEditor"
+        },
+        {
+          "id": "ui-data:markdownviewer",
+          "name": "MarkdownViewer",
+          "slug": "markdownviewer",
+          "category": "components",
+          "path": "./ui-data/components/MarkdownViewer"
+        },
+        {
+          "id": "ui-data:xmlviewer",
+          "name": "XMLViewer",
+          "slug": "xmlviewer",
+          "category": "components",
+          "path": "./ui-data/components/XMLViewer"
+        }
+      ]
+    },
+    {
+      "id": "ui-diagnostics",
+      "name": "ui-diagnostics",
+      "displayName": "Ui Diagnostics",
+      "version": "0.1.0",
+      "componentCount": 0,
+      "categories": [],
+      "components": []
+    },
+    {
+      "id": "ui-docs",
+      "name": "ui-docs",
+      "displayName": "Ui Docs",
+      "version": "1.0.0",
+      "componentCount": 12,
+      "categories": [
+        {
+          "name": "components",
+          "displayName": "components",
+          "componentCount": 12,
+          "components": [
+            {
+              "id": "ui-docs:aisectionplaceholder",
+              "name": "AISectionPlaceholder",
+              "slug": "aisectionplaceholder",
+              "path": "./ui-docs/components/AISectionPlaceholder"
+            },
+            {
+              "id": "ui-docs:componenthero",
+              "name": "ComponentHero",
+              "slug": "componenthero",
+              "path": "./ui-docs/components/ComponentHero"
+            },
+            {
+              "id": "ui-docs:dependencygraphplaceholder",
+              "name": "DependencyGraphPlaceholder",
+              "slug": "dependencygraphplaceholder",
+              "path": "./ui-docs/components/DependencyGraphPlaceholder"
+            },
+            {
+              "id": "ui-docs:documentationdemoviewer",
+              "name": "DocumentationDemoViewer",
+              "slug": "documentationdemoviewer",
+              "path": "./ui-docs/components/DocumentationDemoViewer"
+            },
+            {
+              "id": "ui-docs:livecomponentrenderer",
+              "name": "LiveComponentRenderer",
+              "slug": "livecomponentrenderer",
+              "path": "./ui-docs/components/LiveComponentRenderer"
+            },
+            {
+              "id": "ui-docs:markdownrenderer",
+              "name": "MarkdownRenderer",
+              "slug": "markdownrenderer",
+              "path": "./ui-docs/components/MarkdownRenderer"
+            },
+            {
+              "id": "ui-docs:playgroundplaceholder",
+              "name": "PlaygroundPlaceholder",
+              "slug": "playgroundplaceholder",
+              "path": "./ui-docs/components/PlaygroundPlaceholder"
+            },
+            {
+              "id": "ui-docs:propstable",
+              "name": "PropsTable",
+              "slug": "propstable",
+              "path": "./ui-docs/components/PropsTable"
+            },
+            {
+              "id": "ui-docs:themeexplorerplaceholder",
+              "name": "ThemeExplorerPlaceholder",
+              "slug": "themeexplorerplaceholder",
+              "path": "./ui-docs/components/ThemeExplorerPlaceholder"
+            },
+            {
+              "id": "ui-docs:tokenviewerplaceholder",
+              "name": "TokenViewerPlaceholder",
+              "slug": "tokenviewerplaceholder",
+              "path": "./ui-docs/components/TokenViewerPlaceholder"
+            },
+            {
+              "id": "ui-docs:workflowviewerplaceholder",
+              "name": "WorkflowViewerPlaceholder",
+              "slug": "workflowviewerplaceholder",
+              "path": "./ui-docs/components/WorkflowViewerPlaceholder"
+            },
+            {
+              "id": "ui-docs:_placeholderwrapper",
+              "name": "_PlaceholderWrapper",
+              "slug": "_placeholderwrapper",
+              "path": "./ui-docs/components/_PlaceholderWrapper"
+            }
+          ]
+        }
+      ],
+      "components": [
+        {
+          "id": "ui-docs:aisectionplaceholder",
+          "name": "AISectionPlaceholder",
+          "slug": "aisectionplaceholder",
+          "category": "components",
+          "path": "./ui-docs/components/AISectionPlaceholder"
+        },
+        {
+          "id": "ui-docs:componenthero",
+          "name": "ComponentHero",
+          "slug": "componenthero",
+          "category": "components",
+          "path": "./ui-docs/components/ComponentHero"
+        },
+        {
+          "id": "ui-docs:dependencygraphplaceholder",
+          "name": "DependencyGraphPlaceholder",
+          "slug": "dependencygraphplaceholder",
+          "category": "components",
+          "path": "./ui-docs/components/DependencyGraphPlaceholder"
+        },
+        {
+          "id": "ui-docs:documentationdemoviewer",
+          "name": "DocumentationDemoViewer",
+          "slug": "documentationdemoviewer",
+          "category": "components",
+          "path": "./ui-docs/components/DocumentationDemoViewer"
+        },
+        {
+          "id": "ui-docs:livecomponentrenderer",
+          "name": "LiveComponentRenderer",
+          "slug": "livecomponentrenderer",
+          "category": "components",
+          "path": "./ui-docs/components/LiveComponentRenderer"
+        },
+        {
+          "id": "ui-docs:markdownrenderer",
+          "name": "MarkdownRenderer",
+          "slug": "markdownrenderer",
+          "category": "components",
+          "path": "./ui-docs/components/MarkdownRenderer"
+        },
+        {
+          "id": "ui-docs:playgroundplaceholder",
+          "name": "PlaygroundPlaceholder",
+          "slug": "playgroundplaceholder",
+          "category": "components",
+          "path": "./ui-docs/components/PlaygroundPlaceholder"
+        },
+        {
+          "id": "ui-docs:propstable",
+          "name": "PropsTable",
+          "slug": "propstable",
+          "category": "components",
+          "path": "./ui-docs/components/PropsTable"
+        },
+        {
+          "id": "ui-docs:themeexplorerplaceholder",
+          "name": "ThemeExplorerPlaceholder",
+          "slug": "themeexplorerplaceholder",
+          "category": "components",
+          "path": "./ui-docs/components/ThemeExplorerPlaceholder"
+        },
+        {
+          "id": "ui-docs:tokenviewerplaceholder",
+          "name": "TokenViewerPlaceholder",
+          "slug": "tokenviewerplaceholder",
+          "category": "components",
+          "path": "./ui-docs/components/TokenViewerPlaceholder"
+        },
+        {
+          "id": "ui-docs:workflowviewerplaceholder",
+          "name": "WorkflowViewerPlaceholder",
+          "slug": "workflowviewerplaceholder",
+          "category": "components",
+          "path": "./ui-docs/components/WorkflowViewerPlaceholder"
+        },
+        {
+          "id": "ui-docs:_placeholderwrapper",
+          "name": "_PlaceholderWrapper",
+          "slug": "_placeholderwrapper",
+          "category": "components",
+          "path": "./ui-docs/components/_PlaceholderWrapper"
+        }
+      ]
+    },
+    {
+      "id": "ui-feedback",
+      "name": "ui-feedback",
+      "displayName": "Ui Feedback",
+      "version": "1.0.0",
+      "componentCount": 12,
+      "categories": [
+        {
+          "name": "components",
+          "displayName": "components",
+          "componentCount": 12,
+          "components": [
+            {
+              "id": "ui-feedback:alert",
+              "name": "Alert",
+              "slug": "alert",
+              "path": "./ui-feedback/components/Alert"
+            },
+            {
+              "id": "ui-feedback:badge",
+              "name": "Badge",
+              "slug": "badge",
+              "path": "./ui-feedback/components/Badge"
+            },
+            {
+              "id": "ui-feedback:circularprogress",
+              "name": "CircularProgress",
+              "slug": "circularprogress",
+              "path": "./ui-feedback/components/CircularProgress"
+            },
+            {
+              "id": "ui-feedback:confirmdialog",
+              "name": "ConfirmDialog",
+              "slug": "confirmdialog",
+              "path": "./ui-feedback/components/ConfirmDialog"
+            },
+            {
+              "id": "ui-feedback:drawer",
+              "name": "Drawer",
+              "slug": "drawer",
+              "path": "./ui-feedback/components/Drawer"
+            },
+            {
+              "id": "ui-feedback:emptystate",
+              "name": "EmptyState",
+              "slug": "emptystate",
+              "path": "./ui-feedback/components/EmptyState"
+            },
+            {
+              "id": "ui-feedback:modal",
+              "name": "Modal",
+              "slug": "modal",
+              "path": "./ui-feedback/components/Modal"
+            },
+            {
+              "id": "ui-feedback:progress",
+              "name": "Progress",
+              "slug": "progress",
+              "path": "./ui-feedback/components/Progress"
+            },
+            {
+              "id": "ui-feedback:skeleton",
+              "name": "Skeleton",
+              "slug": "skeleton",
+              "path": "./ui-feedback/components/Skeleton"
+            },
+            {
+              "id": "ui-feedback:spinner",
+              "name": "Spinner",
+              "slug": "spinner",
+              "path": "./ui-feedback/components/Spinner"
+            },
+            {
+              "id": "ui-feedback:toast",
+              "name": "Toast",
+              "slug": "toast",
+              "path": "./ui-feedback/components/Toast"
+            },
+            {
+              "id": "ui-feedback:tooltip",
+              "name": "Tooltip",
+              "slug": "tooltip",
+              "path": "./ui-feedback/components/Tooltip"
+            }
+          ]
+        }
+      ],
+      "components": [
+        {
+          "id": "ui-feedback:alert",
+          "name": "Alert",
+          "slug": "alert",
+          "category": "components",
+          "path": "./ui-feedback/components/Alert"
+        },
+        {
+          "id": "ui-feedback:badge",
+          "name": "Badge",
+          "slug": "badge",
+          "category": "components",
+          "path": "./ui-feedback/components/Badge"
+        },
+        {
+          "id": "ui-feedback:circularprogress",
+          "name": "CircularProgress",
+          "slug": "circularprogress",
+          "category": "components",
+          "path": "./ui-feedback/components/CircularProgress"
+        },
+        {
+          "id": "ui-feedback:confirmdialog",
+          "name": "ConfirmDialog",
+          "slug": "confirmdialog",
+          "category": "components",
+          "path": "./ui-feedback/components/ConfirmDialog"
+        },
+        {
+          "id": "ui-feedback:drawer",
+          "name": "Drawer",
+          "slug": "drawer",
+          "category": "components",
+          "path": "./ui-feedback/components/Drawer"
+        },
+        {
+          "id": "ui-feedback:emptystate",
+          "name": "EmptyState",
+          "slug": "emptystate",
+          "category": "components",
+          "path": "./ui-feedback/components/EmptyState"
+        },
+        {
+          "id": "ui-feedback:modal",
+          "name": "Modal",
+          "slug": "modal",
+          "category": "components",
+          "path": "./ui-feedback/components/Modal"
+        },
+        {
+          "id": "ui-feedback:progress",
+          "name": "Progress",
+          "slug": "progress",
+          "category": "components",
+          "path": "./ui-feedback/components/Progress"
+        },
+        {
+          "id": "ui-feedback:skeleton",
+          "name": "Skeleton",
+          "slug": "skeleton",
+          "category": "components",
+          "path": "./ui-feedback/components/Skeleton"
+        },
+        {
+          "id": "ui-feedback:spinner",
+          "name": "Spinner",
+          "slug": "spinner",
+          "category": "components",
+          "path": "./ui-feedback/components/Spinner"
+        },
+        {
+          "id": "ui-feedback:toast",
+          "name": "Toast",
+          "slug": "toast",
+          "category": "components",
+          "path": "./ui-feedback/components/Toast"
+        },
+        {
+          "id": "ui-feedback:tooltip",
+          "name": "Tooltip",
+          "slug": "tooltip",
+          "category": "components",
+          "path": "./ui-feedback/components/Tooltip"
+        }
+      ]
+    },
+    {
+      "id": "ui-files",
+      "name": "ui-files",
+      "displayName": "Ui Files",
+      "version": "1.0.0",
+      "componentCount": 2,
+      "categories": [
+        {
+          "name": "components",
+          "displayName": "components",
+          "componentCount": 2,
+          "components": [
+            {
+              "id": "ui-files:documentpreview",
+              "name": "DocumentPreview",
+              "slug": "documentpreview",
+              "path": "./ui-files/components/DocumentPreview"
+            },
+            {
+              "id": "ui-files:pdfviewer",
+              "name": "PDFViewer",
+              "slug": "pdfviewer",
+              "path": "./ui-files/components/PDFViewer"
+            }
+          ]
+        }
+      ],
+      "components": [
+        {
+          "id": "ui-files:documentpreview",
+          "name": "DocumentPreview",
+          "slug": "documentpreview",
+          "category": "components",
+          "path": "./ui-files/components/DocumentPreview"
+        },
+        {
+          "id": "ui-files:pdfviewer",
+          "name": "PDFViewer",
+          "slug": "pdfviewer",
+          "category": "components",
+          "path": "./ui-files/components/PDFViewer"
+        }
+      ]
+    },
+    {
+      "id": "ui-form-builder",
+      "name": "ui-form-builder",
+      "displayName": "Ui Form Builder",
+      "version": "1.0.0",
+      "componentCount": 0,
+      "categories": [],
+      "components": []
+    },
+    {
+      "id": "ui-grid-builder",
+      "name": "ui-grid-builder",
+      "displayName": "Ui Grid Builder",
+      "version": "1.0.0",
+      "componentCount": 6,
+      "categories": [
+        {
+          "name": "components",
+          "displayName": "components",
+          "componentCount": 6,
+          "components": [
+            {
+              "id": "ui-grid-builder:grid",
+              "name": "Grid",
+              "slug": "grid",
+              "path": "./ui-grid-builder/components/Grid"
+            },
+            {
+              "id": "ui-grid-builder:gridactions",
+              "name": "GridActions",
+              "slug": "gridactions",
+              "path": "./ui-grid-builder/components/GridActions"
+            },
+            {
+              "id": "ui-grid-builder:gridcell",
+              "name": "GridCell",
+              "slug": "gridcell",
+              "path": "./ui-grid-builder/components/GridCell"
+            },
+            {
+              "id": "ui-grid-builder:gridpagination",
+              "name": "GridPagination",
+              "slug": "gridpagination",
+              "path": "./ui-grid-builder/components/GridPagination"
+            },
+            {
+              "id": "ui-grid-builder:gridselectionbar",
+              "name": "GridSelectionBar",
+              "slug": "gridselectionbar",
+              "path": "./ui-grid-builder/components/GridSelectionBar"
+            },
+            {
+              "id": "ui-grid-builder:gridtoolbar",
+              "name": "GridToolbar",
+              "slug": "gridtoolbar",
+              "path": "./ui-grid-builder/components/GridToolbar"
+            }
+          ]
+        }
+      ],
+      "components": [
+        {
+          "id": "ui-grid-builder:grid",
+          "name": "Grid",
+          "slug": "grid",
+          "category": "components",
+          "path": "./ui-grid-builder/components/Grid"
+        },
+        {
+          "id": "ui-grid-builder:gridactions",
+          "name": "GridActions",
+          "slug": "gridactions",
+          "category": "components",
+          "path": "./ui-grid-builder/components/GridActions"
+        },
+        {
+          "id": "ui-grid-builder:gridcell",
+          "name": "GridCell",
+          "slug": "gridcell",
+          "category": "components",
+          "path": "./ui-grid-builder/components/GridCell"
+        },
+        {
+          "id": "ui-grid-builder:gridpagination",
+          "name": "GridPagination",
+          "slug": "gridpagination",
+          "category": "components",
+          "path": "./ui-grid-builder/components/GridPagination"
+        },
+        {
+          "id": "ui-grid-builder:gridselectionbar",
+          "name": "GridSelectionBar",
+          "slug": "gridselectionbar",
+          "category": "components",
+          "path": "./ui-grid-builder/components/GridSelectionBar"
+        },
+        {
+          "id": "ui-grid-builder:gridtoolbar",
+          "name": "GridToolbar",
+          "slug": "gridtoolbar",
+          "category": "components",
+          "path": "./ui-grid-builder/components/GridToolbar"
+        }
+      ]
+    },
+    {
+      "id": "ui-i18n",
+      "name": "ui-i18n",
+      "displayName": "Ui I18n",
+      "version": "1.0.0",
+      "componentCount": 0,
+      "categories": [],
+      "components": []
+    },
+    {
+      "id": "ui-layout",
+      "name": "ui-layout",
+      "displayName": "Ui Layout",
+      "version": "1.0.0",
+      "componentCount": 22,
+      "categories": [
+        {
+          "name": "components",
+          "displayName": "components",
+          "componentCount": 22,
+          "components": [
+            {
+              "id": "ui-layout:accordion",
+              "name": "Accordion",
+              "slug": "accordion",
+              "path": "./ui-layout/components/Accordion"
+            },
+            {
+              "id": "ui-layout:breadcrumb",
+              "name": "Breadcrumb",
+              "slug": "breadcrumb",
+              "path": "./ui-layout/components/Breadcrumb"
+            },
+            {
+              "id": "ui-layout:card",
+              "name": "Card",
+              "slug": "card",
+              "path": "./ui-layout/components/Card"
+            },
+            {
+              "id": "ui-layout:collapsible",
+              "name": "Collapsible",
+              "slug": "collapsible",
+              "path": "./ui-layout/components/Collapsible"
+            },
+            {
+              "id": "ui-layout:column",
+              "name": "Column",
+              "slug": "column",
+              "path": "./ui-layout/components/Column"
+            },
+            {
+              "id": "ui-layout:container",
+              "name": "Container",
+              "slug": "container",
+              "path": "./ui-layout/components/Container"
+            },
+            {
+              "id": "ui-layout:divider",
+              "name": "Divider",
+              "slug": "divider",
+              "path": "./ui-layout/components/Divider"
+            },
+            {
+              "id": "ui-layout:grid",
+              "name": "Grid",
+              "slug": "grid",
+              "path": "./ui-layout/components/Grid"
+            },
+            {
+              "id": "ui-layout:pagecontent",
+              "name": "PageContent",
+              "slug": "pagecontent",
+              "path": "./ui-layout/components/PageContent"
+            },
+            {
+              "id": "ui-layout:pageheader",
+              "name": "PageHeader",
+              "slug": "pageheader",
+              "path": "./ui-layout/components/PageHeader"
+            },
+            {
+              "id": "ui-layout:pagelayout",
+              "name": "PageLayout",
+              "slug": "pagelayout",
+              "path": "./ui-layout/components/PageLayout"
+            },
+            {
+              "id": "ui-layout:pagetabs",
+              "name": "PageTabs",
+              "slug": "pagetabs",
+              "path": "./ui-layout/components/PageTabs"
+            },
+            {
+              "id": "ui-layout:panel",
+              "name": "Panel",
+              "slug": "panel",
+              "path": "./ui-layout/components/Panel"
+            },
+            {
+              "id": "ui-layout:row",
+              "name": "Row",
+              "slug": "row",
+              "path": "./ui-layout/components/Row"
+            },
+            {
+              "id": "ui-layout:section",
+              "name": "Section",
+              "slug": "section",
+              "path": "./ui-layout/components/Section"
+            },
+            {
+              "id": "ui-layout:sidebarlayout",
+              "name": "SidebarLayout",
+              "slug": "sidebarlayout",
+              "path": "./ui-layout/components/SidebarLayout"
+            },
+            {
+              "id": "ui-layout:spacer",
+              "name": "Spacer",
+              "slug": "spacer",
+              "path": "./ui-layout/components/Spacer"
+            },
+            {
+              "id": "ui-layout:splitlayout",
+              "name": "SplitLayout",
+              "slug": "splitlayout",
+              "path": "./ui-layout/components/SplitLayout"
+            },
+            {
+              "id": "ui-layout:stack",
+              "name": "Stack",
+              "slug": "stack",
+              "path": "./ui-layout/components/Stack"
+            },
+            {
+              "id": "ui-layout:stepper",
+              "name": "Stepper",
+              "slug": "stepper",
+              "path": "./ui-layout/components/Stepper"
+            },
+            {
+              "id": "ui-layout:tabs",
+              "name": "Tabs",
+              "slug": "tabs",
+              "path": "./ui-layout/components/Tabs"
+            },
+            {
+              "id": "ui-layout:wizard",
+              "name": "Wizard",
+              "slug": "wizard",
+              "path": "./ui-layout/components/Wizard"
+            }
+          ]
+        }
+      ],
+      "components": [
+        {
+          "id": "ui-layout:accordion",
+          "name": "Accordion",
+          "slug": "accordion",
+          "category": "components",
+          "path": "./ui-layout/components/Accordion"
+        },
+        {
+          "id": "ui-layout:breadcrumb",
+          "name": "Breadcrumb",
+          "slug": "breadcrumb",
+          "category": "components",
+          "path": "./ui-layout/components/Breadcrumb"
+        },
+        {
+          "id": "ui-layout:card",
+          "name": "Card",
+          "slug": "card",
+          "category": "components",
+          "path": "./ui-layout/components/Card"
+        },
+        {
+          "id": "ui-layout:collapsible",
+          "name": "Collapsible",
+          "slug": "collapsible",
+          "category": "components",
+          "path": "./ui-layout/components/Collapsible"
+        },
+        {
+          "id": "ui-layout:column",
+          "name": "Column",
+          "slug": "column",
+          "category": "components",
+          "path": "./ui-layout/components/Column"
+        },
+        {
+          "id": "ui-layout:container",
+          "name": "Container",
+          "slug": "container",
+          "category": "components",
+          "path": "./ui-layout/components/Container"
+        },
+        {
+          "id": "ui-layout:divider",
+          "name": "Divider",
+          "slug": "divider",
+          "category": "components",
+          "path": "./ui-layout/components/Divider"
+        },
+        {
+          "id": "ui-layout:grid",
+          "name": "Grid",
+          "slug": "grid",
+          "category": "components",
+          "path": "./ui-layout/components/Grid"
+        },
+        {
+          "id": "ui-layout:pagecontent",
+          "name": "PageContent",
+          "slug": "pagecontent",
+          "category": "components",
+          "path": "./ui-layout/components/PageContent"
+        },
+        {
+          "id": "ui-layout:pageheader",
+          "name": "PageHeader",
+          "slug": "pageheader",
+          "category": "components",
+          "path": "./ui-layout/components/PageHeader"
+        },
+        {
+          "id": "ui-layout:pagelayout",
+          "name": "PageLayout",
+          "slug": "pagelayout",
+          "category": "components",
+          "path": "./ui-layout/components/PageLayout"
+        },
+        {
+          "id": "ui-layout:pagetabs",
+          "name": "PageTabs",
+          "slug": "pagetabs",
+          "category": "components",
+          "path": "./ui-layout/components/PageTabs"
+        },
+        {
+          "id": "ui-layout:panel",
+          "name": "Panel",
+          "slug": "panel",
+          "category": "components",
+          "path": "./ui-layout/components/Panel"
+        },
+        {
+          "id": "ui-layout:row",
+          "name": "Row",
+          "slug": "row",
+          "category": "components",
+          "path": "./ui-layout/components/Row"
+        },
+        {
+          "id": "ui-layout:section",
+          "name": "Section",
+          "slug": "section",
+          "category": "components",
+          "path": "./ui-layout/components/Section"
+        },
+        {
+          "id": "ui-layout:sidebarlayout",
+          "name": "SidebarLayout",
+          "slug": "sidebarlayout",
+          "category": "components",
+          "path": "./ui-layout/components/SidebarLayout"
+        },
+        {
+          "id": "ui-layout:spacer",
+          "name": "Spacer",
+          "slug": "spacer",
+          "category": "components",
+          "path": "./ui-layout/components/Spacer"
+        },
+        {
+          "id": "ui-layout:splitlayout",
+          "name": "SplitLayout",
+          "slug": "splitlayout",
+          "category": "components",
+          "path": "./ui-layout/components/SplitLayout"
+        },
+        {
+          "id": "ui-layout:stack",
+          "name": "Stack",
+          "slug": "stack",
+          "category": "components",
+          "path": "./ui-layout/components/Stack"
+        },
+        {
+          "id": "ui-layout:stepper",
+          "name": "Stepper",
+          "slug": "stepper",
+          "category": "components",
+          "path": "./ui-layout/components/Stepper"
+        },
+        {
+          "id": "ui-layout:tabs",
+          "name": "Tabs",
+          "slug": "tabs",
+          "category": "components",
+          "path": "./ui-layout/components/Tabs"
+        },
+        {
+          "id": "ui-layout:wizard",
+          "name": "Wizard",
+          "slug": "wizard",
+          "category": "components",
+          "path": "./ui-layout/components/Wizard"
+        }
+      ]
+    },
+    {
+      "id": "ui-maps",
+      "name": "ui-maps",
+      "displayName": "Ui Maps",
+      "version": "1.0.0",
+      "componentCount": 9,
+      "categories": [
+        {
+          "name": "components",
+          "displayName": "components",
+          "componentCount": 9,
+          "components": [
+            {
+              "id": "ui-maps:addressautocomplete",
+              "name": "AddressAutocomplete",
+              "slug": "addressautocomplete",
+              "path": "./ui-maps/components/AddressAutocomplete"
+            },
+            {
+              "id": "ui-maps:addressselector",
+              "name": "AddressSelector",
+              "slug": "addressselector",
+              "path": "./ui-maps/components/AddressSelector"
+            },
+            {
+              "id": "ui-maps:currentlocationbutton",
+              "name": "CurrentLocationButton",
+              "slug": "currentlocationbutton",
+              "path": "./ui-maps/components/CurrentLocationButton"
+            },
+            {
+              "id": "ui-maps:distancecalculator",
+              "name": "DistanceCalculator",
+              "slug": "distancecalculator",
+              "path": "./ui-maps/components/DistanceCalculator"
+            },
+            {
+              "id": "ui-maps:geofenceeditor",
+              "name": "GeofenceEditor",
+              "slug": "geofenceeditor",
+              "path": "./ui-maps/components/GeofenceEditor"
+            },
+            {
+              "id": "ui-maps:locationpicker",
+              "name": "LocationPicker",
+              "slug": "locationpicker",
+              "path": "./ui-maps/components/LocationPicker"
+            },
+            {
+              "id": "ui-maps:mapmarker",
+              "name": "MapMarker",
+              "slug": "mapmarker",
+              "path": "./ui-maps/components/MapMarker"
+            },
+            {
+              "id": "ui-maps:mapview",
+              "name": "MapView",
+              "slug": "mapview",
+              "path": "./ui-maps/components/MapView"
+            },
+            {
+              "id": "ui-maps:routeplanner",
+              "name": "RoutePlanner",
+              "slug": "routeplanner",
+              "path": "./ui-maps/components/RoutePlanner"
+            }
+          ]
+        }
+      ],
+      "components": [
+        {
+          "id": "ui-maps:addressautocomplete",
+          "name": "AddressAutocomplete",
+          "slug": "addressautocomplete",
+          "category": "components",
+          "path": "./ui-maps/components/AddressAutocomplete"
+        },
+        {
+          "id": "ui-maps:addressselector",
+          "name": "AddressSelector",
+          "slug": "addressselector",
+          "category": "components",
+          "path": "./ui-maps/components/AddressSelector"
+        },
+        {
+          "id": "ui-maps:currentlocationbutton",
+          "name": "CurrentLocationButton",
+          "slug": "currentlocationbutton",
+          "category": "components",
+          "path": "./ui-maps/components/CurrentLocationButton"
+        },
+        {
+          "id": "ui-maps:distancecalculator",
+          "name": "DistanceCalculator",
+          "slug": "distancecalculator",
+          "category": "components",
+          "path": "./ui-maps/components/DistanceCalculator"
+        },
+        {
+          "id": "ui-maps:geofenceeditor",
+          "name": "GeofenceEditor",
+          "slug": "geofenceeditor",
+          "category": "components",
+          "path": "./ui-maps/components/GeofenceEditor"
+        },
+        {
+          "id": "ui-maps:locationpicker",
+          "name": "LocationPicker",
+          "slug": "locationpicker",
+          "category": "components",
+          "path": "./ui-maps/components/LocationPicker"
+        },
+        {
+          "id": "ui-maps:mapmarker",
+          "name": "MapMarker",
+          "slug": "mapmarker",
+          "category": "components",
+          "path": "./ui-maps/components/MapMarker"
+        },
+        {
+          "id": "ui-maps:mapview",
+          "name": "MapView",
+          "slug": "mapview",
+          "category": "components",
+          "path": "./ui-maps/components/MapView"
+        },
+        {
+          "id": "ui-maps:routeplanner",
+          "name": "RoutePlanner",
+          "slug": "routeplanner",
+          "category": "components",
+          "path": "./ui-maps/components/RoutePlanner"
+        }
+      ]
+    },
+    {
+      "id": "ui-media",
+      "name": "ui-media",
+      "displayName": "Ui Media",
+      "version": "1.0.0",
+      "componentCount": 12,
+      "categories": [
+        {
+          "name": "components",
+          "displayName": "components",
+          "componentCount": 12,
+          "components": [
+            {
+              "id": "ui-media:audioplayer",
+              "name": "AudioPlayer",
+              "slug": "audioplayer",
+              "path": "./ui-media/components/AudioPlayer"
+            },
+            {
+              "id": "ui-media:barcode",
+              "name": "Barcode",
+              "slug": "barcode",
+              "path": "./ui-media/components/Barcode"
+            },
+            {
+              "id": "ui-media:barcodescanner",
+              "name": "BarcodeScanner",
+              "slug": "barcodescanner",
+              "path": "./ui-media/components/BarcodeScanner"
+            },
+            {
+              "id": "ui-media:colorpicker",
+              "name": "ColorPicker",
+              "slug": "colorpicker",
+              "path": "./ui-media/components/ColorPicker"
+            },
+            {
+              "id": "ui-media:cropper",
+              "name": "Cropper",
+              "slug": "cropper",
+              "path": "./ui-media/components/Cropper"
+            },
+            {
+              "id": "ui-media:imageviewer",
+              "name": "ImageViewer",
+              "slug": "imageviewer",
+              "path": "./ui-media/components/ImageViewer"
+            },
+            {
+              "id": "ui-media:ocrscanner",
+              "name": "OCRScanner",
+              "slug": "ocrscanner",
+              "path": "./ui-media/components/OCRScanner"
+            },
+            {
+              "id": "ui-media:qrcode",
+              "name": "QRCode",
+              "slug": "qrcode",
+              "path": "./ui-media/components/QRCode"
+            },
+            {
+              "id": "ui-media:qrscanner",
+              "name": "QRScanner",
+              "slug": "qrscanner",
+              "path": "./ui-media/components/QRScanner"
+            },
+            {
+              "id": "ui-media:signaturepad",
+              "name": "SignaturePad",
+              "slug": "signaturepad",
+              "path": "./ui-media/components/SignaturePad"
+            },
+            {
+              "id": "ui-media:signatureviewer",
+              "name": "SignatureViewer",
+              "slug": "signatureviewer",
+              "path": "./ui-media/components/SignatureViewer"
+            },
+            {
+              "id": "ui-media:videoplayer",
+              "name": "VideoPlayer",
+              "slug": "videoplayer",
+              "path": "./ui-media/components/VideoPlayer"
+            }
+          ]
+        }
+      ],
+      "components": [
+        {
+          "id": "ui-media:audioplayer",
+          "name": "AudioPlayer",
+          "slug": "audioplayer",
+          "category": "components",
+          "path": "./ui-media/components/AudioPlayer"
+        },
+        {
+          "id": "ui-media:barcode",
+          "name": "Barcode",
+          "slug": "barcode",
+          "category": "components",
+          "path": "./ui-media/components/Barcode"
+        },
+        {
+          "id": "ui-media:barcodescanner",
+          "name": "BarcodeScanner",
+          "slug": "barcodescanner",
+          "category": "components",
+          "path": "./ui-media/components/BarcodeScanner"
+        },
+        {
+          "id": "ui-media:colorpicker",
+          "name": "ColorPicker",
+          "slug": "colorpicker",
+          "category": "components",
+          "path": "./ui-media/components/ColorPicker"
+        },
+        {
+          "id": "ui-media:cropper",
+          "name": "Cropper",
+          "slug": "cropper",
+          "category": "components",
+          "path": "./ui-media/components/Cropper"
+        },
+        {
+          "id": "ui-media:imageviewer",
+          "name": "ImageViewer",
+          "slug": "imageviewer",
+          "category": "components",
+          "path": "./ui-media/components/ImageViewer"
+        },
+        {
+          "id": "ui-media:ocrscanner",
+          "name": "OCRScanner",
+          "slug": "ocrscanner",
+          "category": "components",
+          "path": "./ui-media/components/OCRScanner"
+        },
+        {
+          "id": "ui-media:qrcode",
+          "name": "QRCode",
+          "slug": "qrcode",
+          "category": "components",
+          "path": "./ui-media/components/QRCode"
+        },
+        {
+          "id": "ui-media:qrscanner",
+          "name": "QRScanner",
+          "slug": "qrscanner",
+          "category": "components",
+          "path": "./ui-media/components/QRScanner"
+        },
+        {
+          "id": "ui-media:signaturepad",
+          "name": "SignaturePad",
+          "slug": "signaturepad",
+          "category": "components",
+          "path": "./ui-media/components/SignaturePad"
+        },
+        {
+          "id": "ui-media:signatureviewer",
+          "name": "SignatureViewer",
+          "slug": "signatureviewer",
+          "category": "components",
+          "path": "./ui-media/components/SignatureViewer"
+        },
+        {
+          "id": "ui-media:videoplayer",
+          "name": "VideoPlayer",
+          "slug": "videoplayer",
+          "category": "components",
+          "path": "./ui-media/components/VideoPlayer"
+        }
+      ]
+    },
+    {
+      "id": "ui-navigation",
+      "name": "ui-navigation",
+      "displayName": "Ui Navigation",
+      "version": "1.0.0",
+      "componentCount": 20,
+      "categories": [
+        {
+          "name": "components",
+          "displayName": "components",
+          "componentCount": 20,
+          "components": [
+            {
+              "id": "ui-navigation:breadcrumb",
+              "name": "Breadcrumb",
+              "slug": "breadcrumb",
+              "path": "./ui-navigation/components/Breadcrumb"
+            },
+            {
+              "id": "ui-navigation:commandpalette",
+              "name": "CommandPalette",
+              "slug": "commandpalette",
+              "path": "./ui-navigation/components/CommandPalette"
+            },
+            {
+              "id": "ui-navigation:contextmenu",
+              "name": "ContextMenu",
+              "slug": "contextmenu",
+              "path": "./ui-navigation/components/ContextMenu"
+            },
+            {
+              "id": "ui-navigation:drawer",
+              "name": "Drawer",
+              "slug": "drawer",
+              "path": "./ui-navigation/components/Drawer"
+            },
+            {
+              "id": "ui-navigation:favoritesmenu",
+              "name": "FavoritesMenu",
+              "slug": "favoritesmenu",
+              "path": "./ui-navigation/components/FavoritesMenu"
+            },
+            {
+              "id": "ui-navigation:header",
+              "name": "Header",
+              "slug": "header",
+              "path": "./ui-navigation/components/Header"
+            },
+            {
+              "id": "ui-navigation:megamenu",
+              "name": "MegaMenu",
+              "slug": "megamenu",
+              "path": "./ui-navigation/components/MegaMenu"
+            },
+            {
+              "id": "ui-navigation:menu",
+              "name": "Menu",
+              "slug": "menu",
+              "path": "./ui-navigation/components/Menu"
+            },
+            {
+              "id": "ui-navigation:menuitem",
+              "name": "MenuItem",
+              "slug": "menuitem",
+              "path": "./ui-navigation/components/MenuItem"
+            },
+            {
+              "id": "ui-navigation:navbar",
+              "name": "Navbar",
+              "slug": "navbar",
+              "path": "./ui-navigation/components/Navbar"
+            },
+            {
+              "id": "ui-navigation:notificationcenter",
+              "name": "NotificationCenter",
+              "slug": "notificationcenter",
+              "path": "./ui-navigation/components/NotificationCenter"
+            },
+            {
+              "id": "ui-navigation:quickactions",
+              "name": "QuickActions",
+              "slug": "quickactions",
+              "path": "./ui-navigation/components/QuickActions"
+            },
+            {
+              "id": "ui-navigation:recentitems",
+              "name": "RecentItems",
+              "slug": "recentitems",
+              "path": "./ui-navigation/components/RecentItems"
+            },
+            {
+              "id": "ui-navigation:searchnavigation",
+              "name": "SearchNavigation",
+              "slug": "searchnavigation",
+              "path": "./ui-navigation/components/SearchNavigation"
+            },
+            {
+              "id": "ui-navigation:sidebar",
+              "name": "Sidebar",
+              "slug": "sidebar",
+              "path": "./ui-navigation/components/Sidebar"
+            },
+            {
+              "id": "ui-navigation:stepnavigation",
+              "name": "StepNavigation",
+              "slug": "stepnavigation",
+              "path": "./ui-navigation/components/StepNavigation"
+            },
+            {
+              "id": "ui-navigation:tabs",
+              "name": "Tabs",
+              "slug": "tabs",
+              "path": "./ui-navigation/components/Tabs"
+            },
+            {
+              "id": "ui-navigation:treemenu",
+              "name": "TreeMenu",
+              "slug": "treemenu",
+              "path": "./ui-navigation/components/TreeMenu"
+            },
+            {
+              "id": "ui-navigation:usermenu",
+              "name": "UserMenu",
+              "slug": "usermenu",
+              "path": "./ui-navigation/components/UserMenu"
+            },
+            {
+              "id": "ui-navigation:workspaceswitcher",
+              "name": "WorkspaceSwitcher",
+              "slug": "workspaceswitcher",
+              "path": "./ui-navigation/components/WorkspaceSwitcher"
+            }
+          ]
+        }
+      ],
+      "components": [
+        {
+          "id": "ui-navigation:breadcrumb",
+          "name": "Breadcrumb",
+          "slug": "breadcrumb",
+          "category": "components",
+          "path": "./ui-navigation/components/Breadcrumb"
+        },
+        {
+          "id": "ui-navigation:commandpalette",
+          "name": "CommandPalette",
+          "slug": "commandpalette",
+          "category": "components",
+          "path": "./ui-navigation/components/CommandPalette"
+        },
+        {
+          "id": "ui-navigation:contextmenu",
+          "name": "ContextMenu",
+          "slug": "contextmenu",
+          "category": "components",
+          "path": "./ui-navigation/components/ContextMenu"
+        },
+        {
+          "id": "ui-navigation:drawer",
+          "name": "Drawer",
+          "slug": "drawer",
+          "category": "components",
+          "path": "./ui-navigation/components/Drawer"
+        },
+        {
+          "id": "ui-navigation:favoritesmenu",
+          "name": "FavoritesMenu",
+          "slug": "favoritesmenu",
+          "category": "components",
+          "path": "./ui-navigation/components/FavoritesMenu"
+        },
+        {
+          "id": "ui-navigation:header",
+          "name": "Header",
+          "slug": "header",
+          "category": "components",
+          "path": "./ui-navigation/components/Header"
+        },
+        {
+          "id": "ui-navigation:megamenu",
+          "name": "MegaMenu",
+          "slug": "megamenu",
+          "category": "components",
+          "path": "./ui-navigation/components/MegaMenu"
+        },
+        {
+          "id": "ui-navigation:menu",
+          "name": "Menu",
+          "slug": "menu",
+          "category": "components",
+          "path": "./ui-navigation/components/Menu"
+        },
+        {
+          "id": "ui-navigation:menuitem",
+          "name": "MenuItem",
+          "slug": "menuitem",
+          "category": "components",
+          "path": "./ui-navigation/components/MenuItem"
+        },
+        {
+          "id": "ui-navigation:navbar",
+          "name": "Navbar",
+          "slug": "navbar",
+          "category": "components",
+          "path": "./ui-navigation/components/Navbar"
+        },
+        {
+          "id": "ui-navigation:notificationcenter",
+          "name": "NotificationCenter",
+          "slug": "notificationcenter",
+          "category": "components",
+          "path": "./ui-navigation/components/NotificationCenter"
+        },
+        {
+          "id": "ui-navigation:quickactions",
+          "name": "QuickActions",
+          "slug": "quickactions",
+          "category": "components",
+          "path": "./ui-navigation/components/QuickActions"
+        },
+        {
+          "id": "ui-navigation:recentitems",
+          "name": "RecentItems",
+          "slug": "recentitems",
+          "category": "components",
+          "path": "./ui-navigation/components/RecentItems"
+        },
+        {
+          "id": "ui-navigation:searchnavigation",
+          "name": "SearchNavigation",
+          "slug": "searchnavigation",
+          "category": "components",
+          "path": "./ui-navigation/components/SearchNavigation"
+        },
+        {
+          "id": "ui-navigation:sidebar",
+          "name": "Sidebar",
+          "slug": "sidebar",
+          "category": "components",
+          "path": "./ui-navigation/components/Sidebar"
+        },
+        {
+          "id": "ui-navigation:stepnavigation",
+          "name": "StepNavigation",
+          "slug": "stepnavigation",
+          "category": "components",
+          "path": "./ui-navigation/components/StepNavigation"
+        },
+        {
+          "id": "ui-navigation:tabs",
+          "name": "Tabs",
+          "slug": "tabs",
+          "category": "components",
+          "path": "./ui-navigation/components/Tabs"
+        },
+        {
+          "id": "ui-navigation:treemenu",
+          "name": "TreeMenu",
+          "slug": "treemenu",
+          "category": "components",
+          "path": "./ui-navigation/components/TreeMenu"
+        },
+        {
+          "id": "ui-navigation:usermenu",
+          "name": "UserMenu",
+          "slug": "usermenu",
+          "category": "components",
+          "path": "./ui-navigation/components/UserMenu"
+        },
+        {
+          "id": "ui-navigation:workspaceswitcher",
+          "name": "WorkspaceSwitcher",
+          "slug": "workspaceswitcher",
+          "category": "components",
+          "path": "./ui-navigation/components/WorkspaceSwitcher"
+        }
+      ]
+    },
+    {
+      "id": "ui-security",
+      "name": "ui-security",
+      "displayName": "Ui Security",
+      "version": "1.0.0",
+      "componentCount": 74,
+      "categories": [
+        {
+          "name": "components",
+          "displayName": "components",
+          "componentCount": 74,
+          "components": [
+            {
+              "id": "ui-security:accessdenied",
+              "name": "AccessDenied",
+              "slug": "accessdenied",
+              "path": "./ui-security/components/AccessDenied"
+            },
+            {
+              "id": "ui-security:activesessions",
+              "name": "ActiveSessions",
+              "slug": "activesessions",
+              "path": "./ui-security/components/ActiveSessions"
+            },
+            {
+              "id": "ui-security:activityfeed",
+              "name": "ActivityFeed",
+              "slug": "activityfeed",
+              "path": "./ui-security/components/ActivityFeed"
+            },
+            {
+              "id": "ui-security:audithistorytable",
+              "name": "AuditHistoryTable",
+              "slug": "audithistorytable",
+              "path": "./ui-security/components/AuditHistoryTable"
+            },
+            {
+              "id": "ui-security:audittimeline",
+              "name": "AuditTimeline",
+              "slug": "audittimeline",
+              "path": "./ui-security/components/AuditTimeline"
+            },
+            {
+              "id": "ui-security:auth0loginbutton",
+              "name": "Auth0LoginButton",
+              "slug": "auth0loginbutton",
+              "path": "./ui-security/components/Auth0LoginButton"
+            },
+            {
+              "id": "ui-security:authenticatorqrcode",
+              "name": "AuthenticatorQRCode",
+              "slug": "authenticatorqrcode",
+              "path": "./ui-security/components/AuthenticatorQRCode"
+            },
+            {
+              "id": "ui-security:backupcodescard",
+              "name": "BackupCodesCard",
+              "slug": "backupcodescard",
+              "path": "./ui-security/components/BackupCodesCard"
+            },
+            {
+              "id": "ui-security:biometricbutton",
+              "name": "BiometricButton",
+              "slug": "biometricbutton",
+              "path": "./ui-security/components/BiometricButton"
+            },
+            {
+              "id": "ui-security:captchacontainer",
+              "name": "CaptchaContainer",
+              "slug": "captchacontainer",
+              "path": "./ui-security/components/CaptchaContainer"
+            },
+            {
+              "id": "ui-security:changepasswordform",
+              "name": "ChangePasswordForm",
+              "slug": "changepasswordform",
+              "path": "./ui-security/components/ChangePasswordForm"
+            },
+            {
+              "id": "ui-security:concurrentsessiondialog",
+              "name": "ConcurrentSessionDialog",
+              "slug": "concurrentsessiondialog",
+              "path": "./ui-security/components/ConcurrentSessionDialog"
+            },
+            {
+              "id": "ui-security:deviceverificationdialog",
+              "name": "DeviceVerificationDialog",
+              "slug": "deviceverificationdialog",
+              "path": "./ui-security/components/DeviceVerificationDialog"
+            },
+            {
+              "id": "ui-security:emailverificationcard",
+              "name": "EmailVerificationCard",
+              "slug": "emailverificationcard",
+              "path": "./ui-security/components/EmailVerificationCard"
+            },
+            {
+              "id": "ui-security:encryptionbadge",
+              "name": "EncryptionBadge",
+              "slug": "encryptionbadge",
+              "path": "./ui-security/components/EncryptionBadge"
+            },
+            {
+              "id": "ui-security:featuregate",
+              "name": "FeatureGate",
+              "slug": "featuregate",
+              "path": "./ui-security/components/FeatureGate"
+            },
+            {
+              "id": "ui-security:forgotpasswordform",
+              "name": "ForgotPasswordForm",
+              "slug": "forgotpasswordform",
+              "path": "./ui-security/components/ForgotPasswordForm"
+            },
+            {
+              "id": "ui-security:githubloginbutton",
+              "name": "GitHubLoginButton",
+              "slug": "githubloginbutton",
+              "path": "./ui-security/components/GitHubLoginButton"
+            },
+            {
+              "id": "ui-security:googlecaptcha",
+              "name": "GoogleCaptcha",
+              "slug": "googlecaptcha",
+              "path": "./ui-security/components/GoogleCaptcha"
+            },
+            {
+              "id": "ui-security:googleloginbutton",
+              "name": "GoogleLoginButton",
+              "slug": "googleloginbutton",
+              "path": "./ui-security/components/GoogleLoginButton"
+            },
+            {
+              "id": "ui-security:hcaptcha",
+              "name": "HCaptcha",
+              "slug": "hcaptcha",
+              "path": "./ui-security/components/HCaptcha"
+            },
+            {
+              "id": "ui-security:idlemonitor",
+              "name": "IdleMonitor",
+              "slug": "idlemonitor",
+              "path": "./ui-security/components/IdleMonitor"
+            },
+            {
+              "id": "ui-security:keepalivebutton",
+              "name": "KeepAliveButton",
+              "slug": "keepalivebutton",
+              "path": "./ui-security/components/KeepAliveButton"
+            },
+            {
+              "id": "ui-security:logincard",
+              "name": "LoginCard",
+              "slug": "logincard",
+              "path": "./ui-security/components/LoginCard"
+            },
+            {
+              "id": "ui-security:loginform",
+              "name": "LoginForm",
+              "slug": "loginform",
+              "path": "./ui-security/components/LoginForm"
+            },
+            {
+              "id": "ui-security:loginhistory",
+              "name": "LoginHistory",
+              "slug": "loginhistory",
+              "path": "./ui-security/components/LoginHistory"
+            },
+            {
+              "id": "ui-security:mfasettingspanel",
+              "name": "MFASettingsPanel",
+              "slug": "mfasettingspanel",
+              "path": "./ui-security/components/MFASettingsPanel"
+            },
+            {
+              "id": "ui-security:mfasetupwizard",
+              "name": "MFASetupWizard",
+              "slug": "mfasetupwizard",
+              "path": "./ui-security/components/MFASetupWizard"
+            },
+            {
+              "id": "ui-security:mfastatus",
+              "name": "MFAStatus",
+              "slug": "mfastatus",
+              "path": "./ui-security/components/MFAStatus"
+            },
+            {
+              "id": "ui-security:mfaverificationdialog",
+              "name": "MFAVerificationDialog",
+              "slug": "mfaverificationdialog",
+              "path": "./ui-security/components/MFAVerificationDialog"
+            },
+            {
+              "id": "ui-security:maskedinput",
+              "name": "MaskedInput",
+              "slug": "maskedinput",
+              "path": "./ui-security/components/MaskedInput"
+            },
+            {
+              "id": "ui-security:microsoftloginbutton",
+              "name": "MicrosoftLoginButton",
+              "slug": "microsoftloginbutton",
+              "path": "./ui-security/components/MicrosoftLoginButton"
+            },
+            {
+              "id": "ui-security:otpinput",
+              "name": "OTPInput",
+              "slug": "otpinput",
+              "path": "./ui-security/components/OTPInput"
+            },
+            {
+              "id": "ui-security:otpresendbutton",
+              "name": "OTPResendButton",
+              "slug": "otpresendbutton",
+              "path": "./ui-security/components/OTPResendButton"
+            },
+            {
+              "id": "ui-security:otpverificationcard",
+              "name": "OTPVerificationCard",
+              "slug": "otpverificationcard",
+              "path": "./ui-security/components/OTPVerificationCard"
+            },
+            {
+              "id": "ui-security:oktaloginbutton",
+              "name": "OktaLoginButton",
+              "slug": "oktaloginbutton",
+              "path": "./ui-security/components/OktaLoginButton"
+            },
+            {
+              "id": "ui-security:pininput",
+              "name": "PINInput",
+              "slug": "pininput",
+              "path": "./ui-security/components/PINInput"
+            },
+            {
+              "id": "ui-security:passwordageindicator",
+              "name": "PasswordAgeIndicator",
+              "slug": "passwordageindicator",
+              "path": "./ui-security/components/PasswordAgeIndicator"
+            },
+            {
+              "id": "ui-security:passwordgenerator",
+              "name": "PasswordGenerator",
+              "slug": "passwordgenerator",
+              "path": "./ui-security/components/PasswordGenerator"
+            },
+            {
+              "id": "ui-security:passwordinput",
+              "name": "PasswordInput",
+              "slug": "passwordinput",
+              "path": "./ui-security/components/PasswordInput"
+            },
+            {
+              "id": "ui-security:passwordpolicypanel",
+              "name": "PasswordPolicyPanel",
+              "slug": "passwordpolicypanel",
+              "path": "./ui-security/components/PasswordPolicyPanel"
+            },
+            {
+              "id": "ui-security:passwordrequirements",
+              "name": "PasswordRequirements",
+              "slug": "passwordrequirements",
+              "path": "./ui-security/components/PasswordRequirements"
+            },
+            {
+              "id": "ui-security:passwordstrengthmeter",
+              "name": "PasswordStrengthMeter",
+              "slug": "passwordstrengthmeter",
+              "path": "./ui-security/components/PasswordStrengthMeter"
+            },
+            {
+              "id": "ui-security:permissiongate",
+              "name": "PermissionGate",
+              "slug": "permissiongate",
+              "path": "./ui-security/components/PermissionGate"
+            },
+            {
+              "id": "ui-security:phoneverificationcard",
+              "name": "PhoneVerificationCard",
+              "slug": "phoneverificationcard",
+              "path": "./ui-security/components/PhoneVerificationCard"
+            },
+            {
+              "id": "ui-security:policygate",
+              "name": "PolicyGate",
+              "slug": "policygate",
+              "path": "./ui-security/components/PolicyGate"
+            },
+            {
+              "id": "ui-security:privacysettingspanel",
+              "name": "PrivacySettingsPanel",
+              "slug": "privacysettingspanel",
+              "path": "./ui-security/components/PrivacySettingsPanel"
+            },
+            {
+              "id": "ui-security:riskscorebadge",
+              "name": "RiskScoreBadge",
+              "slug": "riskscorebadge",
+              "path": "./ui-security/components/RiskScoreBadge"
+            },
+            {
+              "id": "ui-security:rolegate",
+              "name": "RoleGate",
+              "slug": "rolegate",
+              "path": "./ui-security/components/RoleGate"
+            },
+            {
+              "id": "ui-security:scopegate",
+              "name": "ScopeGate",
+              "slug": "scopegate",
+              "path": "./ui-security/components/ScopeGate"
+            },
+            {
+              "id": "ui-security:secureclipboardbutton",
+              "name": "SecureClipboardButton",
+              "slug": "secureclipboardbutton",
+              "path": "./ui-security/components/SecureClipboardButton"
+            },
+            {
+              "id": "ui-security:securedownloadbutton",
+              "name": "SecureDownloadButton",
+              "slug": "securedownloadbutton",
+              "path": "./ui-security/components/SecureDownloadButton"
+            },
+            {
+              "id": "ui-security:secureinput",
+              "name": "SecureInput",
+              "slug": "secureinput",
+              "path": "./ui-security/components/SecureInput"
+            },
+            {
+              "id": "ui-security:securetextarea",
+              "name": "SecureTextarea",
+              "slug": "securetextarea",
+              "path": "./ui-security/components/SecureTextarea"
+            },
+            {
+              "id": "ui-security:secureuploader",
+              "name": "SecureUploader",
+              "slug": "secureuploader",
+              "path": "./ui-security/components/SecureUploader"
+            },
+            {
+              "id": "ui-security:securityalert",
+              "name": "SecurityAlert",
+              "slug": "securityalert",
+              "path": "./ui-security/components/SecurityAlert"
+            },
+            {
+              "id": "ui-security:securityalertspanel",
+              "name": "SecurityAlertsPanel",
+              "slug": "securityalertspanel",
+              "path": "./ui-security/components/SecurityAlertsPanel"
+            },
+            {
+              "id": "ui-security:securitybanner",
+              "name": "SecurityBanner",
+              "slug": "securitybanner",
+              "path": "./ui-security/components/SecurityBanner"
+            },
+            {
+              "id": "ui-security:securityeventlog",
+              "name": "SecurityEventLog",
+              "slug": "securityeventlog",
+              "path": "./ui-security/components/SecurityEventLog"
+            },
+            {
+              "id": "ui-security:securityhealthindicator",
+              "name": "SecurityHealthIndicator",
+              "slug": "securityhealthindicator",
+              "path": "./ui-security/components/SecurityHealthIndicator"
+            },
+            {
+              "id": "ui-security:securitykeybutton",
+              "name": "SecurityKeyButton",
+              "slug": "securitykeybutton",
+              "path": "./ui-security/components/SecurityKeyButton"
+            },
+            {
+              "id": "ui-security:securitylogspanel",
+              "name": "SecurityLogsPanel",
+              "slug": "securitylogspanel",
+              "path": "./ui-security/components/SecurityLogsPanel"
+            },
+            {
+              "id": "ui-security:securityscore",
+              "name": "SecurityScore",
+              "slug": "securityscore",
+              "path": "./ui-security/components/SecurityScore"
+            },
+            {
+              "id": "ui-security:securitysettingspanel",
+              "name": "SecuritySettingsPanel",
+              "slug": "securitysettingspanel",
+              "path": "./ui-security/components/SecuritySettingsPanel"
+            },
+            {
+              "id": "ui-security:securitystatuscard",
+              "name": "SecurityStatusCard",
+              "slug": "securitystatuscard",
+              "path": "./ui-security/components/SecurityStatusCard"
+            },
+            {
+              "id": "ui-security:sensitivetext",
+              "name": "SensitiveText",
+              "slug": "sensitivetext",
+              "path": "./ui-security/components/SensitiveText"
+            },
+            {
+              "id": "ui-security:sessioncountdown",
+              "name": "SessionCountdown",
+              "slug": "sessioncountdown",
+              "path": "./ui-security/components/SessionCountdown"
+            },
+            {
+              "id": "ui-security:sessionpolicypanel",
+              "name": "SessionPolicyPanel",
+              "slug": "sessionpolicypanel",
+              "path": "./ui-security/components/SessionPolicyPanel"
+            },
+            {
+              "id": "ui-security:sessiontimeoutdialog",
+              "name": "SessionTimeoutDialog",
+              "slug": "sessiontimeoutdialog",
+              "path": "./ui-security/components/SessionTimeoutDialog"
+            },
+            {
+              "id": "ui-security:trusteddeviceselector",
+              "name": "TrustedDeviceSelector",
+              "slug": "trusteddeviceselector",
+              "path": "./ui-security/components/TrustedDeviceSelector"
+            },
+            {
+              "id": "ui-security:trusteddevicespanel",
+              "name": "TrustedDevicesPanel",
+              "slug": "trusteddevicespanel",
+              "path": "./ui-security/components/TrustedDevicesPanel"
+            },
+            {
+              "id": "ui-security:turnstilecaptcha",
+              "name": "TurnstileCaptcha",
+              "slug": "turnstilecaptcha",
+              "path": "./ui-security/components/TurnstileCaptcha"
+            },
+            {
+              "id": "ui-security:unauthorizedpage",
+              "name": "UnauthorizedPage",
+              "slug": "unauthorizedpage",
+              "path": "./ui-security/components/UnauthorizedPage"
+            },
+            {
+              "id": "ui-security:verificationstatus",
+              "name": "VerificationStatus",
+              "slug": "verificationstatus",
+              "path": "./ui-security/components/VerificationStatus"
+            }
+          ]
+        }
+      ],
+      "components": [
+        {
+          "id": "ui-security:accessdenied",
+          "name": "AccessDenied",
+          "slug": "accessdenied",
+          "category": "components",
+          "path": "./ui-security/components/AccessDenied"
+        },
+        {
+          "id": "ui-security:activesessions",
+          "name": "ActiveSessions",
+          "slug": "activesessions",
+          "category": "components",
+          "path": "./ui-security/components/ActiveSessions"
+        },
+        {
+          "id": "ui-security:activityfeed",
+          "name": "ActivityFeed",
+          "slug": "activityfeed",
+          "category": "components",
+          "path": "./ui-security/components/ActivityFeed"
+        },
+        {
+          "id": "ui-security:audithistorytable",
+          "name": "AuditHistoryTable",
+          "slug": "audithistorytable",
+          "category": "components",
+          "path": "./ui-security/components/AuditHistoryTable"
+        },
+        {
+          "id": "ui-security:audittimeline",
+          "name": "AuditTimeline",
+          "slug": "audittimeline",
+          "category": "components",
+          "path": "./ui-security/components/AuditTimeline"
+        },
+        {
+          "id": "ui-security:auth0loginbutton",
+          "name": "Auth0LoginButton",
+          "slug": "auth0loginbutton",
+          "category": "components",
+          "path": "./ui-security/components/Auth0LoginButton"
+        },
+        {
+          "id": "ui-security:authenticatorqrcode",
+          "name": "AuthenticatorQRCode",
+          "slug": "authenticatorqrcode",
+          "category": "components",
+          "path": "./ui-security/components/AuthenticatorQRCode"
+        },
+        {
+          "id": "ui-security:backupcodescard",
+          "name": "BackupCodesCard",
+          "slug": "backupcodescard",
+          "category": "components",
+          "path": "./ui-security/components/BackupCodesCard"
+        },
+        {
+          "id": "ui-security:biometricbutton",
+          "name": "BiometricButton",
+          "slug": "biometricbutton",
+          "category": "components",
+          "path": "./ui-security/components/BiometricButton"
+        },
+        {
+          "id": "ui-security:captchacontainer",
+          "name": "CaptchaContainer",
+          "slug": "captchacontainer",
+          "category": "components",
+          "path": "./ui-security/components/CaptchaContainer"
+        },
+        {
+          "id": "ui-security:changepasswordform",
+          "name": "ChangePasswordForm",
+          "slug": "changepasswordform",
+          "category": "components",
+          "path": "./ui-security/components/ChangePasswordForm"
+        },
+        {
+          "id": "ui-security:concurrentsessiondialog",
+          "name": "ConcurrentSessionDialog",
+          "slug": "concurrentsessiondialog",
+          "category": "components",
+          "path": "./ui-security/components/ConcurrentSessionDialog"
+        },
+        {
+          "id": "ui-security:deviceverificationdialog",
+          "name": "DeviceVerificationDialog",
+          "slug": "deviceverificationdialog",
+          "category": "components",
+          "path": "./ui-security/components/DeviceVerificationDialog"
+        },
+        {
+          "id": "ui-security:emailverificationcard",
+          "name": "EmailVerificationCard",
+          "slug": "emailverificationcard",
+          "category": "components",
+          "path": "./ui-security/components/EmailVerificationCard"
+        },
+        {
+          "id": "ui-security:encryptionbadge",
+          "name": "EncryptionBadge",
+          "slug": "encryptionbadge",
+          "category": "components",
+          "path": "./ui-security/components/EncryptionBadge"
+        },
+        {
+          "id": "ui-security:featuregate",
+          "name": "FeatureGate",
+          "slug": "featuregate",
+          "category": "components",
+          "path": "./ui-security/components/FeatureGate"
+        },
+        {
+          "id": "ui-security:forgotpasswordform",
+          "name": "ForgotPasswordForm",
+          "slug": "forgotpasswordform",
+          "category": "components",
+          "path": "./ui-security/components/ForgotPasswordForm"
+        },
+        {
+          "id": "ui-security:githubloginbutton",
+          "name": "GitHubLoginButton",
+          "slug": "githubloginbutton",
+          "category": "components",
+          "path": "./ui-security/components/GitHubLoginButton"
+        },
+        {
+          "id": "ui-security:googlecaptcha",
+          "name": "GoogleCaptcha",
+          "slug": "googlecaptcha",
+          "category": "components",
+          "path": "./ui-security/components/GoogleCaptcha"
+        },
+        {
+          "id": "ui-security:googleloginbutton",
+          "name": "GoogleLoginButton",
+          "slug": "googleloginbutton",
+          "category": "components",
+          "path": "./ui-security/components/GoogleLoginButton"
+        },
+        {
+          "id": "ui-security:hcaptcha",
+          "name": "HCaptcha",
+          "slug": "hcaptcha",
+          "category": "components",
+          "path": "./ui-security/components/HCaptcha"
+        },
+        {
+          "id": "ui-security:idlemonitor",
+          "name": "IdleMonitor",
+          "slug": "idlemonitor",
+          "category": "components",
+          "path": "./ui-security/components/IdleMonitor"
+        },
+        {
+          "id": "ui-security:keepalivebutton",
+          "name": "KeepAliveButton",
+          "slug": "keepalivebutton",
+          "category": "components",
+          "path": "./ui-security/components/KeepAliveButton"
+        },
+        {
+          "id": "ui-security:logincard",
+          "name": "LoginCard",
+          "slug": "logincard",
+          "category": "components",
+          "path": "./ui-security/components/LoginCard"
+        },
+        {
+          "id": "ui-security:loginform",
+          "name": "LoginForm",
+          "slug": "loginform",
+          "category": "components",
+          "path": "./ui-security/components/LoginForm"
+        },
+        {
+          "id": "ui-security:loginhistory",
+          "name": "LoginHistory",
+          "slug": "loginhistory",
+          "category": "components",
+          "path": "./ui-security/components/LoginHistory"
+        },
+        {
+          "id": "ui-security:mfasettingspanel",
+          "name": "MFASettingsPanel",
+          "slug": "mfasettingspanel",
+          "category": "components",
+          "path": "./ui-security/components/MFASettingsPanel"
+        },
+        {
+          "id": "ui-security:mfasetupwizard",
+          "name": "MFASetupWizard",
+          "slug": "mfasetupwizard",
+          "category": "components",
+          "path": "./ui-security/components/MFASetupWizard"
+        },
+        {
+          "id": "ui-security:mfastatus",
+          "name": "MFAStatus",
+          "slug": "mfastatus",
+          "category": "components",
+          "path": "./ui-security/components/MFAStatus"
+        },
+        {
+          "id": "ui-security:mfaverificationdialog",
+          "name": "MFAVerificationDialog",
+          "slug": "mfaverificationdialog",
+          "category": "components",
+          "path": "./ui-security/components/MFAVerificationDialog"
+        },
+        {
+          "id": "ui-security:maskedinput",
+          "name": "MaskedInput",
+          "slug": "maskedinput",
+          "category": "components",
+          "path": "./ui-security/components/MaskedInput"
+        },
+        {
+          "id": "ui-security:microsoftloginbutton",
+          "name": "MicrosoftLoginButton",
+          "slug": "microsoftloginbutton",
+          "category": "components",
+          "path": "./ui-security/components/MicrosoftLoginButton"
+        },
+        {
+          "id": "ui-security:otpinput",
+          "name": "OTPInput",
+          "slug": "otpinput",
+          "category": "components",
+          "path": "./ui-security/components/OTPInput"
+        },
+        {
+          "id": "ui-security:otpresendbutton",
+          "name": "OTPResendButton",
+          "slug": "otpresendbutton",
+          "category": "components",
+          "path": "./ui-security/components/OTPResendButton"
+        },
+        {
+          "id": "ui-security:otpverificationcard",
+          "name": "OTPVerificationCard",
+          "slug": "otpverificationcard",
+          "category": "components",
+          "path": "./ui-security/components/OTPVerificationCard"
+        },
+        {
+          "id": "ui-security:oktaloginbutton",
+          "name": "OktaLoginButton",
+          "slug": "oktaloginbutton",
+          "category": "components",
+          "path": "./ui-security/components/OktaLoginButton"
+        },
+        {
+          "id": "ui-security:pininput",
+          "name": "PINInput",
+          "slug": "pininput",
+          "category": "components",
+          "path": "./ui-security/components/PINInput"
+        },
+        {
+          "id": "ui-security:passwordageindicator",
+          "name": "PasswordAgeIndicator",
+          "slug": "passwordageindicator",
+          "category": "components",
+          "path": "./ui-security/components/PasswordAgeIndicator"
+        },
+        {
+          "id": "ui-security:passwordgenerator",
+          "name": "PasswordGenerator",
+          "slug": "passwordgenerator",
+          "category": "components",
+          "path": "./ui-security/components/PasswordGenerator"
+        },
+        {
+          "id": "ui-security:passwordinput",
+          "name": "PasswordInput",
+          "slug": "passwordinput",
+          "category": "components",
+          "path": "./ui-security/components/PasswordInput"
+        },
+        {
+          "id": "ui-security:passwordpolicypanel",
+          "name": "PasswordPolicyPanel",
+          "slug": "passwordpolicypanel",
+          "category": "components",
+          "path": "./ui-security/components/PasswordPolicyPanel"
+        },
+        {
+          "id": "ui-security:passwordrequirements",
+          "name": "PasswordRequirements",
+          "slug": "passwordrequirements",
+          "category": "components",
+          "path": "./ui-security/components/PasswordRequirements"
+        },
+        {
+          "id": "ui-security:passwordstrengthmeter",
+          "name": "PasswordStrengthMeter",
+          "slug": "passwordstrengthmeter",
+          "category": "components",
+          "path": "./ui-security/components/PasswordStrengthMeter"
+        },
+        {
+          "id": "ui-security:permissiongate",
+          "name": "PermissionGate",
+          "slug": "permissiongate",
+          "category": "components",
+          "path": "./ui-security/components/PermissionGate"
+        },
+        {
+          "id": "ui-security:phoneverificationcard",
+          "name": "PhoneVerificationCard",
+          "slug": "phoneverificationcard",
+          "category": "components",
+          "path": "./ui-security/components/PhoneVerificationCard"
+        },
+        {
+          "id": "ui-security:policygate",
+          "name": "PolicyGate",
+          "slug": "policygate",
+          "category": "components",
+          "path": "./ui-security/components/PolicyGate"
+        },
+        {
+          "id": "ui-security:privacysettingspanel",
+          "name": "PrivacySettingsPanel",
+          "slug": "privacysettingspanel",
+          "category": "components",
+          "path": "./ui-security/components/PrivacySettingsPanel"
+        },
+        {
+          "id": "ui-security:riskscorebadge",
+          "name": "RiskScoreBadge",
+          "slug": "riskscorebadge",
+          "category": "components",
+          "path": "./ui-security/components/RiskScoreBadge"
+        },
+        {
+          "id": "ui-security:rolegate",
+          "name": "RoleGate",
+          "slug": "rolegate",
+          "category": "components",
+          "path": "./ui-security/components/RoleGate"
+        },
+        {
+          "id": "ui-security:scopegate",
+          "name": "ScopeGate",
+          "slug": "scopegate",
+          "category": "components",
+          "path": "./ui-security/components/ScopeGate"
+        },
+        {
+          "id": "ui-security:secureclipboardbutton",
+          "name": "SecureClipboardButton",
+          "slug": "secureclipboardbutton",
+          "category": "components",
+          "path": "./ui-security/components/SecureClipboardButton"
+        },
+        {
+          "id": "ui-security:securedownloadbutton",
+          "name": "SecureDownloadButton",
+          "slug": "securedownloadbutton",
+          "category": "components",
+          "path": "./ui-security/components/SecureDownloadButton"
+        },
+        {
+          "id": "ui-security:secureinput",
+          "name": "SecureInput",
+          "slug": "secureinput",
+          "category": "components",
+          "path": "./ui-security/components/SecureInput"
+        },
+        {
+          "id": "ui-security:securetextarea",
+          "name": "SecureTextarea",
+          "slug": "securetextarea",
+          "category": "components",
+          "path": "./ui-security/components/SecureTextarea"
+        },
+        {
+          "id": "ui-security:secureuploader",
+          "name": "SecureUploader",
+          "slug": "secureuploader",
+          "category": "components",
+          "path": "./ui-security/components/SecureUploader"
+        },
+        {
+          "id": "ui-security:securityalert",
+          "name": "SecurityAlert",
+          "slug": "securityalert",
+          "category": "components",
+          "path": "./ui-security/components/SecurityAlert"
+        },
+        {
+          "id": "ui-security:securityalertspanel",
+          "name": "SecurityAlertsPanel",
+          "slug": "securityalertspanel",
+          "category": "components",
+          "path": "./ui-security/components/SecurityAlertsPanel"
+        },
+        {
+          "id": "ui-security:securitybanner",
+          "name": "SecurityBanner",
+          "slug": "securitybanner",
+          "category": "components",
+          "path": "./ui-security/components/SecurityBanner"
+        },
+        {
+          "id": "ui-security:securityeventlog",
+          "name": "SecurityEventLog",
+          "slug": "securityeventlog",
+          "category": "components",
+          "path": "./ui-security/components/SecurityEventLog"
+        },
+        {
+          "id": "ui-security:securityhealthindicator",
+          "name": "SecurityHealthIndicator",
+          "slug": "securityhealthindicator",
+          "category": "components",
+          "path": "./ui-security/components/SecurityHealthIndicator"
+        },
+        {
+          "id": "ui-security:securitykeybutton",
+          "name": "SecurityKeyButton",
+          "slug": "securitykeybutton",
+          "category": "components",
+          "path": "./ui-security/components/SecurityKeyButton"
+        },
+        {
+          "id": "ui-security:securitylogspanel",
+          "name": "SecurityLogsPanel",
+          "slug": "securitylogspanel",
+          "category": "components",
+          "path": "./ui-security/components/SecurityLogsPanel"
+        },
+        {
+          "id": "ui-security:securityscore",
+          "name": "SecurityScore",
+          "slug": "securityscore",
+          "category": "components",
+          "path": "./ui-security/components/SecurityScore"
+        },
+        {
+          "id": "ui-security:securitysettingspanel",
+          "name": "SecuritySettingsPanel",
+          "slug": "securitysettingspanel",
+          "category": "components",
+          "path": "./ui-security/components/SecuritySettingsPanel"
+        },
+        {
+          "id": "ui-security:securitystatuscard",
+          "name": "SecurityStatusCard",
+          "slug": "securitystatuscard",
+          "category": "components",
+          "path": "./ui-security/components/SecurityStatusCard"
+        },
+        {
+          "id": "ui-security:sensitivetext",
+          "name": "SensitiveText",
+          "slug": "sensitivetext",
+          "category": "components",
+          "path": "./ui-security/components/SensitiveText"
+        },
+        {
+          "id": "ui-security:sessioncountdown",
+          "name": "SessionCountdown",
+          "slug": "sessioncountdown",
+          "category": "components",
+          "path": "./ui-security/components/SessionCountdown"
+        },
+        {
+          "id": "ui-security:sessionpolicypanel",
+          "name": "SessionPolicyPanel",
+          "slug": "sessionpolicypanel",
+          "category": "components",
+          "path": "./ui-security/components/SessionPolicyPanel"
+        },
+        {
+          "id": "ui-security:sessiontimeoutdialog",
+          "name": "SessionTimeoutDialog",
+          "slug": "sessiontimeoutdialog",
+          "category": "components",
+          "path": "./ui-security/components/SessionTimeoutDialog"
+        },
+        {
+          "id": "ui-security:trusteddeviceselector",
+          "name": "TrustedDeviceSelector",
+          "slug": "trusteddeviceselector",
+          "category": "components",
+          "path": "./ui-security/components/TrustedDeviceSelector"
+        },
+        {
+          "id": "ui-security:trusteddevicespanel",
+          "name": "TrustedDevicesPanel",
+          "slug": "trusteddevicespanel",
+          "category": "components",
+          "path": "./ui-security/components/TrustedDevicesPanel"
+        },
+        {
+          "id": "ui-security:turnstilecaptcha",
+          "name": "TurnstileCaptcha",
+          "slug": "turnstilecaptcha",
+          "category": "components",
+          "path": "./ui-security/components/TurnstileCaptcha"
+        },
+        {
+          "id": "ui-security:unauthorizedpage",
+          "name": "UnauthorizedPage",
+          "slug": "unauthorizedpage",
+          "category": "components",
+          "path": "./ui-security/components/UnauthorizedPage"
+        },
+        {
+          "id": "ui-security:verificationstatus",
+          "name": "VerificationStatus",
+          "slug": "verificationstatus",
+          "category": "components",
+          "path": "./ui-security/components/VerificationStatus"
+        }
+      ]
+    },
+    {
+      "id": "ui-visualization",
+      "name": "ui-visualization",
+      "displayName": "Ui Visualization",
+      "version": "1.0.0",
+      "componentCount": 10,
+      "categories": [
+        {
+          "name": "components",
+          "displayName": "components",
+          "componentCount": 10,
+          "components": [
+            {
+              "id": "ui-visualization:connector",
+              "name": "Connector",
+              "slug": "connector",
+              "path": "./ui-visualization/components/Connector"
+            },
+            {
+              "id": "ui-visualization:hierarchy",
+              "name": "Hierarchy",
+              "slug": "hierarchy",
+              "path": "./ui-visualization/components/Hierarchy"
+            },
+            {
+              "id": "ui-visualization:legend",
+              "name": "Legend",
+              "slug": "legend",
+              "path": "./ui-visualization/components/Legend"
+            },
+            {
+              "id": "ui-visualization:minimap",
+              "name": "MiniMap",
+              "slug": "minimap",
+              "path": "./ui-visualization/components/MiniMap"
+            },
+            {
+              "id": "ui-visualization:orgchart",
+              "name": "OrgChart",
+              "slug": "orgchart",
+              "path": "./ui-visualization/components/OrgChart"
+            },
+            {
+              "id": "ui-visualization:searchbox",
+              "name": "SearchBox",
+              "slug": "searchbox",
+              "path": "./ui-visualization/components/SearchBox"
+            },
+            {
+              "id": "ui-visualization:toolbar",
+              "name": "Toolbar",
+              "slug": "toolbar",
+              "path": "./ui-visualization/components/Toolbar"
+            },
+            {
+              "id": "ui-visualization:tree",
+              "name": "Tree",
+              "slug": "tree",
+              "path": "./ui-visualization/components/Tree"
+            },
+            {
+              "id": "ui-visualization:treenode",
+              "name": "TreeNode",
+              "slug": "treenode",
+              "path": "./ui-visualization/components/TreeNode"
+            },
+            {
+              "id": "ui-visualization:zoomcontrols",
+              "name": "ZoomControls",
+              "slug": "zoomcontrols",
+              "path": "./ui-visualization/components/ZoomControls"
+            }
+          ]
+        }
+      ],
+      "components": [
+        {
+          "id": "ui-visualization:connector",
+          "name": "Connector",
+          "slug": "connector",
+          "category": "components",
+          "path": "./ui-visualization/components/Connector"
+        },
+        {
+          "id": "ui-visualization:hierarchy",
+          "name": "Hierarchy",
+          "slug": "hierarchy",
+          "category": "components",
+          "path": "./ui-visualization/components/Hierarchy"
+        },
+        {
+          "id": "ui-visualization:legend",
+          "name": "Legend",
+          "slug": "legend",
+          "category": "components",
+          "path": "./ui-visualization/components/Legend"
+        },
+        {
+          "id": "ui-visualization:minimap",
+          "name": "MiniMap",
+          "slug": "minimap",
+          "category": "components",
+          "path": "./ui-visualization/components/MiniMap"
+        },
+        {
+          "id": "ui-visualization:orgchart",
+          "name": "OrgChart",
+          "slug": "orgchart",
+          "category": "components",
+          "path": "./ui-visualization/components/OrgChart"
+        },
+        {
+          "id": "ui-visualization:searchbox",
+          "name": "SearchBox",
+          "slug": "searchbox",
+          "category": "components",
+          "path": "./ui-visualization/components/SearchBox"
+        },
+        {
+          "id": "ui-visualization:toolbar",
+          "name": "Toolbar",
+          "slug": "toolbar",
+          "category": "components",
+          "path": "./ui-visualization/components/Toolbar"
+        },
+        {
+          "id": "ui-visualization:tree",
+          "name": "Tree",
+          "slug": "tree",
+          "category": "components",
+          "path": "./ui-visualization/components/Tree"
+        },
+        {
+          "id": "ui-visualization:treenode",
+          "name": "TreeNode",
+          "slug": "treenode",
+          "category": "components",
+          "path": "./ui-visualization/components/TreeNode"
+        },
+        {
+          "id": "ui-visualization:zoomcontrols",
+          "name": "ZoomControls",
+          "slug": "zoomcontrols",
+          "category": "components",
+          "path": "./ui-visualization/components/ZoomControls"
+        }
+      ]
+    }
+  ]
+}

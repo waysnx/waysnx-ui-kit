@@ -1,0 +1,227 @@
+{
+  "id": "ui-communication:emojipicker",
+  "name": "EmojiPicker",
+  "slug": "emoji-picker",
+  "library": "ui-communication",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Emoji Picker",
+  "purpose": "Enable selection and insertion of emoji characters",
+  "shortDescription": "Enable selection and insertion of emoji characters.",
+  "longDescription": "Enable selection and insertion of emoji characters.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Communication/EmojiPicker",
+      "storyId": "communication-emojipicker",
+      "url": "https://uikit.waysnx.tech/?path=/docs/communication-emojipicker",
+      "stories": [],
+      "tags": [],
+      "source": "EmojiPicker.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use EmojiPicker for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a EmojiPicker"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useState": "unknown",
+    "useMemo": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-comm-emoji-picker__grid",
+    "wx-comm-emoji-picker__categories",
+    "wx-comm-emoji-picker__emoji",
+    "wx-comm-emoji-picker__search"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\EmojiPicker\\EmojiPicker.tsx",
+  "keywords": [
+    "emojipicker",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use EmojiPicker",
+    "Create an example with EmojiPicker",
+    "Generate a EmojiPicker component",
+    "Build a EmojiPicker in my form"
+  ],
+  "componentIntent": "Provide EmojiPicker functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.446002",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "b94ddedd",
+  "metadata": {
+    "purpose": "Enable selection and insertion of emoji characters.",
+    "description": "A component that displays a collection of emojis organized by category with search functionality. Users can browse or search for emojis and select them for insertion into text or forms. Common in chat, messaging, and social applications.",
+    "functionalAreas": [
+      "Communication",
+      "Data Entry"
+    ],
+    "userIntents": [
+      "Find emoji to insert",
+      "Browse emoji categories",
+      "Search emoji by name",
+      "Add personality to messages"
+    ],
+    "exampleUseCases": [
+      "Chat Message Emoji",
+      "Message Reaction",
+      "Comment Emoji",
+      "Emoticon Picker",
+      "Status Emoji",
+      "Post Emoji",
+      "Reaction Selector"
+    ],
+    "useWhen": [
+      "Use this component to enable emoji insertion in messaging.",
+      "Use this component with organized emoji categories.",
+      "Use this component with search functionality for discoverability.",
+      "Use this component in social or communication applications."
+    ],
+    "avoidWhen": [
+      "Avoid this component without clear messaging or social context.",
+      "Avoid this component in formal or professional-only applications.",
+      "Avoid this component without search when many emojis exist.",
+      "Avoid this component for non-text content."
+    ],
+    "relatedComponents": [
+      "ChatInput",
+      "MessageBubble",
+      "ReactionBar"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

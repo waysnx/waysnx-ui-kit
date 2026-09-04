@@ -1,0 +1,56 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "dashboardsidebar",
+    "name": "DashboardSidebar",
+    "package": "@waysnx/ui-dashboard",
+    "export": "DashboardSidebar"
+  },
+  "categories": [
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-defaultCollapsed-false",
+          "title": "Disabled State",
+          "description": "Example with defaultCollapsed enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "defaultCollapsed": false
+          },
+          "keywords": [
+            "defaultCollapsed",
+            "state"
+          ]
+        },
+        {
+          "id": "states-defaultCollapsed-true",
+          "title": "Enabled State",
+          "description": "Example with defaultCollapsed enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "defaultCollapsed": true
+          },
+          "keywords": [
+            "defaultCollapsed",
+            "state"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:45.552224",
+  "stats": {
+    "examplesGenerated": 2,
+    "categoriesGenerated": 1
+  }
+}

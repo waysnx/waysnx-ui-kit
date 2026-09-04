@@ -1,0 +1,369 @@
+{
+  "id": "ui-navigation:megamenu",
+  "name": "MegaMenu",
+  "slug": "mega-menu",
+  "library": "ui-navigation",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Mega Menu",
+  "purpose": "Display large menu with multiple columns and rich content",
+  "shortDescription": "Display large menu with multiple columns and rich content.",
+  "longDescription": "Display large menu with multiple columns and rich content.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Navigation/MegaMenu",
+      "storyId": "navigation-megamenu",
+      "url": "https://uikit.waysnx.tech/?path=/docs/navigation-megamenu",
+      "stories": [],
+      "tags": [],
+      "source": "MegaMenu.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use MegaMenu for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a MegaMenu"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "filterMenuByPermissions": "unknown"
+  },
+  "props": [
+    {
+      "name": "items",
+      "type": "NavigationItem[]",
+      "description": "Items in this section",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "onItemClick",
+      "type": "(item: NavigationItem) => void",
+      "description": "Callback when item is clicked",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "security",
+      "type": "SecurityContext",
+      "description": "Security context for permission-based filtering",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "density",
+      "type": "'compact' | 'normal' | 'spacious'",
+      "description": "Component density",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "variant",
+      "type": "'default' | 'minimal' | 'elevated'",
+      "description": "Theme variant",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "Additional CSS class",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "style",
+      "type": "React.CSSProperties",
+      "description": "Additional styles",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showIcons",
+      "type": "boolean",
+      "description": "Whether to show icons",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showBadges",
+      "type": "boolean",
+      "description": "Whether to show badges",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "keyboardNav",
+      "type": "boolean",
+      "description": "Keyboard navigation enabled",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "Accessible label for menu",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "closeOnItemClick",
+      "type": "boolean",
+      "description": "Close dropdown when item is clicked",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "gridColumns",
+      "type": "2 | 3 | 4",
+      "description": "Number of columns for mega menu grid",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "gridGap",
+      "type": "'sm' | 'md' | 'lg'",
+      "description": "Gap between grid items",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "hoverToOpen",
+      "type": "boolean",
+      "description": "Enable hover to open dropdowns",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "hoverDelay",
+      "type": "number",
+      "description": "Delay in ms before opening dropdown on hover",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onDropdownOpen",
+      "type": "(itemId: string) => void",
+      "description": "Callback when dropdown is opened",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onDropdownClose",
+      "type": "(itemId: string) => void",
+      "description": "Callback when dropdown is closed",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "allowMultipleOpen",
+      "type": "boolean",
+      "description": "Allow multiple dropdowns open simultaneously",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [
+    "forwardRef"
+  ],
+  "contextsUsed": [],
+  "forwardRef": true,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "nav-mega-menu__section-title",
+    "nav-mega-menu__section-list",
+    "nav-mega-menu__link-badge",
+    "nav-mega-menu__section",
+    "nav-mega-menu__link-text",
+    "nav-mega-menu__link-icon",
+    "nav-mega-menu__trigger-icon",
+    "nav-mega-menu__list",
+    "nav-mega-menu__dropdown",
+    "nav-mega-menu__trigger-label",
+    "nav-mega-menu__section-item",
+    "nav-mega-menu__item",
+    "nav-mega-menu__trigger-chevron"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\MegaMenu\\MegaMenu.tsx",
+  "keywords": [
+    "megamenu",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use MegaMenu",
+    "Create an example with MegaMenu",
+    "Generate a MegaMenu component",
+    "Build a MegaMenu in my form"
+  ],
+  "componentIntent": "Provide MegaMenu functionality",
+  "semanticCategory": "navigation",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.242549",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "9a72203a",
+  "metadata": {
+    "purpose": "Display large menu with multiple columns and rich content.",
+    "description": "An expanded menu component that displays many options organized in columns with rich formatting (icons, descriptions, images). Used for primary navigation with many items or complex menu structures. Common in e-commerce and large websites.",
+    "functionalAreas": [
+      "Navigation"
+    ],
+    "userIntents": [
+      "See many navigation options",
+      "Browse grouped menu items",
+      "Find options with descriptions",
+      "See visual menu structure"
+    ],
+    "exampleUseCases": [
+      "E-commerce Navigation",
+      "Large Site Navigation",
+      "Main Menu",
+      "Product Category Menu",
+      "Rich Navigation Menu",
+      "Primary Navigation",
+      "Header Mega Menu"
+    ],
+    "useWhen": [
+      "Use this component for primary navigation with many items.",
+      "Use this component to organize navigation into grouped columns.",
+      "Use this component when rich formatting helps navigation.",
+      "Use this component in large websites or applications."
+    ],
+    "avoidWhen": [
+      "Avoid this component for simple menus (use Menu instead).",
+      "Avoid this component on mobile (use Drawer or simplified menu).",
+      "Avoid this component without proper organization structure.",
+      "Avoid this component when keyboard navigation is critical."
+    ],
+    "relatedComponents": [
+      "Menu",
+      "Drawer",
+      "Navigation"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

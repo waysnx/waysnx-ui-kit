@@ -1,0 +1,48 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "gridpagination",
+    "name": "GridPagination",
+    "package": "@waysnx/ui-grid-builder",
+    "export": "GridPagination"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic",
+          "title": "Basic GridPagination",
+          "description": "Simple GridPagination with default configuration.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "pageIndex": 10,
+            "pageSize": 10,
+            "pageCount": 10,
+            "totalFiltered": 10,
+            "pageSizeOptions": 10,
+            "canNextPage": true,
+            "onPageChange": 10,
+            "onPageSizeChange": 10
+          },
+          "keywords": [
+            "basic",
+            "gridpagination"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:55.274271",
+  "stats": {
+    "examplesGenerated": 1,
+    "categoriesGenerated": 1
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/otpverificationcard.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "OTPVerificationCard Component Complete OTP verification flow container: - OTPInput for entering digits - OTPResendButton for resending - Error/success messages - Status display - Uses @waysnx/ui-layout Card component as base",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "className": {
+      "description": "Custom CSS class",
+      "type": "string"
+    },
+    "description": {
+      "description": "Description/instructions",
+      "type": "string"
+    },
+    "error": {
+      "description": "Error message",
+      "type": "string"
+    },
+    "loading": {
+      "description": "Loading state",
+      "type": "boolean"
+    },
+    "maskedContact": {
+      "description": "Email or phone for display (e.g., \"****1234\")",
+      "type": "string"
+    },
+    "onResend": {
+      "description": "Callback to resend OTP",
+      "enum": [
+        "() => void",
+        "Promise<void>"
+      ]
+    },
+    "onVerify": {
+      "description": "Callback when OTP is complete",
+      "enum": [
+        "(otp: string) => void",
+        "Promise<void>"
+      ]
+    },
+    "otpLength": {
+      "description": "OTP length (default 6)",
+      "type": "number"
+    },
+    "placeholder": {
+      "description": "Show password placeholder",
+      "type": "string"
+    },
+    "resendCountdown": {
+      "description": "Countdown time for resend button",
+      "type": "number"
+    },
+    "success": {
+      "description": "Success message",
+      "type": "string"
+    },
+    "testId": {
+      "description": "Test ID",
+      "type": "string"
+    },
+    "title": {
+      "description": "Title for the card",
+      "type": "string"
+    }
+  },
+  "required": [
+    "onVerify",
+    "onResend"
+  ],
+  "title": "OTPVerificationCard",
+  "type": "object"
+}

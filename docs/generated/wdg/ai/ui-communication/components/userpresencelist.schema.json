@@ -1,0 +1,25 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-communication/userpresencelist.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display list of users with their presence or availability status.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-communication",
+    "version": "1.0.0"
+  },
+  "properties": {},
+  "required": [],
+  "title": "UserPresenceList",
+  "type": "object"
+}

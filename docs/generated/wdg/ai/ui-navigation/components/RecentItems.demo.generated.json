@@ -1,0 +1,190 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "recentitems",
+    "name": "RecentItems",
+    "package": "@waysnx/ui-navigation",
+    "export": "RecentItems"
+  },
+  "categories": [
+    {
+      "id": "sizes",
+      "title": "Sizes",
+      "description": "",
+      "examples": [
+        {
+          "id": "sizes-size-sm",
+          "title": "Size: sm",
+          "description": "Demonstrates the sm size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "sm"
+          },
+          "keywords": [
+            "size",
+            "sm"
+          ]
+        },
+        {
+          "id": "sizes-size-md",
+          "title": "Size: md",
+          "description": "Demonstrates the md size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "md"
+          },
+          "keywords": [
+            "size",
+            "md"
+          ]
+        },
+        {
+          "id": "sizes-size-lg",
+          "title": "Size: lg",
+          "description": "Demonstrates the lg size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "lg"
+          },
+          "keywords": [
+            "size",
+            "lg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-showTypes-false",
+          "title": "Disabled State",
+          "description": "Example with showTypes enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "showTypes": false
+          },
+          "keywords": [
+            "showTypes",
+            "state"
+          ]
+        },
+        {
+          "id": "states-showTypes-true",
+          "title": "Enabled State",
+          "description": "Example with showTypes enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "showTypes": true
+          },
+          "keywords": [
+            "showTypes",
+            "state"
+          ]
+        },
+        {
+          "id": "states-groupByType-false",
+          "title": "Disabled State",
+          "description": "Example with groupByType enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "groupByType": false
+          },
+          "keywords": [
+            "groupByType",
+            "state"
+          ]
+        },
+        {
+          "id": "states-groupByType-true",
+          "title": "Enabled State",
+          "description": "Example with groupByType enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "groupByType": true
+          },
+          "keywords": [
+            "groupByType",
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "variants",
+      "title": "Variants",
+      "description": "",
+      "examples": [
+        {
+          "id": "variants-variant-dropdown",
+          "title": "Variant: dropdown",
+          "description": "Demonstrates the dropdown variant.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "variant": "dropdown"
+          },
+          "keywords": [
+            "variant",
+            "dropdown"
+          ]
+        },
+        {
+          "id": "variants-variant-list",
+          "title": "Variant: list",
+          "description": "Demonstrates the list variant.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "variant": "list"
+          },
+          "keywords": [
+            "variant",
+            "list"
+          ]
+        },
+        {
+          "id": "variants-variant-compact",
+          "title": "Variant: compact",
+          "description": "Demonstrates the compact variant.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "variant": "compact"
+          },
+          "keywords": [
+            "variant",
+            "compact"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:02.707174",
+  "stats": {
+    "examplesGenerated": 10,
+    "categoriesGenerated": 3
+  }
+}

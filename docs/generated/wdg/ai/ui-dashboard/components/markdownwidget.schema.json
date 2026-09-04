@@ -1,0 +1,49 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-dashboard/markdownwidget.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "MarkdownWidget component",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-dashboard",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "content": {
+      "description": "Markdown content",
+      "type": "string"
+    },
+    "id": {
+      "description": "Widget ID",
+      "type": "string"
+    },
+    "style": {
+      "description": "Additional CSS styles",
+      "type": "string"
+    },
+    "title": {
+      "description": "Widget title",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "content"
+  ],
+  "title": "MarkdownWidget",
+  "type": "object"
+}

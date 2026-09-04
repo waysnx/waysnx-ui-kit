@@ -1,0 +1,212 @@
+{
+  "id": "ui-maps:mapview",
+  "name": "MapView",
+  "slug": "map-view",
+  "library": "ui-maps",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Map View",
+  "purpose": "MapView — ADAPTER-BASED map container",
+  "shortDescription": "MapView — ADAPTER-BASED map container. Renders map chrome and controls but does NOT display an interactive map on its...",
+  "longDescription": "MapView — ADAPTER-BASED map container. Renders map chrome and controls but does NOT display an interactive map on its own: `@waysnx/ui-maps` bundles no maps vendor SDK. Connect a maps adapter (e.g. Google Maps / Mapbox / custom) via `MapsProvider` to render real tiles and markers. Until then, an informational placeholder is shown. See the package README \"Adapter / backend requirement\" section.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Maps/MapView",
+      "storyId": "maps-mapview",
+      "url": "https://uikit.waysnx.tech/?path=/docs/maps-mapview",
+      "stories": [],
+      "tags": [],
+      "source": "MapView.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use MapView for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a MapView"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useState": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-adv-map__controls",
+    "wx-adv-map__container"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\MapView\\MapView.tsx",
+  "keywords": [
+    "mapview",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use MapView",
+    "Create an example with MapView",
+    "Generate a MapView component",
+    "Build a MapView in my form"
+  ],
+  "componentIntent": "Provide MapView functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.296295",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "e3dad331",
+  "metadata": {
+    "purpose": "Display interactive map with markers, overlays, and navigation.",
+    "description": "A map display component that renders geographic maps with markers, overlays, and interactive controls. Supports zooming, panning, and marker clustering. Used for location-based features, routing, and geographic visualization.",
+    "functionalAreas": [
+      "Visualization",
+      "Navigation"
+    ],
+    "userIntents": [
+      "View map",
+      "See location",
+      "Navigate map",
+      "Find place"
+    ],
+    "exampleUseCases": [
+      "Location Display",
+      "Store Locator",
+      "Delivery Map",
+      "Route Display",
+      "Geographic Data",
+      "Asset Location",
+      "Service Area Map"
+    ],
+    "useWhen": [
+      "Use this component to display geographic locations and maps.",
+      "Use this component for location-based features.",
+      "Use this component with markers and overlays for points of interest.",
+      "Use this component for route visualization or navigation."
+    ],
+    "avoidWhen": [
+      "Avoid this component without proper map library integration.",
+      "Avoid this component for simple direction display (use Breadcrumb instead).",
+      "Avoid this component without proper API keys or services.",
+      "Avoid this component on devices without map support."
+    ],
+    "relatedComponents": [
+      "LocationPicker",
+      "MapMarker",
+      "RoutePlanner"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

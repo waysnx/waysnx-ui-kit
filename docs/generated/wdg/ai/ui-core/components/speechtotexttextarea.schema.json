@@ -1,0 +1,38 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-core/speechtotexttextarea.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Enable users to enter text through voice input combined with traditional text editing.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-core",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "error": {
+      "description": "",
+      "type": "string"
+    },
+    "hint": {
+      "description": "",
+      "type": "string"
+    },
+    "label": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "title": "SpeechToTextTextarea",
+  "type": "object"
+}

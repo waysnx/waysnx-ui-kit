@@ -1,0 +1,173 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "secureinput",
+    "name": "SecureInput",
+    "package": "@waysnx/ui-security",
+    "export": "SecureInput"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic-placeholder",
+          "title": "With Placeholder",
+          "description": "Shows placeholder text.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "placeholder": "Sample Text"
+          },
+          "keywords": [
+            "placeholder"
+          ]
+        },
+        {
+          "id": "basic-label",
+          "title": "With Label",
+          "description": "Displays with a label.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "label": "Sample Text"
+          },
+          "keywords": [
+            "label"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-maskInput-false",
+          "title": "Disabled State",
+          "description": "Example with maskInput enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "maskInput": false
+          },
+          "keywords": [
+            "maskInput",
+            "state"
+          ]
+        },
+        {
+          "id": "states-maskInput-true",
+          "title": "Enabled State",
+          "description": "Example with maskInput enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "maskInput": true
+          },
+          "keywords": [
+            "maskInput",
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "variants",
+      "title": "Variants",
+      "description": "",
+      "examples": [
+        {
+          "id": "variants-type-text",
+          "title": "Type: text",
+          "description": "Demonstrates the text type.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "type": "text"
+          },
+          "keywords": [
+            "type",
+            "text"
+          ]
+        },
+        {
+          "id": "variants-type-email",
+          "title": "Type: email",
+          "description": "Demonstrates the email type.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "type": "email"
+          },
+          "keywords": [
+            "type",
+            "email"
+          ]
+        },
+        {
+          "id": "variants-type-password",
+          "title": "Type: password",
+          "description": "Demonstrates the password type.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "type": "password"
+          },
+          "keywords": [
+            "type",
+            "password"
+          ]
+        },
+        {
+          "id": "variants-type-url",
+          "title": "Type: url",
+          "description": "Demonstrates the url type.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "type": "url"
+          },
+          "keywords": [
+            "type",
+            "url"
+          ]
+        },
+        {
+          "id": "variants-type-tel",
+          "title": "Type: tel",
+          "description": "Demonstrates the tel type.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "type": "tel"
+          },
+          "keywords": [
+            "type",
+            "tel"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:05.648522",
+  "stats": {
+    "examplesGenerated": 9,
+    "categoriesGenerated": 3
+  }
+}

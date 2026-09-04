@@ -1,0 +1,65 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-visualization/toolbar.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display tool or action buttons for interactive visualizations.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-visualization",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "actions": {
+      "description": "",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "onFitView": {
+      "description": "",
+      "type": "null"
+    },
+    "onResetZoom": {
+      "description": "",
+      "type": "null"
+    },
+    "onZoomIn": {
+      "description": "",
+      "type": "null"
+    },
+    "onZoomOut": {
+      "description": "",
+      "type": "null"
+    },
+    "position": {
+      "description": "",
+      "type": "string"
+    },
+    "showZoom": {
+      "description": "",
+      "type": "boolean"
+    },
+    "zoom": {
+      "description": "",
+      "type": "number"
+    }
+  },
+  "required": [],
+  "title": "Toolbar",
+  "type": "object"
+}

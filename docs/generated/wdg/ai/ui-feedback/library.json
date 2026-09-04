@@ -1,0 +1,101 @@
+{
+  "name": "ui-feedback",
+  "version": "1.0.0",
+  "generatedAt": "2026-09-03T20:02:48.089144",
+  "componentCount": 12,
+  "components": [
+    {
+      "id": "ui-feedback:alert",
+      "name": "Alert",
+      "slug": "alert",
+      "category": "components",
+      "description": "Display a contextual message that requires user attention."
+    },
+    {
+      "id": "ui-feedback:badge",
+      "name": "Badge",
+      "slug": "badge",
+      "category": "components",
+      "description": "Display a small numeric or dot indicator to convey status or count information."
+    },
+    {
+      "id": "ui-feedback:circularprogress",
+      "name": "CircularProgress",
+      "slug": "circularprogress",
+      "category": "components",
+      "description": "Visualize numeric progress in a circular format."
+    },
+    {
+      "id": "ui-feedback:confirmdialog",
+      "name": "ConfirmDialog",
+      "slug": "confirmdialog",
+      "category": "components",
+      "description": "Request explicit user confirmation before performing a consequential action."
+    },
+    {
+      "id": "ui-feedback:drawer",
+      "name": "Drawer",
+      "slug": "drawer",
+      "category": "components",
+      "description": "Display content in a side panel that slides in from the screen edge."
+    },
+    {
+      "id": "ui-feedback:emptystate",
+      "name": "EmptyState",
+      "slug": "emptystate",
+      "category": "components",
+      "description": "Show a clear message when no data is available to display."
+    },
+    {
+      "id": "ui-feedback:modal",
+      "name": "Modal",
+      "slug": "modal",
+      "category": "components",
+      "description": "Display important content in a focused dialog window."
+    },
+    {
+      "id": "ui-feedback:progress",
+      "name": "Progress",
+      "slug": "progress",
+      "category": "components",
+      "description": "Visualize numeric progress as a linear bar."
+    },
+    {
+      "id": "ui-feedback:skeleton",
+      "name": "Skeleton",
+      "slug": "skeleton",
+      "category": "components",
+      "description": "Display a placeholder while content is loading."
+    },
+    {
+      "id": "ui-feedback:spinner",
+      "name": "Spinner",
+      "slug": "spinner",
+      "category": "components",
+      "description": "Show indeterminate progress or loading activity."
+    },
+    {
+      "id": "ui-feedback:toast",
+      "name": "Toast",
+      "slug": "toast",
+      "category": "components",
+      "description": "Display a temporary notification message that auto-dismisses."
+    },
+    {
+      "id": "ui-feedback:tooltip",
+      "name": "Tooltip",
+      "slug": "tooltip",
+      "category": "components",
+      "description": "Display supplementary information when user hovers over an element."
+    }
+  ],
+  "categories": {
+    "components": 12
+  },
+  "statistics": {
+    "totalComponents": 12,
+    "documentsGenerated": 12,
+    "storiesGenerated": 0,
+    "testsGenerated": 0
+  }
+}

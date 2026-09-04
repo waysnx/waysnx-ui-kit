@@ -1,0 +1,100 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-navigation/usermenu.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display user profile and account-related options.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": true,
+    "isMemo": false,
+    "library": "ui-navigation",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "ariaLabel": {
+      "description": "Accessible label",
+      "type": "string"
+    },
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "customTrigger": {
+      "description": "Custom trigger element",
+      "type": "string"
+    },
+    "headerContent": {
+      "description": "Custom header content",
+      "type": "string"
+    },
+    "items": {
+      "description": "Menu items",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "menuWidth": {
+      "description": "Menu width",
+      "enum": [
+        "string",
+        "number"
+      ]
+    },
+    "onClose": {
+      "description": "Callback when menu closes",
+      "type": "null"
+    },
+    "onOpen": {
+      "description": "Callback when menu opens",
+      "type": "null"
+    },
+    "position": {
+      "description": "Menu position relative to trigger",
+      "enum": [
+        "left",
+        "right"
+      ]
+    },
+    "showStatus": {
+      "description": "Show status indicator",
+      "type": "boolean"
+    },
+    "showTrigger": {
+      "description": "Show trigger button",
+      "type": "boolean"
+    },
+    "showUserInfo": {
+      "description": "Show user info header",
+      "type": "boolean"
+    },
+    "style": {
+      "description": "Additional styles",
+      "type": "string"
+    },
+    "trigger": {
+      "description": "Trigger button trigger ('hover' or 'click')",
+      "enum": [
+        "hover",
+        "click"
+      ]
+    },
+    "user": {
+      "description": "User information",
+      "type": "string"
+    }
+  },
+  "required": [
+    "user"
+  ],
+  "title": "UserMenu",
+  "type": "object"
+}

@@ -1,0 +1,185 @@
+{
+  "name": "ui-core",
+  "version": "1.0.0",
+  "generatedAt": "2026-09-03T20:02:40.533878",
+  "componentCount": 24,
+  "components": [
+    {
+      "id": "ui-core:autocomplete",
+      "name": "Autocomplete",
+      "slug": "autocomplete",
+      "category": "components",
+      "description": "Enable users to search and select from a filtered list of options as they type."
+    },
+    {
+      "id": "ui-core:button",
+      "name": "Button",
+      "slug": "button",
+      "category": "components",
+      "description": "Enable users to trigger actions by pressing a clickable element."
+    },
+    {
+      "id": "ui-core:checkbox",
+      "name": "Checkbox",
+      "slug": "checkbox",
+      "category": "components",
+      "description": "Allow users to select one or more options from a list of independent choices."
+    },
+    {
+      "id": "ui-core:currency",
+      "name": "Currency",
+      "slug": "currency",
+      "category": "components",
+      "description": "Collect and display monetary amounts with automatic currency formatting."
+    },
+    {
+      "id": "ui-core:datepicker",
+      "name": "DatePicker",
+      "slug": "datepicker",
+      "category": "components",
+      "description": "Enable users to select a specific date through an interactive calendar interface."
+    },
+    {
+      "id": "ui-core:daterangepicker",
+      "name": "DateRangePicker",
+      "slug": "daterangepicker",
+      "category": "components",
+      "description": "Enable users to select a start and end date range through an interactive calendar."
+    },
+    {
+      "id": "ui-core:datetimepicker",
+      "name": "DateTimePicker",
+      "slug": "datetimepicker",
+      "category": "components",
+      "description": "Enable users to select a specific date and time through an interactive calendar interface."
+    },
+    {
+      "id": "ui-core:errormessage",
+      "name": "ErrorMessage",
+      "slug": "errormessage",
+      "category": "components",
+      "description": "Display error messages to users with prominent visual and semantic prominence."
+    },
+    {
+      "id": "ui-core:fileupload",
+      "name": "FileUpload",
+      "slug": "fileupload",
+      "category": "components",
+      "description": "Enable users to upload files with drag-and-drop support and validation."
+    },
+    {
+      "id": "ui-core:hidden",
+      "name": "Hidden",
+      "slug": "hidden",
+      "category": "components",
+      "description": "Store and submit form field values that should not be visible to users."
+    },
+    {
+      "id": "ui-core:htmlcontent",
+      "name": "HtmlContent",
+      "slug": "htmlcontent",
+      "category": "components",
+      "description": "Display sanitized HTML content safely within the application interface."
+    },
+    {
+      "id": "ui-core:htmleditor",
+      "name": "HtmlEditor",
+      "slug": "htmleditor",
+      "category": "components",
+      "description": "Enable users to create and format HTML content with a visual text editor toolbar."
+    },
+    {
+      "id": "ui-core:iframe",
+      "name": "IFrame",
+      "slug": "iframe",
+      "category": "components",
+      "description": "Secure-by-default sandbox policy. Supports the documented use cases (embedded video, maps, forms, third-party widgets) while keeping the frame isolated. `allow-same-origin` is deliberately omitted because combining it with `allow-scripts` would let the framed document script its way out of the sandbox."
+    },
+    {
+      "id": "ui-core:image",
+      "name": "Image",
+      "slug": "image",
+      "category": "components",
+      "description": "Display images with responsive sizing, fallback handling, and accessibility support."
+    },
+    {
+      "id": "ui-core:input",
+      "name": "Input",
+      "slug": "input",
+      "category": "components",
+      "description": "Collect single-line text and numeric input from users with validation and formatting support."
+    },
+    {
+      "id": "ui-core:link",
+      "name": "Link",
+      "slug": "link",
+      "category": "components",
+      "description": "Navigate users to a different page or external resource via a clickable text link."
+    },
+    {
+      "id": "ui-core:radio",
+      "name": "Radio",
+      "slug": "radio",
+      "category": "components",
+      "description": "Enable users to select exactly one option from a list of mutually exclusive choices."
+    },
+    {
+      "id": "ui-core:select",
+      "name": "Select",
+      "slug": "select",
+      "category": "components",
+      "description": "Enable users to select one or more options from a dropdown list with optional search."
+    },
+    {
+      "id": "ui-core:slider",
+      "name": "Slider",
+      "slug": "slider",
+      "category": "components",
+      "description": "Enable users to select a numeric value from a continuous range using a draggable control."
+    },
+    {
+      "id": "ui-core:speechtotexttextarea",
+      "name": "SpeechToTextTextarea",
+      "slug": "speechtotexttextarea",
+      "category": "components",
+      "description": "Enable users to enter text through voice input combined with traditional text editing."
+    },
+    {
+      "id": "ui-core:switch",
+      "name": "Switch",
+      "slug": "switch",
+      "category": "components",
+      "description": "Enable users to toggle a setting or feature on or off with a visual switch."
+    },
+    {
+      "id": "ui-core:textarea",
+      "name": "Textarea",
+      "slug": "textarea",
+      "category": "components",
+      "description": "Collect multi-line text input from users with optional length limits and formatting."
+    },
+    {
+      "id": "ui-core:timepicker",
+      "name": "TimePicker",
+      "slug": "timepicker",
+      "category": "components",
+      "description": "Enable users to select a specific time through a time picker interface."
+    },
+    {
+      "id": "ui-core:tree",
+      "name": "Tree",
+      "slug": "tree",
+      "category": "components",
+      "description": "Display hierarchical data with expandable nodes and checkboxes for selection."
+    }
+  ],
+  "categories": {
+    "components": 24
+  },
+  "statistics": {
+    "totalComponents": 24,
+    "documentsGenerated": 24,
+    "storiesGenerated": 0,
+    "testsGenerated": 0
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "id": "ui-communication:conversationlist",
+  "name": "ConversationList",
+  "slug": "conversation-list",
+  "library": "ui-communication",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Conversation List",
+  "purpose": "Display a list of conversations for quick access",
+  "shortDescription": "Display a list of conversations for quick access.",
+  "longDescription": "Display a list of conversations for quick access.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Communication/ConversationList",
+      "storyId": "communication-conversationlist",
+      "url": "https://uikit.waysnx.tech/?path=/docs/communication-conversationlist",
+      "stories": [],
+      "tags": [],
+      "source": "ConversationList.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use ConversationList for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a ConversationList"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useState": "unknown",
+    "useMemo": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-comm-conversation-list__search",
+    "wx-comm-conversation-list__search-icon",
+    "wx-comm-conversation-item__badge",
+    "wx-comm-conversation-list__filters",
+    "wx-comm-conversation-list__items",
+    "wx-comm-conversation-item__title",
+    "wx-comm-conversation-item__time",
+    "wx-comm-conversation-item__avatar",
+    "wx-comm-conversation-item__content",
+    "wx-comm-conversation-list__header",
+    "wx-comm-conversation-item__meta",
+    "wx-comm-conversation-item__preview",
+    "--wx-color-text-muted"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\ConversationList\\ConversationList.tsx",
+  "keywords": [
+    "conversationlist",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use ConversationList",
+    "Create an example with ConversationList",
+    "Generate a ConversationList component",
+    "Build a ConversationList in my form"
+  ],
+  "componentIntent": "Provide ConversationList functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.438356",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "b0923fb2",
+  "metadata": {
+    "purpose": "Display a list of conversations for quick access.",
+    "description": "A sidebar or panel component that shows a list of conversations, chats, or discussion threads. Typically shows the most recent message, participant names, unread count, and timestamp. Enables quick switching between conversations.",
+    "functionalAreas": [
+      "Communication",
+      "Navigation"
+    ],
+    "userIntents": [
+      "See all conversations",
+      "Switch between chats",
+      "Know unread messages count",
+      "Find conversations quickly"
+    ],
+    "exampleUseCases": [
+      "Chat List",
+      "Conversation Sidebar",
+      "Message Thread List",
+      "Discussion Threads",
+      "Direct Message List",
+      "Channel List",
+      "Recent Conversations"
+    ],
+    "useWhen": [
+      "Use this component to show list of conversations for selection.",
+      "Use this component in chat applications with multiple conversations.",
+      "Use this component with unread message indicators.",
+      "Use this component to enable quick context switching."
+    ],
+    "avoidWhen": [
+      "Avoid this component without clear conversation context.",
+      "Avoid this component for single conversation (show ChatWindow instead).",
+      "Avoid this component without search or filtering for many conversations.",
+      "Avoid this component without recent message preview."
+    ],
+    "relatedComponents": [
+      "ChatWindow",
+      "MessageBubble",
+      "UserPresenceList"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

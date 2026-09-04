@@ -1,0 +1,216 @@
+{
+  "id": "ui-maps:addressautocomplete",
+  "name": "AddressAutocomplete",
+  "slug": "address-autocomplete",
+  "library": "ui-maps",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Address Autocomplete",
+  "purpose": "Enable rapid address input with autocomplete suggestions",
+  "shortDescription": "Enable rapid address input with autocomplete suggestions.",
+  "longDescription": "Enable rapid address input with autocomplete suggestions.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Maps/AddressAutocomplete",
+      "storyId": "maps-addressautocomplete",
+      "url": "https://uikit.waysnx.tech/?path=/docs/maps-addressautocomplete",
+      "stories": [],
+      "tags": [],
+      "source": "AddressAutocomplete.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use AddressAutocomplete for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a AddressAutocomplete"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useState": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-adv-address-selector__suggestion-item",
+    "wx-adv-address-selector__suggestion-icon",
+    "wx-adv-address-selector__input",
+    "wx-adv-address-selector__icon",
+    "wx-adv-address-selector__suggestions",
+    "--wx-color-text-muted"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\AddressAutocomplete\\AddressAutocomplete.tsx",
+  "keywords": [
+    "addressautocomplete",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use AddressAutocomplete",
+    "Create an example with AddressAutocomplete",
+    "Generate a AddressAutocomplete component",
+    "Build a AddressAutocomplete in my form"
+  ],
+  "componentIntent": "Provide AddressAutocomplete functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.243258",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "c0750219",
+  "metadata": {
+    "purpose": "Enable rapid address input with autocomplete suggestions.",
+    "description": "A text input component that suggests addresses as the user types, using geocoding services. Integrates with location services to validate and standardize addresses. Common in delivery, booking, and location-based applications.",
+    "functionalAreas": [
+      "Data Entry",
+      "Navigation"
+    ],
+    "userIntents": [
+      "Enter address quickly",
+      "See address suggestions",
+      "Autocomplete address",
+      "Validate address"
+    ],
+    "exampleUseCases": [
+      "Delivery Address Input",
+      "Pickup Location",
+      "Shipping Address",
+      "Event Location",
+      "Place Search",
+      "Store Finder",
+      "Address Entry"
+    ],
+    "useWhen": [
+      "Use this component for address input with autocomplete.",
+      "Use this component with geocoding service integration.",
+      "Use this component to improve address accuracy and speed.",
+      "Use this component in delivery or booking applications."
+    ],
+    "avoidWhen": [
+      "Avoid this component without geocoding service.",
+      "Avoid this component for simple text input.",
+      "Avoid this component without address database.",
+      "Avoid this component on offline-only applications."
+    ],
+    "relatedComponents": [
+      "LocationPicker",
+      "AddressSelector",
+      "MapView"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

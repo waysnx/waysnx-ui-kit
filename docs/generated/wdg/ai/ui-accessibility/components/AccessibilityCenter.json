@@ -1,0 +1,476 @@
+{
+  "id": "ui-accessibility:accessibilitycenter",
+  "name": "AccessibilityCenter",
+  "slug": "accessibility-center",
+  "library": "ui-accessibility",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Accessibility Center",
+  "purpose": "AccessibilityCenter Component The main UI for accessibility settings",
+  "shortDescription": "AccessibilityCenter Component The main UI for accessibility settings",
+  "longDescription": "AccessibilityCenter Component The main UI for accessibility settings",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Accessibility/AccessibilityCenter",
+      "storyId": "accessibility-accessibilitycenter",
+      "url": "https://uikit.waysnx.tech/?path=/docs/accessibility-accessibilitycenter",
+      "stories": [],
+      "tags": [],
+      "source": "AccessibilityCenter.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use AccessibilityCenter for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a AccessibilityCenter"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "FloatingButton"
+    ],
+    "usedBy": [],
+    "related": [
+      "AccessibilityCenterProps",
+      "FloatingButton"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": [
+      "FloatingButton"
+    ]
+  },
+  "dependencies": {
+    "useAccessibility": "unknown",
+    "AccessibilityCenterProps": "unknown",
+    "FloatingButton": "unknown",
+    "useTranslation": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [
+    "forwardRef"
+  ],
+  "contextsUsed": [],
+  "forwardRef": true,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-primary",
+    "--wx-color-primary-contrast",
+    "--wx-color-primary-hover",
+    "--wx-color-primary-light",
+    "--wx-color-surface",
+    "--wx-color-surface-alt",
+    "--wx-color-surface-hover",
+    "--wx-color-text",
+    "--wx-color-text-muted",
+    "--wx-font-family",
+    "--wx-font-size-lg",
+    "--wx-font-size-md",
+    "--wx-font-size-sm",
+    "--wx-font-size-xs"
+  ],
+  "cssClasses": [
+    "wx-accessibility-center",
+    "wx-accessibility-panel",
+    "wx-position-bottom-right",
+    "wx-position-bottom-left",
+    "wx-position-top-right",
+    "wx-position-top-left",
+    "wx-accessibility-panel-always-visible",
+    "wx-accessibility-center-content",
+    "wx-a11y-tabs",
+    "wx-a11y-tab",
+    "wx-a11y-tab-active",
+    "wx-a11y-tab-content",
+    "wx-a11y-section-subtitle",
+    "wx-quick-actions-grid",
+    "wx-quick-action-btn",
+    "wx-a11y-section",
+    "wx-a11y-section-title",
+    "wx-profile-display",
+    "wx-profile-name",
+    "wx-quick-actions",
+    "wx-active",
+    "wx-settings-panel",
+    "wx-setting",
+    "wx-settings-checkboxes",
+    "wx-setting-checkbox",
+    "wx-select",
+    "wx-score",
+    "wx-score-circle",
+    "wx-accessibility-drawer-backdrop",
+    "wx-accessibility-drawer",
+    "wx-accessibility-modal-backdrop",
+    "wx-accessibility-modal",
+    "wx-accessibility-modal-header",
+    "wx-accessibility-modal-close",
+    "wx-accessibility-modal-body"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {
+    "--wx-font-family": {
+      "properties": [
+        "font-family"
+      ],
+      "selectors": [
+        ".wx-accessibility-center"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-sm": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-a11y-tab",
+        ".wx-a11y-section-subtitle",
+        ".wx-profile-name",
+        ".wx-setting label",
+        ".wx-setting-checkbox",
+        ".wx-select",
+        ".wx-score p"
+      ],
+      "occurrences": 7,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-md": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-a11y-section-title"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-xs": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-quick-action-btn"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-lg": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-accessibility-modal-header h2"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {
+    "--wx-color-surface": {
+      "properties": [
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-accessibility-panel",
+        ".wx-quick-action-btn",
+        ".wx-select",
+        ".wx-accessibility-drawer",
+        ".wx-accessibility-modal",
+        ".wx-accessibility-modal-header"
+      ],
+      "occurrences": 6,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-border": {
+      "properties": [
+        "border",
+        "border-bottom"
+      ],
+      "selectors": [
+        ".wx-accessibility-panel",
+        ".wx-a11y-tabs",
+        ".wx-profile-display",
+        ".wx-quick-action-btn",
+        ".wx-select",
+        ".wx-accessibility-modal-header"
+      ],
+      "occurrences": 7,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-a11y-tab",
+        ".wx-a11y-section-subtitle",
+        ".wx-score p",
+        ".wx-accessibility-modal-close"
+      ],
+      "occurrences": 4,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text": {
+      "properties": [
+        "color",
+        "border"
+      ],
+      "selectors": [
+        ".wx-a11y-tab:hover",
+        ".wx-a11y-section-title",
+        ".wx-profile-name",
+        ".wx-quick-action-btn",
+        ".wx-setting label",
+        ".wx-setting-checkbox",
+        ".wx-select",
+        ".}\n\n\n@media (prefers-contrast: more)",
+        ".wx-accessibility-modal-header h2"
+      ],
+      "occurrences": 9,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary": {
+      "properties": [
+        "outline",
+        "color",
+        "border-bottom-color",
+        "border-color",
+        "accent-color",
+        "background"
+      ],
+      "selectors": [
+        ".wx-a11y-tab:focus-visible",
+        ".wx-a11y-tab-active",
+        ".wx-quick-action-btn:hover",
+        ".wx-quick-action-btn:focus-visible",
+        ".wx-quick-action-btn.wx-active",
+        ".wx-select:hover",
+        ".wx-select:focus-visible",
+        ".wx-setting input[type='checkbox']",
+        ".wx-score-circle",
+        ".wx-accessibility-modal-close:focus-visible"
+      ],
+      "occurrences": 13,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface-alt": {
+      "properties": [
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-profile-display",
+        ".wx-score"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface-hover": {
+      "properties": [
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-quick-action-btn:hover",
+        ".wx-accessibility-modal-close:hover"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary-light": {
+      "properties": [
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-quick-action-btn.wx-active"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary-hover": {
+      "properties": [],
+      "selectors": [
+        ".wx-score-circle"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary-contrast": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-score-circle"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\AccessibilityCenter\\AccessibilityCenter.tsx",
+  "keywords": [
+    "accessibilitycenter",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use AccessibilityCenter",
+    "Create an example with AccessibilityCenter",
+    "Generate a AccessibilityCenter component",
+    "Build a AccessibilityCenter in my form"
+  ],
+  "componentIntent": "Provide AccessibilityCenter functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.156112",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "ffabc3da",
+  "metadata": {
+    "purpose": "Centralize accessibility settings and controls.",
+    "description": "A control panel or settings area where users can manage accessibility features (magnification, high contrast, reading guides, font size, etc.). Provides centralized access to all accessibility options for power users.",
+    "functionalAreas": [
+      "Accessibility",
+      "Configuration"
+    ],
+    "userIntents": [
+      "Control accessibility features",
+      "Adjust settings",
+      "Enable/disable aids",
+      "Customize experience"
+    ],
+    "exampleUseCases": [
+      "Accessibility Settings",
+      "A11y Control Panel",
+      "Accessibility Menu",
+      "Feature Settings",
+      "Accessibility Preferences",
+      "Settings Panel",
+      "Control Center"
+    ],
+    "useWhen": [
+      "Use this component to centralize accessibility features.",
+      "Use this component when multiple accessibility tools are available.",
+      "Use this component with clear organization and descriptions.",
+      "Use this component with persistent settings storage."
+    ],
+    "avoidWhen": [
+      "Avoid this component without multiple accessibility features.",
+      "Avoid this component with complex or confusing organization.",
+      "Avoid this component without clear feature descriptions.",
+      "Avoid this component without proper keyboard navigation."
+    ],
+    "relatedComponents": [
+      "Settings",
+      "Magnifier",
+      "ReadingGuide",
+      "SkipLinks"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

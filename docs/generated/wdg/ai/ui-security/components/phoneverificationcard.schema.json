@@ -1,0 +1,99 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/phoneverificationcard.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Callback to resend verification code",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "className": {
+      "description": "Custom CSS class",
+      "type": "string"
+    },
+    "description": {
+      "description": "Description/instructions",
+      "type": "string"
+    },
+    "error": {
+      "description": "Error message",
+      "type": "string"
+    },
+    "flow": {
+      "description": "",
+      "enum": [
+        "phone' or 'otp'\n   */\n  step?: 'phone",
+        "otp"
+      ]
+    },
+    "loading": {
+      "description": "Loading state",
+      "type": "boolean"
+    },
+    "onResendCode": {
+      "description": "Callback to resend verification code",
+      "enum": [
+        "() => void",
+        "Promise<void>"
+      ]
+    },
+    "onSubmitPhone": {
+      "description": "Callback when phone number is submitted",
+      "enum": [
+        "(phone: string) => void",
+        "Promise<void>"
+      ]
+    },
+    "onVerifyOTP": {
+      "description": "Callback when OTP is verified",
+      "enum": [
+        "(otp: string) => void",
+        "Promise<void>"
+      ]
+    },
+    "otpLength": {
+      "description": "OTP length",
+      "type": "number"
+    },
+    "phoneNumber": {
+      "description": "Phone number (for step 2)",
+      "type": "string"
+    },
+    "resendCountdown": {
+      "description": "Countdown time for resend",
+      "type": "number"
+    },
+    "success": {
+      "description": "Success message",
+      "type": "string"
+    },
+    "testId": {
+      "description": "Test ID",
+      "type": "string"
+    },
+    "title": {
+      "description": "Title for the card",
+      "type": "string"
+    }
+  },
+  "required": [
+    "flow",
+    "onSubmitPhone",
+    "onVerifyOTP",
+    "onResendCode"
+  ],
+  "title": "PhoneVerificationCard",
+  "type": "object"
+}

@@ -1,0 +1,316 @@
+{
+  "id": "ui-navigation:notificationcenter",
+  "name": "NotificationCenter",
+  "slug": "notification-center",
+  "library": "ui-navigation",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Notification Center",
+  "purpose": "Display and manage system notifications in a centralized location",
+  "shortDescription": "Display and manage system notifications in a centralized location.",
+  "longDescription": "Display and manage system notifications in a centralized location.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Navigation/NotificationCenter",
+      "storyId": "navigation-notificationcenter",
+      "url": "https://uikit.waysnx.tech/?path=/docs/navigation-notificationcenter",
+      "stories": [],
+      "tags": [],
+      "source": "NotificationCenter.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use NotificationCenter for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a NotificationCenter"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "notifications",
+      "type": "Notification[]",
+      "description": "List of notifications",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onMarkAsRead",
+      "type": "(notificationId: string) => void",
+      "description": "Callback when notification is read",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onDelete",
+      "type": "(notificationId: string) => void",
+      "description": "Callback when notification is deleted",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onMarkAllAsRead",
+      "type": "() => void",
+      "description": "Callback when all notifications are marked as read",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onClearAll",
+      "type": "() => void",
+      "description": "Callback when all notifications are cleared",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showBadge",
+      "type": "boolean",
+      "description": "Show unread count badge",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "trigger",
+      "type": "'hover' | 'click'",
+      "description": "Trigger button trigger ('hover' or 'click')",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "maxNotifications",
+      "type": "number",
+      "description": "Max notifications to display",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showCategories",
+      "type": "boolean",
+      "description": "Show notification categories",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "categories",
+      "type": "Array<{ id: string",
+      "description": "Available categories for filtering",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [
+    "forwardRef"
+  ],
+  "contextsUsed": [],
+  "forwardRef": true,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "notification-center__empty",
+    "notification-center__item-action",
+    "notification-center__header",
+    "notification-center__item-avatar",
+    "notification-center__clear-all",
+    "notification-center__item-time",
+    "notification-center__item-close",
+    "notification-center__item-icon-default",
+    "notification-center__trigger",
+    "notification-center__icon",
+    "notification-center__item-icon",
+    "notification-center__categories",
+    "notification-center__title",
+    "notification-center__item-title",
+    "notification-center__footer",
+    "notification-center__category-icon",
+    "notification-center__footer-info",
+    "notification-center__item-content",
+    "notification-center__mark-all",
+    "notification-center__list",
+    "notification-center__badge",
+    "notification-center__item-message"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\NotificationCenter\\NotificationCenter.tsx",
+  "keywords": [
+    "label",
+    "notificationcenter",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use NotificationCenter",
+    "Create an example with NotificationCenter",
+    "Generate a NotificationCenter component",
+    "Build a NotificationCenter in my form"
+  ],
+  "componentIntent": "Provide NotificationCenter functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.274011",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "1f62ee26",
+  "metadata": {
+    "purpose": "Display and manage system notifications in a centralized location.",
+    "description": "A dedicated notification hub that collects all system notifications, alerts, and messages in one place. Provides filtering, sorting, and clearing options to help users manage notifications. Often includes notification count badge and quick action buttons.",
+    "functionalAreas": [
+      "Navigation",
+      "Communication"
+    ],
+    "userIntents": [
+      "See all notifications",
+      "Review past notifications",
+      "Filter notifications by type",
+      "Clear or dismiss notifications"
+    ],
+    "exampleUseCases": [
+      "System Notifications Hub",
+      "Message Center",
+      "Alert Center",
+      "Notification Inbox",
+      "Activity Feed",
+      "Notification Management",
+      "System Alert Panel"
+    ],
+    "useWhen": [
+      "Use this component to centralize notification management.",
+      "Use this component when system sends frequent notifications.",
+      "Use this component to provide notification history and filtering.",
+      "Use this component for complex notification scenarios."
+    ],
+    "avoidWhen": [
+      "Avoid this component for simple, infrequent notifications (use Toast instead).",
+      "Avoid this component without clear notification history needs.",
+      "Avoid this component for time-sensitive alerts (show prominently).",
+      "Avoid this component without filtering or organization options."
+    ],
+    "relatedComponents": [
+      "Toast",
+      "Alert",
+      "Badge"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

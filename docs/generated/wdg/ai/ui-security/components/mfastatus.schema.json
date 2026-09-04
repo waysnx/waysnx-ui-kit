@@ -1,0 +1,50 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/mfastatus.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "MFAStatus - Display MFA configuration status",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "allowDisable": {
+      "description": "Allow disabling MFA",
+      "type": "boolean"
+    },
+    "config": {
+      "description": "Current MFA configuration",
+      "type": "string"
+    },
+    "isLoading": {
+      "description": "Whether operations are loading",
+      "type": "boolean"
+    },
+    "onChangeMethod": {
+      "description": "Callback to change MFA method",
+      "type": "null"
+    },
+    "onDisable": {
+      "description": "Callback to disable MFA",
+      "type": "null"
+    },
+    "onEnable": {
+      "description": "Callback to enable MFA",
+      "type": "null"
+    }
+  },
+  "required": [],
+  "title": "MFAStatus",
+  "type": "object"
+}

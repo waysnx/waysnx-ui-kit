@@ -1,0 +1,31 @@
+{
+  "name": "ui-files",
+  "version": "1.0.0",
+  "generatedAt": "2026-09-03T20:02:35.695030",
+  "componentCount": 2,
+  "components": [
+    {
+      "id": "ui-files:documentpreview",
+      "name": "DocumentPreview",
+      "slug": "documentpreview",
+      "category": "components",
+      "description": "Display documents and files with automatic type detection and appropriate viewers."
+    },
+    {
+      "id": "ui-files:pdfviewer",
+      "name": "PDFViewer",
+      "slug": "pdfviewer",
+      "category": "components",
+      "description": "PDFViewer — SHELL / ADAPTER (not a functional PDF renderer in 1.0.0). This component provides the viewer chrome (toolbar layout, zoom controls, accessible region) but does NOT render PDF page content. To display real pages, integrate a rendering engine such as PDF.js and draw into the content area below. Because no document is parsed, page count and per-page navigation are intentionally not provided — the previous build reported a hard-coded placeholder page count, which has been removed to avoid implying real rendering. The `src` prop is surfaced in the UI so integrators can confirm the value is wired through, but it is not fetched or parsed by this shell."
+    }
+  ],
+  "categories": {
+    "components": 2
+  },
+  "statistics": {
+    "totalComponents": 2,
+    "documentsGenerated": 2,
+    "storiesGenerated": 0,
+    "testsGenerated": 0
+  }
+}

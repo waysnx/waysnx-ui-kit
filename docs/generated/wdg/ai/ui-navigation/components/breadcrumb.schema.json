@@ -1,0 +1,71 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-navigation/breadcrumb.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display the current navigation path and enable quick navigation to parent levels.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": true,
+    "isMemo": false,
+    "library": "ui-navigation",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "ariaLabel": {
+      "description": "Aria label for the breadcrumb nav",
+      "type": "string"
+    },
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "items": {
+      "description": "Breadcrumb items to display",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "maxItems": {
+      "description": "Maximum items to show before truncation",
+      "type": "number"
+    },
+    "onItemClick": {
+      "description": "Callback when breadcrumb item is clicked",
+      "type": "null"
+    },
+    "separator": {
+      "description": "Separator between items",
+      "type": "string"
+    },
+    "showActive": {
+      "description": "Whether to show the last item as active",
+      "type": "boolean"
+    },
+    "size": {
+      "description": "Size of breadcrumb",
+      "enum": [
+        "sm",
+        "md",
+        "lg"
+      ]
+    },
+    "style": {
+      "description": "Additional styles",
+      "type": "string"
+    }
+  },
+  "required": [
+    "items"
+  ],
+  "title": "Breadcrumb",
+  "type": "object"
+}

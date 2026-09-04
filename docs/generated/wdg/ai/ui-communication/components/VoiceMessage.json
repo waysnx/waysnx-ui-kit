@@ -1,0 +1,226 @@
+{
+  "id": "ui-communication:voicemessage",
+  "name": "VoiceMessage",
+  "slug": "voice-message",
+  "library": "ui-communication",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Voice Message",
+  "purpose": "Display and play audio/voice messages in chat or messaging",
+  "shortDescription": "Display and play audio/voice messages in chat or messaging.",
+  "longDescription": "Display and play audio/voice messages in chat or messaging.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Communication/VoiceMessage",
+      "storyId": "communication-voicemessage",
+      "url": "https://uikit.waysnx.tech/?path=/docs/communication-voicemessage",
+      "stories": [],
+      "tags": [],
+      "source": "VoiceMessage.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use VoiceMessage for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a VoiceMessage"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useState": "unknown",
+    "useMemo": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-comm-voice-message__play-btn",
+    "wx-comm-voice-message__waveform",
+    "wx-comm-voice-message__duration"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\VoiceMessage\\VoiceMessage.tsx",
+  "keywords": [
+    "voicemessage",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use VoiceMessage",
+    "Create an example with VoiceMessage",
+    "Generate a VoiceMessage component",
+    "Build a VoiceMessage in my form"
+  ],
+  "componentIntent": "Provide VoiceMessage functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.533205",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "4890f802",
+  "metadata": {
+    "purpose": "Display and play audio/voice messages in chat or messaging.",
+    "description": "A component for rendering audio messages with a playback control and visual waveform or progress indicator. Typically includes play/pause button, duration, and often integrates with message bubbles. Used in messaging and communication apps.",
+    "functionalAreas": [
+      "Communication",
+      "Visualization"
+    ],
+    "userIntents": [
+      "Play voice message",
+      "See message duration",
+      "Control playback",
+      "Know message content"
+    ],
+    "exampleUseCases": [
+      "Voice Message Player",
+      "Audio Message",
+      "Voice Note",
+      "Chat Audio",
+      "Message Audio",
+      "Voice Recording Playback",
+      "Audio Clip Display"
+    ],
+    "useWhen": [
+      "Use this component to display playable voice or audio messages.",
+      "Use this component in messaging applications with audio support.",
+      "Use this component with progress indication and playback controls.",
+      "Use this component with message information (sender, time)."
+    ],
+    "avoidWhen": [
+      "Avoid this component without audio file support.",
+      "Avoid this component for non-message audio content (use AudioPlayer instead).",
+      "Avoid this component without proper audio playback implementation.",
+      "Avoid this component on devices without audio capabilities."
+    ],
+    "relatedComponents": [
+      "MessageBubble",
+      "ChatWindow",
+      "AudioPlayer"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

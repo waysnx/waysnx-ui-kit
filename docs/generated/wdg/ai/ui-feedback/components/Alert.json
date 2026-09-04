@@ -1,0 +1,362 @@
+{
+  "id": "ui-feedback:alert",
+  "name": "Alert",
+  "slug": "alert",
+  "library": "ui-feedback",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Alert",
+  "purpose": "Display a contextual message that requires user attention",
+  "shortDescription": "Display a contextual message that requires user attention.",
+  "longDescription": "Display a contextual message that requires user attention.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Alert for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Alert"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [
+      "ChangePasswordForm",
+      "DeviceVerificationDialog",
+      "EmailVerificationCard",
+      "ForgotPasswordForm",
+      "OTPVerificationCard",
+      "PhoneVerificationCard"
+    ],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [
+      "ChangePasswordForm",
+      "DeviceVerificationDialog",
+      "EmailVerificationCard",
+      "ForgotPasswordForm",
+      "OTPVerificationCard",
+      "PhoneVerificationCard"
+    ],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown"
+  },
+  "props": [
+    {
+      "name": "type",
+      "type": "'info' | 'success' | 'warning' | 'error'",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-error-hover",
+    "--wx-color-error-light",
+    "--wx-font-size-sm",
+    "--wx-info-info-bg",
+    "--wx-info-info-text",
+    "--wx-info-success-bg",
+    "--wx-info-success-text",
+    "--wx-info-warning-bg",
+    "--wx-info-warning-text"
+  ],
+  "cssClasses": [
+    "wx-alert",
+    "wx-alert-info",
+    "wx-alert-success",
+    "wx-alert-warning",
+    "wx-alert-error"
+  ],
+  "designTokens": {
+    "other": {
+      "--wx-info-info-bg": {
+        "properties": [
+          "background"
+        ],
+        "selectors": [
+          ".wx-alert-info"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--wx-info-info-text": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".wx-alert-info"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--wx-info-success-bg": {
+        "properties": [
+          "background"
+        ],
+        "selectors": [
+          ".wx-alert-success"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--wx-info-success-text": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".wx-alert-success"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--wx-info-warning-bg": {
+        "properties": [
+          "background"
+        ],
+        "selectors": [
+          ".wx-alert-warning"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--wx-info-warning-text": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".wx-alert-warning"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      }
+    }
+  },
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {
+    "--wx-font-size-sm": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-alert"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {
+    "--wx-color-error-light": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-alert-error"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error-hover": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-alert-error"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Alert\\Alert.tsx",
+  "keywords": [
+    "alert",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Alert",
+    "Create an example with Alert",
+    "Generate a Alert component",
+    "Build a Alert in my form"
+  ],
+  "componentIntent": "Display alerting messages",
+  "semanticCategory": "feedback",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.899555",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "1ce2ec8d",
+  "metadata": {
+    "purpose": "Display a contextual message that requires user attention.",
+    "description": "A container for communicating important information with semantic styling that indicates the message type. Supports multiple severity levels (info, success, warning, error) to help users understand the nature and importance of the message. Commonly used for feedback, status updates, and system notifications.",
+    "functionalAreas": [
+      "Feedback",
+      "Communication"
+    ],
+    "userIntents": [
+      "Understand system status or messages",
+      "Receive validation feedback",
+      "View error or warning information",
+      "Acknowledge important updates"
+    ],
+    "exampleUseCases": [
+      "Form Validation Error",
+      "Success Confirmation",
+      "System Warning",
+      "Information Notice",
+      "API Error Message",
+      "Status Update",
+      "Data Warning",
+      "Deprecation Notice"
+    ],
+    "useWhen": [
+      "Use this component when you need to display contextual information to the user.",
+      "Use this component when the message requires the user's attention or acknowledgment.",
+      "Use this component when you need to communicate different severity levels of messages.",
+      "Use this component when the message is temporary or contextual to the current view."
+    ],
+    "avoidWhen": [
+      "Avoid this component when the message requires user action (use Dialog or Modal instead).",
+      "Avoid this component when the content should be presented as part of the normal page flow.",
+      "Avoid this component when multiple complex interactions are needed.",
+      "Avoid this component for critical system errors that block user workflow (use Modal instead)."
+    ],
+    "relatedComponents": [
+      "Toast",
+      "Modal",
+      "ConfirmDialog",
+      "EmptyState"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

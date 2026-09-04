@@ -1,0 +1,37 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-layout/divider.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Create a visual separation between content sections.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-layout",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "orientation": {
+      "description": "",
+      "enum": [
+        "horizontal",
+        "vertical"
+      ]
+    }
+  },
+  "required": [],
+  "title": "Divider",
+  "type": "object"
+}

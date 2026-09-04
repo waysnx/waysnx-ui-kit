@@ -1,0 +1,422 @@
+{
+  "id": "ui-core:timepicker",
+  "name": "TimePicker",
+  "slug": "time-picker",
+  "library": "ui-core",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Time Picker",
+  "purpose": "Enable users to select a specific time through a time picker interface",
+  "shortDescription": "Enable users to select a specific time through a time picker interface.",
+  "longDescription": "Enable users to select a specific time through a time picker interface.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Components/TimePicker",
+      "storyId": "components-timepicker",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-timepicker",
+      "stories": [],
+      "tags": [],
+      "source": "TimePicker.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use TimePicker for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a TimePicker"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown",
+    "ReactDatePicker": "unknown",
+    "warn": "unknown",
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "value",
+      "type": "Date | null",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onChange",
+      "type": "(date: Date | null) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "placeholder",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "hint",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "timeIntervals",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "timeFormat",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaDescribedBy",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-error",
+    "--wx-color-primary",
+    "--wx-color-text-muted",
+    "--wx-input-height"
+  ],
+  "cssClasses": [
+    "wx-timepicker-wrapper",
+    "wx-timepicker-label",
+    "wx-timepicker-input-wrapper",
+    "wx-timepicker-react-wrapper",
+    "wx-timepicker-input",
+    "wx-timepicker-icon",
+    "wx-timepicker-input-error",
+    "wx-timepicker-hint",
+    "wx-timepicker-error-text"
+  ],
+  "designTokens": {
+    "other": {
+      "--wx-input-height": {
+        "properties": [
+          "height"
+        ],
+        "selectors": [
+          ".wx-timepicker-input"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      }
+    }
+  },
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-color-border": {
+      "properties": [
+        "border"
+      ],
+      "selectors": [
+        ".wx-timepicker-input"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-timepicker-icon",
+        ".wx-timepicker-hint"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary": {
+      "properties": [
+        "border-color"
+      ],
+      "selectors": [
+        ".wx-timepicker-input:focus"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error": {
+      "properties": [
+        "border-color",
+        "color"
+      ],
+      "selectors": [
+        ".wx-timepicker-input-error",
+        ".wx-timepicker-error-text"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\TimePicker\\TimePicker.tsx",
+  "keywords": [
+    "label",
+    "placeholder",
+    "timepicker",
+    "value",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use TimePicker",
+    "Create an example with TimePicker",
+    "Generate a TimePicker component",
+    "Build a TimePicker in my form"
+  ],
+  "componentIntent": "Provide TimePicker functionality",
+  "semanticCategory": "input",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.711749",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "09235682",
+  "metadata": {
+    "purpose": "Enable users to select a specific time through a time picker interface.",
+    "description": "A time selection control that provides an interactive time picker for selecting hours and minutes. Supports configurable time intervals and 12-hour or 24-hour time formats. Displays the selected time in a readable format and enables keyboard navigation for efficient time entry.",
+    "functionalAreas": [
+      "Data Entry",
+      "Forms",
+      "Selection"
+    ],
+    "userIntents": [
+      "Select a time of day",
+      "Set an alarm or reminder time",
+      "Schedule a time slot",
+      "Record working hours"
+    ],
+    "exampleUseCases": [
+      "Set Alarm",
+      "Schedule Reminder",
+      "Time Slot Selection",
+      "Working Hours Entry",
+      "Meeting Time",
+      "Shift Schedule"
+    ],
+    "useWhen": [
+      "Use this component when users need to select only a time, not a date.",
+      "Use this component when a time picker interface improves usability over text input.",
+      "Use this component when configurable time intervals are required.",
+      "Use this component when time format consistency is important."
+    ],
+    "avoidWhen": [
+      "Avoid this component when both date and time are needed (use DateTimePicker instead).",
+      "Avoid this component when users typically enter times in a standard text format.",
+      "Avoid this component when only preset times should be available.",
+      "Avoid this component when second-level precision is required."
+    ],
+    "relatedComponents": [
+      "DatePicker",
+      "DateRangePicker",
+      "DateTimePicker"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "react-imask",
+        "version": "^7.6.1"
+      },
+      {
+        "name": "react-number-format",
+        "version": "^5.4.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-datepicker",
+        "version": "^8.0.0"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-datepicker",
+        "version": "^7.0.0"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

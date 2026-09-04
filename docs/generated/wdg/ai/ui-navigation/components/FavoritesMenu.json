@@ -1,0 +1,336 @@
+{
+  "id": "ui-navigation:favoritesmenu",
+  "name": "FavoritesMenu",
+  "slug": "favorites-menu",
+  "library": "ui-navigation",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Favorites Menu",
+  "purpose": "Display user-selected favorite or bookmarked items for quick access",
+  "shortDescription": "Display user-selected favorite or bookmarked items for quick access.",
+  "longDescription": "Display user-selected favorite or bookmarked items for quick access.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Enterprise/FavoritesMenu",
+      "storyId": "enterprise-favoritesmenu",
+      "url": "https://uikit.waysnx.tech/?path=/docs/enterprise-favoritesmenu",
+      "stories": [],
+      "tags": [],
+      "source": "FavoritesMenu.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use FavoritesMenu for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a FavoritesMenu"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "items",
+      "type": "FavoriteItem[]",
+      "description": "Array of favorite items",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "onItemSelect",
+      "type": "(item: FavoriteItem) => void",
+      "description": "Callback when favorite item is selected",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onToggleFavorite",
+      "type": "(item: FavoriteItem, isFavorite: boolean) => void",
+      "description": "Callback when favorite is toggled",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "maxDisplayed",
+      "type": "number",
+      "description": "Maximum number of favorites to display",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showBadge",
+      "type": "boolean",
+      "description": "Show favorite count badge",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "enableDragDrop",
+      "type": "boolean",
+      "description": "Enable drag and drop reordering",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showCategories",
+      "type": "boolean",
+      "description": "Show categories if available",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "variant",
+      "type": "'dropdown' | 'inline' | 'compact'",
+      "description": "Display variant",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "size",
+      "type": "'sm' | 'md' | 'lg'",
+      "description": "Size of component",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "isFavorited",
+      "type": "(itemId: string) => boolean",
+      "description": "Callback to check if item is favorited",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "Custom class name",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "style",
+      "type": "React.CSSProperties",
+      "description": "Custom styles",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "aria-label for accessibility",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "Test ID",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [
+    "forwardRef"
+  ],
+  "contextsUsed": [],
+  "forwardRef": true,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-favorites-menu__badge",
+    "wx-favorites-menu__more",
+    "wx-favorites-menu__compact-icon",
+    "wx-favorites-menu__category",
+    "wx-favorites-menu__list",
+    "wx-favorites-menu__star-icon",
+    "wx-favorites-menu__category-items",
+    "wx-favorites-menu__compact-label",
+    "wx-favorites-menu__item-content",
+    "wx-favorites-menu__dropdown",
+    "wx-favorites-menu__star",
+    "wx-favorites-menu__category-label",
+    "wx-favorites-menu__compact-list",
+    "wx-favorites-menu__empty",
+    "wx-favorites-menu__compact-item",
+    "wx-favorites-menu__item-icon",
+    "wx-favorites-menu__compact-more",
+    "wx-favorites-menu__item-label",
+    "wx-favorites-menu__trigger",
+    "wx-favorites-menu__item"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\FavoritesMenu\\FavoritesMenu.tsx",
+  "keywords": [
+    "favoritesmenu",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use FavoritesMenu",
+    "Create an example with FavoritesMenu",
+    "Generate a FavoritesMenu component",
+    "Build a FavoritesMenu in my form"
+  ],
+  "componentIntent": "Provide FavoritesMenu functionality",
+  "semanticCategory": "navigation",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.226517",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "7591195f",
+  "metadata": {
+    "purpose": "Display user-selected favorite or bookmarked items for quick access.",
+    "description": "A menu or list showing items that users have marked as favorites or bookmarks. Provides fast navigation to frequently used or important items. Usually customizable with add/remove actions.",
+    "functionalAreas": [
+      "Navigation"
+    ],
+    "userIntents": [
+      "Access favorite items quickly",
+      "See bookmarked content",
+      "Customize navigation",
+      "Find frequently used items"
+    ],
+    "exampleUseCases": [
+      "Favorite Pages",
+      "Bookmarked Items",
+      "Quick Access Menu",
+      "Personal Shortcuts",
+      "Starred Items",
+      "Recently Used Items",
+      "Custom Shortcuts"
+    ],
+    "useWhen": [
+      "Use this component to provide quick access to favorite items.",
+      "Use this component when users frequently revisit certain items.",
+      "Use this component when users want to customize their navigation.",
+      "Use this component in applications with large item collections."
+    ],
+    "avoidWhen": [
+      "Avoid this component without personalization capability.",
+      "Avoid this component when most users don't have favorites.",
+      "Avoid this component in simple applications.",
+      "Avoid this component without clear add/remove mechanisms."
+    ],
+    "relatedComponents": [
+      "Menu",
+      "QuickActions",
+      "Navigation"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

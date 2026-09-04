@@ -1,0 +1,25 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-accessibility/readingguide.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "ReadingGuide Component Displays a visual reading line to help users follow text Only renders when readingGuide is enabled in accessibility settings",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": true,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-accessibility",
+    "version": "1.0.0"
+  },
+  "properties": {},
+  "required": [],
+  "title": "ReadingGuide",
+  "type": "object"
+}

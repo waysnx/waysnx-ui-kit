@@ -1,0 +1,213 @@
+{
+  "id": "ui-data:codeviewer",
+  "name": "CodeViewer",
+  "slug": "code-viewer",
+  "library": "ui-data",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Code Viewer",
+  "purpose": "Display read-only source code with syntax highlighting",
+  "shortDescription": "Display read-only source code with syntax highlighting.",
+  "longDescription": "Display read-only source code with syntax highlighting.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Data/CodeViewer",
+      "storyId": "data-codeviewer",
+      "url": "https://uikit.waysnx.tech/?path=/docs/data-codeviewer",
+      "stories": [],
+      "tags": [],
+      "source": "CodeViewer.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use CodeViewer for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a CodeViewer"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-adv-code-viewer__header",
+    "wx-adv-code-viewer__code",
+    "wx-adv-code-viewer__lines",
+    "wx-adv-code-viewer__body",
+    "--wx-color-text-muted"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\CodeViewer\\CodeViewer.tsx",
+  "keywords": [
+    "codeviewer",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use CodeViewer",
+    "Create an example with CodeViewer",
+    "Generate a CodeViewer component",
+    "Build a CodeViewer in my form"
+  ],
+  "componentIntent": "Provide CodeViewer functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.204973",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "5ed5a904",
+  "metadata": {
+    "purpose": "Display read-only source code with syntax highlighting.",
+    "description": "A code display component that shows source code with syntax highlighting, line numbers, and optional copy-to-clipboard functionality. Used for documentation, code examples, logs, and other read-only code display needs. Supports multiple languages and themes.",
+    "functionalAreas": [
+      "Data Entry",
+      "Visualization"
+    ],
+    "userIntents": [
+      "View source code",
+      "See code examples",
+      "Copy code snippet",
+      "Understand code structure"
+    ],
+    "exampleUseCases": [
+      "Code Example Display",
+      "Syntax-Highlighted Code",
+      "Documentation Code",
+      "API Response Viewer",
+      "Log Viewer",
+      "Snippet Display",
+      "Code Snippet Preview"
+    ],
+    "useWhen": [
+      "Use this component to display read-only code with syntax highlighting.",
+      "Use this component in documentation or educational content.",
+      "Use this component for logs, responses, or other code output.",
+      "Use this component when users need to copy code examples."
+    ],
+    "avoidWhen": [
+      "Avoid this component when code should be editable (use CodeEditor instead).",
+      "Avoid this component for inline code (use code tag instead).",
+      "Avoid this component without proper syntax highlighting setup.",
+      "Avoid this component for extremely long files (consider pagination)."
+    ],
+    "relatedComponents": [
+      "CodeEditor",
+      "JSONEditor",
+      "MarkdownViewer"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-navigation/quickactions.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Provide quick access to frequent actions in a compact menu.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": true,
+    "isMemo": false,
+    "library": "ui-navigation",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "actions": {
+      "description": "Array of quick action groups or individual actions",
+      "enum": [
+        "(QuickAction",
+        "QuickActionGroup)[]"
+      ]
+    },
+    "ariaLabel": {
+      "description": "aria-label for accessibility",
+      "type": "string"
+    },
+    "className": {
+      "description": "Custom class name",
+      "type": "string"
+    },
+    "enableKeyboardShortcuts": {
+      "description": "Enable keyboard shortcuts",
+      "type": "boolean"
+    },
+    "maxVisible": {
+      "description": "Maximum number of visible actions (rest go to \"More\")",
+      "type": "number"
+    },
+    "onActionClick": {
+      "description": "Callback when action is triggered",
+      "enum": [
+        "(action: QuickAction) => void",
+        "Promise<void>"
+      ]
+    },
+    "orientation": {
+      "description": "Display orientation",
+      "enum": [
+        "horizontal",
+        "vertical"
+      ]
+    },
+    "permissions": {
+      "description": "User permissions for filtering",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "showIcons": {
+      "description": "Show action icons",
+      "type": "boolean"
+    },
+    "showLabels": {
+      "description": "Show action labels",
+      "type": "boolean"
+    },
+    "size": {
+      "description": "Size of actions",
+      "enum": [
+        "sm",
+        "md",
+        "lg"
+      ]
+    },
+    "style": {
+      "description": "Custom styles",
+      "type": "string"
+    },
+    "testId": {
+      "description": "Test ID",
+      "type": "string"
+    },
+    "variant": {
+      "description": "Display variant",
+      "enum": [
+        "bar",
+        "grid",
+        "compact"
+      ]
+    }
+  },
+  "required": [
+    "actions"
+  ],
+  "title": "QuickActions",
+  "type": "object"
+}

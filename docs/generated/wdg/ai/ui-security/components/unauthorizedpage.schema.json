@@ -1,0 +1,53 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/unauthorizedpage.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "UnauthorizedPage - Full page unauthorized error screen",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "message": {
+      "description": "Error message",
+      "type": "string"
+    },
+    "onHome": {
+      "description": "Callback for home button",
+      "type": "null"
+    },
+    "onLogin": {
+      "description": "Callback for login button",
+      "type": "null"
+    },
+    "statusCode": {
+      "description": "Error code to display",
+      "enum": [
+        "number",
+        "string"
+      ]
+    },
+    "title": {
+      "description": "Page title",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "title": "UnauthorizedPage",
+  "type": "object"
+}

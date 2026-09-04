@@ -1,0 +1,68 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "modal",
+    "name": "Modal",
+    "package": "@waysnx/ui-feedback",
+    "export": "Modal"
+  },
+  "categories": [
+    {
+      "id": "sizes",
+      "title": "Sizes",
+      "description": "",
+      "examples": [
+        {
+          "id": "small",
+          "title": "Small",
+          "description": "Example demonstrating small state",
+          "category": "sizes",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "size": "small"
+          },
+          "keywords": [
+            "small"
+          ]
+        },
+        {
+          "id": "medium",
+          "title": "Medium",
+          "description": "Example demonstrating medium state",
+          "category": "sizes",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "size": "medium"
+          },
+          "keywords": [
+            "medium"
+          ]
+        },
+        {
+          "id": "large",
+          "title": "Large",
+          "description": "Example demonstrating large state",
+          "category": "sizes",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "size": "large"
+          },
+          "keywords": [
+            "large"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:50.500067",
+  "stats": {
+    "examplesGenerated": 3,
+    "categoriesGenerated": 1
+  }
+}

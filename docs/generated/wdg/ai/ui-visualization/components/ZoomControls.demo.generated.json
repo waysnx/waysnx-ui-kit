@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "zoomcontrols",
+    "name": "ZoomControls",
+    "package": "@waysnx/ui-visualization",
+    "export": "ZoomControls"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic",
+          "title": "Basic ZoomControls",
+          "description": "Simple ZoomControls with default configuration.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "zoom": 10,
+            "onZoomIn": "Sample Text",
+            "onZoomOut": "Sample Text"
+          },
+          "keywords": [
+            "basic",
+            "zoomcontrols"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:08.514548",
+  "stats": {
+    "examplesGenerated": 1,
+    "categoriesGenerated": 1
+  }
+}

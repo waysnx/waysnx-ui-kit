@@ -1,0 +1,228 @@
+{
+  "id": "ui-media:qrcode",
+  "name": "QRCode",
+  "slug": "qr-code",
+  "library": "ui-media",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "QR Code",
+  "purpose": "QRCode — renders a real, scannable QR code to a canvas using the `qrcode` library, with optional PNG download",
+  "shortDescription": "QRCode — renders a real, scannable QR code to a canvas using the `qrcode` library, with optional PNG download. The en...",
+  "longDescription": "QRCode — renders a real, scannable QR code to a canvas using the `qrcode` library, with optional PNG download. The encoded payload is the raw `value` string (URLs, text, `otpauth://` URIs, etc.). Colors, size and error-correction level are configurable.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Media/QRCode",
+      "storyId": "media-qrcode",
+      "url": "https://uikit.waysnx.tech/?path=/docs/media-qrcode",
+      "stories": [],
+      "tags": [],
+      "source": "QRCode.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use QRCode for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a QRCode"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [
+      "AuthenticatorQRCode"
+    ],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [
+      "AuthenticatorQRCode"
+    ],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useRef": "unknown",
+    "useEffect": "unknown",
+    "useState": "unknown",
+    "QRCodeLib": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-adv-qr__download-btn",
+    "wx-adv-qr__canvas",
+    "wx-adv-qr__error"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\QRCode\\QRCode.tsx",
+  "keywords": [
+    "qrcode",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use QRCode",
+    "Create an example with QRCode",
+    "Generate a QRCode component",
+    "Build a QRCode in my form"
+  ],
+  "componentIntent": "Provide QRCode functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.365860",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "9da1466e",
+  "metadata": {
+    "purpose": "Generate and display QR codes for sharing or scanning.",
+    "description": "A component that generates QR code images from data (URLs, text, etc.) and displays them. Supports customization of size, color, and error correction level. Users can scan with mobile devices for quick access.",
+    "functionalAreas": [
+      "Visualization",
+      "Data Entry"
+    ],
+    "userIntents": [
+      "Generate QR code",
+      "Share scannable link",
+      "Display quick access code",
+      "Share contact info"
+    ],
+    "exampleUseCases": [
+      "URL Sharing QR",
+      "Contact Card QR",
+      "Event Registration",
+      "Payment QR",
+      "WiFi Sharing",
+      "App Download Link",
+      "Product Information"
+    ],
+    "useWhen": [
+      "Use this component when you need to share URLs or data via QR code.",
+      "Use this component for mobile-first interactions.",
+      "Use this component for event check-in or registration.",
+      "Use this component to bridge digital and physical experiences."
+    ],
+    "avoidWhen": [
+      "Avoid this component without clear scanning use case.",
+      "Avoid this component for desktop-only experiences.",
+      "Avoid this component when short URLs would suffice.",
+      "Avoid this component without reliable QR generation library."
+    ],
+    "relatedComponents": [
+      "Barcode",
+      "ImageViewer",
+      "QRScanner"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "qrcode",
+        "version": "^1.5.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/qrcode",
+        "version": "^1.5.5"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

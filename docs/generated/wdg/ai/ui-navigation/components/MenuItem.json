@@ -1,0 +1,299 @@
+{
+  "id": "ui-navigation:menuitem",
+  "name": "MenuItem",
+  "slug": "menu-item",
+  "library": "ui-navigation",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Menu Item",
+  "purpose": "MenuItem component",
+  "shortDescription": "MenuItem component",
+  "longDescription": "MenuItem component",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use MenuItem for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a MenuItem"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [
+      "ContextMenu",
+      "Menu"
+    ],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [
+      "ContextMenu",
+      "Menu"
+    ],
+    "childComponents": []
+  },
+  "dependencies": {
+    "isMenuItemDisabled": "unknown",
+    "isMenuItemHidden": "unknown"
+  },
+  "props": [
+    {
+      "name": "item",
+      "type": "NavigationItem",
+      "description": "The navigation item to render",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "isActive",
+      "type": "boolean",
+      "description": "Whether this item is currently active",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "isFocused",
+      "type": "boolean",
+      "description": "Whether this item is focused via keyboard navigation",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "isExpanded",
+      "type": "boolean",
+      "description": "Whether this item's children are expanded",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onItemClick",
+      "type": "(item: NavigationItem) => void",
+      "description": "Callback when item is clicked",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onToggleExpand",
+      "type": "(itemId: string) => void",
+      "description": "Callback to toggle expansion",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onFocus",
+      "type": "(itemId?: string) => void",
+      "description": "Callback when item receives focus",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showIcons",
+      "type": "boolean",
+      "description": "Whether to show icons",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showBadges",
+      "type": "boolean",
+      "description": "Whether to show badges",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "depth",
+      "type": "number",
+      "description": "Current nesting depth",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "maxDepth",
+      "type": "number",
+      "description": "Maximum nesting depth allowed",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "security",
+      "type": "SecurityContext",
+      "description": "Security context for permission checking",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "canAccess",
+      "type": "(item: NavigationItem) => boolean",
+      "description": "Function to check access for this item",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "Additional CSS class",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "style",
+      "type": "React.CSSProperties",
+      "description": "Additional styles",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [
+    "forwardRef"
+  ],
+  "contextsUsed": [],
+  "forwardRef": true,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "nav-menu-item__label",
+    "nav-menu-item__icon",
+    "nav-menu-item__submenu",
+    "nav-menu-item__badge",
+    "nav-menu-item__content",
+    "nav-menu-item__chevron",
+    "nav-menu-item__link"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Menu\\MenuItem.tsx",
+  "keywords": [
+    "menuitem",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use MenuItem",
+    "Create an example with MenuItem",
+    "Generate a MenuItem component",
+    "Build a MenuItem in my form"
+  ],
+  "componentIntent": "Provide MenuItem functionality",
+  "semanticCategory": "navigation",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.257979",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "c6d41b22",
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

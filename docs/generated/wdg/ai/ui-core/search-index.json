@@ -1,0 +1,1795 @@
+{
+  "version": "2.0.0",
+  "library": "ui-core",
+  "generatedAt": "2026-09-03T20:02:43.136620",
+  "components": [
+    {
+      "id": "ui-core:autocomplete",
+      "name": "Autocomplete",
+      "slug": "autocomplete",
+      "category": "components",
+      "description": "Enable users to search and select from a filtered list of options as they type.",
+      "keywords": [
+        "label",
+        "placeholder",
+        "autocomplete",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "options",
+        "onChange",
+        "onSelect",
+        "placeholder",
+        "label",
+        "error",
+        "hint",
+        "disabled",
+        "noOptionsText",
+        "minChars",
+        "id",
+        "ariaLabel",
+        "ariaDescribedBy",
+        "fetchOptions",
+        "xrefIdProp",
+        "xrefDisplayProp",
+        "onLoadStart",
+        "onLoadEnd",
+        "onError",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Autocomplete for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 20,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-core:button",
+      "name": "Button",
+      "slug": "button",
+      "category": "components",
+      "description": "Enable users to trigger actions by pressing a clickable element.",
+      "keywords": [
+        "cta",
+        "trigger",
+        "action",
+        "submit",
+        "click",
+        "interactive",
+        "button",
+        "components"
+      ],
+      "aliases": [
+        "AIAlias(alias='action', context='intent', confidence=0.92)",
+        "AIAlias(alias='submit', context='specific', confidence=0.9)",
+        "AIAlias(alias='save', context='specific', confidence=0.88)",
+        "AIAlias(alias='cta', context='technical', confidence=0.85)",
+        "AIAlias(alias='confirm', context='specific', confidence=0.88)",
+        "AIAlias(alias='approve', context='business', confidence=0.85)",
+        "AIAlias(alias='clickable', context='functional', confidence=0.8)"
+      ],
+      "synonyms": [
+        "action button",
+        "submit button",
+        "call-to-action"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp",
+        "project_management"
+      ],
+      "enterpriseModules": [
+        "workflows",
+        "employee_management",
+        "dashboards"
+      ],
+      "semanticCategory": "display",
+      "propNames": [
+        "children",
+        "variant",
+        "ariaLabel",
+        "ariaPressed",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "AccessDenied",
+          "ActiveSessions",
+          "ActivityFeed",
+          "AuditHistoryTable",
+          "Auth0LoginButton",
+          "AuthenticatorQRCode",
+          "BackupCodesCard",
+          "BiometricButton",
+          "ChangePasswordForm",
+          "ConcurrentSessionDialog",
+          "DeviceVerificationDialog",
+          "EmailVerificationCard",
+          "ForgotPasswordForm",
+          "GitHubLoginButton",
+          "GoogleLoginButton",
+          "KeepAliveButton",
+          "MFASettingsPanel",
+          "MFASetupWizard",
+          "MFAStatus",
+          "MFAVerificationDialog",
+          "MicrosoftLoginButton",
+          "OTPResendButton",
+          "OktaLoginButton",
+          "PasswordAgeIndicator",
+          "PasswordPolicyPanel",
+          "PhoneVerificationCard",
+          "PrivacySettingsPanel",
+          "SecureClipboardButton",
+          "SecureDownloadButton",
+          "SecureUploader",
+          "SecurityAlert",
+          "SecurityAlertsPanel",
+          "SecurityBanner",
+          "SecurityEventLog",
+          "SecurityKeyButton",
+          "SecurityLogsPanel",
+          "SecuritySettingsPanel",
+          "SecurityStatusCard",
+          "SensitiveText",
+          "SessionPolicyPanel",
+          "SessionTimeoutDialog",
+          "TrustedDevicesPanel",
+          "UnauthorizedPage"
+        ],
+        "related": [],
+        "alternatives": [
+          "Iconbutton"
+        ],
+        "parentComponents": [
+          "AccessDenied",
+          "ActiveSessions",
+          "ActivityFeed",
+          "AuditHistoryTable",
+          "Auth0LoginButton",
+          "AuthenticatorQRCode",
+          "BackupCodesCard",
+          "BiometricButton",
+          "ChangePasswordForm",
+          "ConcurrentSessionDialog",
+          "DeviceVerificationDialog",
+          "EmailVerificationCard",
+          "ForgotPasswordForm",
+          "GitHubLoginButton",
+          "GoogleLoginButton",
+          "KeepAliveButton",
+          "MFASettingsPanel",
+          "MFASetupWizard",
+          "MFAStatus",
+          "MFAVerificationDialog",
+          "MicrosoftLoginButton",
+          "OTPResendButton",
+          "OktaLoginButton",
+          "PasswordAgeIndicator",
+          "PasswordPolicyPanel",
+          "PhoneVerificationCard",
+          "PrivacySettingsPanel",
+          "SecureClipboardButton",
+          "SecureDownloadButton",
+          "SecureUploader",
+          "SecurityAlert",
+          "SecurityAlertsPanel",
+          "SecurityBanner",
+          "SecurityEventLog",
+          "SecurityKeyButton",
+          "SecurityLogsPanel",
+          "SecuritySettingsPanel",
+          "SecurityStatusCard",
+          "SensitiveText",
+          "SessionPolicyPanel",
+          "SessionTimeoutDialog",
+          "TrustedDevicesPanel",
+          "UnauthorizedPage"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "Form Submission",
+          "description": "Submit forms in HR, CRM, or inventory systems"
+        },
+        {
+          "title": "Action Trigger",
+          "description": "Approve leave, confirm deletion, or trigger workflows"
+        },
+        {
+          "title": "Navigation",
+          "description": "Navigate between screens in applications"
+        }
+      ],
+      "antipatterns": [
+        {
+          "title": "Disabled by Default",
+          "description": "Button disabled when user hasn't filled form"
+        },
+        {
+          "title": "Unclear Label",
+          "description": "Button with vague label like 'OK' or 'Submit'"
+        }
+      ],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 5,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-core:checkbox",
+      "name": "Checkbox",
+      "slug": "checkbox",
+      "category": "components",
+      "description": "Allow users to select one or more options from a list of independent choices.",
+      "keywords": [
+        "checkbox",
+        "selection",
+        "label",
+        "check",
+        "toggle",
+        "option",
+        "components"
+      ],
+      "aliases": [
+        "AIAlias(alias='toggle option', context='descriptive', confidence=0.9)",
+        "AIAlias(alias='check box', context='casual', confidence=0.92)",
+        "AIAlias(alias='yes/no', context='descriptive', confidence=0.85)"
+      ],
+      "synonyms": [
+        "check box",
+        "toggle option"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "input",
+      "propNames": [
+        "label",
+        "checked",
+        "onChange",
+        "disabled",
+        "ariaLabel",
+        "ariaDescribedBy",
+        "options",
+        "columns",
+        "groupLabel",
+        "fetchOptions",
+        "xrefIdProp",
+        "xrefDisplayProp",
+        "error",
+        "onLoadStart",
+        "onLoadEnd",
+        "onError",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "PasswordPolicyPanel",
+          "PrivacySettingsPanel",
+          "SecurityAlertsPanel",
+          "SessionPolicyPanel",
+          "TrustedDeviceSelector"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "PasswordPolicyPanel",
+          "PrivacySettingsPanel",
+          "SecurityAlertsPanel",
+          "SessionPolicyPanel",
+          "TrustedDeviceSelector"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Checkbox for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 17,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-core:currency",
+      "name": "Currency",
+      "slug": "currency",
+      "category": "components",
+      "description": "Collect and display monetary amounts with automatic currency formatting.",
+      "keywords": [
+        "label",
+        "currency",
+        "value",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "input",
+      "propNames": [
+        "label",
+        "value",
+        "onChange",
+        "onBlur",
+        "currencySymbol",
+        "currencySymbolPosition",
+        "precision",
+        "thousandSeparator",
+        "decimalSeparator",
+        "error",
+        "hint",
+        "disabled",
+        "required",
+        "id",
+        "ariaLabel",
+        "ariaDescribedBy",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Currency for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 17,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-core:datepicker",
+      "name": "DatePicker",
+      "slug": "date-picker",
+      "category": "components",
+      "description": "Enable users to select a specific date through an interactive calendar interface.",
+      "keywords": [
+        "label",
+        "placeholder",
+        "value",
+        "datepicker",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "input",
+      "propNames": [
+        "value",
+        "onChange",
+        "label",
+        "placeholder",
+        "error",
+        "hint",
+        "disabled",
+        "minDate",
+        "maxDate",
+        "dateFormat",
+        "showTimeSelect",
+        "id",
+        "className",
+        "ariaLabel",
+        "ariaDescribedBy",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use DatePicker for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 16,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-core:daterangepicker",
+      "name": "DateRangePicker",
+      "slug": "date-range-picker",
+      "category": "components",
+      "description": "Enable users to select a start and end date range through an interactive calendar.",
+      "keywords": [
+        "daterangepicker",
+        "placeholder",
+        "label",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "input",
+      "propNames": [
+        "startDate",
+        "endDate",
+        "onChange",
+        "label",
+        "placeholder",
+        "error",
+        "hint",
+        "disabled",
+        "minDate",
+        "maxDate",
+        "dateFormat",
+        "id",
+        "className",
+        "ariaLabel",
+        "ariaDescribedBy",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use DateRangePicker for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 16,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-core:datetimepicker",
+      "name": "DateTimePicker",
+      "slug": "date-time-picker",
+      "category": "components",
+      "description": "Enable users to select a specific date and time through an interactive calendar interface.",
+      "keywords": [
+        "label",
+        "placeholder",
+        "datetimepicker",
+        "value",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "input",
+      "propNames": [
+        "value",
+        "onChange",
+        "label",
+        "placeholder",
+        "error",
+        "hint",
+        "disabled",
+        "minDate",
+        "maxDate",
+        "dateFormat",
+        "timeIntervals",
+        "id",
+        "className",
+        "ariaLabel",
+        "ariaDescribedBy",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use DateTimePicker for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 16,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-core:errormessage",
+      "name": "ErrorMessage",
+      "slug": "error-message",
+      "category": "components",
+      "description": "Display error messages to users with prominent visual and semantic prominence.",
+      "keywords": [
+        "errormessage",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "error",
+        "show"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use ErrorMessage for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 2,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-core:fileupload",
+      "name": "FileUpload",
+      "slug": "file-upload",
+      "category": "components",
+      "description": "Enable users to upload files with drag-and-drop support and validation.",
+      "keywords": [
+        "fileupload",
+        "label",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "input",
+      "propNames": [
+        "label",
+        "accept",
+        "multiple",
+        "maxSize",
+        "onChange",
+        "onError",
+        "hint",
+        "error",
+        "disabled",
+        "id",
+        "className",
+        "format",
+        "showPreview",
+        "autoUpload",
+        "browseButtonText",
+        "uploadedFiles"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use FileUpload for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 16,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-core:hidden",
+      "name": "Hidden",
+      "slug": "hidden",
+      "category": "components",
+      "description": "Store and submit form field values that should not be visible to users.",
+      "keywords": [
+        "components",
+        "value",
+        "hidden"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "name",
+        "value"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Hidden for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 2,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-core:htmlcontent",
+      "name": "HtmlContent",
+      "slug": "html-content",
+      "category": "components",
+      "description": "Display sanitized HTML content safely within the application interface.",
+      "keywords": [
+        "htmlcontent",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "content",
+        "className"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use HtmlContent for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 2,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-core:htmleditor",
+      "name": "HtmlEditor",
+      "slug": "html-editor",
+      "category": "components",
+      "description": "Enable users to create and format HTML content with a visual text editor toolbar.",
+      "keywords": [
+        "label",
+        "placeholder",
+        "value",
+        "htmleditor",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "label",
+        "value",
+        "onChange",
+        "placeholder",
+        "hint",
+        "error",
+        "disabled",
+        "minHeight",
+        "toolbar",
+        "className",
+        "ariaLabel",
+        "ariaDescribedBy",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use HtmlEditor for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 13,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-core:iframe",
+      "name": "IFrame",
+      "slug": "i-frame",
+      "category": "components",
+      "description": "Secure-by-default sandbox policy. Supports the documented use cases (embedded video, maps, forms, third-party widgets...",
+      "keywords": [
+        "components",
+        "label",
+        "iframe"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "https",
+        "title",
+        "label",
+        "default",
+        "default",
+        "allowFullscreen",
+        "Note",
+        "hint",
+        "className",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use IFrame for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 10,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-core:image",
+      "name": "Image",
+      "slug": "image",
+      "category": "components",
+      "description": "Display images with responsive sizing, fallback handling, and accessibility support.",
+      "keywords": [
+        "components",
+        "image"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "display",
+      "propNames": [
+        "src",
+        "alt",
+        "caption",
+        "width",
+        "height",
+        "fit",
+        "rounded",
+        "fallback",
+        "className",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Image for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 10,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-core:input",
+      "name": "Input",
+      "slug": "input",
+      "category": "components",
+      "description": "Collect single-line text and numeric input from users with validation and formatting support.",
+      "keywords": [
+        "form-control",
+        "label",
+        "entry",
+        "field",
+        "form",
+        "text",
+        "input",
+        "textbox",
+        "form-field",
+        "components"
+      ],
+      "aliases": [
+        "AIAlias(alias='text field', context='form', confidence=0.95)",
+        "AIAlias(alias='textbox', context='simple', confidence=0.9)",
+        "AIAlias(alias='entry', context='technical', confidence=0.85)",
+        "AIAlias(alias='text input', context='descriptive', confidence=0.95)",
+        "AIAlias(alias='form field', context='context', confidence=0.8)",
+        "AIAlias(alias='text box', context='casual', confidence=0.88)"
+      ],
+      "synonyms": [
+        "text input",
+        "textbox",
+        "entry field",
+        "form field"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp",
+        "accounting"
+      ],
+      "enterpriseModules": [
+        "employee_management",
+        "client_management",
+        "recruitment"
+      ],
+      "semanticCategory": "input",
+      "propNames": [
+        "label",
+        "error",
+        "hint",
+        "showPasswordToggle",
+        "validateOnChange",
+        "validateOnBlur",
+        "onValidation",
+        "errorMessage",
+        "ariaLabel",
+        "ariaDescribedBy",
+        "mask",
+        "thousandSeparator",
+        "decimalSeparator",
+        "decimalScale",
+        "allowNegative",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ChangePasswordForm",
+          "EmailVerificationCard",
+          "ForgotPasswordForm",
+          "MaskedInput",
+          "PhoneVerificationCard",
+          "SecureInput"
+        ],
+        "related": [],
+        "alternatives": [
+          "Textarea"
+        ],
+        "parentComponents": [
+          "ChangePasswordForm",
+          "EmailVerificationCard",
+          "ForgotPasswordForm",
+          "MaskedInput",
+          "PhoneVerificationCard",
+          "SecureInput"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "Employee Registration",
+          "description": "Collect employee name, email, and contact information during registration"
+        },
+        {
+          "title": "Leave Request",
+          "description": "Capture leave reason and comments in leave management"
+        },
+        {
+          "title": "Client Registration",
+          "description": "Collect client information in CRM"
+        }
+      ],
+      "antipatterns": [
+        {
+          "title": "Unvalidated Input",
+          "description": "Accepting any text without validation"
+        },
+        {
+          "title": "No Placeholder Text",
+          "description": "Input without helpful placeholder text"
+        }
+      ],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 16,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-core:link",
+      "name": "Link",
+      "slug": "link",
+      "category": "components",
+      "description": "Navigate users to a different page or external resource via a clickable text link.",
+      "keywords": [
+        "label",
+        "link",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "label",
+        "href",
+        "onClick",
+        "prependText",
+        "appendText",
+        "target",
+        "className",
+        "disabled",
+        "ariaLabel",
+        "ariaDescribedBy",
+        "isActive",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Link for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 12,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-core:radio",
+      "name": "Radio",
+      "slug": "radio",
+      "category": "components",
+      "description": "Enable users to select exactly one option from a list of mutually exclusive choices.",
+      "keywords": [
+        "label",
+        "single",
+        "choice",
+        "radio",
+        "button",
+        "option",
+        "components"
+      ],
+      "aliases": [
+        "AIAlias(alias='radio button', context='technical', confidence=0.95)",
+        "AIAlias(alias='option selector', context='descriptive', confidence=0.88)",
+        "AIAlias(alias='single choice', context='descriptive', confidence=0.9)"
+      ],
+      "synonyms": [
+        "radio button",
+        "option selector"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "input",
+      "propNames": [
+        "label",
+        "name",
+        "options",
+        "onChange",
+        "disabled",
+        "columns",
+        "ariaDescribedBy",
+        "fetchOptions",
+        "xrefIdProp",
+        "xrefDisplayProp",
+        "error",
+        "onLoadStart",
+        "onLoadEnd",
+        "onError",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Radio for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 15,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-core:select",
+      "name": "Select",
+      "slug": "select",
+      "category": "components",
+      "description": "Enable users to select one or more options from a dropdown list with optional search.",
+      "keywords": [
+        "label",
+        "combo",
+        "choice",
+        "value",
+        "select",
+        "dropdown",
+        "option",
+        "components"
+      ],
+      "aliases": [
+        "AIAlias(alias='dropdown', context='common', confidence=0.95)",
+        "AIAlias(alias='choose option', context='descriptive', confidence=0.9)",
+        "AIAlias(alias='option selector', context='technical', confidence=0.88)",
+        "AIAlias(alias='combo box', context='technical', confidence=0.85)"
+      ],
+      "synonyms": [
+        "dropdown",
+        "option selector",
+        "combo box"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "employee_management",
+        "client_management",
+        "billing"
+      ],
+      "semanticCategory": "input",
+      "propNames": [
+        "label",
+        "options",
+        "showSelectAll",
+        "searchable",
+        "value",
+        "fetchOptions",
+        "xrefIdProp",
+        "xrefDisplayProp",
+        "error",
+        "onLoadStart",
+        "onLoadEnd",
+        "onError",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [
+          "Combobox"
+        ],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "Department Selection",
+          "description": "Select department in employee management"
+        },
+        {
+          "title": "Status Selection",
+          "description": "Select leave status or application status"
+        },
+        {
+          "title": "Priority Selection",
+          "description": "Select priority in project management"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 13,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-core:slider",
+      "name": "Slider",
+      "slug": "slider",
+      "category": "components",
+      "description": "Enable users to select a numeric value from a continuous range using a draggable control.",
+      "keywords": [
+        "slider",
+        "label",
+        "value",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "label",
+        "value",
+        "onChange",
+        "min",
+        "max",
+        "step",
+        "hint",
+        "className",
+        "showValue",
+        "ariaLabel",
+        "ariaDescribedBy",
+        "id",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Slider for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 13,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-core:speechtotexttextarea",
+      "name": "SpeechToTextTextarea",
+      "slug": "speech-to-text-textarea",
+      "category": "components",
+      "description": "Enable users to enter text through voice input combined with traditional text editing.",
+      "keywords": [
+        "speechtotexttextarea",
+        "label",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "input",
+      "propNames": [
+        "label",
+        "error",
+        "hint"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use SpeechToTextTextarea for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 3,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-core:switch",
+      "name": "Switch",
+      "slug": "switch",
+      "category": "components",
+      "description": "Enable users to toggle a setting or feature on or off with a visual switch.",
+      "keywords": [
+        "label",
+        "switch",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "label",
+        "ariaLabel",
+        "ariaDescribedBy",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Switch for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 4,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-core:textarea",
+      "name": "Textarea",
+      "slug": "textarea",
+      "category": "components",
+      "description": "Collect multi-line text input from users with optional length limits and formatting.",
+      "keywords": [
+        "textarea",
+        "label",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "input",
+      "propNames": [
+        "label",
+        "error",
+        "hint",
+        "ariaLabel",
+        "ariaDescribedBy",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [
+          "Input"
+        ],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Textarea for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 6,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-core:timepicker",
+      "name": "TimePicker",
+      "slug": "time-picker",
+      "category": "components",
+      "description": "Enable users to select a specific time through a time picker interface.",
+      "keywords": [
+        "label",
+        "placeholder",
+        "timepicker",
+        "value",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "input",
+      "propNames": [
+        "value",
+        "onChange",
+        "label",
+        "placeholder",
+        "error",
+        "hint",
+        "disabled",
+        "timeIntervals",
+        "timeFormat",
+        "id",
+        "className",
+        "ariaLabel",
+        "ariaDescribedBy",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use TimePicker for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 14,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-core:tree",
+      "name": "Tree",
+      "slug": "tree",
+      "category": "components",
+      "description": "Display hierarchical data with expandable nodes and checkboxes for selection.",
+      "keywords": [
+        "label",
+        "tree",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "data",
+        "label",
+        "className",
+        "ariaLabel",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Tree for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 5,
+        "eventsCount": 0
+      }
+    }
+  ]
+}

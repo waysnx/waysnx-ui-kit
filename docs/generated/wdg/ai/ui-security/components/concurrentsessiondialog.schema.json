@@ -1,0 +1,56 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/concurrentsessiondialog.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "ConcurrentSessionDialog - Alert user about new concurrent session login",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "currentSession": {
+      "description": "Current/existing session",
+      "type": "string"
+    },
+    "isLoading": {
+      "description": "Whether operation is in progress",
+      "type": "boolean"
+    },
+    "isOpen": {
+      "description": "Whether dialog is open",
+      "type": "boolean"
+    },
+    "newSession": {
+      "description": "New session attempting to login",
+      "type": "string"
+    },
+    "onApprove": {
+      "description": "Callback to approve new session (and end current)",
+      "type": "null"
+    },
+    "onReject": {
+      "description": "Callback to reject new session",
+      "type": "null"
+    },
+    "title": {
+      "description": "Custom dialog title",
+      "type": "string"
+    }
+  },
+  "required": [
+    "isOpen"
+  ],
+  "title": "ConcurrentSessionDialog",
+  "type": "object"
+}

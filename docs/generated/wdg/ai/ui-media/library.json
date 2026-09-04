@@ -1,0 +1,101 @@
+{
+  "name": "ui-media",
+  "version": "1.0.0",
+  "generatedAt": "2026-09-03T20:02:33.248477",
+  "componentCount": 12,
+  "components": [
+    {
+      "id": "ui-media:audioplayer",
+      "name": "AudioPlayer",
+      "slug": "audioplayer",
+      "category": "components",
+      "description": "Play audio content with playback controls and progress tracking."
+    },
+    {
+      "id": "ui-media:barcode",
+      "name": "Barcode",
+      "slug": "barcode",
+      "category": "components",
+      "description": "Generate and display barcodes for identification or tracking."
+    },
+    {
+      "id": "ui-media:barcodescanner",
+      "name": "BarcodeScanner",
+      "slug": "barcodescanner",
+      "category": "components",
+      "description": "Enable barcode scanning via device camera."
+    },
+    {
+      "id": "ui-media:colorpicker",
+      "name": "ColorPicker",
+      "slug": "colorpicker",
+      "category": "components",
+      "description": "Enable selection and input of colors."
+    },
+    {
+      "id": "ui-media:cropper",
+      "name": "Cropper",
+      "slug": "cropper",
+      "category": "components",
+      "description": "Cropper — interactive crop-selection UI. LIMITATION (1.0.0): This component provides a fully interactive crop overlay (move, resize, aspect-ratio locking) and reports the selected crop geometry (`x`, `y`, `width`, `height`) via `onCrop`. However, it does NOT yet produce cropped pixel output — `onCrop` returns the ORIGINAL image in `dataUrl`, not the cropped region. To obtain actual cropped image data, use the reported geometry to draw the selection onto a canvas in your application, or integrate a library such as `react-image-crop` or `cropperjs`."
+    },
+    {
+      "id": "ui-media:imageviewer",
+      "name": "ImageViewer",
+      "slug": "imageviewer",
+      "category": "components",
+      "description": "Display and allow interaction with images in fullscreen or modal."
+    },
+    {
+      "id": "ui-media:ocrscanner",
+      "name": "OCRScanner",
+      "slug": "ocrscanner",
+      "category": "components",
+      "description": "OCRScanner — SHELL / INTEGRATION component (no built-in OCR engine). Provides the upload/drag-and-drop UI for OCR workflows but does NOT extract text on its own. To obtain real results, integrate an OCR engine (e.g. Tesseract.js) or a cloud OCR API in your application and feed the recognized text back to your own state. Importantly, this shell does NOT fabricate OCR `onResult` callback is only invoked with genuine text, so it will not fire until a real OCR integration is wired up. This avoids presenting placeholder text as if it were extracted content."
+    },
+    {
+      "id": "ui-media:qrcode",
+      "name": "QRCode",
+      "slug": "qrcode",
+      "category": "components",
+      "description": "QRCode — renders a real, scannable QR code to a canvas using the `qrcode` library, with optional PNG download. The encoded payload is the raw `value` string (URLs, text, `otpauth://` URIs, etc.). Colors, size and error-correction level are configurable."
+    },
+    {
+      "id": "ui-media:qrscanner",
+      "name": "QRScanner",
+      "slug": "qrscanner",
+      "category": "components",
+      "description": "Enable QR code scanning via device camera."
+    },
+    {
+      "id": "ui-media:signaturepad",
+      "name": "SignaturePad",
+      "slug": "signaturepad",
+      "category": "components",
+      "description": "Enable users to draw or write signatures."
+    },
+    {
+      "id": "ui-media:signatureviewer",
+      "name": "SignatureViewer",
+      "slug": "signatureviewer",
+      "category": "components",
+      "description": "Display captured signatures for verification or review."
+    },
+    {
+      "id": "ui-media:videoplayer",
+      "name": "VideoPlayer",
+      "slug": "videoplayer",
+      "category": "components",
+      "description": "Play video content with standard player controls."
+    }
+  ],
+  "categories": {
+    "components": 12
+  },
+  "statistics": {
+    "totalComponents": 12,
+    "documentsGenerated": 12,
+    "storiesGenerated": 0,
+    "testsGenerated": 0
+  }
+}

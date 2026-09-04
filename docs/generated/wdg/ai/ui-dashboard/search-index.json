@@ -1,0 +1,826 @@
+{
+  "version": "2.0.0",
+  "library": "ui-dashboard",
+  "generatedAt": "2026-09-03T20:02:45.627050",
+  "components": [
+    {
+      "id": "ui-dashboard:chartwidget",
+      "name": "ChartWidget",
+      "slug": "chart-widget",
+      "category": "components",
+      "description": "ChartWidget component",
+      "keywords": [
+        "chartwidget",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "id",
+        "title",
+        "subtitle",
+        "children",
+        "loading",
+        "error",
+        "paginated",
+        "currentPage",
+        "totalPages",
+        "onPageChange",
+        "className",
+        "style"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Widget"
+        ],
+        "usedBy": [],
+        "related": [
+          "ChartWidgetProps",
+          "Widget"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Widget"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use ChartWidget for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 12,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-dashboard:dashboard",
+      "name": "Dashboard",
+      "slug": "dashboard",
+      "category": "components",
+      "description": "Provide the main container and layout structure for dashboard applications.",
+      "keywords": [
+        "dashboard",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "title",
+        "description",
+        "children",
+        "toolbar",
+        "sidebar",
+        "footer",
+        "loading",
+        "className",
+        "style",
+        "config",
+        "onThemeChange",
+        "onFiltersChange"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [
+          "DashboardConfig",
+          "DashboardProvider",
+          "DashboardTheme"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Dashboard for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 12,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-dashboard:dashboardfilterbar",
+      "name": "DashboardFilterBar",
+      "slug": "dashboard-filter-bar",
+      "category": "components",
+      "description": "DashboardFilterBar component",
+      "keywords": [
+        "components",
+        "dashboardfilterbar"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "filters",
+        "children",
+        "sticky",
+        "showClearAll",
+        "onFilterChange",
+        "onClearAll",
+        "className",
+        "style"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [
+          "FilterConfig"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use DashboardFilterBar for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 8,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-dashboard:dashboardfooter",
+      "name": "DashboardFooter",
+      "slug": "dashboard-footer",
+      "category": "components",
+      "description": "DashboardFooter component",
+      "keywords": [
+        "dashboardfooter",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "lastUpdated",
+        "version",
+        "user",
+        "children",
+        "className",
+        "style"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use DashboardFooter for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 6,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-dashboard:dashboardheader",
+      "name": "DashboardHeader",
+      "slug": "dashboard-header",
+      "category": "components",
+      "description": "DashboardHeader component",
+      "keywords": [
+        "components",
+        "dashboardheader"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "title",
+        "subtitle",
+        "actions",
+        "breadcrumb",
+        "icon",
+        "className",
+        "style"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use DashboardHeader for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 7,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-dashboard:dashboardsearch",
+      "name": "DashboardSearch",
+      "slug": "dashboard-search",
+      "category": "components",
+      "description": "DashboardSearch component",
+      "keywords": [
+        "dashboardsearch",
+        "placeholder",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "placeholder",
+        "debounceDelay",
+        "showSuggestions",
+        "suggestions"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use DashboardSearch for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 4,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-dashboard:dashboardsidebar",
+      "name": "DashboardSidebar",
+      "slug": "dashboard-sidebar",
+      "category": "components",
+      "description": "DashboardSidebar component",
+      "keywords": [
+        "dashboardsidebar",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "layout",
+      "propNames": [
+        "children",
+        "collapsible",
+        "defaultCollapsed",
+        "resizable",
+        "width",
+        "className",
+        "style",
+        "onToggle"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use DashboardSidebar for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 8,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-dashboard:dashboardtoolbar",
+      "name": "DashboardToolbar",
+      "slug": "dashboard-toolbar",
+      "category": "components",
+      "description": "DashboardToolbar component",
+      "keywords": [
+        "dashboardtoolbar",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "left",
+        "right",
+        "sticky",
+        "dense",
+        "className",
+        "style"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use DashboardToolbar for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 6,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-dashboard:htmlwidget",
+      "name": "HtmlWidget",
+      "slug": "html-widget",
+      "category": "components",
+      "description": "HtmlWidget component",
+      "keywords": [
+        "htmlwidget",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "id",
+        "title",
+        "html",
+        "allowedTags",
+        "className",
+        "style"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Widget"
+        ],
+        "usedBy": [],
+        "related": [
+          "Widget"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Widget"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use HtmlWidget for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 6,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-dashboard:kpicard",
+      "name": "KPICard",
+      "slug": "kpi-card",
+      "category": "components",
+      "description": "KPICard component",
+      "keywords": [
+        "kpicard",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "data",
+        "className",
+        "style",
+        "onClick"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [
+          "KPIData",
+          "MetricData",
+          "StatusType",
+          "TrendDirection"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use KPICard for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 4,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-dashboard:markdownwidget",
+      "name": "MarkdownWidget",
+      "slug": "markdown-widget",
+      "category": "components",
+      "description": "MarkdownWidget component",
+      "keywords": [
+        "markdownwidget",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "id",
+        "title",
+        "content",
+        "className",
+        "style"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Widget"
+        ],
+        "usedBy": [],
+        "related": [
+          "Widget"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Widget"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use MarkdownWidget for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 5,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-dashboard:widget",
+      "name": "Widget",
+      "slug": "widget",
+      "category": "components",
+      "description": "Display dashboard content in a contained, reusable panel with optional header and footer.",
+      "keywords": [
+        "widget",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "id",
+        "title",
+        "subtitle",
+        "icon",
+        "toolbar",
+        "footer",
+        "loading",
+        "error",
+        "empty",
+        "children",
+        "height",
+        "width",
+        "variant",
+        "elevation",
+        "bordered",
+        "className",
+        "style"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ChartWidget",
+          "HtmlWidget",
+          "MarkdownWidget"
+        ],
+        "related": [
+          "WidgetElevation",
+          "WidgetVariant"
+        ],
+        "alternatives": [],
+        "parentComponents": [
+          "ChartWidget",
+          "HtmlWidget",
+          "MarkdownWidget"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Widget for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 17,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-dashboard:widgetgrid",
+      "name": "WidgetGrid",
+      "slug": "widget-grid",
+      "category": "components",
+      "description": "WidgetGrid component",
+      "keywords": [
+        "widgetgrid",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "layout",
+      "propNames": [
+        "children",
+        "columns",
+        "sm",
+        "md",
+        "lg",
+        "xl"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use WidgetGrid for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 6,
+        "eventsCount": 0
+      }
+    }
+  ]
+}

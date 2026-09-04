@@ -1,0 +1,43 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-docs/propstable.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Props Table Component Renders component props in a formatted table using --wx- tokens.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-docs",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "props": {
+      "description": "",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "showDeprecated": {
+      "description": "",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "props"
+  ],
+  "title": "PropsTable",
+  "type": "object"
+}

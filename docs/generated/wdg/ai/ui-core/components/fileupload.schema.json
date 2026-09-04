@@ -1,0 +1,99 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-core/fileupload.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Enable users to upload files with drag-and-drop support and validation.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-core",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "accept": {
+      "description": "",
+      "type": "string"
+    },
+    "autoUpload": {
+      "description": "",
+      "type": "boolean"
+    },
+    "browseButtonText": {
+      "description": "",
+      "type": "string"
+    },
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "disabled": {
+      "description": "",
+      "type": "boolean"
+    },
+    "error": {
+      "description": "",
+      "type": "string"
+    },
+    "format": {
+      "description": "",
+      "enum": [
+        "blob",
+        "binary"
+      ]
+    },
+    "hint": {
+      "description": "",
+      "type": "string"
+    },
+    "id": {
+      "description": "",
+      "type": "string"
+    },
+    "label": {
+      "description": "",
+      "type": "string"
+    },
+    "maxSize": {
+      "description": "",
+      "type": "number"
+    },
+    "multiple": {
+      "description": "",
+      "type": "boolean"
+    },
+    "onChange": {
+      "description": "",
+      "enum": [
+        "(files: File[]",
+        "string[]) => void"
+      ]
+    },
+    "onError": {
+      "description": "",
+      "type": "string"
+    },
+    "showPreview": {
+      "description": "",
+      "type": "boolean"
+    },
+    "uploadedFiles": {
+      "description": "",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [],
+  "title": "FileUpload",
+  "type": "object"
+}

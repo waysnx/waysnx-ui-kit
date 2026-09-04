@@ -1,0 +1,54 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/accessdenied.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "AccessDenied - Screen for access denied errors",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "backLabel": {
+      "description": "Button label for going back",
+      "type": "string"
+    },
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "details": {
+      "description": "Additional details",
+      "type": "string"
+    },
+    "onBack": {
+      "description": "Callback when back button is clicked",
+      "type": "null"
+    },
+    "onSupport": {
+      "description": "Callback when support button is clicked",
+      "type": "null"
+    },
+    "reason": {
+      "description": "Access denied reason",
+      "type": "string"
+    },
+    "supportLabel": {
+      "description": "Button label for contacting support",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "title": "AccessDenied",
+  "type": "object"
+}

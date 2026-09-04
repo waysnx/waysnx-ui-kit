@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "gridcell",
+    "name": "GridCell",
+    "package": "@waysnx/ui-grid-builder",
+    "export": "GridCell"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic",
+          "title": "Basic GridCell",
+          "description": "Simple GridCell with default configuration.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "value": "Sample Text",
+            "col": "Sample Text",
+            "row": "Sample Text"
+          },
+          "keywords": [
+            "basic",
+            "gridcell"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:55.267927",
+  "stats": {
+    "examplesGenerated": 1,
+    "categoriesGenerated": 1
+  }
+}

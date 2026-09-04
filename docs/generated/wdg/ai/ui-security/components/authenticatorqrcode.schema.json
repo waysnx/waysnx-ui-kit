@@ -1,0 +1,61 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/authenticatorqrcode.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "AuthenticatorQRCode Component Displays a real, scannable QR code for TOTP authenticator app setup. The QR encodes a standard `otpauth://totp/...` URI and is rendered by the shared @waysnx/ui-media QRCode component (backed by the `qrcode` library), so there is a single, real QR implementation across the kit.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "accountName": {
+      "description": "Account email/username",
+      "type": "string"
+    },
+    "className": {
+      "description": "Optional class name applied to the root element",
+      "type": "string"
+    },
+    "instructions": {
+      "description": "Custom instructions text",
+      "type": "string"
+    },
+    "isLoading": {
+      "description": "Whether QR code generation is loading",
+      "type": "boolean"
+    },
+    "issuer": {
+      "description": "Issuer name (e.g., 'MyApp')",
+      "type": "string"
+    },
+    "onCopySecret": {
+      "description": "Callback to copy secret",
+      "type": "null"
+    },
+    "secret": {
+      "description": "TOTP secret key",
+      "type": "string"
+    },
+    "size": {
+      "description": "QR code size in pixels",
+      "type": "number"
+    }
+  },
+  "required": [
+    "secret",
+    "accountName"
+  ],
+  "title": "AuthenticatorQRCode",
+  "type": "object"
+}

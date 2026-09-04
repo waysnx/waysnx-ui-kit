@@ -1,0 +1,219 @@
+{
+  "id": "ui-docs:componenthero",
+  "name": "ComponentHero",
+  "slug": "component-hero",
+  "library": "ui-docs",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Component Hero",
+  "purpose": "Component Hero Section Displays component name, description, and metadata",
+  "shortDescription": "Component Hero Section Displays component name, description, and metadata.",
+  "longDescription": "Component Hero Section Displays component name, description, and metadata.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Docs/ComponentHero",
+      "storyId": "docs-componenthero",
+      "url": "https://uikit.waysnx.tech/?path=/docs/docs-componenthero",
+      "stories": [],
+      "tags": [],
+      "source": "ComponentHero.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use ComponentHero for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a ComponentHero"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown",
+    "getAccessibilityBadge": "unknown",
+    "getComponentIconFallback": "unknown"
+  },
+  "props": [
+    {
+      "name": "component",
+      "type": "Component",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "--wx-color-primary",
+    "--wx-color-error",
+    "--wx-radius-md",
+    "--wx-color-error-light",
+    "--wx-font-size-md",
+    "--wx-color-success",
+    "--wx-color-surface",
+    "--wx-color-success-light",
+    "--wx-color-surface-alt",
+    "--wx-radius-lg",
+    "--wx-color-text",
+    "--wx-font-size-xl",
+    "--wx-font-size-sm",
+    "--wx-color-primary-contrast",
+    "--wx-font-size-xs",
+    "--wx-color-border",
+    "--wx-color-text-muted",
+    "--wx-color-primary-light"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\ComponentHero.tsx",
+  "keywords": [
+    "componenthero",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use ComponentHero",
+    "Create an example with ComponentHero",
+    "Generate a ComponentHero component",
+    "Build a ComponentHero in my form"
+  ],
+  "componentIntent": "Provide ComponentHero functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.817844",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "b3328818",
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "prismjs",
+        "version": "^1.29.0"
+      },
+      {
+        "name": "react-markdown",
+        "version": "^9.0.1"
+      },
+      {
+        "name": "react-syntax-highlighter",
+        "version": "^15.5.0"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/prismjs",
+        "version": "^1.26.4"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "@types/react-syntax-highlighter",
+        "version": "^15.5.11"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

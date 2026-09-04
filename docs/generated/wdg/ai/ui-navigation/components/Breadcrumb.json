@@ -1,0 +1,494 @@
+{
+  "id": "ui-navigation:breadcrumb",
+  "name": "Breadcrumb",
+  "slug": "breadcrumb",
+  "library": "ui-navigation",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Breadcrumb",
+  "purpose": "Display the current navigation path and enable quick navigation to parent levels",
+  "shortDescription": "Display the current navigation path and enable quick navigation to parent levels.",
+  "longDescription": "Display the current navigation path and enable quick navigation to parent levels.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Navigation/Breadcrumb",
+      "storyId": "navigation-breadcrumb",
+      "url": "https://uikit.waysnx.tech/?path=/docs/navigation-breadcrumb",
+      "stories": [],
+      "tags": [],
+      "source": "Breadcrumb.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Breadcrumb for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Breadcrumb"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [
+      "Header"
+    ],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [
+      "Header"
+    ],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [
+    {
+      "name": "items",
+      "type": "BreadcrumbItem[]",
+      "description": "Breadcrumb items to display",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "separator",
+      "type": "React.ReactNode",
+      "description": "Separator between items",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onItemClick",
+      "type": "(item: BreadcrumbItem) => void",
+      "description": "Callback when breadcrumb item is clicked",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showActive",
+      "type": "boolean",
+      "description": "Whether to show the last item as active",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "maxItems",
+      "type": "number",
+      "description": "Maximum items to show before truncation",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "Additional CSS class",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "style",
+      "type": "React.CSSProperties",
+      "description": "Additional styles",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "Aria label for the breadcrumb nav",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "size",
+      "type": "'sm' | 'md' | 'lg'",
+      "description": "Size of breadcrumb",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [
+    "forwardRef"
+  ],
+  "contextsUsed": [],
+  "forwardRef": true,
+  "memo": false,
+  "cssVariables": [
+    "--nav-breadcrumb-active-text",
+    "--nav-breadcrumb-active-text-dark",
+    "--nav-breadcrumb-link-focus",
+    "--nav-breadcrumb-link-hover-bg",
+    "--nav-breadcrumb-link-hover-bg-dark",
+    "--nav-breadcrumb-link-hover-text",
+    "--nav-breadcrumb-link-hover-text-dark",
+    "--nav-breadcrumb-link-padding",
+    "--nav-breadcrumb-link-text",
+    "--nav-breadcrumb-link-text-dark",
+    "--nav-breadcrumb-separator-text",
+    "--nav-breadcrumb-text",
+    "--nav-breadcrumb-text-dark",
+    "--radius-sm",
+    "--wx-font-size-md",
+    "--wx-font-size-sm"
+  ],
+  "cssClasses": [
+    "css",
+    "nav-breadcrumb",
+    "nav-breadcrumb--sm",
+    "nav-breadcrumb--md",
+    "nav-breadcrumb--lg"
+  ],
+  "designTokens": {
+    "other": {
+      "--nav-breadcrumb-text": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".nav-breadcrumb",
+          ".nav-breadcrumb__text"
+        ],
+        "occurrences": 2,
+        "used": true,
+        "value": ""
+      },
+      "--nav-breadcrumb-link-text": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".nav-breadcrumb__link",
+          ".nav-breadcrumb__text"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-breadcrumb-link-hover-bg": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-breadcrumb__link:hover"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-breadcrumb-link-hover-text": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".nav-breadcrumb__link:hover"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-breadcrumb-link-focus": {
+        "properties": [
+          "outline"
+        ],
+        "selectors": [
+          ".nav-breadcrumb__link:focus-visible"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-breadcrumb-active-text": {
+        "properties": [
+          "color",
+          "border-bottom"
+        ],
+        "selectors": [
+          ".nav-breadcrumb__link[aria-current=\"page\"]",
+          ".nav-breadcrumb__text[aria-current=\"page\"]"
+        ],
+        "occurrences": 2,
+        "used": true,
+        "value": ""
+      },
+      "--nav-breadcrumb-separator-text": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".nav-breadcrumb__separator",
+          ".nav-breadcrumb__ellipsis"
+        ],
+        "occurrences": 2,
+        "used": true,
+        "value": ""
+      },
+      "--nav-breadcrumb-text-dark": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          "@media (prefers-color-scheme: dark)"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-breadcrumb-link-text-dark": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".nav-breadcrumb__link"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-breadcrumb-link-hover-bg-dark": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-breadcrumb__link:hover"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-breadcrumb-link-hover-text-dark": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".nav-breadcrumb__link:hover"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-breadcrumb-active-text-dark": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".nav-breadcrumb__link[aria-current=\"page\"]",
+          ".nav-breadcrumb__text[aria-current=\"page\"]"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      }
+    }
+  },
+  "themeTokens": {},
+  "spacingTokens": {
+    "--nav-breadcrumb-link-padding": {
+      "properties": [
+        "padding"
+      ],
+      "selectors": [
+        ".nav-breadcrumb__link",
+        ".nav-breadcrumb__text",
+        ".}\n\n\n@media (prefers-contrast: more)"
+      ],
+      "occurrences": 3,
+      "used": true,
+      "value": ""
+    }
+  },
+  "typographyTokens": {
+    "--wx-font-size-sm": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".nav-breadcrumb--sm",
+        ".nav-breadcrumb--md",
+        ".}\n\n\n@media (max-width: 640px)"
+      ],
+      "occurrences": 3,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-md": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".nav-breadcrumb--lg"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {
+    "--radius-sm": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".nav-breadcrumb__link",
+        ".nav-breadcrumb__text"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Breadcrumb\\Breadcrumb.tsx",
+  "keywords": [
+    "breadcrumb",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Breadcrumb",
+    "Create an example with Breadcrumb",
+    "Generate a Breadcrumb component",
+    "Build a Breadcrumb in my form"
+  ],
+  "componentIntent": "Show navigation path",
+  "semanticCategory": "navigation",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.196019",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "1603563d",
+  "metadata": {
+    "purpose": "Display the current navigation path and enable quick navigation to parent levels.",
+    "description": "A secondary navigation aid that shows the hierarchy of pages or locations and current position within it. Each level is clickable for quick navigation back to parent pages. Helps users understand their location in the site structure and provides shortcuts.",
+    "functionalAreas": [
+      "Navigation",
+      "Layout"
+    ],
+    "userIntents": [
+      "Know where I am in the site",
+      "Go back to parent page quickly",
+      "Understand the navigation hierarchy",
+      "See the path to current location"
+    ],
+    "exampleUseCases": [
+      "Page Navigation Hierarchy",
+      "File System Path",
+      "Document Hierarchy",
+      "Category Navigation",
+      "Product Navigation Path",
+      "Search Result Path",
+      "Documentation Structure"
+    ],
+    "useWhen": [
+      "Use this component when your application has a hierarchical structure.",
+      "Use this component to help users understand their location.",
+      "Use this component as a secondary navigation aid alongside primary navigation.",
+      "Use this component in documentation or content-heavy sites."
+    ],
+    "avoidWhen": [
+      "Avoid this component in flat, non-hierarchical structures.",
+      "Avoid this component as the primary navigation mechanism.",
+      "Avoid this component on mobile when space is extremely limited.",
+      "Avoid this component for single-level applications."
+    ],
+    "relatedComponents": [
+      "Navigation",
+      "Menu",
+      "Sidebar"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

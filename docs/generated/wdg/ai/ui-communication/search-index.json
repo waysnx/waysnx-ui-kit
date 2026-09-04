@@ -1,0 +1,832 @@
+{
+  "version": "2.0.0",
+  "library": "ui-communication",
+  "generatedAt": "2026-09-03T20:02:40.524833",
+  "components": [
+    {
+      "id": "ui-communication:chatinput",
+      "name": "ChatInput",
+      "slug": "chat-input",
+      "category": "components",
+      "description": "Provide user input for composing chat or message content.",
+      "keywords": [
+        "chatinput",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "text entry",
+        "form field"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "input",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ChatWindow",
+          "ThreadPanel"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ChatWindow",
+          "ThreadPanel"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use ChatInput for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-communication:chatwindow",
+      "name": "ChatWindow",
+      "slug": "chat-window",
+      "category": "components",
+      "description": "Display message history and enable real-time chat conversation.",
+      "keywords": [
+        "chatwindow",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "ChatInput",
+          "MessageBubble",
+          "TypingIndicator"
+        ],
+        "usedBy": [],
+        "related": [
+          "ChatInput",
+          "MessageBubble",
+          "TypingIndicator"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ChatInput",
+          "MessageBubble",
+          "TypingIndicator"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use ChatWindow for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-communication:conversationlist",
+      "name": "ConversationList",
+      "slug": "conversation-list",
+      "category": "components",
+      "description": "Display a list of conversations for quick access.",
+      "keywords": [
+        "conversationlist",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use ConversationList for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-communication:emojipicker",
+      "name": "EmojiPicker",
+      "slug": "emoji-picker",
+      "category": "components",
+      "description": "Enable selection and insertion of emoji characters.",
+      "keywords": [
+        "emojipicker",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use EmojiPicker for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-communication:mentioninput",
+      "name": "MentionInput",
+      "slug": "mention-input",
+      "category": "components",
+      "description": "Enable mentioning users or entities within text input.",
+      "keywords": [
+        "mentioninput",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "text entry",
+        "form field"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "input",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use MentionInput for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-communication:messagebubble",
+      "name": "MessageBubble",
+      "slug": "message-bubble",
+      "category": "components",
+      "description": "Display a single message in a chat or messaging interface.",
+      "keywords": [
+        "messagebubble",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "ReactionBar",
+          "ReadReceipts"
+        ],
+        "usedBy": [
+          "ChatWindow",
+          "ThreadPanel"
+        ],
+        "related": [
+          "ReactionBar",
+          "ReadReceipts"
+        ],
+        "alternatives": [],
+        "parentComponents": [
+          "ChatWindow",
+          "ThreadPanel"
+        ],
+        "childComponents": [
+          "ReactionBar",
+          "ReadReceipts"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use MessageBubble for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-communication:notificationbadge",
+      "name": "NotificationBadge",
+      "slug": "notification-badge",
+      "category": "components",
+      "description": "Display notification count or alert status on UI elements.",
+      "keywords": [
+        "notificationbadge",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "display",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use NotificationBadge for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-communication:notificationlist",
+      "name": "NotificationList",
+      "slug": "notification-list",
+      "category": "components",
+      "description": "Display a list of notifications for review and management.",
+      "keywords": [
+        "notificationlist",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use NotificationList for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-communication:presenceindicator",
+      "name": "PresenceIndicator",
+      "slug": "presence-indicator",
+      "category": "components",
+      "description": "Display user online status or availability.",
+      "keywords": [
+        "presenceindicator",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use PresenceIndicator for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-communication:reactionbar",
+      "name": "ReactionBar",
+      "slug": "reaction-bar",
+      "category": "components",
+      "description": "Enable quick reactions to messages through emoji selections.",
+      "keywords": [
+        "reactionbar",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "MessageBubble"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "MessageBubble"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use ReactionBar for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-communication:readreceipts",
+      "name": "ReadReceipts",
+      "slug": "read-receipts",
+      "category": "components",
+      "description": "Show message delivery and read status indicators.",
+      "keywords": [
+        "readreceipts",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "MessageBubble"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "MessageBubble"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use ReadReceipts for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-communication:threadpanel",
+      "name": "ThreadPanel",
+      "slug": "thread-panel",
+      "category": "components",
+      "description": "Display threaded conversations branching from parent messages.",
+      "keywords": [
+        "threadpanel",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "ChatInput",
+          "MessageBubble"
+        ],
+        "usedBy": [],
+        "related": [
+          "ChatInput",
+          "MessageBubble"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ChatInput",
+          "MessageBubble"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use ThreadPanel for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-communication:typingindicator",
+      "name": "TypingIndicator",
+      "slug": "typing-indicator",
+      "category": "components",
+      "description": "Show that another user is currently typing a message.",
+      "keywords": [
+        "typingindicator",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ChatWindow"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ChatWindow"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use TypingIndicator for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-communication:userpresencelist",
+      "name": "UserPresenceList",
+      "slug": "user-presence-list",
+      "category": "components",
+      "description": "Display list of users with their presence or availability status.",
+      "keywords": [
+        "userpresencelist",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use UserPresenceList for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-communication:voicemessage",
+      "name": "VoiceMessage",
+      "slug": "voice-message",
+      "category": "components",
+      "description": "Display and play audio/voice messages in chat or messaging.",
+      "keywords": [
+        "voicemessage",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use VoiceMessage for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-feedback/skeleton.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display a placeholder while content is loading.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-feedback",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "count": {
+      "description": "",
+      "type": "number"
+    },
+    "height": {
+      "description": "",
+      "enum": [
+        "string",
+        "number"
+      ]
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    },
+    "variant": {
+      "description": "",
+      "enum": [
+        "text",
+        "circle",
+        "rect"
+      ]
+    },
+    "width": {
+      "description": "",
+      "enum": [
+        "string",
+        "number"
+      ]
+    }
+  },
+  "required": [],
+  "title": "Skeleton",
+  "type": "object"
+}

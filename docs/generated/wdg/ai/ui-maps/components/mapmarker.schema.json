@@ -1,0 +1,40 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-maps/mapmarker.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display point of interest markers on a map.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-maps",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "marker": {
+      "description": "",
+      "type": "string"
+    },
+    "onClick": {
+      "description": "",
+      "type": "null"
+    }
+  },
+  "required": [
+    "marker"
+  ],
+  "title": "MapMarker",
+  "type": "object"
+}

@@ -1,0 +1,104 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-core/checkbox.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Allow users to select one or more options from a list of independent choices.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-core",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "ariaDescribedBy": {
+      "description": "",
+      "type": "string"
+    },
+    "ariaLabel": {
+      "description": "",
+      "type": "string"
+    },
+    "checked": {
+      "description": "",
+      "type": "boolean"
+    },
+    "columns": {
+      "description": "",
+      "type": "number"
+    },
+    "disabled": {
+      "description": "",
+      "type": "boolean"
+    },
+    "error": {
+      "description": "",
+      "type": "string"
+    },
+    "fetchOptions": {
+      "description": "",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "groupLabel": {
+      "description": "",
+      "type": "string"
+    },
+    "label": {
+      "description": "",
+      "type": "string"
+    },
+    "onChange": {
+      "description": "",
+      "enum": [
+        "(checked: boolean",
+        "(string",
+        "number)[]) => void"
+      ]
+    },
+    "onError": {
+      "description": "",
+      "type": "null"
+    },
+    "onLoadEnd": {
+      "description": "",
+      "type": "null"
+    },
+    "onLoadStart": {
+      "description": "",
+      "type": "null"
+    },
+    "options": {
+      "description": "",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    },
+    "xrefDisplayProp": {
+      "description": "",
+      "type": "string"
+    },
+    "xrefIdProp": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "title": "Checkbox",
+  "type": "object"
+}

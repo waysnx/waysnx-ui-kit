@@ -1,0 +1,25 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-media/cropper.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Cropper — interactive crop-selection UI. LIMITATION (1.0.0): This component provides a fully interactive crop overlay (move, resize, aspect-ratio locking) and reports the selected crop geometry (`x`, `y`, `width`, `height`) via `onCrop`. However, it does NOT yet produce cropped pixel output — `onCrop` returns the ORIGINAL image in `dataUrl`, not the cropped region. To obtain actual cropped image data, use the reported geometry to draw the selection onto a canvas in your application, or integrate a library such as `react-image-crop` or `cropperjs`.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-media",
+    "version": "1.0.0"
+  },
+  "properties": {},
+  "required": [],
+  "title": "Cropper",
+  "type": "object"
+}

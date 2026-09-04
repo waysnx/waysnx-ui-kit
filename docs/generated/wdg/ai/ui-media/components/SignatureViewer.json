@@ -1,0 +1,220 @@
+{
+  "id": "ui-media:signatureviewer",
+  "name": "SignatureViewer",
+  "slug": "signature-viewer",
+  "library": "ui-media",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Signature Viewer",
+  "purpose": "Display captured signatures for verification or review",
+  "shortDescription": "Display captured signatures for verification or review.",
+  "longDescription": "Display captured signatures for verification or review.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Media/SignatureViewer",
+      "storyId": "media-signatureviewer",
+      "url": "https://uikit.waysnx.tech/?path=/docs/media-signatureviewer",
+      "stories": [],
+      "tags": [],
+      "source": "SignatureViewer.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use SignatureViewer for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a SignatureViewer"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-adv-qr__download-btn",
+    "wx-adv-signature-viewer__badge",
+    "wx-adv-signature-viewer__image",
+    "--wx-color-text-muted"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\SignatureViewer\\SignatureViewer.tsx",
+  "keywords": [
+    "signatureviewer",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use SignatureViewer",
+    "Create an example with SignatureViewer",
+    "Generate a SignatureViewer component",
+    "Build a SignatureViewer in my form"
+  ],
+  "componentIntent": "Provide SignatureViewer functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.388093",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "f87c535e",
+  "metadata": {
+    "purpose": "Display captured signatures for verification or review.",
+    "description": "A component that displays previously captured or uploaded signature images. Used for viewing signatures in documents, approval records, or verification processes. Often includes zoom and download capabilities.",
+    "functionalAreas": [
+      "Visualization",
+      "Data Entry"
+    ],
+    "userIntents": [
+      "View signature",
+      "Verify signature",
+      "Review approval",
+      "See signature image"
+    ],
+    "exampleUseCases": [
+      "Signature Review",
+      "Approval Record",
+      "Document Signature View",
+      "Contract Review",
+      "Authorization Record",
+      "Signature Verification",
+      "Audit Trail"
+    ],
+    "useWhen": [
+      "Use this component to display captured signatures.",
+      "Use this component for signature verification or review.",
+      "Use this component in approval workflows.",
+      "Use this component with zoom and interaction capabilities."
+    ],
+    "avoidWhen": [
+      "Avoid this component for signature capture (use SignaturePad instead).",
+      "Avoid this component without image display capabilities.",
+      "Avoid this component for simple text display.",
+      "Avoid this component without proper image handling."
+    ],
+    "relatedComponents": [
+      "SignaturePad",
+      "ImageViewer",
+      "Document"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "qrcode",
+        "version": "^1.5.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/qrcode",
+        "version": "^1.5.5"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "currency",
+    "name": "Currency",
+    "package": "@waysnx/ui-core",
+    "export": "Currency"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic-label",
+          "title": "With Label",
+          "description": "Displays with a label.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "label": "Sample Text"
+          },
+          "keywords": [
+            "label"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-disabled-false",
+          "title": "Disabled State",
+          "description": "The component is displayed in a non-interactive state.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "disabled": false
+          },
+          "keywords": [
+            "disabled",
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "validation",
+      "title": "Validation",
+      "description": "",
+      "examples": [
+        {
+          "id": "validation-required",
+          "title": "Required Field",
+          "description": "Marks the field as mandatory.",
+          "category": "validation",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "required": true
+          },
+          "keywords": [
+            "required",
+            "validation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "variants",
+      "title": "Variants",
+      "description": "",
+      "examples": [
+        {
+          "id": "variants-currencySymbolPosition-start",
+          "title": "Currency Symbol Position: start",
+          "description": "Demonstrates the start currencySymbolPosition.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "currencySymbolPosition": "start"
+          },
+          "keywords": [
+            "currencySymbolPosition",
+            "start"
+          ]
+        },
+        {
+          "id": "variants-currencySymbolPosition-end",
+          "title": "Currency Symbol Position: end",
+          "description": "Demonstrates the end currencySymbolPosition.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "currencySymbolPosition": "end"
+          },
+          "keywords": [
+            "currencySymbolPosition",
+            "end"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:42.948891",
+  "stats": {
+    "examplesGenerated": 5,
+    "categoriesGenerated": 4
+  }
+}

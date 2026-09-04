@@ -1,0 +1,48 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/hcaptcha.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "HCaptcha - hCaptcha integration",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "onVerify": {
+      "description": "Callback when verification succeeds",
+      "type": "string"
+    },
+    "siteKey": {
+      "description": "Sitekey from hCaptcha",
+      "type": "string"
+    },
+    "size": {
+      "description": "Size (normal or compact)",
+      "enum": [
+        "normal",
+        "compact"
+      ]
+    },
+    "theme": {
+      "description": "Theme (light or dark)",
+      "enum": [
+        "light",
+        "dark"
+      ]
+    }
+  },
+  "required": [],
+  "title": "HCaptcha",
+  "type": "object"
+}

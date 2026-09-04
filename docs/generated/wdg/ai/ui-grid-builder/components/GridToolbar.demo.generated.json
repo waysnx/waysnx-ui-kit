@@ -1,0 +1,86 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "gridtoolbar",
+    "name": "GridToolbar",
+    "package": "@waysnx/ui-grid-builder",
+    "export": "GridToolbar"
+  },
+  "categories": [
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-colDropdownOpen-false",
+          "title": "Disabled State",
+          "description": "Example with colDropdownOpen enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "colDropdownOpen": false
+          },
+          "keywords": [
+            "colDropdownOpen",
+            "state"
+          ]
+        },
+        {
+          "id": "states-colDropdownOpen-true",
+          "title": "Enabled State",
+          "description": "Example with colDropdownOpen enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "colDropdownOpen": true
+          },
+          "keywords": [
+            "colDropdownOpen",
+            "state"
+          ]
+        },
+        {
+          "id": "states-setColDropdownOpen-false",
+          "title": "Disabled State",
+          "description": "Example with setColDropdownOpen enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "setColDropdownOpen": false
+          },
+          "keywords": [
+            "setColDropdownOpen",
+            "state"
+          ]
+        },
+        {
+          "id": "states-setColDropdownOpen-true",
+          "title": "Enabled State",
+          "description": "Example with setColDropdownOpen enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "setColDropdownOpen": true
+          },
+          "keywords": [
+            "setColDropdownOpen",
+            "state"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:55.288129",
+  "stats": {
+    "examplesGenerated": 4,
+    "categoriesGenerated": 1
+  }
+}

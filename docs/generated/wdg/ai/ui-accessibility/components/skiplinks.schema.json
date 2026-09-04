@@ -1,0 +1,33 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-accessibility/skiplinks.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "SkipLinks — renders visually hidden skip-navigation links. Links appear on keyboard focus, allowing keyboard/screen reader users to bypass repeated navigation blocks. Place as the very first child of or .",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-accessibility",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "links": {
+      "description": "",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [],
+  "title": "SkipLinks",
+  "type": "object"
+}

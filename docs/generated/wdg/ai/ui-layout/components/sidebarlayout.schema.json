@@ -1,0 +1,67 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-layout/sidebarlayout.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Create a layout with a sidebar and main content area.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-layout",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "children": {
+      "description": "",
+      "type": "string"
+    },
+    "collapsed": {
+      "description": "",
+      "type": "boolean"
+    },
+    "collapsible": {
+      "description": "",
+      "type": "boolean"
+    },
+    "contentLabel": {
+      "description": "",
+      "type": "string"
+    },
+    "orientation": {
+      "description": "",
+      "enum": [
+        "vertical",
+        "horizontal"
+      ]
+    },
+    "sidebar": {
+      "description": "",
+      "type": "string"
+    },
+    "sidebarLabel": {
+      "description": "",
+      "type": "string"
+    },
+    "sidebarWidth": {
+      "description": "",
+      "enum": [
+        "number",
+        "string"
+      ]
+    }
+  },
+  "required": [
+    "sidebar",
+    "children"
+  ],
+  "title": "SidebarLayout",
+  "type": "object"
+}

@@ -1,0 +1,107 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "secureuploader",
+    "name": "SecureUploader",
+    "package": "@waysnx/ui-security",
+    "export": "SecureUploader"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic-label",
+          "title": "With Label",
+          "description": "Displays with a label.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "label": "Sample Text"
+          },
+          "keywords": [
+            "label"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-multiple-false",
+          "title": "Disabled State",
+          "description": "Allows multiple selections.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "multiple": false
+          },
+          "keywords": [
+            "multiple",
+            "state"
+          ]
+        },
+        {
+          "id": "states-multiple-true",
+          "title": "Enabled State",
+          "description": "Allows multiple selections.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "multiple": true
+          },
+          "keywords": [
+            "multiple",
+            "state"
+          ]
+        },
+        {
+          "id": "states-isLoading-false",
+          "title": "Disabled State",
+          "description": "Example with isLoading enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "isLoading": false
+          },
+          "keywords": [
+            "isLoading",
+            "state"
+          ]
+        },
+        {
+          "id": "states-isLoading-true",
+          "title": "Enabled State",
+          "description": "Example with isLoading enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "isLoading": true
+          },
+          "keywords": [
+            "isLoading",
+            "state"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:05.674605",
+  "stats": {
+    "examplesGenerated": 5,
+    "categoriesGenerated": 2
+  }
+}

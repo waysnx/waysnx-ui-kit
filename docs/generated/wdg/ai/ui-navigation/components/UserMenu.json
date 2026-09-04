@@ -1,0 +1,338 @@
+{
+  "id": "ui-navigation:usermenu",
+  "name": "UserMenu",
+  "slug": "user-menu",
+  "library": "ui-navigation",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "User Menu",
+  "purpose": "Display user profile and account-related options",
+  "shortDescription": "Display user profile and account-related options.",
+  "longDescription": "Display user profile and account-related options.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Navigation/UserMenu",
+      "storyId": "navigation-usermenu",
+      "url": "https://uikit.waysnx.tech/?path=/docs/navigation-usermenu",
+      "stories": [],
+      "tags": [],
+      "source": "UserMenu.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use UserMenu for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a UserMenu"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [
+    {
+      "name": "user",
+      "type": "UserInfo",
+      "description": "User information",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "items",
+      "type": "UserMenuItem[]",
+      "description": "Menu items",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "trigger",
+      "type": "'hover' | 'click'",
+      "description": "Trigger button trigger ('hover' or 'click')",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "position",
+      "type": "'left' | 'right'",
+      "description": "Menu position relative to trigger",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showStatus",
+      "type": "boolean",
+      "description": "Show status indicator",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showTrigger",
+      "type": "boolean",
+      "description": "Show trigger button",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "customTrigger",
+      "type": "React.ReactNode",
+      "description": "Custom trigger element",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "Additional CSS class",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "style",
+      "type": "React.CSSProperties",
+      "description": "Additional styles",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onOpen",
+      "type": "() => void",
+      "description": "Callback when menu opens",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onClose",
+      "type": "() => void",
+      "description": "Callback when menu closes",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "menuWidth",
+      "type": "string | number",
+      "description": "Menu width",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showUserInfo",
+      "type": "boolean",
+      "description": "Show user info header",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "headerContent",
+      "type": "React.ReactNode",
+      "description": "Custom header content",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "Accessible label",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [
+    "forwardRef"
+  ],
+  "contextsUsed": [],
+  "forwardRef": true,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "user-menu__divider",
+    "user-menu__items",
+    "user-menu__item-label",
+    "user-menu__trigger",
+    "user-menu__header",
+    "user-menu__header-email",
+    "user-menu__avatar",
+    "user-menu__header--custom",
+    "user-menu__header-info",
+    "user-menu__header-avatar--placeholder",
+    "user-menu__status",
+    "user-menu__header-name",
+    "user-menu__item-icon",
+    "user-menu__header-avatar",
+    "user-menu__avatar--placeholder"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\UserMenu\\UserMenu.tsx",
+  "keywords": [
+    "usermenu",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use UserMenu",
+    "Create an example with UserMenu",
+    "Generate a UserMenu component",
+    "Build a UserMenu in my form"
+  ],
+  "componentIntent": "Provide UserMenu functionality",
+  "semanticCategory": "navigation",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.336011",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "50d3fb81",
+  "metadata": {
+    "purpose": "Display user profile and account-related options.",
+    "description": "A specialized menu component typically in the header or top-right corner showing user name/avatar and account options. Provides quick access to profile, settings, and logout functionality. Usually triggered by clicking user avatar or name.",
+    "functionalAreas": [
+      "Navigation",
+      "Authentication"
+    ],
+    "userIntents": [
+      "See current user",
+      "Access user profile",
+      "Change account settings",
+      "Log out"
+    ],
+    "exampleUseCases": [
+      "User Account Menu",
+      "Profile Dropdown",
+      "Account Options",
+      "User Settings Menu",
+      "Avatar Menu",
+      "Account Switcher",
+      "User Actions Menu"
+    ],
+    "useWhen": [
+      "Use this component for user account and profile options.",
+      "Use this component in application header for persistent access.",
+      "Use this component to provide quick access to settings and logout.",
+      "Use this component when users need to switch accounts."
+    ],
+    "avoidWhen": [
+      "Avoid this component without user authentication.",
+      "Avoid this component without clear triggering element.",
+      "Avoid this component with too many unrelated options.",
+      "Avoid this component without proper security for sensitive actions."
+    ],
+    "relatedComponents": [
+      "Menu",
+      "Header",
+      "Navigation"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

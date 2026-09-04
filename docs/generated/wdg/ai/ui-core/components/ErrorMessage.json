@@ -1,0 +1,258 @@
+{
+  "id": "ui-core:errormessage",
+  "name": "ErrorMessage",
+  "slug": "error-message",
+  "library": "ui-core",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Error Message",
+  "purpose": "Display error messages to users with prominent visual and semantic prominence",
+  "shortDescription": "Display error messages to users with prominent visual and semantic prominence.",
+  "longDescription": "Display error messages to users with prominent visual and semantic prominence.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Components/ErrorMessage",
+      "storyId": "components-errormessage",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-errormessage",
+      "stories": [],
+      "tags": [],
+      "source": "ErrorMessage.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use ErrorMessage for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a ErrorMessage"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown"
+  },
+  "props": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "show",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-error"
+  ],
+  "cssClasses": [
+    "wx-error-message"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-color-error": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-error-message"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\ErrorMessage\\ErrorMessage.tsx",
+  "keywords": [
+    "errormessage",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use ErrorMessage",
+    "Create an example with ErrorMessage",
+    "Generate a ErrorMessage component",
+    "Build a ErrorMessage in my form"
+  ],
+  "componentIntent": "Provide ErrorMessage functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.597039",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "2c1e40e3",
+  "metadata": {
+    "purpose": "Display error messages to users with prominent visual and semantic prominence.",
+    "description": "A component for displaying error feedback to users with semantic HTML markup and accessibility support. Renders as an alert region that automatically announces to screen reader users. Displays conditional error messages based on validation or processing failures. Used throughout form components for consistent error presentation.",
+    "functionalAreas": [
+      "Feedback",
+      "Forms",
+      "Communication"
+    ],
+    "userIntents": [
+      "Understand why an action failed",
+      "Learn what needs to be corrected",
+      "Receive validation feedback",
+      "Get error recovery guidance"
+    ],
+    "exampleUseCases": [
+      "Form Field Error",
+      "Validation Message",
+      "Action Failure",
+      "Data Processing Error",
+      "Permission Denied",
+      "Input Requirement"
+    ],
+    "useWhen": [
+      "Use this component when displaying error states for form fields.",
+      "Use this component when users need immediate error feedback.",
+      "Use this component when errors should be announced to screen reader users.",
+      "Use this component for conditional error message display."
+    ],
+    "avoidWhen": [
+      "Avoid this component when the error is not user-actionable.",
+      "Avoid this component when displaying non-error feedback (use Feedback components instead).",
+      "Avoid this component without context about the error or how to fix it.",
+      "Avoid this component for success or informational messages."
+    ],
+    "relatedComponents": [
+      "Input",
+      "Textarea",
+      "Select"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "react-imask",
+        "version": "^7.6.1"
+      },
+      {
+        "name": "react-number-format",
+        "version": "^5.4.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-datepicker",
+        "version": "^8.0.0"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-datepicker",
+        "version": "^7.0.0"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

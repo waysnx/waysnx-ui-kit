@@ -1,0 +1,325 @@
+{
+  "id": "ui-dashboard:dashboard",
+  "name": "Dashboard",
+  "slug": "dashboard",
+  "library": "ui-dashboard",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Dashboard",
+  "purpose": "Provide the main container and layout structure for dashboard applications",
+  "shortDescription": "Provide the main container and layout structure for dashboard applications.",
+  "longDescription": "Provide the main container and layout structure for dashboard applications.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Dashboard/Dashboard",
+      "storyId": "dashboard-dashboard",
+      "url": "https://uikit.waysnx.tech/?path=/docs/dashboard-dashboard",
+      "stories": [],
+      "tags": [],
+      "source": "Dashboard.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Dashboard for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Dashboard"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [
+      "DashboardConfig",
+      "DashboardProvider",
+      "DashboardTheme"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useTranslation": "unknown",
+    "DashboardProvider": "unknown",
+    "useDashboard": "unknown",
+    "DashboardConfig": "unknown",
+    "DashboardTheme": "unknown"
+  },
+  "props": [
+    {
+      "name": "title",
+      "type": "string",
+      "description": "Dashboard title",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "description": "Dashboard description",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "children",
+      "type": "ReactNode",
+      "description": "Content to render inside dashboard",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "toolbar",
+      "type": "ReactNode",
+      "description": "Toolbar content",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "sidebar",
+      "type": "ReactNode",
+      "description": "Sidebar content",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "footer",
+      "type": "ReactNode",
+      "description": "Footer content",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "loading",
+      "type": "boolean",
+      "description": "Is dashboard in loading state",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "Additional CSS class",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "style",
+      "type": "CSSProperties",
+      "description": "Additional CSS styles",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "config",
+      "type": "Partial<DashboardConfig>",
+      "description": "Dashboard configuration",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onThemeChange",
+      "type": "(theme: DashboardTheme) => void",
+      "description": "Callback when theme changes",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onFiltersChange",
+      "type": "(filters: Record<string, any>) => void",
+      "description": "Callback when filters change",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "dashboard-toolbar",
+    "dashboard-sidebar",
+    "dashboard-container",
+    "dashboard-skip-link",
+    "dashboard-main",
+    "dashboard-description",
+    "dashboard-footer",
+    "dashboard-title",
+    "dashboard-content",
+    "dashboard-header"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Dashboard\\Dashboard.tsx",
+  "keywords": [
+    "dashboard",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Dashboard",
+    "Create an example with Dashboard",
+    "Generate a Dashboard component",
+    "Build a Dashboard in my form"
+  ],
+  "componentIntent": "Provide Dashboard functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.727560",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "1fb17ee0",
+  "metadata": {
+    "purpose": "Provide the main container and layout structure for dashboard applications.",
+    "description": "A comprehensive dashboard framework component that provides layout structure with optional header, sidebar, toolbar, and footer areas. Includes theme management through context and filter state persistence for dashboard-wide filter coordination. Provides semantic HTML structure with accessibility landmarks and skip links.",
+    "functionalAreas": [
+      "Layout",
+      "Visualization",
+      "Navigation"
+    ],
+    "userIntents": [
+      "Access dashboard applications and data",
+      "Navigate dashboard sections",
+      "Change dashboard theme",
+      "Filter and view analytics"
+    ],
+    "exampleUseCases": [
+      "Analytics Dashboard",
+      "Business Intelligence Portal",
+      "Admin Control Panel",
+      "Sales Dashboard",
+      "Monitoring Dashboard",
+      "Reporting Interface"
+    ],
+    "useWhen": [
+      "Use this component as the root container for dashboard applications.",
+      "Use this component when dashboard-wide features like themes and filters are needed.",
+      "Use this component when consistent layout structure across dashboard pages is required.",
+      "Use this component when accessibility landmarks and skip links are important."
+    ],
+    "avoidWhen": [
+      "Avoid this component for simple single-page layouts.",
+      "Avoid this component when custom layout control takes precedence.",
+      "Avoid this component without child components to populate sections.",
+      "Avoid this component when dashboard features are not needed."
+    ],
+    "relatedComponents": [
+      "Widget",
+      "Layout",
+      "Filters"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-visualization/treenode.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Represent a single node within a hierarchical tree structure.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-visualization",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "canDropHere": {
+      "description": "",
+      "type": "boolean"
+    },
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "enableDragDrop": {
+      "description": "",
+      "type": "boolean"
+    },
+    "hasChildren": {
+      "description": "",
+      "type": "boolean"
+    },
+    "isDragOver": {
+      "description": "",
+      "type": "boolean"
+    },
+    "isDragging": {
+      "description": "",
+      "type": "boolean"
+    },
+    "isSelected": {
+      "description": "",
+      "type": "boolean"
+    },
+    "node": {
+      "description": "",
+      "type": "string"
+    },
+    "onClick": {
+      "description": "",
+      "type": "null"
+    },
+    "onContextMenu": {
+      "description": "",
+      "type": "null"
+    },
+    "onDoubleClick": {
+      "description": "",
+      "type": "null"
+    },
+    "onDragOver": {
+      "description": "",
+      "type": "string"
+    },
+    "onDragStart": {
+      "description": "",
+      "type": "string"
+    },
+    "onDrop": {
+      "description": "",
+      "type": "string"
+    },
+    "onToggleExpand": {
+      "description": "",
+      "type": "string"
+    },
+    "renderNode": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [
+    "node"
+  ],
+  "title": "TreeNode",
+  "type": "object"
+}

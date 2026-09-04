@@ -1,0 +1,93 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-core/input.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Collect single-line text and numeric input from users with validation and formatting support.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-core",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "allowNegative": {
+      "description": "",
+      "type": "boolean"
+    },
+    "ariaDescribedBy": {
+      "description": "",
+      "type": "string"
+    },
+    "ariaLabel": {
+      "description": "",
+      "type": "string"
+    },
+    "decimalScale": {
+      "description": "",
+      "type": "number"
+    },
+    "decimalSeparator": {
+      "description": "",
+      "type": "string"
+    },
+    "error": {
+      "description": "",
+      "type": "string"
+    },
+    "errorMessage": {
+      "description": "",
+      "type": "string"
+    },
+    "hint": {
+      "description": "",
+      "type": "string"
+    },
+    "label": {
+      "description": "",
+      "type": "string"
+    },
+    "mask": {
+      "description": "",
+      "enum": [
+        "boolean",
+        "string"
+      ]
+    },
+    "onValidation": {
+      "description": "",
+      "type": "string"
+    },
+    "showPasswordToggle": {
+      "description": "",
+      "type": "boolean"
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    },
+    "thousandSeparator": {
+      "description": "",
+      "type": "string"
+    },
+    "validateOnBlur": {
+      "description": "",
+      "type": "boolean"
+    },
+    "validateOnChange": {
+      "description": "",
+      "type": "boolean"
+    }
+  },
+  "required": [],
+  "title": "Input",
+  "type": "object"
+}

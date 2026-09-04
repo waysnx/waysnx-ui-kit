@@ -1,0 +1,86 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "mfaverificationdialog",
+    "name": "MFAVerificationDialog",
+    "package": "@waysnx/ui-security",
+    "export": "MFAVerificationDialog"
+  },
+  "categories": [
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-isOpen-false",
+          "title": "Disabled State",
+          "description": "Example with isOpen enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "isOpen": false
+          },
+          "keywords": [
+            "isOpen",
+            "state"
+          ]
+        },
+        {
+          "id": "states-isOpen-true",
+          "title": "Enabled State",
+          "description": "Example with isOpen enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "isOpen": true
+          },
+          "keywords": [
+            "isOpen",
+            "state"
+          ]
+        },
+        {
+          "id": "states-isLoading-false",
+          "title": "Disabled State",
+          "description": "Example with isLoading enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "isLoading": false
+          },
+          "keywords": [
+            "isLoading",
+            "state"
+          ]
+        },
+        {
+          "id": "states-isLoading-true",
+          "title": "Enabled State",
+          "description": "Example with isLoading enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "isLoading": true
+          },
+          "keywords": [
+            "isLoading",
+            "state"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:05.471394",
+  "stats": {
+    "examplesGenerated": 4,
+    "categoriesGenerated": 1
+  }
+}

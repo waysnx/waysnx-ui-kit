@@ -1,0 +1,36 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-core/hidden.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Store and submit form field values that should not be visible to users.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-core",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "name": {
+      "description": "",
+      "type": "string"
+    },
+    "value": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [
+    "name"
+  ],
+  "title": "Hidden",
+  "type": "object"
+}

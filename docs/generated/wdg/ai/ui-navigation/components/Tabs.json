@@ -1,0 +1,771 @@
+{
+  "id": "ui-navigation:tabs",
+  "name": "Tabs",
+  "slug": "tabs",
+  "library": "ui-navigation",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Tabs",
+  "purpose": "Organize navigation into switchable tabs",
+  "shortDescription": "Organize navigation into switchable tabs.",
+  "longDescription": "Organize navigation into switchable tabs.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Navigation/Tabs",
+      "storyId": "navigation-tabs",
+      "url": "https://uikit.waysnx.tech/?path=/docs/navigation-tabs",
+      "stories": [],
+      "tags": [],
+      "source": "Tabs.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Tabs for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Tabs"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "tabs",
+      "type": "TabConfig[]",
+      "description": "Tab items",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "activeTabId",
+      "type": "string",
+      "description": "Currently active tab ID",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onTabChange",
+      "type": "(tabId: string) => void",
+      "description": "Callback when tab is changed",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "density",
+      "type": "'compact' | 'normal' | 'spacious'",
+      "description": "Component density",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "variant",
+      "type": "'default' | 'minimal' | 'elevated'",
+      "description": "Tab position",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "Additional CSS class",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "style",
+      "type": "React.CSSProperties",
+      "description": "Additional styles",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showIcons",
+      "type": "boolean",
+      "description": "Show tab icons",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showBadges",
+      "type": "boolean",
+      "description": "Show tab badges",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "keyboardNav",
+      "type": "boolean",
+      "description": "Keyboard navigation enabled",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "Accessible label for tabs",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "orientation",
+      "type": "'horizontal' | 'vertical'",
+      "description": "Tab orientation",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "scrollable",
+      "type": "boolean",
+      "description": "Scroll tabs when overflow",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "closable",
+      "type": "boolean",
+      "description": "Show tab close buttons",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onTabClose",
+      "type": "(tabId: string) => void",
+      "description": "Callback when tab is closed",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "lazyLoad",
+      "type": "boolean",
+      "description": "Enable lazy loading",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [
+    "forwardRef"
+  ],
+  "contextsUsed": [],
+  "forwardRef": true,
+  "memo": false,
+  "cssVariables": [
+    "--nav-tabs-bg",
+    "--nav-tabs-bg-dark",
+    "--nav-tabs-border",
+    "--nav-tabs-border-dark",
+    "--nav-tabs-content-bg",
+    "--nav-tabs-font",
+    "--nav-tabs-font-size",
+    "--nav-tabs-list-bg",
+    "--nav-tabs-radius",
+    "--nav-tabs-shadow",
+    "--nav-tabs-tab-active-bg",
+    "--nav-tabs-tab-active-border",
+    "--nav-tabs-tab-active-text",
+    "--nav-tabs-tab-badge-bg",
+    "--nav-tabs-tab-badge-text",
+    "--nav-tabs-tab-bg",
+    "--nav-tabs-tab-disabled-text",
+    "--nav-tabs-tab-focus-outline",
+    "--nav-tabs-tab-height",
+    "--nav-tabs-tab-hover-bg",
+    "--nav-tabs-tab-hover-bg-dark",
+    "--nav-tabs-tab-hover-text",
+    "--nav-tabs-tab-padding",
+    "--nav-tabs-tab-text",
+    "--nav-tabs-text",
+    "--nav-tabs-text-dark",
+    "--radius-full",
+    "--wx-font-size-md",
+    "--wx-font-size-sm",
+    "--wx-font-size-xs",
+    "--wx-radius-sm"
+  ],
+  "cssClasses": [
+    "css",
+    "nav-tabs",
+    "nav-tabs--vertical",
+    "nav-tabs--scrollable",
+    "nav-tabs--compact",
+    "nav-tabs--normal",
+    "nav-tabs--spacious",
+    "nav-tabs--default",
+    "nav-tabs--minimal",
+    "nav-tabs--elevated"
+  ],
+  "designTokens": {
+    "other": {
+      "--nav-tabs-bg": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-tabs"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-tabs-text": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".nav-tabs",
+          ".}\n\n\n.nav-tabs__loading"
+        ],
+        "occurrences": 2,
+        "used": true,
+        "value": ""
+      },
+      "--nav-tabs-border": {
+        "properties": [
+          "border-bottom",
+          "border-right",
+          "border",
+          "border-bottom-color"
+        ],
+        "selectors": [
+          ".nav-tabs__list",
+          ".nav-tabs--vertical .nav-tabs__list",
+          ".nav-tabs--default",
+          ".nav-tabs--elevated .nav-tabs__list"
+        ],
+        "occurrences": 4,
+        "used": true,
+        "value": ""
+      },
+      "--nav-tabs-list-bg": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-tabs__list"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-tabs-tab-height": {
+        "properties": [
+          "height"
+        ],
+        "selectors": [
+          ".nav-tabs__tab"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-tabs-tab-text": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".nav-tabs__tab"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-tabs-tab-bg": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-tabs__tab"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-tabs-tab-hover-bg": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-tabs__tab:hover:not([aria-disabled=\"true\"]):not([disabled])"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-tabs-tab-hover-text": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".nav-tabs__tab:hover:not([aria-disabled=\"true\"]):not([disabled])"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-tabs-tab-active-text": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".nav-tabs__tab--active"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-tabs-tab-active-bg": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-tabs__tab--active"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-tabs-tab-active-border": {
+        "properties": [
+          "border-bottom-color",
+          "border-right-color"
+        ],
+        "selectors": [
+          ".nav-tabs__tab--active",
+          ".nav-tabs--vertical .nav-tabs__tab--active"
+        ],
+        "occurrences": 2,
+        "used": true,
+        "value": ""
+      },
+      "--nav-tabs-tab-focus-outline": {
+        "properties": [
+          "outline"
+        ],
+        "selectors": [
+          ".nav-tabs__tab--focused",
+          ".nav-tabs__tab--focused:focus-visible",
+          ".nav-tabs__tab-close:focus-visible",
+          ".}\n\n\n.nav-tabs__tab:focus-visible"
+        ],
+        "occurrences": 4,
+        "used": true,
+        "value": ""
+      },
+      "--nav-tabs-tab-disabled-text": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".nav-tabs__tab--disabled",
+          ".nav-tabs__tab[disabled]",
+          ".nav-tabs__tab[aria-disabled=\"true\"]",
+          ".nav-tabs__tab--disabled:hover",
+          ".nav-tabs__tab[disabled]:hover",
+          ".nav-tabs__tab[aria-disabled=\"true\"]:hover"
+        ],
+        "occurrences": 2,
+        "used": true,
+        "value": ""
+      },
+      "--nav-tabs-tab-badge-bg": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-tabs__tab-badge"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-tabs-tab-badge-text": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".nav-tabs__tab-badge"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-tabs-content-bg": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-tabs__content"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-tabs-bg-dark": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          "@media (prefers-color-scheme: dark)"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-tabs-text-dark": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          "@media (prefers-color-scheme: dark)"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-tabs-border-dark": {
+        "properties": [
+          "border-bottom-color",
+          "border-right-color"
+        ],
+        "selectors": [
+          ".nav-tabs__list",
+          ".nav-tabs--vertical .nav-tabs__list"
+        ],
+        "occurrences": 2,
+        "used": true,
+        "value": ""
+      },
+      "--nav-tabs-tab-hover-bg-dark": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-tabs__tab:hover:not([aria-disabled=\"true\"]):not([disabled])"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      }
+    }
+  },
+  "themeTokens": {},
+  "spacingTokens": {
+    "--nav-tabs-tab-padding": {
+      "properties": [
+        "padding"
+      ],
+      "selectors": [
+        ".nav-tabs__tab"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "typographyTokens": {
+    "--nav-tabs-font": {
+      "properties": [
+        "font-family"
+      ],
+      "selectors": [
+        ".nav-tabs"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-sm": {
+      "properties": [
+        "nav-tabs-font-size",
+        "font-size"
+      ],
+      "selectors": [
+        ".nav-tabs--compact",
+        ".nav-tabs--normal",
+        ".nav-tabs__tab-close"
+      ],
+      "occurrences": 3,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-md": {
+      "properties": [
+        "nav-tabs-font-size",
+        "font-size"
+      ],
+      "selectors": [
+        ".nav-tabs--spacious",
+        ".nav-tabs__tab-icon"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--nav-tabs-font-size": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".nav-tabs__tab",
+        ".}\n\n\n.nav-tabs__loading"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-xs": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".nav-tabs__tab-badge"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {},
+  "shadowTokens": {
+    "--nav-tabs-shadow": {
+      "properties": [
+        "box-shadow"
+      ],
+      "selectors": [
+        ".nav-tabs--elevated"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "radiusTokens": {
+    "--nav-tabs-radius": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".nav-tabs"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--radius-full": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".nav-tabs__tab-badge"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-radius-sm": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".nav-tabs__tab-close"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Tabs\\Tabs.tsx",
+  "keywords": [
+    "organize",
+    "panel",
+    "navigation",
+    "tab",
+    "components",
+    "tabs"
+  ],
+  "aliases": [
+    {
+      "alias": "tabbed panel",
+      "context": "technical",
+      "confidence": 0.92
+    },
+    {
+      "alias": "tabbed interface",
+      "context": "technical",
+      "confidence": 0.9
+    },
+    {
+      "alias": "panel tabs",
+      "context": "descriptive",
+      "confidence": 0.88
+    }
+  ],
+  "synonyms": [
+    "tabbed panel",
+    "tab navigation"
+  ],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Tabs",
+    "Create an example with Tabs",
+    "Generate a Tabs component",
+    "Build a Tabs in my form"
+  ],
+  "componentIntent": "Organize content",
+  "semanticCategory": "navigation",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.320962",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "9f384478",
+  "metadata": {
+    "purpose": "Organize navigation into switchable tabs.",
+    "description": "Tab-based navigation component that displays multiple navigation options as tabs, with one active tab showing its content. Supports keyboard navigation and visual indication of active tab. Used for organizing primary navigation or content sections.",
+    "functionalAreas": [
+      "Navigation",
+      "Layout"
+    ],
+    "userIntents": [
+      "Switch between sections",
+      "See available options",
+      "Know which section is active",
+      "Navigate between areas"
+    ],
+    "exampleUseCases": [
+      "Navigation Tabs",
+      "Section Tabs",
+      "Feature Tabs",
+      "Content Tabs",
+      "Primary Navigation Tabs",
+      "Organization Tabs",
+      "Item Detail Tabs"
+    ],
+    "useWhen": [
+      "Use this component for tab-based navigation or content organization.",
+      "Use this component when tabs are equally important.",
+      "Use this component for organizing content sections.",
+      "Use this component with fewer than 8 tabs."
+    ],
+    "avoidWhen": [
+      "Avoid this component when one option is significantly more important.",
+      "Avoid this component with more than 8-10 tabs.",
+      "Avoid this component for hierarchical navigation.",
+      "Avoid this component when all content should be visible."
+    ],
+    "relatedComponents": [
+      "PageTabs",
+      "Navigation",
+      "Menu"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

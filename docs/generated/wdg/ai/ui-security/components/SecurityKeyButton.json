@@ -1,0 +1,272 @@
+{
+  "id": "ui-security:securitykeybutton",
+  "name": "SecurityKeyButton",
+  "slug": "security-key-button",
+  "library": "ui-security",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Security Key Button",
+  "purpose": "SecurityKeyButton - Authenticate using FIDO2/WebAuthn security key",
+  "shortDescription": "SecurityKeyButton - Authenticate using FIDO2/WebAuthn security key",
+  "longDescription": "SecurityKeyButton - Authenticate using FIDO2/WebAuthn security key",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Security/Social Login/SecurityKeyButton",
+      "storyId": "security-social-login-securitykeybutton",
+      "url": "https://uikit.waysnx.tech/?path=/docs/security-social-login-securitykeybutton",
+      "stories": [],
+      "tags": [],
+      "source": "SecurityKeyButton.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use SecurityKeyButton for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a SecurityKeyButton"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "Button"
+    ],
+    "usedBy": [],
+    "related": [
+      "Button"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": [
+      "Button"
+    ]
+  },
+  "dependencies": {
+    "Button": "unknown"
+  },
+  "props": [
+    {
+      "name": "label",
+      "type": "string",
+      "description": "Button label",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "variant",
+      "type": "'primary' | 'secondary' | 'outline' | 'ghost'",
+      "description": "Button variant",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "size",
+      "type": "'sm' | 'md' | 'lg'",
+      "description": "Button size",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onAuthSuccess",
+      "type": "(result: any) => void",
+      "description": "Callback when authentication succeeds",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onAuthError",
+      "type": "(error: Error) => void",
+      "description": "Callback when authentication fails",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "description": "Whether button is disabled",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "loadingLabel",
+      "type": "string",
+      "description": "Custom loading message",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "challenge",
+      "type": "string",
+      "description": "Challenge from server (required for WebAuthn)",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\MFA\\SecurityKeyButton.tsx",
+  "keywords": [
+    "securitykeybutton",
+    "label",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [
+    "action control",
+    "clickable element"
+  ],
+  "naturalLanguageQueries": [
+    {
+      "query": "Add a securitykeybutton",
+      "context": "ui",
+      "intent": "create"
+    },
+    {
+      "query": "Create a securitykeybutton action",
+      "context": "interaction",
+      "intent": "create"
+    }
+  ],
+  "recommendedPrompts": [
+    "Create a SecurityKeyButton with loading state",
+    "Show me a SecurityKeyButton with tooltip",
+    "Generate a SecurityKeyButton with icon",
+    "Build a SecurityKeyButton for form submission",
+    "Design a SecurityKeyButton for delete action"
+  ],
+  "componentIntent": "Provide SecurityKeyButton functionality",
+  "semanticCategory": "display",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.535629",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "025ad84b",
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-media",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

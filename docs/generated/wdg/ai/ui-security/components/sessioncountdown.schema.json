@@ -1,0 +1,56 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/sessioncountdown.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "SessionCountdown - Session time countdown display",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "format": {
+      "description": "Display format",
+      "enum": [
+        "compact",
+        "detailed"
+      ]
+    },
+    "onTimeCritical": {
+      "description": "Callback when time is critical (10% remaining)",
+      "type": "null"
+    },
+    "onTimeLow": {
+      "description": "Callback when time is low (30% remaining)",
+      "type": "null"
+    },
+    "remainingTime": {
+      "description": "Remaining time in milliseconds",
+      "type": "number"
+    },
+    "totalDuration": {
+      "description": "Total session duration in milliseconds",
+      "type": "number"
+    }
+  },
+  "required": [
+    "totalDuration",
+    "remainingTime"
+  ],
+  "title": "SessionCountdown",
+  "type": "object"
+}

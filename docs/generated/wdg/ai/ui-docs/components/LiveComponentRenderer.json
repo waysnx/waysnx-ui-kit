@@ -1,0 +1,190 @@
+{
+  "id": "ui-docs:livecomponentrenderer",
+  "name": "LiveComponentRenderer",
+  "slug": "live-component-renderer",
+  "library": "ui-docs",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Live Component Renderer",
+  "purpose": "LiveComponentRenderer Dynamically renders a component from the registry with provided props",
+  "shortDescription": "LiveComponentRenderer Dynamically renders a component from the registry with provided props. Handles missing componen...",
+  "longDescription": "LiveComponentRenderer Dynamically renders a component from the registry with provided props. Handles missing components gracefully with fallback UI.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use LiveComponentRenderer for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a LiveComponentRenderer"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [
+      "LiveComponentRendererProps"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useRegistry": "unknown",
+    "LiveComponentRendererProps": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "--wx-color-error",
+    "--wx-radius-md",
+    "--wx-color-error-light",
+    "--wx-radius-sm",
+    "--wx-font-size-xs"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\LiveComponentRenderer.tsx",
+  "keywords": [
+    "components",
+    "livecomponentrenderer"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use LiveComponentRenderer",
+    "Create an example with LiveComponentRenderer",
+    "Generate a LiveComponentRenderer component",
+    "Build a LiveComponentRenderer in my form"
+  ],
+  "componentIntent": "Provide LiveComponentRenderer functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.831622",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "ec5f1e54",
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "prismjs",
+        "version": "^1.29.0"
+      },
+      {
+        "name": "react-markdown",
+        "version": "^9.0.1"
+      },
+      {
+        "name": "react-syntax-highlighter",
+        "version": "^15.5.0"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/prismjs",
+        "version": "^1.26.4"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "@types/react-syntax-highlighter",
+        "version": "^15.5.11"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

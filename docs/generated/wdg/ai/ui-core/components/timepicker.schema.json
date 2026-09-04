@@ -1,0 +1,88 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-core/timepicker.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Enable users to select a specific time through a time picker interface.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-core",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "ariaDescribedBy": {
+      "description": "",
+      "type": "string"
+    },
+    "ariaLabel": {
+      "description": "",
+      "type": "string"
+    },
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "disabled": {
+      "description": "",
+      "type": "boolean"
+    },
+    "error": {
+      "description": "",
+      "type": "string"
+    },
+    "hint": {
+      "description": "",
+      "type": "string"
+    },
+    "id": {
+      "description": "",
+      "type": "string"
+    },
+    "label": {
+      "description": "",
+      "type": "string"
+    },
+    "onChange": {
+      "description": "",
+      "enum": [
+        "(date: Date",
+        "null) => void"
+      ]
+    },
+    "placeholder": {
+      "description": "",
+      "type": "string"
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    },
+    "timeFormat": {
+      "description": "",
+      "type": "string"
+    },
+    "timeIntervals": {
+      "description": "",
+      "type": "number"
+    },
+    "value": {
+      "description": "",
+      "enum": [
+        "Date",
+        "null"
+      ]
+    }
+  },
+  "required": [],
+  "title": "TimePicker",
+  "type": "object"
+}

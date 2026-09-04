@@ -1,0 +1,62 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-layout/column.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Organize content in a vertical column within a layout grid.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-layout",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "align": {
+      "description": "",
+      "enum": [
+        "start",
+        "center",
+        "end",
+        "stretch"
+      ]
+    },
+    "children": {
+      "description": "",
+      "type": "string"
+    },
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "gap": {
+      "description": "",
+      "enum": [
+        "number",
+        "string"
+      ]
+    },
+    "justify": {
+      "description": "",
+      "enum": [
+        "start",
+        "center",
+        "end",
+        "between",
+        "around"
+      ]
+    }
+  },
+  "required": [
+    "children"
+  ],
+  "title": "Column",
+  "type": "object"
+}

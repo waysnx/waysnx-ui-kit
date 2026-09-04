@@ -1,0 +1,214 @@
+{
+  "id": "ui-data:markdownviewer",
+  "name": "MarkdownViewer",
+  "slug": "markdown-viewer",
+  "library": "ui-data",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Markdown Viewer",
+  "purpose": "Display formatted markdown content as rendered HTML",
+  "shortDescription": "Display formatted markdown content as rendered HTML.",
+  "longDescription": "Display formatted markdown content as rendered HTML.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Data/MarkdownViewer",
+      "storyId": "data-markdownviewer",
+      "url": "https://uikit.waysnx.tech/?path=/docs/data-markdownviewer",
+      "stories": [],
+      "tags": [],
+      "source": "MarkdownViewer.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use MarkdownViewer for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a MarkdownViewer"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "DOMPurify": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "--wx-color-primary",
+    "--wx-color-surface-alt",
+    "--wx-color-text",
+    "--wx-color-text-muted"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\MarkdownViewer\\MarkdownViewer.tsx",
+  "keywords": [
+    "components",
+    "markdownviewer"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use MarkdownViewer",
+    "Create an example with MarkdownViewer",
+    "Generate a MarkdownViewer component",
+    "Build a MarkdownViewer in my form"
+  ],
+  "componentIntent": "Provide MarkdownViewer functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.227851",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "49eb5fef",
+  "metadata": {
+    "purpose": "Display formatted markdown content as rendered HTML.",
+    "description": "A component for rendering markdown content into formatted HTML output. Converts markdown syntax to visual elements like headings, lists, links, tables, and code blocks. Used for displaying documentation, blog posts, help content, or user-generated markdown.",
+    "functionalAreas": [
+      "Visualization",
+      "Data Entry"
+    ],
+    "userIntents": [
+      "Read formatted content",
+      "View rendered markdown",
+      "See formatted documentation",
+      "Read blog posts or articles"
+    ],
+    "exampleUseCases": [
+      "Blog Post Display",
+      "Documentation View",
+      "README Display",
+      "Help Content",
+      "Comment Display",
+      "Article View",
+      "Formatted Content Display"
+    ],
+    "useWhen": [
+      "Use this component to display markdown content as formatted HTML.",
+      "Use this component for documentation or content display.",
+      "Use this component when markdown source is available.",
+      "Use this component for user-generated markdown content."
+    ],
+    "avoidWhen": [
+      "Avoid this component for editing (use MarkdownEditor instead).",
+      "Avoid this component for plain text (use Text instead).",
+      "Avoid this component without proper HTML sanitization.",
+      "Avoid this component for extremely large documents without pagination."
+    ],
+    "relatedComponents": [
+      "MarkdownEditor",
+      "CodeViewer",
+      "Text"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

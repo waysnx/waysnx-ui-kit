@@ -1,0 +1,60 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/mfaverificationdialog.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "MFAVerificationDialog - Enter MFA verification code",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "error": {
+      "description": "Error message",
+      "type": "string"
+    },
+    "isLoading": {
+      "description": "Whether verification is in progress",
+      "type": "boolean"
+    },
+    "isOpen": {
+      "description": "Whether dialog is open",
+      "type": "boolean"
+    },
+    "method": {
+      "description": "MFA method being used",
+      "type": "string"
+    },
+    "onCancel": {
+      "description": "Callback to cancel verification",
+      "type": "null"
+    },
+    "onUseBackupCode": {
+      "description": "Callback to use backup code instead",
+      "type": "null"
+    },
+    "onVerify": {
+      "description": "Callback to verify code",
+      "type": "string"
+    },
+    "title": {
+      "description": "Custom title",
+      "type": "string"
+    }
+  },
+  "required": [
+    "isOpen"
+  ],
+  "title": "MFAVerificationDialog",
+  "type": "object"
+}

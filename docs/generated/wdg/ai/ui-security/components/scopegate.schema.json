@@ -1,0 +1,64 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/scopegate.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Content to render if scope is granted",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "children": {
+      "description": "Content to render if scope is granted",
+      "type": "string"
+    },
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "fallback": {
+      "description": "Content to render if scope is denied",
+      "type": "string"
+    },
+    "grantedScopes": {
+      "description": "User's granted scopes",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "requireAll": {
+      "description": "Require all scopes (and) or any scope (or)",
+      "type": "boolean"
+    },
+    "scope": {
+      "description": "Scope(s) required",
+      "enum": [
+        "string",
+        "string[]"
+      ]
+    },
+    "unmountOnDeny": {
+      "description": "Whether to completely remove from DOM (vs just hiding)",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "scope",
+    "grantedScopes",
+    "children"
+  ],
+  "title": "ScopeGate",
+  "type": "object"
+}

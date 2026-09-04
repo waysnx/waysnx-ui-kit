@@ -1,0 +1,362 @@
+{
+  "version": "2.0.0",
+  "library": "ui-grid-builder",
+  "generatedAt": "2026-09-03T20:02:55.289462",
+  "components": [
+    {
+      "id": "ui-grid-builder:grid",
+      "name": "Grid",
+      "slug": "grid",
+      "category": "components",
+      "description": "Build and configure responsive data grids with columns and rows.",
+      "keywords": [
+        "grid",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "layout",
+      "propNames": [
+        "columnId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "GridActions",
+          "GridCell",
+          "GridPagination",
+          "GridSelectionBar",
+          "GridToolbar"
+        ],
+        "usedBy": [],
+        "related": [
+          "GridActions",
+          "GridCell",
+          "GridPagination",
+          "GridSelectionBar",
+          "GridToolbar"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Grid for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 1,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-grid-builder:gridactions",
+      "name": "GridActions",
+      "slug": "grid-actions",
+      "category": "components",
+      "description": "GridActions component",
+      "keywords": [
+        "gridactions",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "layout",
+      "propNames": [
+        "row",
+        "actions"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use GridActions for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 2,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-grid-builder:gridcell",
+      "name": "GridCell",
+      "slug": "grid-cell",
+      "category": "components",
+      "description": "GridCell component",
+      "keywords": [
+        "gridcell",
+        "value",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "layout",
+      "propNames": [
+        "value",
+        "col",
+        "row"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use GridCell for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 3,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-grid-builder:gridpagination",
+      "name": "GridPagination",
+      "slug": "grid-pagination",
+      "category": "components",
+      "description": "GridPagination component",
+      "keywords": [
+        "gridpagination",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "layout",
+      "propNames": [
+        "pageIndex",
+        "pageSize",
+        "pageCount",
+        "totalFiltered",
+        "pageSizeOptions",
+        "canNextPage",
+        "onPageChange",
+        "onPageSizeChange"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use GridPagination for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 8,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-grid-builder:gridselectionbar",
+      "name": "GridSelectionBar",
+      "slug": "grid-selection-bar",
+      "category": "components",
+      "description": "GridSelectionBar component",
+      "keywords": [
+        "gridselectionbar",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "option selector",
+        "choice control"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "input",
+      "propNames": [
+        "count",
+        "selectionActions"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use GridSelectionBar for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 2,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-grid-builder:gridtoolbar",
+      "name": "GridToolbar",
+      "slug": "grid-toolbar",
+      "category": "components",
+      "description": "GridToolbar component",
+      "keywords": [
+        "gridtoolbar",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "layout",
+      "propNames": [
+        "title",
+        "totalCount",
+        "columns",
+        "onVisibilityChange",
+        "showColumnToggle",
+        "showGlobalFilter",
+        "globalFilter",
+        "onGlobalFilterChange",
+        "toolbarActions",
+        "colDropdownOpen",
+        "setColDropdownOpen"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use GridToolbar for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 11,
+        "eventsCount": 0
+      }
+    }
+  ]
+}

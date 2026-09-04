@@ -1,0 +1,495 @@
+{
+  "id": "ui-navigation:navbar",
+  "name": "Navbar",
+  "slug": "navbar",
+  "library": "ui-navigation",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Navbar",
+  "purpose": "Display a horizontal navigation bar with multiple navigation links",
+  "shortDescription": "Display a horizontal navigation bar with multiple navigation links.",
+  "longDescription": "Display a horizontal navigation bar with multiple navigation links.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Navigation/Navbar",
+      "storyId": "navigation-navbar",
+      "url": "https://uikit.waysnx.tech/?path=/docs/navigation-navbar",
+      "stories": [],
+      "tags": [],
+      "source": "Navbar.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Navbar for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Navbar"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "Menu"
+    ],
+    "usedBy": [],
+    "related": [
+      "Menu"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": [
+      "Menu"
+    ]
+  },
+  "dependencies": {
+    "Menu": "unknown"
+  },
+  "props": [
+    {
+      "name": "logo",
+      "type": "React.ReactNode",
+      "description": "Logo or brand element",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "left",
+      "type": "React.ReactNode",
+      "description": "Left content (after logo)",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "right",
+      "type": "React.ReactNode",
+      "description": "Right side content (e.g., user menu, settings)",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "Navbar title",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "position",
+      "type": "'static' | 'sticky' | 'fixed'",
+      "description": "Position of navbar",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "sticky",
+      "type": "boolean",
+      "description": "Whether navbar is sticky to top",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "height",
+      "type": "string | number",
+      "description": "Height of navbar",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showMobileMenu",
+      "type": "boolean",
+      "description": "Show mobile menu button",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onMobileMenuToggle",
+      "type": "(isOpen: boolean) => void",
+      "description": "Callback when mobile menu is toggled",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "backgroundColor",
+      "type": "string",
+      "description": "Custom background color",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "shadow",
+      "type": "'none' | 'sm' | 'md' | 'lg'",
+      "description": "Shadow effect",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [
+    "forwardRef"
+  ],
+  "contextsUsed": [],
+  "forwardRef": true,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-primary",
+    "--wx-color-surface",
+    "--wx-color-surface-alt",
+    "--wx-color-surface-hover",
+    "--wx-color-text",
+    "--wx-font-size-lg",
+    "--wx-font-size-xl",
+    "--wx-nav-navbar-height",
+    "--wx-nav-transition",
+    "--wx-radius-md",
+    "--wx-shadow-lg",
+    "--wx-shadow-md",
+    "--wx-shadow-sm"
+  ],
+  "cssClasses": [
+    "css",
+    "nav-navbar",
+    "nav-navbar--sticky",
+    "nav-navbar--fixed",
+    "nav-navbar--shadow-none",
+    "nav-navbar--shadow-sm",
+    "nav-navbar--shadow-md",
+    "nav-navbar--shadow-lg"
+  ],
+  "designTokens": {
+    "other": {
+      "--wx-nav-navbar-height": {
+        "properties": [
+          "height",
+          "max-height"
+        ],
+        "selectors": [
+          ".nav-navbar",
+          ".nav-navbar__logo",
+          ".nav-navbar__mobile-menu"
+        ],
+        "occurrences": 3,
+        "used": true,
+        "value": ""
+      }
+    }
+  },
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {
+    "--wx-font-size-xl": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".nav-navbar__logo"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-lg": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".nav-navbar__title"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {
+    "--wx-color-surface": {
+      "properties": [
+        "background-color"
+      ],
+      "selectors": [
+        ".nav-navbar",
+        "@media (prefers-color-scheme: dark)"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".nav-navbar",
+        ".nav-navbar__mobile-menu-btn",
+        "@media (prefers-color-scheme: dark)"
+      ],
+      "occurrences": 3,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-border": {
+      "properties": [
+        "border-bottom"
+      ],
+      "selectors": [
+        ".nav-navbar",
+        ".nav-navbar__mobile-menu"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface-hover": {
+      "properties": [
+        "background-color"
+      ],
+      "selectors": [
+        ".nav-navbar__mobile-menu-btn:hover"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary": {
+      "properties": [
+        "outline"
+      ],
+      "selectors": [
+        ".nav-navbar__mobile-menu-btn:focus-visible"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface-alt": {
+      "properties": [
+        "background-color"
+      ],
+      "selectors": [
+        ".nav-navbar__mobile-menu"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {
+    "--wx-shadow-sm": {
+      "properties": [
+        "box-shadow"
+      ],
+      "selectors": [
+        ".nav-navbar--shadow-sm"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-shadow-md": {
+      "properties": [
+        "box-shadow"
+      ],
+      "selectors": [
+        ".nav-navbar--shadow-md"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-shadow-lg": {
+      "properties": [
+        "box-shadow"
+      ],
+      "selectors": [
+        ".nav-navbar--shadow-lg"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "radiusTokens": {
+    "--wx-radius-md": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".nav-navbar__mobile-menu-btn"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "animationTokens": {
+    "--wx-nav-transition": {
+      "properties": [
+        "transition",
+        "animation"
+      ],
+      "selectors": [
+        ".nav-navbar__mobile-menu-btn",
+        ".nav-navbar__hamburger-line",
+        ".nav-navbar__mobile-menu"
+      ],
+      "occurrences": 3,
+      "used": true,
+      "value": ""
+    }
+  },
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Navbar\\Navbar.tsx",
+  "keywords": [
+    "navbar",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Navbar",
+    "Create an example with Navbar",
+    "Generate a Navbar component",
+    "Build a Navbar in my form"
+  ],
+  "componentIntent": "Provide Navbar functionality",
+  "semanticCategory": "navigation",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.265819",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "42ee013c",
+  "metadata": {
+    "purpose": "Display a horizontal navigation bar with multiple navigation links.",
+    "description": "A horizontal navigation component containing multiple navigation links or menu items. Often placed below the header and contains the primary navigation structure. Supports responsive collapse to menu on mobile and highlighting of active sections.",
+    "functionalAreas": [
+      "Navigation",
+      "Layout"
+    ],
+    "userIntents": [
+      "See main navigation options",
+      "Navigate between sections",
+      "Know which section is active",
+      "Access main site areas"
+    ],
+    "exampleUseCases": [
+      "Main Navigation Bar",
+      "Section Navigation",
+      "Horizontal Menu",
+      "Top Navigation",
+      "Site Navigation",
+      "App Navigation",
+      "Primary Navigation"
+    ],
+    "useWhen": [
+      "Use this component for primary horizontal navigation.",
+      "Use this component to display main site or application sections.",
+      "Use this component to show the current active section.",
+      "Use this component to organize navigation links horizontally."
+    ],
+    "avoidWhen": [
+      "Avoid this component for vertical navigation (use Sidebar instead).",
+      "Avoid this component when few navigation items exist (use Header instead).",
+      "Avoid this component without clear active state indication.",
+      "Avoid this component for nested navigation (use Menu instead)."
+    ],
+    "relatedComponents": [
+      "Header",
+      "Sidebar",
+      "Navigation",
+      "Menu"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

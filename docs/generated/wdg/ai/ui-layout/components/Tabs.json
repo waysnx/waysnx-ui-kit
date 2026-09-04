@@ -1,0 +1,327 @@
+{
+  "id": "ui-layout:tabs",
+  "name": "Tabs",
+  "slug": "tabs",
+  "library": "ui-layout",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Tabs",
+  "purpose": "Organize content into tabs that users can switch between",
+  "shortDescription": "Organize content into tabs that users can switch between.",
+  "longDescription": "Organize content into tabs that users can switch between.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Navigation/Tabs",
+      "storyId": "navigation-tabs",
+      "url": "https://uikit.waysnx.tech/?path=/docs/navigation-tabs",
+      "stories": [],
+      "tags": [],
+      "source": "Tabs.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Tabs for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Tabs"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "defaultTab",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-primary",
+    "--wx-color-text",
+    "--wx-color-text-muted",
+    "--wx-font-size-sm"
+  ],
+  "cssClasses": [
+    "wx-tabs",
+    "wx-tab-list",
+    "wx-tab",
+    "wx-tab-active",
+    "wx-tab-panels",
+    "wx-tab-panel"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {
+    "--wx-font-size-sm": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-tab"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {
+    "--wx-color-border": {
+      "properties": [
+        "border-bottom"
+      ],
+      "selectors": [
+        ".wx-tab-list"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-tab"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-tab:hover"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary": {
+      "properties": [
+        "color",
+        "border-bottom-color"
+      ],
+      "selectors": [
+        ".wx-tab-active"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Tabs\\Tabs.tsx",
+  "keywords": [
+    "organize",
+    "label",
+    "panel",
+    "navigation",
+    "tab",
+    "components",
+    "tabs"
+  ],
+  "aliases": [
+    {
+      "alias": "tabbed panel",
+      "context": "technical",
+      "confidence": 0.92
+    },
+    {
+      "alias": "tabbed interface",
+      "context": "technical",
+      "confidence": 0.9
+    },
+    {
+      "alias": "panel tabs",
+      "context": "descriptive",
+      "confidence": 0.88
+    }
+  ],
+  "synonyms": [
+    "tabbed panel",
+    "tab navigation"
+  ],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Tabs",
+    "Create an example with Tabs",
+    "Generate a Tabs component",
+    "Build a Tabs in my form"
+  ],
+  "componentIntent": "Organize content",
+  "semanticCategory": "navigation",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.180192",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "9f384478",
+  "metadata": {
+    "purpose": "Organize content into tabs that users can switch between.",
+    "description": "A tabbed interface that displays one tab's content at a time, with clickable tab headers for switching. Keyboard accessible with arrow keys for navigation and support for single or multiple tab selections. Used for organizing related content into manageable sections without taking up much vertical space.",
+    "functionalAreas": [
+      "Layout",
+      "Navigation"
+    ],
+    "userIntents": [
+      "Switch between related content sections",
+      "See all available options at once",
+      "Organize content without scrolling",
+      "Compare different content areas"
+    ],
+    "exampleUseCases": [
+      "Account Settings Tabs",
+      "Product Information Tabs",
+      "Dialog Tabs",
+      "Form Tabs",
+      "Data Tabs",
+      "Content Organization",
+      "Feature Tabs"
+    ],
+    "useWhen": [
+      "Use this component to organize related content into switchable sections.",
+      "Use this component when tabs are equally important and frequently accessed.",
+      "Use this component when content doesn't fit without scrolling.",
+      "Use this component for content-adjacent information like specs or reviews."
+    ],
+    "avoidWhen": [
+      "Avoid this component when one tab is significantly more important than others.",
+      "Avoid this component with more than 7-8 tabs (consider alternatives).",
+      "Avoid this component for hierarchical navigation (use breadcrumbs instead).",
+      "Avoid this component when all content should be visible simultaneously."
+    ],
+    "relatedComponents": [
+      "PageTabs",
+      "Accordion",
+      "Drawer"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

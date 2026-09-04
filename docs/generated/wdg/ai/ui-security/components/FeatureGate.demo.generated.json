@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "featuregate",
+    "name": "FeatureGate",
+    "package": "@waysnx/ui-security",
+    "export": "FeatureGate"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic",
+          "title": "Basic FeatureGate",
+          "description": "Simple FeatureGate with default configuration.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "featureId": "Sample Text",
+            "isEnabled": true,
+            "children": "Sample Text"
+          },
+          "keywords": [
+            "basic",
+            "featuregate"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:05.283739",
+  "stats": {
+    "examplesGenerated": 1,
+    "categoriesGenerated": 1
+  }
+}

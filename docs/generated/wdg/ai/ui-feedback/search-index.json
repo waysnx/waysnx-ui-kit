@@ -1,0 +1,811 @@
+{
+  "version": "2.0.0",
+  "library": "ui-feedback",
+  "generatedAt": "2026-09-03T20:02:50.539998",
+  "components": [
+    {
+      "id": "ui-feedback:alert",
+      "name": "Alert",
+      "slug": "alert",
+      "category": "components",
+      "description": "Display a contextual message that requires user attention.",
+      "keywords": [
+        "alert",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "feedback",
+      "propNames": [
+        "type",
+        "children",
+        "className",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ChangePasswordForm",
+          "DeviceVerificationDialog",
+          "EmailVerificationCard",
+          "ForgotPasswordForm",
+          "OTPVerificationCard",
+          "PhoneVerificationCard"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ChangePasswordForm",
+          "DeviceVerificationDialog",
+          "EmailVerificationCard",
+          "ForgotPasswordForm",
+          "OTPVerificationCard",
+          "PhoneVerificationCard"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Alert for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 4,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-feedback:badge",
+      "name": "Badge",
+      "slug": "badge",
+      "category": "components",
+      "description": "Display a small numeric or dot indicator to convey status or count information.",
+      "keywords": [
+        "badge",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "display",
+      "propNames": [
+        "count",
+        "maxCount",
+        "dot",
+        "color",
+        "children",
+        "className",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ActiveSessions",
+          "ActivityFeed",
+          "AuditHistoryTable",
+          "AuditTimeline",
+          "BackupCodesCard",
+          "ConcurrentSessionDialog",
+          "EncryptionBadge",
+          "LoginHistory",
+          "MFAStatus",
+          "PasswordAgeIndicator",
+          "RiskScoreBadge",
+          "SecurityAlert",
+          "SecurityEventLog",
+          "SecurityStatusCard"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ActiveSessions",
+          "ActivityFeed",
+          "AuditHistoryTable",
+          "AuditTimeline",
+          "BackupCodesCard",
+          "ConcurrentSessionDialog",
+          "EncryptionBadge",
+          "LoginHistory",
+          "MFAStatus",
+          "PasswordAgeIndicator",
+          "RiskScoreBadge",
+          "SecurityAlert",
+          "SecurityEventLog",
+          "SecurityStatusCard"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Badge for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 7,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-feedback:circularprogress",
+      "name": "CircularProgress",
+      "slug": "circular-progress",
+      "category": "components",
+      "description": "Visualize numeric progress in a circular format.",
+      "keywords": [
+        "label",
+        "circularprogress",
+        "value",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "feedback",
+      "propNames": [
+        "value",
+        "default",
+        "sm",
+        "default",
+        "valueLabel",
+        "label",
+        "color",
+        "trackColor",
+        "strokeWidth",
+        "className",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use CircularProgress for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 11,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-feedback:confirmdialog",
+      "name": "ConfirmDialog",
+      "slug": "confirm-dialog",
+      "category": "components",
+      "description": "Request explicit user confirmation before performing a consequential action.",
+      "keywords": [
+        "confirmdialog",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [
+        "popup window",
+        "overlay panel"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "overlay",
+      "propNames": [
+        "open",
+        "title",
+        "message",
+        "variant",
+        "confirmLabel",
+        "cancelLabel",
+        "onConfirm",
+        "onCancel",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "Modal"
+        ],
+        "usedBy": [],
+        "related": [
+          "Modal"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Modal"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use ConfirmDialog for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 9,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-feedback:drawer",
+      "name": "Drawer",
+      "slug": "drawer",
+      "category": "components",
+      "description": "Display content in a side panel that slides in from the screen edge.",
+      "keywords": [
+        "components",
+        "drawer"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "open",
+        "onClose",
+        "title",
+        "position",
+        "size",
+        "showCloseButton",
+        "closeOnBackdrop",
+        "children",
+        "className",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Drawer for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 10,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-feedback:emptystate",
+      "name": "EmptyState",
+      "slug": "empty-state",
+      "category": "components",
+      "description": "Show a clear message when no data is available to display.",
+      "keywords": [
+        "emptystate",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [
+        "icon",
+        "title",
+        "description",
+        "action",
+        "className",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use EmptyState for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 6,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-feedback:modal",
+      "name": "Modal",
+      "slug": "modal",
+      "category": "components",
+      "description": "Display important content in a focused dialog window.",
+      "keywords": [
+        "modal",
+        "window",
+        "popup",
+        "dialog",
+        "overlay",
+        "components"
+      ],
+      "aliases": [
+        "AIAlias(alias='dialog', context='technical', confidence=0.95)",
+        "AIAlias(alias='popup', context='casual', confidence=0.9)",
+        "AIAlias(alias='dialog box', context='technical', confidence=0.92)",
+        "AIAlias(alias='overlay', context='technical', confidence=0.88)"
+      ],
+      "synonyms": [
+        "dialog",
+        "popup window",
+        "modal dialog"
+      ],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "workflows",
+        "dashboards",
+        "settings"
+      ],
+      "semanticCategory": "overlay",
+      "propNames": [
+        "open",
+        "onClose",
+        "title",
+        "size",
+        "footer",
+        "closeOnBackdrop",
+        "closeOnEscape",
+        "showCloseButton",
+        "children",
+        "className",
+        "role",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ConfirmDialog",
+          "MFAVerificationDialog",
+          "SessionTimeoutDialog"
+        ],
+        "related": [],
+        "alternatives": [
+          "Dialog"
+        ],
+        "parentComponents": [
+          "ConfirmDialog",
+          "MFAVerificationDialog",
+          "SessionTimeoutDialog"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "Confirmation Dialog",
+          "description": "Confirm critical actions like delete or approval"
+        },
+        {
+          "title": "Form Collection",
+          "description": "Collect data in a modal form"
+        }
+      ],
+      "antipatterns": [
+        {
+          "title": "No Keyboard Support",
+          "description": "Modal without ESC to close"
+        },
+        {
+          "title": "No Focus Management",
+          "description": "Focus not trapped in modal"
+        }
+      ],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 12,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-feedback:progress",
+      "name": "Progress",
+      "slug": "progress",
+      "category": "components",
+      "description": "Visualize numeric progress as a linear bar.",
+      "keywords": [
+        "label",
+        "value",
+        "progress",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "feedback",
+      "propNames": [
+        "value",
+        "max",
+        "label",
+        "showValue",
+        "size",
+        "color",
+        "className",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Progress for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 8,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-feedback:skeleton",
+      "name": "Skeleton",
+      "slug": "skeleton",
+      "category": "components",
+      "description": "Display a placeholder while content is loading.",
+      "keywords": [
+        "components",
+        "skeleton"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "feedback",
+      "propNames": [
+        "variant",
+        "width",
+        "height",
+        "count",
+        "className",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Skeleton for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 6,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-feedback:spinner",
+      "name": "Spinner",
+      "slug": "spinner",
+      "category": "components",
+      "description": "Show indeterminate progress or loading activity.",
+      "keywords": [
+        "spinner",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "feedback",
+      "propNames": [
+        "size",
+        "className",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Spinner for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 3,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-feedback:toast",
+      "name": "Toast",
+      "slug": "toast",
+      "category": "components",
+      "description": "Display a temporary notification message that auto-dismisses.",
+      "keywords": [
+        "toast",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "feedback",
+      "propNames": [
+        "type",
+        "message"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Toast for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 2,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-feedback:tooltip",
+      "name": "Tooltip",
+      "slug": "tooltip",
+      "category": "components",
+      "description": "Display supplementary information when user hovers over an element.",
+      "keywords": [
+        "tooltip",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "overlay",
+      "propNames": [
+        "content",
+        "position",
+        "children",
+        "className",
+        "testId"
+      ],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [
+          "Popover"
+        ],
+        "parentComponents": [],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use Tooltip for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": false,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 5,
+        "eventsCount": 0
+      }
+    }
+  ]
+}

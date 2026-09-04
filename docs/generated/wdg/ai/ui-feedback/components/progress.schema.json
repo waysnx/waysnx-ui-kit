@@ -1,0 +1,64 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-feedback/progress.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Visualize numeric progress as a linear bar.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-feedback",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "color": {
+      "description": "",
+      "type": "string"
+    },
+    "label": {
+      "description": "",
+      "type": "string"
+    },
+    "max": {
+      "description": "",
+      "type": "number"
+    },
+    "showValue": {
+      "description": "",
+      "type": "boolean"
+    },
+    "size": {
+      "description": "",
+      "enum": [
+        "sm",
+        "md",
+        "lg"
+      ]
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    },
+    "value": {
+      "description": "",
+      "type": "number"
+    }
+  },
+  "required": [
+    "value"
+  ],
+  "title": "Progress",
+  "type": "object"
+}

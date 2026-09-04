@@ -1,0 +1,219 @@
+{
+  "id": "ui-maps:distancecalculator",
+  "name": "DistanceCalculator",
+  "slug": "distance-calculator",
+  "library": "ui-maps",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Distance Calculator",
+  "purpose": "Calculate and display distance between two locations",
+  "shortDescription": "Calculate and display distance between two locations.",
+  "longDescription": "Calculate and display distance between two locations.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Maps/DistanceCalculator",
+      "storyId": "maps-distancecalculator",
+      "url": "https://uikit.waysnx.tech/?path=/docs/maps-distancecalculator",
+      "stories": [],
+      "tags": [],
+      "source": "DistanceCalculator.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use DistanceCalculator for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a DistanceCalculator"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useState": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-adv-route-planner__btn",
+    "wx-adv-distance__result",
+    "wx-adv-distance__fields",
+    "wx-adv-distance__field",
+    "wx-adv-distance__result-value",
+    "wx-adv-distance__result-item",
+    "wx-adv-distance__result-label",
+    "wx-adv-distance__field-label",
+    "wx-adv-distance__modes"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\DistanceCalculator\\DistanceCalculator.tsx",
+  "keywords": [
+    "components",
+    "distancecalculator"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use DistanceCalculator",
+    "Create an example with DistanceCalculator",
+    "Generate a DistanceCalculator component",
+    "Build a DistanceCalculator in my form"
+  ],
+  "componentIntent": "Provide DistanceCalculator functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.265431",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "9b8a0ec1",
+  "metadata": {
+    "purpose": "Calculate and display distance between two locations.",
+    "description": "A component that calculates distance between two geographic points. Displays distance in user-preferred units and often includes estimated travel time. Used for delivery cost estimation, routing, and location comparison.",
+    "functionalAreas": [
+      "Visualization",
+      "Navigation"
+    ],
+    "userIntents": [
+      "Know distance to location",
+      "Calculate delivery cost",
+      "Estimate travel time",
+      "Compare locations"
+    ],
+    "exampleUseCases": [
+      "Distance Calculation",
+      "Delivery Fee Estimate",
+      "Travel Time Estimation",
+      "Location Distance",
+      "Service Radius",
+      "Proximity Search",
+      "Distance Display"
+    ],
+    "useWhen": [
+      "Use this component to display distance between locations.",
+      "Use this component in delivery or logistics.",
+      "Use this component for service radius or availability.",
+      "Use this component with distance-based pricing."
+    ],
+    "avoidWhen": [
+      "Avoid this component without proper distance calculation service.",
+      "Avoid this component for simple coordinate comparison.",
+      "Avoid this component without location data.",
+      "Avoid this component without clear units of measurement."
+    ],
+    "relatedComponents": [
+      "MapView",
+      "LocationPicker",
+      "RoutePlanner"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

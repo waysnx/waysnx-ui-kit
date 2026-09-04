@@ -1,0 +1,213 @@
+{
+  "id": "ui-layout:pagecontent",
+  "name": "PageContent",
+  "slug": "page-content",
+  "library": "ui-layout",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Page Content",
+  "purpose": "Organize main content area of a page layout",
+  "shortDescription": "Organize main content area of a page layout.",
+  "longDescription": "Organize main content area of a page layout.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use PageContent for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a PageContent"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown"
+  },
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-page-content"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\PageContent\\PageContent.tsx",
+  "keywords": [
+    "pagecontent",
+    "label",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use PageContent",
+    "Create an example with PageContent",
+    "Generate a PageContent component",
+    "Build a PageContent in my form"
+  ],
+  "componentIntent": "Provide PageContent functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.091451",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "7627b748",
+  "metadata": {
+    "purpose": "Organize main content area of a page layout.",
+    "description": "A container component that wraps the primary content of a page, often used in combination with PageHeader and page layout components. Provides proper spacing and structure for page content while coordinating with other page-level layout components.",
+    "functionalAreas": [
+      "Layout"
+    ],
+    "userIntents": [
+      "Organize page content properly",
+      "Create consistent page structure",
+      "Separate header from content",
+      "Control content spacing"
+    ],
+    "exampleUseCases": [
+      "Page Main Content",
+      "Article Content",
+      "Dashboard Content",
+      "Form Page Content",
+      "Detail Page Content",
+      "List Page Content",
+      "Settings Page Content"
+    ],
+    "useWhen": [
+      "Use this component to wrap the main content of a page.",
+      "Use this component in combination with PageHeader and page layouts.",
+      "Use this component to ensure consistent spacing and structure.",
+      "Use this component as part of a comprehensive page layout system."
+    ],
+    "avoidWhen": [
+      "Avoid this component for simple single-section pages.",
+      "Avoid this component without a corresponding PageHeader.",
+      "Avoid this component when Container would be simpler.",
+      "Avoid this component for modal or overlay content."
+    ],
+    "relatedComponents": [
+      "PageHeader",
+      "PageLayout",
+      "Container",
+      "Section"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

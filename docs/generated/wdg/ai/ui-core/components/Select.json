@@ -1,0 +1,673 @@
+{
+  "id": "ui-core:select",
+  "name": "Select",
+  "slug": "select",
+  "library": "ui-core",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Select",
+  "purpose": "Enable users to select one or more options from a dropdown list with optional search",
+  "shortDescription": "Enable users to select one or more options from a dropdown list with optional search.",
+  "longDescription": "Enable users to select one or more options from a dropdown list with optional search.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Components/Select",
+      "storyId": "components-select",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-select",
+      "stories": [],
+      "tags": [],
+      "source": "Select.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "Department Selection",
+      "description": "Select department in employee management",
+      "businessDomain": "hrms",
+      "enterpriseModule": "employee_management",
+      "examplePrompt": "Create a department dropdown"
+    },
+    {
+      "title": "Status Selection",
+      "description": "Select leave status or application status",
+      "businessDomain": "hrms",
+      "enterpriseModule": "leave_management",
+      "examplePrompt": "Add a status dropdown"
+    },
+    {
+      "title": "Priority Selection",
+      "description": "Select priority in project management",
+      "businessDomain": "project_management",
+      "enterpriseModule": "workflows",
+      "examplePrompt": "Create a priority selector"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "employee_management",
+    "client_management",
+    "billing"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [
+      "Combobox"
+    ],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "getCachedOptions": "unknown",
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "options",
+      "type": "SelectOption[]",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showSelectAll",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "searchable",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "value",
+      "type": "string | string[]",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "fetchOptions",
+      "type": "(url: string) => Promise<any[]>",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "xrefIdProp",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "xrefDisplayProp",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onLoadStart",
+      "type": "() => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onLoadEnd",
+      "type": "() => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onError",
+      "type": "(error: Error) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-error",
+    "--wx-color-primary",
+    "--wx-color-primary-contrast",
+    "--wx-color-primary-hover",
+    "--wx-color-primary-light",
+    "--wx-color-surface",
+    "--wx-color-surface-hover",
+    "--wx-color-text",
+    "--wx-color-text-light",
+    "--wx-color-text-muted",
+    "--wx-font-family",
+    "--wx-font-size-sm",
+    "--wx-font-size-xs",
+    "--wx-input-height",
+    "--wx-radius-md",
+    "--wx-radius-sm",
+    "--wx-shadow-md"
+  ],
+  "cssClasses": [
+    "wx-select-wrapper",
+    "wx-select",
+    "wx-select-multi",
+    "wx-select-arrow",
+    "wx-select-dropdown",
+    "wx-select-option",
+    "wx-select-all-option",
+    "wx-select-loading",
+    "wx-select-no-options",
+    "wx-select-disabled",
+    "wx-select-search",
+    "wx-select-search-input",
+    "wx-select-option--selected",
+    "wx-select-error",
+    "wx-select-error-text"
+  ],
+  "designTokens": {
+    "other": {
+      "--wx-input-height": {
+        "properties": [
+          "height"
+        ],
+        "selectors": [
+          ".wx-select",
+          ".wx-select-multi"
+        ],
+        "occurrences": 2,
+        "used": true,
+        "value": ""
+      }
+    }
+  },
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {
+    "--wx-font-family": {
+      "properties": [
+        "font-family"
+      ],
+      "selectors": [
+        ".wx-select-wrapper"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-sm": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-select",
+        ".wx-select-multi",
+        ".wx-select-option",
+        ".wx-select-no-options",
+        ".wx-select-search-input"
+      ],
+      "occurrences": 5,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-xs": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-select-error-text"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {
+    "--wx-color-border": {
+      "properties": [
+        "border",
+        "border-bottom"
+      ],
+      "selectors": [
+        ".wx-select",
+        ".wx-select-multi",
+        ".wx-select-dropdown",
+        ".wx-select-search",
+        ".wx-select-search-input"
+      ],
+      "occurrences": 5,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-select-multi",
+        ".wx-select-dropdown",
+        ".wx-select-search",
+        ".wx-select-search-input"
+      ],
+      "occurrences": 4,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-light": {
+      "properties": [
+        "border-color",
+        "color"
+      ],
+      "selectors": [
+        ".wx-select-multi:hover",
+        ".wx-select-no-options"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color",
+        "border-right",
+        "border-bottom"
+      ],
+      "selectors": [
+        ".wx-select-arrow",
+        ".wx-select-arrow::after"
+      ],
+      "occurrences": 3,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface-hover": {
+      "properties": [
+        "background",
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-select-option:hover",
+        ".wx-select:disabled",
+        ".wx-select-disabled"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary": {
+      "properties": [
+        "background",
+        "border-color"
+      ],
+      "selectors": [
+        ".wx-select-all-option",
+        ".wx-select-search-input:focus"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary-contrast": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-select-all-option"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary-hover": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-select-all-option:hover"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-select-search-input"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary-light": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-select-option--selected"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error": {
+      "properties": [
+        "border-color",
+        "color"
+      ],
+      "selectors": [
+        ".wx-select-error .wx-select-multi",
+        ".wx-select-error-text"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {
+    "--wx-shadow-md": {
+      "properties": [
+        "box-shadow"
+      ],
+      "selectors": [
+        ".wx-select-dropdown"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "radiusTokens": {
+    "--wx-radius-md": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".wx-select",
+        ".wx-select-multi",
+        ".wx-select-dropdown"
+      ],
+      "occurrences": 3,
+      "used": true,
+      "value": ""
+    },
+    "--wx-radius-sm": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".wx-select-search-input"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Select\\Select.tsx",
+  "keywords": [
+    "label",
+    "combo",
+    "choice",
+    "value",
+    "select",
+    "dropdown",
+    "option",
+    "components"
+  ],
+  "aliases": [
+    {
+      "alias": "dropdown",
+      "context": "common",
+      "confidence": 0.95
+    },
+    {
+      "alias": "choose option",
+      "context": "descriptive",
+      "confidence": 0.9
+    },
+    {
+      "alias": "option selector",
+      "context": "technical",
+      "confidence": 0.88
+    },
+    {
+      "alias": "combo box",
+      "context": "technical",
+      "confidence": 0.85
+    }
+  ],
+  "synonyms": [
+    "dropdown",
+    "option selector",
+    "combo box"
+  ],
+  "naturalLanguageQueries": [
+    {
+      "query": "Create a department dropdown",
+      "context": "hr",
+      "intent": "create"
+    },
+    {
+      "query": "Add a status selector",
+      "context": "workflow",
+      "intent": "create"
+    },
+    {
+      "query": "Generate a country selector",
+      "context": "location",
+      "intent": "create"
+    },
+    {
+      "query": "Create a language dropdown",
+      "context": "localization",
+      "intent": "create"
+    },
+    {
+      "query": "Add a priority selector",
+      "context": "task",
+      "intent": "create"
+    }
+  ],
+  "recommendedPrompts": [
+    "Show me how to use Select",
+    "Create an example with Select",
+    "Generate a Select component",
+    "Build a Select in my form"
+  ],
+  "componentIntent": "Choose from options",
+  "semanticCategory": "input",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.673857",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "2af7119a",
+  "metadata": {
+    "purpose": "Enable users to select one or more options from a dropdown list with optional search.",
+    "description": "A dropdown control that displays a collapsible list of selectable options. Supports single and multi-select modes with optional search filtering to quickly find options. Displays a visual count of selected items in multi-select mode and provides keyboard navigation for efficient interaction. Options can be static or dynamically loaded from external sources.",
+    "functionalAreas": [
+      "Data Entry",
+      "Filtering",
+      "Selection"
+    ],
+    "userIntents": [
+      "Select one option from a list",
+      "Select multiple items",
+      "Find an option by searching",
+      "Apply filters to a view"
+    ],
+    "exampleUseCases": [
+      "Choose Department",
+      "Select Multiple Tags",
+      "Filter by Status",
+      "Choose Time Zone",
+      "Select Categories",
+      "Filter by Type"
+    ],
+    "useWhen": [
+      "Use this component when there are many options that should not all be visible at once.",
+      "Use this component when users need to select one or multiple options.",
+      "Use this component when search capability helps users find options quickly.",
+      "Use this component when vertical space needs to be preserved."
+    ],
+    "avoidWhen": [
+      "Avoid this component when there are very few options (use Radio or Checkbox instead).",
+      "Avoid this component when all options should be visible for comparison.",
+      "Avoid this component when multi-select is not needed and options are few (use Radio).",
+      "Avoid this component when users should not be able to search options."
+    ],
+    "relatedComponents": [
+      "Autocomplete",
+      "Radio",
+      "Checkbox"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "react-imask",
+        "version": "^7.6.1"
+      },
+      {
+        "name": "react-number-format",
+        "version": "^5.4.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-datepicker",
+        "version": "^8.0.0"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-datepicker",
+        "version": "^7.0.0"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

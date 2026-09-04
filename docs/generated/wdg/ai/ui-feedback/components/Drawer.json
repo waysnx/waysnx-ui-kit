@@ -1,0 +1,403 @@
+{
+  "id": "ui-feedback:drawer",
+  "name": "Drawer",
+  "slug": "drawer",
+  "library": "ui-feedback",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Drawer",
+  "purpose": "Display content in a side panel that slides in from the screen edge",
+  "shortDescription": "Display content in a side panel that slides in from the screen edge.",
+  "longDescription": "Display content in a side panel that slides in from the screen edge.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Navigation/Drawer",
+      "storyId": "navigation-drawer",
+      "url": "https://uikit.waysnx.tech/?path=/docs/navigation-drawer",
+      "stories": [],
+      "tags": [],
+      "source": "Drawer.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Drawer for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Drawer"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "open",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "onClose",
+      "type": "() => void",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "title",
+      "type": "string | React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "position",
+      "type": "\"left\" | \"right\"",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "size",
+      "type": "\"sm\" | \"md\" | \"lg\"",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showCloseButton",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "closeOnBackdrop",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-surface",
+    "--wx-color-surface-hover",
+    "--wx-color-text",
+    "--wx-color-text-muted",
+    "--wx-font-family",
+    "--wx-overlay-bg",
+    "--wx-radius-sm",
+    "--wx-shadow-lg"
+  ],
+  "cssClasses": [
+    "wx-drawer-backdrop",
+    "wx-drawer",
+    "wx-drawer-right",
+    "wx-drawer-left",
+    "wx-drawer-sm",
+    "wx-drawer-md",
+    "wx-drawer-lg",
+    "wx-drawer-header",
+    "wx-drawer-title",
+    "wx-drawer-close",
+    "wx-drawer-content"
+  ],
+  "designTokens": {
+    "other": {
+      "--wx-overlay-bg": {
+        "properties": [
+          "background"
+        ],
+        "selectors": [
+          ".wx-drawer-backdrop"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      }
+    }
+  },
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {
+    "--wx-font-family": {
+      "properties": [
+        "font-family"
+      ],
+      "selectors": [
+        ".wx-drawer"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {
+    "--wx-color-surface": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-drawer"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-drawer",
+        ".wx-drawer-close:hover"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-border": {
+      "properties": [
+        "border-bottom"
+      ],
+      "selectors": [
+        ".}\n\n.wx-drawer-header"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-drawer-close"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface-hover": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-drawer-close:hover"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {
+    "--wx-shadow-lg": {
+      "properties": [
+        "box-shadow"
+      ],
+      "selectors": [
+        ".wx-drawer"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "radiusTokens": {
+    "--wx-radius-sm": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".wx-drawer-close"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Drawer\\Drawer.tsx",
+  "keywords": [
+    "components",
+    "drawer"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Drawer",
+    "Create an example with Drawer",
+    "Generate a Drawer component",
+    "Build a Drawer in my form"
+  ],
+  "componentIntent": "Provide Drawer functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.930453",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "11c48492",
+  "metadata": {
+    "purpose": "Display content in a side panel that slides in from the screen edge.",
+    "description": "A slide-out panel that appears from the left or right edge of the screen, used for secondary content, navigation, or form fields without taking up permanent space. Can be closed by clicking the backdrop, pressing Escape, or clicking the close button. Commonly used for filters, navigation menus, and detail panels that complement the main content.",
+    "functionalAreas": [
+      "Layout",
+      "Navigation"
+    ],
+    "userIntents": [
+      "View secondary content without losing main view",
+      "Access filters or settings",
+      "See navigation menu options",
+      "View detailed information aside from main content"
+    ],
+    "exampleUseCases": [
+      "Filter Panel",
+      "Navigation Menu",
+      "Settings Panel",
+      "Detail View",
+      "Search Filters",
+      "Side Navigation",
+      "Mobile Navigation Menu"
+    ],
+    "useWhen": [
+      "Use this component when content should be secondary to the main view.",
+      "Use this component when screen space is limited and temporary access is sufficient.",
+      "Use this component for filters, settings, or navigation menus.",
+      "Use this component when users should maintain context of the main content."
+    ],
+    "avoidWhen": [
+      "Avoid this component when content should be part of the main flow.",
+      "Avoid this component when content requires persistent visibility.",
+      "Avoid this component for critical information that needs constant access.",
+      "Avoid this component when content is the primary focus of the view."
+    ],
+    "relatedComponents": [
+      "Modal",
+      "Sidebar",
+      "Navigation"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

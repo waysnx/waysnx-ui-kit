@@ -1,0 +1,68 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "radio",
+    "name": "Radio",
+    "package": "@waysnx/ui-core",
+    "export": "Radio"
+  },
+  "categories": [
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "unchecked",
+          "title": "Unchecked",
+          "description": "Example demonstrating unchecked state",
+          "category": "states",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "checked": false
+          },
+          "keywords": [
+            "unchecked"
+          ]
+        },
+        {
+          "id": "checked",
+          "title": "Checked",
+          "description": "Example demonstrating checked state",
+          "category": "states",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "checked": true
+          },
+          "keywords": [
+            "checked"
+          ]
+        },
+        {
+          "id": "disabled",
+          "title": "Disabled",
+          "description": "Example demonstrating disabled state",
+          "category": "states",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "disabled": true
+          },
+          "keywords": [
+            "disabled"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:43.070953",
+  "stats": {
+    "examplesGenerated": 3,
+    "categoriesGenerated": 1
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "workspaceswitcher",
+    "name": "WorkspaceSwitcher",
+    "package": "@waysnx/ui-navigation",
+    "export": "WorkspaceSwitcher"
+  },
+  "categories": [
+    {
+      "id": "icons",
+      "title": "Icons",
+      "description": "",
+      "examples": [
+        {
+          "id": "icons-showIcons",
+          "title": "With Icon",
+          "description": "Displays with an icon.",
+          "category": "icons",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "showIcons": true
+          },
+          "keywords": [
+            "showIcons"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sizes",
+      "title": "Sizes",
+      "description": "",
+      "examples": [
+        {
+          "id": "sizes-size-sm",
+          "title": "Size: sm",
+          "description": "Demonstrates the sm size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "sm"
+          },
+          "keywords": [
+            "size",
+            "sm"
+          ]
+        },
+        {
+          "id": "sizes-size-md",
+          "title": "Size: md",
+          "description": "Demonstrates the md size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "md"
+          },
+          "keywords": [
+            "size",
+            "md"
+          ]
+        },
+        {
+          "id": "sizes-size-lg",
+          "title": "Size: lg",
+          "description": "Demonstrates the lg size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "lg"
+          },
+          "keywords": [
+            "size",
+            "lg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-showIcons-false",
+          "title": "Disabled State",
+          "description": "Example with showIcons enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "showIcons": false
+          },
+          "keywords": [
+            "showIcons",
+            "state"
+          ]
+        },
+        {
+          "id": "states-showIcons-true",
+          "title": "Enabled State",
+          "description": "Example with showIcons enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "showIcons": true
+          },
+          "keywords": [
+            "showIcons",
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "variants",
+      "title": "Variants",
+      "description": "",
+      "examples": [
+        {
+          "id": "variants-variant-dropdown",
+          "title": "Variant: dropdown",
+          "description": "Demonstrates the dropdown variant.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "variant": "dropdown"
+          },
+          "keywords": [
+            "variant",
+            "dropdown"
+          ]
+        },
+        {
+          "id": "variants-variant-pills",
+          "title": "Variant: pills",
+          "description": "Demonstrates the pills variant.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "variant": "pills"
+          },
+          "keywords": [
+            "variant",
+            "pills"
+          ]
+        },
+        {
+          "id": "variants-variant-minimal",
+          "title": "Variant: minimal",
+          "description": "Demonstrates the minimal variant.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "variant": "minimal"
+          },
+          "keywords": [
+            "variant",
+            "minimal"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:02.770050",
+  "stats": {
+    "examplesGenerated": 9,
+    "categoriesGenerated": 4
+  }
+}

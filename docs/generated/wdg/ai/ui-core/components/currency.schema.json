@@ -1,0 +1,103 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-core/currency.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Collect and display monetary amounts with automatic currency formatting.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-core",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "ariaDescribedBy": {
+      "description": "",
+      "type": "string"
+    },
+    "ariaLabel": {
+      "description": "",
+      "type": "string"
+    },
+    "currencySymbol": {
+      "description": "",
+      "type": "string"
+    },
+    "currencySymbolPosition": {
+      "description": "",
+      "enum": [
+        "start",
+        "end"
+      ]
+    },
+    "decimalSeparator": {
+      "description": "",
+      "type": "string"
+    },
+    "disabled": {
+      "description": "",
+      "type": "boolean"
+    },
+    "error": {
+      "description": "",
+      "type": "string"
+    },
+    "hint": {
+      "description": "",
+      "type": "string"
+    },
+    "id": {
+      "description": "",
+      "type": "string"
+    },
+    "label": {
+      "description": "",
+      "type": "string"
+    },
+    "onBlur": {
+      "description": "",
+      "type": "null"
+    },
+    "onChange": {
+      "description": "",
+      "enum": [
+        "(value: number",
+        "null, event?: React.ChangeEvent<HTMLInputElement>) => void"
+      ]
+    },
+    "precision": {
+      "description": "",
+      "type": "number"
+    },
+    "required": {
+      "description": "",
+      "type": "boolean"
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    },
+    "thousandSeparator": {
+      "description": "",
+      "type": "string"
+    },
+    "value": {
+      "description": "",
+      "enum": [
+        "number",
+        "string"
+      ]
+    }
+  },
+  "required": [],
+  "title": "Currency",
+  "type": "object"
+}

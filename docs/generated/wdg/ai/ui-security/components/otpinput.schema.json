@@ -1,0 +1,70 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/otpinput.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "OTPInput Component One-Time Password input with: - Multiple digit fields (configurable, typically 6) - Auto-focus between fields - Keyboard navigation support - Paste support (auto-distribute digits) - Full accessibility - Does NOT use ui-core Input (custom numeric input)",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "className": {
+      "description": "Custom CSS class",
+      "type": "string"
+    },
+    "disabled": {
+      "description": "Disable input",
+      "type": "boolean"
+    },
+    "error": {
+      "description": "Error message",
+      "type": "string"
+    },
+    "helperText": {
+      "description": "Helper text",
+      "type": "string"
+    },
+    "label": {
+      "description": "Label",
+      "type": "string"
+    },
+    "length": {
+      "description": "Number of OTP digits",
+      "type": "number"
+    },
+    "onChange": {
+      "description": "Callback for value changes",
+      "type": "string"
+    },
+    "onComplete": {
+      "description": "Callback when OTP is complete",
+      "type": "string"
+    },
+    "placeholder": {
+      "description": "Input placeholder character",
+      "type": "string"
+    },
+    "testId": {
+      "description": "Test ID",
+      "type": "string"
+    },
+    "value": {
+      "description": "Current OTP value",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "title": "OTPInput",
+  "type": "object"
+}

@@ -1,0 +1,56 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "orgchart",
+    "name": "OrgChart",
+    "package": "@waysnx/ui-visualization",
+    "export": "OrgChart"
+  },
+  "categories": [
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-showMiniMap-false",
+          "title": "Disabled State",
+          "description": "Example with showMiniMap enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "showMiniMap": false
+          },
+          "keywords": [
+            "showMiniMap",
+            "state"
+          ]
+        },
+        {
+          "id": "states-showMiniMap-true",
+          "title": "Enabled State",
+          "description": "Example with showMiniMap enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "showMiniMap": true
+          },
+          "keywords": [
+            "showMiniMap",
+            "state"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:08.477296",
+  "stats": {
+    "examplesGenerated": 2,
+    "categoriesGenerated": 1
+  }
+}

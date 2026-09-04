@@ -1,0 +1,107 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-visualization/orgchart.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display organizational structure and reporting relationships.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-visualization",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "config": {
+      "description": "",
+      "type": "string"
+    },
+    "dark": {
+      "description": "",
+      "type": "boolean"
+    },
+    "edges": {
+      "description": "",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "height": {
+      "description": "",
+      "enum": [
+        "number",
+        "string"
+      ]
+    },
+    "nodes": {
+      "description": "",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "onNodeClick": {
+      "description": "",
+      "type": "null"
+    },
+    "onNodeDoubleClick": {
+      "description": "",
+      "type": "null"
+    },
+    "onSelectionChange": {
+      "description": "",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "renderNode": {
+      "description": "",
+      "type": "string"
+    },
+    "showGrid": {
+      "description": "",
+      "type": "boolean"
+    },
+    "showMiniMap": {
+      "description": "",
+      "type": "boolean"
+    },
+    "showSearch": {
+      "description": "",
+      "type": "boolean"
+    },
+    "showToolbar": {
+      "description": "",
+      "type": "boolean"
+    },
+    "showZoomControls": {
+      "description": "",
+      "type": "boolean"
+    },
+    "width": {
+      "description": "",
+      "enum": [
+        "number",
+        "string"
+      ]
+    }
+  },
+  "required": [
+    "nodes"
+  ],
+  "title": "OrgChart",
+  "type": "object"
+}

@@ -1,0 +1,157 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "stepnavigation",
+    "name": "StepNavigation",
+    "package": "@waysnx/ui-navigation",
+    "export": "StepNavigation"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic-previousLabel",
+          "title": "With Label",
+          "description": "Displays with a label.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "previousLabel": "Sample Text"
+          },
+          "keywords": [
+            "previousLabel"
+          ]
+        },
+        {
+          "id": "basic-nextLabel",
+          "title": "With Label",
+          "description": "Displays with a label.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "nextLabel": "Sample Text"
+          },
+          "keywords": [
+            "nextLabel"
+          ]
+        },
+        {
+          "id": "basic-finishLabel",
+          "title": "With Label",
+          "description": "Displays with a label.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "finishLabel": "Sample Text"
+          },
+          "keywords": [
+            "finishLabel"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-disableNextOnLastStep-false",
+          "title": "Disabled State",
+          "description": "Example with disableNextOnLastStep enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "disableNextOnLastStep": false
+          },
+          "keywords": [
+            "disableNextOnLastStep",
+            "state"
+          ]
+        },
+        {
+          "id": "states-disableNextOnLastStep-true",
+          "title": "Enabled State",
+          "description": "Example with disableNextOnLastStep enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "disableNextOnLastStep": true
+          },
+          "keywords": [
+            "disableNextOnLastStep",
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "variants",
+      "title": "Variants",
+      "description": "",
+      "examples": [
+        {
+          "id": "variants-variant-horizontal",
+          "title": "Variant: horizontal",
+          "description": "Demonstrates the horizontal variant.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "variant": "horizontal"
+          },
+          "keywords": [
+            "variant",
+            "horizontal"
+          ]
+        },
+        {
+          "id": "variants-variant-vertical",
+          "title": "Variant: vertical",
+          "description": "Demonstrates the vertical variant.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "variant": "vertical"
+          },
+          "keywords": [
+            "variant",
+            "vertical"
+          ]
+        },
+        {
+          "id": "variants-variant-dots",
+          "title": "Variant: dots",
+          "description": "Demonstrates the dots variant.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "variant": "dots"
+          },
+          "keywords": [
+            "variant",
+            "dots"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:02.733405",
+  "stats": {
+    "examplesGenerated": 8,
+    "categoriesGenerated": 3
+  }
+}

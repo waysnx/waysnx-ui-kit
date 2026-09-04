@@ -1,0 +1,174 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "input",
+    "name": "Input",
+    "package": "@waysnx/ui-core",
+    "export": "Input"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic",
+          "title": "Basic Input",
+          "description": "Example demonstrating basic state",
+          "category": "basic",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {},
+          "keywords": [
+            "basic"
+          ]
+        },
+        {
+          "id": "placeholder",
+          "title": "With Placeholder",
+          "description": "Example demonstrating placeholder state",
+          "category": "basic",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "placeholder": "Enter your name"
+          },
+          "keywords": [
+            "placeholder"
+          ]
+        },
+        {
+          "id": "label",
+          "title": "With Label",
+          "description": "Example demonstrating label state",
+          "category": "basic",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "label": "Full Name"
+          },
+          "keywords": [
+            "label"
+          ]
+        },
+        {
+          "id": "required",
+          "title": "Required Field",
+          "description": "Required input field",
+          "category": "basic",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "required": true,
+            "label": "Email"
+          },
+          "keywords": [
+            "required"
+          ]
+        },
+        {
+          "id": "email",
+          "title": "Email Input",
+          "description": "Example demonstrating email state",
+          "category": "basic",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "type": "email",
+            "placeholder": "user@example.com"
+          },
+          "keywords": [
+            "email"
+          ]
+        },
+        {
+          "id": "password",
+          "title": "Password Input",
+          "description": "Example demonstrating password state",
+          "category": "basic",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "type": "password",
+            "placeholder": "Enter password"
+          },
+          "keywords": [
+            "password"
+          ]
+        },
+        {
+          "id": "number",
+          "title": "Number Input",
+          "description": "Example demonstrating number state",
+          "category": "basic",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "type": "number"
+          },
+          "keywords": [
+            "number"
+          ]
+        },
+        {
+          "id": "error",
+          "title": "With Error",
+          "description": "Shows validation error state",
+          "category": "basic",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "error": true
+          },
+          "keywords": [
+            "error"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "disabled",
+          "title": "Disabled",
+          "description": "Example demonstrating disabled state",
+          "category": "states",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "disabled": true
+          },
+          "keywords": [
+            "disabled"
+          ]
+        },
+        {
+          "id": "readonly",
+          "title": "Read Only",
+          "description": "Example demonstrating readonly state",
+          "category": "states",
+          "source": "heuristic",
+          "confidence": 0.9,
+          "props": {
+            "readonly": true
+          },
+          "keywords": [
+            "readonly"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:43.050843",
+  "stats": {
+    "examplesGenerated": 10,
+    "categoriesGenerated": 2
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "id": "ui-layout:container",
+  "name": "Container",
+  "slug": "container",
+  "library": "ui-layout",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Container",
+  "purpose": "Constrain content width and provide consistent margins",
+  "shortDescription": "Constrain content width and provide consistent margins.",
+  "longDescription": "Constrain content width and provide consistent margins.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Container for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Container"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown"
+  },
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "maxWidth",
+      "type": "'sm' | 'md' | 'lg' | 'xl' | 'full'",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-container",
+    "wx-container-sm",
+    "wx-container-md",
+    "wx-container-lg",
+    "wx-container-xl",
+    "wx-container-full"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Container\\Container.tsx",
+  "keywords": [
+    "label",
+    "container",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Container",
+    "Create an example with Container",
+    "Generate a Container component",
+    "Build a Container in my form"
+  ],
+  "componentIntent": "Provide Container functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.069966",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "b5ce5e45",
+  "metadata": {
+    "purpose": "Constrain content width and provide consistent margins.",
+    "description": "A wrapper component that provides a maximum width for content and centers it with consistent padding on the sides. Ensures readable line lengths and consistent margins across different screen sizes. Commonly used as the top-level layout container for entire pages or sections.",
+    "functionalAreas": [
+      "Layout"
+    ],
+    "userIntents": [
+      "Constrain content to readable width",
+      "Center content on the page",
+      "Apply consistent margins",
+      "Maintain visual hierarchy through spacing"
+    ],
+    "exampleUseCases": [
+      "Page Container",
+      "Section Container",
+      "Content Width Limiter",
+      "Page Layout Wrapper",
+      "Responsive Content Container",
+      "Main Content Wrapper",
+      "Article Content Container"
+    ],
+    "useWhen": [
+      "Use this component as the outer wrapper for page content.",
+      "Use this component to constrain content to a readable width.",
+      "Use this component for consistent margins and padding.",
+      "Use this component to center content horizontally on wide screens."
+    ],
+    "avoidWhen": [
+      "Avoid this component for full-width content.",
+      "Avoid this component for layout primitives (use Stack or Flex instead).",
+      "Avoid this component when content naturally fits the viewport.",
+      "Avoid this component for nested containers (use one top-level container)."
+    ],
+    "relatedComponents": [
+      "Stack",
+      "Grid",
+      "Section"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

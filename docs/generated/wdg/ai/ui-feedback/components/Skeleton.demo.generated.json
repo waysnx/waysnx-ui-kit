@@ -1,0 +1,71 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "skeleton",
+    "name": "Skeleton",
+    "package": "@waysnx/ui-feedback",
+    "export": "Skeleton"
+  },
+  "categories": [
+    {
+      "id": "variants",
+      "title": "Variants",
+      "description": "",
+      "examples": [
+        {
+          "id": "variants-variant-text",
+          "title": "Variant: text",
+          "description": "Demonstrates the text variant.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "variant": "text"
+          },
+          "keywords": [
+            "variant",
+            "text"
+          ]
+        },
+        {
+          "id": "variants-variant-circle",
+          "title": "Variant: circle",
+          "description": "Demonstrates the circle variant.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "variant": "circle"
+          },
+          "keywords": [
+            "variant",
+            "circle"
+          ]
+        },
+        {
+          "id": "variants-variant-rect",
+          "title": "Variant: rect",
+          "description": "Demonstrates the rect variant.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "variant": "rect"
+          },
+          "keywords": [
+            "variant",
+            "rect"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:50.515258",
+  "stats": {
+    "examplesGenerated": 3,
+    "categoriesGenerated": 1
+  }
+}

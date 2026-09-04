@@ -1,0 +1,36 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-core/htmlcontent.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display sanitized HTML content safely within the application interface.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-core",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "content": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [
+    "content"
+  ],
+  "title": "HtmlContent",
+  "type": "object"
+}

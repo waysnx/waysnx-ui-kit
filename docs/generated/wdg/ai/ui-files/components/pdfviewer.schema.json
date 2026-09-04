@@ -1,0 +1,25 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-files/pdfviewer.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "PDFViewer — SHELL / ADAPTER (not a functional PDF renderer in 1.0.0). This component provides the viewer chrome (toolbar layout, zoom controls, accessible region) but does NOT render PDF page content. To display real pages, integrate a rendering engine such as PDF.js and draw into the content area below. Because no document is parsed, page count and per-page navigation are intentionally not provided — the previous build reported a hard-coded placeholder page count, which has been removed to avoid implying real rendering. The `src` prop is surfaced in the UI so integrators can confirm the value is wired through, but it is not fetched or parsed by this shell.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-files",
+    "version": "1.0.0"
+  },
+  "properties": {},
+  "required": [],
+  "title": "PDFViewer",
+  "type": "object"
+}

@@ -1,0 +1,87 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-navigation/workspaceswitcher.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Enable users to switch between multiple workspaces or environments.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": true,
+    "isMemo": false,
+    "library": "ui-navigation",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "activeWorkspace": {
+      "description": "Currently active workspace",
+      "type": "string"
+    },
+    "ariaLabel": {
+      "description": "aria-label for accessibility",
+      "type": "string"
+    },
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "enableKeyboardNav": {
+      "description": "Enable keyboard navigation",
+      "type": "boolean"
+    },
+    "onWorkspaceChange": {
+      "description": "Callback when workspace is selected",
+      "type": "null"
+    },
+    "showDescriptions": {
+      "description": "Show workspace descriptions",
+      "type": "boolean"
+    },
+    "showIcons": {
+      "description": "Show workspace icons",
+      "type": "boolean"
+    },
+    "size": {
+      "description": "Size of the switcher",
+      "enum": [
+        "sm",
+        "md",
+        "lg"
+      ]
+    },
+    "style": {
+      "description": "Additional styles",
+      "type": "string"
+    },
+    "testId": {
+      "description": "Test ID for testing",
+      "type": "string"
+    },
+    "variant": {
+      "description": "Display variant",
+      "enum": [
+        "dropdown",
+        "pills",
+        "minimal"
+      ]
+    },
+    "workspaces": {
+      "description": "List of available workspaces",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "workspaces"
+  ],
+  "title": "WorkspaceSwitcher",
+  "type": "object"
+}

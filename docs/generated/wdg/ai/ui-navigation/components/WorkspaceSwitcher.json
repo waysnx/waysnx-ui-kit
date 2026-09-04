@@ -1,0 +1,319 @@
+{
+  "id": "ui-navigation:workspaceswitcher",
+  "name": "WorkspaceSwitcher",
+  "slug": "workspace-switcher",
+  "library": "ui-navigation",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Workspace Switcher",
+  "purpose": "Enable users to switch between multiple workspaces or environments",
+  "shortDescription": "Enable users to switch between multiple workspaces or environments.",
+  "longDescription": "Enable users to switch between multiple workspaces or environments.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Navigation/WorkspaceSwitcher",
+      "storyId": "navigation-workspaceswitcher",
+      "url": "https://uikit.waysnx.tech/?path=/docs/navigation-workspaceswitcher",
+      "stories": [],
+      "tags": [],
+      "source": "WorkspaceSwitcher.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use WorkspaceSwitcher for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a WorkspaceSwitcher"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useWorkspace": "unknown",
+    "WorkspaceSwitcher": "unknown"
+  },
+  "props": [
+    {
+      "name": "workspaces",
+      "type": "Workspace[]",
+      "description": "List of available workspaces",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "activeWorkspace",
+      "type": "Workspace",
+      "description": "Currently active workspace",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onWorkspaceChange",
+      "type": "(workspace: Workspace) => void",
+      "description": "Callback when workspace is selected",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "variant",
+      "type": "'dropdown' | 'pills' | 'minimal'",
+      "description": "Display variant",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "size",
+      "type": "'sm' | 'md' | 'lg'",
+      "description": "Size of the switcher",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showIcons",
+      "type": "boolean",
+      "description": "Show workspace icons",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showDescriptions",
+      "type": "boolean",
+      "description": "Show workspace descriptions",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "Additional CSS class",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "style",
+      "type": "React.CSSProperties",
+      "description": "Additional styles",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "enableKeyboardNav",
+      "type": "boolean",
+      "description": "Enable keyboard navigation",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "aria-label for accessibility",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "Test ID for testing",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [
+    "forwardRef"
+  ],
+  "contextsUsed": [],
+  "forwardRef": true,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-workspace-switcher__menu-item",
+    "wx-workspace-switcher__pill-icon",
+    "wx-workspace-switcher__menu-icon",
+    "wx-workspace-switcher__item-name",
+    "wx-workspace-switcher__menu",
+    "wx-workspace-switcher__menu-item-content",
+    "wx-workspace-switcher__menu-checkmark",
+    "wx-workspace-switcher__trigger-content",
+    "wx-workspace-switcher__trigger-icon",
+    "wx-workspace-switcher__trigger",
+    "wx-workspace-switcher__menu-description",
+    "wx-workspace-switcher__trigger-name",
+    "wx-workspace-switcher__menu-text",
+    "wx-workspace-switcher__pill-name",
+    "wx-workspace-switcher__item-icon",
+    "wx-workspace-switcher__trigger-chevron",
+    "wx-workspace-switcher__menu-name"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\WorkspaceSwitcher\\WorkspaceSwitcher.tsx",
+  "keywords": [
+    "workspaceswitcher",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use WorkspaceSwitcher",
+    "Create an example with WorkspaceSwitcher",
+    "Generate a WorkspaceSwitcher component",
+    "Build a WorkspaceSwitcher in my form"
+  ],
+  "componentIntent": "Provide WorkspaceSwitcher functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.343621",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "b9698821",
+  "metadata": {
+    "purpose": "Enable users to switch between multiple workspaces or environments.",
+    "description": "A navigation component that displays available workspaces and enables quick switching between them. Commonly shown in the header or sidebar. Useful in applications serving multiple teams, organizations, or contexts.",
+    "functionalAreas": [
+      "Navigation",
+      "Authentication"
+    ],
+    "userIntents": [
+      "Switch to different workspace",
+      "See available workspaces",
+      "Know current workspace",
+      "Access workspace settings"
+    ],
+    "exampleUseCases": [
+      "Team Workspace Switcher",
+      "Organization Switcher",
+      "Project Switcher",
+      "Context Switcher",
+      "Account Switcher",
+      "Environment Switcher",
+      "Workspace Selector"
+    ],
+    "useWhen": [
+      "Use this component when users have access to multiple workspaces.",
+      "Use this component in multi-tenant applications.",
+      "Use this component to enable context switching.",
+      "Use this component when workspaces are separate contexts or environments."
+    ],
+    "avoidWhen": [
+      "Avoid this component with only one workspace.",
+      "Avoid this component without clear workspace concept.",
+      "Avoid this component without proper access control.",
+      "Avoid this component for temporary or secondary contexts."
+    ],
+    "relatedComponents": [
+      "Menu",
+      "Header",
+      "UserMenu"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

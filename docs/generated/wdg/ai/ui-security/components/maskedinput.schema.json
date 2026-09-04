@@ -1,0 +1,56 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/maskedinput.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "MaskedInput - Text input with pattern masking",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": true,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "error": {
+      "description": "Error message",
+      "type": "string"
+    },
+    "isComplete": {
+      "description": "Whether input is complete",
+      "type": "boolean"
+    },
+    "label": {
+      "description": "Label text",
+      "type": "string"
+    },
+    "mask": {
+      "description": "Character used to display mask (default is space)",
+      "type": "string"
+    },
+    "maskChar": {
+      "description": "Character used to display mask (default is space)",
+      "type": "string"
+    },
+    "onChange": {
+      "description": "Callback with unmasked value",
+      "type": "string"
+    },
+    "onChangeFormatted": {
+      "description": "Callback with masked value",
+      "type": "string"
+    }
+  },
+  "required": [
+    "mask"
+  ],
+  "title": "MaskedInput",
+  "type": "object"
+}

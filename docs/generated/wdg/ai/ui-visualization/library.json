@@ -1,0 +1,87 @@
+{
+  "name": "ui-visualization",
+  "version": "1.0.0",
+  "generatedAt": "2026-09-03T20:03:06.107787",
+  "componentCount": 10,
+  "components": [
+    {
+      "id": "ui-visualization:connector",
+      "name": "Connector",
+      "slug": "connector",
+      "category": "components",
+      "description": "Draw connections between elements to show relationships."
+    },
+    {
+      "id": "ui-visualization:hierarchy",
+      "name": "Hierarchy",
+      "slug": "hierarchy",
+      "category": "components",
+      "description": "Visualize organizational or hierarchical relationships."
+    },
+    {
+      "id": "ui-visualization:legend",
+      "name": "Legend",
+      "slug": "legend",
+      "category": "components",
+      "description": "Explain chart symbols, colors, and data categories."
+    },
+    {
+      "id": "ui-visualization:minimap",
+      "name": "MiniMap",
+      "slug": "minimap",
+      "category": "components",
+      "description": "Display a zoomed-out overview of large visualizations."
+    },
+    {
+      "id": "ui-visualization:orgchart",
+      "name": "OrgChart",
+      "slug": "orgchart",
+      "category": "components",
+      "description": "Display organizational structure and reporting relationships."
+    },
+    {
+      "id": "ui-visualization:searchbox",
+      "name": "SearchBox",
+      "slug": "searchbox",
+      "category": "components",
+      "description": "Enable searching and filtering within visualizations."
+    },
+    {
+      "id": "ui-visualization:toolbar",
+      "name": "Toolbar",
+      "slug": "toolbar",
+      "category": "components",
+      "description": "Display tool or action buttons for interactive visualizations."
+    },
+    {
+      "id": "ui-visualization:tree",
+      "name": "Tree",
+      "slug": "tree",
+      "category": "components",
+      "description": "Display hierarchical tree structure with expandable nodes."
+    },
+    {
+      "id": "ui-visualization:treenode",
+      "name": "TreeNode",
+      "slug": "treenode",
+      "category": "components",
+      "description": "Represent a single node within a hierarchical tree structure."
+    },
+    {
+      "id": "ui-visualization:zoomcontrols",
+      "name": "ZoomControls",
+      "slug": "zoomcontrols",
+      "category": "components",
+      "description": "Provide zoom in/out controls for interactive visualizations."
+    }
+  ],
+  "categories": {
+    "components": 10
+  },
+  "statistics": {
+    "totalComponents": 10,
+    "documentsGenerated": 10,
+    "storiesGenerated": 0,
+    "testsGenerated": 0
+  }
+}

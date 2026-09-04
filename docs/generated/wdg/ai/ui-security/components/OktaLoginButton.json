@@ -1,0 +1,256 @@
+{
+  "id": "ui-security:oktaloginbutton",
+  "name": "OktaLoginButton",
+  "slug": "okta-login-button",
+  "library": "ui-security",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Okta Login Button",
+  "purpose": "OktaLoginButton Component Okta SSO login button",
+  "shortDescription": "OktaLoginButton Component Okta SSO login button.",
+  "longDescription": "OktaLoginButton Component Okta SSO login button.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Security/Social Login/OktaLoginButton",
+      "storyId": "security-social-login-oktaloginbutton",
+      "url": "https://uikit.waysnx.tech/?path=/docs/security-social-login-oktaloginbutton",
+      "stories": [],
+      "tags": [],
+      "source": "OktaLoginButton.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use OktaLoginButton for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a OktaLoginButton"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "Button"
+    ],
+    "usedBy": [],
+    "related": [
+      "Button"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": [
+      "Button"
+    ]
+  },
+  "dependencies": {
+    "React": "unknown",
+    "Button": "unknown"
+  },
+  "props": [
+    {
+      "name": "clientId",
+      "type": "string",
+      "description": "Okta Client ID",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "domain",
+      "type": "string",
+      "description": "Okta domain",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onSuccess",
+      "type": "(response: any) => void",
+      "description": "Callback on successful login",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onError",
+      "type": "(error: Error) => void",
+      "description": "Callback on login error",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "variant",
+      "type": "'primary' | 'outline' | 'ghost'",
+      "description": "Button variant",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "isLoading",
+      "type": "boolean",
+      "description": "Show loading state",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\SSO\\OktaLoginButton.tsx",
+  "keywords": [
+    "oktaloginbutton",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [
+    "action control",
+    "clickable element"
+  ],
+  "naturalLanguageQueries": [
+    {
+      "query": "Add a oktaloginbutton",
+      "context": "ui",
+      "intent": "create"
+    },
+    {
+      "query": "Create a oktaloginbutton action",
+      "context": "interaction",
+      "intent": "create"
+    }
+  ],
+  "recommendedPrompts": [
+    "Create a OktaLoginButton with loading state",
+    "Show me a OktaLoginButton with tooltip",
+    "Generate a OktaLoginButton with icon",
+    "Build a OktaLoginButton for form submission",
+    "Design a OktaLoginButton for delete action"
+  ],
+  "componentIntent": "Provide OktaLoginButton functionality",
+  "semanticCategory": "display",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.855561",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "b8edf05d",
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-media",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

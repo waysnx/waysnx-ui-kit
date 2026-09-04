@@ -1,0 +1,42 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-grid-builder/gridcell.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "GridCell component",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-grid-builder",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "col": {
+      "description": "",
+      "type": "string"
+    },
+    "row": {
+      "description": "",
+      "type": "string"
+    },
+    "value": {
+      "description": "",
+      "type": "object"
+    }
+  },
+  "required": [
+    "value",
+    "col",
+    "row"
+  ],
+  "title": "GridCell",
+  "type": "object"
+}

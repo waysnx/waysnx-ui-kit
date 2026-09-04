@@ -1,0 +1,143 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "confirmdialog",
+    "name": "ConfirmDialog",
+    "package": "@waysnx/ui-feedback",
+    "export": "ConfirmDialog"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic-confirmLabel",
+          "title": "With Label",
+          "description": "Displays with a label.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "confirmLabel": "Sample Text"
+          },
+          "keywords": [
+            "confirmLabel"
+          ]
+        },
+        {
+          "id": "basic-cancelLabel",
+          "title": "With Label",
+          "description": "Displays with a label.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "cancelLabel": "Sample Text"
+          },
+          "keywords": [
+            "cancelLabel"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-open-false",
+          "title": "Disabled State",
+          "description": "The component is open.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "open": false
+          },
+          "keywords": [
+            "open",
+            "state"
+          ]
+        },
+        {
+          "id": "states-open-true",
+          "title": "Enabled State",
+          "description": "The component is open.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "open": true
+          },
+          "keywords": [
+            "open",
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "variants",
+      "title": "Variants",
+      "description": "",
+      "examples": [
+        {
+          "id": "variants-variant-default",
+          "title": "Variant: default",
+          "description": "Demonstrates the default variant.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "variant": "default"
+          },
+          "keywords": [
+            "variant",
+            "default"
+          ]
+        },
+        {
+          "id": "variants-variant-danger",
+          "title": "Variant: danger",
+          "description": "Demonstrates the danger variant.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "variant": "danger"
+          },
+          "keywords": [
+            "variant",
+            "danger"
+          ]
+        },
+        {
+          "id": "variants-variant-warning",
+          "title": "Variant: warning",
+          "description": "Demonstrates the warning variant.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "variant": "warning"
+          },
+          "keywords": [
+            "variant",
+            "warning"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:50.476457",
+  "stats": {
+    "examplesGenerated": 7,
+    "categoriesGenerated": 3
+  }
+}

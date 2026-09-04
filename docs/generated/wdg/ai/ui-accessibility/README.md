@@ -1,0 +1,175 @@
+# @waysnx/ui-accessibility
+
+Enterprise-grade accessibility control center for WaysNX UI Kit — centralized settings management with real-time application across all components
+
+**Version:** `1.0.0`
+
+
+## Installation
+
+### NPM
+
+```bash
+npm install @waysnx/ui-accessibility
+```
+
+### Yarn
+
+```bash
+yarn add @waysnx/ui-accessibility
+```
+
+### PNPM
+
+```bash
+pnpm add @waysnx/ui-accessibility
+```
+
+
+## Package Information
+
+| Property | Value |
+|----------|-------|
+| **Package** | `@waysnx/ui-accessibility` |
+| **Version** | `1.0.0` |
+| **License** | Apache-2.0 |
+| **Author** | WaysNX Technologies |
+
+
+## Dependencies
+
+### Peer Dependencies (Required)
+
+Your project must provide these packages:
+
+- `react` - >=18
+- `react-dom` - >=18
+
+### Runtime Dependencies
+
+Automatically installed:
+
+- `@waysnx/ui-i18n` - workspace:*
+
+
+## Components Overview
+
+**Total Components:** 5
+
+| Category | Count |
+|----------|-------|
+| components | 5 |
+
+
+## Components
+
+### components
+
+- **AccessibilityCenter** - AccessibilityCenter Component The main UI for accessibility settings
+- **FloatingButton** - FloatingButton Component A floating button that triggers the accessibility center
+- **Magnifier** - Magnifier Component Provides a magnified view of page content for users with low vision Follows curs
+- **ReadingGuide** - ReadingGuide Component Displays a visual reading line to help users follow text Only renders when re
+- **SkipLinks** - SkipLinks — renders visually hidden skip-navigation links
+
+
+## Quick Start
+
+### Basic Usage
+
+```typescript
+import React from 'react';
+import { Button } from '@waysnx/ui-accessibility';
+
+export function App() {
+  return (
+    <div>
+      <Button onClick={() => console.log('Clicked')}>
+        Click Me
+      </Button>
+    </div>
+  );
+}
+```
+
+### With Props
+
+```typescript
+import { Input, Select } from '@waysnx/{library_name}';
+
+export function Form() {
+  const [value, setValue] = React.useState('');
+
+  return (
+    <>
+      <Input
+        placeholder='Enter text'
+        value={value}
+        onChange={(e) => setValue(e.target.value)}
+      />
+      <Select>
+        <option>Option 1</option>
+        <option>Option 2</option>
+      </Select>
+    </>
+  );
+}
+```
+
+
+## Enterprise Context
+
+This library is used in enterprise applications including:
+
+- crm
+- erp
+- hrms
+
+
+## Documentation
+
+### Component Documentation
+
+Each component includes:
+
+- Full API documentation
+- Props and TypeScript types
+- Usage examples
+- Accessibility features
+- Design tokens applied
+
+### Available Resources
+
+- [Component Docs](./components/) - Individual component documentation
+- [LLM Guide](./LLM.md) - AI agent guide for this library
+- [Storybook](./storybook) - Interactive component explorer
+- [Design System](./library.json) - Library metadata
+- [Search Index](./search-index.json) - Full-text search
+- [Relationships](./relationships.json) - Component dependency graph
+
+
+## Support
+
+### Getting Help
+
+- Check component-specific documentation
+- Review examples and demos
+- Check for common issues
+
+### Reporting Issues
+
+If you encounter issues:
+
+1. Check existing issues on GitHub
+2. Provide reproduction steps
+3. Include your environment details
+4. Attach relevant code examples
+
+### Contributing
+
+Contributions are welcome! Please follow:
+
+- Component design guidelines
+- Accessibility standards (WCAG 2.1)
+- TypeScript best practices
+- Test coverage requirements
+

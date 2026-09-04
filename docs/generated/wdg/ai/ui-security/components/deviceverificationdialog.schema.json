@@ -1,0 +1,77 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/deviceverificationdialog.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Callback to close dialog",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "description": {
+      "description": "Description",
+      "type": "string"
+    },
+    "device": {
+      "description": "Device information to display",
+      "type": "string"
+    },
+    "error": {
+      "description": "Error message",
+      "type": "string"
+    },
+    "loading": {
+      "description": "Loading state",
+      "type": "boolean"
+    },
+    "onApprove": {
+      "description": "Callback when user approves device",
+      "enum": [
+        "() => void",
+        "Promise<void>"
+      ]
+    },
+    "onClose": {
+      "description": "Callback to close dialog",
+      "type": "null"
+    },
+    "onReject": {
+      "description": "Callback when user rejects device",
+      "enum": [
+        "() => void",
+        "Promise<void>"
+      ]
+    },
+    "open": {
+      "description": "Whether dialog is open",
+      "type": "boolean"
+    },
+    "testId": {
+      "description": "Test ID",
+      "type": "string"
+    },
+    "title": {
+      "description": "Title for the dialog",
+      "type": "string"
+    }
+  },
+  "required": [
+    "open",
+    "onClose",
+    "onApprove",
+    "onReject"
+  ],
+  "title": "DeviceVerificationDialog",
+  "type": "object"
+}

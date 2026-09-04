@@ -1,0 +1,117 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-navigation/stepnavigation.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Navigate between steps of a multi-step process or guide.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": true,
+    "isMemo": false,
+    "library": "ui-navigation",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "allowBacktrack": {
+      "description": "Allow going back to previous steps",
+      "type": "boolean"
+    },
+    "ariaLabel": {
+      "description": "aria-label for accessibility",
+      "type": "string"
+    },
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "currentStep": {
+      "description": "Current active step index",
+      "type": "number"
+    },
+    "disableNextOnLastStep": {
+      "description": "Disable next button on last step",
+      "type": "boolean"
+    },
+    "finishLabel": {
+      "description": "Custom finish button label",
+      "type": "string"
+    },
+    "nextLabel": {
+      "description": "Custom next button label",
+      "type": "string"
+    },
+    "onFinish": {
+      "description": "Callback when process is finished",
+      "enum": [
+        "() => void",
+        "Promise<void>"
+      ]
+    },
+    "onStepChange": {
+      "description": "Callback when step changes",
+      "enum": [
+        "(stepIndex: number) => void",
+        "Promise<void>"
+      ]
+    },
+    "onValidateStep": {
+      "description": "Callback to validate if step can be changed",
+      "enum": [
+        "(stepIndex: number) => boolean",
+        "Promise<boolean>"
+      ]
+    },
+    "previousLabel": {
+      "description": "Custom previous button label",
+      "type": "string"
+    },
+    "showDescriptions": {
+      "description": "Show step descriptions",
+      "type": "boolean"
+    },
+    "showFinishButton": {
+      "description": "Show custom button labels at end of wizard",
+      "type": "boolean"
+    },
+    "showProgress": {
+      "description": "Show progress percentage",
+      "type": "boolean"
+    },
+    "steps": {
+      "description": "Array of step definitions",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "style": {
+      "description": "Additional styles",
+      "type": "string"
+    },
+    "testId": {
+      "description": "Test ID",
+      "type": "string"
+    },
+    "variant": {
+      "description": "Display variant",
+      "enum": [
+        "horizontal",
+        "vertical",
+        "dots"
+      ]
+    }
+  },
+  "required": [
+    "steps",
+    "currentStep"
+  ],
+  "title": "StepNavigation",
+  "type": "object"
+}

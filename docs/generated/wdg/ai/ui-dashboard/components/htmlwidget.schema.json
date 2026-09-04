@@ -1,0 +1,56 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-dashboard/htmlwidget.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "HtmlWidget component",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-dashboard",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "allowedTags": {
+      "description": "Allowed tags for sanitization",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "html": {
+      "description": "HTML content to render",
+      "type": "string"
+    },
+    "id": {
+      "description": "Widget ID",
+      "type": "string"
+    },
+    "style": {
+      "description": "Additional CSS styles",
+      "type": "string"
+    },
+    "title": {
+      "description": "Widget title",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "html"
+  ],
+  "title": "HtmlWidget",
+  "type": "object"
+}

@@ -1,0 +1,42 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-docs/themeexplorerplaceholder.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "ThemeExplorerPlaceholder component",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-docs",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "currentTheme": {
+      "description": "",
+      "type": "string"
+    },
+    "onCustomize": {
+      "description": "",
+      "type": "string"
+    },
+    "onThemeChange": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "title": "ThemeExplorerPlaceholder",
+  "type": "object"
+}

@@ -1,0 +1,228 @@
+{
+  "id": "ui-layout:pageheader",
+  "name": "PageHeader",
+  "slug": "page-header",
+  "library": "ui-layout",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Page Header",
+  "purpose": "Display header information and controls at the top of a page",
+  "shortDescription": "Display header information and controls at the top of a page.",
+  "longDescription": "Display header information and controls at the top of a page.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use PageHeader for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a PageHeader"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown"
+  },
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-spacing-md"
+  ],
+  "cssClasses": [
+    "wx-page-header"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {
+    "--wx-spacing-md": {
+      "properties": [
+        "gap"
+      ],
+      "selectors": [
+        ".wx-page-header"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\PageHeader\\PageHeader.tsx",
+  "keywords": [
+    "pageheader",
+    "label",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use PageHeader",
+    "Create an example with PageHeader",
+    "Generate a PageHeader component",
+    "Build a PageHeader in my form"
+  ],
+  "componentIntent": "Provide PageHeader functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.098586",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "6b1a9cd0",
+  "metadata": {
+    "purpose": "Display header information and controls at the top of a page.",
+    "description": "A specialized header component positioned at the top of a page, typically containing the page title, description, and primary action buttons. Coordinates with other page layout components to provide a cohesive page structure. Often includes breadcrumbs, navigation, and contextual information.",
+    "functionalAreas": [
+      "Layout",
+      "Navigation"
+    ],
+    "userIntents": [
+      "Know the page title",
+      "See page description or context",
+      "Access primary actions",
+      "Navigate back or to related pages"
+    ],
+    "exampleUseCases": [
+      "Page Title Header",
+      "Toolbar with Actions",
+      "Header with Breadcrumbs",
+      "Section Header",
+      "Content Page Header",
+      "Dashboard Header",
+      "List Page Header"
+    ],
+    "useWhen": [
+      "Use this component at the top of pages for title and key information.",
+      "Use this component in combination with PageContent and page layouts.",
+      "Use this component when you need a dedicated header with actions.",
+      "Use this component to provide context and navigation aids."
+    ],
+    "avoidWhen": [
+      "Avoid this component in simple views without page-level actions.",
+      "Avoid this component without a clear page structure.",
+      "Avoid this component when the title belongs in content.",
+      "Avoid this component for temporary or contextual headers."
+    ],
+    "relatedComponents": [
+      "PageContent",
+      "PageLayout",
+      "Breadcrumb",
+      "Navigation"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

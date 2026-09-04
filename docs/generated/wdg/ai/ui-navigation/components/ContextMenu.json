@@ -1,0 +1,350 @@
+{
+  "id": "ui-navigation:contextmenu",
+  "name": "ContextMenu",
+  "slug": "context-menu",
+  "library": "ui-navigation",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Context Menu",
+  "purpose": "Display context-sensitive actions triggered by right-click or long-press",
+  "shortDescription": "Display context-sensitive actions triggered by right-click or long-press.",
+  "longDescription": "Display context-sensitive actions triggered by right-click or long-press.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Navigation/ContextMenu",
+      "storyId": "navigation-contextmenu",
+      "url": "https://uikit.waysnx.tech/?path=/docs/navigation-contextmenu",
+      "stories": [],
+      "tags": [],
+      "source": "ContextMenu.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use ContextMenu for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a ContextMenu"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "MenuItem"
+    ],
+    "usedBy": [],
+    "related": [
+      "MenuItem"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": [
+      "MenuItem"
+    ]
+  },
+  "dependencies": {
+    "MenuItem": "unknown",
+    "canAccessItem": "unknown",
+    "filterMenuByPermissions": "unknown"
+  },
+  "props": [
+    {
+      "name": "items",
+      "type": "NavigationItem[]",
+      "description": "Menu items to display",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "onItemClick",
+      "type": "(item: NavigationItem) => void",
+      "description": "Callback when item is clicked",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "security",
+      "type": "SecurityContext",
+      "description": "Security context for permission-based filtering",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "density",
+      "type": "'compact' | 'normal' | 'spacious'",
+      "description": "Component density",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "variant",
+      "type": "'default' | 'minimal' | 'elevated'",
+      "description": "Theme variant",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "Additional CSS class",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "style",
+      "type": "React.CSSProperties",
+      "description": "Additional styles",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showIcons",
+      "type": "boolean",
+      "description": "Whether to show icons",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showBadges",
+      "type": "boolean",
+      "description": "Whether to show badges",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "maxDepth",
+      "type": "number",
+      "description": "Maximum depth for nested items",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "keyboardNav",
+      "type": "boolean",
+      "description": "Keyboard navigation enabled",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "Accessible label for menu",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onOpen",
+      "type": "(position: ContextMenuPosition) => void",
+      "description": "Callback when context menu is opened",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onClose",
+      "type": "() => void",
+      "description": "Callback when context menu is closed",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "isOpen",
+      "type": "boolean",
+      "description": "Whether menu is visible",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "position",
+      "type": "ContextMenuPosition",
+      "description": "Menu position",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "offset",
+      "type": "{ x: number",
+      "description": "Offset from mouse position",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [
+    "forwardRef"
+  ],
+  "contextsUsed": [],
+  "forwardRef": true,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "nav-context-menu__list"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\ContextMenu\\ContextMenu.tsx",
+  "keywords": [
+    "contextmenu",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use ContextMenu",
+    "Create an example with ContextMenu",
+    "Generate a ContextMenu component",
+    "Build a ContextMenu in my form"
+  ],
+  "componentIntent": "Provide ContextMenu functionality",
+  "semanticCategory": "input",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.210947",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "a8a48317",
+  "metadata": {
+    "purpose": "Display context-sensitive actions triggered by right-click or long-press.",
+    "description": "A floating menu that appears when users right-click (or long-press on mobile) on a UI element. Contains contextual actions specific to that element or content. Provides quick access to common actions without needing to navigate menus or toolbars.",
+    "functionalAreas": [
+      "Navigation",
+      "Actions"
+    ],
+    "userIntents": [
+      "Quickly access item-specific actions",
+      "Perform actions without navigation",
+      "Copy, delete, or edit items",
+      "See available options for content"
+    ],
+    "exampleUseCases": [
+      "File Management Actions",
+      "Item Delete/Edit Menu",
+      "Copy/Paste Menu",
+      "Element Inspector Menu",
+      "Data Row Actions",
+      "Text Selection Menu",
+      "Item Context Menu"
+    ],
+    "useWhen": [
+      "Use this component for item or element-specific actions.",
+      "Use this component to provide quick access to secondary actions.",
+      "Use this component when power users benefit from right-click menus.",
+      "Use this component in applications with complex interactions on elements."
+    ],
+    "avoidWhen": [
+      "Avoid this component for primary navigation or critical actions.",
+      "Avoid this component without keyboard accessibility alternatives.",
+      "Avoid this component on touch-only devices without long-press support.",
+      "Avoid this component for actions that should always be visible."
+    ],
+    "relatedComponents": [
+      "Menu",
+      "Drawer",
+      "PopoverMenu"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

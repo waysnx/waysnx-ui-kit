@@ -1,0 +1,252 @@
+{
+  "id": "ui-visualization:minimap",
+  "name": "MiniMap",
+  "slug": "mini-map",
+  "library": "ui-visualization",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Mini Map",
+  "purpose": "Display a zoomed-out overview of large visualizations",
+  "shortDescription": "Display a zoomed-out overview of large visualizations.",
+  "longDescription": "Display a zoomed-out overview of large visualizations.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use MiniMap for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a MiniMap"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [
+      "Hierarchy",
+      "OrgChart"
+    ],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [
+      "Hierarchy",
+      "OrgChart"
+    ],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "state",
+      "type": "MiniMapState",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "totalWidth",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "totalHeight",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "onNavigate",
+      "type": "(relX: number, relY: number) => void",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-vis-minimap__svg",
+    "wx-vis-minimap__node",
+    "wx-vis-minimap__viewport"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\MiniMap\\MiniMap.tsx",
+  "keywords": [
+    "components",
+    "minimap"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use MiniMap",
+    "Create an example with MiniMap",
+    "Generate a MiniMap component",
+    "Build a MiniMap in my form"
+  ],
+  "componentIntent": "Provide MiniMap functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.917670",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "a728b819",
+  "metadata": {
+    "purpose": "Display a zoomed-out overview of large visualizations.",
+    "description": "A small preview/thumbnail view that shows the full extent of a larger visualization. Includes a viewport indicator showing the currently visible area. Allows quick navigation to different parts of the main visualization.",
+    "functionalAreas": [
+      "Visualization",
+      "Navigation"
+    ],
+    "userIntents": [
+      "See full extent",
+      "Know current position",
+      "Navigate quickly",
+      "Context awareness"
+    ],
+    "exampleUseCases": [
+      "Map Overview",
+      "Diagram Overview",
+      "Canvas Preview",
+      "Document Overview",
+      "Zoom Context",
+      "Navigation Aid",
+      "Content Overview"
+    ],
+    "useWhen": [
+      "Use this component in zoomed/panned visualizations.",
+      "Use this component to show current viewport position.",
+      "Use this component to enable quick navigation.",
+      "Use this component with clickable navigation to minimap areas."
+    ],
+    "avoidWhen": [
+      "Avoid this component for simple small visualizations.",
+      "Avoid this component without zoom or pan capability.",
+      "Avoid this component on small screens (adds clutter).",
+      "Avoid this component without proper viewport indication."
+    ],
+    "relatedComponents": [
+      "MapView",
+      "ZoomControls",
+      "Visualization"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "accordion",
+    "name": "Accordion",
+    "package": "@waysnx/ui-layout",
+    "export": "Accordion"
+  },
+  "categories": [
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-allowMultiple-false",
+          "title": "Disabled State",
+          "description": "Example with allowMultiple enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "allowMultiple": false
+          },
+          "keywords": [
+            "allowMultiple",
+            "state"
+          ]
+        },
+        {
+          "id": "states-allowMultiple-true",
+          "title": "Enabled State",
+          "description": "Example with allowMultiple enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "allowMultiple": true
+          },
+          "keywords": [
+            "allowMultiple",
+            "state"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:00.033827",
+  "stats": {
+    "examplesGenerated": 2,
+    "categoriesGenerated": 1
+  }
+}

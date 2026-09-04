@@ -1,0 +1,70 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-grid-builder/gridpagination.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "GridPagination component",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-grid-builder",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "canNextPage": {
+      "description": "",
+      "type": "boolean"
+    },
+    "onPageChange": {
+      "description": "",
+      "type": "number"
+    },
+    "onPageSizeChange": {
+      "description": "",
+      "type": "number"
+    },
+    "pageCount": {
+      "description": "",
+      "type": "number"
+    },
+    "pageIndex": {
+      "description": "",
+      "type": "number"
+    },
+    "pageSize": {
+      "description": "",
+      "type": "number"
+    },
+    "pageSizeOptions": {
+      "description": "",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "totalFiltered": {
+      "description": "",
+      "type": "number"
+    }
+  },
+  "required": [
+    "pageIndex",
+    "pageSize",
+    "pageCount",
+    "totalFiltered",
+    "pageSizeOptions",
+    "canNextPage",
+    "onPageChange",
+    "onPageSizeChange"
+  ],
+  "title": "GridPagination",
+  "type": "object"
+}

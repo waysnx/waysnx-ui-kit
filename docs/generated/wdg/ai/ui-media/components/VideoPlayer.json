@@ -1,0 +1,222 @@
+{
+  "id": "ui-media:videoplayer",
+  "name": "VideoPlayer",
+  "slug": "video-player",
+  "library": "ui-media",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Video Player",
+  "purpose": "Play video content with standard player controls",
+  "shortDescription": "Play video content with standard player controls.",
+  "longDescription": "Play video content with standard player controls.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Media/VideoPlayer",
+      "storyId": "media-videoplayer",
+      "url": "https://uikit.waysnx.tech/?path=/docs/media-videoplayer",
+      "stories": [],
+      "tags": [],
+      "source": "VideoPlayer.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use VideoPlayer for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a VideoPlayer"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useRef": "unknown",
+    "useState": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-adv-video-player__title",
+    "wx-adv-video-player__play-btn",
+    "wx-adv-video-player__placeholder"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\VideoPlayer\\VideoPlayer.tsx",
+  "keywords": [
+    "videoplayer",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use VideoPlayer",
+    "Create an example with VideoPlayer",
+    "Generate a VideoPlayer component",
+    "Build a VideoPlayer in my form"
+  ],
+  "componentIntent": "Provide VideoPlayer functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.395390",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "7f9d655a",
+  "metadata": {
+    "purpose": "Play video content with standard player controls.",
+    "description": "A customizable video player component with play/pause, volume control, progress bar, and fullscreen. Supports multiple video formats and quality options. Common in video hosting, education, and media applications.",
+    "functionalAreas": [
+      "Visualization",
+      "Communication"
+    ],
+    "userIntents": [
+      "Play video content",
+      "Control playback",
+      "Adjust volume",
+      "View full screen"
+    ],
+    "exampleUseCases": [
+      "Video Playback",
+      "Course Video",
+      "Tutorial Video",
+      "Video Upload Preview",
+      "Media Streaming",
+      "Product Demo Video",
+      "Recorded Presentation"
+    ],
+    "useWhen": [
+      "Use this component for video playback and media consumption.",
+      "Use this component with standard playback controls.",
+      "Use this component when multiple video formats support is needed.",
+      "Use this component for educational or training content."
+    ],
+    "avoidWhen": [
+      "Avoid this component for live streaming (use specialized streaming component).",
+      "Avoid this component without proper video format support.",
+      "Avoid this component for simple video embeds (use native video tag).",
+      "Avoid this component without bandwidth optimization."
+    ],
+    "relatedComponents": [
+      "AudioPlayer",
+      "ImageViewer",
+      "MediaGallery"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "qrcode",
+        "version": "^1.5.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/qrcode",
+        "version": "^1.5.5"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

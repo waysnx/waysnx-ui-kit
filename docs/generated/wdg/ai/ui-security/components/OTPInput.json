@@ -1,0 +1,301 @@
+{
+  "id": "ui-security:otpinput",
+  "name": "OTPInput",
+  "slug": "otp-input",
+  "library": "ui-security",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "OTP Input",
+  "purpose": "OTPInput Component One-Time Password input with: - Multiple digit fields (configurable, typically 6) - Auto-focus between fields - Keyboard navigation support - Paste support (auto-distribute digits) - Full accessibility - Does NOT use ui-core Input (custom numeric input)",
+  "shortDescription": "OTPInput Component One-Time Password input with: - Multiple digit fields (configurable, typically 6) - Auto-focus bet...",
+  "longDescription": "OTPInput Component One-Time Password input with: - Multiple digit fields (configurable, typically 6) - Auto-focus between fields - Keyboard navigation support - Paste support (auto-distribute digits) - Full accessibility - Does NOT use ui-core Input (custom numeric input)",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Security/OTP/OTPInput",
+      "storyId": "security-otp-otpinput",
+      "url": "https://uikit.waysnx.tech/?path=/docs/security-otp-otpinput",
+      "stories": [],
+      "tags": [],
+      "source": "OTPInput.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use OTPInput for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a OTPInput"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [
+      "OTPVerificationCard",
+      "PhoneVerificationCard"
+    ],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [
+      "OTPVerificationCard",
+      "PhoneVerificationCard"
+    ],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [
+    {
+      "name": "length",
+      "type": "number",
+      "description": "Number of OTP digits",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onComplete",
+      "type": "(otp: string) => void",
+      "description": "Callback when OTP is complete",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onChange",
+      "type": "(value: string) => void",
+      "description": "Callback for value changes",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "description": "Current OTP value",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "description": "Disable input",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "placeholder",
+      "type": "string",
+      "description": "Input placeholder character",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "Label",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Error message",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "helperText",
+      "type": "string",
+      "description": "Helper text",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "Custom CSS class",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "Test ID",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "waysnx-otp-label",
+    "waysnx-otp-helper",
+    "waysnx-otp-fields",
+    "waysnx-otp-error"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\OTP\\OTPInput.tsx",
+  "keywords": [
+    "label",
+    "otpinput",
+    "placeholder",
+    "value",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [
+    "text entry",
+    "form field"
+  ],
+  "naturalLanguageQueries": [
+    {
+      "query": "Create a otpinput for forms",
+      "context": "form",
+      "intent": "create"
+    },
+    {
+      "query": "Add a otpinput",
+      "context": "ui",
+      "intent": "create"
+    }
+  ],
+  "recommendedPrompts": [
+    "Show me how to use OTPInput for form validation",
+    "Create a OTPInput with error handling",
+    "Generate a OTPInput with placeholder text",
+    "Build a OTPInput with character limit",
+    "Design a OTPInput for email addresses"
+  ],
+  "componentIntent": "Provide OTPInput functionality",
+  "semanticCategory": "input",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.550384",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "7ce122fd",
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-media",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

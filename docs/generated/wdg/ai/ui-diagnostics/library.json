@@ -1,0 +1,144 @@
+{
+  "id": "ui-diagnostics",
+  "name": "UI Diagnostics",
+  "slug": "ui-diagnostics",
+  "version": "0.1.0",
+  "status": "stable",
+  "type": "functional-library",
+  "purpose": "Framework-agnostic runtime error observability, UI error diagnostics, and form/schema validation error capture",
+  "short_description": "Runtime diagnostics framework for error observation and reporting",
+  "long_description": "\n@waysnx/ui-diagnostics provides a comprehensive error diagnostics and observability system for React/UI applications.\n\nKey Capabilities:\n- Runtime error classification and analysis\n- Form validation error capture and reporting\n- Schema and rule engine error tracking\n- Component-level error context preservation\n- Privacy-aware diagnostic sampling\n- Multi-channel error reporting (console, HTTP, memory)\n- Error deduplication and fingerprinting\n- Application, route, form, and component-level diagnostic context\n",
+  "capabilities": [
+    "Runtime error classification",
+    "Form validation diagnostics",
+    "Error reporting pipeline",
+    "Console reporting",
+    "HTTP remote reporting",
+    "Error deduplication",
+    "Privacy sampling",
+    "Diagnostic context"
+  ],
+  "exports": {
+    "core_functions": [
+      {
+        "name": "createDiagnostics",
+        "description": "Create and initialize diagnostics instance",
+        "signature": "createDiagnostics(config: DiagnosticsConfig): Diagnostics"
+      },
+      {
+        "name": "classifyError",
+        "description": "Classify runtime errors into diagnostic categories",
+        "signature": "classifyError(error: Error): DiagnosticCategory"
+      },
+      {
+        "name": "classifyHttpStatus",
+        "description": "Classify HTTP status codes",
+        "signature": "classifyHttpStatus(status: number): DiagnosticCategory"
+      },
+      {
+        "name": "computeFingerprint",
+        "description": "Compute error fingerprint for deduplication",
+        "signature": "computeFingerprint(event: DiagnosticEvent): string"
+      }
+    ],
+    "reporters": [
+      {
+        "name": "createConsoleReporter",
+        "description": "Console output reporter",
+        "type": "DiagnosticReporter",
+        "options": "ConsoleReporterOptions"
+      },
+      {
+        "name": "createHttpReporter",
+        "description": "HTTP endpoint reporter",
+        "type": "DiagnosticReporter",
+        "options": "HttpReporterOptions"
+      },
+      {
+        "name": "createMemoryReporter",
+        "description": "In-memory diagnostic buffer",
+        "type": "DiagnosticReporter"
+      },
+      {
+        "name": "createNoopReporter",
+        "description": "No-operation reporter for testing",
+        "type": "DiagnosticReporter"
+      },
+      {
+        "name": "composeReporters",
+        "description": "Combine multiple reporters into pipeline",
+        "signature": "composeReporters(...reporters: DiagnosticReporter[]): DiagnosticReporter"
+      }
+    ],
+    "form_diagnostics": [
+      {
+        "name": "captureFormSubmissionError",
+        "description": "Capture form submission errors",
+        "signature": "captureFormSubmissionError(error: Error, context: FormDiagnosticsInfo): void"
+      },
+      {
+        "name": "captureFormValidationError",
+        "description": "Capture form field validation errors",
+        "signature": "captureFormValidationError(field: string, error: Error): void"
+      },
+      {
+        "name": "captureRuleEngineError",
+        "description": "Capture rule engine evaluation errors",
+        "signature": "captureRuleEngineError(error: Error, context: DiagnosticContext): void"
+      },
+      {
+        "name": "captureSchemaError",
+        "description": "Capture schema validation/parsing errors",
+        "signature": "captureSchemaError(error: Error, schema: any): void"
+      }
+    ],
+    "types": [
+      "Diagnostics",
+      "DiagnosticsConfig",
+      "DiagnosticEvent",
+      "DiagnosticCategory",
+      "ExpectedDiagnosticCategory",
+      "UnexpectedDiagnosticCategory",
+      "DiagnosticSeverity",
+      "DiagnosticReporter",
+      "DiagnosticContext",
+      "DiagnosticCaptureConfig",
+      "DiagnosticPrivacyConfig",
+      "DiagnosticSamplingConfig",
+      "DiagnosticDedupeConfig",
+      "DiagnosticApplicationContext",
+      "DiagnosticUiKitContext",
+      "DiagnosticComponentContext",
+      "DiagnosticFormContext",
+      "DiagnosticRouteContext",
+      "DiagnosticRuntimeContext",
+      "FormDiagnosticsInfo",
+      "MemoryReporter"
+    ]
+  },
+  "integration": {
+    "framework_agnostic": true,
+    "react_integration": "@waysnx/ui-diagnostics/react",
+    "setup": "Import createDiagnostics, configure reporters, attach to error boundary",
+    "context_support": "Application, route, form, component, runtime context"
+  },
+  "use_cases": [
+    "Monitor production error rates and categories",
+    "Debug form validation issues in user applications",
+    "Track schema and rule engine failures",
+    "Build error dashboards and monitoring systems",
+    "Implement privacy-respecting error reporting",
+    "Capture form submission failures with context"
+  ],
+  "keywords": [
+    "diagnostics",
+    "error-reporting",
+    "observability",
+    "telemetry",
+    "form-validation",
+    "error-tracking",
+    "ui-diagnostics",
+    "framework-agnostic"
+  ],
+  "generatedAt": "2026-09-03T20:03:08.524659"
+}

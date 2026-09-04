@@ -1,0 +1,301 @@
+{
+  "id": "ui-layout:card",
+  "name": "Card",
+  "slug": "card",
+  "library": "ui-layout",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Card",
+  "purpose": "Contain and organize related content in a bordered container",
+  "shortDescription": "Contain and organize related content in a bordered container.",
+  "longDescription": "Contain and organize related content in a bordered container.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Card for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Card"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [
+      "EmailVerificationCard",
+      "OTPVerificationCard",
+      "PhoneVerificationCard"
+    ],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [
+      "EmailVerificationCard",
+      "OTPVerificationCard",
+      "PhoneVerificationCard"
+    ],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown"
+  },
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-surface",
+    "--wx-color-text",
+    "--wx-font-size-md",
+    "--wx-font-size-sm"
+  ],
+  "cssClasses": [
+    "wx-card",
+    "wx-card-title"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {
+    "--wx-font-size-sm": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-card"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-md": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-card-title"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {
+    "--wx-color-surface": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-card"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-border": {
+      "properties": [
+        "border"
+      ],
+      "selectors": [
+        ".wx-card"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-card",
+        ".wx-card-title"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Card\\Card.tsx",
+  "keywords": [
+    "card",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Card",
+    "Create an example with Card",
+    "Generate a Card component",
+    "Build a Card in my form"
+  ],
+  "componentIntent": "Provide Card functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.048229",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "f16f4c8d",
+  "metadata": {
+    "purpose": "Contain and organize related content in a bordered container.",
+    "description": "A wrapper component that groups related content into a visually distinct card container. Provides visual organization by separating content into discrete chunks with clear boundaries and padding. Used extensively for displaying lists of similar items, panels of information, or sections of grouped functionality.",
+    "functionalAreas": [
+      "Layout",
+      "Data Entry"
+    ],
+    "userIntents": [
+      "Group related information together",
+      "Organize content visually",
+      "Separate different content areas",
+      "Create structured page layouts"
+    ],
+    "exampleUseCases": [
+      "Product Card",
+      "Profile Card",
+      "Information Panel",
+      "Content Container",
+      "Form Section",
+      "Dashboard Widget",
+      "List Item Container"
+    ],
+    "useWhen": [
+      "Use this component to organize and visually separate content.",
+      "Use this component when you want to group related information together.",
+      "Use this component as a container for dashboard widgets or panels.",
+      "Use this component in grid layouts to organize similar content items."
+    ],
+    "avoidWhen": [
+      "Avoid this component for single-use containers without grouped content.",
+      "Avoid this component when content should be part of the natural page flow.",
+      "Avoid this component in extremely compact layouts where space is precious.",
+      "Avoid this component for simple dividers between unrelated content."
+    ],
+    "relatedComponents": [
+      "Container",
+      "Panel",
+      "Section"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

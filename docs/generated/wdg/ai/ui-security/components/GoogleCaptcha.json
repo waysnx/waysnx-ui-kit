@@ -1,0 +1,228 @@
+{
+  "id": "ui-security:googlecaptcha",
+  "name": "GoogleCaptcha",
+  "slug": "google-captcha",
+  "library": "ui-security",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Google Captcha",
+  "purpose": "GoogleCaptcha - Google reCAPTCHA v3 integration",
+  "shortDescription": "GoogleCaptcha - Google reCAPTCHA v3 integration",
+  "longDescription": "GoogleCaptcha - Google reCAPTCHA v3 integration",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Security/Captcha/GoogleCaptcha",
+      "storyId": "security-captcha-googlecaptcha",
+      "url": "https://uikit.waysnx.tech/?path=/docs/security-captcha-googlecaptcha",
+      "stories": [],
+      "tags": [],
+      "source": "GoogleCaptcha.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use GoogleCaptcha for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a GoogleCaptcha"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [
+      "CaptchaContainer"
+    ],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [
+      "CaptchaContainer"
+    ],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [
+    {
+      "name": "siteKey",
+      "type": "string",
+      "description": "Sitekey from Google reCAPTCHA",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onVerify",
+      "type": "(token: string) => void",
+      "description": "Callback when verification succeeds",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onError",
+      "type": "(error: Error) => void",
+      "description": "Callback on verification failure",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "theme",
+      "type": "'light' | 'dark'",
+      "description": "Theme (light or dark)",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "size",
+      "type": "'normal' | 'compact' | 'invisible'",
+      "description": "Size (normal, compact, invisible)",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Captcha\\GoogleCaptcha.tsx",
+  "keywords": [
+    "googlecaptcha",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use GoogleCaptcha",
+    "Create an example with GoogleCaptcha",
+    "Generate a GoogleCaptcha component",
+    "Build a GoogleCaptcha in my form"
+  ],
+  "componentIntent": "Provide GoogleCaptcha functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.472132",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "6a85d5d9",
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-media",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

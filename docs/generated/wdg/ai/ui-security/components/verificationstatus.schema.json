@@ -1,0 +1,55 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/verificationstatus.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "VerificationStatus Component Display verification progress and status: - Multiple verification steps - Status indicators (pending, verified, failed) - Progress bar - Uses ui-layout Stack for layout",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "className": {
+      "description": "Custom CSS class",
+      "type": "string"
+    },
+    "overallStatus": {
+      "description": "Overall verification status",
+      "type": "string"
+    },
+    "showProgress": {
+      "description": "Show progress bar",
+      "type": "boolean"
+    },
+    "steps": {
+      "description": "Verification steps and their status",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "testId": {
+      "description": "Test ID",
+      "type": "string"
+    },
+    "timeline": {
+      "description": "Show timeline view instead of list",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "steps"
+  ],
+  "title": "VerificationStatus",
+  "type": "object"
+}

@@ -1,0 +1,565 @@
+{
+  "id": "ui-core:autocomplete",
+  "name": "Autocomplete",
+  "slug": "autocomplete",
+  "library": "ui-core",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Autocomplete",
+  "purpose": "Enable users to search and select from a filtered list of options as they type",
+  "shortDescription": "Enable users to search and select from a filtered list of options as they type.",
+  "longDescription": "Enable users to search and select from a filtered list of options as they type.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Components/Autocomplete",
+      "storyId": "components-autocomplete",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-autocomplete",
+      "stories": [],
+      "tags": [],
+      "source": "Autocomplete.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Autocomplete for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Autocomplete"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "warn": "unknown",
+    "getCachedOptions": "unknown",
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "options",
+      "type": "AutocompleteOption[]",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onChange",
+      "type": "(value: string) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onSelect",
+      "type": "(option: AutocompleteOption | null) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "placeholder",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "hint",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "noOptionsText",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "minChars",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaDescribedBy",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "fetchOptions",
+      "type": "(url: string) => Promise<any[]>",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "xrefIdProp",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "xrefDisplayProp",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onLoadStart",
+      "type": "() => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onLoadEnd",
+      "type": "() => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onError",
+      "type": "(error: Error) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-error",
+    "--wx-color-primary",
+    "--wx-color-surface",
+    "--wx-color-surface-hover",
+    "--wx-color-text-muted",
+    "--wx-font-family",
+    "--wx-font-size-sm",
+    "--wx-font-size-xs",
+    "--wx-input-height",
+    "--wx-radius-md",
+    "--wx-shadow-md"
+  ],
+  "cssClasses": [
+    "wx-autocomplete-wrapper",
+    "wx-autocomplete-label",
+    "wx-autocomplete-input",
+    "wx-autocomplete-input-error",
+    "wx-autocomplete-dropdown",
+    "wx-autocomplete-option",
+    "wx-autocomplete-option-highlighted",
+    "wx-autocomplete-no-options",
+    "wx-autocomplete-hint",
+    "wx-autocomplete-error-text",
+    "wx-autocomplete-input-loading"
+  ],
+  "designTokens": {
+    "other": {
+      "--wx-input-height": {
+        "properties": [
+          "height"
+        ],
+        "selectors": [
+          ".wx-autocomplete-input"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      }
+    }
+  },
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {
+    "--wx-font-family": {
+      "properties": [
+        "font-family"
+      ],
+      "selectors": [
+        ".wx-autocomplete-wrapper"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-sm": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-autocomplete-label",
+        ".wx-autocomplete-input",
+        ".wx-autocomplete-no-options"
+      ],
+      "occurrences": 3,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-xs": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-autocomplete-hint",
+        ".wx-autocomplete-error-text"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {
+    "--wx-color-border": {
+      "properties": [
+        "border"
+      ],
+      "selectors": [
+        ".wx-autocomplete-input",
+        ".wx-autocomplete-dropdown"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary": {
+      "properties": [
+        "border-color"
+      ],
+      "selectors": [
+        ".wx-autocomplete-input:focus"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error": {
+      "properties": [
+        "border-color",
+        "color"
+      ],
+      "selectors": [
+        ".wx-autocomplete-input-error",
+        ".wx-autocomplete-error-text"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-autocomplete-dropdown"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface-hover": {
+      "properties": [
+        "background",
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-autocomplete-option:hover",
+        ".wx-autocomplete-option-highlighted",
+        ".wx-autocomplete-input:disabled"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-autocomplete-no-options",
+        ".wx-autocomplete-hint"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {
+    "--wx-shadow-md": {
+      "properties": [
+        "box-shadow"
+      ],
+      "selectors": [
+        ".wx-autocomplete-dropdown"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "radiusTokens": {
+    "--wx-radius-md": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".wx-autocomplete-input",
+        ".wx-autocomplete-dropdown"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Autocomplete\\Autocomplete.tsx",
+  "keywords": [
+    "label",
+    "placeholder",
+    "autocomplete",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Autocomplete",
+    "Create an example with Autocomplete",
+    "Generate a Autocomplete component",
+    "Build a Autocomplete in my form"
+  ],
+  "componentIntent": "Provide Autocomplete functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.541902",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "0943ef5e",
+  "metadata": {
+    "purpose": "Enable users to search and select from a filtered list of options as they type.",
+    "description": "A text input field that filters available options in real-time as the user types, narrowing down choices to matching values. Supports dynamic option loading from external sources and keyboard navigation for efficient selection. Helps users quickly find the right option without scrolling through entire lists.",
+    "functionalAreas": [
+      "Data Entry",
+      "Filtering",
+      "Search"
+    ],
+    "userIntents": [
+      "Find an option by typing a partial value",
+      "Quickly narrow down a large list of choices",
+      "Select from dynamically loaded options",
+      "Complete a field with predictive suggestions"
+    ],
+    "exampleUseCases": [
+      "Country Selection",
+      "Search Product Catalog",
+      "Select User from Directory",
+      "Find Team Member",
+      "Lookup Organization",
+      "Search Location"
+    ],
+    "useWhen": [
+      "Use this component when users need to select from a large list and benefit from search.",
+      "Use this component when filtering options in real-time improves usability.",
+      "Use this component when options may need to be loaded dynamically from a server.",
+      "Use this component when users are familiar with autocomplete patterns."
+    ],
+    "avoidWhen": [
+      "Avoid this component when the list of options is very short (use Select instead).",
+      "Avoid this component when options are frequently updated or highly dynamic without caching.",
+      "Avoid this component when users cannot type to filter (use Select with manual navigation).",
+      "Avoid this component when exact matches are not typical user inputs."
+    ],
+    "relatedComponents": [
+      "Select",
+      "Input",
+      "Link"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "react-imask",
+        "version": "^7.6.1"
+      },
+      {
+        "name": "react-number-format",
+        "version": "^5.4.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-datepicker",
+        "version": "^8.0.0"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-datepicker",
+        "version": "^7.0.0"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

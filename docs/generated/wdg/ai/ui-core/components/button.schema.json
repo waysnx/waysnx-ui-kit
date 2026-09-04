@@ -1,0 +1,54 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-core/button.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Enable users to trigger actions by pressing a clickable element.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-core",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "ariaLabel": {
+      "description": "",
+      "type": "string"
+    },
+    "ariaPressed": {
+      "description": "",
+      "type": "boolean"
+    },
+    "children": {
+      "description": "",
+      "type": "string"
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    },
+    "variant": {
+      "description": "",
+      "enum": [
+        "primary",
+        "secondary",
+        "destructive",
+        "outline",
+        "ghost"
+      ]
+    }
+  },
+  "required": [
+    "children"
+  ],
+  "title": "Button",
+  "type": "object"
+}

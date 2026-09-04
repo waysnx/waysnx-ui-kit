@@ -1,0 +1,199 @@
+{
+  "version": "2.0.0",
+  "library": "ui-dashboard",
+  "generatedAt": "2026-09-03T20:02:45.629985",
+  "relationshipModel": {
+    "uses": "Components this component directly imports or uses",
+    "usedBy": "Components that import or use this component",
+    "related": "Related components in the same domain",
+    "alternatives": "Alternative implementations for this component",
+    "parentComponents": "Components that contain or wrap this component",
+    "childComponents": "Components this component uses or renders"
+  },
+  "relationships": [
+    {
+      "from": "ChartWidget",
+      "relationships": {
+        "uses": [
+          "Widget"
+        ],
+        "usedBy": [],
+        "related": [
+          "ChartWidgetProps",
+          "Widget"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Widget"
+        ]
+      }
+    },
+    {
+      "from": "Dashboard",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [
+          "DashboardConfig",
+          "DashboardProvider",
+          "DashboardTheme"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "DashboardFilterBar",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [
+          "FilterConfig"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "DashboardFooter",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "DashboardHeader",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "DashboardSearch",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "DashboardSidebar",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "DashboardToolbar",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "HtmlWidget",
+      "relationships": {
+        "uses": [
+          "Widget"
+        ],
+        "usedBy": [],
+        "related": [
+          "Widget"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Widget"
+        ]
+      }
+    },
+    {
+      "from": "KPICard",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [
+          "KPIData",
+          "MetricData",
+          "StatusType",
+          "TrendDirection"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "MarkdownWidget",
+      "relationships": {
+        "uses": [
+          "Widget"
+        ],
+        "usedBy": [],
+        "related": [
+          "Widget"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Widget"
+        ]
+      }
+    },
+    {
+      "from": "Widget",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ChartWidget",
+          "HtmlWidget",
+          "MarkdownWidget"
+        ],
+        "related": [
+          "WidgetElevation",
+          "WidgetVariant"
+        ],
+        "alternatives": [],
+        "parentComponents": [
+          "ChartWidget",
+          "HtmlWidget",
+          "MarkdownWidget"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "WidgetGrid",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    }
+  ]
+}

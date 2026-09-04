@@ -1,0 +1,77 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "otpverificationcard",
+    "name": "OTPVerificationCard",
+    "package": "@waysnx/ui-security",
+    "export": "OTPVerificationCard"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic-placeholder",
+          "title": "With Placeholder",
+          "description": "Shows placeholder text.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "placeholder": "Sample Text"
+          },
+          "keywords": [
+            "placeholder"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-loading-false",
+          "title": "Disabled State",
+          "description": "Shows a loading state while data is being processed.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "loading": false
+          },
+          "keywords": [
+            "loading",
+            "state"
+          ]
+        },
+        {
+          "id": "states-loading-true",
+          "title": "Enabled State",
+          "description": "Shows a loading state while data is being processed.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "loading": true
+          },
+          "keywords": [
+            "loading",
+            "state"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:05.537310",
+  "stats": {
+    "examplesGenerated": 3,
+    "categoriesGenerated": 2
+  }
+}

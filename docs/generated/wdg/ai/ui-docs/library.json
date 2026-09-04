@@ -1,0 +1,101 @@
+{
+  "name": "ui-docs",
+  "version": "1.0.0",
+  "generatedAt": "2026-09-03T20:02:45.635710",
+  "componentCount": 12,
+  "components": [
+    {
+      "id": "ui-docs:aisectionplaceholder",
+      "name": "AISectionPlaceholder",
+      "slug": "aisectionplaceholder",
+      "category": "components",
+      "description": "AISectionPlaceholder component"
+    },
+    {
+      "id": "ui-docs:componenthero",
+      "name": "ComponentHero",
+      "slug": "componenthero",
+      "category": "components",
+      "description": "Component Hero Section Displays component name, description, and metadata."
+    },
+    {
+      "id": "ui-docs:dependencygraphplaceholder",
+      "name": "DependencyGraphPlaceholder",
+      "slug": "dependencygraphplaceholder",
+      "category": "components",
+      "description": "DependencyGraphPlaceholder component"
+    },
+    {
+      "id": "ui-docs:documentationdemoviewer",
+      "name": "DocumentationDemoViewer",
+      "slug": "documentationdemoviewer",
+      "category": "components",
+      "description": "DocumentationDemoViewer Renders demo categories and examples from component.demo.generated.json Uses --wx- tokens instead of Tailwind."
+    },
+    {
+      "id": "ui-docs:livecomponentrenderer",
+      "name": "LiveComponentRenderer",
+      "slug": "livecomponentrenderer",
+      "category": "components",
+      "description": "LiveComponentRenderer Dynamically renders a component from the registry with provided props. Handles missing components gracefully with fallback UI."
+    },
+    {
+      "id": "ui-docs:markdownrenderer",
+      "name": "MarkdownRenderer",
+      "slug": "markdownrenderer",
+      "category": "components",
+      "description": "Markdown Renderer Renders markdown content with syntax highlighting using --wx- tokens."
+    },
+    {
+      "id": "ui-docs:playgroundplaceholder",
+      "name": "PlaygroundPlaceholder",
+      "slug": "playgroundplaceholder",
+      "category": "components",
+      "description": "PlaygroundPlaceholder component"
+    },
+    {
+      "id": "ui-docs:propstable",
+      "name": "PropsTable",
+      "slug": "propstable",
+      "category": "components",
+      "description": "Props Table Component Renders component props in a formatted table using --wx- tokens."
+    },
+    {
+      "id": "ui-docs:themeexplorerplaceholder",
+      "name": "ThemeExplorerPlaceholder",
+      "slug": "themeexplorerplaceholder",
+      "category": "components",
+      "description": "ThemeExplorerPlaceholder component"
+    },
+    {
+      "id": "ui-docs:tokenviewerplaceholder",
+      "name": "TokenViewerPlaceholder",
+      "slug": "tokenviewerplaceholder",
+      "category": "components",
+      "description": "TokenViewerPlaceholder component"
+    },
+    {
+      "id": "ui-docs:workflowviewerplaceholder",
+      "name": "WorkflowViewerPlaceholder",
+      "slug": "workflowviewerplaceholder",
+      "category": "components",
+      "description": "WorkflowViewerPlaceholder component"
+    },
+    {
+      "id": "ui-docs:_placeholderwrapper",
+      "name": "_PlaceholderWrapper",
+      "slug": "_placeholderwrapper",
+      "category": "components",
+      "description": "_PlaceholderWrapper component"
+    }
+  ],
+  "categories": {
+    "components": 12
+  },
+  "statistics": {
+    "totalComponents": 12,
+    "documentsGenerated": 12,
+    "storiesGenerated": 0,
+    "testsGenerated": 0
+  }
+}

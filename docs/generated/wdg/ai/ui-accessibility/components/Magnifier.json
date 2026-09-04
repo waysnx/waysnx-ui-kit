@@ -1,0 +1,255 @@
+{
+  "id": "ui-accessibility:magnifier",
+  "name": "Magnifier",
+  "slug": "magnifier",
+  "library": "ui-accessibility",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Magnifier",
+  "purpose": "Magnifier Component Provides a magnified view of page content for users with low vision Follows cursor/scroll position",
+  "shortDescription": "Magnifier Component Provides a magnified view of page content for users with low vision Follows cursor/scroll position",
+  "longDescription": "Magnifier Component Provides a magnified view of page content for users with low vision Follows cursor/scroll position",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "AccessibilityCenter/Magnifier",
+      "storyId": "accessibilitycenter-magnifier",
+      "url": "https://uikit.waysnx.tech/?path=/docs/accessibilitycenter-magnifier",
+      "stories": [],
+      "tags": [],
+      "source": "Magnifier.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Magnifier for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Magnifier"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useAccessibility": "unknown",
+    "useTranslation": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-primary",
+    "--wx-color-surface",
+    "--wx-color-text"
+  ],
+  "cssClasses": [
+    "wx-magnifier",
+    "wx-magnifier-visible",
+    "wx-magnifier-content",
+    "wx-magnifier-crosshair"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-color-primary": {
+      "properties": [
+        "border",
+        "background",
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-magnifier",
+        ".wx-magnifier-crosshair",
+        ".wx-magnifier-crosshair::before",
+        ".wx-magnifier-crosshair::after"
+      ],
+      "occurrences": 5,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface": {
+      "properties": [
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-magnifier"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text": {
+      "properties": [
+        "border",
+        "box-shadow",
+        "background-color"
+      ],
+      "selectors": [
+        "@media (prefers-contrast: more)",
+        ".wx-magnifier-crosshair",
+        ".wx-magnifier-crosshair::before",
+        ".wx-magnifier-crosshair::after"
+      ],
+      "occurrences": 4,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Magnifier\\Magnifier.tsx",
+  "keywords": [
+    "magnifier",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Magnifier",
+    "Create an example with Magnifier",
+    "Generate a Magnifier component",
+    "Build a Magnifier in my form"
+  ],
+  "componentIntent": "Provide Magnifier functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.173777",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "a374498e",
+  "metadata": {
+    "purpose": "Enable users to magnify portions of the screen for readability.",
+    "description": "A component that provides magnification or zoom capability for users with low vision or visual impairments. Can be toggled on/off and adjusted. Magnifies a focused area to improve readability.",
+    "functionalAreas": [
+      "Accessibility",
+      "Visualization"
+    ],
+    "userIntents": [
+      "Magnify content",
+      "Improve readability",
+      "See details clearly",
+      "Adjust zoom level"
+    ],
+    "exampleUseCases": [
+      "Screen Magnification",
+      "Zoom Helper",
+      "Low Vision Aid",
+      "Content Magnification",
+      "Detail View",
+      "Accessibility Aid",
+      "Text Magnification"
+    ],
+    "useWhen": [
+      "Use this component to support users with visual impairments.",
+      "Use this component with adjustable magnification levels.",
+      "Use this component with focused magnification area.",
+      "Use this component with accessibility best practices."
+    ],
+    "avoidWhen": [
+      "Avoid this component as a replacement for proper font sizing.",
+      "Avoid this component without clear magnification boundaries.",
+      "Avoid this component without performance optimization.",
+      "Avoid this component without clear toggle and controls."
+    ],
+    "relatedComponents": [
+      "AccessibilityCenter",
+      "ReadingGuide",
+      "ZoomControls"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

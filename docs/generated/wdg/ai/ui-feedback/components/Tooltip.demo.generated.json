@@ -1,0 +1,42 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "tooltip",
+    "name": "Tooltip",
+    "package": "@waysnx/ui-feedback",
+    "export": "Tooltip"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic",
+          "title": "Basic Tooltip",
+          "description": "Simple Tooltip with default configuration.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "content": "Sample Text",
+            "children": "Sample Text"
+          },
+          "keywords": [
+            "basic",
+            "tooltip"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:50.538278",
+  "stats": {
+    "examplesGenerated": 1,
+    "categoriesGenerated": 1
+  }
+}

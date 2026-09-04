@@ -1,0 +1,87 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-core/select.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Enable users to select one or more options from a dropdown list with optional search.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-core",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "error": {
+      "description": "",
+      "type": "string"
+    },
+    "fetchOptions": {
+      "description": "",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "label": {
+      "description": "",
+      "type": "string"
+    },
+    "onError": {
+      "description": "",
+      "type": "null"
+    },
+    "onLoadEnd": {
+      "description": "",
+      "type": "null"
+    },
+    "onLoadStart": {
+      "description": "",
+      "type": "null"
+    },
+    "options": {
+      "description": "",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "searchable": {
+      "description": "",
+      "type": "boolean"
+    },
+    "showSelectAll": {
+      "description": "",
+      "type": "boolean"
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    },
+    "value": {
+      "description": "",
+      "enum": [
+        "string",
+        "string[]"
+      ]
+    },
+    "xrefDisplayProp": {
+      "description": "",
+      "type": "string"
+    },
+    "xrefIdProp": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "title": "Select",
+  "type": "object"
+}

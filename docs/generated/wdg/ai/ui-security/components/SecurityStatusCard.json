@@ -1,0 +1,263 @@
+{
+  "id": "ui-security:securitystatuscard",
+  "name": "SecurityStatusCard",
+  "slug": "security-status-card",
+  "library": "ui-security",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Security Status Card",
+  "purpose": "SecurityStatusCard - Individual security status card",
+  "shortDescription": "SecurityStatusCard - Individual security status card",
+  "longDescription": "SecurityStatusCard - Individual security status card",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Security/Status/SecurityStatusCard",
+      "storyId": "security-status-securitystatuscard",
+      "url": "https://uikit.waysnx.tech/?path=/docs/security-status-securitystatuscard",
+      "stories": [],
+      "tags": [],
+      "source": "SecurityStatusCard.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use SecurityStatusCard for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a SecurityStatusCard"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "Badge",
+      "Button"
+    ],
+    "usedBy": [],
+    "related": [
+      "Badge",
+      "Button"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": [
+      "Badge",
+      "Button"
+    ]
+  },
+  "dependencies": {
+    "React": "unknown",
+    "Button": "unknown",
+    "Badge": "unknown"
+  },
+  "props": [
+    {
+      "name": "title",
+      "type": "string",
+      "description": "Status title",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "description": "Status description",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "status",
+      "type": "StatusType",
+      "description": "Current status",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "value",
+      "type": "string | number",
+      "description": "Status value/percentage",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "Status label",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "actionLabel",
+      "type": "string",
+      "description": "Action button label",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onAction",
+      "type": "() => void",
+      "description": "Action button callback",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "icon",
+      "type": "React.ReactNode",
+      "description": "Card icon",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\SecurityDashboard\\SecurityStatusCard.tsx",
+  "keywords": [
+    "securitystatuscard",
+    "label",
+    "value",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use SecurityStatusCard",
+    "Create an example with SecurityStatusCard",
+    "Generate a SecurityStatusCard component",
+    "Build a SecurityStatusCard in my form"
+  ],
+  "componentIntent": "Provide SecurityStatusCard functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.713779",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "3486c9fd",
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-media",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

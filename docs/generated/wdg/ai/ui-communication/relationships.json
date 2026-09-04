@@ -1,0 +1,234 @@
+{
+  "version": "2.0.0",
+  "library": "ui-communication",
+  "generatedAt": "2026-09-03T20:02:40.528022",
+  "relationshipModel": {
+    "uses": "Components this component directly imports or uses",
+    "usedBy": "Components that import or use this component",
+    "related": "Related components in the same domain",
+    "alternatives": "Alternative implementations for this component",
+    "parentComponents": "Components that contain or wrap this component",
+    "childComponents": "Components this component uses or renders"
+  },
+  "relationships": [
+    {
+      "from": "ChatInput",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ChatWindow",
+          "ThreadPanel"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ChatWindow",
+          "ThreadPanel"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ChatWindow",
+      "relationships": {
+        "uses": [
+          "ChatInput",
+          "MessageBubble",
+          "TypingIndicator"
+        ],
+        "usedBy": [],
+        "related": [
+          "ChatInput",
+          "MessageBubble",
+          "TypingIndicator"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ChatInput",
+          "MessageBubble",
+          "TypingIndicator"
+        ]
+      }
+    },
+    {
+      "from": "ConversationList",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "EmojiPicker",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "MentionInput",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "MessageBubble",
+      "relationships": {
+        "uses": [
+          "ReactionBar",
+          "ReadReceipts"
+        ],
+        "usedBy": [
+          "ChatWindow",
+          "ThreadPanel"
+        ],
+        "related": [
+          "ReactionBar",
+          "ReadReceipts"
+        ],
+        "alternatives": [],
+        "parentComponents": [
+          "ChatWindow",
+          "ThreadPanel"
+        ],
+        "childComponents": [
+          "ReactionBar",
+          "ReadReceipts"
+        ]
+      }
+    },
+    {
+      "from": "NotificationBadge",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "NotificationList",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "PresenceIndicator",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ReactionBar",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "MessageBubble"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "MessageBubble"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ReadReceipts",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "MessageBubble"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "MessageBubble"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ThreadPanel",
+      "relationships": {
+        "uses": [
+          "ChatInput",
+          "MessageBubble"
+        ],
+        "usedBy": [],
+        "related": [
+          "ChatInput",
+          "MessageBubble"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "ChatInput",
+          "MessageBubble"
+        ]
+      }
+    },
+    {
+      "from": "TypingIndicator",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "ChatWindow"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "ChatWindow"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "UserPresenceList",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "VoiceMessage",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "workflowviewerplaceholder",
+    "name": "WorkflowViewerPlaceholder",
+    "package": "@waysnx/ui-docs",
+    "export": "WorkflowViewerPlaceholder"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic",
+          "title": "Basic WorkflowViewerPlaceholder",
+          "description": "Simple WorkflowViewerPlaceholder with default configuration.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "title": "Sample Text"
+          },
+          "keywords": [
+            "basic",
+            "workflowviewerplaceholder"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:02:48.072345",
+  "stats": {
+    "examplesGenerated": 1,
+    "categoriesGenerated": 1
+  }
+}

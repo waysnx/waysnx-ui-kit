@@ -1,0 +1,438 @@
+{
+  "id": "ui-core:datetimepicker",
+  "name": "DateTimePicker",
+  "slug": "date-time-picker",
+  "library": "ui-core",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Date Time Picker",
+  "purpose": "Enable users to select a specific date and time through an interactive calendar interface",
+  "shortDescription": "Enable users to select a specific date and time through an interactive calendar interface.",
+  "longDescription": "Enable users to select a specific date and time through an interactive calendar interface.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Components/DateTimePicker",
+      "storyId": "components-datetimepicker",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-datetimepicker",
+      "stories": [],
+      "tags": [],
+      "source": "DateTimePicker.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use DateTimePicker for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a DateTimePicker"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown",
+    "ReactDatePicker": "unknown",
+    "warn": "unknown",
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "value",
+      "type": "Date | null",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onChange",
+      "type": "(date: Date | null) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "placeholder",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "hint",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "minDate",
+      "type": "Date",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "maxDate",
+      "type": "Date",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "dateFormat",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "timeIntervals",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaDescribedBy",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-error",
+    "--wx-color-primary",
+    "--wx-color-text-muted",
+    "--wx-input-height"
+  ],
+  "cssClasses": [
+    "wx-datetimepicker-wrapper",
+    "wx-datetimepicker-label",
+    "wx-datetimepicker-input-wrapper",
+    "wx-datetimepicker-react-wrapper",
+    "wx-datetimepicker-input",
+    "wx-datetimepicker-icon",
+    "wx-datetimepicker-input-error",
+    "wx-datetimepicker-hint",
+    "wx-datetimepicker-error-text"
+  ],
+  "designTokens": {
+    "other": {
+      "--wx-input-height": {
+        "properties": [
+          "height"
+        ],
+        "selectors": [
+          ".wx-datetimepicker-input"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      }
+    }
+  },
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-color-border": {
+      "properties": [
+        "border"
+      ],
+      "selectors": [
+        ".wx-datetimepicker-input"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-datetimepicker-icon",
+        ".wx-datetimepicker-hint"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary": {
+      "properties": [
+        "border-color"
+      ],
+      "selectors": [
+        ".wx-datetimepicker-input:focus"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error": {
+      "properties": [
+        "border-color",
+        "color"
+      ],
+      "selectors": [
+        ".wx-datetimepicker-input-error",
+        ".wx-datetimepicker-error-text"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\DateTimePicker\\DateTimePicker.tsx",
+  "keywords": [
+    "label",
+    "placeholder",
+    "datetimepicker",
+    "value",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use DateTimePicker",
+    "Create an example with DateTimePicker",
+    "Generate a DateTimePicker component",
+    "Build a DateTimePicker in my form"
+  ],
+  "componentIntent": "Provide DateTimePicker functionality",
+  "semanticCategory": "input",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.589294",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "5d6d41f6",
+  "metadata": {
+    "purpose": "Enable users to select a specific date and time through an interactive calendar interface.",
+    "description": "A combined date and time selection control that presents both a calendar interface and time picker. Allows users to select a precise point in time with month and year navigation. Provides time interval selection and supports keyboard navigation for efficient interaction.",
+    "functionalAreas": [
+      "Data Entry",
+      "Forms",
+      "Selection"
+    ],
+    "userIntents": [
+      "Schedule an appointment with specific time",
+      "Set a reminder with date and time",
+      "Book a meeting or time slot",
+      "Record a timestamp event"
+    ],
+    "exampleUseCases": [
+      "Meeting Scheduling",
+      "Appointment Booking",
+      "Event Registration",
+      "Task Scheduling",
+      "Notification Setup",
+      "Time Clock Entry"
+    ],
+    "useWhen": [
+      "Use this component when users must select both a specific date and time.",
+      "Use this component when scheduling events with precise timing requirements.",
+      "Use this component when timestamp recording is needed.",
+      "Use this component when appointment or meeting scheduling is the primary task."
+    ],
+    "avoidWhen": [
+      "Avoid this component when only a date is needed (use DatePicker instead).",
+      "Avoid this component when only a time is needed (use TimePicker instead).",
+      "Avoid this component when users prefer entering datetime as text.",
+      "Avoid this component when time precision beyond 15-minute intervals is not useful."
+    ],
+    "relatedComponents": [
+      "DatePicker",
+      "DateRangePicker",
+      "TimePicker"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "react-imask",
+        "version": "^7.6.1"
+      },
+      {
+        "name": "react-number-format",
+        "version": "^5.4.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-datepicker",
+        "version": "^8.0.0"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-datepicker",
+        "version": "^7.0.0"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

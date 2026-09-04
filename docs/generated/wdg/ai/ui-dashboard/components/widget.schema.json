@@ -1,0 +1,106 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-dashboard/widget.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display dashboard content in a contained, reusable panel with optional header and footer.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-dashboard",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "bordered": {
+      "description": "",
+      "type": "boolean"
+    },
+    "children": {
+      "description": "",
+      "type": "string"
+    },
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "elevation": {
+      "description": "",
+      "type": "string"
+    },
+    "empty": {
+      "description": "",
+      "enum": [
+        "boolean",
+        "ReactNode"
+      ]
+    },
+    "error": {
+      "description": "",
+      "enum": [
+        "Error",
+        "null"
+      ]
+    },
+    "footer": {
+      "description": "",
+      "type": "string"
+    },
+    "height": {
+      "description": "",
+      "enum": [
+        "number",
+        "string"
+      ]
+    },
+    "icon": {
+      "description": "",
+      "type": "string"
+    },
+    "id": {
+      "description": "",
+      "type": "string"
+    },
+    "loading": {
+      "description": "",
+      "type": "boolean"
+    },
+    "style": {
+      "description": "",
+      "type": "string"
+    },
+    "subtitle": {
+      "description": "",
+      "type": "string"
+    },
+    "title": {
+      "description": "",
+      "type": "string"
+    },
+    "toolbar": {
+      "description": "",
+      "type": "string"
+    },
+    "variant": {
+      "description": "",
+      "type": "string"
+    },
+    "width": {
+      "description": "",
+      "enum": [
+        "number",
+        "string"
+      ]
+    }
+  },
+  "required": [],
+  "title": "Widget",
+  "type": "object"
+}

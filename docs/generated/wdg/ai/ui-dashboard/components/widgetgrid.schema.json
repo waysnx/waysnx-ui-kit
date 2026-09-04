@@ -1,0 +1,50 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-dashboard/widgetgrid.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "WidgetGrid component",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-dashboard",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "children": {
+      "description": "Grid content",
+      "type": "string"
+    },
+    "columns": {
+      "description": "Number of columns on different breakpoints",
+      "type": "number"
+    },
+    "lg": {
+      "description": "",
+      "type": "number"
+    },
+    "md": {
+      "description": "",
+      "type": "number"
+    },
+    "sm": {
+      "description": "",
+      "type": "number"
+    },
+    "xl": {
+      "description": "",
+      "type": "number"
+    }
+  },
+  "required": [],
+  "title": "WidgetGrid",
+  "type": "object"
+}

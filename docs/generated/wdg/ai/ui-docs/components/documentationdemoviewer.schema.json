@@ -1,0 +1,25 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-docs/documentationdemoviewer.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "DocumentationDemoViewer Renders demo categories and examples from component.demo.generated.json Uses --wx- tokens instead of Tailwind.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-docs",
+    "version": "1.0.0"
+  },
+  "properties": {},
+  "required": [],
+  "title": "DocumentationDemoViewer",
+  "type": "object"
+}

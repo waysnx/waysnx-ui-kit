@@ -1,0 +1,91 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "sidebarlayout",
+    "name": "SidebarLayout",
+    "package": "@waysnx/ui-layout",
+    "export": "SidebarLayout"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic-sidebarLabel",
+          "title": "With Label",
+          "description": "Displays with a label.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "sidebarLabel": "Sample Text"
+          },
+          "keywords": [
+            "sidebarLabel"
+          ]
+        },
+        {
+          "id": "basic-contentLabel",
+          "title": "With Label",
+          "description": "Displays with a label.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "contentLabel": "Sample Text"
+          },
+          "keywords": [
+            "contentLabel"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-collapsed-false",
+          "title": "Disabled State",
+          "description": "The collapsible section is collapsed.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "collapsed": false
+          },
+          "keywords": [
+            "collapsed",
+            "state"
+          ]
+        },
+        {
+          "id": "states-collapsed-true",
+          "title": "Enabled State",
+          "description": "The collapsible section is collapsed.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "collapsed": true
+          },
+          "keywords": [
+            "collapsed",
+            "state"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:00.165929",
+  "stats": {
+    "examplesGenerated": 4,
+    "categoriesGenerated": 2
+  }
+}

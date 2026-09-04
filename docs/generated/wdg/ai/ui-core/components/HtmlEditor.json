@@ -1,0 +1,483 @@
+{
+  "id": "ui-core:htmleditor",
+  "name": "HtmlEditor",
+  "slug": "html-editor",
+  "library": "ui-core",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Html Editor",
+  "purpose": "Enable users to create and format HTML content with a visual text editor toolbar",
+  "shortDescription": "Enable users to create and format HTML content with a visual text editor toolbar.",
+  "longDescription": "Enable users to create and format HTML content with a visual text editor toolbar.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Components/HtmlEditor",
+      "storyId": "components-htmleditor",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-htmleditor",
+      "stories": [],
+      "tags": [],
+      "source": "HtmlEditor.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use HtmlEditor for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a HtmlEditor"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "DOMPurify": "unknown",
+    "warn": "unknown"
+  },
+  "props": [
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onChange",
+      "type": "(value: string) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "placeholder",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "hint",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "minHeight",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "toolbar",
+      "type": "('bold' | 'italic' | 'underline' | 'link' | 'ul' | 'ol' | 'h1' | 'h2')[]",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaDescribedBy",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-error",
+    "--wx-color-primary",
+    "--wx-color-surface",
+    "--wx-color-surface-alt",
+    "--wx-color-surface-hover",
+    "--wx-color-text",
+    "--wx-color-text-light",
+    "--wx-color-text-muted",
+    "--wx-shadow-focus"
+  ],
+  "cssClasses": [
+    "wx-htmleditor-wrapper",
+    "wx-htmleditor-label",
+    "wx-htmleditor-container",
+    "wx-htmleditor-container-focused",
+    "wx-htmleditor-container-error",
+    "wx-htmleditor-container-disabled",
+    "wx-htmleditor-toolbar",
+    "wx-htmleditor-toolbar-btn",
+    "wx-htmleditor-content",
+    "wx-htmleditor-hint",
+    "wx-htmleditor-error-text"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-color-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-htmleditor-label",
+        ".wx-htmleditor-toolbar-btn",
+        ".wx-htmleditor-content"
+      ],
+      "occurrences": 3,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-border": {
+      "properties": [
+        "border",
+        "border-bottom",
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-htmleditor-container",
+        ".wx-htmleditor-toolbar",
+        ".wx-htmleditor-toolbar-btn",
+        ".wx-htmleditor-toolbar-btn:active:not(:disabled)"
+      ],
+      "occurrences": 4,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface": {
+      "properties": [
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-htmleditor-container",
+        ".wx-htmleditor-toolbar-btn"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary": {
+      "properties": [
+        "border-color",
+        "color"
+      ],
+      "selectors": [
+        ".wx-htmleditor-container-focused",
+        ".wx-htmleditor-toolbar-btn:hover:not(:disabled)",
+        ".wx-htmleditor-content a"
+      ],
+      "occurrences": 3,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error": {
+      "properties": [
+        "border-color",
+        "color"
+      ],
+      "selectors": [
+        ".wx-htmleditor-container-error",
+        ".wx-htmleditor-error-text"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface-hover": {
+      "properties": [
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-htmleditor-container-disabled",
+        ".wx-htmleditor-toolbar-btn:hover:not(:disabled)"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface-alt": {
+      "properties": [
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-htmleditor-toolbar"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-light": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-htmleditor-content:empty:before"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-htmleditor-hint"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {
+    "--wx-shadow-focus": {
+      "properties": [
+        "box-shadow"
+      ],
+      "selectors": [
+        ".wx-htmleditor-container-focused"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\HtmlEditor\\HtmlEditor.tsx",
+  "keywords": [
+    "label",
+    "placeholder",
+    "value",
+    "htmleditor",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use HtmlEditor",
+    "Create an example with HtmlEditor",
+    "Generate a HtmlEditor component",
+    "Build a HtmlEditor in my form"
+  ],
+  "componentIntent": "Provide HtmlEditor functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.627655",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "a696aedc",
+  "metadata": {
+    "purpose": "Enable users to create and format HTML content with a visual text editor toolbar.",
+    "description": "A content-editable text editor with formatting toolbar for bold, italic, links, lists, and heading styles. Provides real-time content preview as users type and sanitizes content on input to prevent injection attacks. Supports configurable minimum height and toolbar button selection for flexible formatting options.",
+    "functionalAreas": [
+      "Data Entry",
+      "Forms",
+      "Communication"
+    ],
+    "userIntents": [
+      "Write formatted content",
+      "Create documents with styling",
+      "Add rich text to forms",
+      "Format email or message content"
+    ],
+    "exampleUseCases": [
+      "Email Composer",
+      "Blog Post Editor",
+      "Description Editor",
+      "Comment with Formatting",
+      "News Article Entry",
+      "Help Article Creator"
+    ],
+    "useWhen": [
+      "Use this component when users need to format text content.",
+      "Use this component when rich text improves content quality.",
+      "Use this component when a visual editor simplifies formatting.",
+      "Use this component when HTML output is required from user input."
+    ],
+    "avoidWhen": [
+      "Avoid this component when plain text input is sufficient.",
+      "Avoid this component for highly structured or complex HTML.",
+      "Avoid this component when real-time collaboration is needed.",
+      "Avoid this component for content requiring CSS or style customization."
+    ],
+    "relatedComponents": [
+      "Textarea",
+      "HtmlContent",
+      "Input"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "react-imask",
+        "version": "^7.6.1"
+      },
+      {
+        "name": "react-number-format",
+        "version": "^5.4.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-datepicker",
+        "version": "^8.0.0"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-datepicker",
+        "version": "^7.0.0"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

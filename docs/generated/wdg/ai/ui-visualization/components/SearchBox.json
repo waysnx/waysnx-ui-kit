@@ -1,0 +1,270 @@
+{
+  "id": "ui-visualization:searchbox",
+  "name": "SearchBox",
+  "slug": "search-box",
+  "library": "ui-visualization",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Search Box",
+  "purpose": "Enable searching and filtering within visualizations",
+  "shortDescription": "Enable searching and filtering within visualizations.",
+  "longDescription": "Enable searching and filtering within visualizations.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use SearchBox for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a SearchBox"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [
+      "OrgChart"
+    ],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [
+      "OrgChart"
+    ],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "searchState",
+      "type": "SearchState",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "onSearch",
+      "type": "(query: string) => void",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "onNext",
+      "type": "() => void",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "onPrev",
+      "type": "() => void",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "onClear",
+      "type": "() => void",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "placeholder",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-vis-searchbox__icon",
+    "wx-vis-searchbox__nav",
+    "wx-vis-searchbox__input",
+    "wx-vis-searchbox__count",
+    "wx-vis-searchbox__clear",
+    "wx-vis-searchbox__nav-btn"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\SearchBox\\SearchBox.tsx",
+  "keywords": [
+    "components",
+    "placeholder",
+    "searchbox"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use SearchBox",
+    "Create an example with SearchBox",
+    "Generate a SearchBox component",
+    "Build a SearchBox in my form"
+  ],
+  "componentIntent": "Provide SearchBox functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.933512",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "60105da3",
+  "metadata": {
+    "purpose": "Enable searching and filtering within visualizations.",
+    "description": "A search/filter input component used within visualizations to find and highlight specific elements. Often integrates with visualization rendering to update what's displayed based on search results.",
+    "functionalAreas": [
+      "Search",
+      "Visualization"
+    ],
+    "userIntents": [
+      "Find elements",
+      "Filter data",
+      "Search visualization",
+      "Highlight matches"
+    ],
+    "exampleUseCases": [
+      "Tree Search",
+      "Diagram Search",
+      "Chart Filter",
+      "Element Finder",
+      "Data Filter",
+      "Content Search",
+      "Visualization Filter"
+    ],
+    "useWhen": [
+      "Use this component in large visualizations with many elements.",
+      "Use this component to help users find specific items.",
+      "Use this component with real-time search/highlight.",
+      "Use this component with advanced filtering options."
+    ],
+    "avoidWhen": [
+      "Avoid this component for small visualizations (not needed).",
+      "Avoid this component without proper search implementation.",
+      "Avoid this component with unclear search semantics.",
+      "Avoid this component without performance optimization."
+    ],
+    "relatedComponents": [
+      "Input",
+      "Filter",
+      "Visualization"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

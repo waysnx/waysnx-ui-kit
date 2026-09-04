@@ -1,0 +1,52 @@
+{
+  "name": "ui-accessibility",
+  "version": "1.0.0",
+  "generatedAt": "2026-09-03T20:02:26.013193",
+  "componentCount": 5,
+  "components": [
+    {
+      "id": "ui-accessibility:accessibilitycenter",
+      "name": "AccessibilityCenter",
+      "slug": "accessibilitycenter",
+      "category": "components",
+      "description": "AccessibilityCenter Component The main UI for accessibility settings"
+    },
+    {
+      "id": "ui-accessibility:floatingbutton",
+      "name": "FloatingButton",
+      "slug": "floatingbutton",
+      "category": "components",
+      "description": "FloatingButton Component A floating button that triggers the accessibility center"
+    },
+    {
+      "id": "ui-accessibility:magnifier",
+      "name": "Magnifier",
+      "slug": "magnifier",
+      "category": "components",
+      "description": "Magnifier Component Provides a magnified view of page content for users with low vision Follows cursor/scroll position"
+    },
+    {
+      "id": "ui-accessibility:readingguide",
+      "name": "ReadingGuide",
+      "slug": "readingguide",
+      "category": "components",
+      "description": "ReadingGuide Component Displays a visual reading line to help users follow text Only renders when readingGuide is enabled in accessibility settings"
+    },
+    {
+      "id": "ui-accessibility:skiplinks",
+      "name": "SkipLinks",
+      "slug": "skiplinks",
+      "category": "components",
+      "description": "SkipLinks — renders visually hidden skip-navigation links. Links appear on keyboard focus, allowing keyboard/screen reader users to bypass repeated navigation blocks. Place as the very first child of or ."
+    }
+  ],
+  "categories": {
+    "components": 5
+  },
+  "statistics": {
+    "totalComponents": 5,
+    "documentsGenerated": 5,
+    "storiesGenerated": 4,
+    "testsGenerated": 0
+  }
+}

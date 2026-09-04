@@ -1,0 +1,288 @@
+{
+  "id": "ui-security:securedownloadbutton",
+  "name": "SecureDownloadButton",
+  "slug": "secure-download-button",
+  "library": "ui-security",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Secure Download Button",
+  "purpose": "SecureDownloadButton - Download files securely with cleanup Features: - Automatic blob URL cleanup - Optional validation callback - Error handling - Memory-safe file handling",
+  "shortDescription": "SecureDownloadButton - Download files securely with cleanup Features: - Automatic blob URL cleanup - Optional validat...",
+  "longDescription": "SecureDownloadButton - Download files securely with cleanup Features: - Automatic blob URL cleanup - Optional validation callback - Error handling - Memory-safe file handling",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Security/Secure Inputs/SecureDownloadButton",
+      "storyId": "security-secure-inputs-securedownloadbutton",
+      "url": "https://uikit.waysnx.tech/?path=/docs/security-secure-inputs-securedownloadbutton",
+      "stories": [],
+      "tags": [],
+      "source": "SecureDownloadButton.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use SecureDownloadButton for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a SecureDownloadButton"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "Button"
+    ],
+    "usedBy": [],
+    "related": [
+      "Button"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": [
+      "Button"
+    ]
+  },
+  "dependencies": {
+    "Button": "unknown"
+  },
+  "props": [
+    {
+      "name": "fileUrl",
+      "type": "string | Blob",
+      "description": "File URL or blob to download",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "fileName",
+      "type": "string",
+      "description": "File name for download",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "Button label",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "variant",
+      "type": "'primary' | 'secondary' | 'outline' | 'ghost'",
+      "description": "Button variant",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "size",
+      "type": "'sm' | 'md' | 'lg'",
+      "description": "Button size",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onBeforeDownload",
+      "type": "() => Promise<Blob | string>",
+      "description": "Callback before download starts",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onDownloadComplete",
+      "type": "() => void",
+      "description": "Callback after download completes",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onError",
+      "type": "(error: Error) => void",
+      "description": "Callback for errors",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "description": "Whether button is disabled",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "loadingLabel",
+      "type": "string",
+      "description": "Custom loading message",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\SecureInputs\\SecureDownloadButton.tsx",
+  "keywords": [
+    "label",
+    "securedownloadbutton",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [
+    "action control",
+    "clickable element"
+  ],
+  "naturalLanguageQueries": [
+    {
+      "query": "Add a securedownloadbutton",
+      "context": "ui",
+      "intent": "create"
+    },
+    {
+      "query": "Create a securedownloadbutton action",
+      "context": "interaction",
+      "intent": "create"
+    }
+  ],
+  "recommendedPrompts": [
+    "Create a SecureDownloadButton with loading state",
+    "Show me a SecureDownloadButton with tooltip",
+    "Generate a SecureDownloadButton with icon",
+    "Build a SecureDownloadButton for form submission",
+    "Design a SecureDownloadButton for delete action"
+  ],
+  "componentIntent": "Provide SecureDownloadButton functionality",
+  "semanticCategory": "display",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.625209",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "1cda8c7b",
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-media",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

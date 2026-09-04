@@ -1,0 +1,195 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "securedownloadbutton",
+    "name": "SecureDownloadButton",
+    "package": "@waysnx/ui-security",
+    "export": "SecureDownloadButton"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic-label",
+          "title": "With Label",
+          "description": "Displays with a label.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "label": "Sample Text"
+          },
+          "keywords": [
+            "label"
+          ]
+        },
+        {
+          "id": "basic-loadingLabel",
+          "title": "With Label",
+          "description": "Displays with a label.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "loadingLabel": "Sample Text"
+          },
+          "keywords": [
+            "loadingLabel"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sizes",
+      "title": "Sizes",
+      "description": "",
+      "examples": [
+        {
+          "id": "sizes-size-sm",
+          "title": "Size: sm",
+          "description": "Demonstrates the sm size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "sm"
+          },
+          "keywords": [
+            "size",
+            "sm"
+          ]
+        },
+        {
+          "id": "sizes-size-md",
+          "title": "Size: md",
+          "description": "Demonstrates the md size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "md"
+          },
+          "keywords": [
+            "size",
+            "md"
+          ]
+        },
+        {
+          "id": "sizes-size-lg",
+          "title": "Size: lg",
+          "description": "Demonstrates the lg size.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "size": "lg"
+          },
+          "keywords": [
+            "size",
+            "lg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-disabled-false",
+          "title": "Disabled State",
+          "description": "The component is displayed in a non-interactive state.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "disabled": false
+          },
+          "keywords": [
+            "disabled",
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "variants",
+      "title": "Variants",
+      "description": "",
+      "examples": [
+        {
+          "id": "variants-variant-primary",
+          "title": "Variant: primary",
+          "description": "Demonstrates the primary variant.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "variant": "primary"
+          },
+          "keywords": [
+            "variant",
+            "primary"
+          ]
+        },
+        {
+          "id": "variants-variant-secondary",
+          "title": "Variant: secondary",
+          "description": "Demonstrates the secondary variant.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "variant": "secondary"
+          },
+          "keywords": [
+            "variant",
+            "secondary"
+          ]
+        },
+        {
+          "id": "variants-variant-outline",
+          "title": "Variant: outline",
+          "description": "Demonstrates the outline variant.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "variant": "outline"
+          },
+          "keywords": [
+            "variant",
+            "outline"
+          ]
+        },
+        {
+          "id": "variants-variant-ghost",
+          "title": "Variant: ghost",
+          "description": "Demonstrates the ghost variant.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "variant": "ghost"
+          },
+          "keywords": [
+            "variant",
+            "ghost"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:05.635863",
+  "stats": {
+    "examplesGenerated": 10,
+    "categoriesGenerated": 4
+  }
+}

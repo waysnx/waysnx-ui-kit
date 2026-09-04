@@ -1,0 +1,75 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "securitystatuscard",
+    "name": "SecurityStatusCard",
+    "package": "@waysnx/ui-security",
+    "export": "SecurityStatusCard"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic-label",
+          "title": "With Label",
+          "description": "Displays with a label.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "label": "Sample Text"
+          },
+          "keywords": [
+            "label"
+          ]
+        },
+        {
+          "id": "basic-actionLabel",
+          "title": "With Label",
+          "description": "Displays with a label.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "actionLabel": "Sample Text"
+          },
+          "keywords": [
+            "actionLabel"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "icons",
+      "title": "Icons",
+      "description": "",
+      "examples": [
+        {
+          "id": "icons-icon",
+          "title": "With Icon",
+          "description": "Displays with an icon.",
+          "category": "icons",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "icon": "Sample Text"
+          },
+          "keywords": [
+            "icon"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:05.789385",
+  "stats": {
+    "examplesGenerated": 3,
+    "categoriesGenerated": 2
+  }
+}

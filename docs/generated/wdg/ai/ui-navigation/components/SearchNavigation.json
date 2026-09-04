@@ -1,0 +1,357 @@
+{
+  "id": "ui-navigation:searchnavigation",
+  "name": "SearchNavigation",
+  "slug": "search-navigation",
+  "library": "ui-navigation",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Search Navigation",
+  "purpose": "Enable users to search for content or pages and navigate quickly",
+  "shortDescription": "Enable users to search for content or pages and navigate quickly.",
+  "longDescription": "Enable users to search for content or pages and navigate quickly.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Navigation/SearchNavigation",
+      "storyId": "navigation-searchnavigation",
+      "url": "https://uikit.waysnx.tech/?path=/docs/navigation-searchnavigation",
+      "stories": [],
+      "tags": [],
+      "source": "SearchNavigation.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use SearchNavigation for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a SearchNavigation"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "onSearch",
+      "type": "(query: string) => Promise<SearchResult[]>",
+      "description": "Callback to perform search",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "onSelect",
+      "type": "(result: SearchResult) => void",
+      "description": "Callback when result is selected",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "placeholder",
+      "type": "string",
+      "description": "Search input placeholder",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "categories",
+      "type": "SearchCategory[]",
+      "description": "Available search categories",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "maxResults",
+      "type": "number",
+      "description": "Max results to display",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "debounceMs",
+      "type": "number",
+      "description": "Debounce delay in ms",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showHistory",
+      "type": "boolean",
+      "description": "Show search history",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "Additional CSS class",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "style",
+      "type": "React.CSSProperties",
+      "description": "Additional styles",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "isLoading",
+      "type": "boolean",
+      "description": "Loading state",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "searchIcon",
+      "type": "React.ReactNode",
+      "description": "Search icon",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showClear",
+      "type": "boolean",
+      "description": "Clear search button visible",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "autoFocus",
+      "type": "boolean",
+      "description": "Auto-focus on mount",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "Accessible label",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "recentCount",
+      "type": "number",
+      "description": "Number of recent searches to show",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "groupByCategory",
+      "type": "boolean",
+      "description": "Group results by category",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [
+    "forwardRef"
+  ],
+  "contextsUsed": [],
+  "forwardRef": true,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "search-navigation__category-icon",
+    "search-navigation__loading",
+    "search-navigation__recent-header",
+    "search-navigation__results",
+    "search-navigation__group",
+    "search-navigation__results-container",
+    "search-navigation__group-header",
+    "search-navigation__clear",
+    "search-navigation__result-title",
+    "search-navigation__result-icon",
+    "search-navigation__categories",
+    "search-navigation__result-description",
+    "search-navigation__recent",
+    "search-navigation__category-label",
+    "search-navigation__icon",
+    "search-navigation__recent-icon",
+    "search-navigation__loading-state",
+    "search-navigation__spinner",
+    "search-navigation__recent-title",
+    "search-navigation__result-content",
+    "search-navigation__empty",
+    "search-navigation__input",
+    "search-navigation__input-wrapper"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\SearchNavigation\\SearchNavigation.tsx",
+  "keywords": [
+    "searchnavigation",
+    "placeholder",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use SearchNavigation",
+    "Create an example with SearchNavigation",
+    "Generate a SearchNavigation component",
+    "Build a SearchNavigation in my form"
+  ],
+  "componentIntent": "Provide SearchNavigation functionality",
+  "semanticCategory": "navigation",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.296622",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "3e6fa803",
+  "metadata": {
+    "purpose": "Enable users to search for content or pages and navigate quickly.",
+    "description": "A search interface component that helps users find and navigate to content or pages. Often features a search input with suggestions, autocomplete, and results that link to pages or content. Used to provide alternative navigation when structure is complex.",
+    "functionalAreas": [
+      "Navigation",
+      "Search"
+    ],
+    "userIntents": [
+      "Search for content",
+      "Navigate to pages",
+      "Find information quickly",
+      "See search suggestions"
+    ],
+    "exampleUseCases": [
+      "Site Search Navigation",
+      "Page Search",
+      "Content Finder",
+      "Quick Navigation Search",
+      "Help Search",
+      "Documentation Search",
+      "Product Search"
+    ],
+    "useWhen": [
+      "Use this component when site structure is complex or deep.",
+      "Use this component to provide alternative navigation method.",
+      "Use this component to help users find content quickly.",
+      "Use this component for content-heavy sites or applications."
+    ],
+    "avoidWhen": [
+      "Avoid this component without sufficient indexed content.",
+      "Avoid this component for simple sites with few pages.",
+      "Avoid this component without clear search results display.",
+      "Avoid this component without autocomplete or suggestions."
+    ],
+    "relatedComponents": [
+      "Search",
+      "CommandPalette",
+      "Navigation"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "sessioncountdown",
+    "name": "SessionCountdown",
+    "package": "@waysnx/ui-security",
+    "export": "SessionCountdown"
+  },
+  "categories": [
+    {
+      "id": "variants",
+      "title": "Variants",
+      "description": "",
+      "examples": [
+        {
+          "id": "variants-format-compact",
+          "title": "Format: compact",
+          "description": "Demonstrates the compact format.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "format": "compact"
+          },
+          "keywords": [
+            "format",
+            "compact"
+          ]
+        },
+        {
+          "id": "variants-format-detailed",
+          "title": "Format: detailed",
+          "description": "Demonstrates the detailed format.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "format": "detailed"
+          },
+          "keywords": [
+            "format",
+            "detailed"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:05.954990",
+  "stats": {
+    "examplesGenerated": 2,
+    "categoriesGenerated": 1
+  }
+}

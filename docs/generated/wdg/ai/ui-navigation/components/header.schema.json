@@ -1,0 +1,93 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-navigation/header.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display application or site header with branding and navigation.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": true,
+    "isMemo": false,
+    "library": "ui-navigation",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "breadcrumbSeparator": {
+      "description": "Breadcrumb separator",
+      "type": "string"
+    },
+    "breadcrumbs": {
+      "description": "Breadcrumb items",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "icon": {
+      "description": "Icon to display next to title",
+      "type": "string"
+    },
+    "left": {
+      "description": "Left side content",
+      "type": "string"
+    },
+    "onBreadcrumbClick": {
+      "description": "Callback when breadcrumb item is clicked",
+      "type": "null"
+    },
+    "right": {
+      "description": "Right side content (actions, buttons, etc.)",
+      "type": "string"
+    },
+    "showBreadcrumb": {
+      "description": "Whether to show breadcrumb",
+      "type": "boolean"
+    },
+    "size": {
+      "description": "Size of header",
+      "enum": [
+        "sm",
+        "md",
+        "lg"
+      ]
+    },
+    "sticky": {
+      "description": "Sticky header",
+      "type": "boolean"
+    },
+    "style": {
+      "description": "Additional styles",
+      "type": "string"
+    },
+    "subtitle": {
+      "description": "Page subtitle or description",
+      "type": "string"
+    },
+    "title": {
+      "description": "Page title",
+      "type": "string"
+    },
+    "variant": {
+      "description": "Background variant",
+      "enum": [
+        "default",
+        "minimal",
+        "elevated"
+      ]
+    }
+  },
+  "required": [],
+  "title": "Header",
+  "type": "object"
+}

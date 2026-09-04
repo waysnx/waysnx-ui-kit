@@ -1,0 +1,39 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-grid-builder/gridselectionbar.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "GridSelectionBar component",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-grid-builder",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "count": {
+      "description": "",
+      "type": "number"
+    },
+    "selectionActions": {
+      "description": "",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "count"
+  ],
+  "title": "GridSelectionBar",
+  "type": "object"
+}

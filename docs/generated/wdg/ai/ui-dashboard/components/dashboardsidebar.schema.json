@@ -1,0 +1,61 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-dashboard/dashboardsidebar.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "DashboardSidebar component",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-dashboard",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "children": {
+      "description": "Sidebar content",
+      "type": "string"
+    },
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "collapsible": {
+      "description": "Is sidebar collapsible",
+      "type": "boolean"
+    },
+    "defaultCollapsed": {
+      "description": "Is sidebar initially collapsed",
+      "type": "boolean"
+    },
+    "onToggle": {
+      "description": "Callback when sidebar is toggled",
+      "type": "boolean"
+    },
+    "resizable": {
+      "description": "Is sidebar resizable",
+      "type": "boolean"
+    },
+    "style": {
+      "description": "Additional CSS styles",
+      "type": "string"
+    },
+    "width": {
+      "description": "Sidebar width",
+      "enum": [
+        "number",
+        "string"
+      ]
+    }
+  },
+  "required": [],
+  "title": "DashboardSidebar",
+  "type": "object"
+}

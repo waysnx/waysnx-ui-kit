@@ -1,0 +1,410 @@
+{
+  "id": "ui-feedback:confirmdialog",
+  "name": "ConfirmDialog",
+  "slug": "confirm-dialog",
+  "library": "ui-feedback",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Confirm Dialog",
+  "purpose": "Request explicit user confirmation before performing a consequential action",
+  "shortDescription": "Request explicit user confirmation before performing a consequential action.",
+  "longDescription": "Request explicit user confirmation before performing a consequential action.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use ConfirmDialog for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a ConfirmDialog"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "Modal"
+    ],
+    "usedBy": [],
+    "related": [
+      "Modal"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": [
+      "Modal"
+    ]
+  },
+  "dependencies": {
+    "React": "unknown",
+    "useTranslation": "unknown",
+    "Modal": "unknown"
+  },
+  "props": [
+    {
+      "name": "open",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "title",
+      "type": "string | React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "message",
+      "type": "string | React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "variant",
+      "type": "\"default\" | \"danger\" | \"warning\"",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "confirmLabel",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "cancelLabel",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onConfirm",
+      "type": "() => void",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "onCancel",
+      "type": "() => void",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-error",
+    "--wx-color-error-hover",
+    "--wx-color-primary",
+    "--wx-color-primary-contrast",
+    "--wx-color-primary-hover",
+    "--wx-color-surface-hover",
+    "--wx-color-text",
+    "--wx-color-text-muted",
+    "--wx-color-warning"
+  ],
+  "cssClasses": [
+    "wx-confirm-message",
+    "wx-confirm-actions",
+    "wx-confirm-btn",
+    "wx-confirm-btn-cancel",
+    "wx-confirm-btn-default",
+    "wx-confirm-btn-danger",
+    "wx-confirm-btn-warning"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-confirm-message"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface-hover": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-confirm-btn-cancel"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-confirm-btn-cancel"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-border": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-confirm-btn-cancel:hover"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-confirm-btn-default"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary-contrast": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-confirm-btn-default",
+        ".wx-confirm-btn-danger",
+        ".wx-confirm-btn-warning"
+      ],
+      "occurrences": 3,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary-hover": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-confirm-btn-default:hover"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-confirm-btn-danger"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error-hover": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-confirm-btn-danger:hover"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-warning": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-confirm-btn-warning",
+        ".wx-confirm-btn-warning:hover"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\ConfirmDialog\\ConfirmDialog.tsx",
+  "keywords": [
+    "confirmdialog",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [
+    "popup window",
+    "overlay panel"
+  ],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Create a ConfirmDialog for confirmation",
+    "Show me a ConfirmDialog with form",
+    "Generate a ConfirmDialog with animation",
+    "Build a ConfirmDialog for alerts"
+  ],
+  "componentIntent": "Provide ConfirmDialog functionality",
+  "semanticCategory": "overlay",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.921875",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "40d493c3",
+  "metadata": {
+    "purpose": "Request explicit user confirmation before performing a consequential action.",
+    "description": "A modal dialog that prompts the user to confirm or cancel an action. Displays a title, message, and action buttons with semantic styling to indicate action importance (default, warning, or danger). Prevents accidental actions by requiring intentional user confirmation, commonly used before deletions or destructive operations.",
+    "functionalAreas": [
+      "Feedback",
+      "Workflow"
+    ],
+    "userIntents": [
+      "Confirm before deleting content",
+      "Verify before proceeding with action",
+      "Understand consequences before acting",
+      "Cancel unintended operations"
+    ],
+    "exampleUseCases": [
+      "Delete Confirmation",
+      "Discard Changes Dialog",
+      "Override Warning",
+      "Irreversible Action Alert",
+      "Permission Request",
+      "Large Operation Warning",
+      "Logout Confirmation"
+    ],
+    "useWhen": [
+      "Use this component when an action is consequential or potentially destructive.",
+      "Use this component when the action is difficult or impossible to undo.",
+      "Use this component to prevent accidental deletions or data loss.",
+      "Use this component for actions that may have significant business impact."
+    ],
+    "avoidWhen": [
+      "Avoid this component for reversible or low-consequence actions.",
+      "Avoid this component when the action is required and has no cancel option.",
+      "Avoid this component for simple informational messages (use Alert instead).",
+      "Avoid this component when multiple complex steps are needed (use Wizard instead)."
+    ],
+    "relatedComponents": [
+      "Modal",
+      "Alert",
+      "Button"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

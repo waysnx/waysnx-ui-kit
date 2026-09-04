@@ -1,0 +1,44 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-dashboard/kpicard.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "KPICard component",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-dashboard",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "data": {
+      "description": "Card data",
+      "type": "string"
+    },
+    "onClick": {
+      "description": "Click handler",
+      "type": "null"
+    },
+    "style": {
+      "description": "Additional CSS styles",
+      "type": "string"
+    }
+  },
+  "required": [
+    "data"
+  ],
+  "title": "KPICard",
+  "type": "object"
+}

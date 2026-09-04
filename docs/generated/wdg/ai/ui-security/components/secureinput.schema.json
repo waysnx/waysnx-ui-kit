@@ -1,0 +1,75 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/secureinput.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "SecureInput - Text input with enhanced security features Features: - Autocomplete disabled for sensitive inputs - Value clearing on blur - Input validation - Memory-safe handling - Accessibility compliant",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": true,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "clearOnBlur": {
+      "description": "",
+      "type": "boolean"
+    },
+    "disableAutocomplete": {
+      "description": "",
+      "type": "boolean"
+    },
+    "error": {
+      "description": "Error message to display",
+      "type": "string"
+    },
+    "label": {
+      "description": "Label text",
+      "type": "string"
+    },
+    "maskInput": {
+      "description": "Whether to mask sensitive characters while typing",
+      "type": "boolean"
+    },
+    "onChange": {
+      "description": "Callback when value changes",
+      "type": "string"
+    },
+    "onClear": {
+      "description": "Callback when input is cleared (for cleanup)",
+      "type": "null"
+    },
+    "placeholder": {
+      "description": "Placeholder text",
+      "type": "string"
+    },
+    "type": {
+      "description": "Input type (password, email, text)",
+      "enum": [
+        "text",
+        "email",
+        "password",
+        "url",
+        "tel"
+      ]
+    },
+    "validate": {
+      "description": "Custom validation function",
+      "enum": [
+        "(value: string) => boolean",
+        "string"
+      ]
+    }
+  },
+  "required": [],
+  "title": "SecureInput",
+  "type": "object"
+}

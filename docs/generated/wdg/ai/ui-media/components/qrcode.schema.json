@@ -1,0 +1,25 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-media/qrcode.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "QRCode — renders a real, scannable QR code to a canvas using the `qrcode` library, with optional PNG download. The encoded payload is the raw `value` string (URLs, text, `otpauth://` URIs, etc.). Colors, size and error-correction level are configurable.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-media",
+    "version": "1.0.0"
+  },
+  "properties": {},
+  "required": [],
+  "title": "QRCode",
+  "type": "object"
+}

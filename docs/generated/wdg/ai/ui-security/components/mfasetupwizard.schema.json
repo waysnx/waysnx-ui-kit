@@ -1,0 +1,63 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/mfasetupwizard.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "MFASetupWizard - Multi-step wizard for MFA setup",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "currentStep": {
+      "description": "Current step index",
+      "type": "number"
+    },
+    "isLoading": {
+      "description": "Whether setup is in progress",
+      "type": "boolean"
+    },
+    "methods": {
+      "description": "Available MFA methods to set up",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "onCancel": {
+      "description": "Callback when wizard is cancelled",
+      "type": "null"
+    },
+    "onComplete": {
+      "description": "Callback when wizard is completed",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "onStepComplete": {
+      "description": "Callback when step is completed",
+      "type": "object"
+    },
+    "steps": {
+      "description": "Step labels",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [],
+  "title": "MFASetupWizard",
+  "type": "object"
+}

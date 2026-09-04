@@ -1,0 +1,299 @@
+{
+  "id": "ui-core:switch",
+  "name": "Switch",
+  "slug": "switch",
+  "library": "ui-core",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Switch",
+  "purpose": "Enable users to toggle a setting or feature on or off with a visual switch",
+  "shortDescription": "Enable users to toggle a setting or feature on or off with a visual switch.",
+  "longDescription": "Enable users to toggle a setting or feature on or off with a visual switch.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Components/Switch",
+      "storyId": "components-switch",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-switch",
+      "stories": [],
+      "tags": [],
+      "source": "Switch.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Switch for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Switch"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaDescribedBy",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-primary",
+    "--wx-color-surface"
+  ],
+  "cssClasses": [
+    "wx-switch-wrapper",
+    "wx-switch",
+    "wx-switch-slider"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-color-border": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-switch-slider"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-switch-slider:after"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-switch:checked+.wx-switch-slider"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Switch\\Switch.tsx",
+  "keywords": [
+    "label",
+    "switch",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Switch",
+    "Create an example with Switch",
+    "Generate a Switch component",
+    "Build a Switch in my form"
+  ],
+  "componentIntent": "Provide Switch functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.696337",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "7ecf5cec",
+  "metadata": {
+    "purpose": "Enable users to toggle a setting or feature on or off with a visual switch.",
+    "description": "A toggle control that represents a binary on/off state change. Provides immediate visual feedback of the current state through animation and position. More intuitive than checkboxes for boolean settings and preferences. Supports optional label and accessibility attributes for screen readers.",
+    "functionalAreas": [
+      "Data Entry",
+      "Forms",
+      "Configuration"
+    ],
+    "userIntents": [
+      "Enable or disable a feature",
+      "Toggle a setting on or off",
+      "Activate or deactivate functionality",
+      "Set a preference"
+    ],
+    "exampleUseCases": [
+      "Dark Mode Toggle",
+      "Notifications Setting",
+      "Email Subscriptions",
+      "Feature Toggle",
+      "Privacy Setting",
+      "Automatic Updates"
+    ],
+    "useWhen": [
+      "Use this component when toggling a feature or setting on or off.",
+      "Use this component when binary choices need immediate visual feedback.",
+      "Use this component when space is limited and a compact control is preferred.",
+      "Use this component for settings that activate or deactivate functionality."
+    ],
+    "avoidWhen": [
+      "Avoid this component when multiple independent selections are needed (use Checkbox instead).",
+      "Avoid this component when three or more states need to be represented.",
+      "Avoid this component when the action requires explicit confirmation.",
+      "Avoid this component when the on/off metaphor is unclear to users."
+    ],
+    "relatedComponents": [
+      "Checkbox",
+      "Radio",
+      "Button"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "react-imask",
+        "version": "^7.6.1"
+      },
+      {
+        "name": "react-number-format",
+        "version": "^5.4.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-datepicker",
+        "version": "^8.0.0"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-datepicker",
+        "version": "^7.0.0"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

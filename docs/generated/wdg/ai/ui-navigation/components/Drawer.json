@@ -1,0 +1,605 @@
+{
+  "id": "ui-navigation:drawer",
+  "name": "Drawer",
+  "slug": "drawer",
+  "library": "ui-navigation",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Drawer",
+  "purpose": "Display navigation content in a side panel that slides in from the screen edge",
+  "shortDescription": "Display navigation content in a side panel that slides in from the screen edge.",
+  "longDescription": "Display navigation content in a side panel that slides in from the screen edge.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Navigation/Drawer",
+      "storyId": "navigation-drawer",
+      "url": "https://uikit.waysnx.tech/?path=/docs/navigation-drawer",
+      "stories": [],
+      "tags": [],
+      "source": "Drawer.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Drawer for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Drawer"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [
+    {
+      "name": "isOpen",
+      "type": "boolean",
+      "description": "Whether drawer is open",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "onClose",
+      "type": "() => void",
+      "description": "Callback when drawer is requested to close",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "children",
+      "type": "ReactNode",
+      "description": "Drawer content",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "position",
+      "type": "'left' | 'right' | 'top' | 'bottom'",
+      "description": "Position of drawer",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "width",
+      "type": "string | number",
+      "description": "Width of drawer (for left/right)",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "height",
+      "type": "string | number",
+      "description": "Height of drawer (for top/bottom)",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showBackdrop",
+      "type": "boolean",
+      "description": "Show backdrop overlay",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "closeOnBackdropClick",
+      "type": "boolean",
+      "description": "Close on backdrop click",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "closeOnEscape",
+      "type": "boolean",
+      "description": "Close on Escape key press",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "animationDuration",
+      "type": "number",
+      "description": "Animation duration in ms",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "Additional CSS class",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "style",
+      "type": "React.CSSProperties",
+      "description": "Additional styles",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "Drawer title",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "showCloseButton",
+      "type": "boolean",
+      "description": "Show close button",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "backdropOpacity",
+      "type": "number",
+      "description": "Backdrop opacity (0-1)",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "lockScroll",
+      "type": "boolean",
+      "description": "Lock body scroll when drawer is open",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "zIndex",
+      "type": "number",
+      "description": "Z-index for drawer",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "resizable",
+      "type": "boolean",
+      "description": "Allow drawer resizing",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "header",
+      "type": "ReactNode",
+      "description": "Drawer header content",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "footer",
+      "type": "ReactNode",
+      "description": "Drawer footer content",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "Accessible label for drawer",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaDescription",
+      "type": "string",
+      "description": "Drawer description for a11y",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [
+    "forwardRef"
+  ],
+  "contextsUsed": [],
+  "forwardRef": true,
+  "memo": false,
+  "cssVariables": [
+    "--nav-drawer-bg",
+    "--nav-drawer-bg-dark",
+    "--nav-drawer-border",
+    "--nav-drawer-border-dark",
+    "--nav-drawer-close-hover-bg",
+    "--nav-drawer-close-hover-bg-dark",
+    "--nav-drawer-focus-outline",
+    "--nav-drawer-footer-bg",
+    "--nav-drawer-footer-bg-dark",
+    "--nav-drawer-header-bg",
+    "--nav-drawer-shadow",
+    "--nav-drawer-text",
+    "--nav-drawer-text-dark",
+    "--nav-drawer-title-text",
+    "--wx-font-size-lg",
+    "--wx-font-size-xl",
+    "--wx-radius-sm"
+  ],
+  "cssClasses": [
+    "css",
+    "nav-drawer-overlay",
+    "nav-drawer-overlay--open",
+    "nav-drawer-backdrop",
+    "nav-drawer",
+    "nav-drawer--left",
+    "nav-drawer--right",
+    "nav-drawer--top",
+    "nav-drawer--bottom",
+    "nav-drawer--resizable"
+  ],
+  "designTokens": {
+    "other": {
+      "--nav-drawer-bg": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-drawer"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-drawer-text": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".nav-drawer",
+          ".nav-drawer__close-btn"
+        ],
+        "occurrences": 2,
+        "used": true,
+        "value": ""
+      },
+      "--nav-drawer-border": {
+        "properties": [
+          "border-bottom",
+          "border-top"
+        ],
+        "selectors": [
+          ".nav-drawer__header",
+          ".nav-drawer__footer"
+        ],
+        "occurrences": 2,
+        "used": true,
+        "value": ""
+      },
+      "--nav-drawer-header-bg": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-drawer__header"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-drawer-title-text": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          ".nav-drawer__title"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-drawer-close-hover-bg": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-drawer__close-btn:hover"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-drawer-focus-outline": {
+        "properties": [
+          "outline"
+        ],
+        "selectors": [
+          ".nav-drawer__close-btn:focus-visible"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-drawer-footer-bg": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-drawer__footer"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-drawer-bg-dark": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          "@media (prefers-color-scheme: dark)"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-drawer-text-dark": {
+        "properties": [
+          "color"
+        ],
+        "selectors": [
+          "@media (prefers-color-scheme: dark)"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-drawer-border-dark": {
+        "properties": [
+          "border-bottom-color",
+          "border-top-color"
+        ],
+        "selectors": [
+          ".nav-drawer__header",
+          ".nav-drawer__footer"
+        ],
+        "occurrences": 2,
+        "used": true,
+        "value": ""
+      },
+      "--nav-drawer-close-hover-bg-dark": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-drawer__close-btn:hover"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      },
+      "--nav-drawer-footer-bg-dark": {
+        "properties": [
+          "background-color"
+        ],
+        "selectors": [
+          ".nav-drawer__footer"
+        ],
+        "occurrences": 1,
+        "used": true,
+        "value": ""
+      }
+    }
+  },
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {
+    "--wx-font-size-lg": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".nav-drawer__title"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-xl": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".nav-drawer__close-btn"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {},
+  "shadowTokens": {
+    "--nav-drawer-shadow": {
+      "properties": [
+        "box-shadow"
+      ],
+      "selectors": [
+        ".nav-drawer"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "radiusTokens": {
+    "--wx-radius-sm": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".nav-drawer__close-btn"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Drawer\\Drawer.tsx",
+  "keywords": [
+    "components",
+    "drawer"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Drawer",
+    "Create an example with Drawer",
+    "Generate a Drawer component",
+    "Build a Drawer in my form"
+  ],
+  "componentIntent": "Provide Drawer functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.219139",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "11c48492",
+  "metadata": {
+    "purpose": "Display navigation content in a side panel that slides in from the screen edge.",
+    "description": "A slide-out navigation panel that appears from the left or right edge, used for navigation menus or secondary content. Common on mobile to save screen space while providing access to navigation. Can be triggered by a menu button and closed by clicking backdrop or close button.",
+    "functionalAreas": [
+      "Navigation",
+      "Layout"
+    ],
+    "userIntents": [
+      "Access navigation menu",
+      "View navigation options",
+      "Navigate between sections",
+      "See available pages"
+    ],
+    "exampleUseCases": [
+      "Mobile Navigation Menu",
+      "Sidebar Navigation",
+      "Mobile App Menu",
+      "Quick Navigation Access",
+      "Mobile Menu Panel",
+      "App Navigation Drawer",
+      "Mobile Application Menu"
+    ],
+    "useWhen": [
+      "Use this component for navigation on mobile or small screens.",
+      "Use this component when persistent sidebar isn't feasible.",
+      "Use this component to save screen space while providing navigation.",
+      "Use this component to hide navigation that isn't always needed."
+    ],
+    "avoidWhen": [
+      "Avoid this component for permanent navigation (use SidebarLayout instead).",
+      "Avoid this component for desktop where persistent sidebar is better.",
+      "Avoid this component for critical actions (keep visible).",
+      "Avoid this component as primary content container."
+    ],
+    "relatedComponents": [
+      "Sidebar",
+      "Navigation",
+      "Menu"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

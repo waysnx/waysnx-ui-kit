@@ -1,0 +1,50 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/securityeventlog.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Security events to display",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "enableExport": {
+      "description": "Enable export",
+      "type": "boolean"
+    },
+    "events": {
+      "description": "Security events to display",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "maxInitialEvents": {
+      "description": "Max events to show initially",
+      "type": "number"
+    },
+    "onExport": {
+      "description": "Callback for export",
+      "enum": [
+        "(format: 'json",
+        "csv') => void"
+      ]
+    }
+  },
+  "required": [
+    "events"
+  ],
+  "title": "SecurityEventLog",
+  "type": "object"
+}

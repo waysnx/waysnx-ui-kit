@@ -1,0 +1,217 @@
+{
+  "id": "ui-data:jsoneditor",
+  "name": "JSONEditor",
+  "slug": "json-editor",
+  "library": "ui-data",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "JSON Editor",
+  "purpose": "Enable editing and validation of JSON data",
+  "shortDescription": "Enable editing and validation of JSON data.",
+  "longDescription": "Enable editing and validation of JSON data.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Data/JSONEditor",
+      "storyId": "data-jsoneditor",
+      "url": "https://uikit.waysnx.tech/?path=/docs/data-jsoneditor",
+      "stories": [],
+      "tags": [],
+      "source": "JSONEditor.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use JSONEditor for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a JSONEditor"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useState": "unknown",
+    "useMemo": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-adv-json-editor__textarea",
+    "wx-adv-json-editor__status",
+    "wx-adv-json-editor__content",
+    "wx-adv-json-editor__header",
+    "wx-adv-json-editor__line-numbers",
+    "--wx-color-text-muted"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\JSONEditor\\JSONEditor.tsx",
+  "keywords": [
+    "jsoneditor",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use JSONEditor",
+    "Create an example with JSONEditor",
+    "Generate a JSONEditor component",
+    "Build a JSONEditor in my form"
+  ],
+  "componentIntent": "Provide JSONEditor functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.212433",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "59ec382b",
+  "metadata": {
+    "purpose": "Enable editing and validation of JSON data.",
+    "description": "A specialized code editor for JSON with syntax highlighting, validation, error reporting, and pretty-printing capabilities. Helps users author valid JSON with visual feedback on structure and errors. Often includes tree view and formatting options.",
+    "functionalAreas": [
+      "Data Entry",
+      "Forms"
+    ],
+    "userIntents": [
+      "Edit JSON data",
+      "Validate JSON structure",
+      "Format JSON nicely",
+      "Fix JSON errors"
+    ],
+    "exampleUseCases": [
+      "Configuration File Editor",
+      "API Request Body",
+      "Data Import Form",
+      "Settings Editor",
+      "Metadata Editor",
+      "Schema Viewer",
+      "JSON Data Entry"
+    ],
+    "useWhen": [
+      "Use this component when users need to edit JSON data.",
+      "Use this component for configuration or settings in JSON format.",
+      "Use this component when JSON validation is important.",
+      "Use this component when pretty-printing improves usability."
+    ],
+    "avoidWhen": [
+      "Avoid this component for simple configuration (use form fields instead).",
+      "Avoid this component without proper JSON syntax validation.",
+      "Avoid this component for very large JSON files (performance issues).",
+      "Avoid this component on mobile without careful layout considerations."
+    ],
+    "relatedComponents": [
+      "CodeEditor",
+      "XMLViewer",
+      "CodeViewer"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

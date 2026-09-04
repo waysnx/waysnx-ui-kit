@@ -1,0 +1,329 @@
+{
+  "id": "ui-feedback:circularprogress",
+  "name": "CircularProgress",
+  "slug": "circular-progress",
+  "library": "ui-feedback",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Circular Progress",
+  "purpose": "Visualize numeric progress in a circular format",
+  "shortDescription": "Visualize numeric progress in a circular format.",
+  "longDescription": "Visualize numeric progress in a circular format.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use CircularProgress for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a CircularProgress"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown"
+  },
+  "props": [
+    {
+      "name": "value",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "default",
+      "type": "100) */\n  max?: number",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "sm",
+      "type": "48px, md: 80px, lg: 120px, xl: 160px */\n  size?: CircularProgressSize",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "default",
+      "type": "true) */\n  showValue?: boolean",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "valueLabel",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "color",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "trackColor",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "strokeWidth",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-primary",
+    "--wx-color-text-muted"
+  ],
+  "cssClasses": [
+    "wx-circular-progress",
+    "wx-circular-progress-svg",
+    "wx-circular-progress-track",
+    "wx-circular-progress-fill",
+    "wx-circular-progress-center",
+    "wx-circular-progress-label"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-color-border": {
+      "properties": [
+        "stroke"
+      ],
+      "selectors": [
+        ".wx-circular-progress-track"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary": {
+      "properties": [
+        "stroke"
+      ],
+      "selectors": [
+        ".wx-circular-progress-fill"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-circular-progress-label"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\CircularProgress\\CircularProgress.tsx",
+  "keywords": [
+    "label",
+    "circularprogress",
+    "value",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use CircularProgress",
+    "Create an example with CircularProgress",
+    "Generate a CircularProgress component",
+    "Build a CircularProgress in my form"
+  ],
+  "componentIntent": "Provide CircularProgress functionality",
+  "semanticCategory": "feedback",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.914390",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "ab1c1271",
+  "metadata": {
+    "purpose": "Visualize numeric progress in a circular format.",
+    "description": "A circular progress indicator that shows the completion percentage of a task or process. Displays progress as an arc that fills from 0% to 100%, with optional text in the center and label below. Useful for compact spaces where traditional linear progress bars don't fit well, such as downloads, uploads, or multi-step processes.",
+    "functionalAreas": [
+      "Feedback",
+      "Visualization"
+    ],
+    "userIntents": [
+      "Monitor task completion status",
+      "Track upload or download progress",
+      "See processing completion",
+      "Understand remaining work percentage"
+    ],
+    "exampleUseCases": [
+      "File Upload Progress",
+      "File Download Progress",
+      "Task Completion Status",
+      "Skill Level Display",
+      "Storage Usage Visualization",
+      "Page Load Progress",
+      "Form Completion Percentage"
+    ],
+    "useWhen": [
+      "Use this component when you need to display progress in a compact circular format.",
+      "Use this component in dashboards or settings where space is limited.",
+      "Use this component when the visual impact of a circular design enhances the interface.",
+      "Use this component to show progress for tasks that take a noticeable but bounded amount of time."
+    ],
+    "avoidWhen": [
+      "Avoid this component when precise progress information requires detailed breakdown.",
+      "Avoid this component for indeterminate progress (use Spinner instead).",
+      "Avoid this component in horizontal layouts where a linear progress bar fits better.",
+      "Avoid this component when multiple concurrent progress indicators need comparison."
+    ],
+    "relatedComponents": [
+      "Progress",
+      "Spinner",
+      "Skeleton"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

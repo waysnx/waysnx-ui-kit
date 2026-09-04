@@ -1,0 +1,213 @@
+{
+  "version": "2.0.0",
+  "library": "ui-visualization",
+  "generatedAt": "2026-09-03T20:03:08.518300",
+  "relationshipModel": {
+    "uses": "Components this component directly imports or uses",
+    "usedBy": "Components that import or use this component",
+    "related": "Related components in the same domain",
+    "alternatives": "Alternative implementations for this component",
+    "parentComponents": "Components that contain or wrap this component",
+    "childComponents": "Components this component uses or renders"
+  },
+  "relationships": [
+    {
+      "from": "Connector",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "Hierarchy",
+          "OrgChart",
+          "Tree"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "Hierarchy",
+          "OrgChart",
+          "Tree"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Hierarchy",
+      "relationships": {
+        "uses": [
+          "Connector",
+          "MiniMap",
+          "Toolbar",
+          "TreeNode"
+        ],
+        "usedBy": [],
+        "related": [
+          "Connector",
+          "MiniMap",
+          "Toolbar",
+          "TreeNode"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Connector",
+          "MiniMap",
+          "Toolbar",
+          "TreeNode"
+        ]
+      }
+    },
+    {
+      "from": "Legend",
+      "relationships": {
+        "uses": [],
+        "usedBy": [],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "MiniMap",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "Hierarchy",
+          "OrgChart"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "Hierarchy",
+          "OrgChart"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "OrgChart",
+      "relationships": {
+        "uses": [
+          "Connector",
+          "MiniMap",
+          "SearchBox",
+          "Toolbar",
+          "TreeNode",
+          "ZoomControls"
+        ],
+        "usedBy": [],
+        "related": [
+          "Connector",
+          "DEFAULT_VIRTUALIZE_THRESHOLD",
+          "MiniMap",
+          "SearchBox",
+          "Toolbar",
+          "TreeNode",
+          "VirtualizationEngine",
+          "ZoomControls"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Connector",
+          "MiniMap",
+          "SearchBox",
+          "Toolbar",
+          "TreeNode",
+          "ZoomControls"
+        ]
+      }
+    },
+    {
+      "from": "SearchBox",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "OrgChart"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "OrgChart"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Toolbar",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "Hierarchy",
+          "OrgChart"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "Hierarchy",
+          "OrgChart"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "Tree",
+      "relationships": {
+        "uses": [
+          "Connector",
+          "TreeNode",
+          "ZoomControls"
+        ],
+        "usedBy": [],
+        "related": [
+          "Connector",
+          "TreeNode",
+          "ZoomControls"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "Connector",
+          "TreeNode",
+          "ZoomControls"
+        ]
+      }
+    },
+    {
+      "from": "TreeNode",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "Hierarchy",
+          "OrgChart",
+          "Tree"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "Hierarchy",
+          "OrgChart",
+          "Tree"
+        ],
+        "childComponents": []
+      }
+    },
+    {
+      "from": "ZoomControls",
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "OrgChart",
+          "Tree"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "OrgChart",
+          "Tree"
+        ],
+        "childComponents": []
+      }
+    }
+  ]
+}

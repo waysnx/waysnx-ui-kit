@@ -1,0 +1,294 @@
+{
+  "id": "ui-security:deviceverificationdialog",
+  "name": "DeviceVerificationDialog",
+  "slug": "device-verification-dialog",
+  "library": "ui-security",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Device Verification Dialog",
+  "purpose": "Callback to close dialog",
+  "shortDescription": "Callback to close dialog",
+  "longDescription": "Callback to close dialog",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Security/Verification/DeviceVerificationDialog",
+      "storyId": "security-verification-deviceverificationdialog",
+      "url": "https://uikit.waysnx.tech/?path=/docs/security-verification-deviceverificationdialog",
+      "stories": [],
+      "tags": [],
+      "source": "DeviceVerificationDialog.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use DeviceVerificationDialog for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a DeviceVerificationDialog"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "Alert",
+      "Button"
+    ],
+    "usedBy": [],
+    "related": [
+      "Alert",
+      "Button"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": [
+      "Alert",
+      "Button"
+    ]
+  },
+  "dependencies": {
+    "Alert": "unknown",
+    "Button": "unknown"
+  },
+  "props": [
+    {
+      "name": "open",
+      "type": "boolean",
+      "description": "Whether dialog is open",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "onClose",
+      "type": "() => void",
+      "description": "Callback to close dialog",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "device",
+      "type": "DeviceInfo",
+      "description": "Device information to display",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onApprove",
+      "type": "() => void | Promise<void>",
+      "description": "Callback when user approves device",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "onReject",
+      "type": "() => void | Promise<void>",
+      "description": "Callback when user rejects device",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "loading",
+      "type": "boolean",
+      "description": "Loading state",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Error message",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "Title for the dialog",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "description": "Description",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "Test ID",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "waysnx-device-description",
+    "waysnx-device-label",
+    "waysnx-device-info",
+    "waysnx-device-info-title",
+    "waysnx-device-value-small",
+    "waysnx-device-warning",
+    "waysnx-security-tips-list",
+    "waysnx-device-detail",
+    "waysnx-warning-text",
+    "waysnx-device-value",
+    "waysnx-device-security-tips",
+    "waysnx-device-verification-content",
+    "waysnx-security-tips-title",
+    "waysnx-dialog-footer"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Verification\\DeviceVerificationDialog.tsx",
+  "keywords": [
+    "deviceverificationdialog",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [
+    "popup window",
+    "overlay panel"
+  ],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Create a DeviceVerificationDialog for confirmation",
+    "Show me a DeviceVerificationDialog with form",
+    "Generate a DeviceVerificationDialog with animation",
+    "Build a DeviceVerificationDialog for alerts"
+  ],
+  "componentIntent": "Provide DeviceVerificationDialog functionality",
+  "semanticCategory": "overlay",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.863202",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "5c83bce8",
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-media",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

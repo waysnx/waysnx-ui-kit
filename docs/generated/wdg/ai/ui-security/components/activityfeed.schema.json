@@ -1,0 +1,47 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/activityfeed.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Timestamp",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "activities": {
+      "description": "Activity records",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "groupByDate": {
+      "description": "Group by date",
+      "type": "boolean"
+    },
+    "isLive": {
+      "description": "Enable real-time updates (simulation)",
+      "type": "boolean"
+    },
+    "maxInitial": {
+      "description": "Max activities to show initially",
+      "type": "number"
+    }
+  },
+  "required": [
+    "activities"
+  ],
+  "title": "ActivityFeed",
+  "type": "object"
+}

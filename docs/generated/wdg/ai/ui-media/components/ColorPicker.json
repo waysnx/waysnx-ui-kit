@@ -1,0 +1,227 @@
+{
+  "id": "ui-media:colorpicker",
+  "name": "ColorPicker",
+  "slug": "color-picker",
+  "library": "ui-media",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Color Picker",
+  "purpose": "Enable selection and input of colors",
+  "shortDescription": "Enable selection and input of colors.",
+  "longDescription": "Enable selection and input of colors.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Media/ColorPicker",
+      "storyId": "media-colorpicker",
+      "url": "https://uikit.waysnx.tech/?path=/docs/media-colorpicker",
+      "stories": [],
+      "tags": [],
+      "source": "ColorPicker.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use ColorPicker for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a ColorPicker"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useState": "unknown",
+    "useRef": "unknown",
+    "useCallback": "unknown",
+    "useEffect": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-adv-color-picker__swatches",
+    "wx-adv-color-picker__input-row",
+    "wx-adv-color-picker__preview",
+    "wx-adv-color-picker__spectrum",
+    "wx-adv-color-picker__hex-input",
+    "wx-adv-color-picker__hue"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\ColorPicker\\ColorPicker.tsx",
+  "keywords": [
+    "colorpicker",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use ColorPicker",
+    "Create an example with ColorPicker",
+    "Generate a ColorPicker component",
+    "Build a ColorPicker in my form"
+  ],
+  "componentIntent": "Provide ColorPicker functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.334188",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "6a384ed9",
+  "metadata": {
+    "purpose": "Enable selection and input of colors.",
+    "description": "A component that allows users to select colors through a color picker interface with multiple input methods (color wheel, sliders, hex input). Supports various color formats (HEX, RGB, HSL) and provides accessible color selection.",
+    "functionalAreas": [
+      "Data Entry",
+      "Visualization"
+    ],
+    "userIntents": [
+      "Select color",
+      "Input color value",
+      "See color options",
+      "Copy color code"
+    ],
+    "exampleUseCases": [
+      "Theme Color Selection",
+      "Design Tool Color",
+      "Background Color",
+      "Text Color",
+      "Highlight Color",
+      "Custom Theme",
+      "Design Color"
+    ],
+    "useWhen": [
+      "Use this component when users need to select or input colors.",
+      "Use this component in design tools or theme customization.",
+      "Use this component with multiple color format support.",
+      "Use this component when precise color selection is needed."
+    ],
+    "avoidWhen": [
+      "Avoid this component for simple preset color selection (use Select instead).",
+      "Avoid this component without proper color format conversion.",
+      "Avoid this component for non-color data entry.",
+      "Avoid this component without accessible keyboard navigation."
+    ],
+    "relatedComponents": [
+      "Input",
+      "Select",
+      "Palette"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "qrcode",
+        "version": "^1.5.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/qrcode",
+        "version": "^1.5.5"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

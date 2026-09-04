@@ -1,0 +1,57 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/permissiongate.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Content to render if permission is granted",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "children": {
+      "description": "Content to render if permission is granted",
+      "type": "string"
+    },
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "fallback": {
+      "description": "Content to render if permission is denied",
+      "type": "string"
+    },
+    "hasPermission": {
+      "description": "Whether user has the permission",
+      "type": "boolean"
+    },
+    "permission": {
+      "description": "Permission required to view children",
+      "enum": [
+        "string",
+        "string[]"
+      ]
+    },
+    "unmountOnDeny": {
+      "description": "Whether to completely remove from DOM (vs just hiding)",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "permission",
+    "hasPermission",
+    "children"
+  ],
+  "title": "PermissionGate",
+  "type": "object"
+}

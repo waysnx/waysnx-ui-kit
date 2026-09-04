@@ -1,0 +1,365 @@
+{
+  "id": "ui-feedback:badge",
+  "name": "Badge",
+  "slug": "badge",
+  "library": "ui-feedback",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Badge",
+  "purpose": "Display a small numeric or dot indicator to convey status or count information",
+  "shortDescription": "Display a small numeric or dot indicator to convey status or count information.",
+  "longDescription": "Display a small numeric or dot indicator to convey status or count information.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Badge for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Badge"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [
+      "ActiveSessions",
+      "ActivityFeed",
+      "AuditHistoryTable",
+      "AuditTimeline",
+      "BackupCodesCard",
+      "ConcurrentSessionDialog",
+      "EncryptionBadge",
+      "LoginHistory",
+      "MFAStatus",
+      "PasswordAgeIndicator",
+      "RiskScoreBadge",
+      "SecurityAlert",
+      "SecurityEventLog",
+      "SecurityStatusCard"
+    ],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [
+      "ActiveSessions",
+      "ActivityFeed",
+      "AuditHistoryTable",
+      "AuditTimeline",
+      "BackupCodesCard",
+      "ConcurrentSessionDialog",
+      "EncryptionBadge",
+      "LoginHistory",
+      "MFAStatus",
+      "PasswordAgeIndicator",
+      "RiskScoreBadge",
+      "SecurityAlert",
+      "SecurityEventLog",
+      "SecurityStatusCard"
+    ],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown"
+  },
+  "props": [
+    {
+      "name": "count",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "maxCount",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "dot",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "color",
+      "type": "\"default\" | \"success\" | \"error\" | \"warning\" | \"info\"",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-error",
+    "--wx-color-info",
+    "--wx-color-primary-contrast",
+    "--wx-color-success",
+    "--wx-color-text-light",
+    "--wx-color-warning"
+  ],
+  "cssClasses": [
+    "wx-badge-wrapper",
+    "wx-badge",
+    "wx-badge-dot",
+    "wx-badge-standalone",
+    "wx-badge-default",
+    "wx-badge-success",
+    "wx-badge-error",
+    "wx-badge-warning",
+    "wx-badge-info"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-color-primary-contrast": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-badge",
+        ".wx-badge-standalone"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-light": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-badge-default"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-success": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-badge-success"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-badge-error"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-warning": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-badge-warning"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-info": {
+      "properties": [
+        "background"
+      ],
+      "selectors": [
+        ".wx-badge-info"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Badge\\Badge.tsx",
+  "keywords": [
+    "badge",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Badge",
+    "Create an example with Badge",
+    "Generate a Badge component",
+    "Build a Badge in my form"
+  ],
+  "componentIntent": "Label items",
+  "semanticCategory": "display",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.906936",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "9caad397",
+  "metadata": {
+    "purpose": "Display a small numeric or dot indicator to convey status or count information.",
+    "description": "A small label element that presents count information, status, or notification indicators. Typically overlaid on other UI elements (like icons or avatars) to quickly communicate unread items, active status, or other discrete values. Supports both numeric displays and dot indicators for space-constrained layouts.",
+    "functionalAreas": [
+      "Feedback",
+      "Data Entry"
+    ],
+    "userIntents": [
+      "See how many unread items exist",
+      "Identify active or new items",
+      "Recognize status at a glance",
+      "Track item count or notifications"
+    ],
+    "exampleUseCases": [
+      "Unread Message Count",
+      "Notification Indicator",
+      "New Item Indicator",
+      "Active Status Badge",
+      "Item Counter",
+      "Active Tab Count",
+      "Online Status Dot"
+    ],
+    "useWhen": [
+      "Use this component when you need to display a small numeric count or status indicator.",
+      "Use this component to overlay on other UI elements like icons or avatars.",
+      "Use this component when you need to communicate count overflow (e.g., 99+).",
+      "Use this component when a simple dot indicator is sufficient to convey status."
+    ],
+    "avoidWhen": [
+      "Avoid this component when the count requires more detailed explanation or interaction.",
+      "Avoid this component when the information is primary content (use Text instead).",
+      "Avoid this component when the count should be displayed in tabular format.",
+      "Avoid this component for large, complex data that requires filtering or sorting."
+    ],
+    "relatedComponents": [
+      "Avatar",
+      "Icon",
+      "Chip"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "version": "2.0.0",
+  "library": "ui-files",
+  "generatedAt": "2026-09-03T20:02:38.045134",
+  "components": [
+    {
+      "id": "ui-files:documentpreview",
+      "name": "DocumentPreview",
+      "slug": "document-preview",
+      "category": "components",
+      "description": "Display documents and files with automatic type detection and appropriate viewers.",
+      "keywords": [
+        "documentpreview",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [
+          "PDFViewer"
+        ],
+        "usedBy": [],
+        "related": [
+          "PDFViewer"
+        ],
+        "alternatives": [],
+        "parentComponents": [],
+        "childComponents": [
+          "PDFViewer"
+        ]
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use DocumentPreview for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    },
+    {
+      "id": "ui-files:pdfviewer",
+      "name": "PDFViewer",
+      "slug": "pdf-viewer",
+      "category": "components",
+      "description": "PDFViewer — SHELL / ADAPTER (not a functional PDF renderer in 1.0.0). This component provides the viewer chrome (tool...",
+      "keywords": [
+        "pdfviewer",
+        "components"
+      ],
+      "aliases": [],
+      "synonyms": [],
+      "businessDomains": [
+        "hrms",
+        "crm",
+        "erp"
+      ],
+      "enterpriseModules": [
+        "dashboards"
+      ],
+      "semanticCategory": "utility",
+      "propNames": [],
+      "eventNames": [],
+      "relationships": {
+        "uses": [],
+        "usedBy": [
+          "DocumentPreview"
+        ],
+        "related": [],
+        "alternatives": [],
+        "parentComponents": [
+          "DocumentPreview"
+        ],
+        "childComponents": []
+      },
+      "useCases": [
+        {
+          "title": "General Purpose",
+          "description": "Use PDFViewer for general-purpose components functionality"
+        }
+      ],
+      "antipatterns": [],
+      "metadata": {
+        "hasStorybook": true,
+        "hasPlaywright": false,
+        "hasVitest": false,
+        "hasJest": false,
+        "hasExamples": false,
+        "wcagLevel": "AA",
+        "responsive": false,
+        "hasAccessibility": false,
+        "propsCount": 0,
+        "eventsCount": 0
+      }
+    }
+  ]
+}

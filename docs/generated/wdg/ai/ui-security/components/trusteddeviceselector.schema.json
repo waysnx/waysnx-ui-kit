@@ -1,0 +1,50 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/trusteddeviceselector.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "TrustedDeviceSelector - Mark device as trusted",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "deviceName": {
+      "description": "Current device name",
+      "type": "string"
+    },
+    "disabled": {
+      "description": "Whether selection is disabled",
+      "type": "boolean"
+    },
+    "isTrusted": {
+      "description": "Whether device is selected as trusted",
+      "type": "boolean"
+    },
+    "message": {
+      "description": "Custom message",
+      "type": "string"
+    },
+    "onTrustChange": {
+      "description": "Callback when trust state changes",
+      "type": "number"
+    },
+    "trustDurationDays": {
+      "description": "How long to trust device (in days)",
+      "type": "number"
+    }
+  },
+  "required": [],
+  "title": "TrustedDeviceSelector",
+  "type": "object"
+}

@@ -1,0 +1,325 @@
+{
+  "id": "ui-core:htmlcontent",
+  "name": "HtmlContent",
+  "slug": "html-content",
+  "library": "ui-core",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Html Content",
+  "purpose": "Display sanitized HTML content safely within the application interface",
+  "shortDescription": "Display sanitized HTML content safely within the application interface.",
+  "longDescription": "Display sanitized HTML content safely within the application interface.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Components/HtmlContent",
+      "storyId": "components-htmlcontent",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-htmlcontent",
+      "stories": [],
+      "tags": [],
+      "source": "HtmlContent.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use HtmlContent for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a HtmlContent"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown",
+    "DOMPurify": "unknown"
+  },
+  "props": [
+    {
+      "name": "content",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-border",
+    "--wx-color-primary",
+    "--wx-color-surface-alt",
+    "--wx-color-surface-hover",
+    "--wx-color-text",
+    "--wx-color-text-muted"
+  ],
+  "cssClasses": [
+    "wx-html-content"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-color-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-html-content"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary": {
+      "properties": [
+        "color",
+        "border-left"
+      ],
+      "selectors": [
+        ".wx-html-content a",
+        ".wx-html-content blockquote"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface-hover": {
+      "properties": [
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-html-content code",
+        ".wx-html-content pre"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-html-content blockquote"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-border": {
+      "properties": [
+        "border",
+        "border-top"
+      ],
+      "selectors": [
+        ".wx-html-content table th",
+        ".wx-html-content table td",
+        ".wx-html-content hr"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-surface-alt": {
+      "properties": [
+        "background-color"
+      ],
+      "selectors": [
+        ".wx-html-content table th"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\HtmlContent\\HtmlContent.tsx",
+  "keywords": [
+    "htmlcontent",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use HtmlContent",
+    "Create an example with HtmlContent",
+    "Generate a HtmlContent component",
+    "Build a HtmlContent in my form"
+  ],
+  "componentIntent": "Provide HtmlContent functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.619480",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "973eac5b",
+  "metadata": {
+    "purpose": "Display sanitized HTML content safely within the application interface.",
+    "description": "A component for rendering HTML content that has been sanitized to prevent security vulnerabilities. Automatically strips dangerous HTML tags and attributes while preserving safe formatting elements like headings, lists, and links. Useful for displaying user-generated or dynamic HTML content with controlled markup support.",
+    "functionalAreas": [
+      "Visualization",
+      "Communication",
+      "Feedback"
+    ],
+    "userIntents": [
+      "View formatted content with structure",
+      "Read documents with rich formatting",
+      "Display styled information",
+      "View previews of HTML content"
+    ],
+    "exampleUseCases": [
+      "Display Blog Post",
+      "Show User Guide",
+      "Render Help Documentation",
+      "Display Email Content Preview",
+      "Show API Documentation",
+      "Display Formatted Descriptions"
+    ],
+    "useWhen": [
+      "Use this component when displaying HTML content with security concerns.",
+      "Use this component when safe HTML formatting enhances readability.",
+      "Use this component when user-generated HTML must be displayed safely.",
+      "Use this component when dynamic content requires rich formatting."
+    ],
+    "avoidWhen": [
+      "Avoid this component when plain text is sufficient.",
+      "Avoid this component when complex styling or scripting is required.",
+      "Avoid this component without proper sanitization configuration.",
+      "Avoid this component for interactive HTML requiring script execution."
+    ],
+    "relatedComponents": [
+      "HtmlEditor",
+      "Image",
+      "Link"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "react-imask",
+        "version": "^7.6.1"
+      },
+      {
+        "name": "react-number-format",
+        "version": "^5.4.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-datepicker",
+        "version": "^8.0.0"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-datepicker",
+        "version": "^7.0.0"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

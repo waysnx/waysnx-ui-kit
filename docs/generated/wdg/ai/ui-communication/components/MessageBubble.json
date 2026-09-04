@@ -1,0 +1,244 @@
+{
+  "id": "ui-communication:messagebubble",
+  "name": "MessageBubble",
+  "slug": "message-bubble",
+  "library": "ui-communication",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Message Bubble",
+  "purpose": "Display a single message in a chat or messaging interface",
+  "shortDescription": "Display a single message in a chat or messaging interface.",
+  "longDescription": "Display a single message in a chat or messaging interface.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Communication/MessageBubble",
+      "storyId": "communication-messagebubble",
+      "url": "https://uikit.waysnx.tech/?path=/docs/communication-messagebubble",
+      "stories": [],
+      "tags": [],
+      "source": "MessageBubble.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use MessageBubble for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a MessageBubble"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "ReactionBar",
+      "ReadReceipts"
+    ],
+    "usedBy": [
+      "ChatWindow",
+      "ThreadPanel"
+    ],
+    "related": [
+      "ReactionBar",
+      "ReadReceipts"
+    ],
+    "alternatives": [],
+    "parentComponents": [
+      "ChatWindow",
+      "ThreadPanel"
+    ],
+    "childComponents": [
+      "ReactionBar",
+      "ReadReceipts"
+    ]
+  },
+  "dependencies": {
+    "ReactionBar": "unknown",
+    "ReadReceipts": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-comm-message__author",
+    "wx-comm-message__avatar",
+    "wx-comm-message__body",
+    "wx-comm-message__meta",
+    "wx-comm-message__thread-info",
+    "wx-comm-message__bubble"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\MessageBubble\\MessageBubble.tsx",
+  "keywords": [
+    "messagebubble",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use MessageBubble",
+    "Create an example with MessageBubble",
+    "Generate a MessageBubble component",
+    "Build a MessageBubble in my form"
+  ],
+  "componentIntent": "Provide MessageBubble functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.461883",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "5e1d756d",
+  "metadata": {
+    "purpose": "Display a single message in a chat or messaging interface.",
+    "description": "A component that renders an individual message with sender information, content, timestamp, and optional status indicators. Typically styled as a bubble or box and used within ChatWindow. Supports different styling for user vs. other sender messages.",
+    "functionalAreas": [
+      "Communication",
+      "Visualization"
+    ],
+    "userIntents": [
+      "Read individual message",
+      "Know who sent message",
+      "See when message was sent",
+      "Check message status"
+    ],
+    "exampleUseCases": [
+      "Chat Message",
+      "Instant Message",
+      "Conversation Message",
+      "User Message",
+      "System Message",
+      "Bot Message",
+      "Notification Message"
+    ],
+    "useWhen": [
+      "Use this component to display individual messages in chat.",
+      "Use this component within ChatWindow or ConversationList.",
+      "Use this component to show sender and timestamp information.",
+      "Use this component with status indicators for delivered/read states."
+    ],
+    "avoidWhen": [
+      "Avoid this component without a chat or messaging context.",
+      "Avoid this component for non-message content.",
+      "Avoid this component without proper styling differentiation.",
+      "Avoid this component without sender identification."
+    ],
+    "relatedComponents": [
+      "ChatWindow",
+      "ChatInput",
+      "Avatar"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

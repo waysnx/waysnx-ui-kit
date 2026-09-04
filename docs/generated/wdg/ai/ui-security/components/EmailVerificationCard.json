@@ -1,0 +1,310 @@
+{
+  "id": "ui-security:emailverificationcard",
+  "name": "EmailVerificationCard",
+  "slug": "email-verification-card",
+  "library": "ui-security",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Email Verification Card",
+  "purpose": "Callback to resend verification email",
+  "shortDescription": "Callback to resend verification email",
+  "longDescription": "Callback to resend verification email",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Security/Verification/EmailVerificationCard",
+      "storyId": "security-verification-emailverificationcard",
+      "url": "https://uikit.waysnx.tech/?path=/docs/security-verification-emailverificationcard",
+      "stories": [],
+      "tags": [],
+      "source": "EmailVerificationCard.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use EmailVerificationCard for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a EmailVerificationCard"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "Alert",
+      "Button",
+      "Card",
+      "Input",
+      "OTPResendButton"
+    ],
+    "usedBy": [],
+    "related": [
+      "Alert",
+      "Button",
+      "Card",
+      "Input",
+      "OTPResendButton"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": [
+      "Alert",
+      "Button",
+      "Card",
+      "Input",
+      "OTPResendButton"
+    ]
+  },
+  "dependencies": {
+    "Card": "unknown",
+    "Input": "unknown",
+    "Button": "unknown",
+    "Alert": "unknown",
+    "OTPResendButton": "unknown"
+  },
+  "props": [
+    {
+      "name": "email",
+      "type": "string",
+      "description": "Email address to verify",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "Title for the card",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "description": "Description/instructions",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onVerify",
+      "type": "(code: string) => void | Promise<void>",
+      "description": "Callback when verification code is submitted",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "onResend",
+      "type": "() => void | Promise<void>",
+      "description": "Callback to resend verification email",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "loading",
+      "type": "boolean",
+      "description": "Loading state",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Error message",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "success",
+      "type": "string",
+      "description": "Success message",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "resendCountdown",
+      "type": "number",
+      "description": "Countdown time for resend button",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "Custom CSS class",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "Test ID",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "waysnx-email-value",
+    "waysnx-email-success-text",
+    "waysnx-email-address-display",
+    "waysnx-form-actions",
+    "waysnx-email-resend-section",
+    "waysnx-email-success-info",
+    "waysnx-email-label",
+    "waysnx-email-card-content",
+    "waysnx-form-group",
+    "waysnx-email-resend-label",
+    "waysnx-email-card-description",
+    "waysnx-email-card-title",
+    "waysnx-email-hint"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Verification\\EmailVerificationCard.tsx",
+  "keywords": [
+    "emailverificationcard",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use EmailVerificationCard",
+    "Create an example with EmailVerificationCard",
+    "Generate a EmailVerificationCard component",
+    "Build a EmailVerificationCard in my form"
+  ],
+  "componentIntent": "Provide EmailVerificationCard functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.870543",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "39ce115a",
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-media",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

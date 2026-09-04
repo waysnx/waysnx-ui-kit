@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "trusteddeviceselector",
+    "name": "TrustedDeviceSelector",
+    "package": "@waysnx/ui-security",
+    "export": "TrustedDeviceSelector"
+  },
+  "categories": [
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-disabled-false",
+          "title": "Disabled State",
+          "description": "The component is displayed in a non-interactive state.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "disabled": false
+          },
+          "keywords": [
+            "disabled",
+            "state"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:05.496015",
+  "stats": {
+    "examplesGenerated": 1,
+    "categoriesGenerated": 1
+  }
+}

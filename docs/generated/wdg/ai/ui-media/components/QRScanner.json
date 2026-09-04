@@ -1,0 +1,222 @@
+{
+  "id": "ui-media:qrscanner",
+  "name": "QRScanner",
+  "slug": "qr-scanner",
+  "library": "ui-media",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "QR Scanner",
+  "purpose": "Enable QR code scanning via device camera",
+  "shortDescription": "Enable QR code scanning via device camera.",
+  "longDescription": "Enable QR code scanning via device camera.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Media/QRScanner",
+      "storyId": "media-qrscanner",
+      "url": "https://uikit.waysnx.tech/?path=/docs/media-qrscanner",
+      "stories": [],
+      "tags": [],
+      "source": "QRScanner.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use QRScanner for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a QRScanner"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "useState": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-adv-scanner__frame",
+    "wx-adv-scanner__overlay",
+    "wx-adv-scanner__status",
+    "wx-adv-scanner__viewport"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\QRScanner\\QRScanner.tsx",
+  "keywords": [
+    "qrscanner",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use QRScanner",
+    "Create an example with QRScanner",
+    "Generate a QRScanner component",
+    "Build a QRScanner in my form"
+  ],
+  "componentIntent": "Provide QRScanner functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.373180",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "a0b6e7bd",
+  "metadata": {
+    "purpose": "Enable QR code scanning via device camera.",
+    "description": "A component that uses device camera to scan and decode QR codes. Provides real-time camera preview with scanning overlay and automatic detection. Used for mobile interactions, check-in, and data access.",
+    "functionalAreas": [
+      "Data Entry",
+      "Navigation"
+    ],
+    "userIntents": [
+      "Scan QR code",
+      "Access linked content",
+      "Check in at event",
+      "Connect to WiFi"
+    ],
+    "exampleUseCases": [
+      "QR Code Scanning",
+      "Event Check-in",
+      "WiFi Connection",
+      "URL Access",
+      "Mobile Payment",
+      "Contact Sharing",
+      "Venue Navigation"
+    ],
+    "useWhen": [
+      "Use this component for QR code scanning in mobile applications.",
+      "Use this component for event check-in or attendance.",
+      "Use this component to bridge digital and physical experiences.",
+      "Use this component with automatic QR detection."
+    ],
+    "avoidWhen": [
+      "Avoid this component without camera access permissions.",
+      "Avoid this component on devices without cameras.",
+      "Avoid this component without QR detection library.",
+      "Avoid this component for desktop-only applications."
+    ],
+    "relatedComponents": [
+      "BarcodeScanner",
+      "QRCode",
+      "Camera"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "qrcode",
+        "version": "^1.5.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/qrcode",
+        "version": "^1.5.5"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

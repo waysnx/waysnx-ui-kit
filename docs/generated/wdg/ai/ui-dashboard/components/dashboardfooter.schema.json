@@ -1,0 +1,53 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-dashboard/dashboardfooter.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "DashboardFooter component",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-dashboard",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "children": {
+      "description": "Custom content",
+      "type": "string"
+    },
+    "className": {
+      "description": "Additional CSS class",
+      "type": "string"
+    },
+    "lastUpdated": {
+      "description": "Last updated timestamp",
+      "enum": [
+        "Date",
+        "string"
+      ]
+    },
+    "style": {
+      "description": "Additional CSS styles",
+      "type": "string"
+    },
+    "user": {
+      "description": "Current user",
+      "type": "string"
+    },
+    "version": {
+      "description": "Dashboard version",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "title": "DashboardFooter",
+  "type": "object"
+}

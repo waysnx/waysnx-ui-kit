@@ -1,0 +1,335 @@
+{
+  "id": "ui-core:textarea",
+  "name": "Textarea",
+  "slug": "textarea",
+  "library": "ui-core",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Textarea",
+  "purpose": "Collect multi-line text input from users with optional length limits and formatting",
+  "shortDescription": "Collect multi-line text input from users with optional length limits and formatting.",
+  "longDescription": "Collect multi-line text input from users with optional length limits and formatting.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Components/Textarea",
+      "storyId": "components-textarea",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-textarea",
+      "stories": [],
+      "tags": [],
+      "source": "Textarea.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Textarea for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Textarea"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [
+      "Input"
+    ],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "warn": "unknown"
+  },
+  "props": [
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "hint",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaDescribedBy",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-font-family",
+    "--wx-font-size-sm",
+    "--wx-font-size-xs",
+    "--wx-radius-md"
+  ],
+  "cssClasses": [
+    "wx-textarea-wrapper",
+    "wx-textarea",
+    "wx-textarea-error",
+    "wx-textarea-hint",
+    "wx-textarea-error-text"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {
+    "--wx-font-family": {
+      "properties": [
+        "font-family"
+      ],
+      "selectors": [
+        ".wx-textarea-wrapper"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-sm": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-textarea"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-xs": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-textarea-hint",
+        ".wx-textarea-error-text"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {
+    "--wx-radius-md": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".wx-textarea"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Textarea\\Textarea.tsx",
+  "keywords": [
+    "textarea",
+    "label",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Textarea",
+    "Create an example with Textarea",
+    "Generate a Textarea component",
+    "Build a Textarea in my form"
+  ],
+  "componentIntent": "Provide Textarea functionality",
+  "semanticCategory": "input",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.703690",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "54c92b65",
+  "metadata": {
+    "purpose": "Collect multi-line text input from users with optional length limits and formatting.",
+    "description": "A multi-line text field for capturing longer text entries. Supports maximum character limits with character counter display and resizable dimensions. Provides clear error messaging and optional hints to guide users in entering valid content. Helps users understand input requirements and current progress.",
+    "functionalAreas": [
+      "Data Entry",
+      "Forms",
+      "Feedback"
+    ],
+    "userIntents": [
+      "Enter longer text or comments",
+      "Write notes or descriptions",
+      "Provide feedback or messages",
+      "Complete open-ended form questions"
+    ],
+    "exampleUseCases": [
+      "Feedback Form",
+      "Comment Section",
+      "Description Field",
+      "Bio or Profile Section",
+      "Message Box",
+      "Issue Description"
+    ],
+    "useWhen": [
+      "Use this component when users need to enter multiple lines of text.",
+      "Use this component when character limits need to be visible and tracked.",
+      "Use this component when longer natural language input is expected.",
+      "Use this component when error messaging should be prominent."
+    ],
+    "avoidWhen": [
+      "Avoid this component when single-line input is sufficient (use Input instead).",
+      "Avoid this component when HTML formatting is needed (use HtmlEditor instead).",
+      "Avoid this component when rich text editing is required.",
+      "Avoid this component when space is severely limited."
+    ],
+    "relatedComponents": [
+      "Input",
+      "HtmlEditor",
+      "SpeechToTextTextarea"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "react-imask",
+        "version": "^7.6.1"
+      },
+      {
+        "name": "react-number-format",
+        "version": "^5.4.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-datepicker",
+        "version": "^8.0.0"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-datepicker",
+        "version": "^7.0.0"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

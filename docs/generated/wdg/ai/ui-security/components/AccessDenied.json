@@ -1,0 +1,253 @@
+{
+  "id": "ui-security:accessdenied",
+  "name": "AccessDenied",
+  "slug": "access-denied",
+  "library": "ui-security",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Access Denied",
+  "purpose": "AccessDenied - Screen for access denied errors",
+  "shortDescription": "AccessDenied - Screen for access denied errors",
+  "longDescription": "AccessDenied - Screen for access denied errors",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Security/Pages/AccessDenied",
+      "storyId": "security-pages-accessdenied",
+      "url": "https://uikit.waysnx.tech/?path=/docs/security-pages-accessdenied",
+      "stories": [],
+      "tags": [],
+      "source": "AccessDenied.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use AccessDenied for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a AccessDenied"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "Button",
+      "Stack"
+    ],
+    "usedBy": [],
+    "related": [
+      "Button",
+      "Stack"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": [
+      "Button",
+      "Stack"
+    ]
+  },
+  "dependencies": {
+    "React": "unknown",
+    "Button": "unknown",
+    "Stack": "unknown"
+  },
+  "props": [
+    {
+      "name": "reason",
+      "type": "string",
+      "description": "Access denied reason",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "details",
+      "type": "string",
+      "description": "Additional details",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "backLabel",
+      "type": "string",
+      "description": "Button label for going back",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onBack",
+      "type": "() => void",
+      "description": "Callback when back button is clicked",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "supportLabel",
+      "type": "string",
+      "description": "Button label for contacting support",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onSupport",
+      "type": "() => void",
+      "description": "Callback when support button is clicked",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "Additional CSS class",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Authorization\\AccessDenied.tsx",
+  "keywords": [
+    "components",
+    "accessdenied"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use AccessDenied",
+    "Create an example with AccessDenied",
+    "Generate a AccessDenied component",
+    "Build a AccessDenied in my form"
+  ],
+  "componentIntent": "Provide AccessDenied functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.415866",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "b3d4fc60",
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-media",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

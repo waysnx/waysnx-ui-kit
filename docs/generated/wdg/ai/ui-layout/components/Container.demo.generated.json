@@ -1,0 +1,122 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "container",
+    "name": "Container",
+    "package": "@waysnx/ui-layout",
+    "export": "Container"
+  },
+  "categories": [
+    {
+      "id": "basic",
+      "title": "Basic",
+      "description": "",
+      "examples": [
+        {
+          "id": "basic-label",
+          "title": "With Label",
+          "description": "Displays with a label.",
+          "category": "basic",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "label": "Sample Text"
+          },
+          "keywords": [
+            "label"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sizes",
+      "title": "Sizes",
+      "description": "",
+      "examples": [
+        {
+          "id": "sizes-maxWidth-sm",
+          "title": "Max Width: sm",
+          "description": "Demonstrates the sm maxWidth.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "maxWidth": "sm"
+          },
+          "keywords": [
+            "maxWidth",
+            "sm"
+          ]
+        },
+        {
+          "id": "sizes-maxWidth-md",
+          "title": "Max Width: md",
+          "description": "Demonstrates the md maxWidth.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "maxWidth": "md"
+          },
+          "keywords": [
+            "maxWidth",
+            "md"
+          ]
+        },
+        {
+          "id": "sizes-maxWidth-lg",
+          "title": "Max Width: lg",
+          "description": "Demonstrates the lg maxWidth.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "maxWidth": "lg"
+          },
+          "keywords": [
+            "maxWidth",
+            "lg"
+          ]
+        },
+        {
+          "id": "sizes-maxWidth-xl",
+          "title": "Max Width: xl",
+          "description": "Demonstrates the xl maxWidth.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "maxWidth": "xl"
+          },
+          "keywords": [
+            "maxWidth",
+            "xl"
+          ]
+        },
+        {
+          "id": "sizes-maxWidth-full",
+          "title": "Max Width: full",
+          "description": "Demonstrates the full maxWidth.",
+          "category": "sizes",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "maxWidth": "full"
+          },
+          "keywords": [
+            "maxWidth",
+            "full"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:00.077833",
+  "stats": {
+    "examplesGenerated": 6,
+    "categoriesGenerated": 2
+  }
+}

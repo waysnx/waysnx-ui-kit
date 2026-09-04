@@ -1,0 +1,82 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-navigation/navbar.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display a horizontal navigation bar with multiple navigation links.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": true,
+    "isMemo": false,
+    "library": "ui-navigation",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "backgroundColor": {
+      "description": "Custom background color",
+      "type": "string"
+    },
+    "height": {
+      "description": "Height of navbar",
+      "enum": [
+        "string",
+        "number"
+      ]
+    },
+    "left": {
+      "description": "Left content (after logo)",
+      "type": "string"
+    },
+    "logo": {
+      "description": "Logo or brand element",
+      "type": "string"
+    },
+    "onMobileMenuToggle": {
+      "description": "Callback when mobile menu is toggled",
+      "type": "boolean"
+    },
+    "position": {
+      "description": "Position of navbar",
+      "enum": [
+        "static",
+        "sticky",
+        "fixed"
+      ]
+    },
+    "right": {
+      "description": "Right side content (e.g., user menu, settings)",
+      "type": "string"
+    },
+    "shadow": {
+      "description": "Shadow effect",
+      "enum": [
+        "none",
+        "sm",
+        "md",
+        "lg"
+      ]
+    },
+    "showMobileMenu": {
+      "description": "Show mobile menu button",
+      "type": "boolean"
+    },
+    "sticky": {
+      "description": "Whether navbar is sticky to top",
+      "type": "boolean"
+    },
+    "title": {
+      "description": "Navbar title",
+      "type": "string"
+    }
+  },
+  "required": [],
+  "title": "Navbar",
+  "type": "object"
+}

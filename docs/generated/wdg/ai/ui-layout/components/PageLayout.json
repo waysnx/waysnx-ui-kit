@@ -1,0 +1,213 @@
+{
+  "id": "ui-layout:pagelayout",
+  "name": "PageLayout",
+  "slug": "page-layout",
+  "library": "ui-layout",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Page Layout",
+  "purpose": "Define the overall structure and layout of a page",
+  "shortDescription": "Define the overall structure and layout of a page.",
+  "longDescription": "Define the overall structure and layout of a page.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use PageLayout for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a PageLayout"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown"
+  },
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-page-layout"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\PageLayout\\PageLayout.tsx",
+  "keywords": [
+    "label",
+    "pagelayout",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use PageLayout",
+    "Create an example with PageLayout",
+    "Generate a PageLayout component",
+    "Build a PageLayout in my form"
+  ],
+  "componentIntent": "Provide PageLayout functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.105874",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "217e1a2a",
+  "metadata": {
+    "purpose": "Define the overall structure and layout of a page.",
+    "description": "A master layout component that coordinates multiple page-level components (header, content, sidebar) into a cohesive page structure. Provides consistent page organization with proper spacing and responsive adjustments. Simplifies creation of complex page layouts with header, footer, sidebar, and main content areas.",
+    "functionalAreas": [
+      "Layout"
+    ],
+    "userIntents": [
+      "Create consistent page structure",
+      "Organize page header, content, and sidebar",
+      "Control overall page layout",
+      "Maintain responsive page structure"
+    ],
+    "exampleUseCases": [
+      "Two-column Page Layout",
+      "Three-column Dashboard",
+      "Content with Sidebar",
+      "Settings Page Layout",
+      "Admin Dashboard",
+      "Document Page Layout",
+      "Multi-section Page"
+    ],
+    "useWhen": [
+      "Use this component as the top-level page structure.",
+      "Use this component to organize header, content, and sidebar areas.",
+      "Use this component for consistency across multiple pages.",
+      "Use this component when the page needs responsive layout adjustments."
+    ],
+    "avoidWhen": [
+      "Avoid this component for simple single-column layouts (use Container instead).",
+      "Avoid this component for modal or overlay content.",
+      "Avoid this component without clear page-level sections.",
+      "Avoid this component for non-page content like dialogs or popovers."
+    ],
+    "relatedComponents": [
+      "PageHeader",
+      "PageContent",
+      "PageTabs",
+      "Container"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

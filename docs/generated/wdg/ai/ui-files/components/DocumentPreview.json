@@ -1,0 +1,215 @@
+{
+  "id": "ui-files:documentpreview",
+  "name": "DocumentPreview",
+  "slug": "document-preview",
+  "library": "ui-files",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Document Preview",
+  "purpose": "Display documents and files with automatic type detection and appropriate viewers",
+  "shortDescription": "Display documents and files with automatic type detection and appropriate viewers.",
+  "longDescription": "Display documents and files with automatic type detection and appropriate viewers.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Files/DocumentPreview",
+      "storyId": "files-documentpreview",
+      "url": "https://uikit.waysnx.tech/?path=/docs/files-documentpreview",
+      "stories": [],
+      "tags": [],
+      "source": "DocumentPreview.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use DocumentPreview for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a DocumentPreview"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "PDFViewer"
+    ],
+    "usedBy": [],
+    "related": [
+      "PDFViewer"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": [
+      "PDFViewer"
+    ]
+  },
+  "dependencies": {
+    "PDFViewer": "unknown"
+  },
+  "props": [],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\DocumentPreview\\DocumentPreview.tsx",
+  "keywords": [
+    "documentpreview",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use DocumentPreview",
+    "Create an example with DocumentPreview",
+    "Generate a DocumentPreview component",
+    "Build a DocumentPreview in my form"
+  ],
+  "componentIntent": "Provide DocumentPreview functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.403889",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "e6db7e5f",
+  "metadata": {
+    "purpose": "Display documents and files with automatic type detection and appropriate viewers.",
+    "description": "A flexible document preview component that automatically detects file types and renders appropriate viewers. Supports PDFs, images, videos, audio, markdown, and code files with fallback handling for unknown types. Routes to specialized viewers from ui-media and ui-data libraries based on detected file type.",
+    "functionalAreas": [
+      "Visualization",
+      "Communication",
+      "Feedback"
+    ],
+    "userIntents": [
+      "Preview document contents",
+      "View file before download",
+      "Display document with appropriate viewer",
+      "Verify file types and content"
+    ],
+    "exampleUseCases": [
+      "Document Library",
+      "File Browser",
+      "Email Attachment Preview",
+      "Report Viewer",
+      "Content Management",
+      "File Sharing Interface"
+    ],
+    "useWhen": [
+      "Use this component when displaying various file types with automatic detection.",
+      "Use this component when users need to preview documents before opening.",
+      "Use this component when file type varies and appropriate viewers are needed.",
+      "Use this component when fallback content helps users understand unsupported types."
+    ],
+    "avoidWhen": [
+      "Avoid this component when specialized viewers should be used directly.",
+      "Avoid this component without knowing supported file types.",
+      "Avoid this component when embedding untrusted or unvalidated file sources.",
+      "Avoid this component for binary files or unsupported formats."
+    ],
+    "relatedComponents": [
+      "PDFViewer",
+      "Image",
+      "HtmlContent"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

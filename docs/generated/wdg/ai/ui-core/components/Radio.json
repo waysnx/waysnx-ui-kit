@@ -1,0 +1,488 @@
+{
+  "id": "ui-core:radio",
+  "name": "Radio",
+  "slug": "radio",
+  "library": "ui-core",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Radio",
+  "purpose": "Enable users to select exactly one option from a list of mutually exclusive choices",
+  "shortDescription": "Enable users to select exactly one option from a list of mutually exclusive choices.",
+  "longDescription": "Enable users to select exactly one option from a list of mutually exclusive choices.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Components/Radio",
+      "storyId": "components-radio",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-radio",
+      "stories": [],
+      "tags": [],
+      "source": "Radio.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Radio for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Radio"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "getCachedOptions": "unknown",
+    "useTranslation": "unknown"
+  },
+  "props": [
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "options",
+      "type": "RadioOption[]",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onChange",
+      "type": "(value: string | number) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "columns",
+      "type": "number",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "ariaDescribedBy",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "fetchOptions",
+      "type": "(url: string) => Promise<any[]>",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "xrefIdProp",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "xrefDisplayProp",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onLoadStart",
+      "type": "() => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onLoadEnd",
+      "type": "() => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onError",
+      "type": "(error: Error) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "testId",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-error",
+    "--wx-color-text",
+    "--wx-color-text-light",
+    "--wx-color-text-muted",
+    "--wx-font-family",
+    "--wx-font-size-sm",
+    "--wx-font-size-xs",
+    "--wx-radius-sm"
+  ],
+  "cssClasses": [
+    "wx-radio-group",
+    "wx-radio-group-label",
+    "wx-radio-wrapper",
+    "wx-radio",
+    "wx-radio-label",
+    "wx-radio-disabled",
+    "wx-radio-loading",
+    "wx-radio-no-options",
+    "wx-radio-group-error",
+    "wx-radio-error-text"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {
+    "--wx-font-family": {
+      "properties": [
+        "font-family"
+      ],
+      "selectors": [
+        ".wx-radio-group"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-sm": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-radio-group-label",
+        ".wx-radio-label",
+        ".wx-radio-loading",
+        ".wx-radio-no-options"
+      ],
+      "occurrences": 4,
+      "used": true,
+      "value": ""
+    },
+    "--wx-font-size-xs": {
+      "properties": [
+        "font-size"
+      ],
+      "selectors": [
+        ".wx-radio-error-text"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "colorTokens": {
+    "--wx-color-text": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-radio-group-label",
+        ".wx-radio-label"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-radio-loading"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-text-light": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-radio-no-options"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error": {
+      "properties": [
+        "border",
+        "color"
+      ],
+      "selectors": [
+        ".wx-radio-group-error",
+        ".wx-radio-error-text"
+      ],
+      "occurrences": 2,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {
+    "--wx-radius-sm": {
+      "properties": [
+        "border-radius"
+      ],
+      "selectors": [
+        ".wx-radio-group-error"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Radio\\Radio.tsx",
+  "keywords": [
+    "label",
+    "single",
+    "choice",
+    "radio",
+    "button",
+    "option",
+    "components"
+  ],
+  "aliases": [
+    {
+      "alias": "radio button",
+      "context": "technical",
+      "confidence": 0.95
+    },
+    {
+      "alias": "option selector",
+      "context": "descriptive",
+      "confidence": 0.88
+    },
+    {
+      "alias": "single choice",
+      "context": "descriptive",
+      "confidence": 0.9
+    }
+  ],
+  "synonyms": [
+    "radio button",
+    "option selector"
+  ],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Radio",
+    "Create an example with Radio",
+    "Generate a Radio component",
+    "Build a Radio in my form"
+  ],
+  "componentIntent": "Select single option",
+  "semanticCategory": "input",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.666238",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "c346d0cb",
+  "metadata": {
+    "purpose": "Enable users to select exactly one option from a list of mutually exclusive choices.",
+    "description": "A control for selecting a single value from a predefined set of mutually exclusive options. Options are displayed together for quick comparison and selection. Supports dynamic option loading and layout variations including single or multi-column arrangements. Visual feedback immediately shows the selected option.",
+    "functionalAreas": [
+      "Data Entry",
+      "Forms",
+      "Selection"
+    ],
+    "userIntents": [
+      "Select one option from a list",
+      "Choose a preference or setting",
+      "Indicate a status or classification",
+      "Make a binary or multi-option choice"
+    ],
+    "exampleUseCases": [
+      "Choose Shipment Method",
+      "Select Priority Level",
+      "Choose Account Type",
+      "Select Gender",
+      "Choose Notification Preference",
+      "Select Availability"
+    ],
+    "useWhen": [
+      "Use this component when users must select exactly one option from a list.",
+      "Use this component when all options should be visible for comparison.",
+      "Use this component when there are typically 3-5 mutually exclusive choices.",
+      "Use this component when space permits displaying all options without scrolling."
+    ],
+    "avoidWhen": [
+      "Avoid this component when multiple selections are allowed (use Checkbox instead).",
+      "Avoid this component when there are many options (use Select instead).",
+      "Avoid this component when options need to be hidden until selected.",
+      "Avoid this component when space is severely limited."
+    ],
+    "relatedComponents": [
+      "Checkbox",
+      "Select",
+      "Switch"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "react-imask",
+        "version": "^7.6.1"
+      },
+      {
+        "name": "react-number-format",
+        "version": "^5.4.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-datepicker",
+        "version": "^8.0.0"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-datepicker",
+        "version": "^7.0.0"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "collapsible",
+    "name": "Collapsible",
+    "package": "@waysnx/ui-layout",
+    "export": "Collapsible"
+  },
+  "categories": [
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-defaultOpen-false",
+          "title": "Disabled State",
+          "description": "Example with defaultOpen enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "defaultOpen": false
+          },
+          "keywords": [
+            "defaultOpen",
+            "state"
+          ]
+        },
+        {
+          "id": "states-defaultOpen-true",
+          "title": "Enabled State",
+          "description": "Example with defaultOpen enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "defaultOpen": true
+          },
+          "keywords": [
+            "defaultOpen",
+            "state"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:00.060670",
+  "stats": {
+    "examplesGenerated": 2,
+    "categoriesGenerated": 1
+  }
+}

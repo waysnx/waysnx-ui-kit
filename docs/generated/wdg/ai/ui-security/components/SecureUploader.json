@@ -1,0 +1,269 @@
+{
+  "id": "ui-security:secureuploader",
+  "name": "SecureUploader",
+  "slug": "secure-uploader",
+  "library": "ui-security",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Secure Uploader",
+  "purpose": "SecureUploader - File upload with security validation",
+  "shortDescription": "SecureUploader - File upload with security validation",
+  "longDescription": "SecureUploader - File upload with security validation",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Security/Secure Inputs/SecureUploader",
+      "storyId": "security-secure-inputs-secureuploader",
+      "url": "https://uikit.waysnx.tech/?path=/docs/security-secure-inputs-secureuploader",
+      "stories": [],
+      "tags": [],
+      "source": "SecureUploader.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use SecureUploader for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a SecureUploader"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [
+      "Button",
+      "Stack"
+    ],
+    "usedBy": [],
+    "related": [
+      "Button",
+      "Stack"
+    ],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": [
+      "Button",
+      "Stack"
+    ]
+  },
+  "dependencies": {
+    "Button": "unknown",
+    "Stack": "unknown"
+  },
+  "props": [
+    {
+      "name": "allowedTypes",
+      "type": "string[]",
+      "description": "Allowed file types (MIME types)",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "maxSize",
+      "type": "number",
+      "description": "Maximum file size in bytes",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "multiple",
+      "type": "boolean",
+      "description": "Whether to allow multiple files",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "Label text",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onFilesSelected",
+      "type": "(files: File[]) => Promise<void>",
+      "description": "Callback when files are selected",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onError",
+      "type": "(error: string) => void",
+      "description": "Callback for upload errors",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "isLoading",
+      "type": "boolean",
+      "description": "Whether upload is in progress",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "height",
+      "type": "string",
+      "description": "Drag and drop area height",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "helperText",
+      "type": "string",
+      "description": "Custom help text",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\SecureInputs\\SecureUploader.tsx",
+  "keywords": [
+    "label",
+    "secureuploader",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use SecureUploader",
+    "Create an example with SecureUploader",
+    "Generate a SecureUploader component",
+    "Build a SecureUploader in my form"
+  ],
+  "componentIntent": "Provide SecureUploader functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.647722",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "a3c7712c",
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-core",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-feedback",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-layout",
+        "version": "workspace:*"
+      },
+      {
+        "name": "@waysnx/ui-media",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

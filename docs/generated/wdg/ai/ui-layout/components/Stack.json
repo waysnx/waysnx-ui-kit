@@ -1,0 +1,294 @@
+{
+  "id": "ui-layout:stack",
+  "name": "Stack",
+  "slug": "stack",
+  "library": "ui-layout",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Stack",
+  "purpose": "Arrange elements in a single row or column with consistent spacing",
+  "shortDescription": "Arrange elements in a single row or column with consistent spacing.",
+  "longDescription": "Arrange elements in a single row or column with consistent spacing.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Stack for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Stack"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [
+      "AccessDenied",
+      "ActiveSessions",
+      "ActivityFeed",
+      "BackupCodesCard",
+      "ConcurrentSessionDialog",
+      "LoginHistory",
+      "MFASettingsPanel",
+      "MFASetupWizard",
+      "MFAStatus",
+      "MFAVerificationDialog",
+      "PINInput",
+      "PasswordPolicyPanel",
+      "PrivacySettingsPanel",
+      "SecureUploader",
+      "SecurityAlertsPanel",
+      "SecurityEventLog",
+      "SecurityLogsPanel",
+      "SecuritySettingsPanel",
+      "SessionPolicyPanel",
+      "SessionTimeoutDialog",
+      "TrustedDeviceSelector",
+      "TrustedDevicesPanel",
+      "UnauthorizedPage"
+    ],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [
+      "AccessDenied",
+      "ActiveSessions",
+      "ActivityFeed",
+      "BackupCodesCard",
+      "ConcurrentSessionDialog",
+      "LoginHistory",
+      "MFASettingsPanel",
+      "MFASetupWizard",
+      "MFAStatus",
+      "MFAVerificationDialog",
+      "PINInput",
+      "PasswordPolicyPanel",
+      "PrivacySettingsPanel",
+      "SecureUploader",
+      "SecurityAlertsPanel",
+      "SecurityEventLog",
+      "SecurityLogsPanel",
+      "SecuritySettingsPanel",
+      "SessionPolicyPanel",
+      "SessionTimeoutDialog",
+      "TrustedDeviceSelector",
+      "TrustedDevicesPanel",
+      "UnauthorizedPage"
+    ],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown"
+  },
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "direction",
+      "type": "'vertical' | 'horizontal'",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "gap",
+      "type": "number | string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "align",
+      "type": "'start' | 'center' | 'end' | 'stretch'",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-stack",
+    "wx-stack-vertical",
+    "wx-stack-horizontal"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Stack\\Stack.tsx",
+  "keywords": [
+    "stack",
+    "label",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Stack",
+    "Create an example with Stack",
+    "Generate a Stack component",
+    "Build a Stack in my form"
+  ],
+  "componentIntent": "Provide Stack functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.164581",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "a1fdad88",
+  "metadata": {
+    "purpose": "Arrange elements in a single row or column with consistent spacing.",
+    "description": "A layout primitive that arranges child elements in a stack (vertical or horizontal) with consistent spacing. Simplifies flex layouts by providing a simple, declarative way to create common layouts. Supports responsive direction changes and flexible item sizing.",
+    "functionalAreas": [
+      "Layout"
+    ],
+    "userIntents": [
+      "Arrange elements in a row or column",
+      "Add consistent spacing between elements",
+      "Create responsive layouts",
+      "Organize simple layouts"
+    ],
+    "exampleUseCases": [
+      "Button Group",
+      "Form Field Stack",
+      "Navigation Bar",
+      "Toolbar",
+      "List Layout",
+      "Card Contents",
+      "Dialog Contents"
+    ],
+    "useWhen": [
+      "Use this component to arrange elements in a single row or column.",
+      "Use this component for simple layouts with consistent spacing.",
+      "Use this component as an alternative to writing flexbox CSS.",
+      "Use this component to create responsive layouts that change direction."
+    ],
+    "avoidWhen": [
+      "Avoid this component for complex multi-column grids (use Grid instead).",
+      "Avoid this component when elements need specific positioning.",
+      "Avoid this component for wrapping layouts (elements should fit without wrapping).",
+      "Avoid this component with only one or two elements (use margin instead)."
+    ],
+    "relatedComponents": [
+      "Grid",
+      "Container",
+      "Spacer"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

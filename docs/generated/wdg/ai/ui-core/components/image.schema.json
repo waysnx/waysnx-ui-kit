@@ -1,0 +1,83 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-core/image.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Display images with responsive sizing, fallback handling, and accessibility support.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-core",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "alt": {
+      "description": "",
+      "type": "string"
+    },
+    "caption": {
+      "description": "",
+      "type": "string"
+    },
+    "className": {
+      "description": "",
+      "type": "string"
+    },
+    "fallback": {
+      "description": "",
+      "type": "string"
+    },
+    "fit": {
+      "description": "",
+      "enum": [
+        "cover",
+        "contain",
+        "fill",
+        "none"
+      ]
+    },
+    "height": {
+      "description": "",
+      "enum": [
+        "string",
+        "number"
+      ]
+    },
+    "rounded": {
+      "description": "",
+      "enum": [
+        "boolean",
+        "full"
+      ]
+    },
+    "src": {
+      "description": "",
+      "type": "string"
+    },
+    "testId": {
+      "description": "",
+      "type": "string"
+    },
+    "width": {
+      "description": "",
+      "enum": [
+        "string",
+        "number"
+      ]
+    }
+  },
+  "required": [
+    "src",
+    "alt"
+  ],
+  "title": "Image",
+  "type": "object"
+}

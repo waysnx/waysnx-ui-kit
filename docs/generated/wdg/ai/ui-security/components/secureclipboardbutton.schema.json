@@ -1,0 +1,76 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/secureclipboardbutton.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "SecureClipboardButton - Copy sensitive content to clipboard securely Features: - Uses Clipboard API for secure copying - Auto-clear clipboard after configured delay - Fallback to legacy approach if Clipboard API unavailable - Feedback on success - Error handling",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "autoClearMs": {
+      "description": "",
+      "type": "number"
+    },
+    "content": {
+      "description": "Text or function that returns text to copy",
+      "enum": [
+        "string",
+        "(() => string)"
+      ]
+    },
+    "disabled": {
+      "description": "Whether button is disabled",
+      "type": "boolean"
+    },
+    "label": {
+      "description": "Button label",
+      "type": "string"
+    },
+    "onCopyError": {
+      "description": "Callback on copy error",
+      "type": "null"
+    },
+    "onCopySuccess": {
+      "description": "Callback on successful copy",
+      "type": "null"
+    },
+    "size": {
+      "description": "Button size",
+      "enum": [
+        "sm",
+        "md",
+        "lg"
+      ]
+    },
+    "successLabel": {
+      "description": "Label shown after successful copy",
+      "type": "string"
+    },
+    "variant": {
+      "description": "Button variant",
+      "enum": [
+        "primary",
+        "secondary",
+        "outline",
+        "ghost"
+      ]
+    }
+  },
+  "required": [
+    "content"
+  ],
+  "title": "SecureClipboardButton",
+  "type": "object"
+}

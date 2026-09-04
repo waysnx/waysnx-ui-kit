@@ -1,0 +1,45 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-dashboard/dashboardsearch.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "DashboardSearch component",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-dashboard",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "debounceDelay": {
+      "description": "Debounce delay in ms",
+      "type": "number"
+    },
+    "placeholder": {
+      "description": "Search placeholder",
+      "type": "string"
+    },
+    "showSuggestions": {
+      "description": "Show suggestions",
+      "type": "boolean"
+    },
+    "suggestions": {
+      "description": "Search suggestions",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [],
+  "title": "DashboardSearch",
+  "type": "object"
+}

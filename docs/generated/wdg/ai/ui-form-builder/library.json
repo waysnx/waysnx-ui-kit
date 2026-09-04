@@ -1,0 +1,113 @@
+{
+  "id": "ui-form-builder",
+  "name": "UI Form Builder",
+  "slug": "ui-form-builder",
+  "version": "1.0.0",
+  "status": "stable",
+  "type": "functional-library",
+  "purpose": "JSON schema-based dynamic form generation with conditional rendering, complex layouts, and validation",
+  "short_description": "Dynamic form builder powered by JSON Schema with advanced layouts and conditional logic",
+  "long_description": "\n@waysnx/ui-form-builder provides a complete form generation system from JSON Schema definitions.\n\nKey Capabilities:\n- JSON Schema to form field conversion\n- Complex grid-based layout system\n- Conditional field visibility and validation\n- Form array handling for dynamic field groups\n- Field evaluation and dependency resolution\n- DynamicForm component for automatic rendering\n- Validation condition system\n- Extensible form field resolution\n",
+  "capabilities": [
+    "JSON Schema form generation",
+    "Complex grid layouts",
+    "Conditional field logic",
+    "Dynamic field arrays",
+    "Field validation",
+    "Dependency resolution",
+    "Custom field rendering",
+    "Layout control"
+  ],
+  "exports": {
+    "components": [
+      {
+        "name": "DynamicForm",
+        "description": "Automatic form renderer from schema",
+        "props": "DynamicFormProps"
+      },
+      {
+        "name": "FormArray",
+        "description": "Dynamic field array component",
+        "props": "FormArrayProps"
+      }
+    ],
+    "functions": [
+      {
+        "name": "schemaToFormFields",
+        "description": "Convert JSON Schema to form field configuration",
+        "signature": "schemaToFormFields(schema: JSONSchema): FormFieldConfig[]"
+      },
+      {
+        "name": "resolveField",
+        "description": "Resolve single field configuration",
+        "signature": "resolveField(schema: JSONSchemaProperty): FormFieldConfig"
+      },
+      {
+        "name": "evaluateCondition",
+        "description": "Evaluate single conditional rule",
+        "signature": "evaluateCondition(condition: ControlCondition, formValues: any): boolean"
+      },
+      {
+        "name": "evaluateConditions",
+        "description": "Evaluate multiple conditions",
+        "signature": "evaluateConditions(conditions: ControlCondition[], formValues: any): boolean"
+      },
+      {
+        "name": "shouldShowField",
+        "description": "Determine if field should be visible",
+        "signature": "shouldShowField(field: FormFieldConfig, formValues: any): boolean"
+      },
+      {
+        "name": "shouldDisableField",
+        "description": "Determine if field should be disabled",
+        "signature": "shouldDisableField(field: FormFieldConfig, formValues: any): boolean"
+      },
+      {
+        "name": "shouldRequireField",
+        "description": "Determine if field should be required",
+        "signature": "shouldRequireField(field: FormFieldConfig, formValues: any): boolean"
+      }
+    ],
+    "types": [
+      "JSONSchema",
+      "JSONSchemaProperty",
+      "FormFieldConfig",
+      "ControlCondition",
+      "FormLayout",
+      "GridRow",
+      "GridCell",
+      "CellSettings",
+      "RowSettings",
+      "LayoutSettings",
+      "LayoutButton",
+      "FormArrayProps",
+      "DynamicFormProps"
+    ]
+  },
+  "integration": {
+    "schema_standard": "JSON Schema",
+    "form_values": "Native object format",
+    "layout_system": "CSS Grid based",
+    "conditional_logic": "Rule-based field visibility and validation"
+  },
+  "use_cases": [
+    "Dynamic form generation from backend schemas",
+    "Complex survey/questionnaire systems",
+    "Configurable data entry forms",
+    "Conditional question/field revelation",
+    "Dynamic form array sections",
+    "Schema-driven business logic forms",
+    "User-configurable form builders"
+  ],
+  "keywords": [
+    "form-builder",
+    "json-schema",
+    "dynamic-forms",
+    "form-generation",
+    "conditional-fields",
+    "grid-layout",
+    "form-validation",
+    "schema-driven"
+  ],
+  "generatedAt": "2026-09-03T20:02:50.550108"
+}

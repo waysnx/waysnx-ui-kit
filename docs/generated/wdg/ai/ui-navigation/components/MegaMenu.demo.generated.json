@@ -1,0 +1,189 @@
+{
+  "version": "1.0",
+  "generated": true,
+  "generator": "WaysNX Knowledge Generator",
+  "component": {
+    "id": "megamenu",
+    "name": "MegaMenu",
+    "package": "@waysnx/ui-navigation",
+    "export": "MegaMenu"
+  },
+  "categories": [
+    {
+      "id": "icons",
+      "title": "Icons",
+      "description": "",
+      "examples": [
+        {
+          "id": "icons-showIcons",
+          "title": "With Icon",
+          "description": "Displays with an icon.",
+          "category": "icons",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "showIcons": true
+          },
+          "keywords": [
+            "showIcons"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "states",
+      "title": "States",
+      "description": "",
+      "examples": [
+        {
+          "id": "states-showIcons-false",
+          "title": "Disabled State",
+          "description": "Example with showIcons enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "showIcons": false
+          },
+          "keywords": [
+            "showIcons",
+            "state"
+          ]
+        },
+        {
+          "id": "states-showIcons-true",
+          "title": "Enabled State",
+          "description": "Example with showIcons enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "showIcons": true
+          },
+          "keywords": [
+            "showIcons",
+            "state"
+          ]
+        },
+        {
+          "id": "states-hoverToOpen-false",
+          "title": "Disabled State",
+          "description": "Example with hoverToOpen enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "hoverToOpen": false
+          },
+          "keywords": [
+            "hoverToOpen",
+            "state"
+          ]
+        },
+        {
+          "id": "states-hoverToOpen-true",
+          "title": "Enabled State",
+          "description": "Example with hoverToOpen enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "hoverToOpen": true
+          },
+          "keywords": [
+            "hoverToOpen",
+            "state"
+          ]
+        },
+        {
+          "id": "states-allowMultipleOpen-false",
+          "title": "Disabled State",
+          "description": "Example with allowMultipleOpen enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "allowMultipleOpen": false
+          },
+          "keywords": [
+            "allowMultipleOpen",
+            "state"
+          ]
+        },
+        {
+          "id": "states-allowMultipleOpen-true",
+          "title": "Enabled State",
+          "description": "Example with allowMultipleOpen enabled.",
+          "category": "states",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "allowMultipleOpen": true
+          },
+          "keywords": [
+            "allowMultipleOpen",
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "variants",
+      "title": "Variants",
+      "description": "",
+      "examples": [
+        {
+          "id": "variants-variant-default",
+          "title": "Variant: default",
+          "description": "Demonstrates the default variant.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "variant": "default"
+          },
+          "keywords": [
+            "variant",
+            "default"
+          ]
+        },
+        {
+          "id": "variants-variant-minimal",
+          "title": "Variant: minimal",
+          "description": "Demonstrates the minimal variant.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "variant": "minimal"
+          },
+          "keywords": [
+            "variant",
+            "minimal"
+          ]
+        },
+        {
+          "id": "variants-variant-elevated",
+          "title": "Variant: elevated",
+          "description": "Demonstrates the elevated variant.",
+          "category": "variants",
+          "source": "metadata",
+          "confidence": 0.85,
+          "props": {
+            "variant": "elevated"
+          },
+          "keywords": [
+            "variant",
+            "elevated"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceHash": "unknown",
+  "generatedAt": "2026-09-03T20:03:02.653580",
+  "stats": {
+    "examplesGenerated": 10,
+    "categoriesGenerated": 3
+  }
+}

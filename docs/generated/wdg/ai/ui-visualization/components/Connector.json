@@ -1,0 +1,247 @@
+{
+  "id": "ui-visualization:connector",
+  "name": "Connector",
+  "slug": "connector",
+  "library": "ui-visualization",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Connector",
+  "purpose": "Draw connections between elements to show relationships",
+  "shortDescription": "Draw connections between elements to show relationships.",
+  "longDescription": "Draw connections between elements to show relationships.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Connector for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Connector"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [
+      "Hierarchy",
+      "OrgChart",
+      "Tree"
+    ],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [
+      "Hierarchy",
+      "OrgChart",
+      "Tree"
+    ],
+    "childComponents": []
+  },
+  "dependencies": {},
+  "props": [
+    {
+      "name": "edge",
+      "type": "VisEdge",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "sourceNode",
+      "type": "LayoutNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "targetNode",
+      "type": "LayoutNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "isSelected",
+      "type": "boolean",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "onClick",
+      "type": "(edgeId: string) => void",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Connector\\Connector.tsx",
+  "keywords": [
+    "connector",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Connector",
+    "Create an example with Connector",
+    "Generate a Connector component",
+    "Build a Connector in my form"
+  ],
+  "componentIntent": "Provide Connector functionality",
+  "semanticCategory": "utility",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.894477",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "6d83e643",
+  "metadata": {
+    "purpose": "Draw connections between elements to show relationships.",
+    "description": "A component that renders visual connectors (lines, arrows) between UI elements to show relationships or flow. Used in diagrams, flowcharts, or any visualization where element connections are important.",
+    "functionalAreas": [
+      "Visualization"
+    ],
+    "userIntents": [
+      "See relationships",
+      "Understand flow",
+      "Know connections",
+      "View diagram"
+    ],
+    "exampleUseCases": [
+      "Flowchart Connectors",
+      "Process Diagram",
+      "Relationship Lines",
+      "Data Flow",
+      "Pipeline",
+      "Workflow Visualization",
+      "Connection Lines"
+    ],
+    "useWhen": [
+      "Use this component to show connections between elements.",
+      "Use this component in flowcharts or diagrams.",
+      "Use this component to visualize relationships or flow.",
+      "Use this component with customizable connector styles."
+    ],
+    "avoidWhen": [
+      "Avoid this component without clear relationship semantics.",
+      "Avoid this component for simple layout (use CSS instead).",
+      "Avoid this component with excessive visual clutter.",
+      "Avoid this component without proper rendering performance."
+    ],
+    "relatedComponents": [
+      "Tree",
+      "Hierarchy",
+      "OrgChart"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

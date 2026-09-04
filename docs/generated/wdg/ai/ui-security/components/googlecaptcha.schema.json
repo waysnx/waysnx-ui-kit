@@ -1,0 +1,53 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/googlecaptcha.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "GoogleCaptcha - Google reCAPTCHA v3 integration",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "onError": {
+      "description": "Callback on verification failure",
+      "type": "null"
+    },
+    "onVerify": {
+      "description": "Callback when verification succeeds",
+      "type": "string"
+    },
+    "siteKey": {
+      "description": "Sitekey from Google reCAPTCHA",
+      "type": "string"
+    },
+    "size": {
+      "description": "Size (normal, compact, invisible)",
+      "enum": [
+        "normal",
+        "compact",
+        "invisible"
+      ]
+    },
+    "theme": {
+      "description": "Theme (light or dark)",
+      "enum": [
+        "light",
+        "dark"
+      ]
+    }
+  },
+  "required": [],
+  "title": "GoogleCaptcha",
+  "type": "object"
+}

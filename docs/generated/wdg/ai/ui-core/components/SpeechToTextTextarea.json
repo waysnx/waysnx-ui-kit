@@ -1,0 +1,306 @@
+{
+  "id": "ui-core:speechtotexttextarea",
+  "name": "SpeechToTextTextarea",
+  "slug": "speech-to-text-textarea",
+  "library": "ui-core",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Speech To Text Textarea",
+  "purpose": "Enable users to enter text through voice input combined with traditional text editing",
+  "shortDescription": "Enable users to enter text through voice input combined with traditional text editing.",
+  "longDescription": "Enable users to enter text through voice input combined with traditional text editing.",
+  "references": {
+    "storybook": {
+      "available": true,
+      "title": "Components/SpeechToTextTextarea",
+      "storyId": "components-speechtotexttextarea",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-speechtotexttextarea",
+      "stories": [],
+      "tags": [],
+      "source": "SpeechToTextTextarea.stories.tsx"
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use SpeechToTextTextarea for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a SpeechToTextTextarea"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "warn": "unknown"
+  },
+  "props": [
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "hint",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [
+    "--wx-color-error",
+    "--wx-color-error-hover",
+    "--wx-color-primary",
+    "--wx-color-text-muted"
+  ],
+  "cssClasses": [
+    "wx-speech-textarea-container",
+    "wx-speech-textarea",
+    "wx-speech-textarea-mic",
+    "wx-speech-textarea-mic--active"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {
+    "--wx-color-text-muted": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-speech-textarea-mic"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-primary": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-speech-textarea-mic:hover"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-speech-textarea-mic--active"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    },
+    "--wx-color-error-hover": {
+      "properties": [
+        "color"
+      ],
+      "selectors": [
+        ".wx-speech-textarea-mic--active:hover"
+      ],
+      "occurrences": 1,
+      "used": true,
+      "value": ""
+    }
+  },
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": true,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\SpeechToTextTextarea\\SpeechToTextTextarea.tsx",
+  "keywords": [
+    "speechtotexttextarea",
+    "label",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use SpeechToTextTextarea",
+    "Create an example with SpeechToTextTextarea",
+    "Generate a SpeechToTextTextarea component",
+    "Build a SpeechToTextTextarea in my form"
+  ],
+  "componentIntent": "Provide SpeechToTextTextarea functionality",
+  "semanticCategory": "input",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:24.688921",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "d16a58a3",
+  "metadata": {
+    "purpose": "Enable users to enter text through voice input combined with traditional text editing.",
+    "description": "A textarea component enhanced with voice-to-text capability using the Web Speech API. Displays a microphone button that toggles speech recognition recording and appends recognized text to the textarea. Supports character count limits and provides visual feedback of active recording state.",
+    "functionalAreas": [
+      "Data Entry",
+      "Forms",
+      "Communication"
+    ],
+    "userIntents": [
+      "Enter text using voice",
+      "Create accessible text input",
+      "Dictate longer content",
+      "Combine typing and dictation"
+    ],
+    "exampleUseCases": [
+      "Accessibility-First Input",
+      "Hands-Free Entry",
+      "Dictation Support",
+      "Accessible Notes",
+      "Voice Comments",
+      "Dictated Messages"
+    ],
+    "useWhen": [
+      "Use this component when voice input improves accessibility for users.",
+      "Use this component when users should be able to dictate content.",
+      "Use this component when hands-free input is beneficial.",
+      "Use this component when browser speech recognition is available."
+    ],
+    "avoidWhen": [
+      "Avoid this component when speech recognition is not supported in target browsers.",
+      "Avoid this component in noisy environments where accuracy is critical.",
+      "Avoid this component when privacy concerns prevent audio capture.",
+      "Avoid this component when text input must be precise and dictation may add errors."
+    ],
+    "relatedComponents": [
+      "Textarea",
+      "Input",
+      "FileUpload"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      },
+      {
+        "name": "dompurify",
+        "version": "^3.3.1"
+      },
+      {
+        "name": "react-imask",
+        "version": "^7.6.1"
+      },
+      {
+        "name": "react-number-format",
+        "version": "^5.4.4"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      },
+      {
+        "name": "react-datepicker",
+        "version": "^8.0.0"
+      },
+      {
+        "name": "react-dom",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/dompurify",
+        "version": "^3.0.5"
+      },
+      {
+        "name": "@types/node",
+        "version": "^25.0.3"
+      },
+      {
+        "name": "@types/react",
+        "version": "^19.2.7"
+      },
+      {
+        "name": "@types/react-datepicker",
+        "version": "^7.0.0"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}

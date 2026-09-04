@@ -1,0 +1,59 @@
+{
+  "$id": "https://waysnx.com/schemas/ui-security/activesessions.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "ActiveSessions Component Displays list of active sessions with device info and actions to revoke them.",
+  "metadata": {
+    "accessibility": {
+      "ariaRoles": [],
+      "keyboardSupport": [],
+      "wcagLevel": "AA"
+    },
+    "category": "components",
+    "hasExamples": false,
+    "hasStories": false,
+    "hasTests": false,
+    "isForwardRef": false,
+    "isMemo": false,
+    "library": "ui-security",
+    "version": "1.0.0"
+  },
+  "properties": {
+    "currentSessionId": {
+      "description": "Current session ID (to mark as current)",
+      "type": "string"
+    },
+    "currentSessionLabel": {
+      "description": "Custom label for current session",
+      "type": "string"
+    },
+    "isRevoking": {
+      "description": "Whether currently revoking a session",
+      "type": "boolean"
+    },
+    "onRevokeAll": {
+      "description": "Callback when all other sessions are revoked",
+      "type": "null"
+    },
+    "onRevokeSession": {
+      "description": "Callback to revoke a session",
+      "type": "string"
+    },
+    "sessions": {
+      "description": "List of active sessions",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "showRevokeAll": {
+      "description": "Whether showing revoke all button",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "sessions"
+  ],
+  "title": "ActiveSessions",
+  "type": "object"
+}

@@ -1,0 +1,238 @@
+{
+  "id": "ui-layout:grid",
+  "name": "Grid",
+  "slug": "grid",
+  "library": "ui-layout",
+  "category": "components",
+  "version": "1.0.0",
+  "status": "stable",
+  "displayName": "Grid",
+  "purpose": "Arrange content in a responsive grid layout",
+  "shortDescription": "Arrange content in a responsive grid layout.",
+  "longDescription": "Arrange content in a responsive grid layout.",
+  "references": {
+    "storybook": {
+      "available": false,
+      "title": "",
+      "storyId": "",
+      "url": "",
+      "stories": [],
+      "tags": [],
+      "source": ""
+    }
+  },
+  "useCases": [
+    {
+      "title": "General Purpose",
+      "description": "Use Grid for general-purpose components functionality",
+      "businessDomain": null,
+      "enterpriseModule": null,
+      "examplePrompt": "Add a Grid"
+    }
+  ],
+  "antiPatterns": [],
+  "businessDomains": [
+    "hrms",
+    "crm",
+    "erp"
+  ],
+  "enterpriseModules": [
+    "dashboards"
+  ],
+  "recommendedScenarios": [],
+  "avoidScenarios": [],
+  "relationships": {
+    "uses": [],
+    "usedBy": [],
+    "related": [],
+    "alternatives": [],
+    "parentComponents": [],
+    "childComponents": []
+  },
+  "dependencies": {
+    "React": "unknown"
+  },
+  "props": [
+    {
+      "name": "children",
+      "type": "React.ReactNode",
+      "description": "",
+      "default": null,
+      "required": true,
+      "tags": []
+    },
+    {
+      "name": "columns",
+      "type": "number | string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "gap",
+      "type": "number | string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "",
+      "default": null,
+      "required": false,
+      "tags": []
+    }
+  ],
+  "events": [],
+  "hooksUsed": [],
+  "contextsUsed": [],
+  "forwardRef": false,
+  "memo": false,
+  "cssVariables": [],
+  "cssClasses": [
+    "wx-grid"
+  ],
+  "designTokens": {},
+  "themeTokens": {},
+  "spacingTokens": {},
+  "typographyTokens": {},
+  "colorTokens": {},
+  "shadowTokens": {},
+  "radiusTokens": {},
+  "animationTokens": {},
+  "wcagVersion": "2.1",
+  "wcagLevel": "AA",
+  "ariaRoles": [],
+  "keyboardSupport": [],
+  "keyboardAccessible": "unknown",
+  "focusManagement": false,
+  "screenReaderSupport": false,
+  "highContrastSupport": false,
+  "highContrastAccessible": "unknown",
+  "rtlSupport": false,
+  "rtlAccessible": "unknown",
+  "light": null,
+  "dark": null,
+  "highContrast": null,
+  "responsive": false,
+  "storybook": false,
+  "playwright": false,
+  "vitest": false,
+  "jest": false,
+  "examples": 0,
+  "documentation": true,
+  "sourceFile": "src\\components\\Grid\\Grid.tsx",
+  "keywords": [
+    "label",
+    "grid",
+    "components"
+  ],
+  "aliases": [],
+  "synonyms": [],
+  "naturalLanguageQueries": [],
+  "recommendedPrompts": [
+    "Show me how to use Grid",
+    "Create an example with Grid",
+    "Generate a Grid component",
+    "Build a Grid in my form"
+  ],
+  "componentIntent": "Create grid layouts",
+  "semanticCategory": "layout",
+  "usedInApplications": [],
+  "usedInPatterns": [],
+  "usedInFeatures": [],
+  "usedInWorkflows": [],
+  "usedInModules": [],
+  "generatedAt": "2026-09-03T20:02:25.084337",
+  "generatorVersion": "2.0.0",
+  "sourceHash": "4b3e5c36",
+  "metadata": {
+    "purpose": "Arrange content in a responsive grid layout.",
+    "description": "A flexible grid layout component that automatically arranges child items into columns based on available space and configuration. Supports responsive column counts, gaps, and alignment options. Commonly used for displaying collections of items like product cards, gallery images, or dashboard widgets.",
+    "functionalAreas": [
+      "Layout",
+      "Visualization"
+    ],
+    "userIntents": [
+      "Display items in a grid",
+      "Create responsive multi-column layout",
+      "Organize items by category",
+      "Show collections efficiently"
+    ],
+    "exampleUseCases": [
+      "Product Grid",
+      "Image Gallery",
+      "Card Grid",
+      "Dashboard Widgets",
+      "Portfolio Grid",
+      "Thumbnail Grid",
+      "Feature Showcase"
+    ],
+    "useWhen": [
+      "Use this component to arrange items in a grid layout.",
+      "Use this component when you need responsive column adjustments.",
+      "Use this component to display collections of similar items.",
+      "Use this component for product displays, galleries, or dashboard layouts."
+    ],
+    "avoidWhen": [
+      "Avoid this component for simple single-row or single-column layouts.",
+      "Avoid this component when exact positioning is critical (use CSS Grid directly).",
+      "Avoid this component for data tables (use Table component instead).",
+      "Avoid this component when items have highly variable sizes."
+    ],
+    "relatedComponents": [
+      "Container",
+      "Row",
+      "Column",
+      "Stack"
+    ]
+  },
+  "packageDependencies": {
+    "runtime": [
+      {
+        "name": "@waysnx/ui-i18n",
+        "version": "workspace:*"
+      }
+    ],
+    "peer": [
+      {
+        "name": "react",
+        "version": ">=18"
+      }
+    ],
+    "optional": [],
+    "development": [
+      {
+        "name": "@types/react",
+        "version": "^19.2.8"
+      },
+      {
+        "name": "@types/react-dom",
+        "version": "^19.2.3"
+      },
+      {
+        "name": "copyfiles",
+        "version": "^2.4.1"
+      },
+      {
+        "name": "tsup",
+        "version": "^8.5.1"
+      },
+      {
+        "name": "typescript",
+        "version": "^5.9.3"
+      }
+    ]
+  }
+}
