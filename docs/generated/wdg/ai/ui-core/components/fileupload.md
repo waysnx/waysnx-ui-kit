@@ -114,7 +114,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** fileupload, label, components
+**Keywords:** label, fileupload, components
 
 **Semantic Category:** input
 

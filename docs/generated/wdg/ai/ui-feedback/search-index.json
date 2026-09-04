@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
   "library": "ui-feedback",
-  "generatedAt": "2026-09-03T20:02:50.539998",
+  "generatedAt": "2026-09-04T11:35:05.176685",
   "components": [
     {
       "id": "ui-feedback:alert",
@@ -61,7 +61,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -80,8 +80,8 @@
       "category": "components",
       "description": "Display a small numeric or dot indicator to convey status or count information.",
       "keywords": [
-        "badge",
-        "components"
+        "components",
+        "badge"
       ],
       "aliases": [],
       "synonyms": [],
@@ -150,7 +150,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -170,9 +170,9 @@
       "description": "Visualize numeric progress in a circular format.",
       "keywords": [
         "label",
-        "circularprogress",
+        "components",
         "value",
-        "components"
+        "circularprogress"
       ],
       "aliases": [],
       "synonyms": [],
@@ -234,8 +234,8 @@
       "category": "components",
       "description": "Request explicit user confirmation before performing a consequential action.",
       "keywords": [
-        "confirmdialog",
-        "components"
+        "components",
+        "confirmdialog"
       ],
       "aliases": [],
       "synonyms": [
@@ -285,7 +285,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -366,8 +366,8 @@
       "category": "components",
       "description": "Show a clear message when no data is available to display.",
       "keywords": [
-        "emptystate",
-        "components"
+        "components",
+        "emptystate"
       ],
       "aliases": [],
       "synonyms": [],
@@ -405,7 +405,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -424,12 +424,12 @@
       "category": "components",
       "description": "Display important content in a focused dialog window.",
       "keywords": [
-        "modal",
-        "window",
-        "popup",
-        "dialog",
+        "components",
         "overlay",
-        "components"
+        "dialog",
+        "modal",
+        "popup",
+        "window"
       ],
       "aliases": [
         "AIAlias(alias='dialog', context='technical', confidence=0.95)",
@@ -507,7 +507,7 @@
         }
       ],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -527,9 +527,9 @@
       "description": "Visualize numeric progress as a linear bar.",
       "keywords": [
         "label",
-        "value",
         "progress",
-        "components"
+        "components",
+        "value"
       ],
       "aliases": [],
       "synonyms": [],
@@ -569,7 +569,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -627,7 +627,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -646,8 +646,8 @@
       "category": "components",
       "description": "Show indeterminate progress or loading activity.",
       "keywords": [
-        "spinner",
-        "components"
+        "components",
+        "spinner"
       ],
       "aliases": [],
       "synonyms": [],
@@ -701,8 +701,8 @@
       "category": "components",
       "description": "Display a temporary notification message that auto-dismisses.",
       "keywords": [
-        "toast",
-        "components"
+        "components",
+        "toast"
       ],
       "aliases": [],
       "synonyms": [],
@@ -736,7 +736,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -755,8 +755,8 @@
       "category": "components",
       "description": "Display supplementary information when user hovers over an element.",
       "keywords": [
-        "tooltip",
-        "components"
+        "components",
+        "tooltip"
       ],
       "aliases": [],
       "synonyms": [],
@@ -795,7 +795,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,

@@ -75,7 +75,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** label, tree, components
+**Keywords:** label, components, tree
 
 **Semantic Category:** utility
 

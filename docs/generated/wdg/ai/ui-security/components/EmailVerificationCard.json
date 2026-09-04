@@ -171,19 +171,19 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "waysnx-email-value",
-    "waysnx-email-success-text",
     "waysnx-email-address-display",
+    "waysnx-email-value",
+    "waysnx-email-card-content",
     "waysnx-form-actions",
+    "waysnx-email-resend-label",
     "waysnx-email-resend-section",
     "waysnx-email-success-info",
-    "waysnx-email-label",
-    "waysnx-email-card-content",
-    "waysnx-form-group",
-    "waysnx-email-resend-label",
-    "waysnx-email-card-description",
     "waysnx-email-card-title",
-    "waysnx-email-hint"
+    "waysnx-email-hint",
+    "waysnx-email-card-description",
+    "waysnx-email-label",
+    "waysnx-form-group",
+    "waysnx-email-success-text"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -216,8 +216,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Verification\\EmailVerificationCard.tsx",
   "keywords": [
-    "emailverificationcard",
-    "components"
+    "components",
+    "emailverificationcard"
   ],
   "aliases": [],
   "synonyms": [],
@@ -235,7 +235,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.870543",
+  "generatedAt": "2026-09-04T11:34:36.156527",
   "generatorVersion": "2.0.0",
   "sourceHash": "39ce115a",
   "packageDependencies": {

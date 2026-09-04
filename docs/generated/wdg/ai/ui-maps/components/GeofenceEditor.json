@@ -61,11 +61,11 @@
   "cssVariables": [],
   "cssClasses": [
     "wx-adv-map__container",
-    "--wx-color-primary",
-    "--wx-color-error",
-    "--wx-color-surface-alt",
     "--wx-adv-card-border",
-    "--wx-color-text-muted"
+    "--wx-color-surface-alt",
+    "--wx-color-error",
+    "--wx-color-text-muted",
+    "--wx-color-primary"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -98,8 +98,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\GeofenceEditor\\GeofenceEditor.tsx",
   "keywords": [
-    "geofenceeditor",
-    "components"
+    "components",
+    "geofenceeditor"
   ],
   "aliases": [],
   "synonyms": [],
@@ -117,7 +117,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.272672",
+  "generatedAt": "2026-09-04T11:34:33.897393",
   "generatorVersion": "2.0.0",
   "sourceHash": "e70e8a70",
   "metadata": {

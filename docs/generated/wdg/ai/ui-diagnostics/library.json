@@ -2,7 +2,7 @@
   "id": "ui-diagnostics",
   "name": "UI Diagnostics",
   "slug": "ui-diagnostics",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "status": "stable",
   "type": "functional-library",
   "purpose": "Framework-agnostic runtime error observability, UI error diagnostics, and form/schema validation error capture",
@@ -140,5 +140,5 @@
     "ui-diagnostics",
     "framework-agnostic"
   ],
-  "generatedAt": "2026-09-03T20:03:08.524659"
+  "generatedAt": "2026-09-04T11:35:26.163603"
 }

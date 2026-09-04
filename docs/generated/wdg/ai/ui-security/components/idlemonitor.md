@@ -67,7 +67,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** components, idlemonitor
+**Keywords:** idlemonitor, components
 
 **Semantic Category:** utility
 

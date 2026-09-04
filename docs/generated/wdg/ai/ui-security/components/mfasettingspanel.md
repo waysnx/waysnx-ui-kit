@@ -67,7 +67,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** mfasettingspanel, components
+**Keywords:** components, mfasettingspanel
 
 **Semantic Category:** utility
 

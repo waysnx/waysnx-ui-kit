@@ -68,7 +68,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** playgroundplaceholder, components
+**Keywords:** components, playgroundplaceholder
 
 **Semantic Category:** utility
 

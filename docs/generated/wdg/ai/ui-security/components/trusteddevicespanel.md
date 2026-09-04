@@ -67,7 +67,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** trusteddevicespanel, components
+**Keywords:** components, trusteddevicespanel
 
 **Semantic Category:** utility
 

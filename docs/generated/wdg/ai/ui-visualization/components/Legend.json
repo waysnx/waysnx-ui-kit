@@ -77,10 +77,10 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "wx-vis-legend__item",
     "wx-vis-legend__items",
-    "wx-vis-legend__title",
-    "wx-vis-legend__swatch"
+    "wx-vis-legend__swatch",
+    "wx-vis-legend__item",
+    "wx-vis-legend__title"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -113,8 +113,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Legend\\Legend.tsx",
   "keywords": [
-    "legend",
-    "components"
+    "components",
+    "legend"
   ],
   "aliases": [],
   "synonyms": [],
@@ -132,7 +132,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.910306",
+  "generatedAt": "2026-09-04T11:34:36.207473",
   "generatorVersion": "2.0.0",
   "sourceHash": "e8d6f1fa",
   "metadata": {

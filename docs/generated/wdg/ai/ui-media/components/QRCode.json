@@ -68,8 +68,8 @@
   "cssVariables": [],
   "cssClasses": [
     "wx-adv-qr__download-btn",
-    "wx-adv-qr__canvas",
-    "wx-adv-qr__error"
+    "wx-adv-qr__error",
+    "wx-adv-qr__canvas"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -102,8 +102,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\QRCode\\QRCode.tsx",
   "keywords": [
-    "qrcode",
-    "components"
+    "components",
+    "qrcode"
   ],
   "aliases": [],
   "synonyms": [],
@@ -121,7 +121,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.365860",
+  "generatedAt": "2026-09-04T11:34:34.026821",
   "generatorVersion": "2.0.0",
   "sourceHash": "9da1466e",
   "metadata": {

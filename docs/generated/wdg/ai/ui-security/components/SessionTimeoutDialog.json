@@ -154,8 +154,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Session\\SessionTimeoutDialog.tsx",
   "keywords": [
-    "sessiontimeoutdialog",
-    "components"
+    "components",
+    "sessiontimeoutdialog"
   ],
   "aliases": [],
   "synonyms": [
@@ -176,7 +176,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.817079",
+  "generatedAt": "2026-09-04T11:34:36.085615",
   "generatorVersion": "2.0.0",
   "sourceHash": "85bdb355",
   "packageDependencies": {

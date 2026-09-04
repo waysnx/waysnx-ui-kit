@@ -56,7 +56,7 @@ import { Panel } from '@waysnx/ui-layout';
 
 ## Storybook
 
-View Interactive Storybook
+[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/components-panel)
 
 ## When to Use
 
@@ -81,7 +81,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** panel, components
+**Keywords:** components, panel
 
 **Semantic Category:** utility
 

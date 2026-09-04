@@ -119,7 +119,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** label, placeholder, autocomplete, components
+**Keywords:** placeholder, autocomplete, label, components
 
 **Semantic Category:** utility
 

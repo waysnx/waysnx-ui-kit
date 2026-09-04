@@ -70,7 +70,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** securityeventlog, components
+**Keywords:** components, securityeventlog
 
 **Semantic Category:** utility
 

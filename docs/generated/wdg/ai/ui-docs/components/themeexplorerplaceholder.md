@@ -68,7 +68,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** themeexplorerplaceholder, components
+**Keywords:** components, themeexplorerplaceholder
 
 **Semantic Category:** utility
 

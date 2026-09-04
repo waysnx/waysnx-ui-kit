@@ -175,8 +175,8 @@
   "sourceFile": "src\\components\\SecureInputs\\SecureUploader.tsx",
   "keywords": [
     "label",
-    "secureuploader",
-    "components"
+    "components",
+    "secureuploader"
   ],
   "aliases": [],
   "synonyms": [],
@@ -194,7 +194,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.647722",
+  "generatedAt": "2026-09-04T11:34:35.868340",
   "generatorVersion": "2.0.0",
   "sourceHash": "a3c7712c",
   "packageDependencies": {

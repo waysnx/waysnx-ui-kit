@@ -147,8 +147,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\SSO\\OktaLoginButton.tsx",
   "keywords": [
-    "oktaloginbutton",
-    "components"
+    "components",
+    "oktaloginbutton"
   ],
   "aliases": [],
   "synonyms": [
@@ -181,7 +181,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.855561",
+  "generatedAt": "2026-09-04T11:34:36.136560",
   "generatorVersion": "2.0.0",
   "sourceHash": "b8edf05d",
   "packageDependencies": {

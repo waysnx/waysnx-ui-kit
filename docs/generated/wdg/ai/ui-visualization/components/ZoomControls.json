@@ -115,9 +115,9 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
+    "wx-vis-zoom-controls__separator",
     "wx-vis-zoom-controls__btn",
-    "wx-vis-zoom-controls__label",
-    "wx-vis-zoom-controls__separator"
+    "wx-vis-zoom-controls__label"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -150,8 +150,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\ZoomControls\\ZoomControls.tsx",
   "keywords": [
-    "zoomcontrols",
-    "components"
+    "components",
+    "zoomcontrols"
   ],
   "aliases": [],
   "synonyms": [],
@@ -169,7 +169,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.963662",
+  "generatedAt": "2026-09-04T11:34:36.282154",
   "generatorVersion": "2.0.0",
   "sourceHash": "931617ed",
   "metadata": {

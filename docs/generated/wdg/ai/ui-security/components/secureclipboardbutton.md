@@ -73,7 +73,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** label, secureclipboardbutton, components
+**Keywords:** label, components, secureclipboardbutton
 
 **Synonyms:** action control, clickable element
 

@@ -72,7 +72,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** components, dashboardfilterbar
+**Keywords:** dashboardfilterbar, components
 
 **Semantic Category:** utility
 

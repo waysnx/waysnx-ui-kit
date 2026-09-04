@@ -15,7 +15,7 @@ npm install @waysnx/ui-dashboard
 ## Import
 
 ```typescript
-import { WidgetGrid } from '@waysnx/ui-dashboard';
+import { WidgetColumn } from '@waysnx/ui-dashboard';
 ```
 
 ## Props

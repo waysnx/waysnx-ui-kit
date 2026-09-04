@@ -61,10 +61,10 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
+    "wx-adv-ocr__result-text",
     "wx-adv-ocr__result",
     "wx-adv-ocr__result-header",
     "wx-adv-ocr__dropzone",
-    "wx-adv-ocr__result-text",
     "--wx-color-primary"
   ],
   "designTokens": {},
@@ -117,7 +117,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.358038",
+  "generatedAt": "2026-09-04T11:34:34.015579",
   "generatorVersion": "2.0.0",
   "sourceHash": "5754b16e",
   "metadata": {

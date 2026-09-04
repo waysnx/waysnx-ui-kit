@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
   "library": "ui-visualization",
-  "generatedAt": "2026-09-03T20:03:08.515843",
+  "generatedAt": "2026-09-04T11:35:26.152002",
   "components": [
     {
       "id": "ui-visualization:connector",
@@ -10,8 +10,8 @@
       "category": "components",
       "description": "Draw connections between elements to show relationships.",
       "keywords": [
-        "connector",
-        "components"
+        "components",
+        "connector"
       ],
       "aliases": [],
       "synonyms": [],
@@ -75,8 +75,8 @@
       "category": "components",
       "description": "Visualize organizational or hierarchical relationships.",
       "keywords": [
-        "hierarchy",
-        "components"
+        "components",
+        "hierarchy"
       ],
       "aliases": [],
       "synonyms": [],
@@ -153,8 +153,8 @@
       "category": "components",
       "description": "Explain chart symbols, colors, and data categories.",
       "keywords": [
-        "legend",
-        "components"
+        "components",
+        "legend"
       ],
       "aliases": [],
       "synonyms": [],
@@ -207,8 +207,8 @@
       "category": "components",
       "description": "Display a zoomed-out overview of large visualizations.",
       "keywords": [
-        "components",
-        "minimap"
+        "minimap",
+        "components"
       ],
       "aliases": [],
       "synonyms": [],
@@ -270,8 +270,8 @@
       "category": "components",
       "description": "Display organizational structure and reporting relationships.",
       "keywords": [
-        "orgchart",
-        "components"
+        "components",
+        "orgchart"
       ],
       "aliases": [],
       "synonyms": [],
@@ -361,8 +361,8 @@
       "category": "components",
       "description": "Enable searching and filtering within visualizations.",
       "keywords": [
-        "components",
         "placeholder",
+        "components",
         "searchbox"
       ],
       "aliases": [],
@@ -425,8 +425,8 @@
       "category": "components",
       "description": "Display tool or action buttons for interactive visualizations.",
       "keywords": [
-        "toolbar",
-        "components"
+        "components",
+        "toolbar"
       ],
       "aliases": [],
       "synonyms": [],
@@ -492,8 +492,8 @@
       "category": "components",
       "description": "Display hierarchical tree structure with expandable nodes.",
       "keywords": [
-        "tree",
-        "components"
+        "components",
+        "tree"
       ],
       "aliases": [],
       "synonyms": [],
@@ -566,8 +566,8 @@
       "category": "components",
       "description": "Represent a single node within a hierarchical tree structure.",
       "keywords": [
-        "treenode",
-        "components"
+        "components",
+        "treenode"
       ],
       "aliases": [],
       "synonyms": [],
@@ -642,8 +642,8 @@
       "category": "components",
       "description": "Provide zoom in/out controls for interactive visualizations.",
       "keywords": [
-        "zoomcontrols",
-        "components"
+        "components",
+        "zoomcontrols"
       ],
       "aliases": [],
       "synonyms": [],

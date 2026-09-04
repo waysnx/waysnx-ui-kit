@@ -55,7 +55,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** codeeditor, components
+**Keywords:** components, codeeditor
 
 **Semantic Category:** utility
 

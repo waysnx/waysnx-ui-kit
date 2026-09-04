@@ -62,8 +62,8 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "wx-comm-typing__dot",
     "wx-comm-typing__dots",
+    "wx-comm-typing__dot",
     "wx-comm-typing__text"
   ],
   "designTokens": {},
@@ -97,8 +97,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\TypingIndicator\\TypingIndicator.tsx",
   "keywords": [
-    "typingindicator",
-    "components"
+    "components",
+    "typingindicator"
   ],
   "aliases": [],
   "synonyms": [],
@@ -116,7 +116,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.517864",
+  "generatedAt": "2026-09-04T11:34:34.238123",
   "generatorVersion": "2.0.0",
   "sourceHash": "8c222201",
   "metadata": {

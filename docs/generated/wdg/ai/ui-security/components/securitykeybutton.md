@@ -72,7 +72,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** securitykeybutton, label, components
+**Keywords:** label, components, securitykeybutton
 
 **Synonyms:** action control, clickable element
 

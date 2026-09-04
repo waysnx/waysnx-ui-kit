@@ -55,7 +55,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** cropper, components
+**Keywords:** components, cropper
 
 **Semantic Category:** utility
 

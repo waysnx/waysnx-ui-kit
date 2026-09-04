@@ -78,7 +78,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** hierarchy, components
+**Keywords:** components, hierarchy
 
 **Semantic Category:** utility
 

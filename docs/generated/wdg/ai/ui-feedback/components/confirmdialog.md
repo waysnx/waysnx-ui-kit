@@ -61,7 +61,7 @@ import { ConfirmDialog } from '@waysnx/ui-feedback';
 
 ## Storybook
 
-View Interactive Storybook
+[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/components-confirmdialog)
 
 ## Related Components
 
@@ -91,7 +91,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** confirmdialog, components
+**Keywords:** components, confirmdialog
 
 **Synonyms:** popup window, overlay panel
 

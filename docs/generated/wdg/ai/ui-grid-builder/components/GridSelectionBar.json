@@ -78,10 +78,10 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
+    "wx-grid-selection-bar-left",
     "wx-grid-selection-clear",
     "wx-grid-selection-bar",
     "wx-grid-selection-count",
-    "wx-grid-selection-bar-left",
     "wx-grid-selection-actions"
   ],
   "designTokens": {},
@@ -137,7 +137,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.018503",
+  "generatedAt": "2026-09-04T11:34:35.009415",
   "generatorVersion": "2.0.0",
   "sourceHash": "4b6ff4f3",
   "packageDependencies": {

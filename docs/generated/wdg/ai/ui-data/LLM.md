@@ -111,13 +111,13 @@ This library is optimized for AI code generation and documentation search.
 ### Component Metadata
 
 **CodeEditor**
-- Keywords: codeeditor, components
+- Keywords: components, codeeditor
 
 **CodeViewer**
-- Keywords: codeviewer, components
+- Keywords: components, codeviewer
 
 **JSONEditor**
-- Keywords: jsoneditor, components
+- Keywords: components, jsoneditor
 
 ### Searchable Metadata
 

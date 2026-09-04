@@ -79,7 +79,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** label, placeholder, secureinput, components
+**Keywords:** placeholder, secureinput, label, components
 
 **Synonyms:** text entry, form field
 

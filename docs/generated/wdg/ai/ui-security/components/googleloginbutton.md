@@ -69,7 +69,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** googleloginbutton, components
+**Keywords:** components, googleloginbutton
 
 **Synonyms:** action control, clickable element
 

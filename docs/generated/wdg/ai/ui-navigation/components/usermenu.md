@@ -75,7 +75,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** usermenu, components
+**Keywords:** components, usermenu
 
 **Semantic Category:** navigation
 

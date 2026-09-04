@@ -68,7 +68,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** loginhistory, components
+**Keywords:** components, loginhistory
 
 **Semantic Category:** utility
 

@@ -61,18 +61,18 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "wx-comm-conversation-list__search",
-    "wx-comm-conversation-list__search-icon",
     "wx-comm-conversation-item__badge",
-    "wx-comm-conversation-list__filters",
-    "wx-comm-conversation-list__items",
-    "wx-comm-conversation-item__title",
     "wx-comm-conversation-item__time",
-    "wx-comm-conversation-item__avatar",
-    "wx-comm-conversation-item__content",
     "wx-comm-conversation-list__header",
-    "wx-comm-conversation-item__meta",
+    "wx-comm-conversation-list__search",
+    "wx-comm-conversation-list__items",
+    "wx-comm-conversation-item__avatar",
+    "wx-comm-conversation-item__title",
+    "wx-comm-conversation-item__content",
+    "wx-comm-conversation-list__search-icon",
     "wx-comm-conversation-item__preview",
+    "wx-comm-conversation-list__filters",
+    "wx-comm-conversation-item__meta",
     "--wx-color-text-muted"
   ],
   "designTokens": {},
@@ -106,8 +106,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\ConversationList\\ConversationList.tsx",
   "keywords": [
-    "conversationlist",
-    "components"
+    "components",
+    "conversationlist"
   ],
   "aliases": [],
   "synonyms": [],
@@ -125,7 +125,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.438356",
+  "generatedAt": "2026-09-04T11:34:34.125696",
   "generatorVersion": "2.0.0",
   "sourceHash": "b0923fb2",
   "metadata": {

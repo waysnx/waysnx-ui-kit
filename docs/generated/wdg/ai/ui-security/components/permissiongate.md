@@ -66,7 +66,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** permissiongate, components
+**Keywords:** components, permissiongate
 
 **Semantic Category:** utility
 

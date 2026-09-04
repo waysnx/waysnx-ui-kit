@@ -80,7 +80,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** label, securetextarea, components
+**Keywords:** label, components, securetextarea
 
 **Semantic Category:** input
 

@@ -51,7 +51,7 @@ import { EmptyState } from '@waysnx/ui-feedback';
 
 ## Storybook
 
-View Interactive Storybook
+[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/components-emptystate)
 
 ## When to Use
 
@@ -76,7 +76,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** emptystate, components
+**Keywords:** components, emptystate
 
 **Semantic Category:** utility
 

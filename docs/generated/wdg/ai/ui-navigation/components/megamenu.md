@@ -79,7 +79,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** megamenu, components
+**Keywords:** components, megamenu
 
 **Semantic Category:** navigation
 

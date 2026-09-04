@@ -435,14 +435,14 @@
   "documentation": true,
   "sourceFile": "src\\components\\Button\\Button.tsx",
   "keywords": [
-    "cta",
-    "trigger",
     "action",
-    "submit",
-    "click",
-    "interactive",
     "button",
-    "components"
+    "cta",
+    "click",
+    "components",
+    "trigger",
+    "submit",
+    "interactive"
   ],
   "aliases": [
     {
@@ -537,7 +537,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.549751",
+  "generatedAt": "2026-09-04T11:34:34.282073",
   "generatorVersion": "2.0.0",
   "sourceHash": "60ccec90",
   "metadata": {

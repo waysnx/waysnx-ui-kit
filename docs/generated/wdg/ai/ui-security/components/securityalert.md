@@ -74,7 +74,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** securityalert, components
+**Keywords:** components, securityalert
 
 **Semantic Category:** feedback
 

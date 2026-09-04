@@ -76,7 +76,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** label, maskedinput, components
+**Keywords:** maskedinput, components, label
 
 **Synonyms:** text entry, form field
 

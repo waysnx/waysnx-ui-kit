@@ -453,8 +453,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Widget\\KPICard.tsx",
   "keywords": [
-    "kpicard",
-    "components"
+    "components",
+    "kpicard"
   ],
   "aliases": [],
   "synonyms": [],
@@ -472,7 +472,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.780825",
+  "generatedAt": "2026-09-04T11:34:34.619111",
   "generatorVersion": "2.0.0",
   "sourceHash": "29ab4d03",
   "packageDependencies": {

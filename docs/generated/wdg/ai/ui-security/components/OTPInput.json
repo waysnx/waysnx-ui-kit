@@ -153,10 +153,10 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "waysnx-otp-label",
     "waysnx-otp-helper",
-    "waysnx-otp-fields",
-    "waysnx-otp-error"
+    "waysnx-otp-error",
+    "waysnx-otp-label",
+    "waysnx-otp-fields"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -189,11 +189,11 @@
   "documentation": true,
   "sourceFile": "src\\components\\OTP\\OTPInput.tsx",
   "keywords": [
-    "label",
     "otpinput",
+    "components",
     "placeholder",
     "value",
-    "components"
+    "label"
   ],
   "aliases": [],
   "synonyms": [
@@ -226,7 +226,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.550384",
+  "generatedAt": "2026-09-04T11:34:35.735935",
   "generatorVersion": "2.0.0",
   "sourceHash": "7ce122fd",
   "packageDependencies": {

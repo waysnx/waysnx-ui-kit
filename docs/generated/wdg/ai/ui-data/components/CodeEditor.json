@@ -62,9 +62,9 @@
   "cssVariables": [],
   "cssClasses": [
     "wx-adv-code-viewer__header",
-    "wx-adv-code-viewer__lines",
-    "wx-adv-code-viewer__body",
     "wx-adv-json-editor__status",
+    "wx-adv-code-viewer__body",
+    "wx-adv-code-viewer__lines",
     "--wx-adv-editor-bg",
     "--wx-color-text",
     "--wx-adv-editor-font"
@@ -100,8 +100,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\CodeEditor\\CodeEditor.tsx",
   "keywords": [
-    "codeeditor",
-    "components"
+    "components",
+    "codeeditor"
   ],
   "aliases": [],
   "synonyms": [],
@@ -119,7 +119,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.197492",
+  "generatedAt": "2026-09-04T11:34:33.794210",
   "generatorVersion": "2.0.0",
   "sourceHash": "5398cc23",
   "metadata": {

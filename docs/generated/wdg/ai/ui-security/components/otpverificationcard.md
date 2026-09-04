@@ -80,7 +80,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** otpverificationcard, placeholder, components
+**Keywords:** placeholder, components, otpverificationcard
 
 **Semantic Category:** utility
 

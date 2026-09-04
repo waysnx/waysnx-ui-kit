@@ -77,7 +77,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** commandpalette, components
+**Keywords:** components, commandpalette
 
 **Semantic Category:** utility
 

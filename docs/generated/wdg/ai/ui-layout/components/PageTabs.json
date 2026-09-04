@@ -12,13 +12,13 @@
   "longDescription": "Organize page sections using tab navigation.",
   "references": {
     "storybook": {
-      "available": false,
-      "title": "",
-      "storyId": "",
-      "url": "",
+      "available": true,
+      "title": "Components/PageTabs",
+      "storyId": "components-pagetabs",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-pagetabs",
       "stories": [],
       "tags": [],
-      "source": ""
+      "source": "PageTabs.stories.tsx"
     }
   },
   "useCases": [
@@ -197,7 +197,7 @@
   "dark": null,
   "highContrast": null,
   "responsive": false,
-  "storybook": false,
+  "storybook": true,
   "playwright": false,
   "vitest": false,
   "jest": false,
@@ -205,9 +205,9 @@
   "documentation": true,
   "sourceFile": "src\\components\\PageTabs\\PageTabs.tsx",
   "keywords": [
-    "pagetabs",
     "label",
-    "components"
+    "components",
+    "pagetabs"
   ],
   "aliases": [],
   "synonyms": [],
@@ -225,7 +225,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.113165",
+  "generatedAt": "2026-09-04T11:34:35.138362",
   "generatorVersion": "2.0.0",
   "sourceHash": "5e610307",
   "metadata": {

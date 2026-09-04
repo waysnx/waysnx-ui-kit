@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
   "library": "ui-navigation",
-  "generatedAt": "2026-09-03T20:03:02.771361",
+  "generatedAt": "2026-09-04T11:35:19.337442",
   "components": [
     {
       "id": "ui-navigation:breadcrumb",
@@ -10,8 +10,8 @@
       "category": "components",
       "description": "Display the current navigation path and enable quick navigation to parent levels.",
       "keywords": [
-        "breadcrumb",
-        "components"
+        "components",
+        "breadcrumb"
       ],
       "aliases": [],
       "synonyms": [],
@@ -75,8 +75,8 @@
       "category": "components",
       "description": "Enable quick access to commands and navigation via keyboard.",
       "keywords": [
-        "commandpalette",
-        "components"
+        "components",
+        "commandpalette"
       ],
       "aliases": [],
       "synonyms": [],
@@ -142,8 +142,8 @@
       "category": "components",
       "description": "Display context-sensitive actions triggered by right-click or long-press.",
       "keywords": [
-        "contextmenu",
-        "components"
+        "components",
+        "contextmenu"
       ],
       "aliases": [],
       "synonyms": [],
@@ -291,8 +291,8 @@
       "category": "components",
       "description": "Display user-selected favorite or bookmarked items for quick access.",
       "keywords": [
-        "favoritesmenu",
-        "components"
+        "components",
+        "favoritesmenu"
       ],
       "aliases": [],
       "synonyms": [],
@@ -357,8 +357,8 @@
       "category": "components",
       "description": "Display application or site header with branding and navigation.",
       "keywords": [
-        "header",
-        "components"
+        "components",
+        "header"
       ],
       "aliases": [],
       "synonyms": [],
@@ -429,8 +429,8 @@
       "category": "components",
       "description": "Display large menu with multiple columns and rich content.",
       "keywords": [
-        "megamenu",
-        "components"
+        "components",
+        "megamenu"
       ],
       "aliases": [],
       "synonyms": [],
@@ -655,8 +655,8 @@
       "category": "components",
       "description": "Display a horizontal navigation bar with multiple navigation links.",
       "keywords": [
-        "navbar",
-        "components"
+        "components",
+        "navbar"
       ],
       "aliases": [],
       "synonyms": [],
@@ -788,8 +788,8 @@
       "category": "components",
       "description": "Provide quick access to frequent actions in a compact menu.",
       "keywords": [
-        "quickactions",
-        "components"
+        "components",
+        "quickactions"
       ],
       "aliases": [],
       "synonyms": [],
@@ -920,8 +920,8 @@
       "category": "components",
       "description": "Enable users to search for content or pages and navigate quickly.",
       "keywords": [
-        "searchnavigation",
         "placeholder",
+        "searchnavigation",
         "components"
       ],
       "aliases": [],
@@ -989,8 +989,8 @@
       "category": "components",
       "description": "Display persistent sidebar navigation alongside main content.",
       "keywords": [
-        "sidebar",
-        "components"
+        "components",
+        "sidebar"
       ],
       "aliases": [],
       "synonyms": [],
@@ -1062,8 +1062,8 @@
       "category": "components",
       "description": "Navigate between steps of a multi-step process or guide.",
       "keywords": [
-        "stepnavigation",
-        "components"
+        "components",
+        "stepnavigation"
       ],
       "aliases": [],
       "synonyms": [],
@@ -1132,12 +1132,12 @@
       "category": "components",
       "description": "Organize navigation into switchable tabs.",
       "keywords": [
+        "tabs",
         "organize",
-        "panel",
         "navigation",
-        "tab",
         "components",
-        "tabs"
+        "panel",
+        "tab"
       ],
       "aliases": [
         "AIAlias(alias='tabbed panel', context='technical', confidence=0.92)",
@@ -1211,8 +1211,8 @@
       "category": "components",
       "description": "Display hierarchical menu structure with collapsible tree nodes.",
       "keywords": [
-        "treemenu",
-        "components"
+        "components",
+        "treemenu"
       ],
       "aliases": [],
       "synonyms": [],
@@ -1283,8 +1283,8 @@
       "category": "components",
       "description": "Display user profile and account-related options.",
       "keywords": [
-        "usermenu",
-        "components"
+        "components",
+        "usermenu"
       ],
       "aliases": [],
       "synonyms": [],
@@ -1350,8 +1350,8 @@
       "category": "components",
       "description": "Enable users to switch between multiple workspaces or environments.",
       "keywords": [
-        "workspaceswitcher",
-        "components"
+        "components",
+        "workspaceswitcher"
       ],
       "aliases": [],
       "synonyms": [],

@@ -165,8 +165,8 @@
   "sourceFile": "src\\components\\SecureInputs\\SecureTextarea.tsx",
   "keywords": [
     "label",
-    "securetextarea",
-    "components"
+    "components",
+    "securetextarea"
   ],
   "aliases": [],
   "synonyms": [],
@@ -184,7 +184,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.640759",
+  "generatedAt": "2026-09-04T11:34:35.859485",
   "generatorVersion": "2.0.0",
   "sourceHash": "eb70b9ca",
   "packageDependencies": {

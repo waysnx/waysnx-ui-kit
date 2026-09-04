@@ -63,7 +63,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** securityhealthindicator, components
+**Keywords:** components, securityhealthindicator
 
 **Semantic Category:** utility
 

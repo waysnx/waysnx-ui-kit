@@ -72,7 +72,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** components, minimap
+**Keywords:** minimap, components
 
 **Semantic Category:** utility
 

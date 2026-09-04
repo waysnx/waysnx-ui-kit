@@ -15,7 +15,7 @@ npm install @waysnx/ui-dashboard
 ## Import
 
 ```typescript
-import { WidgetLoading } from '@waysnx/ui-dashboard';
+import { Widget } from '@waysnx/ui-dashboard';
 ```
 
 ## Props

@@ -63,13 +63,13 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "wx-adv-cropper__aspects",
     "wx-adv-cropper__controls",
     "wx-adv-cropper__crop-btn",
+    "wx-adv-cropper__aspects",
     "wx-adv-cropper__viewport",
-    "--wx-color-surface-alt",
+    "--wx-adv-card-border",
     "--wx-color-text-muted",
-    "--wx-adv-card-border"
+    "--wx-color-surface-alt"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -102,8 +102,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Cropper\\Cropper.tsx",
   "keywords": [
-    "cropper",
-    "components"
+    "components",
+    "cropper"
   ],
   "aliases": [],
   "synonyms": [],
@@ -121,7 +121,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.342426",
+  "generatedAt": "2026-09-04T11:34:33.991437",
   "generatorVersion": "2.0.0",
   "sourceHash": "d47bf7c8",
   "metadata": {

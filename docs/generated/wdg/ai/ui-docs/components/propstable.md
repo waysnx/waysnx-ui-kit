@@ -63,7 +63,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** propstable, components
+**Keywords:** components, propstable
 
 **Semantic Category:** table
 

@@ -61,9 +61,9 @@
   "cssVariables": [],
   "cssClasses": [
     "--wx-color-primary",
-    "--wx-color-surface-alt",
     "--wx-color-text",
-    "--wx-color-text-muted"
+    "--wx-color-text-muted",
+    "--wx-color-surface-alt"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -115,7 +115,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.227851",
+  "generatedAt": "2026-09-04T11:34:33.833013",
   "generatorVersion": "2.0.0",
   "sourceHash": "49eb5fef",
   "metadata": {

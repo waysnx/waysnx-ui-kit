@@ -261,8 +261,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\OrgChart\\OrgChart.tsx",
   "keywords": [
-    "orgchart",
-    "components"
+    "components",
+    "orgchart"
   ],
   "aliases": [],
   "synonyms": [],
@@ -280,7 +280,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.925323",
+  "generatedAt": "2026-09-04T11:34:36.229936",
   "generatorVersion": "2.0.0",
   "sourceHash": "6c5517f6",
   "metadata": {

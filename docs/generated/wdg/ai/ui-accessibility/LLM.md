@@ -114,10 +114,10 @@ This library is optimized for AI code generation and documentation search.
 - Keywords: accessibilitycenter, components
 
 **FloatingButton**
-- Keywords: floatingbutton, components
+- Keywords: components, floatingbutton
 
 **Magnifier**
-- Keywords: magnifier, components
+- Keywords: components, magnifier
 
 ### Searchable Metadata
 

@@ -76,7 +76,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** searchnavigation, placeholder, components
+**Keywords:** placeholder, searchnavigation, components
 
 **Semantic Category:** navigation
 

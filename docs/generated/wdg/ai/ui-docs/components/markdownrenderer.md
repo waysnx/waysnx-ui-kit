@@ -62,7 +62,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** markdownrenderer, components
+**Keywords:** components, markdownrenderer
 
 **Semantic Category:** utility
 

@@ -74,7 +74,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** label, secureuploader, components
+**Keywords:** label, components, secureuploader
 
 **Semantic Category:** utility
 

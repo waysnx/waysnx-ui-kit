@@ -165,8 +165,8 @@
   "sourceFile": "src\\components\\Switch\\Switch.tsx",
   "keywords": [
     "label",
-    "switch",
-    "components"
+    "components",
+    "switch"
   ],
   "aliases": [],
   "synonyms": [],
@@ -184,7 +184,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.696337",
+  "generatedAt": "2026-09-04T11:34:34.493704",
   "generatorVersion": "2.0.0",
   "sourceHash": "7ecf5cec",
   "metadata": {

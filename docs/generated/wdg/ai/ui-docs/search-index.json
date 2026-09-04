@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
   "library": "ui-docs",
-  "generatedAt": "2026-09-03T20:02:48.080791",
+  "generatedAt": "2026-09-04T11:35:02.313310",
   "components": [
     {
       "id": "ui-docs:aisectionplaceholder",
@@ -178,8 +178,8 @@
       "category": "components",
       "description": "DocumentationDemoViewer Renders demo categories and examples from component.demo.generated.json Uses --wx- tokens ins...",
       "keywords": [
-        "documentationdemoviewer",
-        "components"
+        "components",
+        "documentationdemoviewer"
       ],
       "aliases": [],
       "synonyms": [],
@@ -233,8 +233,8 @@
       "category": "components",
       "description": "LiveComponentRenderer Dynamically renders a component from the registry with provided props. Handles missing componen...",
       "keywords": [
-        "components",
-        "livecomponentrenderer"
+        "livecomponentrenderer",
+        "components"
       ],
       "aliases": [],
       "synonyms": [],
@@ -286,8 +286,8 @@
       "category": "components",
       "description": "Markdown Renderer Renders markdown content with syntax highlighting using --wx- tokens.",
       "keywords": [
-        "markdownrenderer",
-        "components"
+        "components",
+        "markdownrenderer"
       ],
       "aliases": [],
       "synonyms": [],
@@ -340,8 +340,8 @@
       "category": "components",
       "description": "PlaygroundPlaceholder component",
       "keywords": [
-        "playgroundplaceholder",
-        "components"
+        "components",
+        "playgroundplaceholder"
       ],
       "aliases": [],
       "synonyms": [],
@@ -398,8 +398,8 @@
       "category": "components",
       "description": "Props Table Component Renders component props in a formatted table using --wx- tokens.",
       "keywords": [
-        "propstable",
-        "components"
+        "components",
+        "propstable"
       ],
       "aliases": [],
       "synonyms": [],
@@ -453,8 +453,8 @@
       "category": "components",
       "description": "ThemeExplorerPlaceholder component",
       "keywords": [
-        "themeexplorerplaceholder",
-        "components"
+        "components",
+        "themeexplorerplaceholder"
       ],
       "aliases": [],
       "synonyms": [],
@@ -568,8 +568,8 @@
       "category": "components",
       "description": "WorkflowViewerPlaceholder component",
       "keywords": [
-        "components",
-        "workflowviewerplaceholder"
+        "workflowviewerplaceholder",
+        "components"
       ],
       "aliases": [],
       "synonyms": [],

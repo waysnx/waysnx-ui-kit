@@ -88,7 +88,7 @@ import { Breadcrumb } from '@waysnx/ui-navigation';
 
 ## Storybook
 
-[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/navigation-breadcrumb)
+[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/components-breadcrumb)
 
 ## Used By
 
@@ -119,7 +119,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** breadcrumb, components
+**Keywords:** components, breadcrumb
 
 **Semantic Category:** navigation
 

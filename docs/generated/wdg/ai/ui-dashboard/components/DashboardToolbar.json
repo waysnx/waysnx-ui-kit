@@ -141,8 +141,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Dashboard\\DashboardToolbar.tsx",
   "keywords": [
-    "dashboardtoolbar",
-    "components"
+    "components",
+    "dashboardtoolbar"
   ],
   "aliases": [],
   "synonyms": [],
@@ -160,7 +160,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.755019",
+  "generatedAt": "2026-09-04T11:34:34.578941",
   "generatorVersion": "2.0.0",
   "sourceHash": "d90cf3dc",
   "packageDependencies": {

@@ -61,7 +61,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** readreceipts, components
+**Keywords:** components, readreceipts
 
 **Semantic Category:** utility
 

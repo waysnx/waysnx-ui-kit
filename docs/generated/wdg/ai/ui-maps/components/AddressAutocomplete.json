@@ -60,11 +60,11 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
+    "wx-adv-address-selector__suggestions",
+    "wx-adv-address-selector__icon",
+    "wx-adv-address-selector__input",
     "wx-adv-address-selector__suggestion-item",
     "wx-adv-address-selector__suggestion-icon",
-    "wx-adv-address-selector__input",
-    "wx-adv-address-selector__icon",
-    "wx-adv-address-selector__suggestions",
     "--wx-color-text-muted"
   ],
   "designTokens": {},
@@ -98,8 +98,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\AddressAutocomplete\\AddressAutocomplete.tsx",
   "keywords": [
-    "addressautocomplete",
-    "components"
+    "components",
+    "addressautocomplete"
   ],
   "aliases": [],
   "synonyms": [],
@@ -117,7 +117,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.243258",
+  "generatedAt": "2026-09-04T11:34:33.853758",
   "generatorVersion": "2.0.0",
   "sourceHash": "c0750219",
   "metadata": {

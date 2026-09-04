@@ -125,7 +125,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** label, placeholder, value, datepicker, components
+**Keywords:** components, placeholder, value, label, datepicker
 
 **Semantic Category:** input
 

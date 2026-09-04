@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
   "library": "ui-layout",
-  "generatedAt": "2026-09-03T20:03:00.221665",
+  "generatedAt": "2026-09-04T11:35:16.352943",
   "components": [
     {
       "id": "ui-layout:accordion",
@@ -47,7 +47,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -66,8 +66,8 @@
       "category": "components",
       "description": "Display the current navigation path and enable quick navigation to parent levels.",
       "keywords": [
-        "breadcrumb",
-        "components"
+        "components",
+        "breadcrumb"
       ],
       "aliases": [],
       "synonyms": [],
@@ -121,8 +121,8 @@
       "category": "components",
       "description": "Contain and organize related content in a bordered container.",
       "keywords": [
-        "card",
-        "components"
+        "components",
+        "card"
       ],
       "aliases": [],
       "synonyms": [],
@@ -166,7 +166,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -185,8 +185,8 @@
       "category": "components",
       "description": "Show or hide content with a click or interaction.",
       "keywords": [
-        "collapsible",
-        "components"
+        "components",
+        "collapsible"
       ],
       "aliases": [],
       "synonyms": [],
@@ -223,7 +223,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -242,8 +242,8 @@
       "category": "components",
       "description": "Organize content in a vertical column within a layout grid.",
       "keywords": [
-        "column",
-        "components"
+        "components",
+        "column"
       ],
       "aliases": [],
       "synonyms": [],
@@ -280,7 +280,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -337,7 +337,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -356,8 +356,8 @@
       "category": "components",
       "description": "Create a visual separation between content sections.",
       "keywords": [
-        "divider",
-        "components"
+        "components",
+        "divider"
       ],
       "aliases": [],
       "synonyms": [],
@@ -391,7 +391,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -449,7 +449,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -468,8 +468,8 @@
       "category": "components",
       "description": "Organize main content area of a page layout.",
       "keywords": [
-        "pagecontent",
         "label",
+        "pagecontent",
         "components"
       ],
       "aliases": [],
@@ -504,7 +504,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -523,9 +523,9 @@
       "category": "components",
       "description": "Display header information and controls at the top of a page.",
       "keywords": [
-        "pageheader",
         "label",
-        "components"
+        "components",
+        "pageheader"
       ],
       "aliases": [],
       "synonyms": [],
@@ -559,7 +559,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -579,8 +579,8 @@
       "description": "Define the overall structure and layout of a page.",
       "keywords": [
         "label",
-        "pagelayout",
-        "components"
+        "components",
+        "pagelayout"
       ],
       "aliases": [],
       "synonyms": [],
@@ -614,7 +614,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -633,9 +633,9 @@
       "category": "components",
       "description": "Organize page sections using tab navigation.",
       "keywords": [
-        "pagetabs",
         "label",
-        "components"
+        "components",
+        "pagetabs"
       ],
       "aliases": [],
       "synonyms": [],
@@ -671,7 +671,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -690,8 +690,8 @@
       "category": "components",
       "description": "Create a contained panel or section with consistent styling.",
       "keywords": [
-        "panel",
-        "components"
+        "components",
+        "panel"
       ],
       "aliases": [],
       "synonyms": [],
@@ -727,7 +727,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -785,7 +785,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -804,9 +804,9 @@
       "category": "components",
       "description": "Define a semantic content section with consistent spacing.",
       "keywords": [
-        "section",
         "label",
-        "components"
+        "components",
+        "section"
       ],
       "aliases": [],
       "synonyms": [],
@@ -841,7 +841,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -901,7 +901,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -955,7 +955,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -974,8 +974,8 @@
       "category": "components",
       "description": "Create a two-panel layout with resizable divider.",
       "keywords": [
-        "splitlayout",
-        "components"
+        "components",
+        "splitlayout"
       ],
       "aliases": [],
       "synonyms": [],
@@ -1014,7 +1014,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -1033,9 +1033,9 @@
       "category": "components",
       "description": "Arrange elements in a single row or column with consistent spacing.",
       "keywords": [
-        "stack",
         "label",
-        "components"
+        "components",
+        "stack"
       ],
       "aliases": [],
       "synonyms": [],
@@ -1121,7 +1121,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -1141,8 +1141,8 @@
       "description": "Show progress through a multi-step process.",
       "keywords": [
         "stepper",
-        "label",
-        "components"
+        "components",
+        "label"
       ],
       "aliases": [],
       "synonyms": [],
@@ -1179,7 +1179,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -1198,13 +1198,13 @@
       "category": "components",
       "description": "Organize content into tabs that users can switch between.",
       "keywords": [
+        "tabs",
         "organize",
-        "label",
-        "panel",
         "navigation",
-        "tab",
         "components",
-        "tabs"
+        "panel",
+        "tab",
+        "label"
       ],
       "aliases": [
         "AIAlias(alias='tabbed panel', context='technical', confidence=0.92)",
@@ -1314,7 +1314,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,

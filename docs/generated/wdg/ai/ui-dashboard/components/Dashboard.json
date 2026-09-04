@@ -165,16 +165,16 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "dashboard-toolbar",
-    "dashboard-sidebar",
-    "dashboard-container",
     "dashboard-skip-link",
     "dashboard-main",
     "dashboard-description",
-    "dashboard-footer",
-    "dashboard-title",
     "dashboard-content",
-    "dashboard-header"
+    "dashboard-sidebar",
+    "dashboard-header",
+    "dashboard-title",
+    "dashboard-footer",
+    "dashboard-toolbar",
+    "dashboard-container"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -207,8 +207,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Dashboard\\Dashboard.tsx",
   "keywords": [
-    "dashboard",
-    "components"
+    "components",
+    "dashboard"
   ],
   "aliases": [],
   "synonyms": [],
@@ -226,7 +226,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.727560",
+  "generatedAt": "2026-09-04T11:34:34.542831",
   "generatorVersion": "2.0.0",
   "sourceHash": "1fb17ee0",
   "metadata": {

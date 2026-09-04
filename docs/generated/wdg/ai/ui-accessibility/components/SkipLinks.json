@@ -146,8 +146,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\SkipLinks\\SkipLinks.tsx",
   "keywords": [
-    "skiplinks",
-    "components"
+    "components",
+    "skiplinks"
   ],
   "aliases": [],
   "synonyms": [],
@@ -165,7 +165,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.189176",
+  "generatedAt": "2026-09-04T11:34:33.782754",
   "generatorVersion": "2.0.0",
   "sourceHash": "22ecdbb3",
   "metadata": {

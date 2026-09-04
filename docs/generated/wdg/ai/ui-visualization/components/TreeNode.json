@@ -197,12 +197,12 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "wx-vis-node__content",
-    "wx-vis-node__label",
     "wx-vis-node__badge",
+    "wx-vis-node__content",
+    "wx-vis-node__subtitle",
     "wx-vis-node__avatar",
     "wx-vis-node__toggle",
-    "wx-vis-node__subtitle"
+    "wx-vis-node__label"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -235,8 +235,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\TreeNode\\TreeNode.tsx",
   "keywords": [
-    "treenode",
-    "components"
+    "components",
+    "treenode"
   ],
   "aliases": [],
   "synonyms": [],
@@ -254,7 +254,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.956356",
+  "generatedAt": "2026-09-04T11:34:36.271325",
   "generatorVersion": "2.0.0",
   "sourceHash": "c83eec1a",
   "metadata": {

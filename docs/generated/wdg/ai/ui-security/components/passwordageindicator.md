@@ -69,7 +69,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** passwordageindicator, components
+**Keywords:** components, passwordageindicator
 
 **Semantic Category:** utility
 

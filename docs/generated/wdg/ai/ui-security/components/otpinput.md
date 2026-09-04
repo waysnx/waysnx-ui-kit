@@ -86,7 +86,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** label, otpinput, placeholder, value, components
+**Keywords:** otpinput, components, placeholder, value, label
 
 **Synonyms:** text entry, form field
 

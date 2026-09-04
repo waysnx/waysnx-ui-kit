@@ -95,7 +95,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** label, placeholder, value, htmleditor, components
+**Keywords:** htmleditor, components, placeholder, value, label
 
 **Semantic Category:** utility
 

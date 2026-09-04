@@ -474,8 +474,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Header\\Header.tsx",
   "keywords": [
-    "header",
-    "components"
+    "components",
+    "header"
   ],
   "aliases": [],
   "synonyms": [],
@@ -493,7 +493,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.234606",
+  "generatedAt": "2026-09-04T11:34:35.305546",
   "generatorVersion": "2.0.0",
   "sourceHash": "880dbc44",
   "metadata": {

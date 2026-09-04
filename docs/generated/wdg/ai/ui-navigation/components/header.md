@@ -125,7 +125,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** header, components
+**Keywords:** components, header
 
 **Semantic Category:** utility
 

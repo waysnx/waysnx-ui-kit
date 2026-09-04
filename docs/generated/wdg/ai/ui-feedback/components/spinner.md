@@ -72,7 +72,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** spinner, components
+**Keywords:** components, spinner
 
 **Semantic Category:** feedback
 

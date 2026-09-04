@@ -58,16 +58,16 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
+    "wx-comm-user-presence-item",
     "wx-comm-user-presence-item__avatar",
+    "wx-comm-user-presence-item__info",
     "wx-comm-user-presence-item__name",
     "wx-comm-user-presence-item__status-text",
-    "wx-comm-user-presence-item__info",
     "wx-comm-user-presence-item__status-dot",
-    "wx-comm-user-presence-item",
-    "--wx-comm-presence-away",
     "--wx-comm-presence-offline",
-    "--wx-comm-presence-online",
-    "--wx-comm-presence-busy"
+    "--wx-comm-presence-busy",
+    "--wx-comm-presence-away",
+    "--wx-comm-presence-online"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -119,7 +119,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.525527",
+  "generatedAt": "2026-09-04T11:34:34.248141",
   "generatorVersion": "2.0.0",
   "sourceHash": "cc47c577",
   "metadata": {

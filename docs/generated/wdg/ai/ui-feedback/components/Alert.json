@@ -12,13 +12,13 @@
   "longDescription": "Display a contextual message that requires user attention.",
   "references": {
     "storybook": {
-      "available": false,
-      "title": "",
-      "storyId": "",
-      "url": "",
+      "available": true,
+      "title": "Components/Alert",
+      "storyId": "components-alert",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-alert",
       "stories": [],
       "tags": [],
-      "source": ""
+      "source": "Alert.stories.tsx"
     }
   },
   "useCases": [
@@ -250,7 +250,7 @@
   "dark": null,
   "highContrast": null,
   "responsive": false,
-  "storybook": false,
+  "storybook": true,
   "playwright": false,
   "vitest": false,
   "jest": false,
@@ -277,7 +277,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.899555",
+  "generatedAt": "2026-09-04T11:34:34.846780",
   "generatorVersion": "2.0.0",
   "sourceHash": "1ce2ec8d",
   "metadata": {

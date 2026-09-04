@@ -12,13 +12,13 @@
   "longDescription": "Constrain content width and provide consistent margins.",
   "references": {
     "storybook": {
-      "available": false,
-      "title": "",
-      "storyId": "",
-      "url": "",
+      "available": true,
+      "title": "Components/Container",
+      "storyId": "components-container",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-container",
       "stories": [],
       "tags": [],
-      "source": ""
+      "source": "Container.stories.tsx"
     }
   },
   "useCases": [
@@ -123,7 +123,7 @@
   "dark": null,
   "highContrast": null,
   "responsive": false,
-  "storybook": false,
+  "storybook": true,
   "playwright": false,
   "vitest": false,
   "jest": false,
@@ -151,7 +151,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.069966",
+  "generatedAt": "2026-09-04T11:34:35.078887",
   "generatorVersion": "2.0.0",
   "sourceHash": "b5ce5e45",
   "metadata": {

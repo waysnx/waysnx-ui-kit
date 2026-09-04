@@ -45,7 +45,7 @@ import { Divider } from '@waysnx/ui-layout';
 
 ## Storybook
 
-View Interactive Storybook
+[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/components-divider)
 
 ## When to Use
 
@@ -70,7 +70,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** divider, components
+**Keywords:** components, divider
 
 **Semantic Category:** utility
 

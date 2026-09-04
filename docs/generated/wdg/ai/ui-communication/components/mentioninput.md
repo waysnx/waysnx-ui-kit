@@ -63,7 +63,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** mentioninput, components
+**Keywords:** components, mentioninput
 
 **Synonyms:** text entry, form field
 

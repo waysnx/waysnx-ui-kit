@@ -13,9 +13,9 @@
   "references": {
     "storybook": {
       "available": true,
-      "title": "Navigation/Breadcrumb",
-      "storyId": "navigation-breadcrumb",
-      "url": "https://uikit.waysnx.tech/?path=/docs/navigation-breadcrumb",
+      "title": "Components/Breadcrumb",
+      "storyId": "components-breadcrumb",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-breadcrumb",
       "stories": [],
       "tags": [],
       "source": "Breadcrumb.stories.tsx"
@@ -176,8 +176,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Breadcrumb\\Breadcrumb.tsx",
   "keywords": [
-    "breadcrumb",
-    "components"
+    "components",
+    "breadcrumb"
   ],
   "aliases": [],
   "synonyms": [],
@@ -195,7 +195,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.040962",
+  "generatedAt": "2026-09-04T11:34:35.039146",
   "generatorVersion": "2.0.0",
   "sourceHash": "1603563d",
   "metadata": {

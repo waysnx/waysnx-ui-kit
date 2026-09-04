@@ -100,7 +100,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** daterangepicker, placeholder, label, components
+**Keywords:** label, components, placeholder, daterangepicker
 
 **Semantic Category:** input
 

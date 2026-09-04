@@ -64,10 +64,10 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "wx-adv-pdf-viewer__toolbar",
+    "wx-adv-pdf-viewer__content",
     "wx-adv-pdf-viewer__page-info",
     "wx-adv-toolbar__btn",
-    "wx-adv-pdf-viewer__content",
+    "wx-adv-pdf-viewer__toolbar",
     "--wx-color-text-muted"
   ],
   "designTokens": {},
@@ -101,8 +101,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\PDFViewer\\PDFViewer.tsx",
   "keywords": [
-    "pdfviewer",
-    "components"
+    "components",
+    "pdfviewer"
   ],
   "aliases": [],
   "synonyms": [],
@@ -120,7 +120,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.413133",
+  "generatedAt": "2026-09-04T11:34:34.088013",
   "generatorVersion": "2.0.0",
   "sourceHash": "f2d7b4be",
   "metadata": {

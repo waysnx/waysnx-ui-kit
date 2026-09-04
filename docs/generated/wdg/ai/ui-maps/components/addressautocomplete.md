@@ -55,7 +55,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** addressautocomplete, components
+**Keywords:** components, addressautocomplete
 
 **Semantic Category:** utility
 

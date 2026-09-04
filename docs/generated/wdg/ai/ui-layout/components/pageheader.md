@@ -45,7 +45,7 @@ import { PageHeader } from '@waysnx/ui-layout';
 
 ## Storybook
 
-View Interactive Storybook
+[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/components-pageheader)
 
 ## When to Use
 
@@ -70,7 +70,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** pageheader, label, components
+**Keywords:** label, components, pageheader
 
 **Semantic Category:** utility
 

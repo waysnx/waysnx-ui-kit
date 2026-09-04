@@ -160,23 +160,23 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
+    "wx-workspace-switcher__trigger-content",
+    "wx-workspace-switcher__pill-name",
+    "wx-workspace-switcher__menu",
+    "wx-workspace-switcher__trigger",
     "wx-workspace-switcher__menu-item",
+    "wx-workspace-switcher__menu-name",
+    "wx-workspace-switcher__trigger-chevron",
     "wx-workspace-switcher__pill-icon",
     "wx-workspace-switcher__menu-icon",
-    "wx-workspace-switcher__item-name",
-    "wx-workspace-switcher__menu",
-    "wx-workspace-switcher__menu-item-content",
-    "wx-workspace-switcher__menu-checkmark",
-    "wx-workspace-switcher__trigger-content",
     "wx-workspace-switcher__trigger-icon",
-    "wx-workspace-switcher__trigger",
+    "wx-workspace-switcher__menu-item-content",
     "wx-workspace-switcher__menu-description",
+    "wx-workspace-switcher__menu-checkmark",
+    "wx-workspace-switcher__item-name",
     "wx-workspace-switcher__trigger-name",
-    "wx-workspace-switcher__menu-text",
-    "wx-workspace-switcher__pill-name",
     "wx-workspace-switcher__item-icon",
-    "wx-workspace-switcher__trigger-chevron",
-    "wx-workspace-switcher__menu-name"
+    "wx-workspace-switcher__menu-text"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -209,8 +209,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\WorkspaceSwitcher\\WorkspaceSwitcher.tsx",
   "keywords": [
-    "workspaceswitcher",
-    "components"
+    "components",
+    "workspaceswitcher"
   ],
   "aliases": [],
   "synonyms": [],
@@ -228,7 +228,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.343621",
+  "generatedAt": "2026-09-04T11:34:35.449490",
   "generatorVersion": "2.0.0",
   "sourceHash": "b9698821",
   "metadata": {

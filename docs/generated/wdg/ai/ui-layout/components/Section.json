@@ -12,13 +12,13 @@
   "longDescription": "Define a semantic content section with consistent spacing.",
   "references": {
     "storybook": {
-      "available": false,
-      "title": "",
-      "storyId": "",
-      "url": "",
+      "available": true,
+      "title": "Components/Section",
+      "storyId": "components-section",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-section",
       "stories": [],
       "tags": [],
-      "source": ""
+      "source": "Section.stories.tsx"
     }
   },
   "useCases": [
@@ -110,7 +110,7 @@
   "dark": null,
   "highContrast": null,
   "responsive": false,
-  "storybook": false,
+  "storybook": true,
   "playwright": false,
   "vitest": false,
   "jest": false,
@@ -118,9 +118,9 @@
   "documentation": true,
   "sourceFile": "src\\components\\Section\\Section.tsx",
   "keywords": [
-    "section",
     "label",
-    "components"
+    "components",
+    "section"
   ],
   "aliases": [],
   "synonyms": [],
@@ -138,7 +138,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.134592",
+  "generatedAt": "2026-09-04T11:34:35.169479",
   "generatorVersion": "2.0.0",
   "sourceHash": "745f7500",
   "metadata": {

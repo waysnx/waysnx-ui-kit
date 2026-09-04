@@ -64,7 +64,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** securityscore, components
+**Keywords:** components, securityscore
 
 **Semantic Category:** utility
 

@@ -124,8 +124,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\SecurityDashboard\\SecurityScore.tsx",
   "keywords": [
-    "securityscore",
-    "components"
+    "components",
+    "securityscore"
   ],
   "aliases": [],
   "synonyms": [],
@@ -143,7 +143,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.707279",
+  "generatedAt": "2026-09-04T11:34:35.945045",
   "generatorVersion": "2.0.0",
   "sourceHash": "520cad17",
   "packageDependencies": {

@@ -233,9 +233,9 @@
   "documentation": true,
   "sourceFile": "src\\components\\Link\\Link.tsx",
   "keywords": [
-    "label",
     "link",
-    "components"
+    "components",
+    "label"
   ],
   "aliases": [],
   "synonyms": [],
@@ -253,7 +253,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.658854",
+  "generatedAt": "2026-09-04T11:34:34.436524",
   "generatorVersion": "2.0.0",
   "sourceHash": "e644ab3c",
   "metadata": {

@@ -73,7 +73,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** zoomcontrols, components
+**Keywords:** components, zoomcontrols
 
 **Semantic Category:** utility
 

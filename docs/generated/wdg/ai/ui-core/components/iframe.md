@@ -15,7 +15,7 @@ npm install @waysnx/ui-core
 ## Import
 
 ```typescript
-import { IFrame } from '@waysnx/ui-core';
+import { DEFAULT_SANDBOX } from '@waysnx/ui-core';
 ```
 
 ## Props
@@ -94,7 +94,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** components, label, iframe
+**Keywords:** iframe, components, label
 
 **Semantic Category:** utility
 

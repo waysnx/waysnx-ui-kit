@@ -163,8 +163,8 @@
   "sourceFile": "src\\components\\MFA\\BiometricButton.tsx",
   "keywords": [
     "label",
-    "biometricbutton",
-    "components"
+    "components",
+    "biometricbutton"
   ],
   "aliases": [],
   "synonyms": [
@@ -197,7 +197,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.506753",
+  "generatedAt": "2026-09-04T11:34:35.676100",
   "generatorVersion": "2.0.0",
   "sourceHash": "c8198d3b",
   "packageDependencies": {

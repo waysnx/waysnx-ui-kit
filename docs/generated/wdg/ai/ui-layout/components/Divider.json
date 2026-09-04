@@ -12,13 +12,13 @@
   "longDescription": "Create a visual separation between content sections.",
   "references": {
     "storybook": {
-      "available": false,
-      "title": "",
-      "storyId": "",
-      "url": "",
+      "available": true,
+      "title": "Components/Divider",
+      "storyId": "components-divider",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-divider",
       "stories": [],
       "tags": [],
-      "source": ""
+      "source": "Divider.stories.tsx"
     }
   },
   "useCases": [
@@ -119,7 +119,7 @@
   "dark": null,
   "highContrast": null,
   "responsive": false,
-  "storybook": false,
+  "storybook": true,
   "playwright": false,
   "vitest": false,
   "jest": false,
@@ -127,8 +127,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Divider\\Divider.tsx",
   "keywords": [
-    "divider",
-    "components"
+    "components",
+    "divider"
   ],
   "aliases": [],
   "synonyms": [],
@@ -146,7 +146,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.077229",
+  "generatedAt": "2026-09-04T11:34:35.088542",
   "generatorVersion": "2.0.0",
   "sourceHash": "156fa4c3",
   "metadata": {

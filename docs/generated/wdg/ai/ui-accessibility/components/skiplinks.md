@@ -76,7 +76,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** skiplinks, components
+**Keywords:** components, skiplinks
 
 **Semantic Category:** utility
 

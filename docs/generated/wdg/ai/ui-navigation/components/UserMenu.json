@@ -181,21 +181,21 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "user-menu__divider",
-    "user-menu__items",
-    "user-menu__item-label",
-    "user-menu__trigger",
-    "user-menu__header",
-    "user-menu__header-email",
     "user-menu__avatar",
-    "user-menu__header--custom",
-    "user-menu__header-info",
-    "user-menu__header-avatar--placeholder",
-    "user-menu__status",
-    "user-menu__header-name",
+    "user-menu__divider",
+    "user-menu__trigger",
     "user-menu__item-icon",
+    "user-menu__item-label",
+    "user-menu__avatar--placeholder",
+    "user-menu__header",
+    "user-menu__header-info",
+    "user-menu__status",
+    "user-menu__header--custom",
+    "user-menu__header-email",
     "user-menu__header-avatar",
-    "user-menu__avatar--placeholder"
+    "user-menu__items",
+    "user-menu__header-name",
+    "user-menu__header-avatar--placeholder"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -228,8 +228,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\UserMenu\\UserMenu.tsx",
   "keywords": [
-    "usermenu",
-    "components"
+    "components",
+    "usermenu"
   ],
   "aliases": [],
   "synonyms": [],
@@ -247,7 +247,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.336011",
+  "generatedAt": "2026-09-04T11:34:35.437704",
   "generatorVersion": "2.0.0",
   "sourceHash": "50d3fb81",
   "metadata": {

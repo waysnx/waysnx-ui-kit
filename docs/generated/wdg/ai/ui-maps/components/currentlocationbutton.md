@@ -55,7 +55,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** currentlocationbutton, components
+**Keywords:** components, currentlocationbutton
 
 **Synonyms:** action control, clickable element
 

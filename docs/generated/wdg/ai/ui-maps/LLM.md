@@ -123,13 +123,13 @@ This library is optimized for AI code generation and documentation search.
 ### Component Metadata
 
 **AddressAutocomplete**
-- Keywords: addressautocomplete, components
+- Keywords: components, addressautocomplete
 
 **AddressSelector**
-- Keywords: addressselector, components
+- Keywords: components, addressselector
 
 **CurrentLocationButton**
-- Keywords: currentlocationbutton, components
+- Keywords: components, currentlocationbutton
 
 ### Searchable Metadata
 

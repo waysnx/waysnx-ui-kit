@@ -12,13 +12,13 @@
   "longDescription": "Create a contained panel or section with consistent styling.",
   "references": {
     "storybook": {
-      "available": false,
-      "title": "",
-      "storyId": "",
-      "url": "",
+      "available": true,
+      "title": "Components/Panel",
+      "storyId": "components-panel",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-panel",
       "stories": [],
       "tags": [],
-      "source": ""
+      "source": "Panel.stories.tsx"
     }
   },
   "useCases": [
@@ -183,7 +183,7 @@
   "dark": null,
   "highContrast": null,
   "responsive": false,
-  "storybook": false,
+  "storybook": true,
   "playwright": false,
   "vitest": false,
   "jest": false,
@@ -191,8 +191,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Panel\\Panel.tsx",
   "keywords": [
-    "panel",
-    "components"
+    "components",
+    "panel"
   ],
   "aliases": [],
   "synonyms": [],
@@ -210,7 +210,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.120321",
+  "generatedAt": "2026-09-04T11:34:35.150950",
   "generatorVersion": "2.0.0",
   "sourceHash": "ec0b140c",
   "metadata": {

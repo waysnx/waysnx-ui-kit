@@ -66,7 +66,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** sessioncountdown, components
+**Keywords:** components, sessioncountdown
 
 **Semantic Category:** utility
 

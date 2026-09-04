@@ -102,10 +102,10 @@ This library is optimized for AI code generation and documentation search.
 ### Component Metadata
 
 **DocumentPreview**
-- Keywords: documentpreview, components
+- Keywords: components, documentpreview
 
 **PDFViewer**
-- Keywords: pdfviewer, components
+- Keywords: components, pdfviewer
 
 ### Searchable Metadata
 

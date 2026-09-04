@@ -127,8 +127,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\placeholders\\WorkflowViewerPlaceholder.tsx",
   "keywords": [
-    "components",
-    "workflowviewerplaceholder"
+    "workflowviewerplaceholder",
+    "components"
   ],
   "aliases": [],
   "synonyms": [],
@@ -146,7 +146,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.884372",
+  "generatedAt": "2026-09-04T11:34:34.822473",
   "generatorVersion": "2.0.0",
   "sourceHash": "4341f465",
   "packageDependencies": {

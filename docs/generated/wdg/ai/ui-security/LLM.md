@@ -272,10 +272,10 @@ This library is optimized for AI code generation and documentation search.
 - Keywords: components, accessdenied
 
 **ActiveSessions**
-- Keywords: activesessions, components
+- Keywords: components, activesessions
 
 **ActivityFeed**
-- Keywords: activityfeed, components
+- Keywords: components, activityfeed
 
 ### Searchable Metadata
 

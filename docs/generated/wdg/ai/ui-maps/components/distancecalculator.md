@@ -55,7 +55,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** components, distancecalculator
+**Keywords:** distancecalculator, components
 
 **Semantic Category:** utility
 

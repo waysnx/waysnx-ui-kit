@@ -92,9 +92,9 @@
   "cssVariables": [],
   "cssClasses": [
     "dashboard-search-input",
+    "dashboard-search-suggestions",
     "dashboard-search-button",
-    "dashboard-search-form",
-    "dashboard-search-suggestions"
+    "dashboard-search-form"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -127,8 +127,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Filters\\DashboardSearch.tsx",
   "keywords": [
-    "dashboardsearch",
     "placeholder",
+    "dashboardsearch",
     "components"
   ],
   "aliases": [],
@@ -147,7 +147,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.767987",
+  "generatedAt": "2026-09-04T11:34:34.597389",
   "generatorVersion": "2.0.0",
   "sourceHash": "46160174",
   "packageDependencies": {

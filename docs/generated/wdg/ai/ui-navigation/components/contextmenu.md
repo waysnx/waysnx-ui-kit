@@ -89,7 +89,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** contextmenu, components
+**Keywords:** components, contextmenu
 
 **Semantic Category:** input
 

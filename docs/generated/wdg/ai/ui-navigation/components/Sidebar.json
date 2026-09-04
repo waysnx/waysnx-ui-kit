@@ -424,8 +424,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Sidebar\\Sidebar.tsx",
   "keywords": [
-    "sidebar",
-    "components"
+    "components",
+    "sidebar"
   ],
   "aliases": [],
   "synonyms": [],
@@ -443,7 +443,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.305628",
+  "generatedAt": "2026-09-04T11:34:35.396802",
   "generatorVersion": "2.0.0",
   "sourceHash": "4fb47703",
   "metadata": {

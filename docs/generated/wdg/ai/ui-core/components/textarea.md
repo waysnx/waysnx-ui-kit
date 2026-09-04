@@ -93,7 +93,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** textarea, label, components
+**Keywords:** label, components, textarea
 
 **Semantic Category:** input
 

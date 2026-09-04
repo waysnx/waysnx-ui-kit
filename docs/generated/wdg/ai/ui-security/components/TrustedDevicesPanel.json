@@ -119,8 +119,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\SecuritySettings\\TrustedDevicesPanel.tsx",
   "keywords": [
-    "trusteddevicespanel",
-    "components"
+    "components",
+    "trusteddevicespanel"
   ],
   "aliases": [],
   "synonyms": [],
@@ -138,7 +138,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.774108",
+  "generatedAt": "2026-09-04T11:34:36.028702",
   "generatorVersion": "2.0.0",
   "sourceHash": "37a4d8ee",
   "packageDependencies": {

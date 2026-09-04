@@ -61,7 +61,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** typingindicator, components
+**Keywords:** components, typingindicator
 
 **Semantic Category:** utility
 

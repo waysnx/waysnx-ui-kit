@@ -76,7 +76,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** workspaceswitcher, components
+**Keywords:** components, workspaceswitcher
 
 **Semantic Category:** utility
 

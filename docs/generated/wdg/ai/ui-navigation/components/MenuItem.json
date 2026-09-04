@@ -190,13 +190,13 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "nav-menu-item__label",
-    "nav-menu-item__icon",
-    "nav-menu-item__submenu",
-    "nav-menu-item__badge",
     "nav-menu-item__content",
     "nav-menu-item__chevron",
-    "nav-menu-item__link"
+    "nav-menu-item__label",
+    "nav-menu-item__icon",
+    "nav-menu-item__badge",
+    "nav-menu-item__link",
+    "nav-menu-item__submenu"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -248,7 +248,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.257979",
+  "generatedAt": "2026-09-04T11:34:35.336173",
   "generatorVersion": "2.0.0",
   "sourceHash": "c6d41b22",
   "packageDependencies": {

@@ -67,7 +67,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** securitylogspanel, components
+**Keywords:** components, securitylogspanel
 
 **Semantic Category:** utility
 

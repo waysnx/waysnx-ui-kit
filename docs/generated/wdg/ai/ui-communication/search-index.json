@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
   "library": "ui-communication",
-  "generatedAt": "2026-09-03T20:02:40.524833",
+  "generatedAt": "2026-09-04T11:34:53.493324",
   "components": [
     {
       "id": "ui-communication:chatinput",
@@ -10,8 +10,8 @@
       "category": "components",
       "description": "Provide user input for composing chat or message content.",
       "keywords": [
-        "chatinput",
-        "components"
+        "components",
+        "chatinput"
       ],
       "aliases": [],
       "synonyms": [
@@ -133,8 +133,8 @@
       "category": "components",
       "description": "Display a list of conversations for quick access.",
       "keywords": [
-        "conversationlist",
-        "components"
+        "components",
+        "conversationlist"
       ],
       "aliases": [],
       "synonyms": [],
@@ -235,8 +235,8 @@
       "category": "components",
       "description": "Enable mentioning users or entities within text input.",
       "keywords": [
-        "mentioninput",
-        "components"
+        "components",
+        "mentioninput"
       ],
       "aliases": [],
       "synonyms": [
@@ -289,8 +289,8 @@
       "category": "components",
       "description": "Display a single message in a chat or messaging interface.",
       "keywords": [
-        "messagebubble",
-        "components"
+        "components",
+        "messagebubble"
       ],
       "aliases": [],
       "synonyms": [],
@@ -508,8 +508,8 @@
       "category": "components",
       "description": "Enable quick reactions to messages through emoji selections.",
       "keywords": [
-        "reactionbar",
-        "components"
+        "components",
+        "reactionbar"
       ],
       "aliases": [],
       "synonyms": [],
@@ -563,8 +563,8 @@
       "category": "components",
       "description": "Show message delivery and read status indicators.",
       "keywords": [
-        "readreceipts",
-        "components"
+        "components",
+        "readreceipts"
       ],
       "aliases": [],
       "synonyms": [],
@@ -618,8 +618,8 @@
       "category": "components",
       "description": "Display threaded conversations branching from parent messages.",
       "keywords": [
-        "threadpanel",
-        "components"
+        "components",
+        "threadpanel"
       ],
       "aliases": [],
       "synonyms": [],
@@ -678,8 +678,8 @@
       "category": "components",
       "description": "Show that another user is currently typing a message.",
       "keywords": [
-        "typingindicator",
-        "components"
+        "components",
+        "typingindicator"
       ],
       "aliases": [],
       "synonyms": [],
@@ -784,8 +784,8 @@
       "category": "components",
       "description": "Display and play audio/voice messages in chat or messaging.",
       "keywords": [
-        "voicemessage",
-        "components"
+        "components",
+        "voicemessage"
       ],
       "aliases": [],
       "synonyms": [],

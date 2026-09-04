@@ -12,13 +12,13 @@
   "longDescription": "Organize content in a vertical column within a layout grid.",
   "references": {
     "storybook": {
-      "available": false,
-      "title": "",
-      "storyId": "",
-      "url": "",
+      "available": true,
+      "title": "Components/Column",
+      "storyId": "components-column",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-column",
       "stories": [],
       "tags": [],
-      "source": ""
+      "source": "Column.stories.tsx"
     }
   },
   "useCases": [
@@ -126,7 +126,7 @@
   "dark": null,
   "highContrast": null,
   "responsive": false,
-  "storybook": false,
+  "storybook": true,
   "playwright": false,
   "vitest": false,
   "jest": false,
@@ -134,8 +134,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Column\\Column.tsx",
   "keywords": [
-    "column",
-    "components"
+    "components",
+    "column"
   ],
   "aliases": [],
   "synonyms": [],
@@ -153,7 +153,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.062808",
+  "generatedAt": "2026-09-04T11:34:35.069063",
   "generatorVersion": "2.0.0",
   "sourceHash": "1fa617b1",
   "metadata": {

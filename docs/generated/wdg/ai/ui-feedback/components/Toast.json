@@ -12,13 +12,13 @@
   "longDescription": "Display a temporary notification message that auto-dismisses.",
   "references": {
     "storybook": {
-      "available": false,
-      "title": "",
-      "storyId": "",
-      "url": "",
+      "available": true,
+      "title": "Components/Toast",
+      "storyId": "components-toast",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-toast",
       "stories": [],
       "tags": [],
-      "source": ""
+      "source": "Toast.stories.tsx"
     }
   },
   "useCases": [
@@ -292,7 +292,7 @@
   "dark": null,
   "highContrast": null,
   "responsive": false,
-  "storybook": false,
+  "storybook": true,
   "playwright": false,
   "vitest": false,
   "jest": false,
@@ -300,8 +300,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Toast\\Toast.tsx",
   "keywords": [
-    "toast",
-    "components"
+    "components",
+    "toast"
   ],
   "aliases": [],
   "synonyms": [],
@@ -319,7 +319,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.975413",
+  "generatedAt": "2026-09-04T11:34:34.949261",
   "generatorVersion": "2.0.0",
   "sourceHash": "fd69e01b",
   "metadata": {

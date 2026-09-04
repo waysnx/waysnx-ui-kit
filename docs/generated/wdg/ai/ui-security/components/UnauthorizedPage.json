@@ -151,8 +151,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Authorization\\UnauthorizedPage.tsx",
   "keywords": [
-    "unauthorizedpage",
-    "components"
+    "components",
+    "unauthorizedpage"
   ],
   "aliases": [],
   "synonyms": [],
@@ -170,7 +170,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.457478",
+  "generatedAt": "2026-09-04T11:34:35.609262",
   "generatorVersion": "2.0.0",
   "sourceHash": "6ef04cc2",
   "packageDependencies": {

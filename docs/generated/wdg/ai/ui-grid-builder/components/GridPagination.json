@@ -126,10 +126,10 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "wx-grid-page-size",
     "wx-grid-pagination-controls",
-    "wx-grid-page-btn",
+    "wx-grid-page-size",
     "wx-grid-pagination-info",
+    "wx-grid-page-btn",
     "wx-grid-pagination"
   ],
   "designTokens": {},
@@ -163,8 +163,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Grid\\GridPagination.tsx",
   "keywords": [
-    "gridpagination",
-    "components"
+    "components",
+    "gridpagination"
   ],
   "aliases": [],
   "synonyms": [],
@@ -182,7 +182,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.012136",
+  "generatedAt": "2026-09-04T11:34:35.000811",
   "generatorVersion": "2.0.0",
   "sourceHash": "c0f095a6",
   "packageDependencies": {

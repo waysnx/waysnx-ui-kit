@@ -70,14 +70,14 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "wx-comm-thread-panel__header",
     "wx-comm-thread-panel__messages",
+    "wx-comm-thread-panel__header",
+    "wx-comm-chat-footer",
     "wx-comm-thread-panel__close",
     "wx-comm-thread-panel__title",
-    "wx-comm-chat-footer",
     "wx-comm-thread-panel__reply-count",
-    "--wx-comm-thread-border",
-    "--wx-color-text-muted"
+    "--wx-color-text-muted",
+    "--wx-comm-thread-border"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -110,8 +110,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\ThreadPanel\\ThreadPanel.tsx",
   "keywords": [
-    "threadpanel",
-    "components"
+    "components",
+    "threadpanel"
   ],
   "aliases": [],
   "synonyms": [],
@@ -129,7 +129,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.509563",
+  "generatedAt": "2026-09-04T11:34:34.226148",
   "generatorVersion": "2.0.0",
   "sourceHash": "b864d4a8",
   "metadata": {

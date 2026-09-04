@@ -70,7 +70,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** readingguide, components
+**Keywords:** components, readingguide
 
 **Semantic Category:** utility
 

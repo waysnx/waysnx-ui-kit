@@ -63,11 +63,11 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "--wx-color-error",
     "--wx-radius-md",
-    "--wx-color-error-light",
     "--wx-radius-sm",
-    "--wx-font-size-xs"
+    "--wx-color-error-light",
+    "--wx-font-size-xs",
+    "--wx-color-error"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -100,8 +100,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\LiveComponentRenderer.tsx",
   "keywords": [
-    "components",
-    "livecomponentrenderer"
+    "livecomponentrenderer",
+    "components"
   ],
   "aliases": [],
   "synonyms": [],
@@ -119,7 +119,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.831622",
+  "generatedAt": "2026-09-04T11:34:34.708585",
   "generatorVersion": "2.0.0",
   "sourceHash": "ec5f1e54",
   "packageDependencies": {

@@ -142,8 +142,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Audit\\AuditHistoryTable.tsx",
   "keywords": [
-    "audithistorytable",
-    "components"
+    "components",
+    "audithistorytable"
   ],
   "aliases": [],
   "synonyms": [],
@@ -161,7 +161,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.358243",
+  "generatedAt": "2026-09-04T11:34:35.469255",
   "generatorVersion": "2.0.0",
   "sourceHash": "b94876ad",
   "packageDependencies": {

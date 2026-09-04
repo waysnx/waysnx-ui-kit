@@ -116,8 +116,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\SecurityDashboard\\SecurityHealthIndicator.tsx",
   "keywords": [
-    "securityhealthindicator",
-    "components"
+    "components",
+    "securityhealthindicator"
   ],
   "aliases": [],
   "synonyms": [],
@@ -135,7 +135,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.700524",
+  "generatedAt": "2026-09-04T11:34:35.935408",
   "generatorVersion": "2.0.0",
   "sourceHash": "eea05c14",
   "packageDependencies": {

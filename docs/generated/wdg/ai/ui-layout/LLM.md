@@ -150,10 +150,10 @@ This library is optimized for AI code generation and documentation search.
 - Keywords: accordion, components
 
 **Breadcrumb**
-- Keywords: breadcrumb, components
+- Keywords: components, breadcrumb
 
 **Card**
-- Keywords: card, components
+- Keywords: components, card
 
 ### Searchable Metadata
 

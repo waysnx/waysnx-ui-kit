@@ -147,7 +147,7 @@ Avoid using this component when:
 
 ## AI & Integration Notes
 
-**Keywords:** form-control, label, entry, field, form
+**Keywords:** form, input, entry, field, text
 
 **Synonyms:** text input, textbox, entry field, form field
 

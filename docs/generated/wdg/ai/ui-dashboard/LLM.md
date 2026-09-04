@@ -128,13 +128,13 @@ This library is optimized for AI code generation and documentation search.
 ### Component Metadata
 
 **ChartWidget**
-- Keywords: chartwidget, components
+- Keywords: components, chartwidget
 
 **Dashboard**
-- Keywords: dashboard, components
+- Keywords: components, dashboard
 
 **DashboardFilterBar**
-- Keywords: components, dashboardfilterbar
+- Keywords: dashboardfilterbar, components
 
 ### Searchable Metadata
 

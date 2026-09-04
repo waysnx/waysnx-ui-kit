@@ -133,10 +133,10 @@ This library is optimized for AI code generation and documentation search.
 - Keywords: alert, components
 
 **Badge**
-- Keywords: badge, components
+- Keywords: components, badge
 
 **CircularProgress**
-- Keywords: label, circularprogress, value
+- Keywords: label, components, value
 
 ### Searchable Metadata
 

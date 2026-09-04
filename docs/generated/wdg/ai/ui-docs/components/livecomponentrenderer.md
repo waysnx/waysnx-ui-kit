@@ -59,7 +59,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** components, livecomponentrenderer
+**Keywords:** livecomponentrenderer, components
 
 **Semantic Category:** utility
 

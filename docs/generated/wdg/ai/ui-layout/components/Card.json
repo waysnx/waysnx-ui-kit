@@ -12,13 +12,13 @@
   "longDescription": "Contain and organize related content in a bordered container.",
   "references": {
     "storybook": {
-      "available": false,
-      "title": "",
-      "storyId": "",
-      "url": "",
+      "available": true,
+      "title": "Components/Card",
+      "storyId": "components-card",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-card",
       "stories": [],
       "tags": [],
-      "source": ""
+      "source": "Card.stories.tsx"
     }
   },
   "useCases": [
@@ -191,7 +191,7 @@
   "dark": null,
   "highContrast": null,
   "responsive": false,
-  "storybook": false,
+  "storybook": true,
   "playwright": false,
   "vitest": false,
   "jest": false,
@@ -199,8 +199,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Card\\Card.tsx",
   "keywords": [
-    "card",
-    "components"
+    "components",
+    "card"
   ],
   "aliases": [],
   "synonyms": [],
@@ -218,7 +218,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.048229",
+  "generatedAt": "2026-09-04T11:34:35.049426",
   "generatorVersion": "2.0.0",
   "sourceHash": "f16f4c8d",
   "metadata": {

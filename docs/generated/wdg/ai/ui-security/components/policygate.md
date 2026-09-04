@@ -65,7 +65,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** policygate, components
+**Keywords:** components, policygate
 
 **Semantic Category:** utility
 

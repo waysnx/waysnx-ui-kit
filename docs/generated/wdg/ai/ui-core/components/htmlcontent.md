@@ -75,7 +75,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** htmlcontent, components
+**Keywords:** components, htmlcontent
 
 **Semantic Category:** utility
 

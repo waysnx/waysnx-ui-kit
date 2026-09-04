@@ -107,9 +107,9 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
+    "wx-vis-minimap__viewport",
     "wx-vis-minimap__svg",
-    "wx-vis-minimap__node",
-    "wx-vis-minimap__viewport"
+    "wx-vis-minimap__node"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -142,8 +142,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\MiniMap\\MiniMap.tsx",
   "keywords": [
-    "components",
-    "minimap"
+    "minimap",
+    "components"
   ],
   "aliases": [],
   "synonyms": [],
@@ -161,7 +161,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.917670",
+  "generatedAt": "2026-09-04T11:34:36.217940",
   "generatorVersion": "2.0.0",
   "sourceHash": "a728b819",
   "metadata": {

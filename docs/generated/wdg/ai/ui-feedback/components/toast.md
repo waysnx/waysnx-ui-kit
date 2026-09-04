@@ -15,7 +15,7 @@ npm install @waysnx/ui-feedback
 ## Import
 
 ```typescript
-import { useToast } from '@waysnx/ui-feedback';
+import { ToastProvider } from '@waysnx/ui-feedback';
 ```
 
 ## Props
@@ -77,7 +77,7 @@ import { useToast } from '@waysnx/ui-feedback';
 
 ## Storybook
 
-View Interactive Storybook
+[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/components-toast)
 
 ## Related Components
 
@@ -108,7 +108,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** toast, components
+**Keywords:** components, toast
 
 **Semantic Category:** feedback
 

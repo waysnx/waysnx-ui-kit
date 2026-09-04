@@ -200,9 +200,9 @@
   "documentation": true,
   "sourceFile": "src\\components\\Textarea\\Textarea.tsx",
   "keywords": [
-    "textarea",
     "label",
-    "components"
+    "components",
+    "textarea"
   ],
   "aliases": [],
   "synonyms": [],
@@ -220,7 +220,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.703690",
+  "generatedAt": "2026-09-04T11:34:34.504783",
   "generatorVersion": "2.0.0",
   "sourceHash": "54c92b65",
   "metadata": {

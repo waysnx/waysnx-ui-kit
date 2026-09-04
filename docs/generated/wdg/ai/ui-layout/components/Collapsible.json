@@ -12,13 +12,13 @@
   "longDescription": "Show or hide content with a click or interaction.",
   "references": {
     "storybook": {
-      "available": false,
-      "title": "",
-      "storyId": "",
-      "url": "",
+      "available": true,
+      "title": "Components/Collapsible",
+      "storyId": "components-collapsible",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-collapsible",
       "stories": [],
       "tags": [],
-      "source": ""
+      "source": "Collapsible.stories.tsx"
     }
   },
   "useCases": [
@@ -194,7 +194,7 @@
   "dark": null,
   "highContrast": null,
   "responsive": false,
-  "storybook": false,
+  "storybook": true,
   "playwright": false,
   "vitest": false,
   "jest": false,
@@ -202,8 +202,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Collapsible\\Collapsible.tsx",
   "keywords": [
-    "collapsible",
-    "components"
+    "components",
+    "collapsible"
   ],
   "aliases": [],
   "synonyms": [],
@@ -221,7 +221,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.055386",
+  "generatedAt": "2026-09-04T11:34:35.059387",
   "generatorVersion": "2.0.0",
   "sourceHash": "025ce0f5",
   "metadata": {

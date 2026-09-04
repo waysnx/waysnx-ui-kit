@@ -79,9 +79,9 @@
   "cssClasses": [
     "wx-grid-kebab-menu",
     "wx-grid-actions",
+    "wx-grid-kebab-item-icon",
     "wx-grid-kebab-btn",
-    "wx-grid-kebab",
-    "wx-grid-kebab-item-icon"
+    "wx-grid-kebab"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -133,7 +133,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.999076",
+  "generatedAt": "2026-09-04T11:34:34.978511",
   "generatorVersion": "2.0.0",
   "sourceHash": "8b81f200",
   "packageDependencies": {

@@ -67,7 +67,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** messagebubble, components
+**Keywords:** components, messagebubble
 
 **Semantic Category:** utility
 

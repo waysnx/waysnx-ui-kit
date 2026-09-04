@@ -74,7 +74,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** label, securedownloadbutton, components
+**Keywords:** label, components, securedownloadbutton
 
 **Synonyms:** action control, clickable element
 

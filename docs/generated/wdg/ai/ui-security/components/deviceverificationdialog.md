@@ -76,7 +76,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** deviceverificationdialog, components
+**Keywords:** components, deviceverificationdialog
 
 **Synonyms:** popup window, overlay panel
 

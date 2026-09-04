@@ -90,22 +90,22 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "--wx-color-primary",
-    "--wx-color-error",
-    "--wx-font-size-lg",
-    "--wx-font-size-xs",
     "--wx-radius-md",
+    "--wx-radius-sm",
     "--wx-color-error-light",
+    "--wx-color-surface-alt",
+    "--wx-color-border",
+    "--wx-font-size-xs",
+    "--wx-color-primary-light",
+    "--wx-color-text-muted",
+    "--wx-color-primary",
+    "--wx-color-success-light",
     "--wx-color-success",
     "--wx-color-surface",
-    "--wx-color-success-light",
-    "--wx-color-surface-alt",
-    "--wx-color-text",
-    "--wx-radius-sm",
     "--wx-font-size-sm",
-    "--wx-color-border",
-    "--wx-color-text-muted",
-    "--wx-color-primary-light"
+    "--wx-color-text",
+    "--wx-font-size-lg",
+    "--wx-color-error"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -138,8 +138,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\PropsTable.tsx",
   "keywords": [
-    "propstable",
-    "components"
+    "components",
+    "propstable"
   ],
   "aliases": [],
   "synonyms": [],
@@ -157,7 +157,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.891099",
+  "generatedAt": "2026-09-04T11:34:34.833371",
   "generatorVersion": "2.0.0",
   "sourceHash": "87b469a6",
   "packageDependencies": {

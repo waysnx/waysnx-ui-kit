@@ -76,12 +76,12 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "wx-comm-message__author",
-    "wx-comm-message__avatar",
     "wx-comm-message__body",
-    "wx-comm-message__meta",
     "wx-comm-message__thread-info",
-    "wx-comm-message__bubble"
+    "wx-comm-message__bubble",
+    "wx-comm-message__author",
+    "wx-comm-message__meta",
+    "wx-comm-message__avatar"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -114,8 +114,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\MessageBubble\\MessageBubble.tsx",
   "keywords": [
-    "messagebubble",
-    "components"
+    "components",
+    "messagebubble"
   ],
   "aliases": [],
   "synonyms": [],
@@ -133,7 +133,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.461883",
+  "generatedAt": "2026-09-04T11:34:34.164718",
   "generatorVersion": "2.0.0",
   "sourceHash": "5e1d756d",
   "metadata": {

@@ -40,7 +40,7 @@ import { Column } from '@waysnx/ui-layout';
 
 ## Storybook
 
-View Interactive Storybook
+[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/components-column)
 
 ## When to Use
 
@@ -65,7 +65,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** column, components
+**Keywords:** components, column
 
 **Semantic Category:** utility
 

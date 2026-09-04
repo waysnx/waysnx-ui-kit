@@ -87,7 +87,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** orgchart, components
+**Keywords:** components, orgchart
 
 **Semantic Category:** utility
 

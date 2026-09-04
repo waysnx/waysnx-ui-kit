@@ -73,7 +73,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** activesessions, components
+**Keywords:** components, activesessions
 
 **Semantic Category:** utility
 

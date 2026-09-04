@@ -74,7 +74,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** quickactions, components
+**Keywords:** components, quickactions
 
 **Semantic Category:** utility
 

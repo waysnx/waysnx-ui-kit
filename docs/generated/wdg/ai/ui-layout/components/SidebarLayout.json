@@ -12,13 +12,13 @@
   "longDescription": "Create a layout with a sidebar and main content area.",
   "references": {
     "storybook": {
-      "available": false,
-      "title": "",
-      "storyId": "",
-      "url": "",
+      "available": true,
+      "title": "Components/SidebarLayout",
+      "storyId": "components-sidebarlayout",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-sidebarlayout",
       "stories": [],
       "tags": [],
-      "source": ""
+      "source": "SidebarLayout.stories.tsx"
     }
   },
   "useCases": [
@@ -154,7 +154,7 @@
   "dark": null,
   "highContrast": null,
   "responsive": false,
-  "storybook": false,
+  "storybook": true,
   "playwright": false,
   "vitest": false,
   "jest": false,
@@ -181,7 +181,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.141970",
+  "generatedAt": "2026-09-04T11:34:35.179144",
   "generatorVersion": "2.0.0",
   "sourceHash": "2c12c9b1",
   "metadata": {

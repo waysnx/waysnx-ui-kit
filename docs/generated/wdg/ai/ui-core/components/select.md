@@ -122,7 +122,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** label, combo, choice, value, select
+**Keywords:** dropdown, components, combo, option, choice
 
 **Synonyms:** dropdown, option selector, combo box
 

@@ -76,7 +76,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** toolbar, components
+**Keywords:** components, toolbar
 
 **Semantic Category:** utility
 

@@ -331,9 +331,9 @@
   "sourceFile": "src\\components\\Currency\\Currency.tsx",
   "keywords": [
     "label",
-    "currency",
+    "components",
     "value",
-    "components"
+    "currency"
   ],
   "aliases": [],
   "synonyms": [],
@@ -351,7 +351,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.565788",
+  "generatedAt": "2026-09-04T11:34:34.303349",
   "generatorVersion": "2.0.0",
   "sourceHash": "0b32eeec",
   "metadata": {

@@ -85,7 +85,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** speechtotexttextarea, label, components
+**Keywords:** speechtotexttextarea, components, label
 
 **Semantic Category:** input
 

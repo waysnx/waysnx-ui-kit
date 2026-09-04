@@ -61,9 +61,9 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "wx-comm-voice-message__play-btn",
     "wx-comm-voice-message__waveform",
-    "wx-comm-voice-message__duration"
+    "wx-comm-voice-message__duration",
+    "wx-comm-voice-message__play-btn"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -96,8 +96,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\VoiceMessage\\VoiceMessage.tsx",
   "keywords": [
-    "voicemessage",
-    "components"
+    "components",
+    "voicemessage"
   ],
   "aliases": [],
   "synonyms": [],
@@ -115,7 +115,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.533205",
+  "generatedAt": "2026-09-04T11:34:34.257791",
   "generatorVersion": "2.0.0",
   "sourceHash": "4890f802",
   "metadata": {

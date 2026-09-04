@@ -40,7 +40,7 @@ import { Grid } from '@waysnx/ui-layout';
 
 ## Storybook
 
-View Interactive Storybook
+[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/components-grid)
 
 ## When to Use
 

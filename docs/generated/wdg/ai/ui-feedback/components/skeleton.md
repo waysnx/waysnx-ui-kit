@@ -50,7 +50,7 @@ import { Skeleton } from '@waysnx/ui-feedback';
 
 ## Storybook
 
-View Interactive Storybook
+[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/components-skeleton)
 
 ## When to Use
 

@@ -76,7 +76,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** otpresendbutton, components
+**Keywords:** components, otpresendbutton
 
 **Synonyms:** action control, clickable element
 

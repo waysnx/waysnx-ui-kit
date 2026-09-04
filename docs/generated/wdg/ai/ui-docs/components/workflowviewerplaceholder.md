@@ -69,7 +69,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** components, workflowviewerplaceholder
+**Keywords:** workflowviewerplaceholder, components
 
 **Semantic Category:** utility
 

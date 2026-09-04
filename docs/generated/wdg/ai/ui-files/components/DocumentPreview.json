@@ -97,8 +97,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\DocumentPreview\\DocumentPreview.tsx",
   "keywords": [
-    "documentpreview",
-    "components"
+    "components",
+    "documentpreview"
   ],
   "aliases": [],
   "synonyms": [],
@@ -116,7 +116,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.403889",
+  "generatedAt": "2026-09-04T11:34:34.075860",
   "generatorVersion": "2.0.0",
   "sourceHash": "e6db7e5f",
   "metadata": {

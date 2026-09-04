@@ -2,7 +2,7 @@
 
 Framework-agnostic client-side runtime diagnostics, UI error observability, and form diagnostics for the WaysNX UI Kit
 
-**Version:** `0.1.0`
+**Version:** `1.0.0`
 
 
 ## Installation
@@ -31,7 +31,7 @@ pnpm add @waysnx/ui-diagnostics
 | Property | Value |
 |----------|-------|
 | **Package** | `@waysnx/ui-diagnostics` |
-| **Version** | `0.1.0` |
+| **Version** | `1.0.0` |
 | **License** | Apache-2.0 |
 | **Author** | WaysNX Technologies |
 

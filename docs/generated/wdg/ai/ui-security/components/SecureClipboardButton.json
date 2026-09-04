@@ -171,8 +171,8 @@
   "sourceFile": "src\\components\\SecureInputs\\SecureClipboardButton.tsx",
   "keywords": [
     "label",
-    "secureclipboardbutton",
-    "components"
+    "components",
+    "secureclipboardbutton"
   ],
   "aliases": [],
   "synonyms": [
@@ -205,7 +205,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.616323",
+  "generatedAt": "2026-09-04T11:34:35.829713",
   "generatorVersion": "2.0.0",
   "sourceHash": "abc352ac",
   "packageDependencies": {

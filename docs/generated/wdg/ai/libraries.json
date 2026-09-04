@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "generatedAt": "2026-09-03T20:03:10.870861",
+  "generatedAt": "2026-09-04T11:35:28.997216",
   "libraries": [
     {
       "id": "ui-accessibility",
@@ -915,7 +915,7 @@
       "id": "ui-diagnostics",
       "name": "ui-diagnostics",
       "displayName": "Ui Diagnostics",
-      "version": "0.1.0",
+      "version": "1.0.0",
       "componentCount": 0,
       "categories": [],
       "components": []

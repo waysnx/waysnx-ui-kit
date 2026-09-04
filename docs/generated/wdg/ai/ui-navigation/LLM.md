@@ -147,13 +147,13 @@ This library is optimized for AI code generation and documentation search.
 ### Component Metadata
 
 **Breadcrumb**
-- Keywords: breadcrumb, components
+- Keywords: components, breadcrumb
 
 **CommandPalette**
-- Keywords: commandpalette, components
+- Keywords: components, commandpalette
 
 **ContextMenu**
-- Keywords: contextmenu, components
+- Keywords: components, contextmenu
 
 ### Searchable Metadata
 

@@ -96,7 +96,7 @@ import { Drawer } from '@waysnx/ui-navigation';
 
 ## Storybook
 
-[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/navigation-drawer)
+[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/components-drawer)
 
 ## When to Use
 

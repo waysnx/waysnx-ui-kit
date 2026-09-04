@@ -70,7 +70,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** components, auth0loginbutton
+**Keywords:** auth0loginbutton, components
 
 **Synonyms:** action control, clickable element
 

@@ -162,9 +162,9 @@
   "documentation": true,
   "sourceFile": "src\\components\\MFA\\SecurityKeyButton.tsx",
   "keywords": [
-    "securitykeybutton",
     "label",
-    "components"
+    "components",
+    "securitykeybutton"
   ],
   "aliases": [],
   "synonyms": [
@@ -197,7 +197,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.535629",
+  "generatedAt": "2026-09-04T11:34:35.715386",
   "generatorVersion": "2.0.0",
   "sourceHash": "025ad84b",
   "packageDependencies": {

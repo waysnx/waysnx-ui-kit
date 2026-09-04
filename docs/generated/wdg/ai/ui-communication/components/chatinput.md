@@ -70,7 +70,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** chatinput, components
+**Keywords:** components, chatinput
 
 **Synonyms:** text entry, form field
 

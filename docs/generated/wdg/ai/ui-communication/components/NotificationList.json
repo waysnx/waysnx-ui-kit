@@ -58,14 +58,14 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "wx-comm-notification-item__body",
     "wx-comm-notification-list__header",
-    "wx-comm-notification-list__mark-read",
-    "wx-comm-notification-item__avatar",
-    "wx-comm-notification-item__time",
-    "wx-comm-notification-item__content",
     "wx-comm-notification-item__title",
+    "wx-comm-notification-item__content",
+    "wx-comm-notification-item__avatar",
     "wx-comm-notification-list__title",
+    "wx-comm-notification-item__time",
+    "wx-comm-notification-list__mark-read",
+    "wx-comm-notification-item__body",
     "--wx-color-text-muted"
   ],
   "designTokens": {},
@@ -118,7 +118,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.478229",
+  "generatedAt": "2026-09-04T11:34:34.186048",
   "generatorVersion": "2.0.0",
   "sourceHash": "7bfe219d",
   "metadata": {

@@ -55,7 +55,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** routeplanner, components
+**Keywords:** components, routeplanner
 
 **Semantic Category:** utility
 

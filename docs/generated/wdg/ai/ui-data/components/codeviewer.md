@@ -55,7 +55,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** codeviewer, components
+**Keywords:** components, codeviewer
 
 **Semantic Category:** utility
 

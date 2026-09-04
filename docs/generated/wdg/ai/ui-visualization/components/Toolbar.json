@@ -175,8 +175,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Toolbar\\Toolbar.tsx",
   "keywords": [
-    "toolbar",
-    "components"
+    "components",
+    "toolbar"
   ],
   "aliases": [],
   "synonyms": [],
@@ -194,7 +194,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.941393",
+  "generatedAt": "2026-09-04T11:34:36.250789",
   "generatorVersion": "2.0.0",
   "sourceHash": "896c0c71",
   "metadata": {

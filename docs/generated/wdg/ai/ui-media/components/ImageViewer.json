@@ -60,11 +60,11 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "wx-adv-image-viewer__nav-btn--next",
-    "wx-adv-image-viewer__thumbnails",
-    "wx-adv-image-viewer__nav-btn",
     "wx-adv-image-viewer__nav-btn--prev",
-    "wx-adv-image-viewer__main"
+    "wx-adv-image-viewer__nav-btn--next",
+    "wx-adv-image-viewer__nav-btn",
+    "wx-adv-image-viewer__main",
+    "wx-adv-image-viewer__thumbnails"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -97,8 +97,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\ImageViewer\\ImageViewer.tsx",
   "keywords": [
-    "imageviewer",
-    "components"
+    "components",
+    "imageviewer"
   ],
   "aliases": [],
   "synonyms": [],
@@ -116,7 +116,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.349747",
+  "generatedAt": "2026-09-04T11:34:34.005259",
   "generatorVersion": "2.0.0",
   "sourceHash": "7b286569",
   "metadata": {

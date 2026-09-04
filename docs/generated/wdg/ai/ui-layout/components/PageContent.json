@@ -12,13 +12,13 @@
   "longDescription": "Organize main content area of a page layout.",
   "references": {
     "storybook": {
-      "available": false,
-      "title": "",
-      "storyId": "",
-      "url": "",
+      "available": true,
+      "title": "Components/PageContent",
+      "storyId": "components-pagecontent",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-pagecontent",
       "stories": [],
       "tags": [],
-      "source": ""
+      "source": "PageContent.stories.tsx"
     }
   },
   "useCases": [
@@ -102,7 +102,7 @@
   "dark": null,
   "highContrast": null,
   "responsive": false,
-  "storybook": false,
+  "storybook": true,
   "playwright": false,
   "vitest": false,
   "jest": false,
@@ -110,8 +110,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\PageContent\\PageContent.tsx",
   "keywords": [
-    "pagecontent",
     "label",
+    "pagecontent",
     "components"
   ],
   "aliases": [],
@@ -130,7 +130,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.091451",
+  "generatedAt": "2026-09-04T11:34:35.108347",
   "generatorVersion": "2.0.0",
   "sourceHash": "7627b748",
   "metadata": {

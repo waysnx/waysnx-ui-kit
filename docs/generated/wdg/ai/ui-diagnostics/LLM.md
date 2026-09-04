@@ -3,7 +3,7 @@
 ## Overview
 
 **Package:** `@waysnx/ui-diagnostics`
-**Version:** `0.1.0`
+**Version:** `1.0.0`
 **Description:** Framework-agnostic client-side runtime diagnostics, UI error observability, and form diagnostics for the WaysNX UI Kit
 
 ---
@@ -12,7 +12,7 @@
 
 - **Type:** Functional Library (API/Utilities)
 - **Installation:** `npm install @waysnx/ui-diagnostics`
-- **Latest Version:** `0.1.0`
+- **Latest Version:** `1.0.0`
 
 
 ## Installation & Setup

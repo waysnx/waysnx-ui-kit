@@ -74,7 +74,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** passwordstrengthmeter, label, components
+**Keywords:** passwordstrengthmeter, components, label
 
 **Semantic Category:** utility
 

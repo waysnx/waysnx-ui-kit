@@ -146,8 +146,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Session\\IdleMonitor.tsx",
   "keywords": [
-    "components",
-    "idlemonitor"
+    "idlemonitor",
+    "components"
   ],
   "aliases": [],
   "synonyms": [],
@@ -165,7 +165,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.795723",
+  "generatedAt": "2026-09-04T11:34:36.058425",
   "generatorVersion": "2.0.0",
   "sourceHash": "8beeb5d9",
   "packageDependencies": {

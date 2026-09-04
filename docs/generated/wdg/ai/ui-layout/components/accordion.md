@@ -15,7 +15,7 @@ npm install @waysnx/ui-layout
 ## Import
 
 ```typescript
-import { AccordionItem } from '@waysnx/ui-layout';
+import { Accordion } from '@waysnx/ui-layout';
 ```
 
 ## Props
@@ -56,7 +56,7 @@ import { AccordionItem } from '@waysnx/ui-layout';
 
 ## Storybook
 
-View Interactive Storybook
+[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/components-accordion)
 
 ## When to Use
 

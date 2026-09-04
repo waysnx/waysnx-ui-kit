@@ -399,11 +399,11 @@
   "documentation": true,
   "sourceFile": "src\\components\\DatePicker\\DatePicker.tsx",
   "keywords": [
-    "label",
+    "components",
     "placeholder",
     "value",
-    "datepicker",
-    "components"
+    "label",
+    "datepicker"
   ],
   "aliases": [],
   "synonyms": [],
@@ -421,7 +421,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.573555",
+  "generatedAt": "2026-09-04T11:34:34.312990",
   "generatorVersion": "2.0.0",
   "sourceHash": "6ca1e45c",
   "metadata": {

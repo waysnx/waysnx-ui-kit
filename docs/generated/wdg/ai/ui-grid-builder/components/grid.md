@@ -93,7 +93,7 @@ import { Grid } from '@waysnx/ui-grid-builder';
 
 ## Storybook
 
-View Interactive Storybook
+[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/components-grid)
 
 ## Related Components
 

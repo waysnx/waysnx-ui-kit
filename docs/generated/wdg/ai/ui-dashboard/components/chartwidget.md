@@ -77,7 +77,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** chartwidget, components
+**Keywords:** components, chartwidget
 
 **Semantic Category:** utility
 

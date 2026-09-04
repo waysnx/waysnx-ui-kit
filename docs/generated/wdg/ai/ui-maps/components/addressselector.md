@@ -55,7 +55,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** addressselector, components
+**Keywords:** components, addressselector
 
 **Synonyms:** option selector, choice control
 

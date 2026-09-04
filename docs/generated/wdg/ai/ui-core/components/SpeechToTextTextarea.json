@@ -172,8 +172,8 @@
   "sourceFile": "src\\components\\SpeechToTextTextarea\\SpeechToTextTextarea.tsx",
   "keywords": [
     "speechtotexttextarea",
-    "label",
-    "components"
+    "components",
+    "label"
   ],
   "aliases": [],
   "synonyms": [],
@@ -191,7 +191,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.688921",
+  "generatedAt": "2026-09-04T11:34:34.484033",
   "generatorVersion": "2.0.0",
   "sourceHash": "d16a58a3",
   "metadata": {

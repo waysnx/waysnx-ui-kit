@@ -64,7 +64,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** dashboardsearch, placeholder, components
+**Keywords:** placeholder, dashboardsearch, components
 
 **Semantic Category:** utility
 

@@ -59,8 +59,8 @@
   "cssVariables": [],
   "cssClasses": [
     "wx-adv-qr__download-btn",
-    "wx-adv-signature-viewer__badge",
     "wx-adv-signature-viewer__image",
+    "wx-adv-signature-viewer__badge",
     "--wx-color-text-muted"
   ],
   "designTokens": {},
@@ -113,7 +113,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.388093",
+  "generatedAt": "2026-09-04T11:34:34.055642",
   "generatorVersion": "2.0.0",
   "sourceHash": "f87c535e",
   "metadata": {

@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
   "library": "ui-maps",
-  "generatedAt": "2026-09-03T20:02:33.240023",
+  "generatedAt": "2026-09-04T11:34:44.954347",
   "components": [
     {
       "id": "ui-maps:addressautocomplete",
@@ -10,8 +10,8 @@
       "category": "components",
       "description": "Enable rapid address input with autocomplete suggestions.",
       "keywords": [
-        "addressautocomplete",
-        "components"
+        "components",
+        "addressautocomplete"
       ],
       "aliases": [],
       "synonyms": [],
@@ -61,8 +61,8 @@
       "category": "components",
       "description": "Enable selection from list of available addresses.",
       "keywords": [
-        "addressselector",
-        "components"
+        "components",
+        "addressselector"
       ],
       "aliases": [],
       "synonyms": [
@@ -115,8 +115,8 @@
       "category": "components",
       "description": "Enable quick access to current device location.",
       "keywords": [
-        "currentlocationbutton",
-        "components"
+        "components",
+        "currentlocationbutton"
       ],
       "aliases": [],
       "synonyms": [
@@ -169,8 +169,8 @@
       "category": "components",
       "description": "Calculate and display distance between two locations.",
       "keywords": [
-        "components",
-        "distancecalculator"
+        "distancecalculator",
+        "components"
       ],
       "aliases": [],
       "synonyms": [],
@@ -220,8 +220,8 @@
       "category": "components",
       "description": "Enable drawing and editing geographic boundaries on a map.",
       "keywords": [
-        "geofenceeditor",
-        "components"
+        "components",
+        "geofenceeditor"
       ],
       "aliases": [],
       "synonyms": [],
@@ -271,8 +271,8 @@
       "category": "components",
       "description": "Enable selection of geographic location from map.",
       "keywords": [
-        "locationpicker",
-        "components"
+        "components",
+        "locationpicker"
       ],
       "aliases": [],
       "synonyms": [],
@@ -377,8 +377,8 @@
       "category": "components",
       "description": "MapView — ADAPTER-BASED map container. Renders map chrome and controls but does NOT display an interactive map on its...",
       "keywords": [
-        "mapview",
-        "components"
+        "components",
+        "mapview"
       ],
       "aliases": [],
       "synonyms": [],
@@ -428,8 +428,8 @@
       "category": "components",
       "description": "Display and manage routes with turn-by-turn directions.",
       "keywords": [
-        "routeplanner",
-        "components"
+        "components",
+        "routeplanner"
       ],
       "aliases": [],
       "synonyms": [],

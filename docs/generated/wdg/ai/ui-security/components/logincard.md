@@ -70,7 +70,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** logincard, components
+**Keywords:** components, logincard
 
 **Semantic Category:** utility
 

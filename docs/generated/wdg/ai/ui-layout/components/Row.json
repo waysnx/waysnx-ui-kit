@@ -12,13 +12,13 @@
   "longDescription": "Organize content in a horizontal row within a layout grid.",
   "references": {
     "storybook": {
-      "available": false,
-      "title": "",
-      "storyId": "",
-      "url": "",
+      "available": true,
+      "title": "Components/Row",
+      "storyId": "components-row",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-row",
       "stories": [],
       "tags": [],
-      "source": ""
+      "source": "Row.stories.tsx"
     }
   },
   "useCases": [
@@ -134,7 +134,7 @@
   "dark": null,
   "highContrast": null,
   "responsive": false,
-  "storybook": false,
+  "storybook": true,
   "playwright": false,
   "vitest": false,
   "jest": false,
@@ -161,7 +161,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.127539",
+  "generatedAt": "2026-09-04T11:34:35.160479",
   "generatorVersion": "2.0.0",
   "sourceHash": "ce29f0c2",
   "metadata": {

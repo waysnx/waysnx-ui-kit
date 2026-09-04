@@ -359,12 +359,12 @@
   "sourceFile": "src\\components\\Checkbox\\Checkbox.tsx",
   "keywords": [
     "checkbox",
-    "selection",
-    "label",
     "check",
+    "components",
+    "selection",
     "toggle",
     "option",
-    "components"
+    "label"
   ],
   "aliases": [
     {
@@ -401,7 +401,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.557774",
+  "generatedAt": "2026-09-04T11:34:34.291945",
   "generatorVersion": "2.0.0",
   "sourceHash": "3be963b3",
   "metadata": {

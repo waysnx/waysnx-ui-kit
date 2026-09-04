@@ -61,16 +61,16 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "--wx-color-primary",
-    "--wx-font-size-lg",
-    "--wx-radius-lg",
     "--wx-color-surface-alt",
-    "--wx-color-text",
-    "--wx-font-size-sm",
-    "--wx-font-size-xs",
     "--wx-color-border",
+    "--wx-color-primary-light",
+    "--wx-font-size-xs",
     "--wx-color-text-muted",
-    "--wx-color-primary-light"
+    "--wx-radius-lg",
+    "--wx-font-size-sm",
+    "--wx-color-text",
+    "--wx-font-size-lg",
+    "--wx-color-primary"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -122,7 +122,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.845431",
+  "generatedAt": "2026-09-04T11:34:34.746873",
   "generatorVersion": "2.0.0",
   "sourceHash": "477a423c",
   "packageDependencies": {

@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
   "library": "ui-dashboard",
-  "generatedAt": "2026-09-03T20:02:45.627050",
+  "generatedAt": "2026-09-04T11:34:59.462032",
   "components": [
     {
       "id": "ui-dashboard:chartwidget",
@@ -10,8 +10,8 @@
       "category": "components",
       "description": "ChartWidget component",
       "keywords": [
-        "chartwidget",
-        "components"
+        "components",
+        "chartwidget"
       ],
       "aliases": [],
       "synonyms": [],
@@ -81,8 +81,8 @@
       "category": "components",
       "description": "Provide the main container and layout structure for dashboard applications.",
       "keywords": [
-        "dashboard",
-        "components"
+        "components",
+        "dashboard"
       ],
       "aliases": [],
       "synonyms": [],
@@ -149,8 +149,8 @@
       "category": "components",
       "description": "DashboardFilterBar component",
       "keywords": [
-        "components",
-        "dashboardfilterbar"
+        "dashboardfilterbar",
+        "components"
       ],
       "aliases": [],
       "synonyms": [],
@@ -328,8 +328,8 @@
       "category": "components",
       "description": "DashboardSearch component",
       "keywords": [
-        "dashboardsearch",
         "placeholder",
+        "dashboardsearch",
         "components"
       ],
       "aliases": [],
@@ -385,8 +385,8 @@
       "category": "components",
       "description": "DashboardSidebar component",
       "keywords": [
-        "dashboardsidebar",
-        "components"
+        "components",
+        "dashboardsidebar"
       ],
       "aliases": [],
       "synonyms": [],
@@ -445,8 +445,8 @@
       "category": "components",
       "description": "DashboardToolbar component",
       "keywords": [
-        "dashboardtoolbar",
-        "components"
+        "components",
+        "dashboardtoolbar"
       ],
       "aliases": [],
       "synonyms": [],
@@ -567,8 +567,8 @@
       "category": "components",
       "description": "KPICard component",
       "keywords": [
-        "kpicard",
-        "components"
+        "components",
+        "kpicard"
       ],
       "aliases": [],
       "synonyms": [],

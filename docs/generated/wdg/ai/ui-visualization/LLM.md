@@ -118,13 +118,13 @@ This library is optimized for AI code generation and documentation search.
 ### Component Metadata
 
 **Connector**
-- Keywords: connector, components
+- Keywords: components, connector
 
 **Hierarchy**
-- Keywords: hierarchy, components
+- Keywords: components, hierarchy
 
 **Legend**
-- Keywords: legend, components
+- Keywords: components, legend
 
 ### Searchable Metadata
 

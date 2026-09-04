@@ -120,7 +120,7 @@ This library is optimized for AI code generation and documentation search.
 - Keywords: gridactions, components
 
 **GridCell**
-- Keywords: gridcell, value, components
+- Keywords: gridcell, components, value
 
 ### Searchable Metadata
 

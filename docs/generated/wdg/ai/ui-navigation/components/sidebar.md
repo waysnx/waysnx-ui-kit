@@ -126,7 +126,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** sidebar, components
+**Keywords:** components, sidebar
 
 **Semantic Category:** layout
 

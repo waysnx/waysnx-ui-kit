@@ -60,7 +60,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** threadpanel, components
+**Keywords:** components, threadpanel
 
 **Semantic Category:** utility
 

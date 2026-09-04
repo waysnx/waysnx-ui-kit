@@ -180,9 +180,9 @@
   "documentation": true,
   "sourceFile": "src\\components\\SecureInputs\\SecureInput.tsx",
   "keywords": [
-    "label",
     "placeholder",
     "secureinput",
+    "label",
     "components"
   ],
   "aliases": [],
@@ -216,7 +216,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.632940",
+  "generatedAt": "2026-09-04T11:34:35.850047",
   "generatorVersion": "2.0.0",
   "sourceHash": "999843ee",
   "packageDependencies": {

@@ -55,7 +55,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** xmlviewer, components
+**Keywords:** components, xmlviewer
 
 **Semantic Category:** utility
 

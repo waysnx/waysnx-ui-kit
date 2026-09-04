@@ -82,7 +82,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** label, link, components
+**Keywords:** link, components, label
 
 **Semantic Category:** utility
 

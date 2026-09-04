@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
   "library": "ui-data",
-  "generatedAt": "2026-09-03T20:02:30.804294",
+  "generatedAt": "2026-09-04T11:34:41.954397",
   "components": [
     {
       "id": "ui-data:codeeditor",
@@ -10,8 +10,8 @@
       "category": "components",
       "description": "Enable editing and authoring of source code with syntax support.",
       "keywords": [
-        "codeeditor",
-        "components"
+        "components",
+        "codeeditor"
       ],
       "aliases": [],
       "synonyms": [],
@@ -61,8 +61,8 @@
       "category": "components",
       "description": "Display read-only source code with syntax highlighting.",
       "keywords": [
-        "codeviewer",
-        "components"
+        "components",
+        "codeviewer"
       ],
       "aliases": [],
       "synonyms": [],
@@ -112,8 +112,8 @@
       "category": "components",
       "description": "Enable editing and validation of JSON data.",
       "keywords": [
-        "jsoneditor",
-        "components"
+        "components",
+        "jsoneditor"
       ],
       "aliases": [],
       "synonyms": [],
@@ -265,8 +265,8 @@
       "category": "components",
       "description": "Display and navigate XML data with hierarchical tree view.",
       "keywords": [
-        "xmlviewer",
-        "components"
+        "components",
+        "xmlviewer"
       ],
       "aliases": [],
       "synonyms": [],

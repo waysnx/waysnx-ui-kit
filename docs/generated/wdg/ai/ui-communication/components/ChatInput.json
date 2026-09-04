@@ -69,13 +69,13 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
+    "wx-comm-chat-input__reply-preview",
     "wx-comm-chat-input__textarea",
-    "wx-comm-chat-input__reply-close",
-    "wx-comm-chat-input__send-btn",
-    "wx-comm-chat-input__container",
     "wx-comm-chat-input__actions",
-    "wx-comm-chat-input__action-btn",
-    "wx-comm-chat-input__reply-preview"
+    "wx-comm-chat-input__send-btn",
+    "wx-comm-chat-input__reply-close",
+    "wx-comm-chat-input__container",
+    "wx-comm-chat-input__action-btn"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -108,8 +108,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\ChatInput\\ChatInput.tsx",
   "keywords": [
-    "chatinput",
-    "components"
+    "components",
+    "chatinput"
   ],
   "aliases": [],
   "synonyms": [
@@ -142,7 +142,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.421558",
+  "generatedAt": "2026-09-04T11:34:34.100486",
   "generatorVersion": "2.0.0",
   "sourceHash": "a695440d",
   "metadata": {

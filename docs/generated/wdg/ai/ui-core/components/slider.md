@@ -92,7 +92,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** slider, label, value, components
+**Keywords:** label, components, value, slider
 
 **Semantic Category:** utility
 

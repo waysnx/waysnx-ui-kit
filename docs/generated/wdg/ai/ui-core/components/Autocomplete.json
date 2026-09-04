@@ -429,9 +429,9 @@
   "documentation": true,
   "sourceFile": "src\\components\\Autocomplete\\Autocomplete.tsx",
   "keywords": [
-    "label",
     "placeholder",
     "autocomplete",
+    "label",
     "components"
   ],
   "aliases": [],
@@ -450,7 +450,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.541902",
+  "generatedAt": "2026-09-04T11:34:34.270872",
   "generatorVersion": "2.0.0",
   "sourceHash": "0943ef5e",
   "metadata": {

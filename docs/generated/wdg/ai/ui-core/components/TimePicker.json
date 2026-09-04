@@ -285,11 +285,11 @@
   "documentation": true,
   "sourceFile": "src\\components\\TimePicker\\TimePicker.tsx",
   "keywords": [
-    "label",
-    "placeholder",
+    "components",
     "timepicker",
+    "placeholder",
     "value",
-    "components"
+    "label"
   ],
   "aliases": [],
   "synonyms": [],
@@ -307,7 +307,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.711749",
+  "generatedAt": "2026-09-04T11:34:34.519520",
   "generatorVersion": "2.0.0",
   "sourceHash": "09235682",
   "metadata": {

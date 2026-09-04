@@ -41,7 +41,7 @@ import { Stack } from '@waysnx/ui-layout';
 
 ## Storybook
 
-View Interactive Storybook
+[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/components-stack)
 
 ## Used By
 
@@ -94,7 +94,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** stack, label, components
+**Keywords:** label, components, stack
 
 **Semantic Category:** utility
 

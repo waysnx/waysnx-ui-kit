@@ -55,7 +55,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** conversationlist, components
+**Keywords:** components, conversationlist
 
 **Semantic Category:** utility
 

@@ -166,14 +166,14 @@
   "cssVariables": [],
   "cssClasses": [
     "chart-widget-fullscreen",
-    "chart-widget-toolbar",
     "chart-widget-export",
-    "table-widget-pagination",
-    "table-widget-content",
+    "chart-widget-refresh",
     "chart-widget-content",
     "form-widget-form",
+    "chart-widget-toolbar",
+    "table-widget-pagination",
     "chart-widget-button",
-    "chart-widget-refresh"
+    "table-widget-content"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -206,8 +206,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Widgets\\ChartWidget.tsx",
   "keywords": [
-    "chartwidget",
-    "components"
+    "components",
+    "chartwidget"
   ],
   "aliases": [],
   "synonyms": [],
@@ -225,7 +225,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.794887",
+  "generatedAt": "2026-09-04T11:34:34.636985",
   "generatorVersion": "2.0.0",
   "sourceHash": "165b63c3",
   "packageDependencies": {

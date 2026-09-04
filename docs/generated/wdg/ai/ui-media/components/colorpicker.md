@@ -55,7 +55,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** colorpicker, components
+**Keywords:** components, colorpicker
 
 **Semantic Category:** utility
 

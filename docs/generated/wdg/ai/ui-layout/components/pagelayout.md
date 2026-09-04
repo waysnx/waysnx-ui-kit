@@ -37,7 +37,7 @@ import { PageLayout } from '@waysnx/ui-layout';
 
 ## Storybook
 
-View Interactive Storybook
+[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/components-pagelayout)
 
 ## When to Use
 
@@ -62,7 +62,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** label, pagelayout, components
+**Keywords:** label, components, pagelayout
 
 **Semantic Category:** utility
 

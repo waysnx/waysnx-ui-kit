@@ -83,7 +83,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** pininput, label, components
+**Keywords:** label, components, pininput
 
 **Synonyms:** text entry, form field
 

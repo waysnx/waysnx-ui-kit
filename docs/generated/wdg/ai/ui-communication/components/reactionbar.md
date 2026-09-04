@@ -61,7 +61,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** reactionbar, components
+**Keywords:** components, reactionbar
 
 **Semantic Category:** utility
 

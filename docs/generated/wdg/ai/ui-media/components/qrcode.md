@@ -61,7 +61,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** qrcode, components
+**Keywords:** components, qrcode
 
 **Semantic Category:** utility
 

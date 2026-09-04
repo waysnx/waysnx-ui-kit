@@ -63,7 +63,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** gridcell, value, components
+**Keywords:** gridcell, components, value
 
 **Semantic Category:** layout
 

@@ -78,7 +78,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** stepnavigation, components
+**Keywords:** components, stepnavigation
 
 **Semantic Category:** navigation
 

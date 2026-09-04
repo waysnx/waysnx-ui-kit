@@ -66,7 +66,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** featuregate, components
+**Keywords:** components, featuregate
 
 **Semantic Category:** utility
 

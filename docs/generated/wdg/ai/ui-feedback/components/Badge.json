@@ -12,13 +12,13 @@
   "longDescription": "Display a small numeric or dot indicator to convey status or count information.",
   "references": {
     "storybook": {
-      "available": false,
-      "title": "",
-      "storyId": "",
-      "url": "",
+      "available": true,
+      "title": "Components/Badge",
+      "storyId": "components-badge",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-badge",
       "stories": [],
       "tags": [],
-      "source": ""
+      "source": "Badge.stories.tsx"
     }
   },
   "useCases": [
@@ -255,7 +255,7 @@
   "dark": null,
   "highContrast": null,
   "responsive": false,
-  "storybook": false,
+  "storybook": true,
   "playwright": false,
   "vitest": false,
   "jest": false,
@@ -263,8 +263,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Badge\\Badge.tsx",
   "keywords": [
-    "badge",
-    "components"
+    "components",
+    "badge"
   ],
   "aliases": [],
   "synonyms": [],
@@ -282,7 +282,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.906936",
+  "generatedAt": "2026-09-04T11:34:34.860146",
   "generatorVersion": "2.0.0",
   "sourceHash": "9caad397",
   "metadata": {

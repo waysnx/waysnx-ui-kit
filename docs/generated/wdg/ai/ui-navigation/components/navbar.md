@@ -121,7 +121,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** navbar, components
+**Keywords:** components, navbar
 
 **Semantic Category:** navigation
 

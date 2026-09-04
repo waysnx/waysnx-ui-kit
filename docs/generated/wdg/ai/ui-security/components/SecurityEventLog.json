@@ -138,8 +138,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Audit\\SecurityEventLog.tsx",
   "keywords": [
-    "securityeventlog",
-    "components"
+    "components",
+    "securityeventlog"
   ],
   "aliases": [],
   "synonyms": [],
@@ -157,7 +157,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.380650",
+  "generatedAt": "2026-09-04T11:34:35.498003",
   "generatorVersion": "2.0.0",
   "sourceHash": "e75f55a9",
   "packageDependencies": {

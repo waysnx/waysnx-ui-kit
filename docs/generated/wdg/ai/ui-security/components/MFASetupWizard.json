@@ -158,8 +158,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\MFA\\MFASetupWizard.tsx",
   "keywords": [
-    "mfasetupwizard",
-    "components"
+    "components",
+    "mfasetupwizard"
   ],
   "aliases": [],
   "synonyms": [],
@@ -177,7 +177,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.513943",
+  "generatedAt": "2026-09-04T11:34:35.686919",
   "generatorVersion": "2.0.0",
   "sourceHash": "9b0c64a2",
   "packageDependencies": {

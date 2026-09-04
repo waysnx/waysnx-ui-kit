@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
   "library": "ui-media",
-  "generatedAt": "2026-09-03T20:02:35.687130",
+  "generatedAt": "2026-09-04T11:34:47.867274",
   "components": [
     {
       "id": "ui-media:audioplayer",
@@ -163,8 +163,8 @@
       "category": "components",
       "description": "Enable selection and input of colors.",
       "keywords": [
-        "colorpicker",
-        "components"
+        "components",
+        "colorpicker"
       ],
       "aliases": [],
       "synonyms": [],
@@ -214,8 +214,8 @@
       "category": "components",
       "description": "Cropper — interactive crop-selection UI. LIMITATION (1.0.0): This component provides a fully interactive crop overlay...",
       "keywords": [
-        "cropper",
-        "components"
+        "components",
+        "cropper"
       ],
       "aliases": [],
       "synonyms": [],
@@ -265,8 +265,8 @@
       "category": "components",
       "description": "Display and allow interaction with images in fullscreen or modal.",
       "keywords": [
-        "imageviewer",
-        "components"
+        "components",
+        "imageviewer"
       ],
       "aliases": [],
       "synonyms": [],
@@ -367,8 +367,8 @@
       "category": "components",
       "description": "QRCode — renders a real, scannable QR code to a canvas using the `qrcode` library, with optional PNG download. The en...",
       "keywords": [
-        "qrcode",
-        "components"
+        "components",
+        "qrcode"
       ],
       "aliases": [],
       "synonyms": [],
@@ -473,8 +473,8 @@
       "category": "components",
       "description": "Enable users to draw or write signatures.",
       "keywords": [
-        "signaturepad",
-        "components"
+        "components",
+        "signaturepad"
       ],
       "aliases": [],
       "synonyms": [],
@@ -575,8 +575,8 @@
       "category": "components",
       "description": "Play video content with standard player controls.",
       "keywords": [
-        "videoplayer",
-        "components"
+        "components",
+        "videoplayer"
       ],
       "aliases": [],
       "synonyms": [],

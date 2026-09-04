@@ -15,7 +15,7 @@ npm install @waysnx/ui-dashboard
 ## Import
 
 ```typescript
-import { ProgressCard } from '@waysnx/ui-dashboard';
+import { StatCard } from '@waysnx/ui-dashboard';
 ```
 
 ## Props
@@ -118,7 +118,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** kpicard, components
+**Keywords:** components, kpicard
 
 **Semantic Category:** utility
 

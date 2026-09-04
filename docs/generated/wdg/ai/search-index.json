@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "generatedAt": "2026-09-03T20:03:10.882496",
+  "generatedAt": "2026-09-04T11:35:29.013366",
   "totalLibraries": 18,
   "totalComponents": 242,
   "components": [
@@ -71,8 +71,8 @@
       "library": "ui-accessibility",
       "description": "FloatingButton Component A floating button that triggers the accessibility center",
       "keywords": [
-        "floatingbutton",
-        "components"
+        "components",
+        "floatingbutton"
       ],
       "aliases": [],
       "synonyms": [
@@ -132,8 +132,8 @@
       "library": "ui-accessibility",
       "description": "Magnifier Component Provides a magnified view of page content for users with low vision Follows cursor/scroll position",
       "keywords": [
-        "magnifier",
-        "components"
+        "components",
+        "magnifier"
       ],
       "aliases": [],
       "synonyms": [],
@@ -184,8 +184,8 @@
       "library": "ui-accessibility",
       "description": "ReadingGuide Component Displays a visual reading line to help users follow text Only renders when readingGuide is ena...",
       "keywords": [
-        "readingguide",
-        "components"
+        "components",
+        "readingguide"
       ],
       "aliases": [],
       "synonyms": [],
@@ -236,8 +236,8 @@
       "library": "ui-accessibility",
       "description": "SkipLinks — renders visually hidden skip-navigation links. Links appear on keyboard focus, allowing keyboard/screen r...",
       "keywords": [
-        "skiplinks",
-        "components"
+        "components",
+        "skiplinks"
       ],
       "aliases": [],
       "synonyms": [],
@@ -290,8 +290,8 @@
       "library": "ui-communication",
       "description": "Provide user input for composing chat or message content.",
       "keywords": [
-        "chatinput",
-        "components"
+        "components",
+        "chatinput"
       ],
       "aliases": [],
       "synonyms": [
@@ -415,8 +415,8 @@
       "library": "ui-communication",
       "description": "Display a list of conversations for quick access.",
       "keywords": [
-        "conversationlist",
-        "components"
+        "components",
+        "conversationlist"
       ],
       "aliases": [],
       "synonyms": [],
@@ -519,8 +519,8 @@
       "library": "ui-communication",
       "description": "Enable mentioning users or entities within text input.",
       "keywords": [
-        "mentioninput",
-        "components"
+        "components",
+        "mentioninput"
       ],
       "aliases": [],
       "synonyms": [
@@ -574,8 +574,8 @@
       "library": "ui-communication",
       "description": "Display a single message in a chat or messaging interface.",
       "keywords": [
-        "messagebubble",
-        "components"
+        "components",
+        "messagebubble"
       ],
       "aliases": [],
       "synonyms": [],
@@ -797,8 +797,8 @@
       "library": "ui-communication",
       "description": "Enable quick reactions to messages through emoji selections.",
       "keywords": [
-        "reactionbar",
-        "components"
+        "components",
+        "reactionbar"
       ],
       "aliases": [],
       "synonyms": [],
@@ -853,8 +853,8 @@
       "library": "ui-communication",
       "description": "Show message delivery and read status indicators.",
       "keywords": [
-        "readreceipts",
-        "components"
+        "components",
+        "readreceipts"
       ],
       "aliases": [],
       "synonyms": [],
@@ -909,8 +909,8 @@
       "library": "ui-communication",
       "description": "Display threaded conversations branching from parent messages.",
       "keywords": [
-        "threadpanel",
-        "components"
+        "components",
+        "threadpanel"
       ],
       "aliases": [],
       "synonyms": [],
@@ -970,8 +970,8 @@
       "library": "ui-communication",
       "description": "Show that another user is currently typing a message.",
       "keywords": [
-        "typingindicator",
-        "components"
+        "components",
+        "typingindicator"
       ],
       "aliases": [],
       "synonyms": [],
@@ -1078,8 +1078,8 @@
       "library": "ui-communication",
       "description": "Display and play audio/voice messages in chat or messaging.",
       "keywords": [
-        "voicemessage",
-        "components"
+        "components",
+        "voicemessage"
       ],
       "aliases": [],
       "synonyms": [],
@@ -1130,9 +1130,9 @@
       "library": "ui-core",
       "description": "Enable users to search and select from a filtered list of options as they type.",
       "keywords": [
-        "label",
         "placeholder",
         "autocomplete",
+        "label",
         "components"
       ],
       "aliases": [],
@@ -1205,14 +1205,14 @@
       "library": "ui-core",
       "description": "Enable users to trigger actions by pressing a clickable element.",
       "keywords": [
-        "cta",
-        "trigger",
         "action",
-        "submit",
-        "click",
-        "interactive",
         "button",
-        "components"
+        "cta",
+        "click",
+        "components",
+        "trigger",
+        "submit",
+        "interactive"
       ],
       "aliases": [
         "AIAlias(alias='action', context='intent', confidence=0.92)",
@@ -1392,12 +1392,12 @@
       "description": "Allow users to select one or more options from a list of independent choices.",
       "keywords": [
         "checkbox",
-        "selection",
-        "label",
         "check",
+        "components",
+        "selection",
         "toggle",
         "option",
-        "components"
+        "label"
       ],
       "aliases": [
         "AIAlias(alias='toggle option', context='descriptive', confidence=0.9)",
@@ -1486,9 +1486,9 @@
       "description": "Collect and display monetary amounts with automatic currency formatting.",
       "keywords": [
         "label",
-        "currency",
+        "components",
         "value",
-        "components"
+        "currency"
       ],
       "aliases": [],
       "synonyms": [],
@@ -1557,11 +1557,11 @@
       "library": "ui-core",
       "description": "Enable users to select a specific date through an interactive calendar interface.",
       "keywords": [
-        "label",
+        "components",
         "placeholder",
         "value",
-        "datepicker",
-        "components"
+        "label",
+        "datepicker"
       ],
       "aliases": [],
       "synonyms": [],
@@ -1629,10 +1629,10 @@
       "library": "ui-core",
       "description": "Enable users to select a start and end date range through an interactive calendar.",
       "keywords": [
-        "daterangepicker",
-        "placeholder",
         "label",
-        "components"
+        "components",
+        "placeholder",
+        "daterangepicker"
       ],
       "aliases": [],
       "synonyms": [],
@@ -1700,11 +1700,11 @@
       "library": "ui-core",
       "description": "Enable users to select a specific date and time through an interactive calendar interface.",
       "keywords": [
-        "label",
+        "components",
         "placeholder",
-        "datetimepicker",
         "value",
-        "components"
+        "label",
+        "datetimepicker"
       ],
       "aliases": [],
       "synonyms": [],
@@ -1772,8 +1772,8 @@
       "library": "ui-core",
       "description": "Display error messages to users with prominent visual and semantic prominence.",
       "keywords": [
-        "errormessage",
-        "components"
+        "components",
+        "errormessage"
       ],
       "aliases": [],
       "synonyms": [],
@@ -1827,8 +1827,8 @@
       "library": "ui-core",
       "description": "Enable users to upload files with drag-and-drop support and validation.",
       "keywords": [
-        "fileupload",
         "label",
+        "fileupload",
         "components"
       ],
       "aliases": [],
@@ -1898,8 +1898,8 @@
       "description": "Store and submit form field values that should not be visible to users.",
       "keywords": [
         "components",
-        "value",
-        "hidden"
+        "hidden",
+        "value"
       ],
       "aliases": [],
       "synonyms": [],
@@ -1953,8 +1953,8 @@
       "library": "ui-core",
       "description": "Display sanitized HTML content safely within the application interface.",
       "keywords": [
-        "htmlcontent",
-        "components"
+        "components",
+        "htmlcontent"
       ],
       "aliases": [],
       "synonyms": [],
@@ -2008,11 +2008,11 @@
       "library": "ui-core",
       "description": "Enable users to create and format HTML content with a visual text editor toolbar.",
       "keywords": [
-        "label",
+        "htmleditor",
+        "components",
         "placeholder",
         "value",
-        "htmleditor",
-        "components"
+        "label"
       ],
       "aliases": [],
       "synonyms": [],
@@ -2077,9 +2077,9 @@
       "library": "ui-core",
       "description": "Secure-by-default sandbox policy. Supports the documented use cases (embedded video, maps, forms, third-party widgets...",
       "keywords": [
+        "iframe",
         "components",
-        "label",
-        "iframe"
+        "label"
       ],
       "aliases": [],
       "synonyms": [],
@@ -2204,16 +2204,16 @@
       "library": "ui-core",
       "description": "Collect single-line text and numeric input from users with validation and formatting support.",
       "keywords": [
-        "form-control",
-        "label",
+        "form",
+        "input",
         "entry",
         "field",
-        "form",
         "text",
-        "input",
+        "components",
         "textbox",
-        "form-field",
-        "components"
+        "label",
+        "form-control",
+        "form-field"
       ],
       "aliases": [
         "AIAlias(alias='text field', context='form', confidence=0.95)",
@@ -2329,9 +2329,9 @@
       "library": "ui-core",
       "description": "Navigate users to a different page or external resource via a clickable text link.",
       "keywords": [
-        "label",
         "link",
-        "components"
+        "components",
+        "label"
       ],
       "aliases": [],
       "synonyms": [],
@@ -2395,13 +2395,13 @@
       "library": "ui-core",
       "description": "Enable users to select exactly one option from a list of mutually exclusive choices.",
       "keywords": [
-        "label",
-        "single",
-        "choice",
-        "radio",
         "button",
+        "radio",
+        "components",
         "option",
-        "components"
+        "choice",
+        "label",
+        "single"
       ],
       "aliases": [
         "AIAlias(alias='radio button', context='technical', confidence=0.95)",
@@ -2475,14 +2475,14 @@
       "library": "ui-core",
       "description": "Enable users to select one or more options from a dropdown list with optional search.",
       "keywords": [
-        "label",
-        "combo",
-        "choice",
-        "value",
-        "select",
         "dropdown",
+        "components",
+        "combo",
         "option",
-        "components"
+        "choice",
+        "select",
+        "value",
+        "label"
       ],
       "aliases": [
         "AIAlias(alias='dropdown', context='common', confidence=0.95)",
@@ -2568,10 +2568,10 @@
       "library": "ui-core",
       "description": "Enable users to select a numeric value from a continuous range using a draggable control.",
       "keywords": [
-        "slider",
         "label",
+        "components",
         "value",
-        "components"
+        "slider"
       ],
       "aliases": [],
       "synonyms": [],
@@ -2637,8 +2637,8 @@
       "description": "Enable users to enter text through voice input combined with traditional text editing.",
       "keywords": [
         "speechtotexttextarea",
-        "label",
-        "components"
+        "components",
+        "label"
       ],
       "aliases": [],
       "synonyms": [],
@@ -2694,8 +2694,8 @@
       "description": "Enable users to toggle a setting or feature on or off with a visual switch.",
       "keywords": [
         "label",
-        "switch",
-        "components"
+        "components",
+        "switch"
       ],
       "aliases": [],
       "synonyms": [],
@@ -2751,9 +2751,9 @@
       "library": "ui-core",
       "description": "Collect multi-line text input from users with optional length limits and formatting.",
       "keywords": [
-        "textarea",
         "label",
-        "components"
+        "components",
+        "textarea"
       ],
       "aliases": [],
       "synonyms": [],
@@ -2813,11 +2813,11 @@
       "library": "ui-core",
       "description": "Enable users to select a specific time through a time picker interface.",
       "keywords": [
-        "label",
-        "placeholder",
+        "components",
         "timepicker",
+        "placeholder",
         "value",
-        "components"
+        "label"
       ],
       "aliases": [],
       "synonyms": [],
@@ -2884,8 +2884,8 @@
       "description": "Display hierarchical data with expandable nodes and checkboxes for selection.",
       "keywords": [
         "label",
-        "tree",
-        "components"
+        "components",
+        "tree"
       ],
       "aliases": [],
       "synonyms": [],
@@ -2942,8 +2942,8 @@
       "library": "ui-dashboard",
       "description": "ChartWidget component",
       "keywords": [
-        "chartwidget",
-        "components"
+        "components",
+        "chartwidget"
       ],
       "aliases": [],
       "synonyms": [],
@@ -3014,8 +3014,8 @@
       "library": "ui-dashboard",
       "description": "Provide the main container and layout structure for dashboard applications.",
       "keywords": [
-        "dashboard",
-        "components"
+        "components",
+        "dashboard"
       ],
       "aliases": [],
       "synonyms": [],
@@ -3083,8 +3083,8 @@
       "library": "ui-dashboard",
       "description": "DashboardFilterBar component",
       "keywords": [
-        "components",
-        "dashboardfilterbar"
+        "dashboardfilterbar",
+        "components"
       ],
       "aliases": [],
       "synonyms": [],
@@ -3265,8 +3265,8 @@
       "library": "ui-dashboard",
       "description": "DashboardSearch component",
       "keywords": [
-        "dashboardsearch",
         "placeholder",
+        "dashboardsearch",
         "components"
       ],
       "aliases": [],
@@ -3323,8 +3323,8 @@
       "library": "ui-dashboard",
       "description": "DashboardSidebar component",
       "keywords": [
-        "dashboardsidebar",
-        "components"
+        "components",
+        "dashboardsidebar"
       ],
       "aliases": [],
       "synonyms": [],
@@ -3384,8 +3384,8 @@
       "library": "ui-dashboard",
       "description": "DashboardToolbar component",
       "keywords": [
-        "dashboardtoolbar",
-        "components"
+        "components",
+        "dashboardtoolbar"
       ],
       "aliases": [],
       "synonyms": [],
@@ -3508,8 +3508,8 @@
       "library": "ui-dashboard",
       "description": "KPICard component",
       "keywords": [
-        "kpicard",
-        "components"
+        "components",
+        "kpicard"
       ],
       "aliases": [],
       "synonyms": [],
@@ -3774,8 +3774,8 @@
       "library": "ui-data",
       "description": "Enable editing and authoring of source code with syntax support.",
       "keywords": [
-        "codeeditor",
-        "components"
+        "components",
+        "codeeditor"
       ],
       "aliases": [],
       "synonyms": [],
@@ -3826,8 +3826,8 @@
       "library": "ui-data",
       "description": "Display read-only source code with syntax highlighting.",
       "keywords": [
-        "codeviewer",
-        "components"
+        "components",
+        "codeviewer"
       ],
       "aliases": [],
       "synonyms": [],
@@ -3878,8 +3878,8 @@
       "library": "ui-data",
       "description": "Enable editing and validation of JSON data.",
       "keywords": [
-        "jsoneditor",
-        "components"
+        "components",
+        "jsoneditor"
       ],
       "aliases": [],
       "synonyms": [],
@@ -4034,8 +4034,8 @@
       "library": "ui-data",
       "description": "Display and navigate XML data with hierarchical tree view.",
       "keywords": [
-        "xmlviewer",
-        "components"
+        "components",
+        "xmlviewer"
       ],
       "aliases": [],
       "synonyms": [],
@@ -4257,8 +4257,8 @@
       "library": "ui-docs",
       "description": "DocumentationDemoViewer Renders demo categories and examples from component.demo.generated.json Uses --wx- tokens ins...",
       "keywords": [
-        "documentationdemoviewer",
-        "components"
+        "components",
+        "documentationdemoviewer"
       ],
       "aliases": [],
       "synonyms": [],
@@ -4313,8 +4313,8 @@
       "library": "ui-docs",
       "description": "LiveComponentRenderer Dynamically renders a component from the registry with provided props. Handles missing componen...",
       "keywords": [
-        "components",
-        "livecomponentrenderer"
+        "livecomponentrenderer",
+        "components"
       ],
       "aliases": [],
       "synonyms": [],
@@ -4367,8 +4367,8 @@
       "library": "ui-docs",
       "description": "Markdown Renderer Renders markdown content with syntax highlighting using --wx- tokens.",
       "keywords": [
-        "markdownrenderer",
-        "components"
+        "components",
+        "markdownrenderer"
       ],
       "aliases": [],
       "synonyms": [],
@@ -4422,8 +4422,8 @@
       "library": "ui-docs",
       "description": "PlaygroundPlaceholder component",
       "keywords": [
-        "playgroundplaceholder",
-        "components"
+        "components",
+        "playgroundplaceholder"
       ],
       "aliases": [],
       "synonyms": [],
@@ -4481,8 +4481,8 @@
       "library": "ui-docs",
       "description": "Props Table Component Renders component props in a formatted table using --wx- tokens.",
       "keywords": [
-        "propstable",
-        "components"
+        "components",
+        "propstable"
       ],
       "aliases": [],
       "synonyms": [],
@@ -4537,8 +4537,8 @@
       "library": "ui-docs",
       "description": "ThemeExplorerPlaceholder component",
       "keywords": [
-        "themeexplorerplaceholder",
-        "components"
+        "components",
+        "themeexplorerplaceholder"
       ],
       "aliases": [],
       "synonyms": [],
@@ -4654,8 +4654,8 @@
       "library": "ui-docs",
       "description": "WorkflowViewerPlaceholder component",
       "keywords": [
-        "components",
-        "workflowviewerplaceholder"
+        "workflowviewerplaceholder",
+        "components"
       ],
       "aliases": [],
       "synonyms": [],
@@ -4816,7 +4816,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -4836,8 +4836,8 @@
       "library": "ui-feedback",
       "description": "Display a small numeric or dot indicator to convey status or count information.",
       "keywords": [
-        "badge",
-        "components"
+        "components",
+        "badge"
       ],
       "aliases": [],
       "synonyms": [],
@@ -4906,7 +4906,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -4927,9 +4927,9 @@
       "description": "Visualize numeric progress in a circular format.",
       "keywords": [
         "label",
-        "circularprogress",
+        "components",
         "value",
-        "components"
+        "circularprogress"
       ],
       "aliases": [],
       "synonyms": [],
@@ -4992,8 +4992,8 @@
       "library": "ui-feedback",
       "description": "Request explicit user confirmation before performing a consequential action.",
       "keywords": [
-        "confirmdialog",
-        "components"
+        "components",
+        "confirmdialog"
       ],
       "aliases": [],
       "synonyms": [
@@ -5043,7 +5043,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -5126,8 +5126,8 @@
       "library": "ui-feedback",
       "description": "Show a clear message when no data is available to display.",
       "keywords": [
-        "emptystate",
-        "components"
+        "components",
+        "emptystate"
       ],
       "aliases": [],
       "synonyms": [],
@@ -5165,7 +5165,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -5185,12 +5185,12 @@
       "library": "ui-feedback",
       "description": "Display important content in a focused dialog window.",
       "keywords": [
-        "modal",
-        "window",
-        "popup",
-        "dialog",
+        "components",
         "overlay",
-        "components"
+        "dialog",
+        "modal",
+        "popup",
+        "window"
       ],
       "aliases": [
         "AIAlias(alias='dialog', context='technical', confidence=0.95)",
@@ -5268,7 +5268,7 @@
         }
       ],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -5289,9 +5289,9 @@
       "description": "Visualize numeric progress as a linear bar.",
       "keywords": [
         "label",
-        "value",
         "progress",
-        "components"
+        "components",
+        "value"
       ],
       "aliases": [],
       "synonyms": [],
@@ -5331,7 +5331,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -5390,7 +5390,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -5410,8 +5410,8 @@
       "library": "ui-feedback",
       "description": "Show indeterminate progress or loading activity.",
       "keywords": [
-        "spinner",
-        "components"
+        "components",
+        "spinner"
       ],
       "aliases": [],
       "synonyms": [],
@@ -5466,8 +5466,8 @@
       "library": "ui-feedback",
       "description": "Display a temporary notification message that auto-dismisses.",
       "keywords": [
-        "toast",
-        "components"
+        "components",
+        "toast"
       ],
       "aliases": [],
       "synonyms": [],
@@ -5501,7 +5501,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -5521,8 +5521,8 @@
       "library": "ui-feedback",
       "description": "Display supplementary information when user hovers over an element.",
       "keywords": [
-        "tooltip",
-        "components"
+        "components",
+        "tooltip"
       ],
       "aliases": [],
       "synonyms": [],
@@ -5561,7 +5561,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -5581,8 +5581,8 @@
       "library": "ui-files",
       "description": "Display documents and files with automatic type detection and appropriate viewers.",
       "keywords": [
-        "documentpreview",
-        "components"
+        "components",
+        "documentpreview"
       ],
       "aliases": [],
       "synonyms": [],
@@ -5639,8 +5639,8 @@
       "library": "ui-files",
       "description": "PDFViewer — SHELL / ADAPTER (not a functional PDF renderer in 1.0.0). This component provides the viewer chrome (tool...",
       "keywords": [
-        "pdfviewer",
-        "components"
+        "components",
+        "pdfviewer"
       ],
       "aliases": [],
       "synonyms": [],
@@ -5741,7 +5741,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -5817,8 +5817,8 @@
       "description": "GridCell component",
       "keywords": [
         "gridcell",
-        "value",
-        "components"
+        "components",
+        "value"
       ],
       "aliases": [],
       "synonyms": [],
@@ -5873,8 +5873,8 @@
       "library": "ui-grid-builder",
       "description": "GridPagination component",
       "keywords": [
-        "gridpagination",
-        "components"
+        "components",
+        "gridpagination"
       ],
       "aliases": [],
       "synonyms": [],
@@ -6093,7 +6093,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -6113,8 +6113,8 @@
       "library": "ui-layout",
       "description": "Display the current navigation path and enable quick navigation to parent levels.",
       "keywords": [
-        "breadcrumb",
-        "components"
+        "components",
+        "breadcrumb"
       ],
       "aliases": [],
       "synonyms": [],
@@ -6169,8 +6169,8 @@
       "library": "ui-layout",
       "description": "Contain and organize related content in a bordered container.",
       "keywords": [
-        "card",
-        "components"
+        "components",
+        "card"
       ],
       "aliases": [],
       "synonyms": [],
@@ -6214,7 +6214,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -6234,8 +6234,8 @@
       "library": "ui-layout",
       "description": "Show or hide content with a click or interaction.",
       "keywords": [
-        "collapsible",
-        "components"
+        "components",
+        "collapsible"
       ],
       "aliases": [],
       "synonyms": [],
@@ -6272,7 +6272,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -6292,8 +6292,8 @@
       "library": "ui-layout",
       "description": "Organize content in a vertical column within a layout grid.",
       "keywords": [
-        "column",
-        "components"
+        "components",
+        "column"
       ],
       "aliases": [],
       "synonyms": [],
@@ -6330,7 +6330,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -6388,7 +6388,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -6408,8 +6408,8 @@
       "library": "ui-layout",
       "description": "Create a visual separation between content sections.",
       "keywords": [
-        "divider",
-        "components"
+        "components",
+        "divider"
       ],
       "aliases": [],
       "synonyms": [],
@@ -6443,7 +6443,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -6502,7 +6502,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -6522,8 +6522,8 @@
       "library": "ui-layout",
       "description": "Organize main content area of a page layout.",
       "keywords": [
-        "pagecontent",
         "label",
+        "pagecontent",
         "components"
       ],
       "aliases": [],
@@ -6558,7 +6558,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -6578,9 +6578,9 @@
       "library": "ui-layout",
       "description": "Display header information and controls at the top of a page.",
       "keywords": [
-        "pageheader",
         "label",
-        "components"
+        "components",
+        "pageheader"
       ],
       "aliases": [],
       "synonyms": [],
@@ -6614,7 +6614,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -6635,8 +6635,8 @@
       "description": "Define the overall structure and layout of a page.",
       "keywords": [
         "label",
-        "pagelayout",
-        "components"
+        "components",
+        "pagelayout"
       ],
       "aliases": [],
       "synonyms": [],
@@ -6670,7 +6670,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -6690,9 +6690,9 @@
       "library": "ui-layout",
       "description": "Organize page sections using tab navigation.",
       "keywords": [
-        "pagetabs",
         "label",
-        "components"
+        "components",
+        "pagetabs"
       ],
       "aliases": [],
       "synonyms": [],
@@ -6728,7 +6728,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -6748,8 +6748,8 @@
       "library": "ui-layout",
       "description": "Create a contained panel or section with consistent styling.",
       "keywords": [
-        "panel",
-        "components"
+        "components",
+        "panel"
       ],
       "aliases": [],
       "synonyms": [],
@@ -6785,7 +6785,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -6844,7 +6844,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -6864,9 +6864,9 @@
       "library": "ui-layout",
       "description": "Define a semantic content section with consistent spacing.",
       "keywords": [
-        "section",
         "label",
-        "components"
+        "components",
+        "section"
       ],
       "aliases": [],
       "synonyms": [],
@@ -6901,7 +6901,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -6962,7 +6962,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -7017,7 +7017,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -7037,8 +7037,8 @@
       "library": "ui-layout",
       "description": "Create a two-panel layout with resizable divider.",
       "keywords": [
-        "splitlayout",
-        "components"
+        "components",
+        "splitlayout"
       ],
       "aliases": [],
       "synonyms": [],
@@ -7077,7 +7077,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -7097,9 +7097,9 @@
       "library": "ui-layout",
       "description": "Arrange elements in a single row or column with consistent spacing.",
       "keywords": [
-        "stack",
         "label",
-        "components"
+        "components",
+        "stack"
       ],
       "aliases": [],
       "synonyms": [],
@@ -7185,7 +7185,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -7206,8 +7206,8 @@
       "description": "Show progress through a multi-step process.",
       "keywords": [
         "stepper",
-        "label",
-        "components"
+        "components",
+        "label"
       ],
       "aliases": [],
       "synonyms": [],
@@ -7244,7 +7244,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -7264,13 +7264,13 @@
       "library": "ui-layout",
       "description": "Organize content into tabs that users can switch between.",
       "keywords": [
+        "tabs",
         "organize",
-        "label",
-        "panel",
         "navigation",
-        "tab",
         "components",
-        "tabs"
+        "panel",
+        "tab",
+        "label"
       ],
       "aliases": [
         "AIAlias(alias='tabbed panel', context='technical', confidence=0.92)",
@@ -7381,7 +7381,7 @@
       ],
       "antipatterns": [],
       "metadata": {
-        "hasStorybook": false,
+        "hasStorybook": true,
         "hasPlaywright": false,
         "hasVitest": false,
         "hasJest": false,
@@ -7401,8 +7401,8 @@
       "library": "ui-maps",
       "description": "Enable rapid address input with autocomplete suggestions.",
       "keywords": [
-        "addressautocomplete",
-        "components"
+        "components",
+        "addressautocomplete"
       ],
       "aliases": [],
       "synonyms": [],
@@ -7453,8 +7453,8 @@
       "library": "ui-maps",
       "description": "Enable selection from list of available addresses.",
       "keywords": [
-        "addressselector",
-        "components"
+        "components",
+        "addressselector"
       ],
       "aliases": [],
       "synonyms": [
@@ -7508,8 +7508,8 @@
       "library": "ui-maps",
       "description": "Enable quick access to current device location.",
       "keywords": [
-        "currentlocationbutton",
-        "components"
+        "components",
+        "currentlocationbutton"
       ],
       "aliases": [],
       "synonyms": [
@@ -7563,8 +7563,8 @@
       "library": "ui-maps",
       "description": "Calculate and display distance between two locations.",
       "keywords": [
-        "components",
-        "distancecalculator"
+        "distancecalculator",
+        "components"
       ],
       "aliases": [],
       "synonyms": [],
@@ -7615,8 +7615,8 @@
       "library": "ui-maps",
       "description": "Enable drawing and editing geographic boundaries on a map.",
       "keywords": [
-        "geofenceeditor",
-        "components"
+        "components",
+        "geofenceeditor"
       ],
       "aliases": [],
       "synonyms": [],
@@ -7667,8 +7667,8 @@
       "library": "ui-maps",
       "description": "Enable selection of geographic location from map.",
       "keywords": [
-        "locationpicker",
-        "components"
+        "components",
+        "locationpicker"
       ],
       "aliases": [],
       "synonyms": [],
@@ -7775,8 +7775,8 @@
       "library": "ui-maps",
       "description": "MapView — ADAPTER-BASED map container. Renders map chrome and controls but does NOT display an interactive map on its...",
       "keywords": [
-        "mapview",
-        "components"
+        "components",
+        "mapview"
       ],
       "aliases": [],
       "synonyms": [],
@@ -7827,8 +7827,8 @@
       "library": "ui-maps",
       "description": "Display and manage routes with turn-by-turn directions.",
       "keywords": [
-        "routeplanner",
-        "components"
+        "components",
+        "routeplanner"
       ],
       "aliases": [],
       "synonyms": [],
@@ -8035,8 +8035,8 @@
       "library": "ui-media",
       "description": "Enable selection and input of colors.",
       "keywords": [
-        "colorpicker",
-        "components"
+        "components",
+        "colorpicker"
       ],
       "aliases": [],
       "synonyms": [],
@@ -8087,8 +8087,8 @@
       "library": "ui-media",
       "description": "Cropper — interactive crop-selection UI. LIMITATION (1.0.0): This component provides a fully interactive crop overlay...",
       "keywords": [
-        "cropper",
-        "components"
+        "components",
+        "cropper"
       ],
       "aliases": [],
       "synonyms": [],
@@ -8139,8 +8139,8 @@
       "library": "ui-media",
       "description": "Display and allow interaction with images in fullscreen or modal.",
       "keywords": [
-        "imageviewer",
-        "components"
+        "components",
+        "imageviewer"
       ],
       "aliases": [],
       "synonyms": [],
@@ -8243,8 +8243,8 @@
       "library": "ui-media",
       "description": "QRCode — renders a real, scannable QR code to a canvas using the `qrcode` library, with optional PNG download. The en...",
       "keywords": [
-        "qrcode",
-        "components"
+        "components",
+        "qrcode"
       ],
       "aliases": [],
       "synonyms": [],
@@ -8351,8 +8351,8 @@
       "library": "ui-media",
       "description": "Enable users to draw or write signatures.",
       "keywords": [
-        "signaturepad",
-        "components"
+        "components",
+        "signaturepad"
       ],
       "aliases": [],
       "synonyms": [],
@@ -8455,8 +8455,8 @@
       "library": "ui-media",
       "description": "Play video content with standard player controls.",
       "keywords": [
-        "videoplayer",
-        "components"
+        "components",
+        "videoplayer"
       ],
       "aliases": [],
       "synonyms": [],
@@ -8507,8 +8507,8 @@
       "library": "ui-navigation",
       "description": "Display the current navigation path and enable quick navigation to parent levels.",
       "keywords": [
-        "breadcrumb",
-        "components"
+        "components",
+        "breadcrumb"
       ],
       "aliases": [],
       "synonyms": [],
@@ -8573,8 +8573,8 @@
       "library": "ui-navigation",
       "description": "Enable quick access to commands and navigation via keyboard.",
       "keywords": [
-        "commandpalette",
-        "components"
+        "components",
+        "commandpalette"
       ],
       "aliases": [],
       "synonyms": [],
@@ -8641,8 +8641,8 @@
       "library": "ui-navigation",
       "description": "Display context-sensitive actions triggered by right-click or long-press.",
       "keywords": [
-        "contextmenu",
-        "components"
+        "components",
+        "contextmenu"
       ],
       "aliases": [],
       "synonyms": [],
@@ -8792,8 +8792,8 @@
       "library": "ui-navigation",
       "description": "Display user-selected favorite or bookmarked items for quick access.",
       "keywords": [
-        "favoritesmenu",
-        "components"
+        "components",
+        "favoritesmenu"
       ],
       "aliases": [],
       "synonyms": [],
@@ -8859,8 +8859,8 @@
       "library": "ui-navigation",
       "description": "Display application or site header with branding and navigation.",
       "keywords": [
-        "header",
-        "components"
+        "components",
+        "header"
       ],
       "aliases": [],
       "synonyms": [],
@@ -8932,8 +8932,8 @@
       "library": "ui-navigation",
       "description": "Display large menu with multiple columns and rich content.",
       "keywords": [
-        "megamenu",
-        "components"
+        "components",
+        "megamenu"
       ],
       "aliases": [],
       "synonyms": [],
@@ -9161,8 +9161,8 @@
       "library": "ui-navigation",
       "description": "Display a horizontal navigation bar with multiple navigation links.",
       "keywords": [
-        "navbar",
-        "components"
+        "components",
+        "navbar"
       ],
       "aliases": [],
       "synonyms": [],
@@ -9296,8 +9296,8 @@
       "library": "ui-navigation",
       "description": "Provide quick access to frequent actions in a compact menu.",
       "keywords": [
-        "quickactions",
-        "components"
+        "components",
+        "quickactions"
       ],
       "aliases": [],
       "synonyms": [],
@@ -9430,8 +9430,8 @@
       "library": "ui-navigation",
       "description": "Enable users to search for content or pages and navigate quickly.",
       "keywords": [
-        "searchnavigation",
         "placeholder",
+        "searchnavigation",
         "components"
       ],
       "aliases": [],
@@ -9500,8 +9500,8 @@
       "library": "ui-navigation",
       "description": "Display persistent sidebar navigation alongside main content.",
       "keywords": [
-        "sidebar",
-        "components"
+        "components",
+        "sidebar"
       ],
       "aliases": [],
       "synonyms": [],
@@ -9574,8 +9574,8 @@
       "library": "ui-navigation",
       "description": "Navigate between steps of a multi-step process or guide.",
       "keywords": [
-        "stepnavigation",
-        "components"
+        "components",
+        "stepnavigation"
       ],
       "aliases": [],
       "synonyms": [],
@@ -9645,12 +9645,12 @@
       "library": "ui-navigation",
       "description": "Organize navigation into switchable tabs.",
       "keywords": [
+        "tabs",
         "organize",
-        "panel",
         "navigation",
-        "tab",
         "components",
-        "tabs"
+        "panel",
+        "tab"
       ],
       "aliases": [
         "AIAlias(alias='tabbed panel', context='technical', confidence=0.92)",
@@ -9725,8 +9725,8 @@
       "library": "ui-navigation",
       "description": "Display hierarchical menu structure with collapsible tree nodes.",
       "keywords": [
-        "treemenu",
-        "components"
+        "components",
+        "treemenu"
       ],
       "aliases": [],
       "synonyms": [],
@@ -9798,8 +9798,8 @@
       "library": "ui-navigation",
       "description": "Display user profile and account-related options.",
       "keywords": [
-        "usermenu",
-        "components"
+        "components",
+        "usermenu"
       ],
       "aliases": [],
       "synonyms": [],
@@ -9866,8 +9866,8 @@
       "library": "ui-navigation",
       "description": "Enable users to switch between multiple workspaces or environments.",
       "keywords": [
-        "workspaceswitcher",
-        "components"
+        "components",
+        "workspaceswitcher"
       ],
       "aliases": [],
       "synonyms": [],
@@ -10000,8 +10000,8 @@
       "library": "ui-security",
       "description": "ActiveSessions Component Displays list of active sessions with device info and actions to revoke them.",
       "keywords": [
-        "activesessions",
-        "components"
+        "components",
+        "activesessions"
       ],
       "aliases": [],
       "synonyms": [],
@@ -10072,8 +10072,8 @@
       "library": "ui-security",
       "description": "Timestamp",
       "keywords": [
-        "activityfeed",
-        "components"
+        "components",
+        "activityfeed"
       ],
       "aliases": [],
       "synonyms": [],
@@ -10141,8 +10141,8 @@
       "library": "ui-security",
       "description": "Audit events to display",
       "keywords": [
-        "audithistorytable",
-        "components"
+        "components",
+        "audithistorytable"
       ],
       "aliases": [],
       "synonyms": [],
@@ -10270,8 +10270,8 @@
       "library": "ui-security",
       "description": "Auth0LoginButton Component Auth0 SSO login button.",
       "keywords": [
-        "components",
-        "auth0loginbutton"
+        "auth0loginbutton",
+        "components"
       ],
       "aliases": [],
       "synonyms": [
@@ -10481,8 +10481,8 @@
       "description": "BiometricButton Component Button to authenticate using biometric (fingerprint, face recognition).",
       "keywords": [
         "label",
-        "biometricbutton",
-        "components"
+        "components",
+        "biometricbutton"
       ],
       "aliases": [],
       "synonyms": [
@@ -10551,8 +10551,8 @@
       "library": "ui-security",
       "description": "CaptchaContainer - Container for switching CAPTCHA providers",
       "keywords": [
-        "captchacontainer",
-        "components"
+        "components",
+        "captchacontainer"
       ],
       "aliases": [],
       "synonyms": [],
@@ -10693,8 +10693,8 @@
       "library": "ui-security",
       "description": "ConcurrentSessionDialog - Alert user about new concurrent session login",
       "keywords": [
-        "concurrentsessiondialog",
-        "components"
+        "components",
+        "concurrentsessiondialog"
       ],
       "aliases": [],
       "synonyms": [
@@ -10768,8 +10768,8 @@
       "library": "ui-security",
       "description": "Callback to close dialog",
       "keywords": [
-        "deviceverificationdialog",
-        "components"
+        "components",
+        "deviceverificationdialog"
       ],
       "aliases": [],
       "synonyms": [
@@ -10843,8 +10843,8 @@
       "library": "ui-security",
       "description": "Callback to resend verification email",
       "keywords": [
-        "emailverificationcard",
-        "components"
+        "components",
+        "emailverificationcard"
       ],
       "aliases": [],
       "synonyms": [],
@@ -10987,8 +10987,8 @@
       "library": "ui-security",
       "description": "Content to render if feature is enabled",
       "keywords": [
-        "featuregate",
-        "components"
+        "components",
+        "featuregate"
       ],
       "aliases": [],
       "synonyms": [],
@@ -11249,8 +11249,8 @@
       "library": "ui-security",
       "description": "GoogleLoginButton Component Google OAuth login button.",
       "keywords": [
-        "googleloginbutton",
-        "components"
+        "components",
+        "googleloginbutton"
       ],
       "aliases": [],
       "synonyms": [
@@ -11377,8 +11377,8 @@
       "library": "ui-security",
       "description": "IdleMonitor - Invisible component that tracks user activity and inactivity Detects idle state using: - Mouse/keyboard...",
       "keywords": [
-        "components",
-        "idlemonitor"
+        "idlemonitor",
+        "components"
       ],
       "aliases": [],
       "synonyms": [],
@@ -11437,9 +11437,9 @@
       "library": "ui-security",
       "description": "KeepAliveButton - Manually extend user session",
       "keywords": [
-        "keepalivebutton",
         "label",
-        "components"
+        "components",
+        "keepalivebutton"
       ],
       "aliases": [],
       "synonyms": [
@@ -11508,8 +11508,8 @@
       "library": "ui-security",
       "description": "LoginCard component",
       "keywords": [
-        "logincard",
-        "components"
+        "components",
+        "logincard"
       ],
       "aliases": [],
       "synonyms": [],
@@ -11643,8 +11643,8 @@
       "library": "ui-security",
       "description": "Login timestamp",
       "keywords": [
-        "loginhistory",
-        "components"
+        "components",
+        "loginhistory"
       ],
       "aliases": [],
       "synonyms": [],
@@ -11708,8 +11708,8 @@
       "library": "ui-security",
       "description": "MFASettingsPanel component",
       "keywords": [
-        "mfasettingspanel",
-        "components"
+        "components",
+        "mfasettingspanel"
       ],
       "aliases": [],
       "synonyms": [],
@@ -11772,8 +11772,8 @@
       "library": "ui-security",
       "description": "MFASetupWizard - Multi-step wizard for MFA setup",
       "keywords": [
-        "mfasetupwizard",
-        "components"
+        "components",
+        "mfasetupwizard"
       ],
       "aliases": [],
       "synonyms": [],
@@ -11912,8 +11912,8 @@
       "library": "ui-security",
       "description": "MFAVerificationDialog - Enter MFA verification code",
       "keywords": [
-        "mfaverificationdialog",
-        "components"
+        "components",
+        "mfaverificationdialog"
       ],
       "aliases": [],
       "synonyms": [
@@ -11991,9 +11991,9 @@
       "library": "ui-security",
       "description": "MaskedInput - Text input with pattern masking",
       "keywords": [
-        "label",
         "maskedinput",
-        "components"
+        "components",
+        "label"
       ],
       "aliases": [],
       "synonyms": [
@@ -12128,11 +12128,11 @@
       "library": "ui-security",
       "description": "OTPInput Component One-Time Password input with: - Multiple digit fields (configurable, typically 6) - Auto-focus bet...",
       "keywords": [
-        "label",
         "otpinput",
+        "components",
         "placeholder",
         "value",
-        "components"
+        "label"
       ],
       "aliases": [],
       "synonyms": [
@@ -12204,8 +12204,8 @@
       "library": "ui-security",
       "description": "Callback when button is clicked to resend OTP",
       "keywords": [
-        "otpresendbutton",
-        "components"
+        "components",
+        "otpresendbutton"
       ],
       "aliases": [],
       "synonyms": [
@@ -12278,9 +12278,9 @@
       "library": "ui-security",
       "description": "OTPVerificationCard Component Complete OTP verification flow container: - OTPInput for entering digits - OTPResendBut...",
       "keywords": [
-        "otpverificationcard",
         "placeholder",
-        "components"
+        "components",
+        "otpverificationcard"
       ],
       "aliases": [],
       "synonyms": [],
@@ -12360,8 +12360,8 @@
       "library": "ui-security",
       "description": "OktaLoginButton Component Okta SSO login button.",
       "keywords": [
-        "oktaloginbutton",
-        "components"
+        "components",
+        "oktaloginbutton"
       ],
       "aliases": [],
       "synonyms": [
@@ -12428,9 +12428,9 @@
       "library": "ui-security",
       "description": "PINInput - Numeric code input with auto-advancing Features: - Auto-focus to next field - Masked digit display - Keybo...",
       "keywords": [
-        "pininput",
         "label",
-        "components"
+        "components",
+        "pininput"
       ],
       "aliases": [],
       "synonyms": [
@@ -12503,8 +12503,8 @@
       "library": "ui-security",
       "description": "PasswordAgeIndicator Component Display password age and recommend change.",
       "keywords": [
-        "passwordageindicator",
-        "components"
+        "components",
+        "passwordageindicator"
       ],
       "aliases": [],
       "synonyms": [],
@@ -12640,11 +12640,11 @@
       "library": "ui-security",
       "description": "PasswordInput Component A secure password input component with: - Visibility toggle for showing/hiding password - Rea...",
       "keywords": [
-        "label",
+        "passwordinput",
+        "components",
         "placeholder",
         "value",
-        "passwordinput",
-        "components"
+        "label"
       ],
       "aliases": [],
       "synonyms": [
@@ -12716,8 +12716,8 @@
       "library": "ui-security",
       "description": "PasswordPolicyPanel component",
       "keywords": [
-        "passwordpolicypanel",
-        "components"
+        "components",
+        "passwordpolicypanel"
       ],
       "aliases": [],
       "synonyms": [],
@@ -12849,8 +12849,8 @@
       "description": "PasswordStrengthMeter Component",
       "keywords": [
         "passwordstrengthmeter",
-        "label",
-        "components"
+        "components",
+        "label"
       ],
       "aliases": [],
       "synonyms": [],
@@ -12914,8 +12914,8 @@
       "library": "ui-security",
       "description": "Content to render if permission is granted",
       "keywords": [
-        "permissiongate",
-        "components"
+        "components",
+        "permissiongate"
       ],
       "aliases": [],
       "synonyms": [],
@@ -13061,8 +13061,8 @@
       "library": "ui-security",
       "description": "Content to render if policy is met",
       "keywords": [
-        "policygate",
-        "components"
+        "components",
+        "policygate"
       ],
       "aliases": [],
       "synonyms": [],
@@ -13307,8 +13307,8 @@
       "library": "ui-security",
       "description": "Content to render if scope is granted",
       "keywords": [
-        "components",
-        "scopegate"
+        "scopegate",
+        "components"
       ],
       "aliases": [],
       "synonyms": [],
@@ -13368,8 +13368,8 @@
       "description": "SecureClipboardButton - Copy sensitive content to clipboard securely Features: - Uses Clipboard API for secure copyin...",
       "keywords": [
         "label",
-        "secureclipboardbutton",
-        "components"
+        "components",
+        "secureclipboardbutton"
       ],
       "aliases": [],
       "synonyms": [
@@ -13440,8 +13440,8 @@
       "description": "SecureDownloadButton - Download files securely with cleanup Features: - Automatic blob URL cleanup - Optional validat...",
       "keywords": [
         "label",
-        "securedownloadbutton",
-        "components"
+        "components",
+        "securedownloadbutton"
       ],
       "aliases": [],
       "synonyms": [
@@ -13512,9 +13512,9 @@
       "library": "ui-security",
       "description": "SecureInput - Text input with enhanced security features Features: - Autocomplete disabled for sensitive inputs - Val...",
       "keywords": [
-        "label",
         "placeholder",
         "secureinput",
+        "label",
         "components"
       ],
       "aliases": [],
@@ -13587,8 +13587,8 @@
       "description": "SecureTextarea - Textarea input with enhanced security features",
       "keywords": [
         "label",
-        "securetextarea",
-        "components"
+        "components",
+        "securetextarea"
       ],
       "aliases": [],
       "synonyms": [],
@@ -13650,8 +13650,8 @@
       "description": "SecureUploader - File upload with security validation",
       "keywords": [
         "label",
-        "secureuploader",
-        "components"
+        "components",
+        "secureuploader"
       ],
       "aliases": [],
       "synonyms": [],
@@ -13721,8 +13721,8 @@
       "library": "ui-security",
       "description": "SecurityAlert Component Card displaying individual security alert with actions.",
       "keywords": [
-        "securityalert",
-        "components"
+        "components",
+        "securityalert"
       ],
       "aliases": [],
       "synonyms": [],
@@ -13925,8 +13925,8 @@
       "library": "ui-security",
       "description": "Security events to display",
       "keywords": [
-        "securityeventlog",
-        "components"
+        "components",
+        "securityeventlog"
       ],
       "aliases": [],
       "synonyms": [],
@@ -13994,8 +13994,8 @@
       "library": "ui-security",
       "description": "SecurityHealthIndicator - Visual security health indicator",
       "keywords": [
-        "securityhealthindicator",
-        "components"
+        "components",
+        "securityhealthindicator"
       ],
       "aliases": [],
       "synonyms": [],
@@ -14050,9 +14050,9 @@
       "library": "ui-security",
       "description": "SecurityKeyButton - Authenticate using FIDO2/WebAuthn security key",
       "keywords": [
-        "securitykeybutton",
         "label",
-        "components"
+        "components",
+        "securitykeybutton"
       ],
       "aliases": [],
       "synonyms": [
@@ -14121,8 +14121,8 @@
       "library": "ui-security",
       "description": "SecurityLogsPanel component",
       "keywords": [
-        "securitylogspanel",
-        "components"
+        "components",
+        "securitylogspanel"
       ],
       "aliases": [],
       "synonyms": [],
@@ -14185,8 +14185,8 @@
       "library": "ui-security",
       "description": "SecurityScore - Display security score and breakdown",
       "keywords": [
-        "securityscore",
-        "components"
+        "components",
+        "securityscore"
       ],
       "aliases": [],
       "synonyms": [],
@@ -14309,10 +14309,10 @@
       "library": "ui-security",
       "description": "SecurityStatusCard - Individual security status card",
       "keywords": [
-        "securitystatuscard",
         "label",
-        "value",
-        "components"
+        "securitystatuscard",
+        "components",
+        "value"
       ],
       "aliases": [],
       "synonyms": [],
@@ -14450,8 +14450,8 @@
       "library": "ui-security",
       "description": "SessionCountdown - Session time countdown display",
       "keywords": [
-        "sessioncountdown",
-        "components"
+        "components",
+        "sessioncountdown"
       ],
       "aliases": [],
       "synonyms": [],
@@ -14576,8 +14576,8 @@
       "library": "ui-security",
       "description": "SessionTimeoutDialog - Warning dialog for session timeout",
       "keywords": [
-        "sessiontimeoutdialog",
-        "components"
+        "components",
+        "sessiontimeoutdialog"
       ],
       "aliases": [],
       "synonyms": [
@@ -14721,8 +14721,8 @@
       "library": "ui-security",
       "description": "TrustedDevicesPanel component",
       "keywords": [
-        "trusteddevicespanel",
-        "components"
+        "components",
+        "trusteddevicespanel"
       ],
       "aliases": [],
       "synonyms": [],
@@ -14846,8 +14846,8 @@
       "library": "ui-security",
       "description": "UnauthorizedPage - Full page unauthorized error screen",
       "keywords": [
-        "unauthorizedpage",
-        "components"
+        "components",
+        "unauthorizedpage"
       ],
       "aliases": [],
       "synonyms": [],
@@ -14973,8 +14973,8 @@
       "library": "ui-visualization",
       "description": "Draw connections between elements to show relationships.",
       "keywords": [
-        "connector",
-        "components"
+        "components",
+        "connector"
       ],
       "aliases": [],
       "synonyms": [],
@@ -15039,8 +15039,8 @@
       "library": "ui-visualization",
       "description": "Visualize organizational or hierarchical relationships.",
       "keywords": [
-        "hierarchy",
-        "components"
+        "components",
+        "hierarchy"
       ],
       "aliases": [],
       "synonyms": [],
@@ -15118,8 +15118,8 @@
       "library": "ui-visualization",
       "description": "Explain chart symbols, colors, and data categories.",
       "keywords": [
-        "legend",
-        "components"
+        "components",
+        "legend"
       ],
       "aliases": [],
       "synonyms": [],
@@ -15173,8 +15173,8 @@
       "library": "ui-visualization",
       "description": "Display a zoomed-out overview of large visualizations.",
       "keywords": [
-        "components",
-        "minimap"
+        "minimap",
+        "components"
       ],
       "aliases": [],
       "synonyms": [],
@@ -15237,8 +15237,8 @@
       "library": "ui-visualization",
       "description": "Display organizational structure and reporting relationships.",
       "keywords": [
-        "orgchart",
-        "components"
+        "components",
+        "orgchart"
       ],
       "aliases": [],
       "synonyms": [],
@@ -15329,8 +15329,8 @@
       "library": "ui-visualization",
       "description": "Enable searching and filtering within visualizations.",
       "keywords": [
-        "components",
         "placeholder",
+        "components",
         "searchbox"
       ],
       "aliases": [],
@@ -15394,8 +15394,8 @@
       "library": "ui-visualization",
       "description": "Display tool or action buttons for interactive visualizations.",
       "keywords": [
-        "toolbar",
-        "components"
+        "components",
+        "toolbar"
       ],
       "aliases": [],
       "synonyms": [],
@@ -15462,8 +15462,8 @@
       "library": "ui-visualization",
       "description": "Display hierarchical tree structure with expandable nodes.",
       "keywords": [
-        "tree",
-        "components"
+        "components",
+        "tree"
       ],
       "aliases": [],
       "synonyms": [],
@@ -15537,8 +15537,8 @@
       "library": "ui-visualization",
       "description": "Represent a single node within a hierarchical tree structure.",
       "keywords": [
-        "treenode",
-        "components"
+        "components",
+        "treenode"
       ],
       "aliases": [],
       "synonyms": [],
@@ -15614,8 +15614,8 @@
       "library": "ui-visualization",
       "description": "Provide zoom in/out controls for interactive visualizations.",
       "keywords": [
-        "zoomcontrols",
-        "components"
+        "components",
+        "zoomcontrols"
       ],
       "aliases": [],
       "synonyms": [],

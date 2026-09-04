@@ -68,7 +68,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** gridpagination, components
+**Keywords:** components, gridpagination
 
 **Semantic Category:** layout
 

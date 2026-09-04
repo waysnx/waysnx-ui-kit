@@ -71,7 +71,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** unauthorizedpage, components
+**Keywords:** components, unauthorizedpage
 
 **Semantic Category:** utility
 

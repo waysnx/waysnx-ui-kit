@@ -183,14 +183,14 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "waysnx-otp-card-info",
-    "waysnx-otp-card-contact",
     "waysnx-otp-card-content",
-    "waysnx-otp-card-description",
-    "waysnx-otp-card-info-text",
-    "waysnx-otp-card-resend",
+    "waysnx-otp-card-contact",
     "waysnx-otp-card-title",
-    "waysnx-otp-card-fields"
+    "waysnx-otp-card-fields",
+    "waysnx-otp-card-resend",
+    "waysnx-otp-card-description",
+    "waysnx-otp-card-info",
+    "waysnx-otp-card-info-text"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -223,9 +223,9 @@
   "documentation": true,
   "sourceFile": "src\\components\\OTP\\OTPVerificationCard.tsx",
   "keywords": [
-    "otpverificationcard",
     "placeholder",
-    "components"
+    "components",
+    "otpverificationcard"
   ],
   "aliases": [],
   "synonyms": [],
@@ -243,7 +243,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.565397",
+  "generatedAt": "2026-09-04T11:34:35.758986",
   "generatorVersion": "2.0.0",
   "sourceHash": "0ac2537f",
   "packageDependencies": {

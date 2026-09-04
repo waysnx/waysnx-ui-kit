@@ -104,7 +104,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** label, single, choice, radio, button
+**Keywords:** button, radio, components, option, choice
 
 **Synonyms:** radio button, option selector
 

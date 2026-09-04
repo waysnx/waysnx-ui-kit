@@ -70,7 +70,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** activityfeed, components
+**Keywords:** components, activityfeed
 
 **Semantic Category:** utility
 

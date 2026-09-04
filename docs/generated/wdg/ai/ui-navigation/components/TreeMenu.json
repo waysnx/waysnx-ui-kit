@@ -223,11 +223,11 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "nav-tree-menu__list",
-    "nav-tree-menu__item-icon",
     "nav-tree-menu__checkbox",
-    "nav-tree-menu__item-badge",
+    "nav-tree-menu__list",
     "nav-tree-menu__expand-placeholder",
+    "nav-tree-menu__item-badge",
+    "nav-tree-menu__item-icon",
     "nav-tree-menu__item-label"
   ],
   "designTokens": {},
@@ -261,8 +261,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\TreeMenu\\TreeMenu.tsx",
   "keywords": [
-    "treemenu",
-    "components"
+    "components",
+    "treemenu"
   ],
   "aliases": [],
   "synonyms": [],
@@ -280,7 +280,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.328653",
+  "generatedAt": "2026-09-04T11:34:35.427974",
   "generatorVersion": "2.0.0",
   "sourceHash": "9ab6c6b2",
   "metadata": {

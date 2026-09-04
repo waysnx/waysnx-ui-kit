@@ -80,7 +80,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** treemenu, components
+**Keywords:** components, treemenu
 
 **Semantic Category:** navigation
 

@@ -70,7 +70,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** oktaloginbutton, components
+**Keywords:** components, oktaloginbutton
 
 **Synonyms:** action control, clickable element
 

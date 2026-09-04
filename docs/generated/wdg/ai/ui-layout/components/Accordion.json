@@ -12,13 +12,13 @@
   "longDescription": "Display collapsible sections of content that expand or collapse.",
   "references": {
     "storybook": {
-      "available": false,
-      "title": "",
-      "storyId": "",
-      "url": "",
+      "available": true,
+      "title": "Components/Accordion",
+      "storyId": "components-accordion",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-accordion",
       "stories": [],
       "tags": [],
-      "source": ""
+      "source": "Accordion.stories.tsx"
     }
   },
   "useCases": [
@@ -189,7 +189,7 @@
   "dark": null,
   "highContrast": null,
   "responsive": false,
-  "storybook": false,
+  "storybook": true,
   "playwright": false,
   "vitest": false,
   "jest": false,
@@ -216,7 +216,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.033580",
+  "generatedAt": "2026-09-04T11:34:35.029003",
   "generatorVersion": "2.0.0",
   "sourceHash": "adc66d00",
   "metadata": {

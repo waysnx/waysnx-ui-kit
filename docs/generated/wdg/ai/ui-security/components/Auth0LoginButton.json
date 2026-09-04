@@ -147,8 +147,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\SSO\\Auth0LoginButton.tsx",
   "keywords": [
-    "components",
-    "auth0loginbutton"
+    "auth0loginbutton",
+    "components"
   ],
   "aliases": [],
   "synonyms": [
@@ -181,7 +181,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.824519",
+  "generatedAt": "2026-09-04T11:34:36.094410",
   "generatorVersion": "2.0.0",
   "sourceHash": "cc43563a",
   "packageDependencies": {

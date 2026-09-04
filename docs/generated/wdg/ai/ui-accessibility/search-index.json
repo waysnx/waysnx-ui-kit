@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
   "library": "ui-accessibility",
-  "generatedAt": "2026-09-03T20:02:28.403336",
+  "generatedAt": "2026-09-04T11:34:39.150880",
   "components": [
     {
       "id": "ui-accessibility:accessibilitycenter",
@@ -68,8 +68,8 @@
       "category": "components",
       "description": "FloatingButton Component A floating button that triggers the accessibility center",
       "keywords": [
-        "floatingbutton",
-        "components"
+        "components",
+        "floatingbutton"
       ],
       "aliases": [],
       "synonyms": [
@@ -128,8 +128,8 @@
       "category": "components",
       "description": "Magnifier Component Provides a magnified view of page content for users with low vision Follows cursor/scroll position",
       "keywords": [
-        "magnifier",
-        "components"
+        "components",
+        "magnifier"
       ],
       "aliases": [],
       "synonyms": [],
@@ -179,8 +179,8 @@
       "category": "components",
       "description": "ReadingGuide Component Displays a visual reading line to help users follow text Only renders when readingGuide is ena...",
       "keywords": [
-        "readingguide",
-        "components"
+        "components",
+        "readingguide"
       ],
       "aliases": [],
       "synonyms": [],
@@ -230,8 +230,8 @@
       "category": "components",
       "description": "SkipLinks — renders visually hidden skip-navigation links. Links appear on keyboard focus, allowing keyboard/screen r...",
       "keywords": [
-        "skiplinks",
-        "components"
+        "components",
+        "skiplinks"
       ],
       "aliases": [],
       "synonyms": [],

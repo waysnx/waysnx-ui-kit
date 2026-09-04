@@ -60,8 +60,8 @@
   "cssClasses": [
     "wx-adv-code-viewer__header",
     "wx-adv-code-viewer__code",
-    "wx-adv-code-viewer__lines",
     "wx-adv-code-viewer__body",
+    "wx-adv-code-viewer__lines",
     "--wx-color-text-muted"
   ],
   "designTokens": {},
@@ -95,8 +95,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\CodeViewer\\CodeViewer.tsx",
   "keywords": [
-    "codeviewer",
-    "components"
+    "components",
+    "codeviewer"
   ],
   "aliases": [],
   "synonyms": [],
@@ -114,7 +114,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.204973",
+  "generatedAt": "2026-09-04T11:34:33.804653",
   "generatorVersion": "2.0.0",
   "sourceHash": "5ed5a904",
   "metadata": {

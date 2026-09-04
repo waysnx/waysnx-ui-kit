@@ -101,7 +101,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** label, placeholder, datetimepicker, value, components
+**Keywords:** components, placeholder, value, label, datetimepicker
 
 **Semantic Category:** input
 

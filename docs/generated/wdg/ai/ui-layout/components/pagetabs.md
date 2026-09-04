@@ -52,7 +52,7 @@ import { PageTabs } from '@waysnx/ui-layout';
 
 ## Storybook
 
-View Interactive Storybook
+[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/components-pagetabs)
 
 ## When to Use
 
@@ -77,7 +77,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** pagetabs, label, components
+**Keywords:** label, components, pagetabs
 
 **Semantic Category:** navigation
 

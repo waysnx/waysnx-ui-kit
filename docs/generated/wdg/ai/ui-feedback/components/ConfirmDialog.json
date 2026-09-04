@@ -12,13 +12,13 @@
   "longDescription": "Request explicit user confirmation before performing a consequential action.",
   "references": {
     "storybook": {
-      "available": false,
-      "title": "",
-      "storyId": "",
-      "url": "",
+      "available": true,
+      "title": "Components/ConfirmDialog",
+      "storyId": "components-confirmdialog",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-confirmdialog",
       "stories": [],
       "tags": [],
-      "source": ""
+      "source": "ConfirmDialog.stories.tsx"
     }
   },
   "useCases": [
@@ -297,7 +297,7 @@
   "dark": null,
   "highContrast": null,
   "responsive": false,
-  "storybook": false,
+  "storybook": true,
   "playwright": false,
   "vitest": false,
   "jest": false,
@@ -305,8 +305,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\ConfirmDialog\\ConfirmDialog.tsx",
   "keywords": [
-    "confirmdialog",
-    "components"
+    "components",
+    "confirmdialog"
   ],
   "aliases": [],
   "synonyms": [
@@ -327,7 +327,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.921875",
+  "generatedAt": "2026-09-04T11:34:34.880066",
   "generatorVersion": "2.0.0",
   "sourceHash": "40d493c3",
   "metadata": {

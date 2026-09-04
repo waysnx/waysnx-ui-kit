@@ -12,13 +12,13 @@
   "longDescription": "Add flexible spacing between layout elements.",
   "references": {
     "storybook": {
-      "available": false,
-      "title": "",
-      "storyId": "",
-      "url": "",
+      "available": true,
+      "title": "Components/Spacer",
+      "storyId": "components-spacer",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-spacer",
       "stories": [],
       "tags": [],
-      "source": ""
+      "source": "Spacer.stories.tsx"
     }
   },
   "useCases": [
@@ -102,7 +102,7 @@
   "dark": null,
   "highContrast": null,
   "responsive": false,
-  "storybook": false,
+  "storybook": true,
   "playwright": false,
   "vitest": false,
   "jest": false,
@@ -129,7 +129,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.149322",
+  "generatedAt": "2026-09-04T11:34:35.188755",
   "generatorVersion": "2.0.0",
   "sourceHash": "9f66493a",
   "metadata": {

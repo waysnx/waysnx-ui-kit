@@ -74,7 +74,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** concurrentsessiondialog, components
+**Keywords:** components, concurrentsessiondialog
 
 **Synonyms:** popup window, overlay panel
 

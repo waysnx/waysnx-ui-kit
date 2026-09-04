@@ -59,7 +59,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** documentpreview, components
+**Keywords:** components, documentpreview
 
 **Semantic Category:** utility
 

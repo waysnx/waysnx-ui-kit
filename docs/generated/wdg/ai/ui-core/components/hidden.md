@@ -62,7 +62,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** components, value, hidden
+**Keywords:** components, hidden, value
 
 **Semantic Category:** utility
 

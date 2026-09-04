@@ -57,7 +57,7 @@ import { Collapsible } from '@waysnx/ui-layout';
 
 ## Storybook
 
-View Interactive Storybook
+[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/components-collapsible)
 
 ## When to Use
 
@@ -82,7 +82,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** collapsible, components
+**Keywords:** components, collapsible
 
 **Semantic Category:** utility
 

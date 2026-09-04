@@ -346,11 +346,11 @@
   "documentation": true,
   "sourceFile": "src\\components\\HtmlEditor\\HtmlEditor.tsx",
   "keywords": [
-    "label",
+    "htmleditor",
+    "components",
     "placeholder",
     "value",
-    "htmleditor",
-    "components"
+    "label"
   ],
   "aliases": [],
   "synonyms": [],
@@ -368,7 +368,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.627655",
+  "generatedAt": "2026-09-04T11:34:34.389506",
   "generatorVersion": "2.0.0",
   "sourceHash": "a696aedc",
   "metadata": {

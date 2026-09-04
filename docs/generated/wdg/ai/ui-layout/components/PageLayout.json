@@ -12,13 +12,13 @@
   "longDescription": "Define the overall structure and layout of a page.",
   "references": {
     "storybook": {
-      "available": false,
-      "title": "",
-      "storyId": "",
-      "url": "",
+      "available": true,
+      "title": "Components/PageLayout",
+      "storyId": "components-pagelayout",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-pagelayout",
       "stories": [],
       "tags": [],
-      "source": ""
+      "source": "PageLayout.stories.tsx"
     }
   },
   "useCases": [
@@ -102,7 +102,7 @@
   "dark": null,
   "highContrast": null,
   "responsive": false,
-  "storybook": false,
+  "storybook": true,
   "playwright": false,
   "vitest": false,
   "jest": false,
@@ -111,8 +111,8 @@
   "sourceFile": "src\\components\\PageLayout\\PageLayout.tsx",
   "keywords": [
     "label",
-    "pagelayout",
-    "components"
+    "components",
+    "pagelayout"
   ],
   "aliases": [],
   "synonyms": [],
@@ -130,7 +130,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.105874",
+  "generatedAt": "2026-09-04T11:34:35.127171",
   "generatorVersion": "2.0.0",
   "sourceHash": "217e1a2a",
   "metadata": {

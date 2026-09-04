@@ -15,7 +15,7 @@ npm install @waysnx/ui-layout
 ## Import
 
 ```typescript
-import { TabPanels } from '@waysnx/ui-layout';
+import { TabList } from '@waysnx/ui-layout';
 ```
 
 ## Props
@@ -57,7 +57,7 @@ import { TabPanels } from '@waysnx/ui-layout';
 
 ## Storybook
 
-[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/navigation-tabs)
+[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/components-tabs)
 
 ## When to Use
 
@@ -82,7 +82,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** organize, label, panel, navigation, tab
+**Keywords:** tabs, organize, navigation, components, panel
 
 **Synonyms:** tabbed panel, tab navigation
 

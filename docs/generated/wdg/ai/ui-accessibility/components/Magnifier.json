@@ -145,8 +145,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Magnifier\\Magnifier.tsx",
   "keywords": [
-    "magnifier",
-    "components"
+    "components",
+    "magnifier"
   ],
   "aliases": [],
   "synonyms": [],
@@ -164,7 +164,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.173777",
+  "generatedAt": "2026-09-04T11:34:33.761946",
   "generatorVersion": "2.0.0",
   "sourceHash": "a374498e",
   "metadata": {

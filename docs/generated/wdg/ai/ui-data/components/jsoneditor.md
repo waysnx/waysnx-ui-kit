@@ -55,7 +55,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** jsoneditor, components
+**Keywords:** components, jsoneditor
 
 **Semantic Category:** utility
 

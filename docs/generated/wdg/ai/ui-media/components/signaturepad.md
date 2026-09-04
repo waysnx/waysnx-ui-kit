@@ -55,7 +55,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** signaturepad, components
+**Keywords:** components, signaturepad
 
 **Semantic Category:** utility
 

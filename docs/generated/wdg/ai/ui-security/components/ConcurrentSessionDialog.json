@@ -163,8 +163,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Session\\ConcurrentSessionDialog.tsx",
   "keywords": [
-    "concurrentsessiondialog",
-    "components"
+    "components",
+    "concurrentsessiondialog"
   ],
   "aliases": [],
   "synonyms": [
@@ -185,7 +185,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.788468",
+  "generatedAt": "2026-09-04T11:34:36.048199",
   "generatorVersion": "2.0.0",
   "sourceHash": "8ac6bf18",
   "packageDependencies": {

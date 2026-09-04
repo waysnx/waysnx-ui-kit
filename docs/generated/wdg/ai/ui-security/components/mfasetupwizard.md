@@ -72,7 +72,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** mfasetupwizard, components
+**Keywords:** components, mfasetupwizard
 
 **Semantic Category:** utility
 

@@ -65,7 +65,7 @@ import { Stepper } from '@waysnx/ui-layout';
 
 ## Storybook
 
-View Interactive Storybook
+[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/components-stepper)
 
 ## When to Use
 
@@ -90,7 +90,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** stepper, label, components
+**Keywords:** stepper, components, label
 
 **Semantic Category:** utility
 

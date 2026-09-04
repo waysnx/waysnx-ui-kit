@@ -116,7 +116,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** checkbox, selection, label, check, toggle
+**Keywords:** checkbox, check, components, selection, toggle
 
 **Synonyms:** check box, toggle option
 

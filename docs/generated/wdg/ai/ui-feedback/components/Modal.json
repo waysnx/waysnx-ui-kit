@@ -12,13 +12,13 @@
   "longDescription": "Display important content in a focused dialog window.",
   "references": {
     "storybook": {
-      "available": false,
-      "title": "",
-      "storyId": "",
-      "url": "",
+      "available": true,
+      "title": "Components/Modal",
+      "storyId": "components-modal",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-modal",
       "stories": [],
       "tags": [],
-      "source": ""
+      "source": "Modal.stories.tsx"
     }
   },
   "useCases": [
@@ -355,7 +355,7 @@
   "dark": null,
   "highContrast": null,
   "responsive": false,
-  "storybook": false,
+  "storybook": true,
   "playwright": false,
   "vitest": false,
   "jest": false,
@@ -363,12 +363,12 @@
   "documentation": true,
   "sourceFile": "src\\components\\Modal\\Modal.tsx",
   "keywords": [
-    "modal",
-    "window",
-    "popup",
-    "dialog",
+    "components",
     "overlay",
-    "components"
+    "dialog",
+    "modal",
+    "popup",
+    "window"
   ],
   "aliases": [
     {
@@ -432,7 +432,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.945588",
+  "generatedAt": "2026-09-04T11:34:34.910435",
   "generatorVersion": "2.0.0",
   "sourceHash": "9bc7f174",
   "metadata": {

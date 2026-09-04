@@ -96,7 +96,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** label, currency, value, components
+**Keywords:** label, components, value, currency
 
 **Semantic Category:** input
 

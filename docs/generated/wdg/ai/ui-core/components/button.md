@@ -170,7 +170,7 @@ Avoid using this component when:
 
 ## AI & Integration Notes
 
-**Keywords:** cta, trigger, action, submit, click
+**Keywords:** action, button, cta, click, components
 
 **Synonyms:** action button, submit button, call-to-action
 

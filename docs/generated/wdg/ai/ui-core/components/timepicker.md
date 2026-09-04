@@ -97,7 +97,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** label, placeholder, timepicker, value, components
+**Keywords:** components, timepicker, placeholder, value, label
 
 **Semantic Category:** input
 

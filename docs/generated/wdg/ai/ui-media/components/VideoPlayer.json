@@ -61,9 +61,9 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "wx-adv-video-player__title",
     "wx-adv-video-player__play-btn",
-    "wx-adv-video-player__placeholder"
+    "wx-adv-video-player__placeholder",
+    "wx-adv-video-player__title"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -96,8 +96,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\VideoPlayer\\VideoPlayer.tsx",
   "keywords": [
-    "videoplayer",
-    "components"
+    "components",
+    "videoplayer"
   ],
   "aliases": [],
   "synonyms": [],
@@ -115,7 +115,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.395390",
+  "generatedAt": "2026-09-04T11:34:34.065818",
   "generatorVersion": "2.0.0",
   "sourceHash": "7f9d655a",
   "metadata": {

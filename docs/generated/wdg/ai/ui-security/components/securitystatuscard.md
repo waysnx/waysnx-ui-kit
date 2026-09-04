@@ -73,7 +73,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** securitystatuscard, label, value, components
+**Keywords:** label, securitystatuscard, components, value
 
 **Semantic Category:** utility
 

@@ -72,7 +72,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** keepalivebutton, label, components
+**Keywords:** label, components, keepalivebutton
 
 **Synonyms:** action control, clickable element
 

@@ -182,8 +182,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\FloatingButton\\FloatingButton.tsx",
   "keywords": [
-    "floatingbutton",
-    "components"
+    "components",
+    "floatingbutton"
   ],
   "aliases": [],
   "synonyms": [
@@ -216,7 +216,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.165658",
+  "generatedAt": "2026-09-04T11:34:33.747372",
   "generatorVersion": "2.0.0",
   "sourceHash": "3052c87a",
   "metadata": {

@@ -174,17 +174,17 @@
   "cssVariables": [],
   "cssClasses": [
     "wx-quick-actions__more-icon",
-    "wx-quick-actions__more",
-    "wx-quick-actions__spinner",
-    "wx-quick-actions__visible",
-    "wx-quick-actions__more-button",
-    "wx-quick-actions__group",
-    "wx-quick-actions__group-label",
-    "wx-quick-actions__shortcut",
-    "wx-quick-actions__more-menu",
     "wx-quick-actions__icon",
+    "wx-quick-actions__group",
+    "wx-quick-actions__visible",
+    "wx-quick-actions__more-menu",
+    "wx-quick-actions__label",
+    "wx-quick-actions__more-button",
+    "wx-quick-actions__spinner",
+    "wx-quick-actions__shortcut",
+    "wx-quick-actions__group-label",
     "wx-quick-actions__group-items",
-    "wx-quick-actions__label"
+    "wx-quick-actions__more"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -217,8 +217,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\QuickActions\\QuickActions.tsx",
   "keywords": [
-    "quickactions",
-    "components"
+    "components",
+    "quickactions"
   ],
   "aliases": [],
   "synonyms": [],
@@ -236,7 +236,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.281962",
+  "generatedAt": "2026-09-04T11:34:35.367678",
   "generatorVersion": "2.0.0",
   "sourceHash": "58a6c9cb",
   "metadata": {

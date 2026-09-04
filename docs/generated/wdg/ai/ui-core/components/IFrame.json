@@ -242,9 +242,9 @@
   "documentation": true,
   "sourceFile": "src\\components\\IFrame\\IFrame.tsx",
   "keywords": [
+    "iframe",
     "components",
-    "label",
-    "iframe"
+    "label"
   ],
   "aliases": [],
   "synonyms": [],
@@ -262,7 +262,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.635535",
+  "generatedAt": "2026-09-04T11:34:34.400762",
   "generatorVersion": "2.0.0",
   "sourceHash": "10bb4817",
   "metadata": {

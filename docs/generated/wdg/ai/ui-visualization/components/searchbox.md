@@ -73,7 +73,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** components, placeholder, searchbox
+**Keywords:** placeholder, components, searchbox
 
 **Semantic Category:** utility
 

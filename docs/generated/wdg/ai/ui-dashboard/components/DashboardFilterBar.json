@@ -128,14 +128,14 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "dashboard-filter-clear-all",
-    "dashboard-filter-daterange",
-    "filter-chip-remove",
-    "dashboard-filter-input",
-    "filter-chip-label",
-    "dashboard-filter-item",
+    "dashboard-filter-label",
     "dashboard-filter-bar-content",
-    "dashboard-filter-label"
+    "dashboard-filter-daterange",
+    "dashboard-filter-clear-all",
+    "dashboard-filter-input",
+    "dashboard-filter-item",
+    "filter-chip-label",
+    "filter-chip-remove"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -168,8 +168,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Filters\\DashboardFilterBar.tsx",
   "keywords": [
-    "components",
-    "dashboardfilterbar"
+    "dashboardfilterbar",
+    "components"
   ],
   "aliases": [],
   "synonyms": [],
@@ -187,7 +187,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.761467",
+  "generatedAt": "2026-09-04T11:34:34.588355",
   "generatorVersion": "2.0.0",
   "sourceHash": "ac37dcf7",
   "packageDependencies": {

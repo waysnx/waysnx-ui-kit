@@ -55,7 +55,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** voicemessage, components
+**Keywords:** components, voicemessage
 
 **Semantic Category:** utility
 

@@ -54,7 +54,7 @@ import { Progress } from '@waysnx/ui-feedback';
 
 ## Storybook
 
-View Interactive Storybook
+[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/components-progress)
 
 ## When to Use
 
@@ -79,7 +79,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** label, value, progress, components
+**Keywords:** label, progress, components, value
 
 **Semantic Category:** feedback
 

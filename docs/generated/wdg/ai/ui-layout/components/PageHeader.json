@@ -12,13 +12,13 @@
   "longDescription": "Display header information and controls at the top of a page.",
   "references": {
     "storybook": {
-      "available": false,
-      "title": "",
-      "storyId": "",
-      "url": "",
+      "available": true,
+      "title": "Components/PageHeader",
+      "storyId": "components-pageheader",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-pageheader",
       "stories": [],
       "tags": [],
-      "source": ""
+      "source": "PageHeader.stories.tsx"
     }
   },
   "useCases": [
@@ -116,7 +116,7 @@
   "dark": null,
   "highContrast": null,
   "responsive": false,
-  "storybook": false,
+  "storybook": true,
   "playwright": false,
   "vitest": false,
   "jest": false,
@@ -124,9 +124,9 @@
   "documentation": true,
   "sourceFile": "src\\components\\PageHeader\\PageHeader.tsx",
   "keywords": [
-    "pageheader",
     "label",
-    "components"
+    "components",
+    "pageheader"
   ],
   "aliases": [],
   "synonyms": [],
@@ -144,7 +144,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.098586",
+  "generatedAt": "2026-09-04T11:34:35.117550",
   "generatorVersion": "2.0.0",
   "sourceHash": "6b1a9cd0",
   "metadata": {

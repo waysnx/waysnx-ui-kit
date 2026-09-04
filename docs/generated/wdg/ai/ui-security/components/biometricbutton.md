@@ -72,7 +72,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** label, biometricbutton, components
+**Keywords:** label, components, biometricbutton
 
 **Synonyms:** action control, clickable element
 

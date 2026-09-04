@@ -76,7 +76,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** mfaverificationdialog, components
+**Keywords:** components, mfaverificationdialog
 
 **Synonyms:** popup window, overlay panel
 

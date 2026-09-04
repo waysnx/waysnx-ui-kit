@@ -67,7 +67,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** components, scopegate
+**Keywords:** scopegate, components
 
 **Semantic Category:** utility
 

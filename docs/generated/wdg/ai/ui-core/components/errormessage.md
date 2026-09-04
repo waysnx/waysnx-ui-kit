@@ -70,7 +70,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** errormessage, components
+**Keywords:** components, errormessage
 
 **Semantic Category:** utility
 

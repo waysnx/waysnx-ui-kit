@@ -157,8 +157,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Dashboard\\DashboardSidebar.tsx",
   "keywords": [
-    "dashboardsidebar",
-    "components"
+    "components",
+    "dashboardsidebar"
   ],
   "aliases": [],
   "synonyms": [],
@@ -176,7 +176,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.748018",
+  "generatedAt": "2026-09-04T11:34:34.570092",
   "generatorVersion": "2.0.0",
   "sourceHash": "c5febacd",
   "packageDependencies": {

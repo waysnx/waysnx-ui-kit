@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "name": "WaysNX UI Kit - AI Knowledge Base",
   "description": "Complete AI knowledge base for all WaysNX UI Kit libraries",
-  "generatedAt": "2026-09-03T20:03:10.869129",
+  "generatedAt": "2026-09-04T11:35:28.994736",
   "libraries": [
     {
       "name": "ui-accessibility",
@@ -76,7 +76,7 @@
     },
     {
       "name": "ui-diagnostics",
-      "version": "0.1.0",
+      "version": "1.0.0",
       "componentCount": 0,
       "path": "./ui-diagnostics/",
       "files": {

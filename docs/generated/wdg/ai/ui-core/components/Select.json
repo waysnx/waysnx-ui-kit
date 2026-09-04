@@ -482,14 +482,14 @@
   "documentation": true,
   "sourceFile": "src\\components\\Select\\Select.tsx",
   "keywords": [
-    "label",
-    "combo",
-    "choice",
-    "value",
-    "select",
     "dropdown",
+    "components",
+    "combo",
     "option",
-    "components"
+    "choice",
+    "select",
+    "value",
+    "label"
   ],
   "aliases": [
     {
@@ -558,7 +558,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.673857",
+  "generatedAt": "2026-09-04T11:34:34.462629",
   "generatorVersion": "2.0.0",
   "sourceHash": "2af7119a",
   "metadata": {

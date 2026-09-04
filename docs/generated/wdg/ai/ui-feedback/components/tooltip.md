@@ -49,7 +49,7 @@ import { Tooltip } from '@waysnx/ui-feedback';
 
 ## Storybook
 
-View Interactive Storybook
+[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/components-tooltip)
 
 ## Related Components
 
@@ -79,7 +79,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** tooltip, components
+**Keywords:** components, tooltip
 
 **Semantic Category:** overlay
 

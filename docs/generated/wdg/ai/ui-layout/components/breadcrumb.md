@@ -49,7 +49,7 @@ import { Breadcrumb } from '@waysnx/ui-layout';
 
 ## Storybook
 
-[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/navigation-breadcrumb)
+[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/components-breadcrumb)
 
 ## When to Use
 
@@ -74,7 +74,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** breadcrumb, components
+**Keywords:** components, breadcrumb
 
 **Semantic Category:** navigation
 

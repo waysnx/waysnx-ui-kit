@@ -61,11 +61,11 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "wx-adv-json-editor__textarea",
-    "wx-adv-json-editor__status",
     "wx-adv-json-editor__content",
+    "wx-adv-json-editor__textarea",
     "wx-adv-json-editor__header",
     "wx-adv-json-editor__line-numbers",
+    "wx-adv-json-editor__status",
     "--wx-color-text-muted"
   ],
   "designTokens": {},
@@ -99,8 +99,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\JSONEditor\\JSONEditor.tsx",
   "keywords": [
-    "jsoneditor",
-    "components"
+    "components",
+    "jsoneditor"
   ],
   "aliases": [],
   "synonyms": [],
@@ -118,7 +118,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.212433",
+  "generatedAt": "2026-09-04T11:34:33.813740",
   "generatorVersion": "2.0.0",
   "sourceHash": "59ec382b",
   "metadata": {

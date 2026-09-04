@@ -55,7 +55,7 @@ import { Badge } from '@waysnx/ui-feedback';
 
 ## Storybook
 
-View Interactive Storybook
+[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/components-badge)
 
 ## Used By
 
@@ -99,7 +99,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** badge, components
+**Keywords:** components, badge
 
 **Semantic Category:** display
 

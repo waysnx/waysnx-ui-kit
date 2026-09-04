@@ -73,7 +73,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** connector, components
+**Keywords:** components, connector
 
 **Semantic Category:** utility
 

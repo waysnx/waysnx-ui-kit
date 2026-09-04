@@ -84,7 +84,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** label, circularprogress, value, components
+**Keywords:** label, components, value, circularprogress
 
 **Semantic Category:** feedback
 

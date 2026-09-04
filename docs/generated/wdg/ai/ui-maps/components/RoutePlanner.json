@@ -60,11 +60,11 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
+    "wx-adv-route-planner__stop",
+    "wx-adv-route-planner__stops",
+    "wx-adv-route-planner__stop-line",
     "wx-adv-route-planner__btn",
     "wx-adv-route-planner__summary",
-    "wx-adv-route-planner__stops",
-    "wx-adv-route-planner__stop",
-    "wx-adv-route-planner__stop-line",
     "--wx-color-text-muted"
   ],
   "designTokens": {},
@@ -98,8 +98,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\RoutePlanner\\RoutePlanner.tsx",
   "keywords": [
-    "routeplanner",
-    "components"
+    "components",
+    "routeplanner"
   ],
   "aliases": [],
   "synonyms": [],
@@ -117,7 +117,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.303708",
+  "generatedAt": "2026-09-04T11:34:33.938417",
   "generatorVersion": "2.0.0",
   "sourceHash": "0218d91c",
   "metadata": {

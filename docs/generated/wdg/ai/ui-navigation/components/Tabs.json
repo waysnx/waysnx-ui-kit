@@ -13,9 +13,9 @@
   "references": {
     "storybook": {
       "available": true,
-      "title": "Navigation/Tabs",
-      "storyId": "navigation-tabs",
-      "url": "https://uikit.waysnx.tech/?path=/docs/navigation-tabs",
+      "title": "Components/Tabs",
+      "storyId": "components-tabs",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-tabs",
       "stories": [],
       "tags": [],
       "source": "Tabs.stories.tsx"
@@ -638,12 +638,12 @@
   "documentation": true,
   "sourceFile": "src\\components\\Tabs\\Tabs.tsx",
   "keywords": [
+    "tabs",
     "organize",
-    "panel",
     "navigation",
-    "tab",
     "components",
-    "tabs"
+    "panel",
+    "tab"
   ],
   "aliases": [
     {
@@ -680,7 +680,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.320962",
+  "generatedAt": "2026-09-04T11:34:35.417395",
   "generatorVersion": "2.0.0",
   "sourceHash": "9f384478",
   "metadata": {

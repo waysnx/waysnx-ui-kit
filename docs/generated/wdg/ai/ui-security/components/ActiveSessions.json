@@ -162,8 +162,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Session\\ActiveSessions.tsx",
   "keywords": [
-    "activesessions",
-    "components"
+    "components",
+    "activesessions"
   ],
   "aliases": [],
   "synonyms": [],
@@ -181,7 +181,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.781408",
+  "generatedAt": "2026-09-04T11:34:36.037978",
   "generatorVersion": "2.0.0",
   "sourceHash": "0c16f70d",
   "packageDependencies": {

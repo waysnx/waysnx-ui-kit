@@ -191,8 +191,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\HtmlContent\\HtmlContent.tsx",
   "keywords": [
-    "htmlcontent",
-    "components"
+    "components",
+    "htmlcontent"
   ],
   "aliases": [],
   "synonyms": [],
@@ -210,7 +210,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.619480",
+  "generatedAt": "2026-09-04T11:34:34.376885",
   "generatorVersion": "2.0.0",
   "sourceHash": "973eac5b",
   "metadata": {

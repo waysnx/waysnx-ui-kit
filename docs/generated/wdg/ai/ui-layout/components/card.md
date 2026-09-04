@@ -56,7 +56,7 @@ import { Card } from '@waysnx/ui-layout';
 
 ## Storybook
 
-View Interactive Storybook
+[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/components-card)
 
 ## Used By
 
@@ -89,7 +89,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** card, components
+**Keywords:** components, card
 
 **Semantic Category:** utility
 

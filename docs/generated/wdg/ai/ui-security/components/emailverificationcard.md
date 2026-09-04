@@ -79,7 +79,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** emailverificationcard, components
+**Keywords:** components, emailverificationcard
 
 **Semantic Category:** utility
 

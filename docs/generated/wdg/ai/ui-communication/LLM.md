@@ -138,13 +138,13 @@ This library is optimized for AI code generation and documentation search.
 ### Component Metadata
 
 **ChatInput**
-- Keywords: chatinput, components
+- Keywords: components, chatinput
 
 **ChatWindow**
 - Keywords: chatwindow, components
 
 **ConversationList**
-- Keywords: conversationlist, components
+- Keywords: components, conversationlist
 
 ### Searchable Metadata
 

@@ -66,7 +66,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** dashboardtoolbar, components
+**Keywords:** components, dashboardtoolbar
 
 **Semantic Category:** utility
 

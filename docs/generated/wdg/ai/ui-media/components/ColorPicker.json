@@ -63,12 +63,12 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
+    "wx-adv-color-picker__hex-input",
     "wx-adv-color-picker__swatches",
     "wx-adv-color-picker__input-row",
-    "wx-adv-color-picker__preview",
+    "wx-adv-color-picker__hue",
     "wx-adv-color-picker__spectrum",
-    "wx-adv-color-picker__hex-input",
-    "wx-adv-color-picker__hue"
+    "wx-adv-color-picker__preview"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -101,8 +101,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\ColorPicker\\ColorPicker.tsx",
   "keywords": [
-    "colorpicker",
-    "components"
+    "components",
+    "colorpicker"
   ],
   "aliases": [],
   "synonyms": [],
@@ -120,7 +120,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.334188",
+  "generatedAt": "2026-09-04T11:34:33.978564",
   "generatorVersion": "2.0.0",
   "sourceHash": "6a384ed9",
   "metadata": {

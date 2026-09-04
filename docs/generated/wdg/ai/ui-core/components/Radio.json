@@ -330,13 +330,13 @@
   "documentation": true,
   "sourceFile": "src\\components\\Radio\\Radio.tsx",
   "keywords": [
-    "label",
-    "single",
-    "choice",
-    "radio",
     "button",
+    "radio",
+    "components",
     "option",
-    "components"
+    "choice",
+    "label",
+    "single"
   ],
   "aliases": [
     {
@@ -373,7 +373,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.666238",
+  "generatedAt": "2026-09-04T11:34:34.452619",
   "generatorVersion": "2.0.0",
   "sourceHash": "c346d0cb",
   "metadata": {

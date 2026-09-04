@@ -137,8 +137,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\ReadingGuide\\ReadingGuide.tsx",
   "keywords": [
-    "readingguide",
-    "components"
+    "components",
+    "readingguide"
   ],
   "aliases": [],
   "synonyms": [],
@@ -156,7 +156,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.181438",
+  "generatedAt": "2026-09-04T11:34:33.771442",
   "generatorVersion": "2.0.0",
   "sourceHash": "51b8f6bb",
   "metadata": {

@@ -74,7 +74,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** label, switch, components
+**Keywords:** label, components, switch
 
 **Semantic Category:** utility
 

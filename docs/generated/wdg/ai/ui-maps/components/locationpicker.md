@@ -55,7 +55,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** locationpicker, components
+**Keywords:** components, locationpicker
 
 **Semantic Category:** utility
 

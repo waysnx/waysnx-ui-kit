@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
   "library": "ui-feedback",
-  "generatedAt": "2026-09-03T20:02:50.543090",
+  "generatedAt": "2026-09-04T11:35:05.180067",
   "relationshipModel": {
     "uses": "Components this component directly imports or uses",
     "usedBy": "Components that import or use this component",

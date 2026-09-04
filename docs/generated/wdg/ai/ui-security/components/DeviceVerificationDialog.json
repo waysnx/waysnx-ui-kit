@@ -151,20 +151,20 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
+    "waysnx-device-verification-content",
     "waysnx-device-description",
-    "waysnx-device-label",
-    "waysnx-device-info",
+    "waysnx-warning-text",
+    "waysnx-device-security-tips",
+    "waysnx-security-tips-title",
     "waysnx-device-info-title",
     "waysnx-device-value-small",
     "waysnx-device-warning",
-    "waysnx-security-tips-list",
+    "waysnx-device-info",
     "waysnx-device-detail",
-    "waysnx-warning-text",
+    "waysnx-device-label",
+    "waysnx-dialog-footer",
     "waysnx-device-value",
-    "waysnx-device-security-tips",
-    "waysnx-device-verification-content",
-    "waysnx-security-tips-title",
-    "waysnx-dialog-footer"
+    "waysnx-security-tips-list"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -197,8 +197,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\Verification\\DeviceVerificationDialog.tsx",
   "keywords": [
-    "deviceverificationdialog",
-    "components"
+    "components",
+    "deviceverificationdialog"
   ],
   "aliases": [],
   "synonyms": [
@@ -219,7 +219,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.863202",
+  "generatedAt": "2026-09-04T11:34:36.146546",
   "generatorVersion": "2.0.0",
   "sourceHash": "5c83bce8",
   "packageDependencies": {

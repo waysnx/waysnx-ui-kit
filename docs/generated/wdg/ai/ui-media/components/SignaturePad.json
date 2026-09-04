@@ -62,11 +62,11 @@
   "cssVariables": [],
   "cssClasses": [
     "wx-adv-signature-pad__canvas",
-    "wx-adv-signature-pad__btn--primary",
     "wx-adv-signature-pad__btn",
     "wx-adv-signature-pad__actions",
-    "--wx-adv-signature-bg",
-    "--wx-adv-signature-pen-color"
+    "wx-adv-signature-pad__btn--primary",
+    "--wx-adv-signature-pen-color",
+    "--wx-adv-signature-bg"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -99,8 +99,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\SignaturePad\\SignaturePad.tsx",
   "keywords": [
-    "signaturepad",
-    "components"
+    "components",
+    "signaturepad"
   ],
   "aliases": [],
   "synonyms": [],
@@ -118,7 +118,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.380559",
+  "generatedAt": "2026-09-04T11:34:34.046318",
   "generatorVersion": "2.0.0",
   "sourceHash": "da222f53",
   "metadata": {

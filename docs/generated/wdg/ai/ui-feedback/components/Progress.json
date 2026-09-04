@@ -12,13 +12,13 @@
   "longDescription": "Visualize numeric progress as a linear bar.",
   "references": {
     "storybook": {
-      "available": false,
-      "title": "",
-      "storyId": "",
-      "url": "",
+      "available": true,
+      "title": "Components/Progress",
+      "storyId": "components-progress",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-progress",
       "stories": [],
       "tags": [],
-      "source": ""
+      "source": "Progress.stories.tsx"
     }
   },
   "useCases": [
@@ -206,7 +206,7 @@
   "dark": null,
   "highContrast": null,
   "responsive": false,
-  "storybook": false,
+  "storybook": true,
   "playwright": false,
   "vitest": false,
   "jest": false,
@@ -215,9 +215,9 @@
   "sourceFile": "src\\components\\Progress\\Progress.tsx",
   "keywords": [
     "label",
-    "value",
     "progress",
-    "components"
+    "components",
+    "value"
   ],
   "aliases": [],
   "synonyms": [],
@@ -235,7 +235,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.953247",
+  "generatedAt": "2026-09-04T11:34:34.920469",
   "generatorVersion": "2.0.0",
   "sourceHash": "d7d9ff96",
   "metadata": {

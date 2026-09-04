@@ -13,9 +13,9 @@
   "references": {
     "storybook": {
       "available": true,
-      "title": "Navigation/Drawer",
-      "storyId": "navigation-drawer",
-      "url": "https://uikit.waysnx.tech/?path=/docs/navigation-drawer",
+      "title": "Components/Drawer",
+      "storyId": "components-drawer",
+      "url": "https://uikit.waysnx.tech/?path=/docs/components-drawer",
       "stories": [],
       "tags": [],
       "source": "Drawer.stories.tsx"
@@ -514,7 +514,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.219139",
+  "generatedAt": "2026-09-04T11:34:35.285084",
   "generatorVersion": "2.0.0",
   "sourceHash": "11c48492",
   "metadata": {

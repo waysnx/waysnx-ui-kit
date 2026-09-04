@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
   "library": "ui-communication",
-  "generatedAt": "2026-09-03T20:02:40.528022",
+  "generatedAt": "2026-09-04T11:34:53.496520",
   "relationshipModel": {
     "uses": "Components this component directly imports or uses",
     "usedBy": "Components that import or use this component",

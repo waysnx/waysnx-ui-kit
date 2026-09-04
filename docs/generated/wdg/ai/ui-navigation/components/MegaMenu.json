@@ -215,19 +215,19 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "nav-mega-menu__section-title",
-    "nav-mega-menu__section-list",
-    "nav-mega-menu__link-badge",
-    "nav-mega-menu__section",
     "nav-mega-menu__link-text",
     "nav-mega-menu__link-icon",
-    "nav-mega-menu__trigger-icon",
     "nav-mega-menu__list",
+    "nav-mega-menu__section-list",
     "nav-mega-menu__dropdown",
-    "nav-mega-menu__trigger-label",
+    "nav-mega-menu__trigger-icon",
+    "nav-mega-menu__section",
     "nav-mega-menu__section-item",
     "nav-mega-menu__item",
-    "nav-mega-menu__trigger-chevron"
+    "nav-mega-menu__section-title",
+    "nav-mega-menu__trigger-chevron",
+    "nav-mega-menu__link-badge",
+    "nav-mega-menu__trigger-label"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -260,8 +260,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\MegaMenu\\MegaMenu.tsx",
   "keywords": [
-    "megamenu",
-    "components"
+    "components",
+    "megamenu"
   ],
   "aliases": [],
   "synonyms": [],
@@ -279,7 +279,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.242549",
+  "generatedAt": "2026-09-04T11:34:35.315369",
   "generatorVersion": "2.0.0",
   "sourceHash": "9a72203a",
   "metadata": {

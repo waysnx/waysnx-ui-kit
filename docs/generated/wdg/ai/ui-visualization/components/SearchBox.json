@@ -121,12 +121,12 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
-    "wx-vis-searchbox__icon",
-    "wx-vis-searchbox__nav",
     "wx-vis-searchbox__input",
-    "wx-vis-searchbox__count",
     "wx-vis-searchbox__clear",
-    "wx-vis-searchbox__nav-btn"
+    "wx-vis-searchbox__icon",
+    "wx-vis-searchbox__nav-btn",
+    "wx-vis-searchbox__nav",
+    "wx-vis-searchbox__count"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -159,8 +159,8 @@
   "documentation": true,
   "sourceFile": "src\\components\\SearchBox\\SearchBox.tsx",
   "keywords": [
-    "components",
     "placeholder",
+    "components",
     "searchbox"
   ],
   "aliases": [],
@@ -179,7 +179,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.933512",
+  "generatedAt": "2026-09-04T11:34:36.240396",
   "generatorVersion": "2.0.0",
   "sourceHash": "60105da3",
   "metadata": {

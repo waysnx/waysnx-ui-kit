@@ -167,10 +167,10 @@
   "documentation": true,
   "sourceFile": "src\\components\\SecurityDashboard\\SecurityStatusCard.tsx",
   "keywords": [
-    "securitystatuscard",
     "label",
-    "value",
-    "components"
+    "securitystatuscard",
+    "components",
+    "value"
   ],
   "aliases": [],
   "synonyms": [],
@@ -188,7 +188,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:25.713779",
+  "generatedAt": "2026-09-04T11:34:35.952822",
   "generatorVersion": "2.0.0",
   "sourceHash": "3486c9fd",
   "packageDependencies": {

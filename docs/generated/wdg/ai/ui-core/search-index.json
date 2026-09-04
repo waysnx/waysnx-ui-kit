@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
   "library": "ui-core",
-  "generatedAt": "2026-09-03T20:02:43.136620",
+  "generatedAt": "2026-09-04T11:34:56.538105",
   "components": [
     {
       "id": "ui-core:autocomplete",
@@ -10,9 +10,9 @@
       "category": "components",
       "description": "Enable users to search and select from a filtered list of options as they type.",
       "keywords": [
-        "label",
         "placeholder",
         "autocomplete",
+        "label",
         "components"
       ],
       "aliases": [],
@@ -84,14 +84,14 @@
       "category": "components",
       "description": "Enable users to trigger actions by pressing a clickable element.",
       "keywords": [
-        "cta",
-        "trigger",
         "action",
-        "submit",
-        "click",
-        "interactive",
         "button",
-        "components"
+        "cta",
+        "click",
+        "components",
+        "trigger",
+        "submit",
+        "interactive"
       ],
       "aliases": [
         "AIAlias(alias='action', context='intent', confidence=0.92)",
@@ -270,12 +270,12 @@
       "description": "Allow users to select one or more options from a list of independent choices.",
       "keywords": [
         "checkbox",
-        "selection",
-        "label",
         "check",
+        "components",
+        "selection",
         "toggle",
         "option",
-        "components"
+        "label"
       ],
       "aliases": [
         "AIAlias(alias='toggle option', context='descriptive', confidence=0.9)",
@@ -363,9 +363,9 @@
       "description": "Collect and display monetary amounts with automatic currency formatting.",
       "keywords": [
         "label",
-        "currency",
+        "components",
         "value",
-        "components"
+        "currency"
       ],
       "aliases": [],
       "synonyms": [],
@@ -433,11 +433,11 @@
       "category": "components",
       "description": "Enable users to select a specific date through an interactive calendar interface.",
       "keywords": [
-        "label",
+        "components",
         "placeholder",
         "value",
-        "datepicker",
-        "components"
+        "label",
+        "datepicker"
       ],
       "aliases": [],
       "synonyms": [],
@@ -504,10 +504,10 @@
       "category": "components",
       "description": "Enable users to select a start and end date range through an interactive calendar.",
       "keywords": [
-        "daterangepicker",
-        "placeholder",
         "label",
-        "components"
+        "components",
+        "placeholder",
+        "daterangepicker"
       ],
       "aliases": [],
       "synonyms": [],
@@ -574,11 +574,11 @@
       "category": "components",
       "description": "Enable users to select a specific date and time through an interactive calendar interface.",
       "keywords": [
-        "label",
+        "components",
         "placeholder",
-        "datetimepicker",
         "value",
-        "components"
+        "label",
+        "datetimepicker"
       ],
       "aliases": [],
       "synonyms": [],
@@ -645,8 +645,8 @@
       "category": "components",
       "description": "Display error messages to users with prominent visual and semantic prominence.",
       "keywords": [
-        "errormessage",
-        "components"
+        "components",
+        "errormessage"
       ],
       "aliases": [],
       "synonyms": [],
@@ -699,8 +699,8 @@
       "category": "components",
       "description": "Enable users to upload files with drag-and-drop support and validation.",
       "keywords": [
-        "fileupload",
         "label",
+        "fileupload",
         "components"
       ],
       "aliases": [],
@@ -769,8 +769,8 @@
       "description": "Store and submit form field values that should not be visible to users.",
       "keywords": [
         "components",
-        "value",
-        "hidden"
+        "hidden",
+        "value"
       ],
       "aliases": [],
       "synonyms": [],
@@ -823,8 +823,8 @@
       "category": "components",
       "description": "Display sanitized HTML content safely within the application interface.",
       "keywords": [
-        "htmlcontent",
-        "components"
+        "components",
+        "htmlcontent"
       ],
       "aliases": [],
       "synonyms": [],
@@ -877,11 +877,11 @@
       "category": "components",
       "description": "Enable users to create and format HTML content with a visual text editor toolbar.",
       "keywords": [
-        "label",
+        "htmleditor",
+        "components",
         "placeholder",
         "value",
-        "htmleditor",
-        "components"
+        "label"
       ],
       "aliases": [],
       "synonyms": [],
@@ -945,9 +945,9 @@
       "category": "components",
       "description": "Secure-by-default sandbox policy. Supports the documented use cases (embedded video, maps, forms, third-party widgets...",
       "keywords": [
+        "iframe",
         "components",
-        "label",
-        "iframe"
+        "label"
       ],
       "aliases": [],
       "synonyms": [],
@@ -1070,16 +1070,16 @@
       "category": "components",
       "description": "Collect single-line text and numeric input from users with validation and formatting support.",
       "keywords": [
-        "form-control",
-        "label",
+        "form",
+        "input",
         "entry",
         "field",
-        "form",
         "text",
-        "input",
+        "components",
         "textbox",
-        "form-field",
-        "components"
+        "label",
+        "form-control",
+        "form-field"
       ],
       "aliases": [
         "AIAlias(alias='text field', context='form', confidence=0.95)",
@@ -1194,9 +1194,9 @@
       "category": "components",
       "description": "Navigate users to a different page or external resource via a clickable text link.",
       "keywords": [
-        "label",
         "link",
-        "components"
+        "components",
+        "label"
       ],
       "aliases": [],
       "synonyms": [],
@@ -1259,13 +1259,13 @@
       "category": "components",
       "description": "Enable users to select exactly one option from a list of mutually exclusive choices.",
       "keywords": [
-        "label",
-        "single",
-        "choice",
-        "radio",
         "button",
+        "radio",
+        "components",
         "option",
-        "components"
+        "choice",
+        "label",
+        "single"
       ],
       "aliases": [
         "AIAlias(alias='radio button', context='technical', confidence=0.95)",
@@ -1338,14 +1338,14 @@
       "category": "components",
       "description": "Enable users to select one or more options from a dropdown list with optional search.",
       "keywords": [
-        "label",
-        "combo",
-        "choice",
-        "value",
-        "select",
         "dropdown",
+        "components",
+        "combo",
         "option",
-        "components"
+        "choice",
+        "select",
+        "value",
+        "label"
       ],
       "aliases": [
         "AIAlias(alias='dropdown', context='common', confidence=0.95)",
@@ -1430,10 +1430,10 @@
       "category": "components",
       "description": "Enable users to select a numeric value from a continuous range using a draggable control.",
       "keywords": [
-        "slider",
         "label",
+        "components",
         "value",
-        "components"
+        "slider"
       ],
       "aliases": [],
       "synonyms": [],
@@ -1498,8 +1498,8 @@
       "description": "Enable users to enter text through voice input combined with traditional text editing.",
       "keywords": [
         "speechtotexttextarea",
-        "label",
-        "components"
+        "components",
+        "label"
       ],
       "aliases": [],
       "synonyms": [],
@@ -1554,8 +1554,8 @@
       "description": "Enable users to toggle a setting or feature on or off with a visual switch.",
       "keywords": [
         "label",
-        "switch",
-        "components"
+        "components",
+        "switch"
       ],
       "aliases": [],
       "synonyms": [],
@@ -1610,9 +1610,9 @@
       "category": "components",
       "description": "Collect multi-line text input from users with optional length limits and formatting.",
       "keywords": [
-        "textarea",
         "label",
-        "components"
+        "components",
+        "textarea"
       ],
       "aliases": [],
       "synonyms": [],
@@ -1671,11 +1671,11 @@
       "category": "components",
       "description": "Enable users to select a specific time through a time picker interface.",
       "keywords": [
-        "label",
-        "placeholder",
+        "components",
         "timepicker",
+        "placeholder",
         "value",
-        "components"
+        "label"
       ],
       "aliases": [],
       "synonyms": [],
@@ -1741,8 +1741,8 @@
       "description": "Display hierarchical data with expandable nodes and checkboxes for selection.",
       "keywords": [
         "label",
-        "tree",
-        "components"
+        "components",
+        "tree"
       ],
       "aliases": [],
       "synonyms": [],

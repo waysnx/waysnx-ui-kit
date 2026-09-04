@@ -115,14 +115,14 @@
   "memo": false,
   "cssVariables": [],
   "cssClasses": [
+    "dashboard-header-actions",
+    "dashboard-header-text",
     "dashboard-breadcrumb",
     "dashboard-header-content",
-    "dashboard-header-icon",
-    "dashboard-header-title-section",
-    "dashboard-subtitle",
     "dashboard-title",
-    "dashboard-header-actions",
-    "dashboard-header-text"
+    "dashboard-subtitle",
+    "dashboard-header-icon",
+    "dashboard-header-title-section"
   ],
   "designTokens": {},
   "themeTokens": {},
@@ -174,7 +174,7 @@
   "usedInFeatures": [],
   "usedInWorkflows": [],
   "usedInModules": [],
-  "generatedAt": "2026-09-03T20:02:24.741666",
+  "generatedAt": "2026-09-04T11:34:34.561747",
   "generatorVersion": "2.0.0",
   "sourceHash": "dc50fb35",
   "packageDependencies": {

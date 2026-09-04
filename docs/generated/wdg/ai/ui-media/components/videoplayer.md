@@ -55,7 +55,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** videoplayer, components
+**Keywords:** components, videoplayer
 
 **Semantic Category:** utility
 

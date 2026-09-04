@@ -83,7 +83,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** floatingbutton, components
+**Keywords:** components, floatingbutton
 
 **Synonyms:** action control, clickable element
 

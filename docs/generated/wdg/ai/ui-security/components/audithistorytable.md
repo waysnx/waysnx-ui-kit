@@ -70,7 +70,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** audithistorytable, components
+**Keywords:** components, audithistorytable
 
 **Semantic Category:** table
 

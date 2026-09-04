@@ -94,7 +94,7 @@ import { Modal } from '@waysnx/ui-feedback';
 
 ## Storybook
 
-View Interactive Storybook
+[View Interactive Storybook](https://uikit.waysnx.tech/?path=/docs/components-modal)
 
 ## Related Components
 
@@ -155,7 +155,7 @@ Avoid using this component when:
 
 ## AI & Integration Notes
 
-**Keywords:** modal, window, popup, dialog, overlay
+**Keywords:** components, overlay, dialog, modal, popup
 
 **Synonyms:** dialog, popup window, modal dialog
 

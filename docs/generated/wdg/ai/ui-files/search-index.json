@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
   "library": "ui-files",
-  "generatedAt": "2026-09-03T20:02:38.045134",
+  "generatedAt": "2026-09-04T11:34:50.604625",
   "components": [
     {
       "id": "ui-files:documentpreview",
@@ -10,8 +10,8 @@
       "category": "components",
       "description": "Display documents and files with automatic type detection and appropriate viewers.",
       "keywords": [
-        "documentpreview",
-        "components"
+        "components",
+        "documentpreview"
       ],
       "aliases": [],
       "synonyms": [],
@@ -67,8 +67,8 @@
       "category": "components",
       "description": "PDFViewer — SHELL / ADAPTER (not a functional PDF renderer in 1.0.0). This component provides the viewer chrome (tool...",
       "keywords": [
-        "pdfviewer",
-        "components"
+        "components",
+        "pdfviewer"
       ],
       "aliases": [],
       "synonyms": [],

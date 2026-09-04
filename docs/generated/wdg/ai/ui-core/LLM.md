@@ -156,13 +156,13 @@ This library is optimized for AI code generation and documentation search.
 ### Component Metadata
 
 **Autocomplete**
-- Keywords: label, placeholder, autocomplete
+- Keywords: placeholder, autocomplete, label
 
 **Button**
-- Keywords: cta, trigger, action
+- Keywords: action, button, cta
 
 **Checkbox**
-- Keywords: checkbox, selection, label
+- Keywords: checkbox, check, components
 
 ### Searchable Metadata
 

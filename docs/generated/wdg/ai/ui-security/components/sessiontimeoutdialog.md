@@ -76,7 +76,7 @@ No specific anti-patterns documented.
 
 ## AI & Integration Notes
 
-**Keywords:** sessiontimeoutdialog, components
+**Keywords:** components, sessiontimeoutdialog
 
 **Synonyms:** popup window, overlay panel
 
