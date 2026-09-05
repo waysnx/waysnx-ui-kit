@@ -5,9 +5,148 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: read
+
 jobs:
-  placeholder:
+  # Workspace integrity and dependency validation
+  validate:
+    name: Validate workspace & dependencies
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: echo "Configure WaysNX build, test, Storybook, Playwright and metadata validation."
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.11.0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Install dependencies (frozen lockfile)
+        run: pnpm install --frozen-lockfile
+
+      - name: Verify workspace resolution
+        run: pnpm list --recursive --depth=0
+
+      - name: Validate package metadata
+        run: node scripts/ci-validate-packages.js
+
+  # Type checking and production build
+  build:
+    name: Build & type check
+    runs-on: ubuntu-latest
+    needs: validate
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.11.0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Install dependencies (frozen lockfile)
+        run: pnpm install --frozen-lockfile
+
+      - name: Build workspace
+        run: pnpm build
+
+      - name: Build Storybook (static artifact)
+        run: pnpm --filter storybook run build
+
+  # P0 regression suite across all browsers
+  p0-regression:
+    name: P0 regression (${{ matrix.browser }})
+    runs-on: ubuntu-latest
+    needs: build
+    strategy:
+      matrix:
+        browser: [chromium, firefox, webkit]
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.11.0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Install dependencies (frozen lockfile)
+        run: pnpm install --frozen-lockfile
+
+      - name: Run P0 regression suite (${{ matrix.browser }})
+        run: pnpm --filter playwright run test:${{ matrix.browser }} -- playwright/tests/p0-regression.spec.ts
+        env:
+          CI: true
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-results-${{ matrix.browser }}
+          path: playwright/test-results/
+          retention-days: 7
+
+      - name: Upload test report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report-${{ matrix.browser }}
+          path: playwright/playwright-report/
+          retention-days: 7
+
+  # Security and repository checks
+  security:
+    name: Security & repository checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.11.0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Install dependencies (frozen lockfile)
+        run: pnpm install --frozen-lockfile
+
+      - name: Scan for committed secrets and credentials
+        run: bash scripts/ci-security-check.sh
+
+      - name: Dependency audit (advisory-only, non-blocking)
+        run: pnpm audit --no-exit-code
+        continue-on-error: true
+
+  # Summary status check
+  ci-status:
+    name: CI Status
+    runs-on: ubuntu-latest
+    needs: [validate, build, p0-regression, security]
+    if: always()
+    steps:
+      - name: Check CI status
+        run: |
+          if [[ "${{ needs.validate.result }}" != "success" || \
+                "${{ needs.build.result }}" != "success" || \
+                "${{ needs.p0-regression.result }}" != "success" || \
+                "${{ needs.security.result }}" != "success" ]]; then
+            echo "::error::CI workflow failed. Check job results above."
+            exit 1
+          fi
+          echo "✓ All CI checks passed"
