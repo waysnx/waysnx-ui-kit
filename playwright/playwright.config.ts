@@ -9,7 +9,7 @@ export default defineConfig({
   testDir: './tests',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 2 : 0,
+  retries: 2,
   workers: process.env.CI ? 1 : undefined,
   reporter: [
     ['html', { outputFolder: 'playwright-report' }],
@@ -38,11 +38,15 @@ export default defineConfig({
     },
   ],
 
+  // Build Storybook fresh and serve the prebuilt static bundle. Building on
+  // every run guarantees the latest stories are included; serving static files
+  // (no Vite lazy-compile) eliminates the "sb-show-preparing-story" render
+  // races that made the dev server flaky under full-suite parallel load.
   webServer: {
-    command: 'pnpm --filter storybook run dev',
+    command: 'pnpm --filter storybook run build && pnpm --filter storybook exec http-server storybook-static -p 6006 -s',
     url: 'http://localhost:6006',
     reuseExistingServer: !process.env.CI,
-    timeout: 120 * 1000,
+    timeout: 240 * 1000,
     cwd: '..',
   },
 });
